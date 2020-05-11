@@ -7,9 +7,11 @@ import argparse
 import sys
 
 #   CONFIGURATION
-#threshold = 0.9
+# threshold = 0.9
 numberOfLastFailedVersions = 5
-#ignoredChars = ' \t\n'
+
+
+# ignoredChars = ' \t\n'
 
 
 # TBD: do we need to have ignoredVersions / ignoredErrors / ignoredTests functionality?
@@ -19,46 +21,46 @@ numberOfLastFailedVersions = 5
 #   Decided to treat all query errors equal, anyway we need to process them manually
 #   Also added initial check on string length comparison
 
-def _cleanCommonVariables():
+def _clean_common_variables():
     # globals are created upon first execution
-    global gErrors, gNewErrors
+    global gERRORS, gNEW_ERRORS
 
-    gErrors = {}  # map: Error <-> list<Failure>
-    gNewErrors = {}  # map: Error <-> list<Failure>
+    gERRORS = {}  # map: Error <-> list<Failure>
+    gNEW_ERRORS = {}  # map: Error <-> list<Failure>
 
 
-def getFailMessage(message):
-    errorMarkers = ["TestCheck.Failure: ", "Exception: ", "NameError: ", "RuntimeError: ", "IndexError: ",
-                    "AssertionError: ", "TypeError: ", "AttributeError: ", "ValueError: "]
-    for errorMarker in errorMarkers:
-        if errorMarker in message:
-            return message.split(errorMarker, 1)[1]
+def get_fail_message(message):
+    error_markers = ["TestCheck.Failure: ", "Exception: ", "NameError: ", "RuntimeError: ", "IndexError: ",
+                     "AssertionError: ", "TypeError: ", "AttributeError: ", "ValueError: "]
+    for error_marker in error_markers:
+        if error_marker in message:
+            return message.split(error_marker, 1)[1]
     return message
 
 
-def _getErrorsFromXML(root):
+def _get_errors_from_XML(root):
     errors = {}
-    errorsXML = root.find('.//errors')
-    for error in errorsXML.findall('.//error'):
+    errors_XML = root.find('.//errors')
+    for error in errors_XML.findall('.//error'):
         temp_count = int(error.get('count'))
-        temp_firstVersion = error.get('firstVersion')
+        temp_first_version = error.get('first_version')
         temp_error = Error(error.get('msg'))
         temp_tests = set()
         for test in error.findall('.//test'):
-            temp_tests.add(Test(test.get('file'), test.get('testsuite'), test.get('testcase')))
+            temp_tests.add(Test(test.get('file'), test.get('test_suite'), test.get('test_case')))
         temp_versions = []
         for version in error.findall('.//version'):
             temp_versions.append(version.get('version'))
 
-        errors[temp_error] = Failure(temp_tests, temp_firstVersion, temp_count, temp_versions)
+        errors[temp_error] = Failure(set(), set(), temp_tests, temp_first_version, temp_count, temp_versions)
 
     return errors
 
 
-def getOldFail(dataSavePath):
-    global gErrors, gTests, gFailedVersions, gFailures
+def get_old_fail(data_save_path):
+    global gERRORS
 
-    path = dataSavePath + '/fails.xml'
+    path = data_save_path + '/fails.xml'
     # TBD: copy old fails.xml with timestamp to have version history? Or add timestamp to xml file as version?
     if not os.path.exists(path):
         with open(path, 'w'): pass
@@ -67,143 +69,179 @@ def getOldFail(dataSavePath):
     tree = ET.parse(path)
     root = tree.getroot()
 
-    gErrors = _getErrorsFromXML(root)
+    gERRORS = _get_errors_from_XML(root)
 
 
-def _addFailurePreliminary(file, testsuiteName, testcaseName, failure, failedVersion):
-    global gNewErrors
+def _add_failure_preliminary(file, test_suite_name, test_case_name, failure, failed_version):
+    global gERRORS
     error = Error(failure)
-    if gNewErrors.get(error) is None:
-        for er in gNewErrors.keys():
+    if gERRORS.get(error) is None:
+        for er in gERRORS.keys():
             if er == error:
-                gNewErrors[er].addTest(Test(file, testsuiteName, testcaseName))
-                gNewErrors[er].count_up(failedVersion)
+                gERRORS[er].add_test(Test(file, test_suite_name, test_case_name))
+                gERRORS[er].count_up(failed_version)
                 return
-        gNewErrors[error] = Failure({Test(file, testsuiteName, testcaseName)}, failedVersion, 1, [failedVersion])
+        gERRORS[error] = Failure({Test(file, test_suite_name, test_case_name)},
+                                       set(), set(), failed_version, 1, [failed_version])
     else:
-        gNewErrors[error].addTest(Test(file, testsuiteName, testcaseName))
-        gNewErrors[error].count_up(failedVersion)
+        gERRORS[error].add_test(Test(file, test_suite_name, test_case_name))
+        gERRORS[error].count_up(failed_version)
 
 
-def _processPreliminaryFailures(version):
-    global gNewErrors, gErrors
+def _process_preliminary_failures(version):
+    global gERRORS, gNEW_ERRORS
 
-    for error, failure in gNewErrors.items():
-        if gErrors.get(error) is None:
-            gErrors[error] = failure
+    for error, failure in gNEW_ERRORS.items():
+        if gERRORS.get(error) is None:
+            gERRORS[error] = failure
             continue
         else:
             it = True
-            for err in gErrors.keys():
+            for err in gERRORS.keys():
                 if err == error:
-                    for test in failure.tests:
-                        gErrors[err].tests.add(test)
-                    gErrors[err].count_up(version)
+                    print(';')
+                    print(len(failure.tests_new))
+                    gERRORS[err].tests_new = failure.tests_new
+                    for test in failure.tests_replay:
+                        gERRORS[err].add_test(test)
+                    for test in failure.tests_old:
+                        gERRORS[err].add_test(test)
+                    gERRORS[err].count_up(version)
                     it = False
                     break
             if it:
                 for test in failure.tests:
-                    gErrors[error].tests.add(test)
-                gErrors[error].count_up(version)
+                    gERRORS[error].tests.add(test)
+                gERRORS[error].count_up(version)
 
 
-def _checkForSuiteFailure(file, testsuite, testsuiteName, failedVersion):
-    if testsuite.get('testsuite_failed') == 'True':
-        testcaseName = 'setup'
-        for failure in testsuite.findall('.//failure'):
-            _addFailurePreliminary(file, testsuiteName, testcaseName,
-                                   getFailMessage(failure.text), failedVersion)
+def _check_for_suite_failure(file, test_suite, test_suite_name, failed_version):
+    if test_suite.get('testsuite_failed') == 'True':
+        test_case_name = 'setup'
+        for failure in test_suite.findall('.//failure'):
+            _add_failure_preliminary(file, test_suite_name, test_case_name,
+                                     get_fail_message(failure.text), failed_version)
 
 
-def checkLogs(path, version):
-    global gNewErrors, gErrors
+def check_logs(path, version):
+    global gNEW_ERRORS, gERRORS
     for file in os.listdir(path):
         if file.endswith(".xml"):
             root = ET.parse(path + '/' + file).getroot()
 
-            for testsuite in root.findall('.//testsuite'):
-                testsuiteName = str(testsuite.get('name'))
-                if testsuite.get('skipped') != '0':
-                    _checkForSuiteFailure(file, testsuite, testsuiteName, version)
+            for test_suite in root.findall('.//testsuite'):
+                test_suite_name = str(test_suite.get('name'))
+                if test_suite.get('skipped') != '0':
+                    _check_for_suite_failure(file, test_suite, test_suite_name, version)
                 else:
-                    for testcase in testsuite.findall('.//testcase'):
-                        for failure in testcase.findall('.//failure'):
-                            testcaseName = str(testcase.get('name'))
-                            _addFailurePreliminary(file, testsuiteName,
-                                                   testcaseName, getFailMessage(failure.text), version)
+                    for test_case in test_suite.findall('.//testcase'):
+                        for failure in test_case.findall('.//failure'):
+                            test_case_name = str(test_case.get('name'))
+                            _add_failure_preliminary(file, test_suite_name,
+                                                     test_case_name, get_fail_message(failure.text), version)
 
-    print('Length of known error database = {}'.format(len(gErrors)))
-    _processPreliminaryFailures(version)
-    print('Potential error count = {}'.format(len(gNewErrors)))
-    print('Update error database = {}'.format(len(gErrors)))
+    print('Length of known error database = {}'.format(len(gERRORS)))
+    #_process_preliminary_failures(version)
+    print('Potential error count = {}'.format(len(gNEW_ERRORS)))
+    print('Update error database = {}'.format(len(gERRORS)))
 
 
-def writeFailsToFile(dataSavePath):
-    global gErrors
+def write_fails_2_file(data_save_path):
+    global gERRORS
 
     root = ET.Element("root")
 
-    # processing gErrors
+    # processing gERRORS
     xml = ET.SubElement(root, 'errors')
-    for error, failure in gErrors.items():
+    for error, failure in gERRORS.items():
         error = ET.SubElement(xml, 'error', msg=str(error),
-                              count=str(failure.count), firstVersion=str(failure.firstVersion))
+                              count=str(failure.count), first_version=str(failure.first_version))
         tests = ET.SubElement(error, 'tests')
-        for test in failure.tests:
-            ET.SubElement(tests, "test", file=str(test.file), testsuite=str(test.testsuite),
-                          testcase=str(test.testcase))
+        for test in failure.tests_new:
+            ET.SubElement(tests, "test", file=str(test.file), test_suite=str(test.test_suite),
+                          test_case=str(test.test_case))
+        for test in failure.tests_replay:
+            ET.SubElement(tests, "test", file=str(test.file), test_suite=str(test.test_suite),
+                          test_case=str(test.test_case))
+        for test in failure.tests_old:
+            ET.SubElement(tests, "test", file=str(test.file), test_suite=str(test.test_suite),
+                          test_case=str(test.test_case))
         versions = ET.SubElement(error, 'versions')
-        for version in reversed(failure.lastVersions[-5:]):
+        for version in reversed(failure.last_versions[-5:]):
             ET.SubElement(versions, "version", version=str(version))
 
     tree = ET.ElementTree(root)
-    tree.write(f'{dataSavePath}/fails.xml')
+    tree.write(f'{data_save_path}/fails.xml')
 
 
-def addTD(text, type=None):
-    return f'<td {"" if type is None else type}> {text} </td>'
+def add_td(text, type=""):
+    return f'<td {type}> {text} </td>'
 
 
-def createTable(errorBlocks, status, style):
-    errorTable = ''
+def create_table(error_blocks, status, style):
+    error_table = ''
 
-    for errorBlock in errorBlocks:
-        errorTable += f'<tr>'
+    for error_block in error_blocks:
+        error_table += f'<tr>'
         # all failures in single block have the same errorID and failed version list
-        errorTable += addTD(errorBlock[0], style)
+        error_table += add_td(error_block[0], style)
 
-        testsStr = '<details><summary>ALL</summary>'
-        for test in sorted(errorBlock[1].tests):
-            testsStr += f'{test}<br>'
-        testsStr += '</details>'
+        tests_new_str = ''
+        if not error_block[1].tests_new or len(error_block[1].tests_new) != 0:
+            #print(error_block[1].tests_new)
+            print(len(error_block[1].tests_new))
+            tests_new_str = '<details><summary>NEW</summary>'
+            for test in sorted(error_block[1].tests_new):
+                tests_new_str += f'{test}<br>'
+            tests_new_str += '</details>'
+        else:
+            print('NOT empty1')
 
-        errorTable += addTD(testsStr)
-        errorTable += addTD(status, style)
-        errorTable += addTD(errorBlock[1].count, 'class="data" align="left"')
+        tests_replay_str = ''
+        if not error_block[1].tests_replay or len(error_block[1].tests_replay) != 0:
+            tests_replay_str = '<details><summary>REPLAY</summary>'
+            for test in sorted(error_block[1].tests_replay):
+                tests_replay_str += f'{test}<br>'
+            tests_replay_str += '</details>'
+        else:
+            print('NOT empty2')
 
-        errorTable += addTD(errorBlock[1].firstVersion)
-        failedVersionsStr = ''
-        for failedVersion in errorBlock[1].lastVersions:
-            failedVersionsStr += f'{failedVersion}<br>'
-        errorTable += addTD(failedVersionsStr)
-        errorTable += f'</tr>'
+        tests_old_str = ''
+        if not error_block[1].tests_old or len(error_block[1].tests_old) != 0:
+            tests_old_str = '<details><summary>OLD</summary>'
+            for test in sorted(error_block[1].tests_old):
+                tests_old_str += f'{test}<br>'
+            tests_old_str += '</details>'
+        else:
+            print('NOT empty3')
 
-    return errorTable
+        error_table += add_td(tests_new_str + tests_replay_str + tests_old_str)
+        error_table += add_td(status, style)
+        error_table += add_td(error_block[1].count, 'class="data" align="left"')
+
+        error_table += add_td(error_block[1].first_version)
+        failed_versions_str = ''
+        for failedVersion in error_block[1].last_versions:
+            failed_versions_str += f'{failedVersion}<br>'
+        error_table += add_td(failed_versions_str)
+        error_table += f'</tr>'
+
+    return error_table
 
 
-def createNewTable(newErrorList):
-    return createTable(newErrorList, 'New', 'class="failed data"')
+def create_new_table(new_error_list):
+    return create_table(new_error_list, 'New', 'class="failed data"')
 
 
-def createReplayTable(replayErrorList):
-    return createTable(replayErrorList, 'Replay', 'class="replay data"')
+def create_replay_table(replay_error_list):
+    return create_table(replay_error_list, 'Replay', 'class="replay data"')
 
 
-def createOldTable(oldErrorList):
-    return createTable(oldErrorList, 'Old', 'class="data"')
+def create_old_table(old_error_list):
+    return create_table(old_error_list, 'Old', 'class="data"')
 
 
-def addStyle():
+def add_style():
     return f'''<style>
             table
             {'{'}
@@ -317,35 +355,35 @@ def addStyle():
         </style>'''
 
 
-def writeFailsToHTML(dataSavePath, version):
+def write_fails_2_HTML(data_save_path, version):
     # Group tests by failure + failed version list, otherwise create new entry
     # if defect failedVersion has id = len(totalFailedVersions) and len(defectFailedVersion) == 1, this is new defect
     # if defect failedVersion has id = len(totalFailedVersions) and len(defectFailedVersion) > 1, this is replay defect
     # otherwise this is old defect
-    global gErrors
+    global gERRORS
 
-    newErrors = []
-    replayErrors = []
-    oldErrors = []
+    new_errors = []
+    replay_errors = []
+    old_errors = []
 
-    for error, failure in gErrors.items():
-        if failure.firstVersion == version and failure.count == 1:
-            newErrors.append([error, failure])
+    for error, failure in gERRORS.items():
+        if failure.first_version == version and failure.count == 1:
+            new_errors.append([error, failure])
         else:
-            if version in failure.lastVersions:
-                replayErrors.append([error, failure])
+            if version in failure.last_versions:
+                replay_errors.append([error, failure])
             else:
-                oldErrors.append([error, failure])
+                old_errors.append([error, failure])
 
-    _writeFailsToHTML(newErrors, replayErrors, oldErrors, dataSavePath)
+    _writeFailsToHTML(new_errors, replay_errors, old_errors, data_save_path)
 
 
-def _writeFailsToHTML(newErrors, replayErrors, oldErrors, dataSavePath):
-    f = open(dataSavePath + '/reportSFManager.html', 'w')
+def _writeFailsToHTML(new_errors, replay_errors, old_errors, data_save_path):
+    f = open(data_save_path + '/reportSFManager.html', 'w')
 
     message = f'''<html>
     <head>
-        {addStyle()}
+        {add_style()}
     </head>
     <body> 
         <table class = "defect">
@@ -357,9 +395,9 @@ def _writeFailsToHTML(newErrors, replayErrors, oldErrors, dataSavePath):
                 <th width="5%"> First failed version </th>
                 <th width="5%"> Last 5 failed versions </th>
             </tr>
-            {createNewTable(newErrors)}
-            {createReplayTable(replayErrors)}
-            {createOldTable(oldErrors)}
+            {create_new_table(new_errors)}
+            {create_replay_table(replay_errors)}
+            {create_old_table(old_errors)}
         </table>
     </body>
     </html>'''
@@ -368,20 +406,20 @@ def _writeFailsToHTML(newErrors, replayErrors, oldErrors, dataSavePath):
     f.close()
 
 
-def doCheck(path, version, dataSavePath, generateReport=True):
-    _cleanCommonVariables()
+def do_check(path, version, data_save_path, generate_report=False):
+    _clean_common_variables()
 
     if not os.path.isdir(path):
         print(f"Folder {path} does not exists!")
         return
-    getOldFail(dataSavePath=dataSavePath)
-    checkLogs(path=path, version=version)
-    writeFailsToFile(dataSavePath=dataSavePath)
-    if generateReport:
-        writeFailsToHTML(dataSavePath=dataSavePath, version=version)
+    get_old_fail(data_save_path=data_save_path)
+    check_logs(path=path, version=version)
+    write_fails_2_file(data_save_path=data_save_path)
+    if generate_report:
+        write_fails_2_HTML(data_save_path=data_save_path, version=version)
 
 
-#def addArgs():
+# def addArgs():
 #    ap = argparse.ArgumentParser()
 #    # '+' == 1 or more.
 #    # '*' == 0 or more.
@@ -398,10 +436,10 @@ if __name__ == '__main__':
 
     # params: run version, path for save result, directory with SF result logs(xml)
     if len(sys.argv) > 3:
-        dataSavePath = sys.argv[1]
+        data_save_path = sys.argv[1]
         for iter in range(2, len(sys.argv) - 3, 2):
-            doCheck(path=sys.argv[iter + 1], version=sys.argv[iter], dataSavePath=dataSavePath, generateReport=False)
-        doCheck(path=sys.argv[-1], version=sys.argv[-2], dataSavePath=dataSavePath, generateReport=True)
+            do_check(path=sys.argv[iter + 1], version=sys.argv[iter], data_save_path=data_save_path)
+        do_check(path=sys.argv[-1], version=sys.argv[-2], data_save_path=data_save_path, generate_report=True)
         print('Done!')
 
     else:
