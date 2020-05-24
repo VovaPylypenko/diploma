@@ -1,0 +1,19 @@
+ 2:28:47.30  Test starded without threads
+00:28:47.933 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:28:47.933 Python Module Path 'root-suite=Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios/FillCancelProcessing_RbrcOn' not found. Ignored.
+00:28:47.933 Python Module Path 'ScriptKit' added.
+00:28:48.434 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios/FillCancelProcessing_RbrcOn' filtered execution.
+00:28:48.465 Suite '.'. [1 test cases, 0 sub-suites]
+00:28:53.777 Case 'FillCancelProcessing_RbrcTurnedOn' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios/FillCancelProcessing_RbrcOn\FillCancelProcessing_RbrcTurnedOn_tc.py", line 14, in <module>
+    OrderActionUtils.CreateOrder(futureContract, OrderSide.Buy, size, OrderType.Limit, limitPrice=100),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:28:54.887 Case 'FillCancelProcessing_RbrcTurnedOn' failed.
+00:28:55.404 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios/FillCancelProcessing_RbrcOn' execution finished. It took 0:00:06.953135.
+00:28:55.404 Test cases results: 1 total, 0 succeeded, 1 failed, 0 skipped.

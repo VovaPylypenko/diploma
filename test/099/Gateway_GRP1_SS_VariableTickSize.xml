@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="8" testsuite_failed="False" time="67.064884" timestamp="2020-02-06T09:18:26.828341">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SynthSpread_VariableTickSize"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="SynthSpread_VariableTickSize" skipped="0" tests="8" testsuite_failed="False" time="67.064884" timestamp="2020-02-06T09:18:26.828341">
+  <testcase name="TC01_Secondary_PriceBased" status="run" time="4.7970559999999995" timestamp="2020-02-06T09:18:41.250726"/>
+  <testcase name="TC02_Secondary_TimeBased" status="run" time="4.968886" timestamp="2020-02-06T09:18:46.110299"/>
+  <testcase name="TC07_SecondaryTrailing_PriceBased" status="run" time="7.203477" timestamp="2020-02-06T09:18:51.141700"/>
+  <testcase name="TC08_SecondaryTrailing_TimeBased" status="run" time="7.859906" timestamp="2020-02-06T09:18:58.391964"/>
+  <testcase name="TC09_SecondaryPayUp_PriceBased" status="run" time="6.656479" timestamp="2020-02-06T09:19:06.314121"/>
+  <testcase name="TC10_SecondaryPayUp_TimeBased" status="run" time="6.468946" timestamp="2020-02-06T09:19:13.017504"/>
+  <testcase name="TC11_Epsilon_PriceBased" status="run" time="6.875229" timestamp="2020-02-06T09:19:19.549000"/>
+  <testcase name="TC12_Epsilon_TimeBased" status="run" time="7.203337" timestamp="2020-02-06T09:19:26.471100"/>
+ </testsuite>
+</testsuites>

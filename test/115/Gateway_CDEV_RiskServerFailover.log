@@ -1,0 +1,12 @@
+22:42:41.23  Test starded without threads
+20:42:41.715 Python Module Path 'ScriptKit/TroubleMaker' added.
+20:42:41.715 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:42:41.715 Python Module Path 'ScriptKit' added.
+20:42:42.090 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover' full execution.
+20:42:42.106 Suite '.'. [2 test cases, 0 sub-suites]
+20:42:54.669 Case '01_RiskServerSwitchover' execution.
+20:43:13.529 Case '01_RiskServerSwitchover' succeeded.
+20:43:13.576 Case '02_RiskServerFailover' execution.
+20:43:30.967 Case '02_RiskServerFailover' succeeded.
+20:43:31.061 Root suite 'Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover' execution finished. It took 0:00:48.957938.
+20:43:31.077 Test cases results: 2 total, 2 succeeded, 0 failed, 0 skipped.

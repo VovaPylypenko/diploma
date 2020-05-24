@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="11" testsuite_failed="False" time="34.860108" timestamp="2020-02-19T20:17:12.312898">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/DDLL"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="DDLL" skipped="0" tests="11" testsuite_failed="False" time="34.860108" timestamp="2020-02-19T20:17:12.312898">
+  <testcase name="DDLL01" status="run" time="1.343763" timestamp="2020-02-19T20:17:24.328508"/>
+  <testcase name="DDLL02" status="run" time="2.640809" timestamp="2020-02-19T20:17:25.719179"/>
+  <testcase name="DDLL03" status="run" time="1.125036" timestamp="2020-02-19T20:17:28.422385"/>
+  <testcase name="DDLL04" status="run" time="0.578129" timestamp="2020-02-19T20:17:29.594289"/>
+  <testcase name="DDLL05" status="run" time="1.765689" timestamp="2020-02-19T20:17:30.266168"/>
+  <testcase name="DDLL06" status="run" time="4.281421" timestamp="2020-02-19T20:17:32.078733"/>
+  <testcase name="DDLL07" status="run" time="2.906447" timestamp="2020-02-19T20:17:36.407003"/>
+  <testcase name="DDLL08" status="run" time="1.203019" timestamp="2020-02-19T20:17:39.360362"/>
+  <testcase name="DDLL09" status="run" time="1.593799" timestamp="2020-02-19T20:17:40.610269"/>
+  <testcase name="DDLL10" status="run" time="1.937808" timestamp="2020-02-19T20:17:42.251037"/>
+  <testcase name="DDLL11" status="run" time="2.046924" timestamp="2020-02-19T20:17:44.235421"/>
+ </testsuite>
+</testsuites>

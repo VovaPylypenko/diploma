@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="2" skipped="0" tests="2" testsuite_failed="True" time="28.735335" timestamp="2020-02-19T00:39:52.450888">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="2" name="RiskServerFailover" skipped="0" tests="2" testsuite_failed="True" time="28.735335" timestamp="2020-02-19T00:39:52.450888">
+  <testcase name="01_RiskServerSwitchover" status="run" time="9.000298" timestamp="2020-02-19T00:40:04.341914">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover\01_RiskServerSwitchover.tc.py&quot;, line 22, in &lt;module&gt;
+    stressFunc = functools.partial(SwitchRisk, tsGroupName))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderSequenceChecker.py&quot;, line 74, in CheckOrderSequence
+    orderInfo = OrderActionUtils.CreateOrder(contract, ModuleAgent.OrderSide.Buy, orderSize, ModuleAgent.OrderType.Limit, limitPrice = 1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover\01_RiskServerSwitchover.tc.py&quot;, line 22, in &lt;module&gt;
+    stressFunc = functools.partial(SwitchRisk, tsGroupName))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderSequenceChecker.py&quot;, line 74, in CheckOrderSequence
+    orderInfo = OrderActionUtils.CreateOrder(contract, ModuleAgent.OrderSide.Buy, orderSize, ModuleAgent.OrderType.Limit, limitPrice = 1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="02_RiskServerFailover" status="run" time="7.219019" timestamp="2020-02-19T00:40:13.389092">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover\02_RiskServerFailover.tc.py&quot;, line 27, in &lt;module&gt;
+    stressFunc = functools.partial(KillRisk, tsGroupName))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderSequenceChecker.py&quot;, line 74, in CheckOrderSequence
+    orderInfo = OrderActionUtils.CreateOrder(contract, ModuleAgent.OrderSide.Buy, orderSize, ModuleAgent.OrderType.Limit, limitPrice = 1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover\02_RiskServerFailover.tc.py&quot;, line 27, in &lt;module&gt;
+    stressFunc = functools.partial(KillRisk, tsGroupName))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderSequenceChecker.py&quot;, line 74, in CheckOrderSequence
+    orderInfo = OrderActionUtils.CreateOrder(contract, ModuleAgent.OrderSide.Buy, orderSize, ModuleAgent.OrderType.Limit, limitPrice = 1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+ </testsuite>
+</testsuites>

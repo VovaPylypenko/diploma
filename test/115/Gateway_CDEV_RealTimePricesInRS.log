@@ -1,0 +1,86 @@
+20:49:36.46  Test starded without threads
+18:49:36.948 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS/DefaultTPLforContractsWithDataFeed/PythonModules' added.
+18:49:36.948 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS/PythonModules' added.
+18:49:36.948 Python Module Path 'Scripts/Gateway/PythonModules' added.
+18:49:36.948 Python Module Path 'ScriptKit' added.
+18:49:37.323 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS' full execution.
+18:49:37.356 Suite '.'. [0 test cases, 3 sub-suites]
+18:49:53.168 Suite 'AggressiveTPLforContractsWithNoDataFeed'. [6 test cases, 0 sub-suites]
+18:49:53.230 Case 'NoBidAskPriceCommodityLevelLimit' execution.
+18:49:53.449 Case 'NoBidAskPriceCommodityLevelLimit' succeeded.
+18:49:53.496 Case 'NoBidAskPriceExchangeLevelLimit' execution.
+18:49:53.714 Case 'NoBidAskPriceExchangeLevelLimit' succeeded.
+18:49:53.762 Case 'NoBidAskTradePriceContractLevelLimit' execution.
+18:49:53.980 Case 'NoBidAskTradePriceContractLevelLimit' succeeded.
+18:49:54.027 Case 'TraderSpecifiedPriceInSTL' execution.
+18:49:54.261 Case 'TraderSpecifiedPriceInSTL' succeeded.
+18:49:54.324 Case 'TraderSpecifiedPriceLMT' execution.
+18:49:54.480 Case 'TraderSpecifiedPriceLMT' succeeded.
+18:49:54.558 Case 'TraderSpecifiedPriceSTP' execution.
+18:49:54.746 Case 'TraderSpecifiedPriceSTP' succeeded.
+18:49:54.871 Suite 'DefaultTPLforContractsWithDataFeed'. [29 test cases, 0 sub-suites]
+18:49:54.917 Case 'AccountLevelLimit' execution.
+18:50:21.574 Case 'AccountLevelLimit' succeeded.
+18:50:21.621 Case 'CallOptionsContractLevelLimit' execution.
+18:50:48.575 Case 'CallOptionsContractLevelLimit' succeeded.
+18:50:48.622 Case 'CommodityLevelLimit' execution.
+18:51:15.279 Case 'CommodityLevelLimit' succeeded.
+18:51:15.342 Case 'DelayedPricesUsageDisallowedForFCM' execution.
+18:51:17.701 Case 'DelayedPricesUsageDisallowedForFCM' succeeded.
+18:51:17.764 Case 'ExchangeLevelLimit' execution.
+18:51:44.468 Case 'ExchangeLevelLimit' succeeded.
+18:51:44.530 Case 'FuturesContractLevelLimit' execution.
+18:52:10.940 Case 'FuturesContractLevelLimit' succeeded.
+18:52:11.015 Case 'NewContractWithNoPricesAvailable' execution.
+18:52:21.203 Case 'NewContractWithNoPricesAvailable' succeeded.
+18:52:21.250 Case 'ParkedOrderActivation' execution.
+18:52:31.875 Case 'ParkedOrderActivation' succeeded.
+18:52:31.922 Case 'PutOptionsContractLevelLimit' execution.
+18:52:58.454 Case 'PutOptionsContractLevelLimit' succeeded.
+18:52:58.564 Case 'RealTimePricesReSubscription' execution.
+18:54:08.723 Case 'RealTimePricesReSubscription' succeeded.
+18:54:08.785 Case 'TPLcheckOnCoMarginGroupAccount' execution.
+18:54:35.582 Case 'TPLcheckOnCoMarginGroupAccount' succeeded.
+18:54:35.629 Case 'TPLcheckOnJoinPPGroupAccount' execution.
+18:55:02.067 Case 'TPLcheckOnJoinPPGroupAccount' succeeded.
+18:55:02.115 Case 'TPLcheckOnOmnibusLevel' execution.
+18:55:13.162 Case 'TPLcheckOnOmnibusLevel' succeeded.
+18:55:13.208 Case 'TPLforAskSettlement' execution.
+18:55:40.209 Case 'TPLforAskSettlement' succeeded.
+18:55:40.256 Case 'TPLforAskTrade' execution.
+18:56:07.836 Case 'TPLforAskTrade' succeeded.
+18:56:07.898 Case 'TPLforBidAskSettlement' execution.
+18:56:34.008 Case 'TPLforBidAskSettlement' succeeded.
+18:56:34.070 Case 'TPLforBidAskTrade' execution.
+18:57:00.774 Case 'TPLforBidAskTrade' succeeded.
+18:57:00.837 Case 'TPLforBidSettlementAsk' execution.
+18:57:27.478 Case 'TPLforBidSettlementAsk' succeeded.
+18:57:27.544 Case 'TPLforBidSettlement' execution.
+18:57:54.167 Case 'TPLforBidSettlement' succeeded.
+18:57:54.245 Case 'TPLforBidTradeAsk' execution.
+18:58:21.167 Case 'TPLforBidTradeAsk' succeeded.
+18:58:21.230 Case 'TPLforBidTrade' execution.
+18:58:47.840 Case 'TPLforBidTrade' succeeded.
+18:58:47.903 Case 'TPLforSettlementAsk' execution.
+18:59:15.310 Case 'TPLforSettlementAsk' succeeded.
+18:59:15.376 Case 'TPLforSettlementBidAsk' execution.
+18:59:41.889 Case 'TPLforSettlementBidAsk' succeeded.
+18:59:41.968 Case 'TPLforSettlementBid' execution.
+19:00:08.358 Case 'TPLforSettlementBid' succeeded.
+19:00:08.452 Case 'TPLforSettlement' execution.
+19:00:35.156 Case 'TPLforSettlement' succeeded.
+19:00:35.234 Case 'TPLforTradeAsk' execution.
+19:01:01.735 Case 'TPLforTradeAsk' succeeded.
+19:01:01.782 Case 'TPLforTradeBidAsk' execution.
+19:01:28.392 Case 'TPLforTradeBidAsk' succeeded.
+19:01:28.470 Case 'TPLforTradeBid' execution.
+19:01:55.112 Case 'TPLforTradeBid' succeeded.
+19:01:55.174 Case 'TPLforTrade' execution.
+19:02:22.441 Case 'TPLforTrade' succeeded.
+19:02:22.566 Suite 'WithNoTPLcheck'. [2 test cases, 0 sub-suites]
+19:02:22.629 Case 'NoTtraderSpecifiedPrice_MKT_order' execution.
+19:02:32.941 Case 'NoTtraderSpecifiedPrice_MKT_order' succeeded.
+19:02:33.005 Case 'TPLnotEnforcedOnAccount' execution.
+19:02:43.332 Case 'TPLnotEnforcedOnAccount' succeeded.
+19:02:44.176 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS' execution finished. It took 0:13:06.821698.
+19:02:44.176 Test cases results: 37 total, 37 succeeded, 0 failed, 0 skipped.

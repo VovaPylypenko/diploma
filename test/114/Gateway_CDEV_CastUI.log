@@ -1,0 +1,15 @@
+ 2:32:07.97  Test starded without threads
+00:32:08.408 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:32:08.408 Python Module Path 'ScriptKit' added.
+00:32:08.408 Python Module Path 'Scripts/Gateway/SystemAreas/ManagmentInterface/CastUI/PythonModules' added.
+00:32:09.205 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/ManagmentInterface/CastUI' full execution.
+00:32:09.315 Suite '.'. [0 test cases, 1 sub-suites]
+00:32:09.346 Suite 'CastUI_ts.py'. [1 test cases, 0 sub-suites]
+00:32:09.393 Case 'Cast' execution.
+"CAST" successfully stopped
+"CAST" successfully started.
+00:36:05.068 Case 'Cast' succeeded.
+00:36:05.177 Root suite 'Scripts/Gateway/SystemAreas/ManagmentInterface/CastUI' execution finished. It took 0:03:55.863287.
+00:36:05.177 Test cases results: 1 total, 1 succeeded, 0 failed, 0 skipped.
+SUCCESS: The process "iexplore.exe" with PID 10216 has been terminated.
+SUCCESS: The process "iexplore.exe" with PID 9284 has been terminated.

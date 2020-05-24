@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="44" testsuite_failed="False" time="421.468423" timestamp="2020-02-19T19:13:42.027950">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_RBRC"/>
+  <property name="scripts-cfg-instance" value="SF_RBRC"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="RBRC" skipped="0" tests="44" testsuite_failed="False" time="421.468423" timestamp="2020-02-19T19:13:42.027950">
+  <testcase name="CheckCPLRoute" status="run" time="8.577114" timestamp="2020-02-19T19:13:47.998229"/>
+  <testcase name="CheckEEFCPLInst" status="run" time="6.309442" timestamp="2020-02-19T19:13:56.641092"/>
+  <testcase name="CheckEEFCPLRoute" status="run" time="5.078334" timestamp="2020-02-19T19:14:03.013038"/>
+  <testcase name="CheckEEFIPLInst" status="run" time="7.047001" timestamp="2020-02-19T19:14:08.185206"/>
+  <testcase name="CheckEEFIPLRoute" status="run" time="4.515766" timestamp="2020-02-19T19:14:15.279096"/>
+  <testcase name="CheckEEFPCPLInst" status="run" time="8.984678" timestamp="2020-02-19T19:14:19.888627"/>
+  <testcase name="CheckEEFPCPLRoute" status="run" time="3.640851" timestamp="2020-02-19T19:14:28.920210"/>
+  <testcase name="CheckEEFPIPLInst" status="run" time="3.687665" timestamp="2020-02-19T19:14:32.607831"/>
+  <testcase name="CheckEEFPIPLRoute" status="run" time="3.593719" timestamp="2020-02-19T19:14:36.373716"/>
+  <testcase name="CheckEEFTSLInst" status="run" time="5.797403" timestamp="2020-02-19T19:14:40.029929"/>
+  <testcase name="CheckEEFTSLRoute" status="run" time="4.062655" timestamp="2020-02-19T19:14:45.889513"/>
+  <testcase name="CheckIPLRoute" status="run" time="4.984553" timestamp="2020-02-19T19:14:50.014643"/>
+  <testcase name="CheckIPPTDCPLInstOff" status="run" time="6.656147" timestamp="2020-02-19T19:14:55.077660"/>
+  <testcase name="CheckIPPTDCPLInstOn" status="run" time="9.859714" timestamp="2020-02-19T19:15:01.780671"/>
+  <testcase name="CheckIPPTDCPLRouteOff" status="run" time="3.985026" timestamp="2020-02-19T19:15:11.765398"/>
+  <testcase name="CheckIPPTDCPLRouteOn" status="run" time="3.656365" timestamp="2020-02-19T19:15:15.812427"/>
+  <testcase name="CheckIPPTDIPLInstOff" status="run" time="6.828385" timestamp="2020-02-19T19:15:19.546928"/>
+  <testcase name="CheckIPPTDIPLInstOn" status="run" time="3.750126" timestamp="2020-02-19T19:15:26.437777"/>
+  <testcase name="CheckIPPTDIPLRouteOff" status="run" time="3.7345040000000003" timestamp="2020-02-19T19:15:30.250415"/>
+  <testcase name="CheckIPPTDIPLRouteOn" status="run" time="3.6405279999999998" timestamp="2020-02-19T19:15:34.047640"/>
+  <testcase name="CheckIPPTDTSLInstOn" status="run" time="4.312643" timestamp="2020-02-19T19:15:37.750676"/>
+  <testcase name="CheckIPPTDTSLRouteOn" status="run" time="3.218859" timestamp="2020-02-19T19:15:42.125822"/>
+  <testcase name="CheckSubIndepEEF" status="run" time="2.703213" timestamp="2020-02-19T19:15:45.407182"/>
+  <testcase name="CheckSubIndepIPPTD" status="run" time="5.031418" timestamp="2020-02-19T19:15:48.172903"/>
+  <testcase name="CheckWOCPLInst" status="run" time="6.78151" timestamp="2020-02-19T19:15:53.251193"/>
+  <testcase name="CheckWOCPLRoute" status="run" time="3.635409" timestamp="2020-02-19T19:16:00.100549"/>
+  <testcase name="CheckWOIPLInst" status="run" time="6.125213" timestamp="2020-02-19T19:16:03.798476"/>
+  <testcase name="CheckWOIPLRoute" status="run" time="3.203296" timestamp="2020-02-19T19:16:10.001859"/>
+  <testcase name="CheckWOPCPLInst" status="run" time="8.922176" timestamp="2020-02-19T19:16:13.298846"/>
+  <testcase name="CheckWOPCPLRoute" status="run" time="3.531385" timestamp="2020-02-19T19:16:22.283538"/>
+  <testcase name="CheckWOPIPLInst" status="run" time="3.562654" timestamp="2020-02-19T19:16:25.877441"/>
+  <testcase name="CheckWOPIPLRoute" status="run" time="3.359486" timestamp="2020-02-19T19:16:29.502569"/>
+  <testcase name="CheckWOTSLInst" status="run" time="4.531428" timestamp="2020-02-19T19:16:32.924560"/>
+  <testcase name="CheckWOTSLRoute" status="run" time="3.093817" timestamp="2020-02-19T19:16:37.518519"/>
+  <testcase name="CommonCheckEEF" status="run" time="1.968816" timestamp="2020-02-19T19:16:40.690488"/>
+  <testcase name="CommonCheckEUP" status="run" time="1.593944" timestamp="2020-02-19T19:16:42.721812"/>
+  <testcase name="CommonCheckIPPTD" status="run" time="1.7031779999999999" timestamp="2020-02-19T19:16:44.378124"/>
+  <testcase name="CommonCheckRBRC" status="run" time="1.907502" timestamp="2020-02-19T19:16:46.143944"/>
+  <testsuite failures="0" name="CASTDependent" skipped="0" tests="6" testsuite_failed="False" time="127.957887" timestamp="2020-02-19T19:16:48.097005">
+   <testcase name="CheckEUPCPLInst" status="run" time="30.219859" timestamp="2020-02-19T19:16:49.753324"/>
+   <testcase name="CheckEUPCPLRoute" status="run" time="21.563109" timestamp="2020-02-19T19:17:20.051515"/>
+   <testcase name="CheckEUPIPLInst" status="run" time="25.313443" timestamp="2020-02-19T19:17:41.692746"/>
+   <testcase name="CheckEUPIPLRoute" status="run" time="15.845167" timestamp="2020-02-19T19:18:07.099943"/>
+   <testcase name="CheckEUPTSLInst" status="run" time="17.125409" timestamp="2020-02-19T19:18:23.022641"/>
+   <testcase name="CheckEUPTSLRoute" status="run" time="15.796885" timestamp="2020-02-19T19:18:40.195532"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

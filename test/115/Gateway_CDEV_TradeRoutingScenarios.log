@@ -1,0 +1,401 @@
+21:04:36.02  Test starded without threads
+19:04:36.555 Python Module Path 'ScriptKit' added.
+19:04:36.555 Python Module Path 'Scripts/Gateway/PythonModules' added.
+19:04:36.555 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios' added.
+19:04:37.071 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios' filtered execution.
+19:04:37.102 Suite '.'. [10 test cases, 2 sub-suites]
+19:04:44.618 Case 'BustLastFill' execution.
+19:04:44.634 Case 'CallOption' execution.
+19:04:44.665 Case 'FixedIncome' execution.
+19:04:44.696 Case 'InvalidSymbol' execution.
+19:04:44.727 Case 'LimitDAY' execution.
+19:04:44.743 Case 'InvalidSymbol' succeeded.
+19:04:44.774 Case 'ModifyCtiOrigin' execution.
+19:04:44.837 Case 'OrderFill_SettlementDate' execution.
+19:04:44.868 Case 'PutOption' execution.
+19:04:44.946 Case 'RejectZeroQuantityModify' execution.
+19:04:45.009 Case 'Spread' execution.
+19:04:45.024 Case 'BustLastFill' succeeded.
+19:04:45.180 Case 'ModifyCtiOrigin' succeeded.
+19:04:45.290 Case 'RejectZeroQuantityModify' succeeded.
+19:04:46.618 Case 'FixedIncome' succeeded.
+19:04:46.774 Case 'CallOption' succeeded.
+19:04:46.837 Case 'Spread' succeeded.
+19:04:46.837 Case 'LimitDAY' succeeded.
+19:04:46.915 Case 'PutOption' succeeded.
+19:04:54.868 Case 'OrderFill_SettlementDate' succeeded.
+19:04:54.915 Suite 'AggressorIndicator_ts.py'. [6 test cases, 0 sub-suites]
+19:04:54.993 Case 'FullFill_FixedIncome' execution.
+19:04:55.040 Case 'PartialFill_FixedIncome' execution.
+19:04:55.071 Case 'PartialFill_Future' execution.
+19:04:55.103 Case 'FullFill_NativeStrategy' execution.
+19:04:55.181 Case 'PartialFill_NativeStrategy' execution.
+19:04:55.230 Case 'FullFill_Future' execution.
+19:04:55.275 Case 'PartialFill_Future' succeeded.
+19:04:55.525 Case 'PartialFill_FixedIncome' succeeded.
+19:04:55.556 Case 'FullFill_Future' succeeded.
+19:04:55.682 Case 'FullFill_FixedIncome' succeeded.
+19:04:55.759 Case 'PartialFill_NativeStrategy' succeeded.
+19:04:55.884 Case 'FullFill_NativeStrategy' succeeded.
+19:04:56.009 Suite 'PartialQty'. [2 test cases, 2 sub-suites]
+19:04:57.197 Case 'Iceberg' execution.
+19:04:57.243 Case 'Synthetic' execution.
+19:04:57.353 Case 'Synthetic' succeeded.
+19:04:57.509 Case 'Iceberg' succeeded.
+19:04:57.572 Suite 'PartialQty\OrderActions_ts.py'. [4 test cases, 0 sub-suites]
+19:04:57.650 Case 'PlaceIncreaseCancel' execution.
+19:04:57.697 Case 'ParkActivateDecreaseCancel' execution.
+19:04:57.743 Case 'PlaceModifyRejectCancel' execution.
+19:04:57.775 Case 'PlaceReject' execution.
+19:04:57.790 Case 'PlaceIncreaseCancel' succeeded.
+19:04:57.822 Case 'PlaceReject' succeeded.
+19:04:57.837 Case 'ParkActivateDecreaseCancel' succeeded.
+19:04:57.853 Case 'PlaceModifyRejectCancel' succeeded.
+19:04:58.026 Suite 'PartialQty\OrderExecution_ts.py'. [4 test cases, 0 sub-suites]
+19:04:58.087 Case 'PartFill' execution.
+19:04:58.150 Case 'FillCorrect' execution.
+19:04:58.197 Case 'FillCancel' execution.
+19:04:58.245 Case 'FullFill' execution.
+19:04:58.368 Case 'FullFill' succeeded.
+19:04:59.025 Case 'FillCorrect' succeeded.
+19:04:59.072 Case 'FillCancel' succeeded.
+19:04:59.228 Case 'PartFill' succeeded.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\test_suite.td.py", line 14, in <module>
+    Queries.AssertQueryForOrders(GWConnection.GWConnection.GWConnectionList)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 473, in AssertQueryForOrders
+    AssertOrdersQueryEventsAccepted(gwConnection, query, expectedEventList, chunkssupported=True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 513, in AssertOrdersQueryEventsAccepted
+    gwConnection, query, expectedOrderList, queryID=queryID, resultList=resultList, skipElementsPath=skipElementsPath)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 388, in AssertOrdersQueryAccepted
+    CompareXML(__sortCompoundLegs(result), __sortCompoundLegs(expectedResult))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 311, in CompareXML
+    __lexicalXMLString(rootVerifiedXML)))
+AssertionError: Expected:
+<?xml version="1.0" ?>
+<O>
+  <S2C sessionid="2001184">
+    <QR lastchunk="Y" qid="Test_89cddf07-f416-4543-9119-124205bcf83a">
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2117384" ostat="O_INTRANSIT" remainsz="4.0" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190444.994162" timelast="20200219T190444.994211" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2117384" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="60c3a2fd-5696-4b44-aaab-9c1a9c6f91fb" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190444.977804">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2117384" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="14988545" tstat="T_INTRANSIT" when="20200219T190444.994211"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-19:04:45-11" exec_system_order_id="20200219-19:04:45-11" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2117384" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2117384" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190444.994162" timelast="20200219T190445.040570" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2117384" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="60c3a2fd-5696-4b44-aaab-9c1a9c6f91fb" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190444.977804">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2117384" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2117384" transid="14991105" tstat="T_ACKPLACE" when="20200219T190445.040570"/>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-11" exec_system_order_id="20200219-19:04:45-11" fillcnt="1" fillsz="2.0" hangcount="0" lasttransactionid="Any" orderid="2117384" ostat="O_INORDERBOOK" remainsz="2.0" routeclorderid="OrderID2117384" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190444.994162" timelast="20200219T190445.078098" timelastfill="20200219T190445.077534" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2117384" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="60c3a2fd-5696-4b44-aaab-9c1a9c6f91fb" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190444.977804">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2117384" execid="20200219-19:04:45-11-Exec2_20200219" execution_source_code="Y" fillprice="99" fillsz="2.0" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2117384" today_cutoff="20200219T201600" transid="14993665" tstat="T_FILL" when="20200219T190445.078098">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="398081" legexecid="20200219-19:04:45-11-Exec2_20200219" legnum="1" price="99" settlement_date="20200218T000000" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="2.0" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.050"/>
+        </TS>
+      </OS>
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2152482" ostat="O_INTRANSIT" remainsz="4.0" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.116811" timelast="20200219T190445.116842" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2152482" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="4804bfd3-3e51-4b8a-9ded-c01e0e8caa76" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.087177">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2152482" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="14996481" tstat="T_INTRANSIT" when="20200219T190445.116842"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-19:04:45-15" exec_system_order_id="20200219-19:04:45-15" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2152482" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2152482" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.116811" timelast="20200219T190445.147792" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2152482" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="4804bfd3-3e51-4b8a-9ded-c01e0e8caa76" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.087177">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2152482" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2152482" transid="14998017" tstat="T_ACKPLACE" when="20200219T190445.147792"/>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-15" exec_system_order_id="20200219-19:04:45-15" fillcnt="1" fillsz="4.0" hangcount="0" lasttransactionid="Any" orderid="2152482" ostat="O_FILLED" remainsz="0.0" routeclorderid="OrderID2152482" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.116811" timelast="20200219T190445.190120" timelastfill="20200219T190445.190014" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2152482" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="4804bfd3-3e51-4b8a-9ded-c01e0e8caa76" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.087177">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2152482" execid="20200219-19:04:45-15-Exec2_20200219" execution_source_code="Y" fillprice="99" fillsz="4.0" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2152482" today_cutoff="20200219T201600" transid="15000065" tstat="T_FILL" when="20200219T190445.190120">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="398593" legexecid="20200219-19:04:45-15-Exec2_20200219" legnum="1" price="99" settlement_date="20200219T000000" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="4.0" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.157"/>
+        </TS>
+      </OS>
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2122508" ostat="O_INTRANSIT" remainsz="4.0" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.231695" timelast="20200219T190445.231732" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="42930228-52e9-4245-84eb-6482435396a1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.196560">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="15002113" tstat="T_INTRANSIT" when="20200219T190445.231732"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-19:04:45-18" exec_system_order_id="20200219-19:04:45-18" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2122508" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2122508" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.231695" timelast="20200219T190445.253020" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="42930228-52e9-4245-84eb-6482435396a1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.196560">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2122508" transid="15003905" tstat="T_ACKPLACE" when="20200219T190445.253020"/>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-18" exec_system_order_id="20200219-19:04:45-18" fillcnt="1" fillsz="2.0" hangcount="0" lasttransactionid="Any" orderid="2122508" ostat="O_INORDERBOOK" remainsz="2.0" routeclorderid="OrderID2122508" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.231695" timelast="20200219T190445.273925" timelastfill="20200219T190445.273718" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="42930228-52e9-4245-84eb-6482435396a1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.196560">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2122508" execid="20200219-19:04:45-18-Exec2_20200219" execution_source_code="Y" fillprice="99" fillsz="2.0" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2122508" today_cutoff="20200219T201600" transid="15004929" tstat="T_FILL" when="20200219T190445.273925">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="398849" legexecid="20200219-19:04:45-18-Exec2_20200219" legnum="1" price="99" settlement_date="20200220T000000" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="2.0" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.262"/>
+        </TS>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-18" exec_system_order_id="20200219-19:04:45-18" fillcnt="2" fillsz="4.0" hangcount="0" lasttransactionid="Any" orderid="2122508" ostat="O_FILLED" remainsz="0.0" routeclorderid="OrderID2122508" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.231695" timelast="20200219T190445.285045" timelastfill="20200219T190445.284977" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="42930228-52e9-4245-84eb-6482435396a1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.196560">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2122508" execid="20200219-19:04:45-18-Exec3_20200219" execution_source_code="Y" fillprice="99" fillsz="2.0" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2122508" today_cutoff="20200219T201600" transid="15005953" tstat="T_FILL" when="20200219T190445.285045">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="399105" legexecid="20200219-19:04:45-18-Exec3_20200219" legnum="1" price="99" settlement_date="20200220T000000" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="2.0" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.281"/>
+        </TS>
+      </OS>
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2142287" ostat="O_INTRANSIT" remainsz="4.0" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.314756" timelast="20200219T190445.314807" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="12289f9c-f642-4841-a49b-7fe4525433dd" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.305937">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="15007745" tstat="T_INTRANSIT" when="20200219T190445.314807"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-19:04:45-23" exec_system_order_id="20200219-19:04:45-23" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2142287" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2142287" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.314756" timelast="20200219T190445.336766" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="12289f9c-f642-4841-a49b-7fe4525433dd" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.305937">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2142287" transid="15009281" tstat="T_ACKPLACE" when="20200219T190445.336766"/>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-23" exec_system_order_id="20200219-19:04:45-23" fillcnt="1" fillsz="2.0" hangcount="0" lasttransactionid="Any" orderid="2142287" ostat="O_INORDERBOOK" remainsz="2.0" routeclorderid="OrderID2142287" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.314756" timelast="20200219T190445.350750" timelastfill="20200219T190445.350679" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="12289f9c-f642-4841-a49b-7fe4525433dd" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.305937">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2142287" execid="20200219-19:04:45-23-Exec2_20200219" execution_source_code="Y" fillprice="99" fillsz="2.0" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2142287" today_cutoff="20200219T201600" transid="15010049" tstat="T_FILL" when="20200219T190445.350750">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="399617" legexecid="20200219-19:04:45-23-Exec2_20200219" legnum="1" price="99" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="2.0" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.346"/>
+        </TS>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-23" exec_system_order_id="20200219-19:04:45-23" fillcnt="2" fillsz="4.0" hangcount="0" lasttransactionid="Any" orderid="2142287" ostat="O_FILLED" remainsz="0.0" routeclorderid="OrderID2142287" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.314756" timelast="20200219T190445.379712" timelastfill="20200219T190445.379625" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="12289f9c-f642-4841-a49b-7fe4525433dd" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.305937">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2142287" execid="20200219-19:04:45-23-Exec3_20200219" execution_source_code="Y" fillprice="99" fillsz="2.0" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2142287" today_cutoff="20200219T201600" transid="15012865" tstat="T_FILL" when="20200219T190445.379712">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="399873" legexecid="20200219-19:04:45-23-Exec3_20200219" legnum="1" price="99" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="2.0" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.363"/>
+        </TS>
+      </OS>
+    </QR>
+  </S2C>
+</O>
+
+Got:
+<?xml version="1.0" ?>
+<O>
+  <S2C sessionid="2001184">
+    <QR lastchunk="Y" qid="Test_89cddf07-f416-4543-9119-124205bcf83a">
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2117384" ostat="O_INTRANSIT" remainsz="4" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190444.994162" timelast="20200219T190444.994211" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2117384" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="60c3a2fd-5696-4b44-aaab-9c1a9c6f91fb" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190444.977804">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2117384" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="14988545" tstat="T_INTRANSIT" when="20200219T190444.994211"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-19:04:45-11" exec_system_order_id="20200219-19:04:45-11" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2117384" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2117384" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190444.994162" timelast="20200219T190445.040570" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2117384" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="60c3a2fd-5696-4b44-aaab-9c1a9c6f91fb" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190444.977804">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2117384" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2117384" transid="14991105" tstat="T_ACKPLACE" when="20200219T190445.040570"/>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-11" exec_system_order_id="20200219-19:04:45-11" fillcnt="1" fillsz="2" hangcount="0" lasttransactionid="Any" orderid="2117384" ostat="O_INORDERBOOK" remainsz="2" routeclorderid="OrderID2117384" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190444.994162" timelast="20200219T190445.078098" timelastfill="20200219T190445.077534" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2117384" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="60c3a2fd-5696-4b44-aaab-9c1a9c6f91fb" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190444.977804">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2117384" execid="20200219-19:04:45-11-Exec2_20200219" execution_source_code="Y" fillprice="99" fillsz="2" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2117384" today_cutoff="20200219T201600" transid="14993665" tstat="T_FILL" when="20200219T190445.078098">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="398081" legexecid="20200219-19:04:45-11-Exec2_20200219" legnum="1" price="99" settlement_date="20200218T000000" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="2" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.050"/>
+        </TS>
+      </OS>
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2152482" ostat="O_INTRANSIT" remainsz="4" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.116811" timelast="20200219T190445.116842" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2152482" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="4804bfd3-3e51-4b8a-9ded-c01e0e8caa76" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.087177">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2152482" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="14996481" tstat="T_INTRANSIT" when="20200219T190445.116842"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-19:04:45-15" exec_system_order_id="20200219-19:04:45-15" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2152482" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2152482" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.116811" timelast="20200219T190445.147792" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2152482" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="4804bfd3-3e51-4b8a-9ded-c01e0e8caa76" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.087177">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2152482" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2152482" transid="14998017" tstat="T_ACKPLACE" when="20200219T190445.147792"/>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-15" exec_system_order_id="20200219-19:04:45-15" fillcnt="1" fillsz="4" hangcount="0" lasttransactionid="Any" orderid="2152482" ostat="O_FILLED" remainsz="0" routeclorderid="OrderID2152482" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.116811" timelast="20200219T190445.190120" timelastfill="20200219T190445.190014" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2152482" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="4804bfd3-3e51-4b8a-9ded-c01e0e8caa76" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.087177">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2152482" execid="20200219-19:04:45-15-Exec2_20200219" execution_source_code="Y" fillprice="99" fillsz="4" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2152482" today_cutoff="20200219T201600" transid="15000065" tstat="T_FILL" when="20200219T190445.190120">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="398593" legexecid="20200219-19:04:45-15-Exec2_20200219" legnum="1" price="99" settlement_date="20200219T000000" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="4" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.157"/>
+        </TS>
+      </OS>
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2122508" ostat="O_INTRANSIT" remainsz="4" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.231695" timelast="20200219T190445.231732" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="42930228-52e9-4245-84eb-6482435396a1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.196560">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="15002113" tstat="T_INTRANSIT" when="20200219T190445.231732"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-19:04:45-18" exec_system_order_id="20200219-19:04:45-18" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2122508" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2122508" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.231695" timelast="20200219T190445.253020" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="42930228-52e9-4245-84eb-6482435396a1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.196560">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2122508" transid="15003905" tstat="T_ACKPLACE" when="20200219T190445.253020"/>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-18" exec_system_order_id="20200219-19:04:45-18" fillcnt="1" fillsz="2" hangcount="0" lasttransactionid="Any" orderid="2122508" ostat="O_INORDERBOOK" remainsz="2" routeclorderid="OrderID2122508" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.231695" timelast="20200219T190445.273925" timelastfill="20200219T190445.273718" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="42930228-52e9-4245-84eb-6482435396a1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.196560">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2122508" execid="20200219-19:04:45-18-Exec2_20200219" execution_source_code="Y" fillprice="99" fillsz="2" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2122508" today_cutoff="20200219T201600" transid="15004929" tstat="T_FILL" when="20200219T190445.273925">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="398849" legexecid="20200219-19:04:45-18-Exec2_20200219" legnum="1" price="99" settlement_date="20200220T000000" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="2" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.262"/>
+        </TS>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-18" exec_system_order_id="20200219-19:04:45-18" fillcnt="2" fillsz="4" hangcount="0" lasttransactionid="Any" orderid="2122508" ostat="O_FILLED" remainsz="0" routeclorderid="OrderID2122508" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.231695" timelast="20200219T190445.285045" timelastfill="20200219T190445.284977" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2122508" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="42930228-52e9-4245-84eb-6482435396a1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.196560">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2122508" execid="20200219-19:04:45-18-Exec3_20200219" execution_source_code="Y" fillprice="99" fillsz="2" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2122508" today_cutoff="20200219T201600" transid="15005953" tstat="T_FILL" when="20200219T190445.285045">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="399105" legexecid="20200219-19:04:45-18-Exec3_20200219" legnum="1" price="99" settlement_date="20200220T000000" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="2" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.281"/>
+        </TS>
+      </OS>
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2142287" ostat="O_INTRANSIT" remainsz="4" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.314756" timelast="20200219T190445.314807" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="12289f9c-f642-4841-a49b-7fe4525433dd" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.305937">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="15007745" tstat="T_INTRANSIT" when="20200219T190445.314807"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-19:04:45-23" exec_system_order_id="20200219-19:04:45-23" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2142287" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2142287" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.314756" timelast="20200219T190445.336766" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="12289f9c-f642-4841-a49b-7fe4525433dd" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.305937">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2142287" transid="15009281" tstat="T_ACKPLACE" when="20200219T190445.336766"/>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-23" exec_system_order_id="20200219-19:04:45-23" fillcnt="1" fillsz="2" hangcount="0" lasttransactionid="Any" orderid="2142287" ostat="O_INORDERBOOK" remainsz="2" routeclorderid="OrderID2142287" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.314756" timelast="20200219T190445.350750" timelastfill="20200219T190445.350679" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="12289f9c-f642-4841-a49b-7fe4525433dd" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.305937">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2142287" execid="20200219-19:04:45-23-Exec2_20200219" execution_source_code="Y" fillprice="99" fillsz="2" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2142287" today_cutoff="20200219T201600" transid="15010049" tstat="T_FILL" when="20200219T190445.350750">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="399617" legexecid="20200219-19:04:45-23-Exec2_20200219" legnum="1" price="99" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="2" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.346"/>
+        </TS>
+      </OS>
+      <OS avfillprice="99" excconf="20200219-19:04:45-23" exec_system_order_id="20200219-19:04:45-23" fillcnt="2" fillsz="4" hangcount="0" lasttransactionid="Any" orderid="2142287" ostat="O_FILLED" remainsz="0" routeclorderid="OrderID2142287" timeactiveat="Any" timecancelled="Any" timefirst="20200219T190445.314756" timelast="20200219T190445.379712" timelastfill="20200219T190445.379625" traderid="5108">
+        <PO acttime="Any" clorderid="CQG_2142287" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="12289f9c-f642-4841-a49b-7fe4525433dd" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="NativeGWAPI" when="20200219T190445.305937">
+          <ACCTID gwacctid="335979"/>
+          <LIMITORDER limitprice="99" side="S" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_SettDate_Trader"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="CQG_2142287" execid="20200219-19:04:45-23-Exec3_20200219" execution_source_code="Y" fillprice="99" fillsz="2" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2142287" today_cutoff="20200219T201600" transid="15012865" tstat="T_FILL" when="20200219T190445.379712">
+          <TRADE ctype="F" currency="USD" dprice="9900" gwtradeid="399873" legexecid="20200219-19:04:45-23-Exec3_20200219" legnum="1" price="99" side="S" stmtdate="20200219T000000" sym="F.SF.SFEP.Z99" sz="2" today_cutoff="20200219T201600" tradedate="20200219T000000" when="20200219T190445.363"/>
+        </TS>
+      </OS>
+    </QR>
+  </S2C>
+</O>
+
+
+19:05:13.697 Suite '.' teardown failed.
+19:05:13.744 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios' execution finished. It took 0:00:36.626311.
+19:05:13.744 Test cases results: 26 total, 26 succeeded, 0 failed, 0 skipped.

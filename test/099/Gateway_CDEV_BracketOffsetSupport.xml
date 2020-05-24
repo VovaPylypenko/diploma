@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="53" testsuite_failed="False" time="53.709903" timestamp="2020-02-06T06:42:06.743037">
+ <properties>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="12"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="BracketOffsetSupport" skipped="0" tests="53" testsuite_failed="False" time="53.709903" timestamp="2020-02-06T06:42:06.743037">
+  <testsuite failures="0" name="BracketLegCancellation" skipped="0" tests="4" testsuite_failed="False" time="1.328147" timestamp="2020-02-06T06:42:21.696679">
+   <testcase name="2Leg_Master" status="run" time="0.530817" timestamp="2020-02-06T06:42:21.822185"/>
+   <testcase name="2Leg_Secondary" status="run" time="0.563657" timestamp="2020-02-06T06:42:21.852965"/>
+   <testcase name="3Leg_Master" status="run" time="0.671894" timestamp="2020-02-06T06:42:21.884166"/>
+   <testcase name="3Leg_Secondary" status="run" time="1.031272" timestamp="2020-02-06T06:42:21.931060"/>
+  </testsuite>
+  <testsuite failures="0" name="BracketStructureModification" skipped="0" tests="3" testsuite_failed="False" time="1.15631" timestamp="2020-02-06T06:42:23.102957">
+   <testcase name="OCO_To_2Leg" status="run" time="0.656268" timestamp="2020-02-06T06:42:23.212332"/>
+   <testcase name="Order_To_2Leg" status="run" time="0.780786" timestamp="2020-02-06T06:42:23.244074"/>
+   <testcase name="Order_To_3Leg" status="run" time="0.890693" timestamp="2020-02-06T06:42:23.306084"/>
+  </testsuite>
+  <testsuite failures="0" name="CashReserve" skipped="0" tests="3" testsuite_failed="False" time="0.581414" timestamp="2020-02-06T06:42:24.306145">
+   <testcase name="2Leg_Loss" status="run" time="0.171863" timestamp="2020-02-06T06:42:24.431148"/>
+   <testcase name="2Leg_Profit" status="run" time="0.203144" timestamp="2020-02-06T06:42:24.493626"/>
+   <testcase name="3Leg" status="run" time="0.249921" timestamp="2020-02-06T06:42:24.556225"/>
+  </testsuite>
+  <testsuite failures="0" name="CheckAlgorithms" skipped="0" tests="7" testsuite_failed="False" time="1.375829" timestamp="2020-02-06T06:42:24.915539">
+   <testcase name="2LB_OrderOffset" status="run" time="0.484374" timestamp="2020-02-06T06:42:25.103046"/>
+   <testcase name="2LB_OrderSide" status="run" time="0.156251" timestamp="2020-02-06T06:42:25.149905"/>
+   <testcase name="2LB_OrderType" status="run" time="0.157284" timestamp="2020-02-06T06:42:25.399915"/>
+   <testcase name="3LB_OrderOffset" status="run" time="0.812517" timestamp="2020-02-06T06:42:25.181163"/>
+   <testcase name="3LB_OrderSide" status="run" time="0.843789" timestamp="2020-02-06T06:42:25.243664"/>
+   <testcase name="3LB_OrderType" status="run" time="0.858989" timestamp="2020-02-06T06:42:25.275350"/>
+   <testcase name="BracketStructure" status="run" time="0.846894" timestamp="2020-02-06T06:42:25.337405"/>
+  </testsuite>
+  <testsuite failures="0" name="MarketMasterOrder" skipped="0" tests="11" testsuite_failed="False" time="1.828279" timestamp="2020-02-06T06:42:26.337634">
+   <testcase name="LmtOrder_BidAsk" status="run" time="0.577339" timestamp="2020-02-06T06:42:26.510120"/>
+   <testcase name="LmtOrder_NoPrice" status="run" time="0.140638" timestamp="2020-02-06T06:42:26.540571"/>
+   <testcase name="LmtOrder_Settle" status="run" time="0.703163" timestamp="2020-02-06T06:42:26.603074"/>
+   <testcase name="LmtOrder_Trade" status="run" time="0.73438" timestamp="2020-02-06T06:42:26.634340"/>
+   <testcase name="StlOrder_BidAsk" status="run" time="1.156296" timestamp="2020-02-06T06:42:26.681209"/>
+   <testcase name="StlOrder_Settle" status="run" time="1.312546" timestamp="2020-02-06T06:42:26.728077"/>
+   <testcase name="StlOrder_Trade" status="run" time="1.23444" timestamp="2020-02-06T06:42:26.821823"/>
+   <testcase name="StpOrder_BidAsk" status="run" time="0.718781" timestamp="2020-02-06T06:42:26.868701"/>
+   <testcase name="StpOrder_NoPrice" status="run" time="0.187495" timestamp="2020-02-06T06:42:26.931213"/>
+   <testcase name="StpOrder_Settle" status="run" time="0.703148" timestamp="2020-02-06T06:42:26.978082"/>
+   <testcase name="StpOrder_Trade" status="run" time="0.687811" timestamp="2020-02-06T06:42:27.024956"/>
+  </testsuite>
+  <testsuite failures="0" name="MasterMultipleFills" skipped="0" tests="4" testsuite_failed="False" time="1.423241" timestamp="2020-02-06T06:42:28.212524">
+   <testcase name="2Leg_PartFillDisabled" status="run" time="0.890647" timestamp="2020-02-06T06:42:28.321887"/>
+   <testcase name="2Leg_PartFillEnabled" status="run" time="1.000019" timestamp="2020-02-06T06:42:28.368768"/>
+   <testcase name="3Leg_PartFillDisabled" status="run" time="0.98438" timestamp="2020-02-06T06:42:28.415659"/>
+   <testcase name="3Leg_PartFillEnabled" status="run" time="1.062849" timestamp="2020-02-06T06:42:28.462510"/>
+  </testsuite>
+  <testsuite failures="0" name="ModifyBracketLeg" skipped="0" tests="3" testsuite_failed="False" time="0.752283" timestamp="2020-02-06T06:42:29.681495">
+   <testcase name="2Leg" status="run" time="0.437015" timestamp="2020-02-06T06:42:29.822445"/>
+   <testcase name="3Leg" status="run" time="0.468713" timestamp="2020-02-06T06:42:29.884491"/>
+   <testcase name="MasterModificationReject" status="run" time="0.312524" timestamp="2020-02-06T06:42:29.931307"/>
+  </testsuite>
+  <testsuite failures="0" name="PriceLimitCheck" skipped="0" tests="10" testsuite_failed="False" time="4.043027" timestamp="2020-02-06T06:42:30.466583">
+   <testcase name="2Leg_StopLimitOffset" status="run" time="1.686147" timestamp="2020-02-06T06:42:30.654610"/>
+   <testcase name="3Leg_StopLimitOffset" status="run" time="2.655496" timestamp="2020-02-06T06:42:30.713423"/>
+   <testcase name="TS1_2Leg_Lmt" status="run" time="3.204349" timestamp="2020-02-06T06:42:30.775095"/>
+   <testcase name="TS1_2Leg_Mkt" status="run" time="2.812599" timestamp="2020-02-06T06:42:30.853217"/>
+   <testcase name="TS1_3Leg_Lmt" status="run" time="3.421986" timestamp="2020-02-06T06:42:30.931344"/>
+   <testcase name="TS1_3Leg_Mkt" status="run" time="3.218854" timestamp="2020-02-06T06:42:30.993845"/>
+   <testcase name="TS2_2Leg_Lmt" status="run" time="2.750108" timestamp="2020-02-06T06:42:31.071975"/>
+   <testcase name="TS2_2Leg_Mkt" status="run" time="2.359341" timestamp="2020-02-06T06:42:31.165843"/>
+   <testcase name="TS2_3Leg_Lmt" status="run" time="3.156345" timestamp="2020-02-06T06:42:31.259486"/>
+   <testcase name="TS2_3Leg_Mkt" status="run" time="2.95319" timestamp="2020-02-06T06:42:31.353273"/>
+  </testsuite>
+  <testsuite failures="0" name="StopLimitOffset" skipped="0" tests="2" testsuite_failed="False" time="0.596558" timestamp="2020-02-06T06:42:34.556487">
+   <testcase name="2Leg" status="run" time="0.218866" timestamp="2020-02-06T06:42:34.728356"/>
+   <testcase name="3Leg" status="run" time="0.265632" timestamp="2020-02-06T06:42:34.775235"/>
+  </testsuite>
+  <testsuite failures="0" name="SyntheticBracketLeg" skipped="0" tests="6" testsuite_failed="False" time="10.953869" timestamp="2020-02-06T06:42:35.197123">
+   <testcase name="QTSTL" status="run" time="10.484746" timestamp="2020-02-06T06:42:35.384624"/>
+   <testcase name="QTSTP" status="run" time="10.406601" timestamp="2020-02-06T06:42:35.431529"/>
+   <testcase name="TLMT_Master" status="run" time="9.047194" timestamp="2020-02-06T06:42:35.494000"/>
+   <testcase name="TLMT" status="run" time="0.375516" timestamp="2020-02-06T06:42:35.697133"/>
+   <testcase name="TSTL" status="run" time="10.406606" timestamp="2020-02-06T06:42:35.572139"/>
+   <testcase name="TSTP" status="run" time="10.406087" timestamp="2020-02-06T06:42:35.635183"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

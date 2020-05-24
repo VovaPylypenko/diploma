@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="7" skipped="154" tests="202" testsuite_failed="True" time="239.946448" timestamp="2020-02-18T23:32:02.004616">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/Orders/QMOrdersQuery/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/Orders/OrderQueryMatrix/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/Orders/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/GenericQueries/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/GenericQueries/QMAllowedInstruments"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="20"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="7" name="AccountDataQueries" skipped="154" tests="202" testsuite_failed="True" time="239.946448" timestamp="2020-02-18T23:32:02.004616">
+  <testsuite failures="2" name="GenericQueries" skipped="137" tests="167" testsuite_failed="True" time="70.268221" timestamp="2020-02-18T23:32:16.552063">
+   <testcase name="GetAccountMappings" status="run" time="0.281255" timestamp="2020-02-18T23:32:16.739549"/>
+   <testcase name="GetAlgostrategies" status="run" time="0.12509" timestamp="2020-02-18T23:32:16.817663"/>
+   <testcase name="GetContractRootSettings" status="run" time="5.43772" timestamp="2020-02-18T23:32:16.895785"/>
+   <testcase name="GetCurrentDayFills" status="run" time="1.656348" timestamp="2020-02-18T23:32:16.958287">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\GenericQueries\GetCurrentDayFills.tc.py&quot;, line 31, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractName1, OrderSide.Buy, 2, OrderType.Limit, limitPrice=100),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\GenericQueries\GetCurrentDayFills.tc.py&quot;, line 31, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractName1, OrderSide.Buy, 2, OrderType.Limit, limitPrice=100),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="GetCurrentDayFillsWithExtras" status="run" time="1.34482" timestamp="2020-02-18T23:32:17.020804">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\GenericQueries\GetCurrentDayFillsWithExtras.tc.py&quot;, line 34, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractName1, OrderSide.Buy, 2, OrderType.Limit, limitPrice=100),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\GenericQueries\GetCurrentDayFillsWithExtras.tc.py&quot;, line 34, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractName1, OrderSide.Buy, 2, OrderType.Limit, limitPrice=100),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="GetCurrentNetPosition" status="run" time="1.358953" timestamp="2020-02-18T23:32:17.083772"/>
+   <testcase name="GetPreviousBalances" status="run" time="0.343966" timestamp="2020-02-18T23:32:17.161446"/>
+   <testsuite failures="0" name="FullLocalQM" skipped="133" tests="133" testsuite_failed="False" time="42.095314" timestamp="2020-02-18T23:32:22.411632">
+    <testsuite failures="0" name="CentralQM_Acctid" skipped="23" tests="23" testsuite_failed="False">
+     <testcase name="Accountriskparameters" status="notrun"/>
+     <testcase name="Allowedinstrumentsrevision" status="notrun"/>
+     <testcase name="Authorizedtraders" status="notrun"/>
+     <testcase name="Disallowedaccounttradintrfelem" status="notrun"/>
+     <testcase name="Disallowedaccounttradintrfelemrevision" status="notrun"/>
+     <testcase name="Getaccountsummaries" status="notrun"/>
+     <testcase name="Getaccountsummarytotal" status="notrun"/>
+     <testcase name="Getcollaterals" status="notrun"/>
+     <testcase name="Getconfirmations" status="notrun"/>
+     <testcase name="Getcurrentdayfills" status="notrun"/>
+     <testcase name="Getcurrentdayfillswithextras" status="notrun"/>
+     <testcase name="Getcurrentdayorderfills" status="notrun"/>
+     <testcase name="Getcurrentdayfillsandstrategyorderfills" status="notrun"/>
+     <testcase name="Getcurrentnetpositionex" status="notrun"/>
+     <testcase name="Getmissingtrades" status="notrun"/>
+     <testcase name="Getoffsetspl" status="notrun"/>
+     <testcase name="Getoffsettrades" status="notrun"/>
+     <testcase name="Getopenpositions" status="notrun"/>
+     <testcase name="Getpreviousclosepositions" status="notrun"/>
+     <testcase name="Getstatementtimestamp" status="notrun"/>
+     <testcase name="Getunknowntrades" status="notrun"/>
+     <testcase name="Getuserattributes" status="notrun"/>
+     <testcase name="Getorderattributes" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="CentralQM_Fcmid" skipped="5" tests="5" testsuite_failed="False">
+     <testcase name="Disallowedtradintrfelem" status="notrun"/>
+     <testcase name="Getcurrentcurrencyrates" status="notrun"/>
+     <testcase name="Orderenablements" status="notrun"/>
+     <testcase name="Orderenablementstimestamp" status="notrun"/>
+     <testcase name="Careautoactivationparams" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="CentralQM_Other" skipped="23" tests="23" testsuite_failed="False">
+     <testcase name="Genericordertypes" status="notrun"/>
+     <testcase name="Genericordertypestimestamp" status="notrun"/>
+     <testcase name="Getalloweddata" status="notrun"/>
+     <testcase name="Getalloweddatatimestamp" status="notrun"/>
+     <testcase name="Getallowedmarketdata" status="notrun"/>
+     <testcase name="Getallowedmarketdatarevision" status="notrun"/>
+     <testcase name="Getclientmessages" status="notrun"/>
+     <testcase name="Getcombinedcommodities" status="notrun"/>
+     <testcase name="Getcontractrootsettingsrevision" status="notrun"/>
+     <testcase name="Getexecinstructions" status="notrun"/>
+     <testcase name="Getexecinstructionstimestamp" status="notrun"/>
+     <testcase name="Getfeatureenablements" status="notrun"/>
+     <testcase name="Getfungiblecommodities" status="notrun"/>
+     <testcase name="Getfungibleinstruments" status="notrun"/>
+     <testcase name="Getprivatelabelclientapplicationtypes" status="notrun"/>
+     <testcase name="Multilevelsyntheticstrategydefinition" status="notrun"/>
+     <testcase name="Strategies" status="notrun"/>
+     <testcase name="Strategytimestamp" status="notrun"/>
+     <testcase name="Syntheticstrategydefinition" status="notrun"/>
+     <testcase name="Traderfeatureenablements" status="notrun"/>
+     <testcase name="Udstrategies" status="notrun"/>
+     <testcase name="Getexternalaccountextragroups" status="notrun"/>
+     <testcase name="Getexternalaccountextraattributes" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="LocalQM_Acctid" skipped="26" tests="26" testsuite_failed="False">
+     <testcase name="Accountriskparameters" status="notrun"/>
+     <testcase name="Allowedinstruments" status="notrun"/>
+     <testcase name="Allowedinstrumentsrevision" status="notrun"/>
+     <testcase name="Authorizedtraders" status="notrun"/>
+     <testcase name="Disallowedaccounttradintrfelem" status="notrun"/>
+     <testcase name="Disallowedaccounttradintrfelemrevision" status="notrun"/>
+     <testcase name="Getaccountsummaries" status="notrun"/>
+     <testcase name="Getaccountsummarytotal" status="notrun"/>
+     <testcase name="Getcollaterals" status="notrun"/>
+     <testcase name="Getconfirmations" status="notrun"/>
+     <testcase name="Getcurrentdayfills_Local" status="notrun"/>
+     <testcase name="Getcurrentdayfillswithextras_Local" status="notrun"/>
+     <testcase name="Getcurrentdayorderfills" status="notrun"/>
+     <testcase name="Getcurrentdayfillsandstrategyorderfills" status="notrun"/>
+     <testcase name="Getcurrentnetposition" status="notrun"/>
+     <testcase name="Getcurrentnetpositionex" status="notrun"/>
+     <testcase name="Getmissingtrades" status="notrun"/>
+     <testcase name="Getoffsetspl" status="notrun"/>
+     <testcase name="Getoffsettrades" status="notrun"/>
+     <testcase name="Getopenpositions" status="notrun"/>
+     <testcase name="Getpreviousbalances" status="notrun"/>
+     <testcase name="Getpreviousclosepositions" status="notrun"/>
+     <testcase name="Getstatementtimestamp" status="notrun"/>
+     <testcase name="Getunknowntrades" status="notrun"/>
+     <testcase name="Getuserattributes" status="notrun"/>
+     <testcase name="Getorderattributes" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="LocalQM_Fcmid" skipped="5" tests="5" testsuite_failed="False">
+     <testcase name="Disallowedtradintrfelem" status="notrun"/>
+     <testcase name="Getcurrentcurrencyrates" status="notrun"/>
+     <testcase name="Orderenablements" status="notrun"/>
+     <testcase name="Orderenablementstimestamp" status="notrun"/>
+     <testcase name="Careautoactivationparams" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="LocalQM_Other" skipped="25" tests="25" testsuite_failed="False">
+     <testcase name="Genericordertypes" status="notrun"/>
+     <testcase name="Genericordertypestimestamp" status="notrun"/>
+     <testcase name="Getaccountmappings" status="notrun"/>
+     <testcase name="Getalloweddata" status="notrun"/>
+     <testcase name="Getalloweddatatimestamp" status="notrun"/>
+     <testcase name="Getallowedmarketdata" status="notrun"/>
+     <testcase name="Getallowedmarketdatarevision" status="notrun"/>
+     <testcase name="Getclientmessages" status="notrun"/>
+     <testcase name="Getcombinedcommodities" status="notrun"/>
+     <testcase name="Getcontractrootsettings" status="notrun"/>
+     <testcase name="Getcontractrootsettingsrevision" status="notrun"/>
+     <testcase name="Getexecinstructions" status="notrun"/>
+     <testcase name="Getexecinstructionstimestamp" status="notrun"/>
+     <testcase name="Getfeatureenablements" status="notrun"/>
+     <testcase name="Getfungiblecommodities" status="notrun"/>
+     <testcase name="Getfungibleinstruments" status="notrun"/>
+     <testcase name="Getprivatelabelclientapplicationtypes" status="notrun"/>
+     <testcase name="Multilevelsyntheticstrategydefinition" status="notrun"/>
+     <testcase name="Strategies" status="notrun"/>
+     <testcase name="Strategytimestamp" status="notrun"/>
+     <testcase name="Syntheticstrategydefinition" status="notrun"/>
+     <testcase name="Traderfeatureenablements" status="notrun"/>
+     <testcase name="Udstrategies" status="notrun"/>
+     <testcase name="Getexternalaccountextragroups" status="notrun"/>
+     <testcase name="Getexternalaccountextraattributes" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="MultiQM_Acctid" skipped="26" tests="26" testsuite_failed="False">
+     <testcase name="Accountriskparameters" status="notrun"/>
+     <testcase name="Allowedinstruments" status="notrun"/>
+     <testcase name="Allowedinstrumentsrevision" status="notrun"/>
+     <testcase name="Authorizedtraders" status="notrun"/>
+     <testcase name="Disallowedaccounttradintrfelem" status="notrun"/>
+     <testcase name="Disallowedaccounttradintrfelemrevision" status="notrun"/>
+     <testcase name="Getaccountsummaries" status="notrun"/>
+     <testcase name="Getaccountsummarytotal" status="notrun"/>
+     <testcase name="Getcollaterals" status="notrun"/>
+     <testcase name="Getconfirmations" status="notrun"/>
+     <testcase name="Getcurrentdayfills_Multi" status="notrun"/>
+     <testcase name="Getcurrentdayfillswithextras_Multi" status="notrun"/>
+     <testcase name="Getcurrentdayorderfills" status="notrun"/>
+     <testcase name="Getcurrentdayfillsandstrategyorderfills" status="notrun"/>
+     <testcase name="Getcurrentnetposition" status="notrun"/>
+     <testcase name="Getcurrentnetpositionex" status="notrun"/>
+     <testcase name="Getmissingtrades" status="notrun"/>
+     <testcase name="Getoffsetspl" status="notrun"/>
+     <testcase name="Getoffsettrades" status="notrun"/>
+     <testcase name="Getopenpositions" status="notrun"/>
+     <testcase name="Getpreviousbalances" status="notrun"/>
+     <testcase name="Getpreviousclosepositions" status="notrun"/>
+     <testcase name="Getstatementtimestamp" status="notrun"/>
+     <testcase name="Getunknowntrades" status="notrun"/>
+     <testcase name="Getuserattributes" status="notrun"/>
+     <testcase name="Getorderattributes" status="notrun"/>
+    </testsuite>
+   </testsuite>
+   <testsuite failures="0" name="PartialQty" skipped="4" tests="4" testsuite_failed="False" time="1.000021" timestamp="2020-02-18T23:33:04.569473">
+    <testsuite failures="0" name="PartialQty" skipped="4" tests="4" testsuite_failed="False">
+     <testcase name="Getcurrentdayfills" status="notrun"/>
+     <testcase name="Getcurrentdayfillswithextras" status="notrun"/>
+     <testcase name="Getcurrentdayorderfills" status="notrun"/>
+     <testcase name="Getcurrentdayfillsandstrategyorderfills" status="notrun"/>
+    </testsuite>
+   </testsuite>
+   <testsuite failures="0" name="PrivateLabelDataRestriction" skipped="0" tests="5" testsuite_failed="False" time="1.937576" timestamp="2020-02-18T23:33:05.616363">
+    <testcase name="AllDataAllowed" status="run" time="1.406333" timestamp="2020-02-18T23:33:05.819487"/>
+    <testcase name="AXIWMD" status="run" time="1.2967" timestamp="2020-02-18T23:33:05.882321"/>
+    <testcase name="B2C2WMD" status="run" time="1.4224459999999999" timestamp="2020-02-18T23:33:05.930136"/>
+    <testcase name="NoDataAllowed" status="run" time="1.125038" timestamp="2020-02-18T23:33:06.007022"/>
+    <testcase name="Plotinus" status="run" time="1.125132" timestamp="2020-02-18T23:33:06.053889"/>
+   </testsuite>
+   <testsuite failures="0" name="QMAllowedInstruments" skipped="0" tests="18" testsuite_failed="False" time="19.03194" timestamp="2020-02-18T23:33:07.647709">
+    <testsuite failures="0" name="QMAllowedInstruments" skipped="0" tests="18" testsuite_failed="False" time="11.266006" timestamp="2020-02-18T23:33:15.273006">
+     <testcase name="allowedinstruments_50_acct_chunked_DTD47" status="run" time="7.922189" timestamp="2020-02-18T23:33:15.444881"/>
+     <testcase name="allowedinstruments_50_acct_chunked_DTD48" status="run" time="10.906689" timestamp="2020-02-18T23:33:15.538615"/>
+     <testcase name="allowedinstruments_50_acct_chunked_DTD49" status="run" time="7.218871" timestamp="2020-02-18T23:33:15.616872"/>
+     <testcase name="allowedinstruments_50_acct_chunked_DTD50" status="run" time="7.187766" timestamp="2020-02-18T23:33:15.710480"/>
+     <testcase name="allowedinstruments_50_acct_chunked_DTD51" status="run" time="8.98475" timestamp="2020-02-18T23:33:15.772994"/>
+     <testcase name="allowedinstruments_50_acct_chunked_DTD52" status="run" time="8.234681" timestamp="2020-02-18T23:33:15.835494"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD47" status="run" time="5.578313" timestamp="2020-02-18T23:33:15.929252"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD48" status="run" time="10.35983" timestamp="2020-02-18T23:33:16.007373"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD49" status="run" time="6.343018" timestamp="2020-02-18T23:33:16.102083"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD50" status="run" time="10.094122" timestamp="2020-02-18T23:33:16.179245"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD51" status="run" time="6.281477" timestamp="2020-02-18T23:33:16.241752"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD52" status="run" time="8.719067" timestamp="2020-02-18T23:33:16.304259"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD47" status="run" time="0.093751" timestamp="2020-02-18T23:33:16.382379"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD48" status="run" time="0.078126" timestamp="2020-02-18T23:33:16.476130"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD49" status="run" time="0.153587" timestamp="2020-02-18T23:33:16.572559"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD50" status="run" time="0.156488" timestamp="2020-02-18T23:33:16.663635"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD51" status="run" time="0.156218" timestamp="2020-02-18T23:33:16.898058"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD52" status="run" time="0.062733" timestamp="2020-02-18T23:33:16.757390"/>
+    </testsuite>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="5" name="Orders" skipped="17" tests="35" testsuite_failed="True" time="153.661902" timestamp="2020-02-18T23:33:26.882854">
+   <testcase name="GetByAccountID" status="run" time="42.907851" timestamp="2020-02-18T23:33:27.117172"/>
+   <testcase name="GetByCQGID" status="run" time="49.12684" timestamp="2020-02-18T23:33:27.195298"/>
+   <testcase name="GetByGUID" status="run" time="39.673298" timestamp="2020-02-18T23:33:27.257858"/>
+   <testcase name="GetByOStat" status="run" time="84.206256" timestamp="2020-02-18T23:33:27.320310"/>
+   <testcase name="GetByOType" status="run" time="118.973307" timestamp="2020-02-18T23:33:27.398425"/>
+   <testcase name="GetBySide" status="run" time="59.111629" timestamp="2020-02-18T23:33:27.445294"/>
+   <testcase name="GetByTraderID" status="run" time="65.252991" timestamp="2020-02-18T23:33:27.507806"/>
+   <testcase name="GetByUEName" status="run" time="47.720196" timestamp="2020-02-18T23:33:27.633261"/>
+   <testcase name="GetOrderTrans" status="run" time="17.235499" timestamp="2020-02-18T23:33:27.680564"/>
+   <testcase name="SeparateOSPerTS" status="run" time="20.875858" timestamp="2020-02-18T23:33:27.773457"/>
+   <testcase name="SortByDuration" status="run" time="19.297614" timestamp="2020-02-18T23:33:27.867204"/>
+   <testsuite failures="0" name="OrderQueryMatrix" skipped="16" tests="16" testsuite_failed="False" time="5.70463" timestamp="2020-02-18T23:35:26.449718">
+    <testcase name="OrdersQueryTest1" status="notrun"/>
+    <testcase name="OrdersQueryTest12" status="notrun"/>
+    <testcase name="OrdersQueryTest14" status="notrun"/>
+    <testcase name="OrdersQueryTest15" status="notrun"/>
+    <testcase name="OrdersQueryTest18" status="notrun"/>
+    <testcase name="OrdersQueryTest19" status="notrun"/>
+    <testcase name="OrdersQueryTest20" status="notrun"/>
+    <testcase name="OrdersQueryTest21" status="notrun"/>
+    <testcase name="OrdersQueryTest22" status="notrun"/>
+    <testcase name="OrdersQueryTest23" status="notrun"/>
+    <testcase name="OrdersQueryTest24" status="notrun"/>
+    <testcase name="OrdersQueryTest3" status="notrun"/>
+    <testcase name="OrdersQueryTest4" status="notrun"/>
+    <testcase name="OrdersQueryTest6" status="notrun"/>
+    <testcase name="OrdersQueryTest8" status="notrun"/>
+    <testcase name="OrdersQueryTest9" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="PartialQty" skipped="1" tests="1" testsuite_failed="False" time="1.046918" timestamp="2020-02-18T23:35:32.231194">
+    <testcase name="Sorting_by_SZ" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="PTOA" skipped="0" tests="2" testsuite_failed="False" time="20.438272" timestamp="2020-02-18T23:35:33.340607">
+    <testcase name="AllocAccountElement" status="run" time="11.375191" timestamp="2020-02-18T23:35:36.809710"/>
+    <testsuite failures="0" name="Automodification" skipped="0" tests="1" testsuite_failed="False" time="3.406375" timestamp="2020-02-18T23:35:48.278666">
+     <testcase name="AutomodificationMessage" status="run" time="3.062609" timestamp="2020-02-18T23:35:48.497432"/>
+    </testsuite>
+   </testsuite>
+   <testsuite failures="5" name="QMOrdersQuery" skipped="0" tests="5" testsuite_failed="True" time="6.547115" timestamp="2020-02-18T23:35:53.872633">
+    <testcase name="CancelledOrders" status="run" time="0.062508" timestamp="2020-02-18T23:35:59.497838">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\CancelledOrders.tc.py&quot;, line 21, in &lt;module&gt;
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT4, CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\CancelledOrders.tc.py&quot;, line 21, in &lt;module&gt;
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT4, CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="FilledOrders" status="run" time="0.046873" timestamp="2020-02-18T23:35:59.591599">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\FilledOrders.tc.py&quot;, line 21, in &lt;module&gt;
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT3, CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\FilledOrders.tc.py&quot;, line 21, in &lt;module&gt;
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT3, CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="ParkedOrders" status="run" time="0.046848" timestamp="2020-02-18T23:35:59.701000">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\ParkedOrders.tc.py&quot;, line 21, in &lt;module&gt;
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT5, CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\ParkedOrders.tc.py&quot;, line 21, in &lt;module&gt;
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT5, CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="RejectedOrders" status="run" time="0.047173" timestamp="2020-02-18T23:35:59.763477">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\RejectedOrders.tc.py&quot;, line 21, in &lt;module&gt;
+    O1, O2, O3, O4, O5, O6, O7, O8 = QMOrdersQueryScenarios.create_orders(CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\RejectedOrders.tc.py&quot;, line 21, in &lt;module&gt;
+    O1, O2, O3, O4, O5, O6, O7, O8 = QMOrdersQueryScenarios.create_orders(CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="WorkingOrders" status="run" time="0.046941" timestamp="2020-02-18T23:35:59.826058">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\WorkingOrders.tc.py&quot;, line 22, in &lt;module&gt;
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT2, CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\WorkingOrders.tc.py&quot;, line 22, in &lt;module&gt;
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT2, CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py&quot;, line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

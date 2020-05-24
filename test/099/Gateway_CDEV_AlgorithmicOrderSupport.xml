@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="34" testsuite_failed="False" time="33.469868" timestamp="2020-02-06T06:43:24.011270">
+ <properties>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgorithmicOrderSupport/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="18"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgorithmicOrderSupport"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="AlgorithmicOrderSupport" skipped="0" tests="34" testsuite_failed="False" time="33.469868" timestamp="2020-02-06T06:43:24.011270">
+  <testsuite failures="0" name="OrderActions" skipped="0" tests="12" testsuite_failed="False" time="1.703156" timestamp="2020-02-06T06:43:32.964722">
+   <testcase name="Algostrategy_And_ClientOrderExtra_In_ACTIVATEORDER" status="run" time="0.859395" timestamp="2020-02-06T06:43:33.074075"/>
+   <testcase name="Algostrategy_And_ClientOrderExtra_In_CANCELORDER" status="run" time="0.953434" timestamp="2020-02-06T06:43:33.105329"/>
+   <testcase name="Algostrategy_And_ClientOrderExtra_In_MODORDER" status="run" time="1.3748179999999999" timestamp="2020-02-06T06:43:33.152424"/>
+   <testcase name="Algostrategy_And_ClientOrderExtra_In_PARKORDER" status="run" time="1.124181" timestamp="2020-02-06T06:43:33.168920"/>
+   <testcase name="Algostrategy_And_ClientOrderExtra_In_PO" status="run" time="0.671927" timestamp="2020-02-06T06:43:33.214699"/>
+   <testcase name="ClientOrderExtra_In_ACTIVATEORDER" status="run" time="0.781268" timestamp="2020-02-06T06:43:33.245956"/>
+   <testcase name="ClientOrderExtra_In_CANCELORDER" status="run" time="1.140667" timestamp="2020-02-06T06:43:33.308450"/>
+   <testcase name="ClientOrderExtra_In_MODORDER" status="run" time="1.203166" timestamp="2020-02-06T06:43:33.355327"/>
+   <testcase name="ClientOrderExtra_In_PARKORDER" status="run" time="1.062535" timestamp="2020-02-06T06:43:33.402208"/>
+   <testcase name="ClientOrderExtra_In_PO" status="run" time="0.733385" timestamp="2020-02-06T06:43:33.465933"/>
+   <testcase name="ClientOrderExtra_Modification_InParkedOrder" status="run" time="0.937527" timestamp="2020-02-06T06:43:33.542837"/>
+   <testcase name="ClientOrderExtra_Only_Modification" status="run" time="0.734413" timestamp="2020-02-06T06:43:33.620963"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderRejects" skipped="0" tests="4" testsuite_failed="False" time="0.687557" timestamp="2020-02-06T06:43:34.714753">
+   <testcase name="LMT" status="run" time="0.372873" timestamp="2020-02-06T06:43:34.826264"/>
+   <testcase name="MKT" status="run" time="0.359623" timestamp="2020-02-06T06:43:34.855389"/>
+   <testcase name="STL" status="run" time="0.390628" timestamp="2020-02-06T06:43:34.902263"/>
+   <testcase name="STP" status="run" time="0.37491" timestamp="2020-02-06T06:43:34.949239"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderRouting" skipped="0" tests="2" testsuite_failed="False" time="0.516401" timestamp="2020-02-06T06:43:35.449164">
+   <testcase name="GWAutoTest2" status="run" time="0.234372" timestamp="2020-02-06T06:43:35.589804"/>
+   <testcase name="GWAutoTest" status="run" time="0.234361" timestamp="2020-02-06T06:43:35.636684"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderSpecs" skipped="0" tests="16" testsuite_failed="False" time="13.01457" timestamp="2020-02-06T06:43:35.997580">
+   <testcase name="Iceberg_LMT" status="run" time="1.7656939999999999" timestamp="2020-02-06T06:43:38.183617"/>
+   <testcase name="LMT" status="run" time="1.7656770000000002" timestamp="2020-02-06T06:43:38.214877"/>
+   <testcase name="MKT" status="run" time="1.7968920000000002" timestamp="2020-02-06T06:43:38.246162"/>
+   <testcase name="Other_LMT" status="run" time="0.203135" timestamp="2020-02-06T06:43:38.292990"/>
+   <testcase name="Other_MKT" status="run" time="0.250008" timestamp="2020-02-06T06:43:38.324242"/>
+   <testcase name="Other_STL" status="run" time="0.218749" timestamp="2020-02-06T06:43:38.371124"/>
+   <testcase name="Other_STP" status="run" time="0.171868" timestamp="2020-02-06T06:43:38.418005"/>
+   <testcase name="QT_STL" status="run" time="10.187502" timestamp="2020-02-06T06:43:38.449606"/>
+   <testcase name="QT_STP" status="run" time="10.156592" timestamp="2020-02-06T06:43:38.511753"/>
+   <testcase name="QT_Trail_STL" status="run" time="10.141036" timestamp="2020-02-06T06:43:38.589873"/>
+   <testcase name="QT_Trail_STP" status="run" time="10.062673" timestamp="2020-02-06T06:43:38.636921"/>
+   <testcase name="STL" status="run" time="1.578133" timestamp="2020-02-06T06:43:38.668054"/>
+   <testcase name="STP" status="run" time="1.515667" timestamp="2020-02-06T06:43:38.761777"/>
+   <testcase name="Trail_LMT" status="run" time="1.093805" timestamp="2020-02-06T06:43:38.808636"/>
+   <testcase name="Trail_STL" status="run" time="9.844088" timestamp="2020-02-06T06:43:38.855506"/>
+   <testcase name="Trail_STP" status="run" time="9.641024999999999" timestamp="2020-02-06T06:43:38.964885"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

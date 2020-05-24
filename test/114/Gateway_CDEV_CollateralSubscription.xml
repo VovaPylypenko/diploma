@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="31" tests="31" testsuite_failed="True" time="13.156738" timestamp="2020-02-18T22:20:53.405020">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="16"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="CollateralSubscription" skipped="31" tests="31" testsuite_failed="True" time="13.156738" timestamp="2020-02-18T22:20:53.405020">
+  <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 33, in invoke_script
+    exec(code, globals())
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription\test_suite_td.py&quot;, line 9, in &lt;module&gt;
+    castClient.Logoff()
+NameError: name 'castClient' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 33, in invoke_script
+    exec(code, globals())
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription\test_suite_td.py&quot;, line 9, in &lt;module&gt;
+    castClient.Logoff()
+NameError: name 'castClient' is not defined
+</failure>
+  <testsuite failures="0" name="CollateralReportValues" skipped="4" tests="4" testsuite_failed="False">
+   <testcase name="AllowableMarginCredit" status="notrun"/>
+   <testcase name="Loss" status="notrun"/>
+   <testcase name="Profit" status="notrun"/>
+   <testsuite failures="0" name="TotalMargin" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="TotalMargin" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="CollateralUpdates" skipped="8" tests="8" testsuite_failed="False">
+   <testcase name="AccountAuthorizationRemoval" status="notrun"/>
+   <testcase name="CastOrderActions" status="notrun"/>
+   <testcase name="GroupAccountOrderActions" status="notrun"/>
+   <testcase name="OminbusAccountOrderActions" status="notrun"/>
+   <testcase name="OrderTransactions" status="notrun"/>
+   <testsuite failures="0" name="CastAccountSettings" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="CastAccountSettings" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="CastPositionActions" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="CastPositionActions" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="CastTraderSettings" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="CastTraderSettings" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="PartialQty" skipped="3" tests="3" testsuite_failed="False">
+   <testcase name="CASTPositionMargin" status="notrun"/>
+   <testcase name="OrderMargin" status="notrun"/>
+   <testcase name="OrderPositionMargin" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Subscription" skipped="16" tests="16" testsuite_failed="False">
+   <testcase name="Multi_Snapshot_NoInqId" status="notrun"/>
+   <testcase name="Multi_Snapshot" status="notrun"/>
+   <testcase name="Multi_Subscribe_NoInqId" status="notrun"/>
+   <testcase name="Multi_UnsubscribeOnSessionClose" status="notrun"/>
+   <testcase name="Multi_Unsubscribe_NoInqId" status="notrun"/>
+   <testcase name="Multi_Unsubscribe" status="notrun"/>
+   <testcase name="SubsTypes_InvalidSubscribe" status="notrun"/>
+   <testcase name="SubsTypes_InvalidUnsubscribe" status="notrun"/>
+   <testcase name="SubsTypes_Resubscribe" status="notrun"/>
+   <testcase name="SubsTypes_Snapshot_NoInqId" status="notrun"/>
+   <testcase name="SubsTypes_Snapshot" status="notrun"/>
+   <testcase name="SubsTypes_Subscribe_NoInqId" status="notrun"/>
+   <testcase name="SubsTypes_UnsubscribeByAccountid" status="notrun"/>
+   <testcase name="SubsTypes_UnsubscribeByACCTID" status="notrun"/>
+   <testcase name="SubsTypes_UnsubscribeOnSessionClose" status="notrun"/>
+   <testcase name="SubsTypes_Unsubscribe_NoInqId" status="notrun"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

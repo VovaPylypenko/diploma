@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="15" skipped="0" tests="15" testsuite_failed="True" time="713.305278" timestamp="2020-02-19T00:43:15.285808">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="IMSSimulator"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="15" name="VariableTickSize" skipped="0" tests="15" testsuite_failed="True" time="713.305278" timestamp="2020-02-19T00:43:15.285808">
+  <testcase name="TC01_TradePriceLimit_PriceBased" status="run" time="0.046623" timestamp="2020-02-19T00:54:57.840680">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC01_TradePriceLimit_PriceBased_tc.py&quot;, line 11, in &lt;module&gt;
+    contract = Futures1, orderPrice = 999945, lowerBound = 999950, upperBound = 1001000))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC01_TradePriceLimit_PriceBased_tc.py&quot;, line 11, in &lt;module&gt;
+    contract = Futures1, orderPrice = 999945, lowerBound = 999950, upperBound = 1001000))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC02_TradePriceLimit_TimeBased" status="run" time="0.015552" timestamp="2020-02-19T00:54:57.918638">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC02_TradePriceLimit_TimeBased_tc.py&quot;, line 10, in &lt;module&gt;
+    contract = Options1, orderPrice = 9945, lowerBound = 9950, upperBound = 10050))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC02_TradePriceLimit_TimeBased_tc.py&quot;, line 10, in &lt;module&gt;
+    contract = Options1, orderPrice = 9945, lowerBound = 9950, upperBound = 10050))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC03_SynMktStp_PriceBased" status="run" time="2.062592" timestamp="2020-02-19T00:54:57.981051">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC03_SynMktStp_PriceBased_tc.py&quot;, line 9, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(Options3, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC03_SynMktStp_PriceBased_tc.py&quot;, line 9, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(Options3, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC04_SynMktStp_TimeBased" status="run" time="2.043289" timestamp="2020-02-19T00:55:00.094162">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC04_SynMktStp_TimeBased_tc.py&quot;, line 9, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(Options4, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC04_SynMktStp_TimeBased_tc.py&quot;, line 9, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(Options4, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC05_SpreadFill" status="run" time="0.018854" timestamp="2020-02-19T00:55:02.184310">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC05_SpreadFill_tc.py&quot;, line 23, in &lt;module&gt;
+    PlaceAndFillSpread(9999.9, 10000, 0.1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC05_SpreadFill_tc.py&quot;, line 13, in PlaceAndFillSpread
+    order = OrderActionUtils.CreateOrder(Spread, OrderSide.Buy, 1, OrderType.Limit, limitPrice=fillPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC05_SpreadFill_tc.py&quot;, line 23, in &lt;module&gt;
+    PlaceAndFillSpread(9999.9, 10000, 0.1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC05_SpreadFill_tc.py&quot;, line 13, in PlaceAndFillSpread
+    order = OrderActionUtils.CreateOrder(Spread, OrderSide.Buy, 1, OrderType.Limit, limitPrice=fillPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC06_TheoPrice_DisableAskBid_NOV_PriceBased" status="run" time="0.031254" timestamp="2020-02-19T00:55:02.278079">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC06_TheoPrice_DisableAskBid_NOV_PriceBased_tc.py&quot;, line 11, in &lt;module&gt;
+    acctRS6.PlaceOrder_Filled(Options6, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC06_TheoPrice_DisableAskBid_NOV_PriceBased_tc.py&quot;, line 11, in &lt;module&gt;
+    acctRS6.PlaceOrder_Filled(Options6, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC07_TheoPrice_NOV_PriceBased" status="run" time="0.031237" timestamp="2020-02-19T00:55:02.356210">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC07_TheoPrice_NOV_PriceBased_tc.py&quot;, line 11, in &lt;module&gt;
+    acctRS7.PlaceOrder_Filled(Options6, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC07_TheoPrice_NOV_PriceBased_tc.py&quot;, line 11, in &lt;module&gt;
+    acctRS7.PlaceOrder_Filled(Options6, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC08_TheoPrice_DisableAskBid_OTE_PriceBased" status="run" time="0.031268" timestamp="2020-02-19T00:55:02.449961">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC08_TheoPrice_DisableAskBid_OTE_PriceBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS8.PlaceOrder_Filled(Options11, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC08_TheoPrice_DisableAskBid_OTE_PriceBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS8.PlaceOrder_Filled(Options11, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC09_TheoPrice_OTE_PriceBased" status="run" time="0.031252" timestamp="2020-02-19T00:55:02.574958">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC09_TheoPrice_OTE_PriceBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS9.PlaceOrder_Filled(Options11, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC09_TheoPrice_OTE_PriceBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS9.PlaceOrder_Filled(Options11, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC10_TheoPrice_DisableAskBid_NOV_TimeBased" status="run" time="0.015617" timestamp="2020-02-19T00:55:02.653092">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC10_TheoPrice_DisableAskBid_NOV_TimeBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS10.PlaceOrder_Filled(Options16, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC10_TheoPrice_DisableAskBid_NOV_TimeBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS10.PlaceOrder_Filled(Options16, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC11_TheoPrice_NOV_TimeBased" status="run" time="0.047517" timestamp="2020-02-19T00:55:02.731228">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC11_TheoPrice_NOV_TimeBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS11.PlaceOrder_Filled(Options16, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC11_TheoPrice_NOV_TimeBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS11.PlaceOrder_Filled(Options16, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC12_TheoPrice_DisableAskBid_OTE_TimeBased" status="run" time="0.031254" timestamp="2020-02-19T00:55:02.840595">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC12_TheoPrice_DisableAskBid_OTE_TimeBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS12.PlaceOrder_Filled(Options26, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC12_TheoPrice_DisableAskBid_OTE_TimeBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS12.PlaceOrder_Filled(Options26, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC13_TheoPrice_OTE_TimeBased" status="run" time="0.03125" timestamp="2020-02-19T00:55:03.012482">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC13_TheoPrice_OTE_TimeBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS13.PlaceOrder_Filled(Options26, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC13_TheoPrice_OTE_TimeBased_tc.py&quot;, line 10, in &lt;module&gt;
+    acctRS13.PlaceOrder_Filled(Options26, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC14_TheoPrice_DisableAskBid_NOV_TimeBased" status="run" time="0.031144" timestamp="2020-02-19T00:55:03.106376">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC14_TheoPrice_DisableAskBid_NOV_TimeBased_tc.py&quot;, line 11, in &lt;module&gt;
+    acctRS14.PlaceOrder_Filled(Options21, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC14_TheoPrice_DisableAskBid_NOV_TimeBased_tc.py&quot;, line 11, in &lt;module&gt;
+    acctRS14.PlaceOrder_Filled(Options21, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="TC15_TheoPrice_NOV_TimeBased" status="run" time="0.046865" timestamp="2020-02-19T00:55:03.199990">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC15_TheoPrice_NOV_TimeBased_tc.py&quot;, line 12, in &lt;module&gt;
+    acctRS15.PlaceOrder_Filled(Options21, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize\TC15_TheoPrice_NOV_TimeBased_tc.py&quot;, line 12, in &lt;module&gt;
+    acctRS15.PlaceOrder_Filled(Options21, OrderSide.Buy, 1, OrderType.Limit, fillPrice = 0)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py&quot;, line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+ </testsuite>
+</testsuites>

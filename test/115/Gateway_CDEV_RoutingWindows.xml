@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="19" testsuite_failed="False" time="22.625828" timestamp="2020-02-19T19:04:13.007928">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="RoutingWindows" skipped="0" tests="19" testsuite_failed="False" time="22.625828" timestamp="2020-02-19T19:04:13.007928">
+  <testsuite failures="0" name="OrderSpecOverriding" skipped="0" tests="19" testsuite_failed="False" time="4.672617" timestamp="2020-02-19T19:04:25.680244">
+   <testcase name="ActivateParkedOrders" status="run" time="0.250028" timestamp="2020-02-19T19:04:25.742759"/>
+   <testcase name="LimitDayOrders" status="run" time="0.140596" timestamp="2020-02-19T19:04:26.024045"/>
+   <testcase name="LimitFakOrders" status="run" time="0.15625" timestamp="2020-02-19T19:04:26.227159"/>
+   <testcase name="LimitFokOrders" status="run" time="0.1254" timestamp="2020-02-19T19:04:26.430312"/>
+   <testcase name="LimitGtcOrders" status="run" time="0.171094" timestamp="2020-02-19T19:04:26.602948"/>
+   <testcase name="LimitGtdOrders" status="run" time="0.203483" timestamp="2020-02-19T19:04:26.820933"/>
+   <testcase name="LimitIcebergDayOrders" status="run" time="0.203128" timestamp="2020-02-19T19:04:27.086554"/>
+   <testcase name="LimitIcebergGtcOrders" status="run" time="0.218774" timestamp="2020-02-19T19:04:27.336559"/>
+   <testcase name="MarketOrders" status="run" time="0.203142" timestamp="2020-02-19T19:04:27.617817"/>
+   <testcase name="StopDayOrders" status="run" time="0.125032" timestamp="2020-02-19T19:04:27.867826"/>
+   <testcase name="StopFakOrders" status="run" time="0.171397" timestamp="2020-02-19T19:04:28.040193"/>
+   <testcase name="StopFokOrders" status="run" time="0.156255" timestamp="2020-02-19T19:04:28.258460"/>
+   <testcase name="StopGtcOrders" status="run" time="0.171885" timestamp="2020-02-19T19:04:28.477219"/>
+   <testcase name="StopGtdOrders" status="run" time="0.187371" timestamp="2020-02-19T19:04:28.727370"/>
+   <testcase name="StopLimitDayOrders" status="run" time="0.173034" timestamp="2020-02-19T19:04:28.945980"/>
+   <testcase name="StopLimitFakOrders" status="run" time="0.250012" timestamp="2020-02-19T19:04:29.164738"/>
+   <testcase name="StopLimitFokOrders" status="run" time="0.202942" timestamp="2020-02-19T19:04:29.493070"/>
+   <testcase name="StopLimitGtcOrders" status="run" time="0.249994" timestamp="2020-02-19T19:04:29.742904"/>
+   <testcase name="StopLimitGtdOrders" status="run" time="0.234452" timestamp="2020-02-19T19:04:30.055398"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

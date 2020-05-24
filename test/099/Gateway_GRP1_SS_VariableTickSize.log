@@ -1,0 +1,25 @@
+11:18:25.92  Test starded without threads
+09:18:26.468 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+09:18:26.468 Python Module Path 'ScriptKit/TroubleMaker' added.
+09:18:26.468 Python Module Path 'ScriptKit' added.
+09:18:26.468 Python Module Path 'Scripts/Gateway/PythonModules' added.
+09:18:26.828 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SynthSpread_VariableTickSize' full execution.
+09:18:26.859 Suite '.'. [8 test cases, 0 sub-suites]
+09:18:41.250 Case 'TC01_Secondary_PriceBased' execution.
+09:18:46.047 Case 'TC01_Secondary_PriceBased' succeeded.
+09:18:46.110 Case 'TC02_Secondary_TimeBased' execution.
+09:18:51.079 Case 'TC02_Secondary_TimeBased' succeeded.
+09:18:51.141 Case 'TC07_SecondaryTrailing_PriceBased' execution.
+09:18:58.345 Case 'TC07_SecondaryTrailing_PriceBased' succeeded.
+09:18:58.391 Case 'TC08_SecondaryTrailing_TimeBased' execution.
+09:19:06.251 Case 'TC08_SecondaryTrailing_TimeBased' succeeded.
+09:19:06.314 Case 'TC09_SecondaryPayUp_PriceBased' execution.
+09:19:12.970 Case 'TC09_SecondaryPayUp_PriceBased' succeeded.
+09:19:13.017 Case 'TC10_SecondaryPayUp_TimeBased' execution.
+09:19:19.486 Case 'TC10_SecondaryPayUp_TimeBased' succeeded.
+09:19:19.549 Case 'TC11_Epsilon_PriceBased' execution.
+09:19:26.424 Case 'TC11_Epsilon_PriceBased' succeeded.
+09:19:26.471 Case 'TC12_Epsilon_TimeBased' execution.
+09:19:33.674 Case 'TC12_Epsilon_TimeBased' succeeded.
+09:19:33.908 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SynthSpread_VariableTickSize' execution finished. It took 0:01:07.064884.
+09:19:33.908 Test cases results: 8 total, 8 succeeded, 0 failed, 0 skipped.

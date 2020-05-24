@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="36" testsuite_failed="False" time="395.280124" timestamp="2020-02-06T06:56:54.541972">
+ <properties>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixForMessengers/Suites/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_F4M"/>
+  <property name="scripts-cfg-instance" value="SF_F4M"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixForMessengers/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Suites" skipped="0" tests="36" testsuite_failed="False" time="395.280124" timestamp="2020-02-06T06:56:54.541972">
+  <testsuite failures="0" name="AuthorizedTrading" skipped="0" tests="2" testsuite_failed="False" time="110.629279" timestamp="2020-02-06T06:57:07.698747">
+   <testcase name="AuthorizedAccounts" status="run" time="14.203651" timestamp="2020-02-06T06:57:07.808060"/>
+   <testcase name="AuthorizedContracts" status="run" time="96.191072" timestamp="2020-02-06T06:57:22.058591"/>
+  </testsuite>
+  <testsuite failures="0" name="CASTOperations" skipped="0" tests="7" testsuite_failed="False" time="119.817201" timestamp="2020-02-06T06:58:58.359016">
+   <testcase name="Changing enabled markets in CAST" status="run" time="2.125093" timestamp="2020-02-06T06:58:59.249662"/>
+   <testcase name="Changing traders active state" status="run" time="31.563677" timestamp="2020-02-06T06:59:01.421618"/>
+   <testcase name="Changing trading authorization to view only disables order placement" status="run" time="2.109454" timestamp="2020-02-06T06:59:33.047798"/>
+   <testcase name="Forced logoff" status="run" time="15.625546" timestamp="2020-02-06T06:59:35.219776"/>
+   <testcase name="RBRC_Contract" status="run" time="22.293891" timestamp="2020-02-06T06:59:51.021009"/>
+   <testcase name="RBRC_Instrument" status="run" time="22.266419" timestamp="2020-02-06T07:00:13.393062"/>
+   <testcase name="Route-Based Risk Control" status="run" time="22.313338" timestamp="2020-02-06T07:00:35.768828"/>
+  </testsuite>
+  <testsuite failures="0" name="ExternalExecutionAccount" skipped="0" tests="1" testsuite_failed="False" time="26.563544" timestamp="2020-02-06T07:00:58.207178">
+   <testcase name="External execution account" status="run" time="26.375998" timestamp="2020-02-06T07:00:58.300922"/>
+  </testsuite>
+  <testsuite failures="0" name="Fills" skipped="0" tests="2" testsuite_failed="False" time="4.609539" timestamp="2020-02-06T07:01:24.801902">
+   <testcase name="Fill report" status="run" time="2.140746" timestamp="2020-02-06T07:01:24.942530"/>
+   <testcase name="Strategy fill report" status="run" time="2.109513" timestamp="2020-02-06T07:01:27.223841"/>
+  </testsuite>
+  <testsuite failures="0" name="Logon" skipped="0" tests="6" testsuite_failed="False" time="12.234788" timestamp="2020-02-06T07:01:29.442720">
+   <testcase name="LogonWithReset" status="run" time="2.156334" timestamp="2020-02-06T07:01:29.536446"/>
+   <testcase name="SendLogonMessage" status="run" time="4.220001" timestamp="2020-02-06T07:01:31.786706"/>
+   <testcase name="SendLogonToNative" status="run" time="1.93781" timestamp="2020-02-06T07:01:36.099181"/>
+   <testcase name="SendLogonWithInvalidPassword" status="run" time="1.140686" timestamp="2020-02-06T07:01:38.114874"/>
+   <testcase name="SendLogonWithInvalidTraderClass" status="run" time="1.125003" timestamp="2020-02-06T07:01:39.318084"/>
+   <testcase name="SendLogonWithInvalidUsername" status="run" time="1.125064" timestamp="2020-02-06T07:01:40.505597"/>
+  </testsuite>
+  <testsuite failures="0" name="MixedFIXandNativeClient" skipped="0" tests="2" testsuite_failed="False" time="8.515942" timestamp="2020-02-06T07:01:41.708765">
+   <testcase name="Compound" status="run" time="4.156429" timestamp="2020-02-06T07:01:41.818123"/>
+   <testcase name="MixedNativeAndFIXClientRequests" status="run" time="4.09394" timestamp="2020-02-06T07:01:46.052678"/>
+  </testsuite>
+  <testsuite failures="0" name="ModifyCancelRejected" skipped="0" tests="2" testsuite_failed="False" time="5.547259" timestamp="2020-02-06T07:01:50.271661">
+   <testcase name="OrderFromOtherAccount" status="run" time="3.140748" timestamp="2020-02-06T07:01:50.396579"/>
+   <testcase name="OrderInPendingState" status="run" time="2.125032" timestamp="2020-02-06T07:01:53.599877"/>
+  </testsuite>
+  <testsuite failures="0" name="OmnibusAccounts" skipped="0" tests="2" testsuite_failed="False" time="6.969006" timestamp="2020-02-06T07:01:55.881154">
+   <testcase name="ExecAcctIDCalculationForInternalOmnibus" status="run" time="3.28138" timestamp="2020-02-06T07:01:56.053047"/>
+   <testcase name="ExecAcctIDCalculationForRegularOmnibus" status="run" time="3.374974" timestamp="2020-02-06T07:01:59.397066"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderEventsDispatching" skipped="0" tests="1" testsuite_failed="False" time="12.375381" timestamp="2020-02-06T07:02:02.897111">
+   <testcase name="OrderEventsDispatching" status="run" time="12.187935" timestamp="2020-02-06T07:02:03.006432"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderMassCancelRequest" skipped="0" tests="5" testsuite_failed="False" time="15.094859" timestamp="2020-02-06T07:02:15.334995">
+   <testcase name="Mass cancel for order failed to modify" status="run" time="4.171346" timestamp="2020-02-06T07:02:15.460778"/>
+   <testcase name="Mass cancel for order failed to place" status="run" time="2.109417" timestamp="2020-02-06T07:02:19.694563"/>
+   <testcase name="Mass cancel of orders in various states" status="run" time="3.109477" timestamp="2020-02-06T07:02:21.882153"/>
+   <testcase name="Mass cancel request for not authorized account" status="run" time="3.109463" timestamp="2020-02-06T07:02:25.054128"/>
+   <testcase name="Mass cancel request type" status="run" time="2.109473" timestamp="2020-02-06T07:02:28.241705"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderStatus" skipped="0" tests="3" testsuite_failed="False" time="34.360619" timestamp="2020-02-06T07:02:30.476171">
+   <testcase name="Order Mass Status Request reports all working or filled orders" status="run" time="3.2031330000000002" timestamp="2020-02-06T07:02:30.616918"/>
+   <testcase name="Order Status Request" status="run" time="3.125113" timestamp="2020-02-06T07:02:33.882552"/>
+   <testcase name="Orders are restored after messenger restart" status="run" time="27.672909" timestamp="2020-02-06T07:02:37.085768"/>
+  </testsuite>
+  <testsuite failures="0" name="PlaceModifyCancel" skipped="0" tests="3" testsuite_failed="False" time="24.641529" timestamp="2020-02-06T07:03:04.883678">
+   <testcase name="CheckOrderRequestFields" status="run" time="3.109506" timestamp="2020-02-06T07:03:05.008674"/>
+   <testcase name="PlaceModifyCancel" status="run" time="19.031947" timestamp="2020-02-06T07:03:08.211934"/>
+   <testcase name="SyntheticOrders" status="run" time="2.125098" timestamp="2020-02-06T07:03:27.337628"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

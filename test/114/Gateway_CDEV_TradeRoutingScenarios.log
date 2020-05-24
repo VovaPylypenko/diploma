@@ -1,0 +1,373 @@
+ 1:44:55.57  Test starded without threads
+23:44:56.032 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:44:56.032 Python Module Path 'ScriptKit' added.
+23:44:56.032 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios' added.
+23:44:56.532 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios' filtered execution.
+23:44:56.563 Suite '.'. [10 test cases, 2 sub-suites]
+23:45:06.892 Case 'BustLastFill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\BustLastFill.tc.py", line 20, in <module>
+    order1 = OrderActionUtils.CreateOrder(futureContract, OrderSide.Buy, 2, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:06.908 Case 'BustLastFill' failed.
+23:45:06.923 Case 'FixedIncome' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\FixedIncome.tc.py", line 6, in <module>
+    trs.P_C_C_CR()
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\TradeRoutingScenarios.py", line 25, in P_C_C_CR
+    order = OrderActionUtils.CreateOrder(self.__contractName, OrderSide.Sell, 13, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:06.923 Case 'FixedIncome' failed.
+23:45:06.939 Case 'InvalidSymbol' execution.
+23:45:06.970 Case 'InvalidSymbol' succeeded.
+23:45:06.986 Case 'LimitDAY' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\LimitDAY.tc.py", line 6, in <module>
+    trs.P_C_C_CR()
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\TradeRoutingScenarios.py", line 25, in P_C_C_CR
+    order = OrderActionUtils.CreateOrder(self.__contractName, OrderSide.Sell, 13, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.001 Case 'LimitDAY' failed.
+23:45:07.017 Case 'ModifyCtiOrigin' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\ModifyCtiOrigin.tc.py", line 6, in <module>
+    order = OrderActionUtils.CreateOrder(futureContract, OrderSide.Sell, 3, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.033 Case 'ModifyCtiOrigin' failed.
+23:45:07.049 Case 'OrderFill_SettlementDate' execution.
+23:45:07.079 Case 'PutOption' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PutOption.tc.py", line 6, in <module>
+    trs.P_C_C_CR()
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\TradeRoutingScenarios.py", line 25, in P_C_C_CR
+    order = OrderActionUtils.CreateOrder(self.__contractName, OrderSide.Sell, 13, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.111 Case 'PutOption' failed.
+23:45:07.142 Case 'RejectZeroQuantityModify' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\RejectZeroQuantityModify.tc.py", line 7, in <module>
+    order = OrderActionUtils.CreateOrder(futureContract, OrderSide.Sell, 2, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.158 Case 'RejectZeroQuantityModify' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\OrderFill_SettlementDate.tc.py", line 30, in <module>
+    order = OrderActionUtils.CreateOrder(futureContract, OrderSide.Sell, 4, OrderType.Limit, limitPrice=99)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.158 Case 'OrderFill_SettlementDate' failed.
+23:45:07.174 Case 'Spread' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\Spread.tc.py", line 6, in <module>
+    trs.P_C_C_CR()
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\TradeRoutingScenarios.py", line 25, in P_C_C_CR
+    order = OrderActionUtils.CreateOrder(self.__contractName, OrderSide.Sell, 13, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.190 Case 'Spread' failed.
+23:45:07.204 Case 'CallOption' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\CallOption.tc.py", line 6, in <module>
+    trs.P_C_C_CR()
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\TradeRoutingScenarios.py", line 25, in P_C_C_CR
+    order = OrderActionUtils.CreateOrder(self.__contractName, OrderSide.Sell, 13, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.220 Case 'CallOption' failed.
+23:45:07.611 Suite 'AggressorIndicator_ts.py'. [6 test cases, 0 sub-suites]
+23:45:07.673 Case 'FullFill_FixedIncome' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 104, in Test_FullFill_FixedIncome
+    AggressorIndicatorScenarios.PlaceAndFullFill(accountFI, fixedIncomeContract, placeWithAggressorIndicator=True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 76, in PlaceAndFullFill
+    doWithPlaceAggressorIndicator(None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 72, in doWithPlaceAggressorIndicator
+    doWithFillAggressorIndicator(None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 66, in doWithFillAggressorIndicator
+    order = AggressorIndicatorScenarios.PlaceOrder(acctInfo, contractName, placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 52, in PlaceOrder
+    limitPrice=AggressorIndicatorScenarios.orderPrice, aggressive=placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.689 Case 'FullFill_FixedIncome' failed.
+23:45:07.704 Case 'FullFill_Future' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 110, in Test_FullFill_Future
+    AggressorIndicatorScenarios.PlaceAndFullFill(account, futureContract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 76, in PlaceAndFullFill
+    doWithPlaceAggressorIndicator(None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 72, in doWithPlaceAggressorIndicator
+    doWithFillAggressorIndicator(None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 66, in doWithFillAggressorIndicator
+    order = AggressorIndicatorScenarios.PlaceOrder(acctInfo, contractName, placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 52, in PlaceOrder
+    limitPrice=AggressorIndicatorScenarios.orderPrice, aggressive=placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.720 Case 'FullFill_Future' failed.
+23:45:07.752 Case 'PartialFill_Future' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 113, in Test_PartialFill_Future
+    AggressorIndicatorScenarios.PlaceAndPartialFill(account, futureContract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 98, in PlaceAndPartialFill
+    doWithPlaceAggressorIndicator(None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 83, in doWithPlaceAggressorIndicator
+    orderToFill = AggressorIndicatorScenarios.PlaceOrder(acctInfo, contractName, placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 52, in PlaceOrder
+    limitPrice=AggressorIndicatorScenarios.orderPrice, aggressive=placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.767 Case 'PartialFill_Future' failed.
+23:45:07.783 Case 'FullFill_NativeStrategy' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 122, in Test_FullFill_NativeStrategy
+    doTest(None, None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 120, in doTest
+    AggressorIndicatorScenarios.PlaceAndFullFill(account, spreadContract, fillLegInfoList=fillLegInfoList)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 76, in PlaceAndFullFill
+    doWithPlaceAggressorIndicator(None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 72, in doWithPlaceAggressorIndicator
+    doWithFillAggressorIndicator(None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 66, in doWithFillAggressorIndicator
+    order = AggressorIndicatorScenarios.PlaceOrder(acctInfo, contractName, placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 52, in PlaceOrder
+    limitPrice=AggressorIndicatorScenarios.orderPrice, aggressive=placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.798 Case 'FullFill_NativeStrategy' failed.
+23:45:07.814 Case 'PartialFill_NativeStrategy' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 133, in Test_PartialFill_NativeStrategy
+    doTest(None, None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 131, in doTest
+    AggressorIndicatorScenarios.PlaceAndPartialFill(account, spreadContract, fillLegInfoList=fillLegInfoList)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 98, in PlaceAndPartialFill
+    doWithPlaceAggressorIndicator(None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 83, in doWithPlaceAggressorIndicator
+    orderToFill = AggressorIndicatorScenarios.PlaceOrder(acctInfo, contractName, placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 52, in PlaceOrder
+    limitPrice=AggressorIndicatorScenarios.orderPrice, aggressive=placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.814 Case 'PartialFill_NativeStrategy' failed.
+23:45:07.861 Case 'PartialFill_FixedIncome' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 107, in Test_PartialFill_FixedIncome
+    AggressorIndicatorScenarios.PlaceAndPartialFill(accountFI, fixedIncomeContract, placeWithAggressorIndicator=True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 98, in PlaceAndPartialFill
+    doWithPlaceAggressorIndicator(None)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 83, in doWithPlaceAggressorIndicator
+    orderToFill = AggressorIndicatorScenarios.PlaceOrder(acctInfo, contractName, placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\TradeRoutingScenarios\AggressorIndicator_ts.py", line 52, in PlaceOrder
+    limitPrice=AggressorIndicatorScenarios.orderPrice, aggressive=placeAggressorIndicator)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:07.861 Case 'PartialFill_FixedIncome' failed.
+23:45:08.345 Suite 'PartialQty'. [2 test cases, 2 sub-suites]
+23:45:10.626 Case 'Iceberg' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PartialQty\Iceberg_tc.py", line 6, in <module>
+    pqContract, OrderSide.Buy, 0.5, OrderType.Limit, limitPrice=100, instructions=Common.iceberg, visibleSize=0.0001)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:10.658 Case 'Iceberg' failed.
+23:45:10.673 Case 'Synthetic' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PartialQty\Synthetic_tc.py", line 6, in <module>
+    pqContract, OrderSide.Buy, 0.5, OrderType.Limit, limitPrice=100, instructions=Common.trail, trailOffset=10)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:10.705 Case 'Synthetic' failed.
+23:45:10.814 Suite 'PartialQty\OrderActions_ts.py'. [4 test cases, 0 sub-suites]
+23:45:10.876 Case 'PlaceIncreaseCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PartialQty\OrderActions_ts.py", line 6, in TestPlaceIncreaseCancel
+    order = OrderActionUtils.CreateOrder(pqContract, OrderSide.Buy, 0.001, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:10.892 Case 'PlaceIncreaseCancel' failed.
+23:45:10.908 Case 'ParkActivateDecreaseCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PartialQty\OrderActions_ts.py", line 13, in TestParkActivateDecreaseCancel
+    order = OrderActionUtils.CreateOrder(pqContract, OrderSide.Sell, 0.002, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:10.939 Case 'ParkActivateDecreaseCancel' failed.
+23:45:10.970 Case 'PlaceReject' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PartialQty\OrderActions_ts.py", line 29, in TestPlaceReject
+    order = OrderActionUtils.CreateOrder(pqContract, OrderSide.Buy, 0.0005, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:10.970 Case 'PlaceReject' failed.
+23:45:11.064 Case 'PlaceModifyRejectCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PartialQty\OrderActions_ts.py", line 21, in TestPlaceModifyRejectCancel
+    order = OrderActionUtils.CreateOrder(pqContract, OrderSide.Buy, 1.001, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:11.080 Case 'PlaceModifyRejectCancel' failed.
+23:45:11.267 Suite 'PartialQty\OrderExecution_ts.py'. [4 test cases, 0 sub-suites]
+23:45:11.345 Case 'PartFill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PartialQty\OrderExecution_ts.py", line 6, in TestPartFill
+    order1 = OrderActionUtils.CreateOrder(pqContract, OrderSide.Buy, 1.5, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:11.376 Case 'PartFill' failed.
+23:45:11.392 Case 'FullFill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PartialQty\OrderExecution_ts.py", line 23, in TestFullFill
+    order1 = OrderActionUtils.CreateOrder(pqContract, OrderSide.Buy, 1.345, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:11.408 Case 'FullFill' failed.
+23:45:11.439 Case 'FillCorrect' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PartialQty\OrderExecution_ts.py", line 34, in TestFillCorrect
+    order1 = OrderActionUtils.CreateOrder(pqContract, OrderSide.Buy, 0.9, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:11.455 Case 'FillCorrect' failed.
+23:45:11.486 Case 'FillCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios\PartialQty\OrderExecution_ts.py", line 45, in TestFillCancel
+    order1 = OrderActionUtils.CreateOrder(pqContract, OrderSide.Sell, 1.23, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:11.486 Case 'FillCancel' failed.
+23:45:23.861 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios' execution finished. It took 0:00:27.266459.
+23:45:23.861 Test cases results: 26 total, 1 succeeded, 25 failed, 0 skipped.

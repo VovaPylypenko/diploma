@@ -1,0 +1,26 @@
+ 0:20:52.31  Test starded without threads
+22:20:52.889 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+22:20:52.889 Python Module Path 'Scripts/Gateway/PythonModules' added.
+22:20:52.889 Python Module Path 'ScriptKit' added.
+22:20:53.405 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription' full execution.
+22:20:53.436 Suite '.'. [0 test cases, 4 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription\test_suite_su.py", line 27, in <module>
+    order = OrderActionUtils.CreateOrder('F.SF.SFEP.Z99', OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:21:05.764 Suite '.' setup failed, child test cases and sub-suites will be skipped.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription\test_suite_td.py", line 9, in <module>
+    castClient.Logoff()
+NameError: name 'castClient' is not defined
+
+22:21:06.561 Suite '.' teardown failed.
+22:21:06.593 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription' execution finished. It took 0:00:13.156738.
+22:21:06.593 Test cases results: 31 total, 0 succeeded, 0 failed, 31 skipped.

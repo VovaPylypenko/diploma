@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="25" tests="25" testsuite_failed="False" time="11.515896" timestamp="2020-02-18T23:56:28.960817">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LongShortPositions"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="LongShortPositions" skipped="25" tests="25" testsuite_failed="False" time="11.515896" timestamp="2020-02-18T23:56:28.960817">
+  <testsuite failures="0" name="LiqAll" skipped="3" tests="3" testsuite_failed="False">
+   <testsuite failures="0" name="Synthetic" skipped="3" tests="3" testsuite_failed="False">
+    <testcase name="TC22_SyntheticSpread" status="notrun"/>
+    <testcase name="TC27_SSMapped1" status="notrun"/>
+    <testcase name="TC28_SSMapped2" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OpenClose_FillEffect" skipped="16" tests="16" testsuite_failed="False">
+   <testsuite failures="0" name="SyntheticStrategyOrder" skipped="16" tests="16" testsuite_failed="False">
+    <testcase name="AcceptableOpenClose" status="notrun"/>
+    <testcase name="EmptyFillEffect" status="notrun"/>
+    <testcase name="FillEffect" status="notrun"/>
+    <testcase name="LegMargin" status="notrun"/>
+    <testcase name="MixedLegs" status="notrun"/>
+    <testcase name="UnacceptableOpenClose" status="notrun"/>
+    <testsuite failures="0" name="MultilegSyntheticStrategyOrder" skipped="5" tests="5" testsuite_failed="False">
+     <testcase name="AcceptableOpenClose" status="notrun"/>
+     <testcase name="EmptyFillEffect" status="notrun"/>
+     <testcase name="FillEffect" status="notrun"/>
+     <testcase name="LegMargin" status="notrun"/>
+     <testcase name="UnacceptableOpenClose" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="WithNativeStrategyLeg" skipped="5" tests="5" testsuite_failed="False">
+     <testcase name="AcceptableOpenClose" status="notrun"/>
+     <testcase name="EmptyFillEffect" status="notrun"/>
+     <testcase name="FillEffect" status="notrun"/>
+     <testcase name="LegMargin" status="notrun"/>
+     <testcase name="UnacceptableOpenClose" status="notrun"/>
+    </testsuite>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="SpecType" skipped="6" tests="6" testsuite_failed="False">
+   <testsuite failures="0" name="Synthetic" skipped="6" tests="6" testsuite_failed="False">
+    <testcase name="TC22_SyntheticSpread" status="notrun"/>
+    <testcase name="TC23_SyntheticSpread_NativeSpreadLeg" status="notrun"/>
+    <testcase name="TC24_SyntheticSpread_SyntheticSpreadLeg" status="notrun"/>
+    <testcase name="TC25_SpecTypeMissing" status="notrun"/>
+    <testcase name="TC26_SpecTypeExtra" status="notrun"/>
+    <testcase name="TC27_SpecTypeDiffers" status="notrun"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

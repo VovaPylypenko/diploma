@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="7" tests="7" testsuite_failed="False" time="9.187785" timestamp="2020-02-19T20:15:27.777693">
+ <properties>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="AlgoExecLimits" skipped="7" tests="7" testsuite_failed="False" time="9.187785" timestamp="2020-02-19T20:15:27.777693">
+  <testsuite failures="0" name="Synthetic" skipped="7" tests="7" testsuite_failed="False" time="0.218791" timestamp="2020-02-19T20:15:36.496702">
+   <testsuite failures="0" name="Complex" skipped="5" tests="5" testsuite_failed="False">
+    <testcase name="02_SSPWithLegs" status="notrun"/>
+    <testcase name="03_ActivatedSOM" status="notrun"/>
+    <testcase name="06_SSPWithMappedLeg" status="notrun"/>
+    <testcase name="13_Trails" status="notrun"/>
+    <testcase name="14_SSPLegModifications" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="DoNotCount" skipped="2" tests="2" testsuite_failed="False">
+    <testcase name="03_SSPWithoutLegs" status="notrun"/>
+    <testcase name="04_NonActivatedSOM" status="notrun"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

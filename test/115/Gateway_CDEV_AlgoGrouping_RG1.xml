@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="29" testsuite_failed="False" time="44.829559" timestamp="2020-02-19T20:09:28.562712">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="AlgoGrouping" skipped="0" tests="29" testsuite_failed="False" time="44.829559" timestamp="2020-02-19T20:09:28.562712">
+  <testsuite failures="0" name="GWAutoTest1" skipped="0" tests="29" testsuite_failed="False" time="25.235213" timestamp="2020-02-19T20:09:47.813290">
+   <testsuite failures="0" name="Complex" skipped="0" tests="4" testsuite_failed="False" time="0.687029" timestamp="2020-02-19T20:09:47.860675">
+    <testcase name="01_DEA" status="run" time="0.171902" timestamp="2020-02-19T20:09:47.938305"/>
+    <testcase name="04_OmniDiffFCMs" status="run" time="0.062462" timestamp="2020-02-19T20:09:48.172721"/>
+    <testcase name="05_OmniSameFCMs" status="run" time="0.078134" timestamp="2020-02-19T20:09:48.297680"/>
+    <testcase name="06_NativeSpread" status="run" time="0.031262" timestamp="2020-02-19T20:09:48.453936"/>
+   </testsuite>
+   <testsuite failures="0" name="ExecutionAndInvestmentDecisions" skipped="0" tests="5" testsuite_failed="False" time="0.968763" timestamp="2020-02-19T20:09:48.578974">
+    <testcase name="01_CQGandFCMAlgo" status="run" time="0.109391" timestamp="2020-02-19T20:09:48.657111"/>
+    <testcase name="02_TraderShortCode" status="run" time="0.140633" timestamp="2020-02-19T20:09:48.844591"/>
+    <testcase name="03_Omnibus" status="run" time="0.124996" timestamp="2020-02-19T20:09:49.032098"/>
+    <testcase name="04_CareOrder" status="run" time="0.046831" timestamp="2020-02-19T20:09:49.219645"/>
+    <testcase name="05_DecisionOverrides" status="run" time="0.062487" timestamp="2020-02-19T20:09:49.407108"/>
+   </testsuite>
+   <testsuite failures="0" name="FCMRoute" skipped="0" tests="6" testsuite_failed="False" time="0.984402" timestamp="2020-02-19T20:09:49.579017">
+    <testcase name="01_ShortCodeNotConfigured_AlgoFlagSet" status="run" time="0.031479" timestamp="2020-02-19T20:09:49.704011"/>
+    <testcase name="02_ShortCodeNotConfigured_AlgoFlagNotSet" status="run" time="0.046923" timestamp="2020-02-19T20:09:49.813405"/>
+    <testcase name="03_ShortCodeConfigured_AlgoFlagSet" status="run" time="0.046972" timestamp="2020-02-19T20:09:49.922759"/>
+    <testcase name="04_DiffInstrOrRouteGroup_AlgoFlagSet" status="run" time="0.031244" timestamp="2020-02-19T20:09:50.047751"/>
+    <testcase name="05_DiffInstrOrRouteGroup_AlgoFlagNotSet" status="run" time="0.047286" timestamp="2020-02-19T20:09:50.157132"/>
+    <testcase name="06_Omnibus" status="run" time="0.234631" timestamp="2020-02-19T20:09:50.266508"/>
+   </testsuite>
+   <testsuite failures="0" name="InstrumentRouteGroup" skipped="0" tests="6" testsuite_failed="False" time="1.375032" timestamp="2020-02-19T20:09:50.610280">
+    <testcase name="01_ShortCodeNotConfigured_AlgoFlagSet" status="run" time="0.046595" timestamp="2020-02-19T20:09:50.720128"/>
+    <testcase name="02_ShortCodeNotConfigured_AlgoFlagNotSet" status="run" time="0.09369" timestamp="2020-02-19T20:09:50.844707"/>
+    <testcase name="03_ShortCodeConfigured_AlgoFlagSet" status="run" time="0.078312" timestamp="2020-02-19T20:09:51.016521"/>
+    <testcase name="04_DiffInstrOrRouteGroup_AlgoFlagSet" status="run" time="0.343872" timestamp="2020-02-19T20:09:51.157203"/>
+    <testcase name="05_DiffInstrOrRouteGroup_AlgoFlagNotSet" status="run" time="0.109366" timestamp="2020-02-19T20:09:51.563424"/>
+    <testcase name="06_Omnibus" status="run" time="0.203135" timestamp="2020-02-19T20:09:51.719673"/>
+   </testsuite>
+   <testsuite failures="0" name="OrderRequests" skipped="0" tests="8" testsuite_failed="False" time="11.828503" timestamp="2020-02-19T20:09:52.016570">
+    <testcase name="01_Modify" status="run" time="0.156247" timestamp="2020-02-19T20:09:52.110332"/>
+    <testcase name="02_Activate" status="run" time="0.155356" timestamp="2020-02-19T20:09:52.329979"/>
+    <testcase name="03_Cancel" status="run" time="0.124985" timestamp="2020-02-19T20:09:52.547842"/>
+    <testcase name="04_Park" status="run" time="0.109366" timestamp="2020-02-19T20:09:52.735336"/>
+    <testcase name="07_1_Compound_OCO" status="run" time="0.109362" timestamp="2020-02-19T20:09:52.907219"/>
+    <testcase name="07_2_Compound_OPO" status="run" time="0.156267" timestamp="2020-02-19T20:09:53.110346"/>
+    <testcase name="08_Activate_Parked_Short_Code" status="run" time="2.062598" timestamp="2020-02-19T20:09:53.344727"/>
+    <testcase name="09_Activate_Parked_Algorithm" status="run" time="8.281503" timestamp="2020-02-19T20:09:55.485445"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

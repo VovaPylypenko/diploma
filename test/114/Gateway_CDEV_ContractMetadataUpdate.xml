@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="1" skipped="0" tests="1" testsuite_failed="True" time="17.219354" timestamp="2020-02-19T00:40:51.359103">
+ <properties>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="IMSSimulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="1" name="ContractMetadataUpdate" skipped="0" tests="1" testsuite_failed="True" time="17.219354" timestamp="2020-02-19T00:40:51.359103">
+  <testcase name="AddingNewContracts" status="run" time="0.031235" timestamp="2020-02-19T00:41:07.078417">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate\AddingNewContracts_tc.py&quot;, line 12, in &lt;module&gt;
+    trader, acctInfo, exchange, contractList, rejectReason=GWRejectReason.Reject_CommodityIsDisabled())
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\ContractMetadataUpdate\PythonModules\SuiteHelper.py&quot;, line 59, in PlaceAllOrders
+    instructions=instructions, trailOffset=trailOffset, trailPeg=trailPeg)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate\AddingNewContracts_tc.py&quot;, line 12, in &lt;module&gt;
+    trader, acctInfo, exchange, contractList, rejectReason=GWRejectReason.Reject_CommodityIsDisabled())
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\ContractMetadataUpdate\PythonModules\SuiteHelper.py&quot;, line 59, in PlaceAllOrders
+    instructions=instructions, trailOffset=trailOffset, trailPeg=trailPeg)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+ </testsuite>
+</testsuites>

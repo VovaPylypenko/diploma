@@ -20,3 +20,10 @@ class Test:
 
     def __lt__(self, other):
         return self.__str__() < str(other)
+
+    def do_serialize(self):
+        return {
+            'file': self.file,
+            'test_suite': self.test_suite,
+            'test_case': self.test_case
+        }

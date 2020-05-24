@@ -1,0 +1,67 @@
+20:45:14.31  Test starded without threads
+18:45:14.847 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend/PythonModules' added.
+18:45:14.847 Python Module Path 'ScriptKit' added.
+18:45:14.847 Python Module Path 'Scripts/Gateway/PythonModules' added.
+18:45:14.847 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+18:45:15.378 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend' full execution.
+18:45:15.425 Suite '.'. [0 test cases, 4 sub-suites]
+18:45:24.941 Suite 'DurationModification'. [4 test cases, 0 sub-suites]
+18:45:25.050 Case 'DurationModification01' execution.
+18:45:25.175 Case 'DurationModification01' succeeded.
+18:45:25.237 Case 'DurationModification03' execution.
+18:45:25.347 Case 'DurationModification03' succeeded.
+18:45:25.409 Case 'DurationModification05' execution.
+18:45:25.487 Case 'DurationModification05' succeeded.
+18:45:25.550 Case 'DurationModification06' execution.
+18:45:25.628 Case 'DurationModification06' succeeded.
+18:45:25.753 Suite 'MultipleOrderOperations'. [1 test cases, 0 sub-suites]
+18:45:25.816 Case 'MultipleOrderOperations' execution.
+18:45:29.302 Case 'MultipleOrderOperations' succeeded.
+18:45:29.706 Suite 'ParkedOrders'. [4 test cases, 0 sub-suites]
+18:45:30.644 Case 'ActivateCancelParkedOrder' execution.
+18:45:30.722 Case 'ActivateCancelParkedOrder' succeeded.
+18:45:30.800 Case 'ActivateFillParkedOrder' execution.
+18:45:30.863 Case 'ActivateFillParkedOrder' succeeded.
+18:45:30.925 Case 'ModifyParkedOrder' execution.
+18:45:31.394 Case 'ModifyParkedOrder' succeeded.
+18:45:31.456 Case 'ModifyParkedWasWorkingOrder' execution.
+18:45:31.581 Case 'ModifyParkedWasWorkingOrder' succeeded.
+18:45:31.722 Suite 'SingleOrderOperations'. [18 test cases, 0 sub-suites]
+18:45:31.784 Case '01-RejectOrderWithActivationTime' execution.
+18:45:31.816 Case '01-RejectOrderWithActivationTime' succeeded.
+18:45:31.878 Case '02-RejectParkedWithParkTime' execution.
+18:45:31.894 Case '02-RejectParkedWithParkTime' succeeded.
+18:45:31.972 Case '03-RejectOrderWithPastParkTime' execution.
+18:45:32.004 Case '03-RejectOrderWithPastParkTime' succeeded.
+18:45:32.050 Case '04-RejectParkedWithPastActivationTime' execution.
+18:45:32.082 Case '04-RejectParkedWithPastActivationTime' succeeded.
+18:45:32.160 Case '05-SingleOrderOperations05' execution.
+18:45:36.472 Case '05-SingleOrderOperations05' succeeded.
+18:45:36.550 Case '06-SingleOrderOperations06' execution.
+18:45:38.753 Case '06-SingleOrderOperations06' succeeded.
+18:45:38.800 Case '07-SingleOrderOperations07' execution.
+18:45:43.004 Case '07-SingleOrderOperations07' succeeded.
+18:45:43.050 Case '08-SingleOrderOperations08' execution.
+18:45:43.238 Case '08-SingleOrderOperations08' succeeded.
+18:45:43.300 Case '09-SingleOrderOperations09' execution.
+18:45:43.457 Case '09-SingleOrderOperations09' succeeded.
+18:45:43.504 Case '10-SingleOrderOperations10' execution.
+18:45:51.598 Case '10-SingleOrderOperations10' succeeded.
+18:45:51.660 Case '11-SingleOrderOperations11' execution.
+18:45:51.785 Case '11-SingleOrderOperations11' succeeded.
+18:45:51.848 Case '15-ParkAndActivateActiveAtOrder' execution.
+18:46:00.317 Case '15-ParkAndActivateActiveAtOrder' succeeded.
+18:46:00.395 Case '22-SingleOrderOperations22' execution.
+18:46:08.489 Case '22-SingleOrderOperations22' succeeded.
+18:46:08.551 Case '23-SingleOrderOperations23' execution.
+18:46:25.646 Case '23-SingleOrderOperations23' succeeded.
+18:46:25.708 Case '25-SingleOrderOperations25' execution.
+18:46:42.802 Case '25-SingleOrderOperations25' succeeded.
+18:46:42.865 Case 'CancelParkedFakActivation' execution.
+18:46:42.912 Case 'CancelParkedFakActivation' succeeded.
+18:46:42.974 Case 'ExchangeRejectsScheduledActivation' execution.
+18:46:45.005 Case 'ExchangeRejectsScheduledActivation' succeeded.
+18:46:45.068 Case 'FillSuspendedCancelledOrder' execution.
+18:46:45.162 Case 'FillSuspendedCancelledOrder' succeeded.
+18:46:53.849 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend' execution finished. It took 0:01:38.440480.
+18:46:53.849 Test cases results: 27 total, 27 succeeded, 0 failed, 0 skipped.

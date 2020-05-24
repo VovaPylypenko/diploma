@@ -1,0 +1,26 @@
+10:14:11.32  Test starded without threads
+08:14:11.868 Python Module Path 'ScriptKit/TroubleMaker' added.
+08:14:11.868 Python Module Path 'ScriptKit' added.
+08:14:11.868 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:14:11.868 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:14:12.431 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits' filtered execution.
+08:14:12.446 Suite '.'. [0 test cases, 1 sub-suites]
+08:14:25.165 Suite 'Synthetic'. [0 test cases, 2 sub-suites]
+08:14:33.400 Suite 'Synthetic\Complex'. [5 test cases, 0 sub-suites]
+08:14:33.447 Case '02_SSPWithLegs' execution.
+08:14:37.744 Case '02_SSPWithLegs' succeeded.
+08:14:37.791 Case '03_ActivatedSOM' execution.
+08:17:27.999 Case '03_ActivatedSOM' succeeded.
+08:17:28.062 Case '06_SSPWithMappedLeg' execution.
+08:17:32.296 Case '06_SSPWithMappedLeg' succeeded.
+08:17:32.359 Case '13_Trails' execution.
+08:17:46.593 Case '13_Trails' succeeded.
+08:17:46.640 Case '14_SSPLegModifications' execution.
+08:17:53.109 Case '14_SSPLegModifications' succeeded.
+08:17:53.219 Suite 'Synthetic\DoNotCount'. [2 test cases, 0 sub-suites]
+08:17:53.281 Case '03_SSPWithoutLegs' execution.
+08:18:59.065 Case '03_SSPWithoutLegs' succeeded.
+08:18:59.112 Case '04_NonActivatedSOM' execution.
+08:20:03.739 Case '04_NonActivatedSOM' succeeded.
+08:20:04.317 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits' execution finished. It took 0:05:51.870981.
+08:20:04.317 Test cases results: 7 total, 7 succeeded, 0 failed, 0 skipped.

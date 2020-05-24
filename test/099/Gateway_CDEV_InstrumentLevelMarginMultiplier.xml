@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="11" testsuite_failed="False" time="417.91845" timestamp="2020-02-06T08:00:32.860328">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="InstrumentLevelMarginMultiplier" skipped="0" tests="11" testsuite_failed="False" time="417.91845" timestamp="2020-02-06T08:00:32.860328">
+  <testsuite failures="0" name="RiskModule1" skipped="0" tests="7" testsuite_failed="False" time="39.923139" timestamp="2020-02-06T08:06:49.387435">
+   <testcase name="ILMM_disabled" status="run" time="1.261327" timestamp="2020-02-06T08:06:49.469424"/>
+   <testcase name="ILMM_EnablementUpdate" status="run" time="39.766602" timestamp="2020-02-06T08:06:49.496523"/>
+   <testcase name="ILMM_ValueUpdate" status="run" time="39.610473" timestamp="2020-02-06T08:06:49.527636"/>
+   <testcase name="ILMM_vs_AccountLevelMM" status="run" time="1.343928" timestamp="2020-02-06T08:06:49.558840"/>
+   <testcase name="ILMM_vs_ExchangeLevelMM" status="run" time="1.343775" timestamp="2020-02-06T08:06:49.621357"/>
+   <testcase name="OHTrader_AccountSettings" status="run" time="1.218785" timestamp="2020-02-06T08:06:49.746347"/>
+   <testcase name="OHTrader_TraderSettings" status="run" time="1.125021" timestamp="2020-02-06T08:06:49.840111"/>
+  </testsuite>
+  <testsuite failures="0" name="RiskModulePrisma" skipped="0" tests="3" testsuite_failed="False" time="0.296789" timestamp="2020-02-06T08:07:29.341358">
+   <testcase name="VDKCM_A1" status="run" time="0.046466" timestamp="2020-02-06T08:07:29.435564"/>
+   <testcase name="VDKCM_A3" status="run" time="0.047042" timestamp="2020-02-06T08:07:29.466254"/>
+   <testcase name="VDKCM_A6" status="run" time="0.031237" timestamp="2020-02-06T08:07:29.497536"/>
+  </testsuite>
+  <testsuite failures="0" name="RiskModuleSPAN" skipped="0" tests="1" testsuite_failed="False" time="0.390628" timestamp="2020-02-06T08:07:29.669390">
+   <testcase name="ILMM_vs_AccountLevelMM" status="run" time="0.23435" timestamp="2020-02-06T08:07:29.778796"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

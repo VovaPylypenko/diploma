@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="2" skipped="0" tests="32" testsuite_failed="True" time="480.62566" timestamp="2020-02-19T19:46:28.564536">
+ <properties>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SMMT"/>
+  <property name="scripts-cfg-instance" value="SF_SMMT"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="2" name="Suites" skipped="0" tests="32" testsuite_failed="True" time="480.62566" timestamp="2020-02-19T19:46:28.564536">
+  <testsuite failures="2" name="AccountChanges" skipped="0" tests="3" testsuite_failed="True" time="99.737544" timestamp="2020-02-19T19:46:29.548929">
+   <testcase name="AccountEnvironmentChange" status="run" time="72.064808" timestamp="2020-02-19T19:46:29.642688">
+    <failure message="Traceback (most recent call last):
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 79, in test
+    c2.GetAccountInfoByName(account3)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\GWConnection.py&quot;, line 120, in GetAccountInfoByName
+    raise Exception(&quot;Trader '{0}' is not authorized to the account '{1}'.&quot;.format(self._username, accountName))
+Exception: Trader 'SF_SM_Trader1' is not authorized to the account 'SF_SM_Account3'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 104, in &lt;module&gt;
+    test()
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 84, in test
+    VerifyEnvironmentChangeAcctAuthorization(c2, acctInfo3, True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py&quot;, line 37, in VerifyEnvironmentChangeAcctAuthorization
+    envChange = __waitOneEnvironmentChange(gwConnection, &quot;account_authorization&quot;, timeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py&quot;, line 15, in __waitOneEnvironmentChange
+    envChangeList = gwConnection.orderBook.WaitEnvironmentChange(ectype=ectype, timeout=timeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 629, in WaitEnvironmentChange
+    envChanges = self.__wait(timeout, self.__environmentChangeMessages, msg, ectype)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 553, in __wait
+    return WaitMsg(container, errMsg, self.__condition, timeout, idx=idx)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 58, in WaitMsg
+    raise Exception(errMsg)
+Exception: TIMEOUT: 60 seconds for TIMEOUT: 60 seconds for EnvironmentChange
+EnvironmentChange ectype: account_authorization
+">Traceback (most recent call last):
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 79, in test
+    c2.GetAccountInfoByName(account3)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\GWConnection.py&quot;, line 120, in GetAccountInfoByName
+    raise Exception(&quot;Trader '{0}' is not authorized to the account '{1}'.&quot;.format(self._username, accountName))
+Exception: Trader 'SF_SM_Trader1' is not authorized to the account 'SF_SM_Account3'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 104, in &lt;module&gt;
+    test()
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 84, in test
+    VerifyEnvironmentChangeAcctAuthorization(c2, acctInfo3, True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py&quot;, line 37, in VerifyEnvironmentChangeAcctAuthorization
+    envChange = __waitOneEnvironmentChange(gwConnection, &quot;account_authorization&quot;, timeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py&quot;, line 15, in __waitOneEnvironmentChange
+    envChangeList = gwConnection.orderBook.WaitEnvironmentChange(ectype=ectype, timeout=timeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 629, in WaitEnvironmentChange
+    envChanges = self.__wait(timeout, self.__environmentChangeMessages, msg, ectype)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 553, in __wait
+    return WaitMsg(container, errMsg, self.__condition, timeout, idx=idx)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 58, in WaitMsg
+    raise Exception(errMsg)
+Exception: TIMEOUT: 60 seconds for TIMEOUT: 60 seconds for EnvironmentChange
+EnvironmentChange ectype: account_authorization
+</failure>
+   </testcase>
+   <testcase name="AccountMigration" status="run" time="5.077087" timestamp="2020-02-19T19:47:41.755564"/>
+   <testcase name="AutoEventSubscrNewAccounts" status="run" time="22.360088" timestamp="2020-02-19T19:47:46.879525">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 130, in &lt;module&gt;
+    test(autosubscribe)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 90, in test
+    noFillEvents(c2, o1)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 32, in noFillEvents
+    raise TestCheck.Failure(&quot;There is no fill event expected&quot;)
+TestCheck.Failure: There is no fill event expected
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 130, in &lt;module&gt;
+    test(autosubscribe)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 90, in test
+    noFillEvents(c2, o1)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 32, in noFillEvents
+    raise TestCheck.Failure(&quot;There is no fill event expected&quot;)
+TestCheck.Failure: There is no fill event expected
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="0" name="ContractDefinition" skipped="0" tests="2" testsuite_failed="False" time="4.547144" timestamp="2020-02-19T19:48:09.317726">
+   <testcase name="ContractDefinitionFailure" status="run" time="2.983917" timestamp="2020-02-19T19:48:09.458924"/>
+   <testcase name="ContractDefinitionHappyPath" status="run" time="1.312176" timestamp="2020-02-19T19:48:12.505728"/>
+  </testsuite>
+  <testsuite failures="0" name="DataExchange" skipped="0" tests="7" testsuite_failed="False" time="31.125986" timestamp="2020-02-19T19:48:13.896019">
+   <testcase name="CI_HappyPath" status="run" time="7.828029" timestamp="2020-02-19T19:48:13.974527"/>
+   <testcase name="CI_Limiting" status="run" time="0.0" timestamp="2020-02-19T19:48:21.865040"/>
+   <testcase name="CI_Rejecting" status="run" time="0.906504" timestamp="2020-02-19T19:48:21.927553"/>
+   <testcase name="QueryHappyPath" status="run" time="21.781956" timestamp="2020-02-19T19:48:22.911906"/>
+   <testcase name="QueryLimiting" status="run" time="0.031242" timestamp="2020-02-19T19:48:44.756381"/>
+   <testcase name="QueryQMOutage" status="run" time="0.031244" timestamp="2020-02-19T19:48:44.850127"/>
+   <testcase name="QueryRejects" status="run" time="0.015614" timestamp="2020-02-19T19:48:44.943897"/>
+  </testsuite>
+  <testsuite failures="0" name="Failover" skipped="0" tests="1" testsuite_failed="False" time="0.203108" timestamp="2020-02-19T19:48:45.053278">
+   <testcase name="GWComponentsFailures" status="run" time="0.031255" timestamp="2020-02-19T19:48:45.147007"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderActions" skipped="0" tests="6" testsuite_failed="False" time="217.678796" timestamp="2020-02-19T19:48:45.303296">
+   <testcase name="OrderActionsAuthorizationCheck" status="run" time="1.906313" timestamp="2020-02-19T19:48:49.553392"/>
+   <testcase name="OrderActionsHappyPath" status="run" time="1.000008" timestamp="2020-02-19T19:48:51.506592"/>
+   <testcase name="OrderActionsRiskServerReject" status="run" time="0.937547" timestamp="2020-02-19T19:48:52.569142"/>
+   <testcase name="OrderActionsRiskServerUnavailable" status="run" time="0.0" timestamp="2020-02-19T19:48:53.600401"/>
+   <testcase name="OrderActionsThrottling" status="run" time="63.93953" timestamp="2020-02-19T19:48:53.662909"/>
+   <testcase name="ParkedOrdersBatching" status="run" time="145.093976" timestamp="2020-02-19T19:49:57.684969"/>
+  </testsuite>
+  <testsuite failures="0" name="OutMessageCache" skipped="0" tests="1" testsuite_failed="False" time="9.328412" timestamp="2020-02-19T19:52:23.013335">
+   <testcase name="OutSerializationCache" status="run" time="9.140936" timestamp="2020-02-19T19:52:23.138324"/>
+  </testsuite>
+  <testsuite failures="0" name="Performance" skipped="0" tests="1" testsuite_failed="False" time="0.21877" timestamp="2020-02-19T19:52:32.373020">
+   <testcase name="XML interface scalability" status="run" time="0.031245" timestamp="2020-02-19T19:52:32.482396"/>
+  </testsuite>
+  <testsuite failures="0" name="Protocol" skipped="0" tests="4" testsuite_failed="False" time="14.406711" timestamp="2020-02-19T19:52:32.623020">
+   <testcase name="AuthCheck" status="run" time="8.093966" timestamp="2020-02-19T19:52:32.732438"/>
+   <testcase name="FloodProtection" status="run" time="0.015733" timestamp="2020-02-19T19:52:40.888896"/>
+   <testcase name="LogonHappyPath" status="run" time="0.889743" timestamp="2020-02-19T19:52:41.014805"/>
+   <testcase name="MalformedMessage" status="run" time="4.984541" timestamp="2020-02-19T19:52:41.982697"/>
+  </testsuite>
+  <testsuite failures="0" name="SessionManagement" skipped="0" tests="7" testsuite_failed="False" time="102.051075" timestamp="2020-02-19T19:52:47.076617">
+   <testcase name="AccountSubscription" status="run" time="52.736041" timestamp="2020-02-19T19:52:47.217246"/>
+   <testcase name="CSMAvailability" status="run" time="5.078324" timestamp="2020-02-19T19:53:40.015777"/>
+   <testcase name="InvalidLogon" status="run" time="6.093426" timestamp="2020-02-19T19:53:45.141471"/>
+   <testcase name="LogoffTraderFromCAST" status="run" time="7.109602" timestamp="2020-02-19T19:53:51.313025"/>
+   <testcase name="LogonSplitAck" status="run" time="5.093892" timestamp="2020-02-19T19:53:58.469524"/>
+   <testcase name="MultipleTraderLogons" status="run" time="12.173219" timestamp="2020-02-19T19:54:03.641546"/>
+   <testcase name="PasswordChange" status="run" time="13.187967" timestamp="2020-02-19T19:54:15.877264"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

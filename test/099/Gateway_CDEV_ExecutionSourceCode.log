@@ -1,0 +1,26 @@
+10:38:44.38  Test starded without threads
+08:38:44.886 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ExecutionSourceCode/PythonModules' not found. Ignored.
+08:38:44.886 Python Module Path 'ScriptKit' added.
+08:38:44.886 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:38:44.886 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:38:44.902 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules' added.
+08:38:45.339 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ExecutionSourceCode' full execution.
+08:38:45.355 Suite '.'. [8 test cases, 0 sub-suites]
+08:39:06.512 Case 'CAST_change_ESC' execution.
+08:39:06.543 Case 'CodeMissingModifications' execution.
+08:39:06.590 Case 'CodeMissing' execution.
+08:39:06.622 Case 'DTDversions' execution.
+08:39:06.655 Case 'OCO_Compound' execution.
+08:39:06.715 Case 'OPO_Compound' execution.
+08:39:06.762 Case 'SimpleOrder' execution.
+08:39:06.824 Case 'SyntheticOrder' execution.
+08:39:06.840 Case 'DTDversions' succeeded.
+08:39:07.356 Case 'OCO_Compound' succeeded.
+08:39:07.371 Case 'OPO_Compound' succeeded.
+08:39:07.371 Case 'CodeMissingModifications' succeeded.
+08:39:07.653 Case 'CodeMissing' succeeded.
+08:39:10.137 Case 'SimpleOrder' succeeded.
+08:39:23.184 Case 'SyntheticOrder' succeeded.
+08:39:33.810 Case 'CAST_change_ESC' succeeded.
+08:39:47.779 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ExecutionSourceCode' execution finished. It took 0:01:02.408326.
+08:39:47.779 Test cases results: 8 total, 8 succeeded, 0 failed, 0 skipped.

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="10" testsuite_failed="False" time="27.735299" timestamp="2020-02-06T08:32:48.203076">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/PlacingOrdersIntoAnyAccount"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="PlacingOrdersIntoAnyAccount" skipped="0" tests="10" testsuite_failed="False" time="27.735299" timestamp="2020-02-06T08:32:48.203076">
+  <testsuite failures="0" name="Native" skipped="0" tests="10" testsuite_failed="False" time="12.875425" timestamp="2020-02-06T08:33:02.562925">
+   <testsuite failures="0" name="Complex" skipped="0" tests="8" testsuite_failed="False" time="10.500213" timestamp="2020-02-06T08:33:02.625555">
+    <testcase name="01_Queries" status="run" time="1.078147" timestamp="2020-02-06T08:33:02.687925"/>
+    <testcase name="02_ReplaceAndCancel" status="run" time="0.20304" timestamp="2020-02-06T08:33:02.719265"/>
+    <testcase name="03_OPO" status="run" time="0.171818" timestamp="2020-02-06T08:33:02.766097"/>
+    <testcase name="04_ScheduledActivation" status="run" time="2.125072" timestamp="2020-02-06T08:33:02.797286"/>
+    <testcase name="07_NativeSpread" status="run" time="0.093761" timestamp="2020-02-06T08:33:02.859789"/>
+    <testcase name="08_ProvidingDisabledExtra" status="run" time="0.156252" timestamp="2020-02-06T08:33:02.906668"/>
+    <testcase name="09_ActiveAt" status="run" time="0.765659" timestamp="2020-02-06T08:33:02.937915"/>
+    <testcase name="10_ReplaceAndFill_KnownAccount" status="run" time="10.109632" timestamp="2020-02-06T08:33:02.969269"/>
+   </testsuite>
+   <testsuite failures="0" name="Rejections" skipped="0" tests="2" testsuite_failed="False" time="0.281305" timestamp="2020-02-06T08:33:13.157026">
+    <testcase name="02_Omnibus" status="run" time="0.078112" timestamp="2020-02-06T08:33:13.266416"/>
+    <testcase name="04_ExternalAccountNumberTooLong" status="run" time="0.029567" timestamp="2020-02-06T08:33:13.299331"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

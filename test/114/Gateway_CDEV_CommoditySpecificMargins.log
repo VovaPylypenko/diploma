@@ -1,0 +1,128 @@
+ 1:37:09.67  Test starded without threads
+23:37:10.156 Python Module Path 'ScriptKit' added.
+23:37:10.156 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+23:37:10.156 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:37:10.563 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins' full execution.
+23:37:10.594 Suite '.'. [8 test cases, 0 sub-suites]
+23:37:17.750 Case 'Basic' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins\Basic.tc.py", line 62, in <module>
+    account1.PlaceOrder_Rejected('P.SF.SFEP.Z99.99', OrderSide.Sell, 3, OrderType.Limit, rejectReason = rejectedReason_InsufficientMargin)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:37:17.766 Case 'Basic' failed.
+23:37:17.828 Case 'SpecificMarginDisabledOnAccountLevel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins\SpecificMarginDisabledOnAccountLevel.tc.py", line 30, in <module>
+    account.PlaceOrder_Rejected('F.SF.SFEP.Z99', OrderSide.Sell, 11, OrderType.Limit, rejectReason = rejectedReason_InsufficientMargin)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:37:17.828 Case 'SpecificMarginDisabledOnAccountLevel' failed.
+23:37:17.875 Case 'SpecificMarginDisabledOnFcmLevel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins\SpecificMarginDisabledOnFcmLevel.tc.py", line 30, in <module>
+    account.PlaceOrder_Rejected('F.SF.SFEP.Z99', OrderSide.Sell, 11, OrderType.Limit, rejectReason = rejectedReason_InsufficientMargin)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:37:17.875 Case 'SpecificMarginDisabledOnFcmLevel' failed.
+23:37:17.938 Case 'SpecificMarginValueEqualToDefault' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins\SpecificMarginValueEqualToDefault.tc.py", line 28, in <module>
+    order = account.PlaceOrder_Accepted('P.SF.SFEP.Z99.99', OrderSide.Sell, 10, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:37:17.938 Case 'SpecificMarginValueEqualToDefault' failed.
+23:37:18.000 Case 'SpecificMarginValueGreatDefault' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins\SpecificMarginValueGreatDefault.tc.py", line 28, in <module>
+    order = account.PlaceOrder_Accepted('F.SF.SFEP.Z99', OrderSide.Sell, 5, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:37:18.000 Case 'SpecificMarginValueGreatDefault' failed.
+23:37:18.047 Case 'SpecificMarginValueIsNotSet' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins\SpecificMarginValueIsNotSet.tc.py", line 44, in <module>
+    account1.PlaceOrder_Rejected('C.SF.SFEP.Z99.99', OrderSide.Sell, 11, OrderType.Limit, rejectReason = rejectedReason_InsufficientMargin)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:37:18.047 Case 'SpecificMarginValueIsNotSet' failed.
+23:37:18.110 Case 'SpecificMarginValueLessDefault' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins\SpecificMarginValueLessDefault.tc.py", line 28, in <module>
+    order = account.PlaceOrder_Accepted('C.SF.SFEP.Z99.99', OrderSide.Sell, 15, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:37:18.110 Case 'SpecificMarginValueLessDefault' failed.
+23:37:18.172 Case 'TradeMarginLimitCheck' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins\TradeMarginLimitCheck.tc.py", line 28, in <module>
+    account.PlaceOrder_Rejected('C.SF.SFEP.Z99.99', OrderSide.Sell, 6, OrderType.Limit, rejectReason = rejectedReason_SingleTradeMarginLimit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:37:18.172 Case 'TradeMarginLimitCheck' failed.
+23:37:22.344 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins' execution finished. It took 0:00:11.750631.
+23:37:22.344 Test cases results: 8 total, 0 succeeded, 8 failed, 0 skipped.

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="49" testsuite_failed="False" time="74.065149" timestamp="2020-02-19T19:02:46.223590">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_FixInterface"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="PTOA" skipped="0" tests="49" testsuite_failed="False" time="74.065149" timestamp="2020-02-19T19:02:46.223590">
+  <testsuite failures="0" name="AllocationRequest" skipped="0" tests="13" testsuite_failed="False" time="3.483551" timestamp="2020-02-19T19:03:03.943903">
+   <testcase name="AllocatedAccountCheck" status="run" time="0.188146" timestamp="2020-02-19T19:03:04.036708"/>
+   <testcase name="AllocatedOrderDuration" status="run" time="0.32809" timestamp="2020-02-19T19:03:04.302405"/>
+   <testcase name="AllocatedOrderMultifill" status="run" time="0.125093" timestamp="2020-02-19T19:03:04.692983"/>
+   <testcase name="AllocatedSizeCheck" status="run" time="0.109425" timestamp="2020-02-19T19:03:04.896120"/>
+   <testcase name="AllocationFillsChangeCheck" status="run" time="0.17185" timestamp="2020-02-19T19:03:05.068028"/>
+   <testcase name="AllocationFillsCheck" status="run" time="0.20076" timestamp="2020-02-19T19:03:05.320394"/>
+   <testcase name="AllocationOrdersCheck" status="run" time="0.185357" timestamp="2020-02-19T19:03:05.585798"/>
+   <testcase name="AllocationSizeCheck" status="run" time="0.265657" timestamp="2020-02-19T19:03:05.833652"/>
+   <testcase name="ClientAllocIdUsedBefore" status="run" time="0.232841" timestamp="2020-02-19T19:03:06.178956"/>
+   <testcase name="MultipleFillsCheck" status="run" time="0.248215" timestamp="2020-02-19T19:03:06.476219"/>
+   <testcase name="NativeStrategyLegFillAllocation" status="run" time="0.140643" timestamp="2020-02-19T19:03:06.786803"/>
+   <testcase name="UnauthorizedAccount" status="run" time="0.078321" timestamp="2020-02-19T19:03:06.989960"/>
+   <testcase name="UsedAllocationCheck" status="run" time="0.217694" timestamp="2020-02-19T19:03:07.147262"/>
+  </testsuite>
+  <testsuite failures="0" name="AllocationRequestXml" skipped="0" tests="1" testsuite_failed="False" time="1.3460619999999999" timestamp="2020-02-19T19:03:07.459529">
+   <testcase name="AllocatedOrderXml" status="run" time="1.1881490000000001" timestamp="2020-02-19T19:03:07.552475"/>
+  </testsuite>
+  <testsuite failures="0" name="AllocOrderBasicRiskChecks" skipped="0" tests="16" testsuite_failed="False" time="3.654393" timestamp="2020-02-19T19:03:08.835759">
+   <testcase name="AccountsOnDifferentRS" status="run" time="0.109002" timestamp="2020-02-19T19:03:08.990404"/>
+   <testcase name="ActivaAtState" status="run" time="0.026984" timestamp="2020-02-19T19:03:09.166166"/>
+   <testcase name="AllocationAccountOmnibusRisks" status="run" time="0.095092" timestamp="2020-02-19T19:03:09.255711"/>
+   <testcase name="AllocationAccountRisks" status="run" time="0.202866" timestamp="2020-02-19T19:03:09.412174"/>
+   <testcase name="BFMGroupAllocatedAccounts" status="run" time="0.156161" timestamp="2020-02-19T19:03:09.677644"/>
+   <testcase name="CMGroupAllocatedAccounts" status="run" time="0.156091" timestamp="2020-02-19T19:03:09.912430"/>
+   <testcase name="DisabledMarket" status="run" time="0.171046" timestamp="2020-02-19T19:03:10.131668"/>
+   <testcase name="JPPGroupAllocatedAccounts" status="run" time="0.20313" timestamp="2020-02-19T19:03:10.365062"/>
+   <testcase name="ModificationRejectAfterPartFill" status="run" time="0.155895" timestamp="2020-02-19T19:03:10.631067"/>
+   <testcase name="ModificationReject" status="run" time="0.109362" timestamp="2020-02-19T19:03:10.833855"/>
+   <testcase name="ModificationSize" status="run" time="0.187539" timestamp="2020-02-19T19:03:11.068228"/>
+   <testcase name="OmnibusAllocatedAccount" status="run" time="0.125003" timestamp="2020-02-19T19:03:11.349482"/>
+   <testcase name="PlacementSize" status="run" time="0.078109" timestamp="2020-02-19T19:03:11.552615"/>
+   <testcase name="SizeAutomodification" status="run" time="0.187521" timestamp="2020-02-19T19:03:11.708859"/>
+   <testcase name="TradePriceLimit" status="run" time="0.187493" timestamp="2020-02-19T19:03:11.974502"/>
+   <testcase name="UnauthorizedAccount" status="run" time="0.172058" timestamp="2020-02-19T19:03:12.240147"/>
+  </testsuite>
+  <testsuite failures="0" name="Misc" skipped="0" tests="7" testsuite_failed="False" time="31.407414" timestamp="2020-02-19T19:03:12.521390">
+   <testcase name="AllocationOrderFillCancelCheck" status="run" time="0.203137" timestamp="2020-02-19T19:03:12.708916"/>
+   <testcase name="AllocationOrderFillCorrectionCheck" status="run" time="3.376942" timestamp="2020-02-19T19:03:12.974558"/>
+   <testcase name="AllocationOrderRequestOnExchange" status="run" time="0.343772" timestamp="2020-02-19T19:03:16.412144"/>
+   <testcase name="CancelAllActionCheck" status="run" time="11.078564" timestamp="2020-02-19T19:03:16.818414"/>
+   <testcase name="DailyFutureContractCheck" status="run" time="0.140617" timestamp="2020-02-19T19:03:27.975081"/>
+   <testcase name="ParkAllActionCheck" status="run" time="11.047434" timestamp="2020-02-19T19:03:28.193830"/>
+   <testcase name="SyntheticStpAllocOrder" status="run" time="4.422059" timestamp="2020-02-19T19:03:39.319231"/>
+  </testsuite>
+  <testsuite failures="0" name="PartialQty" skipped="0" tests="2" testsuite_failed="False" time="4.062653" timestamp="2020-02-19T19:03:43.960026">
+   <testcase name="AllocationRequest" status="run" time="0.484397" timestamp="2020-02-19T19:03:47.147630"/>
+   <testcase name="AllocationSizeCheck" status="run" time="0.23435" timestamp="2020-02-19T19:03:47.710190"/>
+  </testsuite>
+  <testsuite failures="0" name="PortfolioRiskCalculation" skipped="0" tests="10" testsuite_failed="False" time="4.578267" timestamp="2020-02-19T19:03:48.100805">
+   <testcase name="CanceledAllocatedFill" status="run" time="0.453119" timestamp="2020-02-19T19:03:48.210182"/>
+   <testcase name="FullFillOnAllocationOmnibus" status="run" time="0.765684" timestamp="2020-02-19T19:03:48.741453"/>
+   <testcase name="FullFillOnAllocationOrder" status="run" time="0.156387" timestamp="2020-02-19T19:03:49.585308"/>
+   <testcase name="ModifiedAllocatedFillPrice" status="run" time="0.328157" timestamp="2020-02-19T19:03:49.803964"/>
+   <testcase name="ModifiedAllocatedFillSize" status="run" time="0.32813" timestamp="2020-02-19T19:03:50.225871"/>
+   <testcase name="MultiFillsAndAllocationsWithCancel" status="run" time="0.266001" timestamp="2020-02-19T19:03:50.632124"/>
+   <testcase name="MultiFillsAndAllocations" status="run" time="0.500087" timestamp="2020-02-19T19:03:50.975900"/>
+   <testcase name="PartFillOnAllocationOmnibus" status="run" time="0.328832" timestamp="2020-02-19T19:03:51.554034"/>
+   <testcase name="PartFillOnAllocationOrder" status="run" time="0.234393" timestamp="2020-02-19T19:03:51.991543"/>
+   <testcase name="SeveralFillsOnAllocationOrder" status="run" time="0.249998" timestamp="2020-02-19T19:03:52.335309"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

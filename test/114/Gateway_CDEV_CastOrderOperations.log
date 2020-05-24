@@ -1,0 +1,149 @@
+ 1:36:30.59  Test starded without threads
+23:36:31.155 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:36:31.155 Python Module Path 'ScriptKit' added.
+23:36:31.581 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders' full execution.
+23:36:31.608 Suite '.'. [26 test cases, 0 sub-suites]
+23:36:43.015 Case 'Activate' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders\Activate.tc.py", line 7, in <module>
+    order = OrderActionUtils.CreateOrder(untradeContract, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:43.031 Case 'Activate' failed.
+23:36:43.031 Case 'AddFill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders\AddFill.tc.py", line 7, in <module>
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:43.046 Case 'AddFill' failed.
+23:36:43.061 Case 'AddPartialFill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders\AddPartialFill.tc.py", line 7, in <module>
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:43.079 Case 'AddPartialFill' failed.
+23:36:43.093 Case 'BustFill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders\BustFill.tc.py", line 7, in <module>
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:43.108 Case 'BustFill' failed.
+23:36:43.124 Case 'BustFillsInsideChain' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders\BustFillsInsideChain.tc.py", line 40, in <module>
+    order1 = OrderActionUtils.CreateOrder(spreadContract, OrderSide.Sell, 10, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:43.140 Case 'BustFillsInsideChain' failed.
+23:36:43.140 Case 'BustLastFill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders\BustLastFill.tc.py", line 17, in <module>
+    order1 = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 2, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:43.155 Case 'BustLastFill' failed.
+23:36:43.171 Case 'BustLastTwoFills' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders\BustLastTwoFills.tc.py", line 19, in <module>
+    order1 = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 3, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:43.202 Case 'BustLastTwoFills' failed.
+23:36:43.202 Case 'CancelExternalOrder' execution.
+23:36:43.234 Case 'CancelExternalOrderLastFill' execution.
+23:36:43.280 Case 'CancelPartialFill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders\CancelPartialFill.tc.py", line 8, in <module>
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:43.280 Case 'CancelPartialFill' failed.
+23:36:43.311 Case 'CreateExternalOrder' execution.
+23:36:43.358 Case 'OCOAddFill' execution.
+23:36:43.436 Case 'OCOAddPartialFill' execution.
+23:36:43.468 Case 'OCOBustFill' execution.
+23:36:43.499 Case 'OCOCancelFill' execution.
+23:36:43.593 Case 'OCORequestConfirmCancel' execution.
+23:36:43.640 Case 'OmnibusCreateOrderFill' execution.
+23:36:43.718 Case 'OPOPriAddFill' execution.
+23:36:43.749 Case 'OPOPriAddPartialFill' execution.
+23:36:43.952 Case 'OPOPriBustFill' execution.
+23:36:44.359 Case 'OPOPriCancelFill' execution.
+23:36:45.749 Case 'OPOPriRequestConfirmCancel' execution.
+23:36:45.937 Case 'OPOSecConfirmCancel' execution.
+23:36:45.983 Case 'OPOSecRequestCancelCompoundOrder' execution.
+23:36:46.127 Case 'RequestConfirmCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders\RequestConfirmCancel.tc.py", line 8, in <module>
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:46.127 Case 'RequestConfirmCancel' failed.
+23:36:46.296 Case 'OCORequestCancelCompoundOrder' execution.
+23:36:47.046 Case 'OPOPriAddFill' succeeded.
+23:36:48.327 Case 'OCOAddFill' succeeded.
+23:36:49.234 Case 'CreateExternalOrder' succeeded.
+23:36:49.296 Case 'OmnibusCreateOrderFill' succeeded.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders\CancelExternalOrderLastFill.tc.py", line 26, in <module>
+    order2 = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 2, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:49.765 Case 'CancelExternalOrderLastFill' failed.
+23:36:51.000 Case 'OPOSecRequestCancelCompoundOrder' succeeded.
+23:36:51.343 Case 'OCORequestCancelCompoundOrder' succeeded.
+23:36:51.421 Case 'OCOAddPartialFill' succeeded.
+23:36:51.452 Case 'OPOPriAddPartialFill' succeeded.
+23:36:51.515 Case 'CancelExternalOrder' succeeded.
+23:36:51.562 Case 'OPOSecConfirmCancel' succeeded.
+23:36:51.718 Case 'OPOPriRequestConfirmCancel' succeeded.
+23:36:52.499 Case 'OCORequestConfirmCancel' succeeded.
+23:36:58.109 Case 'OCOCancelFill' succeeded.
+23:36:58.859 Case 'OCOBustFill' succeeded.
+23:37:00.968 Case 'OPOPriBustFill' succeeded.
+23:37:01.484 Case 'OPOPriCancelFill' succeeded.
+23:37:09.312 Root suite 'Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders' execution finished. It took 0:00:37.700327.
+23:37:09.312 Test cases results: 26 total, 16 succeeded, 10 failed, 0 skipped.

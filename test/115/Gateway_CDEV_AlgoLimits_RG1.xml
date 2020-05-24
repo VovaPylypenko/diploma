@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="19" testsuite_failed="False" time="264.743175" timestamp="2020-02-19T20:11:01.737577">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="AlgoExecLimits" skipped="0" tests="19" testsuite_failed="False" time="264.743175" timestamp="2020-02-19T20:11:01.737577">
+  <testsuite failures="0" name="Native" skipped="0" tests="19" testsuite_failed="False" time="253.617528" timestamp="2020-02-19T20:11:12.441325">
+   <testsuite failures="0" name="Basic" skipped="0" tests="6" testsuite_failed="False" time="60.970696" timestamp="2020-02-19T20:11:12.503584">
+    <testcase name="01_Place" status="run" time="60.800759" timestamp="2020-02-19T20:11:12.597320"/>
+    <testcase name="02_Modify" status="run" time="60.580034" timestamp="2020-02-19T20:11:12.644220"/>
+    <testcase name="03_Cancel" status="run" time="60.67383" timestamp="2020-02-19T20:11:12.675425"/>
+    <testcase name="05_Reject" status="run" time="60.57997" timestamp="2020-02-19T20:11:12.738034"/>
+    <testcase name="06_Park" status="run" time="60.501921" timestamp="2020-02-19T20:11:12.878585"/>
+    <testcase name="_04_Fill" status="run" time="0.046932" timestamp="2020-02-19T20:11:12.816041"/>
+   </testsuite>
+   <testsuite failures="0" name="Complex" skipped="0" tests="10" testsuite_failed="False" time="124.364019" timestamp="2020-02-19T20:12:13.505530">
+    <testcase name="01_CareOrder" status="run" time="60.345711" timestamp="2020-02-19T20:12:13.583655"/>
+    <testcase name="04_OCO" status="run" time="61.564507" timestamp="2020-02-19T20:12:13.614898"/>
+    <testcase name="05_OPO" status="run" time="61.658291" timestamp="2020-02-19T20:12:13.693016"/>
+    <testcase name="07_OmniSameFCMs" status="run" time="60.783267" timestamp="2020-02-19T20:12:13.724266"/>
+    <testcase name="08_OmniDiffFCMs" status="run" time="60.923869" timestamp="2020-02-19T20:12:13.802393"/>
+    <testcase name="09_ResetOneAlgo" status="run" time="123.910873" timestamp="2020-02-19T20:12:13.865159"/>
+    <testcase name="10_ResetAllAlgos" status="run" time="123.86326" timestamp="2020-02-19T20:12:13.927688"/>
+    <testcase name="12_MultipleTraders" status="run" time="60.892645" timestamp="2020-02-19T20:12:13.958647"/>
+    <testcase name="15_OrderHandler" status="run" time="60.720695" timestamp="2020-02-19T20:12:14.021198"/>
+    <testcase name="16_ExternalAlgo" status="run" time="61.144195" timestamp="2020-02-19T20:12:14.083651"/>
+   </testsuite>
+   <testsuite failures="0" name="DoNotCount" skipped="0" tests="3" testsuite_failed="False" time="60.845841" timestamp="2020-02-19T20:14:17.884666">
+    <testcase name="01_Unconfirmed" status="run" time="60.205147" timestamp="2020-02-19T20:14:17.978421"/>
+    <testcase name="02_ActiveAt" status="run" time="60.23703" timestamp="2020-02-19T20:14:18.025305"/>
+    <testcase name="05_Different" status="run" time="60.61114" timestamp="2020-02-19T20:14:18.057373"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

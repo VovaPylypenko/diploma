@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="21" testsuite_failed="False" time="14.03172" timestamp="2020-02-19T19:55:39.879914">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/OrderHandlerTraderExtensions"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="OrderHandlerTraderExtensions" skipped="0" tests="21" testsuite_failed="False" time="14.03172" timestamp="2020-02-19T19:55:39.879914">
+  <testcase name="AcctPL_CommodityMultLess" status="run" time="0.203224" timestamp="2020-02-19T19:55:47.895811"/>
+  <testcase name="AcctPL_CommodityMultMore" status="run" time="0.171873" timestamp="2020-02-19T19:55:48.145824"/>
+  <testcase name="AcctPL_ContractMultLess" status="run" time="0.156254" timestamp="2020-02-19T19:55:48.364575"/>
+  <testcase name="AcctPL_ContractMultMore" status="run" time="0.125502" timestamp="2020-02-19T19:55:48.567705"/>
+  <testcase name="CommodityPL_CommodityMultLess" status="run" time="0.203135" timestamp="2020-02-19T19:55:48.755220"/>
+  <testcase name="CommodityPL_CommodityMultMore" status="run" time="0.218765" timestamp="2020-02-19T19:55:49.005214"/>
+  <testcase name="CommodityPL_ContractMultLess" status="run" time="0.234419" timestamp="2020-02-19T19:55:49.286483"/>
+  <testcase name="CommodityPL_ContractMultMore" status="run" time="0.197929" timestamp="2020-02-19T19:55:49.588583"/>
+  <testcase name="CommodityPL_InstrumentMultLess" status="run" time="0.359337" timestamp="2020-02-19T19:55:49.833409"/>
+  <testcase name="CommodityPL_InstrumentMultMore" status="run" time="0.328238" timestamp="2020-02-19T19:55:50.255248"/>
+  <testcase name="ExchangePL_AcctChecksOff" status="run" time="0.218744" timestamp="2020-02-19T19:55:50.661523"/>
+  <testcase name="ExchangePL_CommodityMultLess" status="run" time="0.23435" timestamp="2020-02-19T19:55:50.911555"/>
+  <testcase name="ExchangePL_CommodityMultMore" status="run" time="0.187779" timestamp="2020-02-19T19:55:51.192806"/>
+  <testcase name="ExchangePL_ContractMultLess" status="run" time="0.218841" timestamp="2020-02-19T19:55:51.458422"/>
+  <testcase name="ExchangePL_ContractMultMore" status="run" time="0.26561" timestamp="2020-02-19T19:55:51.739690"/>
+  <testcase name="ExchangePL_InstrumentMultLess" status="run" time="0.250033" timestamp="2020-02-19T19:55:52.052183"/>
+  <testcase name="ExchangePL_InstrumentMultMore" status="run" time="0.234386" timestamp="2020-02-19T19:55:52.364728"/>
+  <testcase name="LiquidationOnly_Enforce_No" status="run" time="0.094486" timestamp="2020-02-19T19:55:52.645951"/>
+  <testcase name="LiquidationOnly_Enforce_Yes" status="run" time="0.093733" timestamp="2020-02-19T19:55:52.802223"/>
+  <testcase name="LiquidationOnly_UseAccount_No" status="run" time="0.249996" timestamp="2020-02-19T19:55:52.942850"/>
+  <testcase name="LiquidationOnly_UseAccount_Yes" status="run" time="0.109375" timestamp="2020-02-19T19:55:53.255373"/>
+ </testsuite>
+</testsuites>

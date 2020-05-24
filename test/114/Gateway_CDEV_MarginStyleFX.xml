@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="26" tests="26" testsuite_failed="False" time="25.657231" timestamp="2020-02-19T00:02:49.769820">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="MarginStyleFX" skipped="26" tests="26" testsuite_failed="False" time="25.657231" timestamp="2020-02-19T00:02:49.769820">
+  <testcase name="DailyLossLimit" status="notrun"/>
+  <testcase name="PositionAndTradeSizeLimit" status="notrun"/>
+  <testcase name="RiskyMarket" status="notrun"/>
+  <testcase name="SSOrder" status="notrun"/>
+  <testcase name="TradeMarginLimit" status="notrun"/>
+  <testcase name="TradePriceLimit" status="notrun"/>
+  <testsuite failures="0" name="NonRegularAccountOrderMargin" skipped="4" tests="4" testsuite_failed="False">
+   <testcase name="BorrowFromMasterGroup" status="notrun"/>
+   <testcase name="CoMarginGroup" status="notrun"/>
+   <testcase name="JoinPPGroup" status="notrun"/>
+   <testcase name="OmnibusChain" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="PortfolioMargin" skipped="3" tests="3" testsuite_failed="False">
+   <testcase name="NetPositionMargin" status="notrun"/>
+   <testcase name="NetPositionOTE" status="notrun"/>
+   <testcase name="NetPositionProfitLoss" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="RegularAccountOrderMargin" skipped="13" tests="13" testsuite_failed="False">
+   <testcase name="AccountLevelMultiplier" status="notrun"/>
+   <testcase name="DefaultMarginRate" status="notrun"/>
+   <testcase name="DelayedPrices" status="notrun"/>
+   <testcase name="EquityPrices" status="notrun"/>
+   <testcase name="ExchangeLevelMultiplierOHTrader" status="notrun"/>
+   <testcase name="ExchangeLevelMultiplier" status="notrun"/>
+   <testcase name="ExchangeMarginDisabled" status="notrun"/>
+   <testcase name="FCMUsesDefaultMargin" status="notrun"/>
+   <testcase name="ForexPrices" status="notrun"/>
+   <testcase name="OrderHandlerTrader" status="notrun"/>
+   <testcase name="OrderPriceModification" status="notrun"/>
+   <testcase name="OrderSizeModification" status="notrun"/>
+   <testcase name="PriceChange" status="notrun"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

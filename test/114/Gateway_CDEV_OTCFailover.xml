@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="1" skipped="0" tests="1" testsuite_failed="True" time="27.422597" timestamp="2020-02-19T00:40:22.514577">
+ <properties>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="1" name="OTCFailover" skipped="0" tests="1" testsuite_failed="True" time="27.422597" timestamp="2020-02-19T00:40:22.514577">
+  <testsuite failures="1" name="IMF" skipped="0" tests="1" testsuite_failed="True" time="1.171941" timestamp="2020-02-19T00:40:47.343334">
+   <testcase name="RecoverOrdersGWConnectionLost" status="run" time="0.046897" timestamp="2020-02-19T00:40:48.390276">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover\IMF\RecoverOrdersGWConnectionLost_tc.py&quot;, line 131, in &lt;module&gt;
+    test(GWComponent('localhost', &quot;CQGFixServiceBase&quot;))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover\IMF\RecoverOrdersGWConnectionLost_tc.py&quot;, line 53, in test
+    childOrderType=OrderType.Limit, childLimitPrice=98, timeout=eventWaitTimeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py&quot;, line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover\IMF\RecoverOrdersGWConnectionLost_tc.py&quot;, line 131, in &lt;module&gt;
+    test(GWComponent('localhost', &quot;CQGFixServiceBase&quot;))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover\IMF\RecoverOrdersGWConnectionLost_tc.py&quot;, line 53, in test
+    childOrderType=OrderType.Limit, childLimitPrice=98, timeout=eventWaitTimeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py&quot;, line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+ </testsuite>
+</testsuites>

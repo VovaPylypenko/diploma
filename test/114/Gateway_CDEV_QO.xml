@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="47" tests="47" testsuite_failed="False" time="22.42383" timestamp="2020-02-18T23:36:04.701175">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/QO/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="20"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/DataQueries/QO"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="QO" skipped="47" tests="47" testsuite_failed="False" time="22.42383" timestamp="2020-02-18T23:36:04.701175">
+  <testcase name="SortingAndFiltering" status="notrun"/>
+  <testsuite failures="0" name="CQM_Unavailable" skipped="1" tests="1" testsuite_failed="False">
+   <testcase name="CQM_Restart" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Filtering" skipped="21" tests="21" testsuite_failed="False">
+   <testcase name="By_ACCTID" status="notrun"/>
+   <testcase name="By_BDRANGE" status="notrun"/>
+   <testcase name="By_BDTOCUR" status="notrun"/>
+   <testcase name="By_UATTR" status="notrun"/>
+   <testcase name="By_SYMBOL" status="notrun"/>
+   <testcase name="By_stix" status="notrun"/>
+   <testcase name="By_endix" status="notrun"/>
+   <testcase name="By_fromdate" status="notrun"/>
+   <testcase name="By_todate" status="notrun"/>
+   <testcase name="By_traderid" status="notrun"/>
+   <testcase name="By_guid" status="notrun"/>
+   <testcase name="By_orderid" status="notrun"/>
+   <testcase name="By_uename" status="notrun"/>
+   <testcase name="By_side" status="notrun"/>
+   <testcase name="By_otype_market" status="notrun"/>
+   <testcase name="By_otype_limit" status="notrun"/>
+   <testcase name="By_otype_stop" status="notrun"/>
+   <testcase name="By_otype_stop_limit" status="notrun"/>
+   <testcase name="By_transid" status="notrun"/>
+   <testcase name="By_algo_strategy" status="notrun"/>
+   <testcase name="By_ostat" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="LQM_Unavailable" skipped="8" tests="8" testsuite_failed="False">
+   <testcase name="By_ACCTID" status="notrun"/>
+   <testcase name="By_SYMBOL" status="notrun"/>
+   <testcase name="By_traderid" status="notrun"/>
+   <testcase name="By_orderid" status="notrun"/>
+   <testcase name="By_uename" status="notrun"/>
+   <testcase name="By_side" status="notrun"/>
+   <testcase name="By_transid" status="notrun"/>
+   <testcase name="By_ostat" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Sorting" skipped="16" tests="16" testsuite_failed="False">
+   <testcase name="By_PLACETIME" status="notrun"/>
+   <testcase name="By_ACCT" status="notrun"/>
+   <testcase name="By_TRADER" status="notrun"/>
+   <testcase name="By_CQGID" status="notrun"/>
+   <testcase name="By_SYM" status="notrun"/>
+   <testcase name="By_STAT" status="notrun"/>
+   <testcase name="By_TYPE" status="notrun"/>
+   <testcase name="By_SIDE" status="notrun"/>
+   <testcase name="By_SZ" status="notrun"/>
+   <testcase name="By_PRICE" status="notrun"/>
+   <testcase name="By_FILLTIME" status="notrun"/>
+   <testcase name="By_CHECKED" status="notrun"/>
+   <testcase name="By_UATTR" status="notrun"/>
+   <testcase name="By_DUR" status="notrun"/>
+   <testcase name="By_CANCELTIME" status="notrun"/>
+   <testcase name="By_ALGOSTRATEGY" status="notrun"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

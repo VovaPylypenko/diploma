@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="37" testsuite_failed="False" time="786.821698" timestamp="2020-02-19T18:49:37.323688">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS/DefaultTPLforContractsWithDataFeed/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="RealTimePricesInRS" skipped="0" tests="37" testsuite_failed="False" time="786.821698" timestamp="2020-02-19T18:49:37.323688">
+  <testsuite failures="0" name="AggressiveTPLforContractsWithNoDataFeed" skipped="0" tests="6" testsuite_failed="False" time="1.656433" timestamp="2020-02-19T18:49:53.136628">
+   <testcase name="NoBidAskPriceCommodityLevelLimit" status="run" time="0.21876" timestamp="2020-02-19T18:49:53.230380"/>
+   <testcase name="NoBidAskPriceExchangeLevelLimit" status="run" time="0.218882" timestamp="2020-02-19T18:49:53.496026"/>
+   <testcase name="NoBidAskTradePriceContractLevelLimit" status="run" time="0.217801" timestamp="2020-02-19T18:49:53.762625"/>
+   <testcase name="TraderSpecifiedPriceInSTL" status="run" time="0.234352" timestamp="2020-02-19T18:49:54.027311"/>
+   <testcase name="TraderSpecifiedPriceLMT" status="run" time="0.156276" timestamp="2020-02-19T18:49:54.324176"/>
+   <testcase name="TraderSpecifiedPriceSTP" status="run" time="0.18745" timestamp="2020-02-19T18:49:54.558613"/>
+  </testsuite>
+  <testsuite failures="0" name="DefaultTPLforContractsWithDataFeed" skipped="0" tests="29" testsuite_failed="False" time="747.664192" timestamp="2020-02-19T18:49:54.839818">
+   <testcase name="AccountLevelLimit" status="run" time="26.657035" timestamp="2020-02-19T18:49:54.917955"/>
+   <testcase name="CallOptionsContractLevelLimit" status="run" time="26.953958" timestamp="2020-02-19T18:50:21.621871"/>
+   <testcase name="CommodityLevelLimit" status="run" time="26.656984" timestamp="2020-02-19T18:50:48.622774"/>
+   <testcase name="DelayedPricesUsageDisallowedForFCM" status="run" time="2.359454" timestamp="2020-02-19T18:51:15.342268"/>
+   <testcase name="ExchangeLevelLimit" status="run" time="26.703912" timestamp="2020-02-19T18:51:17.764232"/>
+   <testcase name="FuturesContractLevelLimit" status="run" time="26.409874" timestamp="2020-02-19T18:51:44.530657"/>
+   <testcase name="NewContractWithNoPricesAvailable" status="run" time="10.187861" timestamp="2020-02-19T18:52:11.015860"/>
+   <testcase name="ParkedOrderActivation" status="run" time="10.625337" timestamp="2020-02-19T18:52:21.250522"/>
+   <testcase name="PutOptionsContractLevelLimit" status="run" time="26.532051" timestamp="2020-02-19T18:52:31.922743"/>
+   <testcase name="RealTimePricesReSubscription" status="run" time="70.15934" timestamp="2020-02-19T18:52:58.564339"/>
+   <testcase name="TPLcheckOnCoMarginGroupAccount" status="run" time="26.797653" timestamp="2020-02-19T18:54:08.785122"/>
+   <testcase name="TPLcheckOnJoinPPGroupAccount" status="run" time="26.438311" timestamp="2020-02-19T18:54:35.629655"/>
+   <testcase name="TPLcheckOnOmnibusLevel" status="run" time="11.046993" timestamp="2020-02-19T18:55:02.115092"/>
+   <testcase name="TPLforAskSettlement" status="run" time="27.000812" timestamp="2020-02-19T18:55:13.208959"/>
+   <testcase name="TPLforAskTrade" status="run" time="27.579339" timestamp="2020-02-19T18:55:40.256663"/>
+   <testcase name="TPLforBidAskSettlement" status="run" time="26.110172" timestamp="2020-02-19T18:56:07.898149"/>
+   <testcase name="TPLforBidAskTrade" status="run" time="26.703956" timestamp="2020-02-19T18:56:34.070824"/>
+   <testcase name="TPLforBidSettlementAsk" status="run" time="26.641478" timestamp="2020-02-19T18:57:00.837278"/>
+   <testcase name="TPLforBidSettlement" status="run" time="26.62249" timestamp="2020-02-19T18:57:27.544565"/>
+   <testcase name="TPLforBidTradeAsk" status="run" time="26.938353" timestamp="2020-02-19T18:57:54.229555"/>
+   <testcase name="TPLforBidTrade" status="run" time="26.610197" timestamp="2020-02-19T18:58:21.230395"/>
+   <testcase name="TPLforSettlementAsk" status="run" time="27.407112" timestamp="2020-02-19T18:58:47.903106"/>
+   <testcase name="TPLforSettlementBidAsk" status="run" time="26.512974" timestamp="2020-02-19T18:59:15.376401"/>
+   <testcase name="TPLforSettlementBid" status="run" time="26.389913" timestamp="2020-02-19T18:59:41.968829"/>
+   <testcase name="TPLforSettlement" status="run" time="26.703969" timestamp="2020-02-19T19:00:08.452502"/>
+   <testcase name="TPLforTradeAsk" status="run" time="26.5009" timestamp="2020-02-19T19:00:35.234635"/>
+   <testcase name="TPLforTradeBidAsk" status="run" time="26.610014" timestamp="2020-02-19T19:01:01.782710"/>
+   <testcase name="TPLforTradeBid" status="run" time="26.641555" timestamp="2020-02-19T19:01:28.470846"/>
+   <testcase name="TPLforTrade" status="run" time="27.266583" timestamp="2020-02-19T19:01:55.174915"/>
+  </testsuite>
+  <testsuite failures="0" name="WithNoTPLcheck" skipped="0" tests="2" testsuite_failed="False" time="20.860291" timestamp="2020-02-19T19:02:22.537515">
+   <testcase name="NoTtraderSpecifiedPrice_MKT_order" status="run" time="10.312212" timestamp="2020-02-19T19:02:22.629652"/>
+   <testcase name="TPLnotEnforcedOnAccount" status="run" time="10.326985" timestamp="2020-02-19T19:02:33.005874"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

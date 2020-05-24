@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="67" testsuite_failed="False" time="271.291255" timestamp="2020-02-19T19:20:45.058958">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_CTC"/>
+  <property name="scripts-cfg-instance" value="SF_CTC"/>
+  <property name="threads-count" value="5"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="CTC" skipped="0" tests="67" testsuite_failed="False" time="271.291255" timestamp="2020-02-19T19:20:45.058958">
+  <testsuite failures="0" name="CrossTradeCOMode" skipped="0" tests="9" testsuite_failed="False" time="81.393458" timestamp="2020-02-19T19:20:55.887649">
+   <testcase name="Lmt_Lmt_CO" status="run" time="40.532738" timestamp="2020-02-19T19:20:55.996854"/>
+   <testcase name="Lmt_Stl_High_CO" status="run" time="40.517124" timestamp="2020-02-19T19:20:56.028095"/>
+   <testcase name="Lmt_Stp_High_CO" status="run" time="40.56533" timestamp="2020-02-19T19:20:56.059389"/>
+   <testcase name="Lmt_Stp_Low_CO" status="run" time="40.533684" timestamp="2020-02-19T19:20:56.121845"/>
+   <testcase name="NativeSpread_CO" status="run" time="40.57978" timestamp="2020-02-19T19:20:56.090593"/>
+   <testcase name="Stl_High_Lmt_CO" status="run" time="40.31381" timestamp="2020-02-19T19:21:36.592319"/>
+   <testcase name="Stl_Low_Lmt_CO" status="run" time="40.423235" timestamp="2020-02-19T19:21:36.670373"/>
+   <testcase name="Stp_High_Lmt_CO" status="run" time="40.392141" timestamp="2020-02-19T19:21:36.779599"/>
+   <testcase name="Stp_Low_Lmt_CO" status="run" time="40.376478" timestamp="2020-02-19T19:21:36.842211"/>
+  </testsuite>
+  <testsuite failures="0" name="CrossTradeOmnibus" skipped="0" tests="6" testsuite_failed="False" time="69.783864" timestamp="2020-02-19T19:22:17.312342">
+   <testcase name="ChangeRiskSettings" status="run" time="69.596311" timestamp="2020-02-19T19:22:17.406102"/>
+   <testcase name="COWithOmnibus" status="run" time="7.156576" timestamp="2020-02-19T19:22:17.437384"/>
+   <testcase name="COWithoutOmnibus" status="run" time="4.875197" timestamp="2020-02-19T19:22:17.484232"/>
+   <testcase name="RRWithOmnibus" status="run" time="0.90626" timestamp="2020-02-19T19:22:17.749885"/>
+   <testcase name="RRWithoutOmnibus" status="run" time="0.859377" timestamp="2020-02-19T19:22:17.890525"/>
+   <testcase name="XTC_Off_Omnibus_On" status="run" time="0.328129" timestamp="2020-02-19T19:22:18.749902"/>
+  </testsuite>
+  <testsuite failures="0" name="CrossTradeRRMode" skipped="0" tests="10" testsuite_failed="False" time="61.392888" timestamp="2020-02-19T19:23:27.143063">
+   <testcase name="Lmt_Lmt_RR" status="run" time="30.329218" timestamp="2020-02-19T19:23:27.283693"/>
+   <testcase name="Lmt_Stl_High_RR" status="run" time="30.376109" timestamp="2020-02-19T19:23:27.330554"/>
+   <testcase name="Lmt_Stl_Low_RR" status="run" time="30.360449" timestamp="2020-02-19T19:23:27.377464"/>
+   <testcase name="Lmt_Stp_High_RR" status="run" time="30.376111" timestamp="2020-02-19T19:23:27.424307"/>
+   <testcase name="Lmt_Stp_Low_RR" status="run" time="30.328786" timestamp="2020-02-19T19:23:27.471632"/>
+   <testcase name="NativeSpread_RR" status="run" time="30.282401" timestamp="2020-02-19T19:23:57.722291"/>
+   <testcase name="Stl_High_Lmt_RR" status="run" time="30.360491" timestamp="2020-02-19T19:23:57.800418"/>
+   <testcase name="Stl_Low_Lmt_RR" status="run" time="30.438614" timestamp="2020-02-19T19:23:57.894190"/>
+   <testcase name="Stp_High_Lmt_RR" status="run" time="30.360479" timestamp="2020-02-19T19:23:57.987936"/>
+   <testcase name="Stp_Low_Lmt_RR" status="run" time="30.313928" timestamp="2020-02-19T19:23:58.066066"/>
+  </testsuite>
+  <testsuite failures="0" name="DeferredOrdersHandling" skipped="0" tests="33" testsuite_failed="False" time="26.875993" timestamp="2020-02-19T19:24:28.567190">
+   <testcase name="FullFillMod_CO" status="run" time="2.406314" timestamp="2020-02-19T19:24:28.676572"/>
+   <testcase name="FullFillNewCan_CO" status="run" time="2.187539" timestamp="2020-02-19T19:24:28.707856"/>
+   <testcase name="FullFillNew_RR" status="run" time="2.29609" timestamp="2020-02-19T19:24:28.755563"/>
+   <testcase name="InCanAckMod_CO" status="run" time="2.296727" timestamp="2020-02-19T19:24:28.801785"/>
+   <testcase name="InCanAckNew_CO" status="run" time="2.218826" timestamp="2020-02-19T19:24:28.864060"/>
+   <testcase name="InCanAck_RR" status="run" time="4.297044" timestamp="2020-02-19T19:24:31.020394"/>
+   <testcase name="InCanRejMod_CO" status="run" time="2.296564" timestamp="2020-02-19T19:24:31.145814"/>
+   <testcase name="InCanRejNew_CO" status="run" time="2.234452" timestamp="2020-02-19T19:24:31.457920"/>
+   <testcase name="InCanRej_RR" status="run" time="4.250153" timestamp="2020-02-19T19:24:31.317287"/>
+   <testcase name="InModAckMod_CO" status="run" time="2.218775" timestamp="2020-02-19T19:24:31.411085"/>
+   <testcase name="InModAckNewOldPrice_CO" status="run" time="2.172063" timestamp="2020-02-19T19:24:33.551749"/>
+   <testcase name="InModAckNew_CO" status="run" time="2.20321" timestamp="2020-02-19T19:24:33.754871"/>
+   <testcase name="InModAckOldPrice_RR" status="run" time="4.250141" timestamp="2020-02-19T19:24:33.848629"/>
+   <testcase name="InModAck_RR" status="run" time="4.172005" timestamp="2020-02-19T19:24:35.379951"/>
+   <testcase name="InModRejModNoXT_CO" status="run" time="2.187533" timestamp="2020-02-19T19:24:35.645600"/>
+   <testcase name="InModRejModOldPrice_CO" status="run" time="2.171959" timestamp="2020-02-19T19:24:35.801821"/>
+   <testcase name="InModRejModXT_CO" status="run" time="2.171941" timestamp="2020-02-19T19:24:36.036206"/>
+   <testcase name="InModRejNewNoXT_CO" status="run" time="2.187552" timestamp="2020-02-19T19:24:37.911301"/>
+   <testcase name="InModRejNewXT_CO" status="run" time="2.171994" timestamp="2020-02-19T19:24:38.051900"/>
+   <testcase name="InModRejOldPrice_RR" status="run" time="4.218531" timestamp="2020-02-19T19:24:38.177273"/>
+   <testcase name="InModRej_RR" status="run" time="4.297627" timestamp="2020-02-19T19:24:38.301911"/>
+   <testcase name="InTransitAckMod_CO" status="run" time="4.234558" timestamp="2020-02-19T19:24:39.661348"/>
+   <testcase name="InTransitAckNew_CO" status="run" time="4.171983" timestamp="2020-02-19T19:24:40.208280"/>
+   <testcase name="InTransitAck_RR" status="run" time="12.188109" timestamp="2020-02-19T19:24:40.317623"/>
+   <testcase name="InTransitRejMod_CO" status="run" time="2.140754" timestamp="2020-02-19T19:24:42.536457"/>
+   <testcase name="InTransitRejNew_CO" status="run" time="2.156338" timestamp="2020-02-19T19:24:42.677063"/>
+   <testcase name="InTransitRej_RR" status="run" time="4.20329" timestamp="2020-02-19T19:24:43.989662"/>
+   <testcase name="ModNoXT_RR" status="run" time="0.093697" timestamp="2020-02-19T19:24:44.458439"/>
+   <testcase name="NewNoXT_RR" status="run" time="0.234355" timestamp="2020-02-19T19:24:44.630294"/>
+   <testcase name="TimeoutMod_CO" status="run" time="7.234148" timestamp="2020-02-19T19:24:44.771397"/>
+   <testcase name="TimeoutMod_RR" status="run" time="7.156595" timestamp="2020-02-19T19:24:44.927161"/>
+   <testcase name="TimeoutNewCan_CO" status="run" time="7.094016" timestamp="2020-02-19T19:24:45.036540"/>
+   <testcase name="TimeoutNew_CO" status="run" time="7.078379" timestamp="2020-02-19T19:24:48.271055"/>
+  </testsuite>
+  <testsuite failures="0" name="MassOrdersCancel" skipped="0" tests="4" testsuite_failed="False" time="7.221831" timestamp="2020-02-19T19:24:55.490060">
+   <testcase name="ModAllCancelled" status="run" time="2.781022" timestamp="2020-02-19T19:24:55.615371"/>
+   <testcase name="ModOneCancelRejected" status="run" time="6.908292" timestamp="2020-02-19T19:24:55.661917"/>
+   <testcase name="NewAllCancelled" status="run" time="2.734478" timestamp="2020-02-19T19:24:55.708794"/>
+   <testcase name="NewOneCancelRejected" status="run" time="6.849903" timestamp="2020-02-19T19:24:55.755696"/>
+  </testsuite>
+  <testsuite failures="0" name="NoCrossTradeContracts" skipped="0" tests="5" testsuite_failed="False" time="1.687414" timestamp="2020-02-19T19:25:02.771693">
+   <testcase name="Lmt_Lmt" status="run" time="1.187519" timestamp="2020-02-19T19:25:02.943461"/>
+   <testcase name="Lmt_Stl" status="run" time="1.203083" timestamp="2020-02-19T19:25:03.006058"/>
+   <testcase name="Lmt_Stp" status="run" time="1.234673" timestamp="2020-02-19T19:25:03.068451"/>
+   <testcase name="Stl_Lmt" status="run" time="1.218792" timestamp="2020-02-19T19:25:03.115315"/>
+   <testcase name="Stp_Lmt" status="run" time="1.218799" timestamp="2020-02-19T19:25:03.177816"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

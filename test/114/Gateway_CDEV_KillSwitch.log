@@ -1,0 +1,21 @@
+ 2:25:24.70  Test starded without threads
+00:25:25.303 Python Module Path 'ScriptKit/TroubleMaker' added.
+00:25:25.303 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:25:25.303 Python Module Path 'ScriptKit' added.
+00:25:25.303 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch/PythonModules' added.
+00:25:26.881 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch' filtered execution.
+00:25:26.928 Suite '.'. [1 test cases, 5 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch\test_suite_su.py", line 72, in <module>
+    PlaceInitOrders(traderAcctDict, [contrA, contrB], exchange, orderInfoList)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\KillSwitch\PythonModules\SuiteHelper.py", line 99, in PlaceInitOrders
+    symbol, side, 11, OrderType.Limit, limitPrice=100, duration=duration)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:25:43.334 Suite '.' setup failed, child test cases and sub-suites will be skipped.
+00:26:08.476 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch' execution finished. It took 0:00:41.563704.
+00:26:08.476 Test cases results: 49 total, 0 succeeded, 0 failed, 49 skipped.

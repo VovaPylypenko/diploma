@@ -1,0 +1,125 @@
+21:11:47.32  Test starded without threads
+19:11:47.867 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport/PythonModules' added.
+19:11:47.867 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+19:11:47.867 Python Module Path 'Scripts/Gateway/PythonModules' added.
+19:11:47.867 Python Module Path 'ScriptKit' added.
+19:11:48.289 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport' full execution.
+19:11:48.320 Suite '.'. [0 test cases, 10 sub-suites]
+19:12:08.165 Suite 'BracketLegCancellation'. [4 test cases, 0 sub-suites]
+19:12:08.228 Case '2Leg_Master' execution.
+19:12:08.259 Case '2Leg_Secondary' execution.
+19:12:08.290 Case '3Leg_Master' execution.
+19:12:08.321 Case '3Leg_Secondary' execution.
+19:12:08.743 Case '2Leg_Master' succeeded.
+19:12:08.790 Case '2Leg_Secondary' succeeded.
+19:12:08.915 Case '3Leg_Master' succeeded.
+19:12:09.290 Case '3Leg_Secondary' succeeded.
+19:12:09.477 Suite 'BracketStructureModification'. [3 test cases, 0 sub-suites]
+19:12:09.556 Case 'OCO_To_2Leg' execution.
+19:12:09.602 Case 'Order_To_2Leg' execution.
+19:12:09.665 Case 'Order_To_3Leg' execution.
+19:12:10.149 Case 'OCO_To_2Leg' succeeded.
+19:12:10.462 Case 'Order_To_2Leg' succeeded.
+19:12:10.634 Case 'Order_To_3Leg' succeeded.
+19:12:10.774 Suite 'CashReserve'. [3 test cases, 0 sub-suites]
+19:12:10.868 Case '2Leg_Loss' execution.
+19:12:10.884 Case '2Leg_Profit' execution.
+19:12:10.932 Case '3Leg' execution.
+19:12:10.993 Case '2Leg_Profit' succeeded.
+19:12:11.024 Case '2Leg_Loss' succeeded.
+19:12:11.149 Case '3Leg' succeeded.
+19:12:11.306 Suite 'CheckAlgorithms'. [7 test cases, 0 sub-suites]
+19:12:11.402 Case '2LB_OrderOffset' execution.
+19:12:11.447 Case '2LB_OrderSide' execution.
+19:12:11.493 Case '2LB_OrderType' execution.
+19:12:11.540 Case '3LB_OrderOffset' execution.
+19:12:11.587 Case '3LB_OrderSide' execution.
+19:12:11.634 Case '2LB_OrderType' succeeded.
+19:12:11.634 Case '2LB_OrderSide' succeeded.
+19:12:11.649 Case '3LB_OrderType' execution.
+19:12:11.681 Case 'BracketStructure' execution.
+19:12:11.774 Case '2LB_OrderOffset' succeeded.
+19:12:12.196 Case '3LB_OrderOffset' succeeded.
+19:12:12.259 Case '3LB_OrderSide' succeeded.
+19:12:12.306 Case '3LB_OrderType' succeeded.
+19:12:12.353 Case 'BracketStructure' succeeded.
+19:12:12.493 Suite 'MarketMasterOrder'. [11 test cases, 0 sub-suites]
+19:12:12.571 Case 'LmtOrder_BidAsk' execution.
+19:12:12.618 Case 'LmtOrder_NoPrice' execution.
+19:12:12.665 Case 'LmtOrder_Settle' execution.
+19:12:12.712 Case 'LmtOrder_Trade' execution.
+19:12:12.759 Case 'LmtOrder_NoPrice' succeeded.
+19:12:12.776 Case 'StlOrder_BidAsk' execution.
+19:12:12.821 Case 'StlOrder_Settle' execution.
+19:12:12.869 Case 'StlOrder_Trade' execution.
+19:12:12.962 Case 'StpOrder_BidAsk' execution.
+19:12:13.087 Case 'StpOrder_Settle' execution.
+19:12:13.134 Case 'StpOrder_Trade' execution.
+19:12:13.181 Case 'LmtOrder_BidAsk' succeeded.
+19:12:13.181 Case 'StpOrder_NoPrice' execution.
+19:12:13.306 Case 'LmtOrder_Settle' succeeded.
+19:12:13.446 Case 'StpOrder_NoPrice' succeeded.
+19:12:13.540 Case 'LmtOrder_Trade' succeeded.
+19:12:13.696 Case 'StpOrder_BidAsk' succeeded.
+19:12:13.728 Case 'StpOrder_Trade' succeeded.
+19:12:13.728 Case 'StpOrder_Settle' succeeded.
+19:12:13.915 Case 'StlOrder_BidAsk' succeeded.
+19:12:13.993 Case 'StlOrder_Settle' succeeded.
+19:12:14.024 Case 'StlOrder_Trade' succeeded.
+19:12:14.196 Suite 'MasterMultipleFills'. [4 test cases, 0 sub-suites]
+19:12:14.306 Case '2Leg_PartFillDisabled' execution.
+19:12:14.337 Case '2Leg_PartFillEnabled' execution.
+19:12:14.384 Case '3Leg_PartFillDisabled' execution.
+19:12:14.448 Case '3Leg_PartFillEnabled' execution.
+19:12:15.107 Case '2Leg_PartFillEnabled' succeeded.
+19:12:15.196 Case '3Leg_PartFillDisabled' succeeded.
+19:12:15.228 Case '2Leg_PartFillDisabled' succeeded.
+19:12:15.384 Case '3Leg_PartFillEnabled' succeeded.
+19:12:15.509 Suite 'ModifyBracketLeg'. [3 test cases, 0 sub-suites]
+19:12:15.618 Case '2Leg' execution.
+19:12:15.650 Case '3Leg' execution.
+19:12:15.681 Case 'MasterModificationReject' execution.
+19:12:15.978 Case '2Leg' succeeded.
+19:12:16.056 Case 'MasterModificationReject' succeeded.
+19:12:16.122 Case '3Leg' succeeded.
+19:12:16.306 Suite 'PriceLimitCheck'. [10 test cases, 0 sub-suites]
+19:12:16.400 Case '2Leg_StopLimitOffset' execution.
+19:12:16.438 Case '3Leg_StopLimitOffset' execution.
+19:12:16.478 Case 'TS1_2Leg_Lmt' execution.
+19:12:16.540 Case 'TS1_2Leg_Mkt' execution.
+19:12:16.603 Case 'TS1_3Leg_Lmt' execution.
+19:12:16.665 Case 'TS1_3Leg_Mkt' execution.
+19:12:16.728 Case 'TS2_2Leg_Lmt' execution.
+19:12:16.790 Case 'TS2_2Leg_Mkt' execution.
+19:12:16.837 Case 'TS2_3Leg_Lmt' execution.
+19:12:16.904 Case 'TS2_3Leg_Mkt' execution.
+19:12:17.978 Case '2Leg_StopLimitOffset' succeeded.
+19:12:18.821 Case '3Leg_StopLimitOffset' succeeded.
+19:12:19.275 Case 'TS1_2Leg_Mkt' succeeded.
+19:12:19.325 Case 'TS1_2Leg_Lmt' succeeded.
+19:12:19.462 Case 'TS2_2Leg_Mkt' succeeded.
+19:12:19.603 Case 'TS2_2Leg_Lmt' succeeded.
+19:12:19.837 Case 'TS1_3Leg_Mkt' succeeded.
+19:12:19.946 Case 'TS2_3Leg_Mkt' succeeded.
+19:12:20.118 Case 'TS1_3Leg_Lmt' succeeded.
+19:12:20.165 Case 'TS2_3Leg_Lmt' succeeded.
+19:12:20.353 Suite 'StopLimitOffset'. [2 test cases, 0 sub-suites]
+19:12:20.431 Case '2Leg' execution.
+19:12:20.493 Case '3Leg' execution.
+19:12:20.618 Case '2Leg' succeeded.
+19:12:20.697 Case '3Leg' succeeded.
+19:12:20.853 Suite 'SyntheticBracketLeg'. [6 test cases, 0 sub-suites]
+19:12:20.931 Case 'QTSTL' execution.
+19:12:20.978 Case 'TLMT_Master' execution.
+19:12:21.025 Case 'TLMT' execution.
+19:12:21.056 Case 'TSTP' execution.
+19:12:21.118 Case 'QTSTP' execution.
+19:12:21.181 Case 'TSTL' execution.
+19:12:21.368 Case 'TLMT' succeeded.
+19:12:29.213 Case 'TLMT_Master' succeeded.
+19:12:31.154 Case 'QTSTL' succeeded.
+19:12:31.431 Case 'TSTP' succeeded.
+19:12:31.463 Case 'QTSTP' succeeded.
+19:12:31.478 Case 'TSTL' succeeded.
+19:12:44.744 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport' execution finished. It took 0:00:56.423824.
+19:12:44.744 Test cases results: 53 total, 53 succeeded, 0 failed, 0 skipped.

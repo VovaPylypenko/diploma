@@ -1,0 +1,294 @@
+ 1:44:37.62  Test starded without threads
+23:44:38.047 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+23:44:38.047 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:44:38.047 Python Module Path 'ScriptKit' added.
+23:44:38.375 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows' full execution.
+23:44:38.391 Suite '.'. [0 test cases, 1 sub-suites]
+23:44:50.940 Suite 'OrderSpecOverriding'. [19 test cases, 0 sub-suites]
+23:44:50.985 Case 'ActivateParkedOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\ActivateParkedOrders.tc.py", line 21, in <module>
+    order = account.PlaceOrder_Parked(contract_OrderDurationOverride, OrderSide.Buy, 1, OrderType.Limit, duration = OrderDuration.Day)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 73, in PlaceOrder_Parked
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, park = True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:50.985 Case 'ActivateParkedOrders' failed.
+23:44:51.065 Case 'LimitDayOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\LimitDayOrders.tc.py", line 22, in <module>
+    timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.065 Case 'LimitDayOrders' failed.
+23:44:51.126 Case 'LimitFakOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\LimitFakOrders.tc.py", line 22, in <module>
+    timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.141 Case 'LimitFakOrders' failed.
+23:44:51.188 Case 'LimitFokOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\LimitFokOrders.tc.py", line 22, in <module>
+    timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.188 Case 'LimitFokOrders' failed.
+23:44:51.266 Case 'LimitGtcOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\LimitGtcOrders.tc.py", line 21, in <module>
+    order = account.PlaceOrder_Accepted(contract_OrderDurationOverride, OrderSide.Buy, 4, OrderType.Limit, duration = OrderDuration.GoodTillCancel)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.266 Case 'LimitGtcOrders' failed.
+23:44:51.313 Case 'LimitGtdOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\LimitGtdOrders.tc.py", line 22, in <module>
+    duration = OrderDuration.GoodTillDate, goodThru = nextDay)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.329 Case 'LimitGtdOrders' failed.
+23:44:51.376 Case 'LimitIcebergDayOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\LimitIcebergDayOrders.tc.py", line 22, in <module>
+    execInstructions = Common.iceberg, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.391 Case 'LimitIcebergDayOrders' failed.
+23:44:51.438 Case 'LimitIcebergGtcOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\LimitIcebergGtcOrders.tc.py", line 22, in <module>
+    duration = OrderDuration.GoodTillCancel, execInstructions = Common.iceberg)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.454 Case 'LimitIcebergGtcOrders' failed.
+23:44:51.516 Case 'MarketOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\MarketOrders.tc.py", line 22, in <module>
+    timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.516 Case 'MarketOrders' failed.
+23:44:51.579 Case 'StopDayOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\StopDayOrders.tc.py", line 22, in <module>
+    timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.579 Case 'StopDayOrders' failed.
+23:44:51.641 Case 'StopFakOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\StopFakOrders.tc.py", line 22, in <module>
+    timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.641 Case 'StopFakOrders' failed.
+23:44:51.720 Case 'StopFokOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\StopFokOrders.tc.py", line 22, in <module>
+    timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.720 Case 'StopFokOrders' failed.
+23:44:51.798 Case 'StopGtcOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\StopGtcOrders.tc.py", line 21, in <module>
+    order = account.PlaceOrder_Accepted(contract_OrderDurationOverride, OrderSide.Sell, 1, OrderType.Stop, duration = OrderDuration.GoodTillCancel)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.798 Case 'StopGtcOrders' failed.
+23:44:51.860 Case 'StopGtdOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\StopGtdOrders.tc.py", line 22, in <module>
+    duration = OrderDuration.GoodTillDate, goodThru = nextDay)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:51.876 Case 'StopGtdOrders' failed.
+23:44:52.001 Case 'StopLimitDayOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\StopLimitDayOrders.tc.py", line 22, in <module>
+    timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:52.001 Case 'StopLimitDayOrders' failed.
+23:44:52.063 Case 'StopLimitFakOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\StopLimitFakOrders.tc.py", line 22, in <module>
+    timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:52.079 Case 'StopLimitFakOrders' failed.
+23:44:52.173 Case 'StopLimitFokOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\StopLimitFokOrders.tc.py", line 22, in <module>
+    timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 81, in PlaceOrder_ActivatedAt
+    activeAt = True, timeActiveAt = timeActiveAt)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:52.173 Case 'StopLimitFokOrders' failed.
+23:44:52.298 Case 'StopLimitGtcOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\StopLimitGtcOrders.tc.py", line 21, in <module>
+    order = account.PlaceOrder_Accepted(contract_OrderDurationOverride, OrderSide.Buy, 2, OrderType.StopLimit, duration = OrderDuration.GoodTillCancel)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:52.298 Case 'StopLimitGtcOrders' failed.
+23:44:52.391 Case 'StopLimitGtdOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows\OrderSpecOverriding\StopLimitGtdOrders.tc.py", line 22, in <module>
+    duration = OrderDuration.GoodTillDate, goodThru = nextDay)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:44:52.391 Case 'StopLimitGtdOrders' failed.
+23:44:55.235 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows' execution finished. It took 0:00:16.828619.
+23:44:55.235 Test cases results: 19 total, 0 succeeded, 19 failed, 0 skipped.

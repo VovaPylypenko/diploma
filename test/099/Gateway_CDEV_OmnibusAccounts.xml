@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="65" testsuite_failed="False" time="542.189884" timestamp="2020-02-06T06:03:53.339852">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts/RiskAndRouting/MassOrderActions/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="20"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="OmnibusAccounts" skipped="0" tests="65" testsuite_failed="False" time="542.189884" timestamp="2020-02-06T06:03:53.339852">
+  <testsuite failures="0" name="RiskAndRouting" skipped="0" tests="65" testsuite_failed="False" time="354.996112" timestamp="2020-02-06T06:04:08.715362">
+   <testcase name="CircularDependenciesPrevention" status="run" time="5.062652" timestamp="2020-02-06T06:04:08.840390"/>
+   <testcase name="DirectOrderOnOmnibus" status="run" time="5.061842" timestamp="2020-02-06T06:04:08.888076"/>
+   <testcase name="ExecutionAccountIDInternalOmnibus" status="run" time="0.327617" timestamp="2020-02-06T06:04:08.934635"/>
+   <testcase name="ExecutionAccountIDOmnibus" status="run" time="0.406244" timestamp="2020-02-06T06:04:08.965389"/>
+   <testcase name="OmnibusChainLimit" status="run" time="5.093758" timestamp="2020-02-06T06:04:09.012422"/>
+   <testcase name="OrderPlacementRisksOnOmnibusChain" status="run" time="25.282103" timestamp="2020-02-06T06:04:09.074750"/>
+   <testcase name="RoutingThroughOmnibusChain" status="run" time="0.218586" timestamp="2020-02-06T06:04:09.121856"/>
+   <testsuite failures="0" name="CancelAll" skipped="0" tests="1" testsuite_failed="False" time="2.64071" timestamp="2020-02-06T06:04:34.403723">
+    <testcase name="FromOmnibus" status="run" time="0.64064" timestamp="2020-02-06T06:04:36.310027"/>
+   </testsuite>
+   <testsuite failures="0" name="MassOrderActions" skipped="0" tests="38" testsuite_failed="False" time="290.150218" timestamp="2020-02-06T06:04:37.075684">
+    <testsuite failures="0" name="ActivateAll" skipped="0" tests="14" testsuite_failed="False" time="33.693321" timestamp="2020-02-06T06:04:37.278821">
+     <testcase name="ActivateAllForAccountScenario1" status="run" time="25.078964" timestamp="2020-02-06T06:04:37.419438"/>
+     <testcase name="ActivateAllForAccountScenario2" status="run" time="26.235192" timestamp="2020-02-06T06:04:37.466396"/>
+     <testcase name="ActivateAllForAccountScenario3" status="run" time="26.922769" timestamp="2020-02-06T06:04:37.513182"/>
+     <testcase name="ActivateAllForAccountScenario4" status="run" time="30.624637" timestamp="2020-02-06T06:04:37.545818"/>
+     <testcase name="ActivateAllForAccountScenario5" status="run" time="30.922916" timestamp="2020-02-06T06:04:37.591327"/>
+     <testcase name="ActivateAllForAccountScenario6" status="run" time="31.235415" timestamp="2020-02-06T06:04:37.622576"/>
+     <testcase name="ActivateAllForAccountScenario7" status="run" time="30.532212" timestamp="2020-02-06T06:04:37.653865"/>
+     <testcase name="ActivateAllForTraderScenario1" status="run" time="27.375727" timestamp="2020-02-06T06:04:37.700893"/>
+     <testcase name="ActivateAllForTraderScenario2" status="run" time="27.032155" timestamp="2020-02-06T06:04:37.747578"/>
+     <testcase name="ActivateAllForTraderScenario3" status="run" time="27.826229" timestamp="2020-02-06T06:04:37.797399"/>
+     <testcase name="ActivateAllForTraderScenario4" status="run" time="33.01596" timestamp="2020-02-06T06:04:37.857768"/>
+     <testcase name="ActivateAllForTraderScenario5" status="run" time="31.626053" timestamp="2020-02-06T06:04:37.903835"/>
+     <testcase name="ActivateAllForTraderScenario6" status="run" time="32.829162" timestamp="2020-02-06T06:04:37.950770"/>
+     <testcase name="ActivateAllForTraderScenario7" status="run" time="31.559595" timestamp="2020-02-06T06:04:37.987639"/>
+    </testsuite>
+    <testsuite failures="0" name="CancelAll" skipped="0" tests="15" testsuite_failed="False" time="40.671361" timestamp="2020-02-06T06:05:11.000572">
+     <testcase name="CancelAllForAccountScenario1" status="run" time="32.657299" timestamp="2020-02-06T06:05:11.139325"/>
+     <testcase name="CancelAllForAccountScenario2" status="run" time="31.829183" timestamp="2020-02-06T06:05:11.186184"/>
+     <testcase name="CancelAllForAccountScenario3" status="run" time="30.547877" timestamp="2020-02-06T06:05:11.264324"/>
+     <testcase name="CancelAllForAccountScenario4" status="run" time="27.422549" timestamp="2020-02-06T06:05:11.311407"/>
+     <testcase name="CancelAllForAccountScenario5" status="run" time="22.26428" timestamp="2020-02-06T06:05:11.344505"/>
+     <testcase name="CancelAllForAccountScenario6" status="run" time="22.500979" timestamp="2020-02-06T06:05:11.404956"/>
+     <testcase name="CancelAllForAccountScenario7" status="run" time="22.421881" timestamp="2020-02-06T06:05:11.452538"/>
+     <testcase name="CancelAllForTraderScenario1" status="run" time="30.814463" timestamp="2020-02-06T06:05:11.498737"/>
+     <testcase name="CancelAllForTraderScenario2" status="run" time="30.735385" timestamp="2020-02-06T06:05:11.561195"/>
+     <testcase name="CancelAllForTraderScenario3" status="run" time="32.547966" timestamp="2020-02-06T06:05:11.623695"/>
+     <testcase name="CancelAllForTraderScenario4" status="run" time="37.125813" timestamp="2020-02-06T06:05:11.671011"/>
+     <testcase name="CancelAllForTraderScenario5" status="run" time="32.187831" timestamp="2020-02-06T06:05:11.733821"/>
+     <testcase name="CancelAllForTraderScenario6" status="run" time="37.235653" timestamp="2020-02-06T06:05:11.764317"/>
+     <testcase name="CancelAllForTraderScenario7" status="run" time="35.954338" timestamp="2020-02-06T06:05:11.826829"/>
+     <testsuite failures="0" name="viaOmnibus" skipped="0" tests="1" testsuite_failed="False" time="2.531297" timestamp="2020-02-06T06:05:49.046848">
+      <testcase name="OmnibusTraderCancelsOrders" status="run" time="0.453496" timestamp="2020-02-06T06:05:51.015614"/>
+     </testsuite>
+    </testsuite>
+    <testsuite failures="0" name="MassActions" skipped="0" tests="5" testsuite_failed="False" time="172.865098" timestamp="2020-02-06T06:05:51.718783">
+     <testcase name="MassActivateAllOrders" status="run" time="30.719746" timestamp="2020-02-06T06:05:51.906286"/>
+     <testcase name="MassActivateAtOrders" status="run" time="172.534498" timestamp="2020-02-06T06:05:51.955602"/>
+     <testcase name="MassCancelAllOrders" status="run" time="29.079071" timestamp="2020-02-06T06:05:52.156291"/>
+     <testcase name="MassCancelOrders" status="run" time="27.813419" timestamp="2020-02-06T06:05:52.015655"/>
+     <testcase name="MassParialFillOrders" status="run" time="30.032224" timestamp="2020-02-06T06:05:52.078162"/>
+    </testsuite>
+    <testsuite failures="0" name="ParkAllActivateAll" skipped="0" tests="4" testsuite_failed="False" time="37.423133" timestamp="2020-02-06T06:08:44.630735">
+     <testcase name="OmnibusLevel1" status="run" time="25.86023" timestamp="2020-02-06T06:08:44.755758"/>
+     <testcase name="OmnibusLevel2" status="run" time="26.563341" timestamp="2020-02-06T06:08:44.802667"/>
+     <testcase name="OmnibusLevel3" status="run" time="26.844608" timestamp="2020-02-06T06:08:44.849535"/>
+     <testcase name="RegualAccount" status="run" time="37.079381" timestamp="2020-02-06T06:08:44.896383"/>
+    </testsuite>
+   </testsuite>
+   <testsuite failures="0" name="OmnibusChainOnOmnibusRequiredFCM" skipped="0" tests="1" testsuite_failed="False" time="1.2344249999999999" timestamp="2020-02-06T06:09:27.272779">
+    <testcase name="RegularAccountConfig" status="run" time="0.078279" timestamp="2020-02-06T06:09:28.319706"/>
+   </testsuite>
+   <testsuite failures="0" name="OrderModificationReject" skipped="0" tests="5" testsuite_failed="False" time="25.766335" timestamp="2020-02-06T06:09:28.554230">
+    <testcase name="On1stOmnibus" status="run" time="25.375859" timestamp="2020-02-06T06:09:28.679087"/>
+    <testcase name="On2ndOmnibus" status="run" time="25.422407" timestamp="2020-02-06T06:09:28.710735"/>
+    <testcase name="On3rdOmnibus" status="run" time="20.360056" timestamp="2020-02-06T06:09:28.772814"/>
+    <testcase name="OnLastOmnibus" status="run" time="0.328167" timestamp="2020-02-06T06:09:28.850946"/>
+    <testcase name="OnRegularAccount" status="run" time="25.313353" timestamp="2020-02-06T06:09:28.913448"/>
+   </testsuite>
+   <testsuite failures="0" name="Suspend" skipped="0" tests="8" testsuite_failed="False" time="8.10963" timestamp="2020-02-06T06:09:54.383083">
+    <testsuite failures="0" name="ParkActivateOrders" skipped="0" tests="4" testsuite_failed="False" time="1.578174" timestamp="2020-02-06T06:09:59.914494">
+     <testcase name="Level1" status="run" time="0.875037" timestamp="2020-02-06T06:10:00.086362"/>
+     <testcase name="Level2" status="run" time="1.092178" timestamp="2020-02-06T06:10:00.181779"/>
+     <testcase name="Level3" status="run" time="1.092646" timestamp="2020-02-06T06:10:00.275700"/>
+     <testcase name="RegularAccount" status="run" time="0.781615" timestamp="2020-02-06T06:10:00.383247"/>
+    </testsuite>
+    <testsuite failures="0" name="ParkActivateWithInternalOmni" skipped="0" tests="4" testsuite_failed="False" time="0.812515" timestamp="2020-02-06T06:10:01.555165">
+     <testcase name="InternalOmni" status="run" time="0.328116" timestamp="2020-02-06T06:10:01.727050"/>
+     <testcase name="OmnibusL1" status="run" time="0.27988" timestamp="2020-02-06T06:10:01.791090"/>
+     <testcase name="OmnibusL2" status="run" time="0.359105" timestamp="2020-02-06T06:10:01.836712"/>
+     <testcase name="RegularAccount" status="run" time="0.309626" timestamp="2020-02-06T06:10:01.933055"/>
+    </testsuite>
+   </testsuite>
+   <testsuite failures="0" name="UserInfoInOrderEvents" skipped="0" tests="5" testsuite_failed="False" time="1.046895" timestamp="2020-02-06T06:10:02.555214">
+    <testcase name="1stOmnibus" status="run" time="0.421872" timestamp="2020-02-06T06:10:02.695833"/>
+    <testcase name="2ndOmnibus" status="run" time="0.390651" timestamp="2020-02-06T06:10:03.055202"/>
+    <testcase name="3rdOmnibus" status="run" time="0.515688" timestamp="2020-02-06T06:10:02.773952"/>
+    <testcase name="lastOmnibus" status="run" time="0.561634" timestamp="2020-02-06T06:10:02.837337"/>
+    <testcase name="RegularAccount" status="run" time="0.531281" timestamp="2020-02-06T06:10:02.914572"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

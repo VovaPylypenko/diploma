@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="27" testsuite_failed="False" time="102.472187" timestamp="2020-02-06T06:12:57.654753">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="OrderSuspend" skipped="0" tests="27" testsuite_failed="False" time="102.472187" timestamp="2020-02-06T06:12:57.654753">
+  <testsuite failures="0" name="DurationModification" skipped="0" tests="4" testsuite_failed="False" time="0.955775" timestamp="2020-02-06T06:13:09.123874">
+   <testcase name="DurationModification01" status="run" time="0.155854" timestamp="2020-02-06T06:13:09.264908"/>
+   <testcase name="DurationModification03" status="run" time="0.109414" timestamp="2020-02-06T06:13:09.498883"/>
+   <testcase name="DurationModification05" status="run" time="0.124276" timestamp="2020-02-06T06:13:09.655890"/>
+   <testcase name="DurationModification06" status="run" time="0.171639" timestamp="2020-02-06T06:13:09.842910"/>
+  </testsuite>
+  <testsuite failures="0" name="MultipleOrderOperations" skipped="0" tests="1" testsuite_failed="False" time="4.731586" timestamp="2020-02-06T06:13:10.111426">
+   <testcase name="MultipleOrderOperations" status="run" time="4.17202" timestamp="2020-02-06T06:13:10.202037"/>
+  </testsuite>
+  <testsuite failures="0" name="ParkedOrders" skipped="0" tests="4" testsuite_failed="False" time="2.329092" timestamp="2020-02-06T06:13:14.874061">
+   <testcase name="ActivateCancelParkedOrder" status="run" time="0.078133" timestamp="2020-02-06T06:13:15.936589"/>
+   <testcase name="ActivateFillParkedOrder" status="run" time="0.215647" timestamp="2020-02-06T06:13:16.095973"/>
+   <testcase name="ModifyParkedOrder" status="run" time="0.390649" timestamp="2020-02-06T06:13:16.405355"/>
+   <testcase name="ModifyParkedWasWorkingOrder" status="run" time="0.234388" timestamp="2020-02-06T06:13:16.874118"/>
+  </testsuite>
+  <testsuite failures="0" name="SingleOrderOperations" skipped="0" tests="18" testsuite_failed="False" time="74.110908" timestamp="2020-02-06T06:13:17.234262">
+   <testcase name="01-RejectOrderWithActivationTime" status="run" time="0.031215" timestamp="2020-02-06T06:13:17.342915"/>
+   <testcase name="02-RejectParkedWithParkTime" status="run" time="0.0316" timestamp="2020-02-06T06:13:17.436670"/>
+   <testcase name="03-RejectOrderWithPastParkTime" status="run" time="0.031268" timestamp="2020-02-06T06:13:17.530387"/>
+   <testcase name="04-RejectParkedWithPastActivationTime" status="run" time="0.031257" timestamp="2020-02-06T06:13:17.624142"/>
+   <testcase name="05-SingleOrderOperations05" status="run" time="4.403764" timestamp="2020-02-06T06:13:17.720564"/>
+   <testcase name="06-SingleOrderOperations06" status="run" time="2.2508369999999998" timestamp="2020-02-06T06:13:22.186776"/>
+   <testcase name="07-SingleOrderOperations07" status="run" time="4.167506" timestamp="2020-02-06T06:13:24.488237"/>
+   <testcase name="08-SingleOrderOperations08" status="run" time="0.187514" timestamp="2020-02-06T06:13:28.718235"/>
+   <testcase name="09-SingleOrderOperations09" status="run" time="0.187511" timestamp="2020-02-06T06:13:28.983869"/>
+   <testcase name="10-SingleOrderOperations10" status="run" time="8.125278" timestamp="2020-02-06T06:13:29.233884"/>
+   <testcase name="11-SingleOrderOperations11" status="run" time="0.136195" timestamp="2020-02-06T06:13:37.426072"/>
+   <testcase name="15-ParkAndActivateActiveAtOrder" status="run" time="8.562128" timestamp="2020-02-06T06:13:37.625411"/>
+   <testcase name="22-SingleOrderOperations22" status="run" time="8.094093" timestamp="2020-02-06T06:13:46.281277"/>
+   <testcase name="23-SingleOrderOperations23" status="run" time="17.094273" timestamp="2020-02-06T06:13:54.453417"/>
+   <testcase name="25-SingleOrderOperations25" status="run" time="17.093507" timestamp="2020-02-06T06:14:11.610993"/>
+   <testcase name="CancelParkedFakActivation" status="run" time="0.09377" timestamp="2020-02-06T06:14:28.782585"/>
+   <testcase name="ExchangeRejectsScheduledActivation" status="run" time="2.093747" timestamp="2020-02-06T06:14:28.954549"/>
+   <testcase name="FillSuspendedCancelledOrder" status="run" time="0.140654" timestamp="2020-02-06T06:14:31.126432"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

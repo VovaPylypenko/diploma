@@ -1,0 +1,482 @@
+17:18:49.72  Test starded without threads
+15:18:50.285 Python Module Path 'Scripts/Gateway/PythonModules/CastApi' added.
+15:18:50.285 Python Module Path 'Scripts/Gateway/PythonModules' added.
+15:18:50.285 Python Module Path 'ScriptKit' added.
+15:18:50.285 Python Module Path 'Scripts/Gateway/SystemAreas/ManagmentInterface/CastApi/PythonModules' added.
+15:18:56.082 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/ManagmentInterface/CastApi' full execution.
+15:18:56.145 Suite '.'. [0 test cases, 14 sub-suites]
+15:19:18.255 Suite 'Accounts'. [0 test cases, 22 sub-suites]
+15:19:18.380 Suite 'Accounts\AccountBalances_ts.py'. [7 test cases, 0 sub-suites]
+15:19:18.505 Case 'GetBalanceRecordsSuccessful' execution.
+15:19:19.677 Case 'GetBalanceRecordsSuccessful' succeeded.
+15:19:19.818 Case 'CreateAndUpdateBalanceRecordSuccesful' execution.
+15:19:20.224 Case 'CreateAndUpdateBalanceRecordSuccesful' succeeded.
+15:19:20.365 Case 'CreateAndUpdateBalanceRecordWithCollateralSuccessful' execution.
+15:19:20.630 Case 'CreateAndUpdateBalanceRecordWithCollateralSuccessful' succeeded.
+15:19:20.802 Case 'CreateAndGetBalanceRecordsAccountNotFound' execution.
+15:19:21.036 Case 'CreateAndGetBalanceRecordsAccountNotFound' succeeded.
+15:19:21.193 Case 'CreateBalanceRecordInvalidCurrency' execution.
+15:19:21.349 Case 'CreateBalanceRecordInvalidCurrency' succeeded.
+15:19:21.490 Case 'CreateUpdateAndGetBalanceRecordsNoPermission' execution.
+15:19:21.646 Case 'CreateUpdateAndGetBalanceRecordsNoPermission' succeeded.
+15:19:21.849 Case 'UpdateAndGetBalanceRecordsFailed' execution.
+15:19:22.021 Case 'UpdateAndGetBalanceRecordsFailed' succeeded.
+15:19:22.286 Suite 'Accounts\AccountCollateral_ts.py'. [1 test cases, 0 sub-suites]
+15:19:22.443 Case 'GetAccountCollateralSuccessful' execution.
+15:19:22.724 Case 'GetAccountCollateralSuccessful' succeeded.
+15:19:23.005 Suite 'Accounts\AccountCommon_ts.py'. [3 test cases, 0 sub-suites]
+15:19:23.130 Case 'AccountNoPermission' execution.
+15:19:24.005 Case 'AccountNoPermission' succeeded.
+15:19:24.162 Case 'AccountNotFound' execution.
+15:19:28.646 Case 'AccountNotFound' succeeded.
+15:19:28.787 Case 'AccountNotAuthority' execution.
+15:19:29.490 Case 'AccountNotAuthority' succeeded.
+15:19:29.834 Suite 'Accounts\AccountEquity_ts.py'. [1 test cases, 0 sub-suites]
+15:19:30.084 Case 'GetAccountEquitySuccessful' execution.
+15:19:30.287 Case 'GetAccountEquitySuccessful' succeeded.
+15:19:30.615 Suite 'Accounts\AccountExchanges_ts.py'. [1 test cases, 0 sub-suites]
+15:19:30.802 Case 'GetAccountExchangesSuccessful' execution.
+15:19:31.443 Case 'GetAccountExchangesSuccessful' succeeded.
+15:19:31.709 Suite 'Accounts\AccountGroup_ts.py'. [2 test cases, 0 sub-suites]
+15:19:31.849 Case 'AccountGroupCRUDSuccessfull' execution.
+15:20:21.789 Case 'AccountGroupCRUDSuccessfull' succeeded.
+15:20:21.945 Case 'CreateAccountGroupSameFcmFailed' execution.
+15:20:23.867 Case 'CreateAccountGroupSameFcmFailed' succeeded.
+15:20:24.258 Suite 'Accounts\AccountMarketLimitsPartialQty_ts.py'. [5 test cases, 0 sub-suites]
+15:20:24.383 Case 'UpdateDefaultMarketLimits' execution.
+15:21:05.058 Case 'UpdateDefaultMarketLimits' succeeded.
+15:21:05.243 Case 'UpdateAllUSMarketLimits' execution.
+15:21:13.212 Case 'UpdateAllUSMarketLimits' succeeded.
+15:21:13.384 Case 'UpdateExchangeMarketLimits' execution.
+15:21:17.869 Case 'UpdateExchangeMarketLimits' succeeded.
+15:21:18.025 Case 'UpdateCommodityMarketLimits' execution.
+15:21:23.150 Case 'UpdateCommodityMarketLimits' succeeded.
+15:21:23.307 Case 'UpdateInstrumentMarketLimits' execution.
+15:21:27.244 Case 'UpdateInstrumentMarketLimits' succeeded.
+15:21:27.526 Suite 'Accounts\AccountMarketLimits_ts.py'. [3 test cases, 0 sub-suites]
+15:21:27.682 Case 'UpdateMarketLimitsSuccessful' execution.
+15:21:29.947 Case 'UpdateMarketLimitsSuccessful' succeeded.
+15:21:30.119 Case 'UpdateMarketLimitsClearedFields' execution.
+15:22:05.699 Case 'UpdateMarketLimitsClearedFields' succeeded.
+15:22:05.839 Case 'UpdateMarketLimitsWithOriginal' execution.
+15:22:05.839 Case 'UpdateMarketLimitsWithOriginal' succeeded.
+15:22:06.246 Suite 'Accounts\AccountPositions_ts.py'. [1 test cases, 0 sub-suites]
+15:22:06.402 Case 'GetAccountPositionsSuccessful' execution.
+15:22:06.621 Case 'GetAccountPositionsSuccessful' succeeded.
+15:22:06.871 Suite 'Accounts\AccountRiskParameters_ts.py'. [4 test cases, 0 sub-suites]
+15:22:07.011 Case 'RiskParametersSuccessful' execution.
+15:22:42.419 Case 'RiskParametersSuccessful' succeeded.
+15:22:42.591 Case 'AccountRiskParametersIGMM' execution.
+15:23:20.076 Case 'AccountRiskParametersIGMM' succeeded.
+15:23:20.233 Case 'TradePriceLimitCompatibility' execution.
+15:23:53.843 Case 'TradePriceLimitCompatibility' succeeded.
+15:23:53.999 Case 'SizeLimitPartialQty' execution.
+15:24:26.579 Case 'SizeLimitPartialQty' succeeded.
+15:24:26.891 Suite 'Accounts\AccountRoutesSom_ts.py'. [1 test cases, 0 sub-suites]
+15:24:27.063 Case 'AccountRoutesSomSuccessful' execution.
+15:25:03.845 Case 'AccountRoutesSomSuccessful' succeeded.
+15:25:04.158 Suite 'Accounts\AccountRoutes_ts.py'. [2 test cases, 0 sub-suites]
+15:25:04.346 Case 'AccountRoutesSuccessful' execution.
+15:25:06.924 Case 'AccountRoutesSuccessful' succeeded.
+15:25:07.127 Case 'GetClearingAccountRoutesSuccessful' execution.
+15:25:41.706 Case 'GetClearingAccountRoutesSuccessful' succeeded.
+15:25:42.019 Suite 'Accounts\AccountSearch_ts.py'. [3 test cases, 0 sub-suites]
+15:26:14.129 Case 'PrimaryAndSecondaryCriteriaSearch' execution.
+15:26:46.521 Case 'PrimaryAndSecondaryCriteriaSearch' succeeded.
+15:26:46.662 Case 'SecondaryCriteriaOnlySearch' execution.
+15:27:22.194 Case 'SecondaryCriteriaOnlySearch' succeeded.
+15:27:22.319 Case 'AccountSearchOldApproachSuccessful' execution.
+15:27:22.929 Case 'AccountSearchOldApproachSuccessful' succeeded.
+15:27:23.225 Suite 'Accounts\AccountSettings_ts.py'. [1 test cases, 0 sub-suites]
+15:27:23.382 Case 'UpdateAccountSettingsSuccessful' execution.
+15:27:58.211 Case 'UpdateAccountSettingsSuccessful' succeeded.
+15:27:58.664 Suite 'Accounts\AccountTypeOverrides_ts.py'. [1 test cases, 0 sub-suites]
+15:27:58.883 Case 'UpdateAndGetTypeOverridesSuccessful' execution.
+15:28:34.666 Case 'UpdateAndGetTypeOverridesSuccessful' succeeded.
+15:28:35.025 Suite 'Accounts\AccountUserAuthorizations_ts.py'. [2 test cases, 0 sub-suites]
+15:28:35.197 Case 'GetAccountUserAuthorizations' execution.
+15:28:35.884 Case 'GetAccountUserAuthorizations' succeeded.
+15:28:36.041 Case 'GetAccountUserAuthorizationsForceCarePermission' execution.
+15:28:36.462 Case 'GetAccountUserAuthorizationsForceCarePermission' succeeded.
+15:28:36.775 Suite 'Accounts\CloneAccount_ts.py'. [7 test cases, 0 sub-suites]
+15:28:36.994 Case 'CloneAccountSuccessful' execution.
+15:28:37.572 Case 'CloneAccountSuccessful' succeeded.
+15:28:37.728 Case 'CloneAccountExistentBrokerageNumber' execution.
+15:28:37.869 Case 'CloneAccountExistentBrokerageNumber' succeeded.
+15:28:38.025 Case 'CloneAccountTraderSuccess' execution.
+15:28:39.978 Case 'CloneAccountTraderSuccess' succeeded.
+15:28:40.134 Case 'CloneAccountTraderFromOtherFcm' execution.
+15:28:40.369 Case 'CloneAccountTraderFromOtherFcm' succeeded.
+15:28:40.556 Case 'CloneAccountTraderNotFound' execution.
+15:28:40.744 Case 'CloneAccountTraderNotFound' succeeded.
+15:28:40.963 Case 'CloneAccountTraderNoAuthority' execution.
+15:28:41.228 Case 'CloneAccountTraderNoAuthority' succeeded.
+15:28:41.431 Case 'CloneAccountTraderNotLinkedWithCustomer' execution.
+15:28:41.669 Case 'CloneAccountTraderNotLinkedWithCustomer' succeeded.
+15:28:41.931 Suite 'Accounts\CreateAccount_ts.py'. [7 test cases, 0 sub-suites]
+15:28:43.244 Case 'CreateAccount' execution.
+15:29:18.042 Case 'CreateAccount' succeeded.
+15:29:18.167 Case 'CreateDuplicateAccount' execution.
+15:29:49.518 Case 'CreateDuplicateAccount' succeeded.
+15:29:49.653 Case 'CreateAccountInvalidParameters' execution.
+15:30:21.779 Case 'CreateAccountInvalidParameters' succeeded.
+15:30:21.966 Case 'SimulationAccountOk' execution.
+15:30:53.921 Case 'SimulationAccountOk' succeeded.
+15:30:54.061 Case 'SimAccountInvalidPrefix' execution.
+15:31:25.640 Case 'SimAccountInvalidPrefix' succeeded.
+15:31:25.828 Case 'CreateAccountForTempFcm' execution.
+15:31:58.048 Case 'CreateAccountForTempFcm' succeeded.
+15:31:58.204 Case 'TempAccountInvalidPrefix' execution.
+15:32:29.361 Case 'TempAccountInvalidPrefix' succeeded.
+15:32:29.768 Suite 'Accounts\DeleteRestoreAccount_ts.py'. [1 test cases, 0 sub-suites]
+15:32:29.940 Case 'DeleteRestoreRegularAccountSuccessfully' execution.
+15:33:04.003 Case 'DeleteRestoreRegularAccountSuccessfully' succeeded.
+15:33:04.363 Suite 'Accounts\GetAccount_ts.py'. [1 test cases, 0 sub-suites]
+15:33:04.581 Case 'GetAccountSuccessful' execution.
+15:33:04.753 Case 'GetAccountSuccessful' succeeded.
+15:33:05.050 Suite 'Accounts\UpdateAccountTraderAuthorization_ts.py'. [2 test cases, 0 sub-suites]
+15:33:05.222 Case 'AddAccountTraderAuthorizationSuccessful' execution.
+15:33:40.083 Case 'AddAccountTraderAuthorizationSuccessful' succeeded.
+15:33:40.258 Case 'ImplicitAuthorizationFlag' execution.
+15:34:15.600 Case 'ImplicitAuthorizationFlag' succeeded.
+15:34:15.959 Suite 'Accounts\UpdateAccount_ts.py'. [8 test cases, 0 sub-suites]
+15:34:16.120 Case 'UpdateAccountSuccessful' execution.
+15:34:16.725 Case 'UpdateAccountSuccessful' succeeded.
+15:34:16.959 Case 'UpdateOriginalAccountSuccessful' execution.
+15:34:17.366 Case 'UpdateOriginalAccountSuccessful' succeeded.
+15:34:17.553 Case 'UpdateAccountTryChangeFCM' execution.
+15:34:17.694 Case 'UpdateAccountTryChangeFCM' succeeded.
+15:34:17.819 Case 'UpdateAccountInvalidCustomerId' execution.
+15:34:18.506 Case 'UpdateAccountInvalidCustomerId' succeeded.
+15:34:18.662 Case 'UpdateAccountDEMOPrefix' execution.
+15:34:19.365 Case 'UpdateAccountDEMOPrefix' succeeded.
+15:34:19.537 Case 'UpdateAccountDEMOPrefixFail' execution.
+15:34:19.944 Case 'UpdateAccountDEMOPrefixFail' succeeded.
+15:34:20.115 Case 'AccountSIMPrefix' execution.
+15:34:20.662 Case 'AccountSIMPrefix' succeeded.
+15:34:20.881 Case 'UpdateAccountSIMPrefixFail' execution.
+15:34:21.336 Case 'UpdateAccountSIMPrefixFail' succeeded.
+15:34:21.834 Suite 'Admin'. [0 test cases, 4 sub-suites]
+15:34:22.100 Suite 'Admin\AdminCommon_ts.py'. [1 test cases, 0 sub-suites]
+15:34:22.241 Case 'AdminDataNoPermission' execution.
+15:34:22.709 Case 'AdminDataNoPermission' succeeded.
+15:34:23.022 Suite 'Admin\ClientAppType_ts.py'. [5 test cases, 0 sub-suites]
+15:34:23.194 Case 'ClientAppTypeImplicitCrudRequest' execution.
+15:34:23.522 Case 'ClientAppTypeImplicitCrudRequest' succeeded.
+15:34:23.678 Case 'ClientAppTypeExplicitCrudRequest' execution.
+15:34:23.912 Case 'ClientAppTypeExplicitCrudRequest' succeeded.
+15:34:24.069 Case 'RemoveClientAppTypeFailed' execution.
+15:34:24.209 Case 'RemoveClientAppTypeFailed' succeeded.
+15:34:24.397 Case 'UpdateClientAppTypeDuplicateDataFailed' execution.
+15:34:26.086 Case 'UpdateClientAppTypeDuplicateDataFailed' succeeded.
+15:34:26.307 Case 'CreateClientAppTypeDuplicateDataFailed' execution.
+15:34:26.554 Case 'CreateClientAppTypeDuplicateDataFailed' succeeded.
+15:34:26.960 Suite 'Admin\PrivateLabel_ts.py'. [5 test cases, 0 sub-suites]
+15:34:27.147 Case 'PrivateLabelImplicitCrudRequest' execution.
+15:34:27.491 Case 'PrivateLabelImplicitCrudRequest' succeeded.
+15:34:27.664 Case 'PrivateLabelExplicitCrudRequest' execution.
+15:34:27.959 Case 'PrivateLabelExplicitCrudRequest' succeeded.
+15:34:28.131 Case 'RemovePrivateLabelFailed' execution.
+15:34:28.288 Case 'RemovePrivateLabelFailed' succeeded.
+15:34:28.460 Case 'UpdatePrivateLabelDuplicateDataFailed' execution.
+15:34:30.100 Case 'UpdatePrivateLabelDuplicateDataFailed' succeeded.
+15:34:30.288 Case 'CreatePrivateLabelDuplicateDataFailed' execution.
+15:34:30.475 Case 'CreatePrivateLabelDuplicateDataFailed' succeeded.
+15:34:30.913 Suite 'Admin\Product_ts.py'. [8 test cases, 0 sub-suites]
+15:34:31.131 Case 'ProductImplicitCrudRequest' execution.
+15:34:32.132 Case 'ProductImplicitCrudRequest' succeeded.
+15:34:32.320 Case 'ProductExplicitCrudRequest' execution.
+15:34:32.742 Case 'ProductExplicitCrudRequest' succeeded.
+15:34:32.944 Case 'ProductSearchSuccessful' execution.
+15:34:33.100 Case 'ProductSearchSuccessful' succeeded.
+15:34:33.303 Case 'CreateProductIDExists' execution.
+15:34:33.460 Case 'CreateProductIDExists' succeeded.
+15:34:33.647 Case 'CreateProductExists' execution.
+15:34:33.803 Case 'CreateProductExists' succeeded.
+15:34:33.961 Case 'UpdateProductExists' execution.
+15:34:34.132 Case 'UpdateProductExists' succeeded.
+15:34:34.288 Case 'GetCastUserProducts' execution.
+15:35:06.320 Case 'GetCastUserProducts' succeeded.
+15:35:06.602 Case 'GetCastUserNoProducts' execution.
+15:35:41.681 Case 'GetCastUserNoProducts' succeeded.
+15:35:42.259 Suite 'Brokerage'. [0 test cases, 1 sub-suites]
+15:35:42.431 Suite 'Brokerage\MinimumMarketLimits_ts.py'. [2 test cases, 0 sub-suites]
+15:35:42.590 Case 'BrokerageMinMarketLimitsRequestSuccessful' execution.
+15:36:17.823 Case 'BrokerageMinMarketLimitsRequestSuccessful' succeeded.
+15:36:18.058 Case 'AccountMarketLimitsValidation' execution.
+15:36:21.010 Case 'AccountMarketLimitsValidation' succeeded.
+15:36:21.542 Suite 'CastUsers'. [0 test cases, 3 sub-suites]
+15:36:21.714 Suite 'CastUsers\CastUserCrud_ts.py'. [2 test cases, 0 sub-suites]
+15:36:21.885 Case 'CastUserCrudSuccessful' execution.
+15:37:25.122 Case 'CastUserCrudSuccessful' succeeded.
+15:37:25.341 Case 'CastUserRestoreSuccessful' execution.
+15:38:29.218 Case 'CastUserRestoreSuccessful' succeeded.
+15:38:29.555 Suite 'CastUsers\CastUserOperations_ts.py'. [3 test cases, 0 sub-suites]
+15:38:29.718 Case 'CastUserLinkedBrokeragesSuccessful' execution.
+15:39:34.064 Case 'CastUserLinkedBrokeragesSuccessful' succeeded.
+15:39:34.220 Case 'CastUserBrokerageAuthorizations' execution.
+15:40:06.737 Case 'CastUserBrokerageAuthorizations' succeeded.
+15:40:06.925 Case 'CastUserSSAuthorizations' execution.
+15:41:12.849 Case 'CastUserSSAuthorizations' succeeded.
+15:41:13.225 Suite 'CastUsers\SearchCastUser_ts.py'. [1 test cases, 0 sub-suites]
+15:41:13.396 Case 'SearchCastUserSuccessful' execution.
+15:42:17.492 Case 'SearchCastUserSuccessful' succeeded.
+15:42:18.086 Suite 'Common'. [0 test cases, 2 sub-suites]
+15:42:18.273 Suite 'Common\FormatErrorMessageValidation_ts.py'. [2 test cases, 0 sub-suites]
+15:42:18.445 Case 'ErrorWithoutParametersHasFormat' execution.
+15:42:50.118 Case 'ErrorWithoutParametersHasFormat' succeeded.
+15:42:50.290 Case 'ErrorWithTwoParametersHasFormat' execution.
+15:43:22.182 Case 'ErrorWithTwoParametersHasFormat' succeeded.
+15:43:22.541 Suite 'Common\NonAsciiValidation_ts.py'. [10 test cases, 0 sub-suites]
+15:43:22.776 Case 'TradeRoutingRequestSuccessfull' execution.
+15:43:24.166 Case 'TradeRoutingRequestSuccessfull' succeeded.
+15:43:24.322 Case 'AccountScopeRequestFailed' execution.
+15:43:57.590 Case 'AccountScopeRequestFailed' succeeded.
+15:43:57.777 Case 'OperationRequestSuccessfull' execution.
+15:44:29.528 Case 'OperationRequestSuccessfull' succeeded.
+15:44:29.715 Case 'OperationRequestFailed' execution.
+15:45:02.498 Case 'OperationRequestFailed' succeeded.
+15:45:02.752 Case 'InformationRequestSuccessfull' execution.
+15:45:38.015 Case 'InformationRequestSuccessfull' succeeded.
+15:45:38.171 Case 'InformationRequestFailed' execution.
+15:46:09.813 Case 'InformationRequestFailed' succeeded.
+15:46:10.031 Case 'AssertFrameworkRequestSuccessfull' execution.
+15:46:42.376 Case 'AssertFrameworkRequestSuccessfull' succeeded.
+15:46:42.548 Case 'AssertFrameworkRequestFailed' execution.
+15:47:13.534 Case 'AssertFrameworkRequestFailed' succeeded.
+15:47:13.706 Case 'AssertSearchRequestSuccessfull' execution.
+15:47:13.784 Case 'AssertSearchRequestSuccessfull' succeeded.
+15:47:14.018 Case 'AssertSearchRequestFailed' execution.
+15:47:45.613 Case 'AssertSearchRequestFailed' succeeded.
+15:47:46.144 Suite 'Customers'. [0 test cases, 6 sub-suites]
+15:47:46.332 Suite 'Customers\AddressStatus_ts.py'. [2 test cases, 0 sub-suites]
+15:47:46.519 Case 'ModifyAddressStatusSuccessfully' execution.
+15:48:49.756 Case 'ModifyAddressStatusSuccessfully' succeeded.
+15:48:49.912 Case 'ModifyAddressStatusNoPermission' execution.
+15:49:21.601 Case 'ModifyAddressStatusNoPermission' succeeded.
+15:49:21.976 Suite 'Customers\CustomerCommon_ts.py'. [2 test cases, 0 sub-suites]
+15:49:22.148 Case 'CustomerNoPermission' execution.
+15:49:54.180 Case 'CustomerNoPermission' succeeded.
+15:49:54.321 Case 'CustomerEntityRemoved' execution.
+15:50:26.025 Case 'CustomerEntityRemoved' succeeded.
+15:50:26.509 Suite 'Customers\CustomerCrud_ts.py'. [7 test cases, 0 sub-suites]
+15:50:26.728 Case 'CustomerCrudSuccessful' execution.
+15:51:02.167 Case 'CustomerCrudSuccessful' succeeded.
+15:51:02.354 Case 'CreateCustomerInvalidCountry' execution.
+15:51:33.527 Case 'CreateCustomerInvalidCountry' succeeded.
+15:51:33.714 Case 'CreateCustomerInvalidState' execution.
+15:52:05.747 Case 'CreateCustomerInvalidState' succeeded.
+15:52:06.012 Case 'CreateCustomerCountryStateMismatch' execution.
+15:52:37.592 Case 'CreateCustomerCountryStateMismatch' succeeded.
+15:52:37.763 Case 'UpdateCustomerInvalidCountry' execution.
+15:53:10.015 Case 'UpdateCustomerInvalidCountry' succeeded.
+15:53:10.249 Case 'UpdateCustomerInvalidState' execution.
+15:53:42.266 Case 'UpdateCustomerInvalidState' succeeded.
+15:53:42.406 Case 'UpdateCustomerCountryStateMismatch' execution.
+15:54:18.330 Case 'UpdateCustomerCountryStateMismatch' succeeded.
+15:54:18.705 Suite 'Customers\CustomerWithoutBrokerage_ts.py'. [2 test cases, 0 sub-suites]
+15:54:18.910 Case 'CustomerCrudSuccess' execution.
+15:54:53.535 Case 'CustomerCrudSuccess' succeeded.
+15:54:53.722 Case 'LinkUserToCustomerFail' execution.
+15:55:25.927 Case 'LinkUserToCustomerFail' succeeded.
+15:55:26.380 Suite 'Customers\RemoveCustomer_ts.py'. [1 test cases, 0 sub-suites]
+15:55:26.567 Case 'RemoveCustomerWithTraderAndAccountSuccessful' execution.
+15:56:04.647 Case 'RemoveCustomerWithTraderAndAccountSuccessful' succeeded.
+15:56:04.990 Suite 'Customers\SearchCustomer_ts.py'. [1 test cases, 0 sub-suites]
+15:56:05.162 Case 'SearchCustomerSuccessful' execution.
+15:56:06.490 Case 'SearchCustomerSuccessful' succeeded.
+15:56:07.131 Suite 'DemoAccess'. [0 test cases, 1 sub-suites]
+15:56:07.350 Suite 'DemoAccess\ObtainDemoAccess_ts.py'. [2 test cases, 0 sub-suites]
+15:56:07.522 Case 'ObtainDemoAccessInvalidProduct' execution.
+15:56:08.287 Case 'ObtainDemoAccessInvalidProduct' succeeded.
+15:56:08.459 Case 'ObtainDemoAccessSuccessful' execution.
+15:56:09.209 Case 'ObtainDemoAccessSuccessful' succeeded.
+15:56:09.772 Suite 'EventLogs'. [0 test cases, 1 sub-suites]
+15:56:09.944 Suite 'EventLogs\SearchEventLog_ts.py'. [1 test cases, 0 sub-suites]
+15:56:10.178 Case 'SearchEventLogSuccessful' execution.
+15:57:37.556 Case 'SearchEventLogSuccessful' succeeded.
+15:57:38.150 Suite 'Framework'. [0 test cases, 7 sub-suites]
+15:57:38.400 Suite 'Framework\Brokerages_ts.py'. [8 test cases, 0 sub-suites]
+15:57:38.562 Case 'GetFcmsSuccessful' execution.
+15:57:38.947 Case 'GetFcmsSuccessful' succeeded.
+15:57:39.134 Case 'GetBrokerageRiskParameters' execution.
+15:58:13.714 Case 'GetBrokerageRiskParameters' succeeded.
+15:58:13.948 Case 'BrokerageMinRiskParamsPartialQty' execution.
+15:58:46.996 Case 'BrokerageMinRiskParamsPartialQty' succeeded.
+15:58:47.168 Case 'GetCurrencyRates' execution.
+15:59:21.263 Case 'GetCurrencyRates' succeeded.
+15:59:21.466 Case 'GetBrokerageRouteGroupListSuccessful' execution.
+15:59:53.639 Case 'GetBrokerageRouteGroupListSuccessful' succeeded.
+15:59:53.843 Case 'BrokerageClassRiskParametersRequestSuccessful' execution.
+16:00:25.187 Case 'BrokerageClassRiskParametersRequestSuccessful' succeeded.
+16:00:25.391 Case 'BrokerageMarketLimitsRequestSuccessful' execution.
+16:00:57.642 Case 'BrokerageMarketLimitsRequestSuccessful' succeeded.
+16:00:57.845 Case 'BrokerageMarketLimitsRequestPartialQty' execution.
+16:01:06.892 Case 'BrokerageMarketLimitsRequestPartialQty' succeeded.
+16:01:07.236 Suite 'Framework\ContractSearch_ts.py'. [2 test cases, 0 sub-suites]
+16:01:07.423 Case 'ContractSearchByRegularSetOfCriteria' execution.
+16:01:41.971 Case 'ContractSearchByRegularSetOfCriteria' succeeded.
+16:01:42.143 Case 'ContractSearchByBunchOfIds' execution.
+16:02:13.192 Case 'ContractSearchByBunchOfIds' succeeded.
+16:02:13.629 Suite 'Framework\ExportToExcel_ts.py'. [1 test cases, 0 sub-suites]
+16:02:13.832 Case 'ExportToExcelSuccessful' execution.
+16:02:15.879 Case 'ExportToExcelSuccessful' succeeded.
+16:02:16.285 Suite 'Framework\GetUser_ts.py'. [1 test cases, 0 sub-suites]
+16:02:16.473 Case 'GetCastUserSuccessfull' execution.
+16:02:17.895 Case 'GetCastUserSuccessfull' succeeded.
+16:02:18.395 Suite 'Framework\ProductAndServices_ts.py'. [2 test cases, 0 sub-suites]
+16:02:18.582 Case 'UpdateProductServicesSuccessful' execution.
+16:03:58.648 Case 'UpdateProductServicesSuccessful' succeeded.
+16:03:58.883 Case 'UpdateProductServicesByAdminFail' execution.
+16:05:05.558 Case 'UpdateProductServicesByAdminFail' succeeded.
+16:05:05.979 Suite 'Framework\RecentEntity_ts.py'. [1 test cases, 0 sub-suites]
+16:05:06.229 Case 'RecentEntityCustomerSuccessful' execution.
+16:05:08.588 Case 'RecentEntityCustomerSuccessful' succeeded.
+16:05:08.932 Suite 'Framework\SessionLimit_ts.py'. [2 test cases, 0 sub-suites]
+16:05:09.229 Case 'NonAdminSessionLimitSuccessful' execution.
+16:05:09.354 Case 'NonAdminSessionLimitSuccessful' succeeded.
+16:05:09.541 Case 'AdminSessionLimitSuccessful' execution.
+16:05:09.651 Case 'AdminSessionLimitSuccessful' succeeded.
+16:05:10.214 Suite 'InternalRequest'. [0 test cases, 1 sub-suites]
+16:05:10.418 Suite 'InternalRequest\InternalRequest_ts.py'. [2 test cases, 0 sub-suites]
+16:05:10.635 Case 'InternalRequestInvalidAuthenticationKey' execution.
+16:05:10.698 Case 'InternalRequestInvalidAuthenticationKey' succeeded.
+16:05:10.901 Case 'InternalRequestSuccessful' execution.
+16:05:11.073 Case 'InternalRequestSuccessful' succeeded.
+16:05:11.760 Suite 'Orders'. [0 test cases, 5 sub-suites]
+16:05:15.463 Suite 'Orders\CompoundOrderTreeRequest_ts.py'. [2 test cases, 0 sub-suites]
+16:05:22.448 Case 'CompoundOrderTreeRequest' execution.
+16:05:55.559 Case 'CompoundOrderTreeRequest' succeeded.
+16:05:55.762 Case 'CompoundOrderTreeRequestPartialQty' execution.
+16:05:57.184 Case 'CompoundOrderTreeRequestPartialQty' succeeded.
+16:05:57.574 Suite 'Orders\CreateExternalOrder_ts.py'. [6 test cases, 0 sub-suites]
+16:05:57.762 Case 'CreateExternalOrderSuccessful' execution.
+16:05:59.715 Case 'CreateExternalOrderSuccessful' succeeded.
+16:05:59.890 Case 'CreateExternalOrderWithDisplayPricesSuccessful' execution.
+16:06:00.418 Case 'CreateExternalOrderWithDisplayPricesSuccessful' succeeded.
+16:06:00.654 Case 'CreateExternalOrderWithPartialQuantityBuy' execution.
+16:06:01.387 Case 'CreateExternalOrderWithPartialQuantityBuy' succeeded.
+16:06:01.606 Case 'CreateExternalOrderWithPartialQuantitySell' execution.
+16:06:02.310 Case 'CreateExternalOrderWithPartialQuantitySell' succeeded.
+16:06:02.590 Case 'CreateExternalOrderContractNotFound' execution.
+16:06:02.828 Case 'CreateExternalOrderContractNotFound' succeeded.
+16:06:02.998 Case 'CreateExternalOrderNoPermission' execution.
+16:06:03.262 Case 'CreateExternalOrderNoPermission' succeeded.
+16:06:03.668 Suite 'Orders\GetOrder_ts.py'. [4 test cases, 0 sub-suites]
+16:06:03.871 Case 'GetOrdersConcurrently' execution.
+16:07:27.499 Case 'GetOrdersConcurrently' succeeded.
+16:07:27.656 Case 'GetOrderSuccessful' execution.
+16:07:28.156 Case 'GetOrderSuccessful' succeeded.
+16:07:28.453 Case 'GetOrderNoPermision' execution.
+16:07:28.578 Case 'GetOrderNoPermision' succeeded.
+16:07:28.781 Case 'GetOrderNotFound' execution.
+16:07:28.968 Case 'GetOrderNotFound' succeeded.
+16:07:29.437 Suite 'Orders\RelatedOrderTreeRequest_ts.py'. [1 test cases, 0 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/ManagmentInterface/CastApi\Orders\RelatedOrderTreeRequest_ts.py", line 6, in SuiteSetup
+    generator.Open()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\IHEGenerator.py", line 44, in Open
+    self.__generator.Open(self.__name)
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\ModuleAgent.py", line 8898, in Open
+    return _ModuleAgent.IIHEGenerator_Open(self, name)
+RuntimeError: Failed to resolve interface  (from Interface): interface not found.
+Available interfaces:
+name=\DEVICE\TCPIP_{CFF7A875-51FB-48C1-9B78-ABA35ACC4BDF}, ip=172.26.65.55, network=172.26.65.0, up=1
+name=\DEVICE\TCPIP_{1F777394-0B42-11E3-80AD-806E6F6E6963}, ip=127.0.0.1, network=127.0.0.0, up=1
+
+
+16:07:29.531 Suite 'Orders\RelatedOrderTreeRequest_ts.py' setup failed, child test cases and sub-suites will be skipped.
+16:07:29.859 Suite 'Orders\SearchOrder_ts.py'. [9 test cases, 0 sub-suites]
+16:07:30.095 Case 'SearchOrderCentralSuccessful' execution.
+16:07:33.502 Case 'SearchOrderCentralSuccessful' succeeded.
+16:07:33.734 Case 'SearchOrderLocalSuccessful' execution.
+16:07:36.625 Case 'SearchOrderLocalSuccessful' succeeded.
+16:07:36.844 Case 'SearchBuyOrderPartialQty' execution.
+16:07:39.828 Case 'SearchBuyOrderPartialQty' succeeded.
+16:07:40.250 Case 'SearchSellOrderPartialQty' execution.
+16:07:43.219 Case 'SearchSellOrderPartialQty' succeeded.
+16:07:43.438 Case 'SearchArchivedOrderCentralSuccessful' execution.
+16:08:18.533 Case 'SearchArchivedOrderCentralSuccessful' succeeded.
+16:08:18.720 Case 'SearchArchivedOrderLocalSuccessful' execution.
+16:08:20.503 Case 'SearchArchivedOrderLocalSuccessful' succeeded.
+16:08:20.783 Case 'SearchOrderNoPerm' execution.
+16:08:53.706 Case 'SearchOrderNoPerm' succeeded.
+16:08:53.893 Case 'SearchArchivedOrderNoPerm' execution.
+16:09:25.597 Case 'SearchArchivedOrderNoPerm' succeeded.
+16:09:25.801 Case 'SearchOrderTop' execution.
+16:09:26.051 Case 'SearchOrderTop' succeeded.
+16:09:26.676 Suite 'Session'. [0 test cases, 2 sub-suites]
+16:09:26.894 Suite 'Session\Login_ts.py'. [7 test cases, 0 sub-suites]
+16:09:27.115 Case 'LoginSuccessful' execution.
+16:09:27.222 Case 'LoginSuccessful' succeeded.
+16:09:27.395 Case 'LoginWrongCredentials' execution.
+16:09:27.519 Case 'LoginWrongCredentials' succeeded.
+16:09:27.801 Case 'LoginInvalidClientApplicationType' execution.
+16:09:28.129 Case 'LoginInvalidClientApplicationType' succeeded.
+16:09:28.316 Case 'LoginProtocolViolation' execution.
+16:09:28.379 Case 'LoginProtocolViolation' succeeded.
+16:09:28.582 Case 'LoginApiDisabled' execution.
+16:09:28.676 Case 'LoginApiDisabled' succeeded.
+16:09:28.863 Case 'LoginPasswordExpired' execution.
+16:09:29.004 Case 'LoginPasswordExpired' succeeded.
+16:09:29.223 Case 'LoginAgain' execution.
+16:09:29.363 Case 'LoginAgain' succeeded.
+16:09:29.723 Suite 'Session\Session_ts.py'. [2 test cases, 0 sub-suites]
+16:09:29.926 Case 'ConcurrentSessionCastApi' execution.
+16:09:36.035 Case 'ConcurrentSessionCastApi' succeeded.
+16:09:36.332 Case 'ConcurrentSessionsInCastAndCastApi' execution.
+16:09:38.489 Case 'ConcurrentSessionsInCastAndCastApi' succeeded.
+16:09:39.176 Suite 'Traderouting'. [0 test cases, 1 sub-suites]
+16:09:39.379 Suite 'Traderouting\LookupProperty_ts.py'. [1 test cases, 0 sub-suites]
+16:09:39.582 Case 'GetLookupPropertiesSuccessful' execution.
+16:10:13.615 Case 'GetLookupPropertiesSuccessful' succeeded.
+16:10:14.349 Suite 'Traders'. [0 test cases, 7 sub-suites]
+16:10:14.568 Suite 'Traders\ActivateDeactivateTrader_ts.py'. [4 test cases, 0 sub-suites]
+16:10:14.818 Case 'DeactivateTraderSuccessful' execution.
+16:10:50.179 Case 'DeactivateTraderSuccessful' succeeded.
+16:10:50.399 Case 'ActivateTraderSuccessful' execution.
+16:10:52.007 Case 'ActivateTraderSuccessful' succeeded.
+16:10:52.241 Case 'DeactivateWithExpirationDateTraderSuccessful' execution.
+16:10:53.772 Case 'DeactivateWithExpirationDateTraderSuccessful' succeeded.
+16:10:53.976 Case 'ActivateTraderWithExpirationDateSuccessful' execution.
+16:10:55.273 Case 'ActivateTraderWithExpirationDateSuccessful' succeeded.
+16:10:55.741 Suite 'Traders\BillingCustomData_ts.py'. [1 test cases, 0 sub-suites]
+16:10:55.929 Case 'InsertGetBillingCustomDataSuccessfully' execution.
+16:11:30.664 Case 'InsertGetBillingCustomDataSuccessfully' succeeded.
+16:11:31.086 Suite 'Traders\CloneTrader_ts.py'. [6 test cases, 0 sub-suites]
+16:11:31.289 Case 'CloneTraderSuccessful' execution.
+16:11:32.258 Case 'CloneTraderSuccessful' succeeded.
+16:11:32.478 Case 'CloneTraderExistedCustomerSuccessful' execution.
+16:12:05.884 Case 'CloneTraderExistedCustomerSuccessful' succeeded.
+16:12:06.119 Case 'CloneTraderSourceTraderNotFound' execution.
+16:12:37.479 Case 'CloneTraderSourceTraderNotFound' succeeded.
+16:12:37.745 Case 'CloneTraderSourceTraderNoAuthority' execution.
+16:13:09.543 Case 'CloneTraderSourceTraderNoAuthority' succeeded.
+16:13:09.730 Case 'CloneNotSupportedClassTrader' execution.
+16:13:42.200 Case 'CloneNotSupportedClassTrader' succeeded.
+16:13:42.388 Case 'CloneTraderInvalidContactInformation' execution.
+16:13:42.685 Case 'CloneTraderInvalidContactInformation' succeeded.
+16:13:43.106 Suite 'Traders\SearchTrader_ts.py'. [3 test cases, 0 sub-suites]
+16:13:43.278 Case 'PrimaryAndSecondaryCriteriaSearch' execution.
+16:14:17.936 Case 'PrimaryAndSecondaryCriteriaSearch' succeeded.
+16:14:18.170 Case 'SecondaryCriteriaOnlySearch' execution.
+16:14:49.734 Case 'SecondaryCriteriaOnlySearch' succeeded.
+16:14:49.921 Case 'SearchTraderSuccessful' execution.
+16:14:50.374 Case 'SearchTraderSuccessful' succeeded.
+16:14:50.859 Suite 'Traders\TraderCommon_ts.py'. [2 test cases, 0 sub-suites]
+16:14:51.077 Case 'TraderNoPermission' execution.
+16:14:51.796 Case 'TraderNoPermission' succeeded.
+16:14:52.046 Case 'TraderNotFound' execution.
+16:14:52.578 Case 'TraderNotFound' succeeded.
+16:14:53.140 Suite 'Traders\TraderCrud_ts.py'. [1 test cases, 0 sub-suites]
+16:14:53.343 Case 'CrudSuccessful' execution.
+16:15:26.688 Case 'CrudSuccessful' succeeded.
+16:15:27.141 Suite 'Traders\TraderEntitlements_ts.py'. [1 test cases, 0 sub-suites]
+16:15:27.360 Case 'ModifyUserEntitlementsSuccessful' execution.
+16:16:06.002 Case 'ModifyUserEntitlementsSuccessful' succeeded.
+16:16:06.736 Root suite 'Scripts/Gateway/SystemAreas/ManagmentInterface/CastApi' execution finished. It took 0:57:10.544488.
+16:16:06.736 Test cases results: 190 total, 189 succeeded, 0 failed, 1 skipped.

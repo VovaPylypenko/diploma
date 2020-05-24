@@ -1,0 +1,362 @@
+ 1:41:53.47  Test starded without threads
+23:41:54.073 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:41:54.073 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+23:41:54.073 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend/PythonModules' added.
+23:41:54.073 Python Module Path 'ScriptKit' added.
+23:41:54.526 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend' full execution.
+23:41:54.557 Suite '.'. [0 test cases, 4 sub-suites]
+23:42:05.730 Suite 'DurationModification'. [4 test cases, 0 sub-suites]
+23:42:05.839 Case 'DurationModification01' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\DurationModification\DurationModification01.tc.py", line 14, in <module>
+    order = Actions.AssertPlaceOrderAccepted(localContext, park = True).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:05.839 Case 'DurationModification01' failed.
+23:42:05.886 Case 'DurationModification03' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\DurationModification\DurationModification03.tc.py", line 13, in <module>
+    orderDuration = OrderDuration.GoodTillDate, goodThru = GoodThruDateFromNow(addDays=3)).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:05.886 Case 'DurationModification03' failed.
+23:42:05.933 Case 'DurationModification05' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\DurationModification\DurationModification05.tc.py", line 10, in <module>
+    order = Actions.AssertPlaceOrderAccepted(context, park = False).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:05.933 Case 'DurationModification05' failed.
+23:42:06.011 Case 'DurationModification06' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\DurationModification\DurationModification06.tc.py", line 16, in <module>
+    orderDuration = OrderDuration.GoodTillDate, goodThru = goodThru1).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:06.011 Case 'DurationModification06' failed.
+23:42:06.151 Suite 'MultipleOrderOperations'. [1 test cases, 0 sub-suites]
+23:42:06.230 Case 'MultipleOrderOperations' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\MultipleOrderOperations\MultipleOrderOperations.tc.py", line 210, in <module>
+    TC01_MultipleParkActivateAll()
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\MultipleOrderOperations\MultipleOrderOperations.tc.py", line 112, in TC01_MultipleParkActivateAll
+    PlaceOrders_1_2_3_4()
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\MultipleOrderOperations\MultipleOrderOperations.tc.py", line 21, in PlaceOrders_1_2_3_4
+    order = OrderActionUtils.CreateOrder(CallOption136, OrderSide.Buy, 1, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:06.276 Case 'MultipleOrderOperations' failed.
+23:42:06.417 Suite 'ParkedOrders'. [4 test cases, 0 sub-suites]
+23:42:07.355 Case 'ActivateCancelParkedOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\ParkedOrders\ActivateCancelParkedOrder.tc.py", line 10, in <module>
+    duration = OrderDuration.Day)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:07.355 Case 'ActivateCancelParkedOrder' failed.
+23:42:07.417 Case 'ActivateFillParkedOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\ParkedOrders\ActivateFillParkedOrder.tc.py", line 7, in <module>
+    order = OrderActionUtils.CreateOrder(future, OrderSide.Buy, placementSize, OrderType.Market)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:07.433 Case 'ActivateFillParkedOrder' failed.
+23:42:07.542 Case 'ModifyParkedOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\ParkedOrders\ModifyParkedOrder.tc.py", line 34, in <module>
+    future, OrderSide.Buy, placementSize, OrderType.Limit, limitPrice = placementLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:07.542 Case 'ModifyParkedOrder' failed.
+23:42:07.620 Case 'ModifyParkedWasWorkingOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\ParkedOrders\ModifyParkedWasWorkingOrder.tc.py", line 37, in <module>
+    limitPrice = placementLimitPrice, duration = OrderDuration.Day)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:07.620 Case 'ModifyParkedWasWorkingOrder' failed.
+23:42:07.745 Suite 'SingleOrderOperations'. [18 test cases, 0 sub-suites]
+23:42:07.823 Case '01-RejectOrderWithActivationTime' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\01-RejectOrderWithActivationTime.tc.py", line 11, in <module>
+    acttime = datetime.combine(datetime.utcnow(), time()) + timedelta(days = 2))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 38, in AssertPlaceOrderRejected
+    duration = orderDuration)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:07.823 Case '01-RejectOrderWithActivationTime' failed.
+23:42:07.886 Case '02-RejectParkedWithParkTime' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\02-RejectParkedWithParkTime.tc.py", line 12, in <module>
+    orderDuration = OrderDuration.GoodTillCancel)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 38, in AssertPlaceOrderRejected
+    duration = orderDuration)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:07.902 Case '02-RejectParkedWithParkTime' failed.
+23:42:07.964 Case '03-RejectOrderWithPastParkTime' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\03-RejectOrderWithPastParkTime.tc.py", line 11, in <module>
+    parktime = datetime.combine(datetime.utcnow(), time()) - timedelta(days = 2))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 38, in AssertPlaceOrderRejected
+    duration = orderDuration)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:07.964 Case '03-RejectOrderWithPastParkTime' failed.
+23:42:08.027 Case '04-RejectParkedWithPastActivationTime' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\04-RejectParkedWithPastActivationTime.tc.py", line 11, in <module>
+    acttime = datetime.combine(datetime.utcnow(), time()) - timedelta(days = 2))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 38, in AssertPlaceOrderRejected
+    duration = orderDuration)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.027 Case '04-RejectParkedWithPastActivationTime' failed.
+23:42:08.105 Case '05-SingleOrderOperations05' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\05-SingleOrderOperations05.tc.py", line 58, in <module>
+    test()
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\05-SingleOrderOperations05.tc.py", line 19, in test
+    order = Actions.AssertPlaceOrderAccepted(context, park = False, orderDuration = orderDuration).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.105 Case '05-SingleOrderOperations05' failed.
+23:42:08.167 Case '06-SingleOrderOperations06' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\06-SingleOrderOperations06.tc.py", line 18, in <module>
+    parktime = datetime.combine(datetime.utcnow(), time()) + timedelta(days = 2)).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.167 Case '06-SingleOrderOperations06' failed.
+23:42:08.245 Case '07-SingleOrderOperations07' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\07-SingleOrderOperations07.tc.py", line 16, in <module>
+    order = Actions.AssertPlaceOrderAccepted(context, park = True).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.245 Case '07-SingleOrderOperations07' failed.
+23:42:08.323 Case '08-SingleOrderOperations08' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\08-SingleOrderOperations08.tc.py", line 19, in <module>
+    context, park = True, acttime = datetime.combine(datetime.utcnow(), time()) + timedelta(days = 2)).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.323 Case '08-SingleOrderOperations08' failed.
+23:42:08.386 Case '09-SingleOrderOperations09' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\09-SingleOrderOperations09.tc.py", line 13, in <module>
+    order = Actions.AssertPlaceOrderAccepted(context, park = False).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.386 Case '09-SingleOrderOperations09' failed.
+23:42:08.448 Case '10-SingleOrderOperations10' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\10-SingleOrderOperations10.tc.py", line 20, in <module>
+    parktime = datetime.utcnow() + timedelta(seconds = Timeouts.minTimeForScheduledActions)).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.448 Case '10-SingleOrderOperations10' failed.
+23:42:08.527 Case '11-SingleOrderOperations11' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\11-SingleOrderOperations11.tc.py", line 17, in <module>
+    order = Actions.AssertPlaceOrderAccepted(localContext, park = True).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.527 Case '11-SingleOrderOperations11' failed.
+23:42:08.636 Case '15-ParkAndActivateActiveAtOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\15-ParkAndActivateActiveAtOrder.tc.py", line 122, in <module>
+    test()
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\15-ParkAndActivateActiveAtOrder.tc.py", line 38, in test
+    order = Actions.AssertPlaceOrderActiveAt(context, orderDuration = orderDuration).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 149, in AssertPlaceOrderActiveAt
+    limitPrice = 100, duration = orderDuration)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.636 Case '15-ParkAndActivateActiveAtOrder' failed.
+23:42:08.730 Case '22-SingleOrderOperations22' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\22-SingleOrderOperations22.tc.py", line 10, in <module>
+    parktime = datetime.utcnow() + timedelta(seconds = Timeouts.minTimeForScheduledActions)).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.730 Case '22-SingleOrderOperations22' failed.
+23:42:08.823 Case '23-SingleOrderOperations23' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\23-SingleOrderOperations23.tc.py", line 10, in <module>
+    parktime = datetime.utcnow() + timedelta(seconds = Timeouts.minTimeForScheduledActions)).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.823 Case '23-SingleOrderOperations23' failed.
+23:42:08.886 Case '25-SingleOrderOperations25' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\25-SingleOrderOperations25.tc.py", line 10, in <module>
+    acttime = datetime.utcnow() + timedelta(seconds = Timeouts.minTimeForScheduledActions)).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.886 Case '25-SingleOrderOperations25' failed.
+23:42:08.964 Case 'CancelParkedFakActivation' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\CancelParkedFakActivation.tc.py", line 32, in <module>
+    context, park = True, orderDuration = OrderDuration.FillAndKill).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:08.964 Case 'CancelParkedFakActivation' failed.
+23:42:09.058 Case 'ExchangeRejectsScheduledActivation' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\ExchangeRejectsScheduledActivation.tc.py", line 20, in <module>
+    order1 = Actions.AssertPlaceOrderAccepted(localContext, park=True, acttime=acttime).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:09.058 Case 'ExchangeRejectsScheduledActivation' failed.
+23:42:09.152 Case 'FillSuspendedCancelledOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend\SingleOrderOperations\FillSuspendedCancelledOrder.tc.py", line 14, in <module>
+    order1 = Actions.AssertPlaceOrderAccepted(localContext, park = False).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OrderSuspend\PythonModules\Actions.py", line 25, in AssertPlaceOrderAccepted
+    duration = orderDuration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:09.152 Case 'FillSuspendedCancelledOrder' failed.
+23:42:12.371 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderSuspend' execution finished. It took 0:00:17.782654.
+23:42:12.371 Test cases results: 27 total, 0 succeeded, 27 failed, 0 skipped.

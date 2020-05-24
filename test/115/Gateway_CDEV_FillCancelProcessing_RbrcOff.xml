@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="1" testsuite_failed="False" time="10.187722" timestamp="2020-02-19T20:28:24.256998">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="root-suite=Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios/FillCancelProcessing_RbrcOff"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_CTC"/>
+  <property name="scripts-cfg-instance" value="SF_CTC"/>
+  <property name="threads-count" value="5"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios/FillCancelProcessing_RbrcOff"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="FillCancelProcessing_RbrcOff" skipped="0" tests="1" testsuite_failed="False" time="10.187722" timestamp="2020-02-19T20:28:24.256998">
+  <testcase name="FillCancelProcessing_RbrcTurnedOff" status="run" time="4.015754" timestamp="2020-02-19T20:28:29.772692"/>
+ </testsuite>
+</testsuites>

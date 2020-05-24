@@ -1,0 +1,10 @@
+22:28:23.16  Test starded without threads
+20:28:23.788 Python Module Path 'ScriptKit' added.
+20:28:23.788 Python Module Path 'root-suite=Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios/FillCancelProcessing_RbrcOff' not found. Ignored.
+20:28:23.788 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:28:24.256 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios/FillCancelProcessing_RbrcOff' filtered execution.
+20:28:24.272 Suite '.'. [1 test cases, 0 sub-suites]
+20:28:29.772 Case 'FillCancelProcessing_RbrcTurnedOff' execution.
+20:28:33.788 Case 'FillCancelProcessing_RbrcTurnedOff' succeeded.
+20:28:34.460 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios/FillCancelProcessing_RbrcOff' execution finished. It took 0:00:10.187722.
+20:28:34.460 Test cases results: 1 total, 1 succeeded, 0 failed, 0 skipped.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="1" testsuite_failed="False" time="466.187823" timestamp="2020-02-06T08:56:49.094784">
+ <properties>
+  <property name="module" value="IMSSimulator"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="ContractMetadataUpdate" skipped="0" tests="1" testsuite_failed="False" time="466.187823" timestamp="2020-02-06T08:56:49.094784">
+  <testcase name="AddingNewContracts" status="run" time="446.405873" timestamp="2020-02-06T08:57:05.001579"/>
+ </testsuite>
+</testsuites>

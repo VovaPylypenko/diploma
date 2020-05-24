@@ -1,0 +1,97 @@
+21:13:41.23  Test starded without threads
+19:13:41.622 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC' added.
+19:13:41.622 Python Module Path 'ScriptKit' added.
+19:13:41.622 Python Module Path 'Scripts/Gateway/PythonModules' added.
+19:13:42.027 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC' filtered execution.
+19:13:42.044 Suite '.'. [38 test cases, 1 sub-suites]
+19:13:47.998 Case 'CheckCPLRoute' execution.
+19:13:56.575 Case 'CheckCPLRoute' succeeded.
+19:13:56.641 Case 'CheckEEFCPLInst' execution.
+19:14:02.950 Case 'CheckEEFCPLInst' succeeded.
+19:14:03.013 Case 'CheckEEFCPLRoute' execution.
+19:14:08.091 Case 'CheckEEFCPLRoute' succeeded.
+19:14:08.185 Case 'CheckEEFIPLInst' execution.
+19:14:15.232 Case 'CheckEEFIPLInst' succeeded.
+19:14:15.279 Case 'CheckEEFIPLRoute' execution.
+19:14:19.794 Case 'CheckEEFIPLRoute' succeeded.
+19:14:19.888 Case 'CheckEEFPCPLInst' execution.
+19:14:28.873 Case 'CheckEEFPCPLInst' succeeded.
+19:14:28.920 Case 'CheckEEFPCPLRoute' execution.
+19:14:32.561 Case 'CheckEEFPCPLRoute' succeeded.
+19:14:32.607 Case 'CheckEEFPIPLInst' execution.
+19:14:36.295 Case 'CheckEEFPIPLInst' succeeded.
+19:14:36.373 Case 'CheckEEFPIPLRoute' execution.
+19:14:39.967 Case 'CheckEEFPIPLRoute' succeeded.
+19:14:40.029 Case 'CheckEEFTSLInst' execution.
+19:14:45.827 Case 'CheckEEFTSLInst' succeeded.
+19:14:45.889 Case 'CheckEEFTSLRoute' execution.
+19:14:49.936 Case 'CheckEEFTSLRoute' succeeded.
+19:14:50.014 Case 'CheckIPLRoute' execution.
+19:14:54.999 Case 'CheckIPLRoute' succeeded.
+19:14:55.077 Case 'CheckIPPTDCPLInstOff' execution.
+19:15:01.733 Case 'CheckIPPTDCPLInstOff' succeeded.
+19:15:01.780 Case 'CheckIPPTDCPLInstOn' execution.
+19:15:11.640 Case 'CheckIPPTDCPLInstOn' succeeded.
+19:15:11.765 Case 'CheckIPPTDCPLRouteOff' execution.
+19:15:15.750 Case 'CheckIPPTDCPLRouteOff' succeeded.
+19:15:15.812 Case 'CheckIPPTDCPLRouteOn' execution.
+19:15:19.468 Case 'CheckIPPTDCPLRouteOn' succeeded.
+19:15:19.546 Case 'CheckIPPTDIPLInstOff' execution.
+19:15:26.375 Case 'CheckIPPTDIPLInstOff' succeeded.
+19:15:26.437 Case 'CheckIPPTDIPLInstOn' execution.
+19:15:30.187 Case 'CheckIPPTDIPLInstOn' succeeded.
+19:15:30.250 Case 'CheckIPPTDIPLRouteOff' execution.
+19:15:33.984 Case 'CheckIPPTDIPLRouteOff' succeeded.
+19:15:34.047 Case 'CheckIPPTDIPLRouteOn' execution.
+19:15:37.688 Case 'CheckIPPTDIPLRouteOn' succeeded.
+19:15:37.750 Case 'CheckIPPTDTSLInstOn' execution.
+19:15:42.063 Case 'CheckIPPTDTSLInstOn' succeeded.
+19:15:42.125 Case 'CheckIPPTDTSLRouteOn' execution.
+19:15:45.344 Case 'CheckIPPTDTSLRouteOn' succeeded.
+19:15:45.407 Case 'CheckSubIndepEEF' execution.
+19:15:48.110 Case 'CheckSubIndepEEF' succeeded.
+19:15:48.172 Case 'CheckSubIndepIPPTD' execution.
+19:15:53.204 Case 'CheckSubIndepIPPTD' succeeded.
+19:15:53.251 Case 'CheckWOCPLInst' execution.
+19:16:00.032 Case 'CheckWOCPLInst' succeeded.
+19:16:00.100 Case 'CheckWOCPLRoute' execution.
+19:16:03.720 Case 'CheckWOCPLRoute' succeeded.
+19:16:03.814 Case 'CheckWOIPLInst' execution.
+19:16:09.923 Case 'CheckWOIPLInst' succeeded.
+19:16:10.001 Case 'CheckWOIPLRoute' execution.
+19:16:13.205 Case 'CheckWOIPLRoute' succeeded.
+19:16:13.298 Case 'CheckWOPCPLInst' execution.
+19:16:22.221 Case 'CheckWOPCPLInst' succeeded.
+19:16:22.283 Case 'CheckWOPCPLRoute' execution.
+19:16:25.814 Case 'CheckWOPCPLRoute' succeeded.
+19:16:25.877 Case 'CheckWOPIPLInst' execution.
+19:16:29.440 Case 'CheckWOPIPLInst' succeeded.
+19:16:29.502 Case 'CheckWOPIPLRoute' execution.
+19:16:32.862 Case 'CheckWOPIPLRoute' succeeded.
+19:16:32.924 Case 'CheckWOTSLInst' execution.
+19:16:37.455 Case 'CheckWOTSLInst' succeeded.
+19:16:37.518 Case 'CheckWOTSLRoute' execution.
+19:16:40.612 Case 'CheckWOTSLRoute' succeeded.
+19:16:40.706 Case 'CommonCheckEEF' execution.
+19:16:42.659 Case 'CommonCheckEEF' succeeded.
+19:16:42.721 Case 'CommonCheckEUP' execution.
+19:16:44.315 Case 'CommonCheckEUP' succeeded.
+19:16:44.378 Case 'CommonCheckIPPTD' execution.
+19:16:46.081 Case 'CommonCheckIPPTD' succeeded.
+19:16:46.143 Case 'CommonCheckRBRC' execution.
+19:16:48.051 Case 'CommonCheckRBRC' succeeded.
+19:16:48.143 Suite 'CASTDependent'. [6 test cases, 0 sub-suites]
+19:16:49.753 Case 'CheckEUPCPLInst' execution.
+19:17:19.973 Case 'CheckEUPCPLInst' succeeded.
+19:17:20.051 Case 'CheckEUPCPLRoute' execution.
+19:17:41.614 Case 'CheckEUPCPLRoute' succeeded.
+19:17:41.692 Case 'CheckEUPIPLInst' execution.
+19:18:07.006 Case 'CheckEUPIPLInst' succeeded.
+19:18:07.099 Case 'CheckEUPIPLRoute' execution.
+19:18:22.945 Case 'CheckEUPIPLRoute' succeeded.
+19:18:23.022 Case 'CheckEUPTSLInst' execution.
+19:18:40.148 Case 'CheckEUPTSLInst' succeeded.
+19:18:40.195 Case 'CheckEUPTSLRoute' execution.
+19:18:55.992 Case 'CheckEUPTSLRoute' succeeded.
+19:20:43.527 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC' execution finished. It took 0:07:01.468423.
+19:20:43.527 Test cases results: 44 total, 44 succeeded, 0 failed, 0 skipped.

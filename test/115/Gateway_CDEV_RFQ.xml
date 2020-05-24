@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="1" skipped="0" tests="7" testsuite_failed="True" time="33.516762" timestamp="2020-02-19T20:16:37.436268">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="1" name="RFQ" skipped="0" tests="7" testsuite_failed="True" time="33.516762" timestamp="2020-02-19T20:16:37.436268">
+  <testcase name="RFQ01" status="run" time="1.6875529999999999" timestamp="2020-02-19T20:16:49.421054"/>
+  <testcase name="RFQ02" status="run" time="6.624459" timestamp="2020-02-19T20:16:51.156251"/>
+  <testcase name="RFQ03" status="run" time="1.14067" timestamp="2020-02-19T20:16:57.811958"/>
+  <testcase name="RFQ04" status="run" time="0.046959" timestamp="2020-02-19T20:16:58.983884"/>
+  <testcase name="RFQ05" status="run" time="0.015576" timestamp="2020-02-19T20:16:59.077684"/>
+  <testcase name="RFQ06" status="run" time="9.688252" timestamp="2020-02-19T20:16:59.124533">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ\RFQ06_tc.py&quot;, line 32, in &lt;module&gt;
+    SendAndAckQuoteRequest_Rejected(quoteRequest, &quot;Cannot process the order (error code 9). Please contact customer support for assistance&quot;)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ\test_suite_su.py&quot;, line 68, in SendAndAckQuoteRequest_Rejected
+    VerifyQuoteRequestAcknowledgement(requestAck, expectedRequestAck)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 484, in VerifyQuoteRequestAcknowledgement
+    exchangeRequest.message, expectedRequest.message, msg.format(&quot;message&quot;))
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: QuoteRequestAcknowledgement for requestddbdde69-8e47-47b5-b7fc-18fa67fb5ab9 - wrong message: 'Commodity is disabled for trading at this time' is not equal to 'Cannot process the order (error code 9). Please contact customer support for assistance'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ\RFQ06_tc.py&quot;, line 32, in &lt;module&gt;
+    SendAndAckQuoteRequest_Rejected(quoteRequest, &quot;Cannot process the order (error code 9). Please contact customer support for assistance&quot;)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ\test_suite_su.py&quot;, line 68, in SendAndAckQuoteRequest_Rejected
+    VerifyQuoteRequestAcknowledgement(requestAck, expectedRequestAck)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 484, in VerifyQuoteRequestAcknowledgement
+    exchangeRequest.message, expectedRequest.message, msg.format(&quot;message&quot;))
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: QuoteRequestAcknowledgement for requestddbdde69-8e47-47b5-b7fc-18fa67fb5ab9 - wrong message: 'Commodity is disabled for trading at this time' is not equal to 'Cannot process the order (error code 9). Please contact customer support for assistance'
+</failure>
+  </testcase>
+  <testcase name="RFQ_DSI_1300395543" status="run" time="1.265453" timestamp="2020-02-19T20:17:08.875069"/>
+ </testsuite>
+</testsuites>

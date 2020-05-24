@@ -1,0 +1,52 @@
+ 8:43:01.29  Test starded without threads
+06:43:01.760 Python Module Path 'ScriptKit' added.
+06:43:01.760 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills/PythonModules' added.
+06:43:01.760 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:43:02.135 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills' full execution.
+06:43:02.166 Suite '.'. [22 test cases, 0 sub-suites]
+06:43:14.557 Case 'CancelNonZero_Accepted' execution.
+06:43:14.589 Case 'CancelNonZero_Rejected' execution.
+06:43:14.620 Case 'CancelZero_Accepted' execution.
+06:43:14.667 Case 'CancelZero_Rejected' execution.
+06:43:14.715 Case 'ModifyToNonZero_Accepted' execution.
+06:43:14.745 Case 'ModifyToNonZero_AcceptFirst' execution.
+06:43:14.792 Case 'ModifyToNonZero_Rejected' execution.
+06:43:14.839 Case 'ModifyToZero_Accepted' execution.
+06:43:14.901 Case 'ModifyToZero_AcceptFirst' execution.
+06:43:14.932 Case 'ModifyToZero_PlaceCanceled' execution.
+06:43:15.120 Case 'CancelNonZero_Accepted' succeeded.
+06:43:15.229 Case 'ModifyToZero_PlaceCancelFirst' execution.
+06:43:15.292 Case 'CancelZero_Accepted' succeeded.
+06:43:15.323 Case 'CancelZero_Rejected' succeeded.
+06:43:15.401 Case 'CancelNonZero_Rejected' succeeded.
+06:43:15.401 Case 'ModifyToZero_Rejected' execution.
+06:43:15.479 Case 'ModifyToZero_Accepted' succeeded.
+06:43:15.510 Case 'ModifyToZero_RejectFirst' execution.
+06:43:15.526 Case 'ModifyToNonZero_Accepted' succeeded.
+06:43:15.557 Case 'ModifyToZero_PlaceCanceled' succeeded.
+06:43:15.574 Case 'ModifyToZero_AcceptFirst' succeeded.
+06:43:15.589 Case 'ModifyToNonZero_Rejected' succeeded.
+06:43:15.604 Case 'ModifyToZero_ReplaceCanceled' execution.
+06:43:15.635 Case 'ModifyToNonZero_AcceptFirst' succeeded.
+06:43:15.714 Case 'ModifyZeroToNonZero_Accepted' execution.
+06:43:15.808 Case 'ModifyZeroToNonZero_AcceptFirst' execution.
+06:43:15.870 Case 'ModifyToZero_PlaceCancelFirst' succeeded.
+06:43:15.886 Case 'ModifyZeroToNonZero_Rejected' execution.
+06:43:16.057 Case 'ModifyZeroToNonZero_RejectFirst' execution.
+06:43:16.214 Case 'ModifyZeroToZero_Accepted' execution.
+06:43:16.276 Case 'ModifyZeroToZero_AcceptFirst' execution.
+06:43:16.323 Case 'ModifyZeroToZero_Rejected' execution.
+06:43:16.339 Case 'ModifyToZero_Rejected' succeeded.
+06:43:16.370 Case 'ModifyToZero_ReplaceCanceled' succeeded.
+06:43:16.495 Case 'ModifyToZero_RejectFirst' succeeded.
+06:43:16.542 Case 'ModifyZeroToZero_RejectFirst' execution.
+06:43:16.745 Case 'ModifyZeroToNonZero_Rejected' succeeded.
+06:43:16.776 Case 'ModifyZeroToNonZero_RejectFirst' succeeded.
+06:43:16.792 Case 'ModifyZeroToNonZero_Accepted' succeeded.
+06:43:16.823 Case 'ModifyZeroToNonZero_AcceptFirst' succeeded.
+06:43:16.870 Case 'ModifyZeroToZero_Accepted' succeeded.
+06:43:16.886 Case 'ModifyZeroToZero_AcceptFirst' succeeded.
+06:43:16.933 Case 'ModifyZeroToZero_Rejected' succeeded.
+06:43:16.995 Case 'ModifyZeroToZero_RejectFirst' succeeded.
+06:43:22.808 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills' execution finished. It took 0:00:20.656928.
+06:43:22.808 Test cases results: 22 total, 22 succeeded, 0 failed, 0 skipped.

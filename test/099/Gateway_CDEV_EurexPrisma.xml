@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="17" testsuite_failed="False" time="1102.337857" timestamp="2020-02-06T04:17:40.543541">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="6"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="EurexPrisma" skipped="0" tests="17" testsuite_failed="False" time="1102.337857" timestamp="2020-02-06T04:17:40.543541">
+  <testsuite failures="0" name="VDK_Portfolio_Part1" skipped="0" tests="6" testsuite_failed="False" time="181.444454" timestamp="2020-02-06T04:17:53.419003">
+   <testcase name="PRBRC_A1" status="run" time="0.687369" timestamp="2020-02-06T04:20:54.129181"/>
+   <testcase name="PRIFR_A1" status="run" time="0.156234" timestamp="2020-02-06T04:20:54.160289"/>
+   <testcase name="PRIFR_A2" status="run" time="0.171881" timestamp="2020-02-06T04:20:54.207145"/>
+   <testcase name="PRIFR_A3" status="run" time="0.187508" timestamp="2020-02-06T04:20:54.238395"/>
+   <testcase name="PRIFR_A4" status="run" time="0.343771" timestamp="2020-02-06T04:20:54.300899"/>
+   <testcase name="VDKCM_A6" status="run" time="0.218757" timestamp="2020-02-06T04:20:54.347775"/>
+  </testsuite>
+  <testsuite failures="0" name="VDK_Portfolio_Part2" skipped="0" tests="4" testsuite_failed="False" time="181.928726" timestamp="2020-02-06T04:20:54.894712">
+   <testcase name="VDKCM_A1" status="run" time="0.12499" timestamp="2020-02-06T04:23:55.604641"/>
+   <testcase name="VDKCM_A3" status="run" time="0.140612" timestamp="2020-02-06T04:23:55.635891"/>
+   <testcase name="VDKCM_A5" status="run" time="0.233425" timestamp="2020-02-06T04:23:55.668110"/>
+   <testcase name="VDKCM_A7" status="run" time="1.047024" timestamp="2020-02-06T04:23:55.714002"/>
+  </testsuite>
+  <testsuite failures="0" name="VDK_Portfolio_Part3" skipped="0" tests="2" testsuite_failed="False" time="181.100492" timestamp="2020-02-06T04:23:56.854711">
+   <testcase name="PRIFR_A5" status="run" time="0.296871" timestamp="2020-02-06T04:26:57.580199"/>
+   <testcase name="PRIFR_A6" status="run" time="0.24998" timestamp="2020-02-06T04:26:57.611454"/>
+  </testsuite>
+  <testsuite failures="0" name="VDK_Portfolio_Part4" skipped="0" tests="1" testsuite_failed="False" time="181.5067" timestamp="2020-02-06T04:26:57.986471">
+   <testcase name="PRIFR_A7" status="run" time="0.718766" timestamp="2020-02-06T04:29:58.727506"/>
+  </testsuite>
+  <testsuite failures="0" name="VDK_Portfolio_Part5" skipped="0" tests="1" testsuite_failed="False" time="181.194112" timestamp="2020-02-06T04:29:59.524422">
+   <testcase name="A1" status="run" time="0.328502" timestamp="2020-02-06T04:33:00.296633"/>
+  </testsuite>
+  <testsuite failures="0" name="VDK_Portfolio_V80" skipped="0" tests="3" testsuite_failed="False" time="181.397202" timestamp="2020-02-06T04:33:00.765408">
+   <testsuite failures="0" name="DPBBN_A1" skipped="0" tests="3" testsuite_failed="False" time="181.256575" timestamp="2020-02-06T04:33:00.843536">
+    <testcase name="TEA_days_2" status="run" time="0.296847" timestamp="2020-02-06T04:36:01.646998"/>
+    <testcase name="TEA_days_1" status="run" time="0.295897" timestamp="2020-02-06T04:36:01.694814"/>
+    <testcase name="TEA_days_0" status="run" time="0.280416" timestamp="2020-02-06T04:36:01.741557"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

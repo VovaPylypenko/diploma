@@ -1,0 +1,179 @@
+ 1:41:08.36  Test starded without threads
+23:41:08.868 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts/PythonModules' added.
+23:41:08.868 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:41:08.868 Python Module Path 'ScriptKit' added.
+23:41:08.868 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+23:41:09.214 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset' full execution.
+23:41:09.228 Suite '.'. [10 test cases, 0 sub-suites]
+23:41:14.712 Case 'PriceTypeOffsetOTE_01' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\PriceTypeOffsetOTE_01.tc.py", line 5, in <module>
+    TestScenario(testSettings_01)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\test_suite.su.py", line 48, in TestScenario
+    rejectReason = GWRejectReason.Reject_DailyLossLimit(current_loss = "USD{}".format(expectedLoss * PLScalarValue)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:14.728 Case 'PriceTypeOffsetOTE_01' failed.
+23:41:14.775 Case 'PriceTypeOffsetOTE_02' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\PriceTypeOffsetOTE_02.tc.py", line 5, in <module>
+    TestScenario(testSettings_02)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\test_suite.su.py", line 48, in TestScenario
+    rejectReason = GWRejectReason.Reject_DailyLossLimit(current_loss = "USD{}".format(expectedLoss * PLScalarValue)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:14.775 Case 'PriceTypeOffsetOTE_02' failed.
+23:41:14.837 Case 'PriceTypeOffsetOTE_03' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\PriceTypeOffsetOTE_03.tc.py", line 5, in <module>
+    TestScenario(testSettings_03)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\test_suite.su.py", line 48, in TestScenario
+    rejectReason = GWRejectReason.Reject_DailyLossLimit(current_loss = "USD{}".format(expectedLoss * PLScalarValue)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:14.837 Case 'PriceTypeOffsetOTE_03' failed.
+23:41:14.915 Case 'PriceTypeOffsetOTE_04' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\PriceTypeOffsetOTE_04.tc.py", line 5, in <module>
+    TestScenario(testSettings_04)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\test_suite.su.py", line 48, in TestScenario
+    rejectReason = GWRejectReason.Reject_DailyLossLimit(current_loss = "USD{}".format(expectedLoss * PLScalarValue)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:14.915 Case 'PriceTypeOffsetOTE_04' failed.
+23:41:14.962 Case 'PriceTypeOffsetOTE_05' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\PriceTypeOffsetOTE_05.tc.py", line 5, in <module>
+    TestScenario(testSettings_05)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\test_suite.su.py", line 48, in TestScenario
+    rejectReason = GWRejectReason.Reject_DailyLossLimit(current_loss = "USD{}".format(expectedLoss * PLScalarValue)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:14.962 Case 'PriceTypeOffsetOTE_05' failed.
+23:41:15.025 Case 'PriceTypeOffsetOTE_06' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\PriceTypeOffsetOTE_06.tc.py", line 5, in <module>
+    TestScenario(testSettings_06)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\test_suite.su.py", line 48, in TestScenario
+    rejectReason = GWRejectReason.Reject_DailyLossLimit(current_loss = "USD{}".format(expectedLoss * PLScalarValue)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:15.025 Case 'PriceTypeOffsetOTE_06' failed.
+23:41:15.087 Case 'PriceTypeOffsetOTE_07' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\PriceTypeOffsetOTE_07.tc.py", line 5, in <module>
+    TestScenario(testSettings_07)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\test_suite.su.py", line 48, in TestScenario
+    rejectReason = GWRejectReason.Reject_DailyLossLimit(current_loss = "USD{}".format(expectedLoss * PLScalarValue)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:15.087 Case 'PriceTypeOffsetOTE_07' failed.
+23:41:15.150 Case 'PriceTypeOffsetOTE_08' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\PriceTypeOffsetOTE_08.tc.py", line 5, in <module>
+    TestScenario(testSettings_08)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\test_suite.su.py", line 48, in TestScenario
+    rejectReason = GWRejectReason.Reject_DailyLossLimit(current_loss = "USD{}".format(expectedLoss * PLScalarValue)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:15.165 Case 'PriceTypeOffsetOTE_08' failed.
+23:41:15.228 Case 'PriceTypeOffsetOTE_09' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\PriceTypeOffsetOTE_09.tc.py", line 5, in <module>
+    TestScenario(testSettings_09)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\test_suite.su.py", line 48, in TestScenario
+    rejectReason = GWRejectReason.Reject_DailyLossLimit(current_loss = "USD{}".format(expectedLoss * PLScalarValue)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:15.228 Case 'PriceTypeOffsetOTE_09' failed.
+23:41:15.306 Case 'PriceTypeOffsetOTE_10' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\PriceTypeOffsetOTE_10.tc.py", line 5, in <module>
+    TestScenario(testSettings_10)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset\test_suite.su.py", line 48, in TestScenario
+    rejectReason = GWRejectReason.Reject_DailyLossLimit(current_loss = "USD{}".format(expectedLoss * PLScalarValue)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:15.306 Case 'PriceTypeOffsetOTE_10' failed.
+23:41:15.509 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset' execution finished. It took 0:00:06.248332.
+23:41:15.509 Test cases results: 10 total, 0 succeeded, 10 failed, 0 skipped.

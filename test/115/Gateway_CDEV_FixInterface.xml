@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="4" skipped="0" tests="279" testsuite_failed="True" time="1139.317477" timestamp="2020-02-19T16:16:08.986780">
+ <properties>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_FixInterface"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="4" name="Suites" skipped="0" tests="279" testsuite_failed="True" time="1139.317477" timestamp="2020-02-19T16:16:08.986780">
+  <testsuite failures="1" name="AccountAuthorization" skipped="0" tests="1" testsuite_failed="True" time="77.86198" timestamp="2020-02-19T16:16:13.065083">
+   <testsuite failures="1" name="Functional" skipped="0" tests="1" testsuite_failed="True" time="77.487011" timestamp="2020-02-19T16:16:13.268192">
+    <testcase name="AddAuthorization" status="run" time="70.877208" timestamp="2020-02-19T16:16:18.596702">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File &quot;C:\Python36\Lib\queue.py&quot;, line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\AccountAuthorization\Functional\AddAuthorization.tc.py&quot;, line 33, in &lt;module&gt;
+    authorizedAccountsName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\AccountDataUtils.py&quot;, line 74, in GetAccountDataReportMsgDictByAccountName
+    returnedMessages = GetAccDataReportMsgListByAccNameList(fixClient, fixObject, listAccountNames)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\AccountDataUtils.py&quot;, line 61, in GetAccDataReportMsgListByAccNameList
+    report = fixClient.WaitNAppMessages()[0]
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 136, in __waitMessages
+    raise Exception(&quot;TIMEOUT/Message number: {0}/{1} - {2}&quot;.format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 9/1 - Application message don't come
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File &quot;C:\Python36\Lib\queue.py&quot;, line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\AccountAuthorization\Functional\AddAuthorization.tc.py&quot;, line 33, in &lt;module&gt;
+    authorizedAccountsName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\AccountDataUtils.py&quot;, line 74, in GetAccountDataReportMsgDictByAccountName
+    returnedMessages = GetAccDataReportMsgListByAccNameList(fixClient, fixObject, listAccountNames)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\AccountDataUtils.py&quot;, line 61, in GetAccDataReportMsgListByAccNameList
+    report = fixClient.WaitNAppMessages()[0]
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 136, in __waitMessages
+    raise Exception(&quot;TIMEOUT/Message number: {0}/{1} - {2}&quot;.format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 9/1 - Application message don't come
+</failure>
+    </testcase>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="AccountDataRequest" skipped="0" tests="5" testsuite_failed="False" time="4.609522" timestamp="2020-02-19T16:17:31.005192">
+   <testsuite failures="0" name="Functional" skipped="0" tests="5" testsuite_failed="False" time="4.265741" timestamp="2020-02-19T16:17:31.192735">
+    <testcase name="Account1Snapshot" status="run" time="0.031354" timestamp="2020-02-19T16:17:32.677137"/>
+    <testcase name="Account1SnapshotSubscribe" status="run" time="0.046861" timestamp="2020-02-19T16:17:32.880268"/>
+    <testcase name="Account1SnapshotUnsubscribe" status="run" time="0.031263" timestamp="2020-02-19T16:17:33.099023"/>
+    <testcase name="Account2Snapshot" status="run" time="0.031247" timestamp="2020-02-19T16:17:33.349024"/>
+    <testcase name="NoAccountTag" status="run" time="0.046931" timestamp="2020-02-19T16:17:33.552152"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="AccountRiskParametersRequest" skipped="0" tests="3" testsuite_failed="False" time="57.986332" timestamp="2020-02-19T16:17:35.677232">
+   <testcase name="SendARPRforAllAccounts" status="run" time="17.266202" timestamp="2020-02-19T16:17:41.255558"/>
+   <testcase name="SendARPRwithSettingsTurnedOFF" status="run" time="17.313055" timestamp="2020-02-19T16:17:58.693666"/>
+   <testcase name="SendARPRwithSettingsTurnedON" status="run" time="17.313082" timestamp="2020-02-19T16:18:16.162990"/>
+  </testsuite>
+  <testsuite failures="0" name="AccountTagValueAcceptance" skipped="0" tests="24" testsuite_failed="False" time="26.860293" timestamp="2020-02-19T16:18:33.757317">
+   <testsuite failures="0" name="AccId" skipped="0" tests="8" testsuite_failed="False" time="8.25028" timestamp="2020-02-19T16:18:36.226169">
+    <testcase name="SendAccountDataRequest" status="run" time="0.062492" timestamp="2020-02-19T16:18:37.476199"/>
+    <testcase name="SendAccountRiskParametersRequest" status="run" time="0.031242" timestamp="2020-02-19T16:18:37.694966"/>
+    <testcase name="SendCollateralInquiry" status="run" time="0.031269" timestamp="2020-02-19T16:18:37.882466"/>
+    <testcase name="SendMassStatusRequest" status="run" time="0.046879" timestamp="2020-02-19T16:18:38.085593"/>
+    <testcase name="SendNewOrderList" status="run" time="0.062533" timestamp="2020-02-19T16:18:38.304353"/>
+    <testcase name="SendNewOrderSingle" status="run" time="0.04687" timestamp="2020-02-19T16:18:38.538769"/>
+    <testcase name="SendOrderCancelRequest" status="run" time="0.078187" timestamp="2020-02-19T16:18:38.757495"/>
+    <testcase name="SendRequestForPosition" status="run" time="4.109525" timestamp="2020-02-19T16:18:38.991878"/>
+   </testsuite>
+   <testsuite failures="0" name="AccName" skipped="0" tests="8" testsuite_failed="False" time="8.312771" timestamp="2020-02-19T16:18:44.554582">
+    <testcase name="SendAccountDataRequest" status="run" time="0.015679" timestamp="2020-02-19T16:18:45.992114"/>
+    <testcase name="SendAccountRiskParametersRequest" status="run" time="0.031247" timestamp="2020-02-19T16:18:46.195252"/>
+    <testcase name="SendCollateralInquiry" status="run" time="0.03121" timestamp="2020-02-19T16:18:46.398404"/>
+    <testcase name="SendMassStatusRequest" status="run" time="0.156226" timestamp="2020-02-19T16:18:46.632776"/>
+    <testcase name="SendNewOrderList" status="run" time="0.078115" timestamp="2020-02-19T16:18:47.023414"/>
+    <testcase name="SendNewOrderSingle" status="run" time="0.093753" timestamp="2020-02-19T16:18:47.273410"/>
+    <testcase name="SendOrderCancelRequest" status="run" time="1.390669" timestamp="2020-02-19T16:18:47.554673"/>
+    <testcase name="SendRequestForPosition" status="run" time="2.187574" timestamp="2020-02-19T16:18:49.210978"/>
+   </testsuite>
+   <testsuite failures="0" name="FCMAccNumber" skipped="0" tests="8" testsuite_failed="False" time="7.3909" timestamp="2020-02-19T16:18:53.007987">
+    <testcase name="SendAccountDataRequest" status="run" time="0.03125" timestamp="2020-02-19T16:18:54.429889"/>
+    <testcase name="SendAccountRiskParametersRequest" status="run" time="0.031226" timestamp="2020-02-19T16:18:54.648682"/>
+    <testcase name="SendCollateralInquiry" status="run" time="0.031233" timestamp="2020-02-19T16:18:54.851808"/>
+    <testcase name="SendMassStatusRequest" status="run" time="0.140612" timestamp="2020-02-19T16:18:55.086176"/>
+    <testcase name="SendNewOrderList" status="run" time="0.078059" timestamp="2020-02-19T16:18:55.414382"/>
+    <testcase name="SendNewOrderSingle" status="run" time="0.062492" timestamp="2020-02-19T16:18:55.648700"/>
+    <testcase name="SendOrderCancelRequest" status="run" time="0.109256" timestamp="2020-02-19T16:18:55.961326"/>
+    <testcase name="SendRequestForPosition" status="run" time="2.156354" timestamp="2020-02-19T16:18:56.273716"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="AllowedFeatureRequest" skipped="0" tests="2" testsuite_failed="False" time="6.422168" timestamp="2020-02-19T16:19:00.711359">
+   <testsuite failures="0" name="Functional" skipped="0" tests="2" testsuite_failed="False" time="6.000225" timestamp="2020-02-19T16:19:00.898871">
+    <testcase name="DJNewsFeatures" status="run" time="3.204367" timestamp="2020-02-19T16:19:01.180199"/>
+    <testcase name="NoFeatures" status="run" time="2.156302" timestamp="2020-02-19T16:19:04.555277"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="AllowedMarketDataRequest" skipped="0" tests="5" testsuite_failed="False" time="15.609904" timestamp="2020-02-19T16:19:07.242844">
+   <testsuite failures="0" name="Functional" skipped="0" tests="5" testsuite_failed="False" time="15.172376" timestamp="2020-02-19T16:19:07.430396">
+    <testcase name="FutureRevisionTag" status="run" time="2.156308" timestamp="2020-02-19T16:19:07.727249"/>
+    <testcase name="ManyAllowedInstruments" status="run" time="3.203236" timestamp="2020-02-19T16:19:10.055433"/>
+    <testcase name="NoAllowedInstruments" status="run" time="2.250138" timestamp="2020-02-19T16:19:13.430539"/>
+    <testcase name="OldRevisionTag" status="run" time="3.218864" timestamp="2020-02-19T16:19:15.821249"/>
+    <testcase name="SequentialRequests" status="run" time="3.172007" timestamp="2020-02-19T16:19:19.227601"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="AuthorizedAccountsRequest" skipped="0" tests="3" testsuite_failed="False" time="7.642754" timestamp="2020-02-19T16:19:22.946509">
+   <testsuite failures="0" name="Functional" skipped="0" tests="3" testsuite_failed="False" time="7.187728" timestamp="2020-02-19T16:19:23.196522">
+    <testcase name="NoSubscriptionRequestTypeTag" status="run" time="2.125106" timestamp="2020-02-19T16:19:23.462137"/>
+    <testcase name="OneAccount" status="run" time="2.140714" timestamp="2020-02-19T16:19:25.743461"/>
+    <testcase name="TwoAccounts" status="run" time="2.140696" timestamp="2020-02-19T16:19:28.056047"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="CollateralInquiry" skipped="0" tests="5" testsuite_failed="False" time="29.110373" timestamp="2020-02-19T16:19:30.665499">
+   <testsuite failures="0" name="functional" skipped="0" tests="4" testsuite_failed="False" time="23.844573" timestamp="2020-02-19T16:19:30.915516">
+    <testcase name="CancelWorkingOrderAndSendCI" status="run" time="2.140709" timestamp="2020-02-19T16:19:36.509464"/>
+    <testcase name="ReplaceWorkingOrderAndSendCI" status="run" time="5.140834" timestamp="2020-02-19T16:19:38.822046"/>
+    <testcase name="SendCIforAccount1" status="run" time="5.1408" timestamp="2020-02-19T16:19:44.134711"/>
+    <testcase name="SendCIforAllAccounts" status="run" time="5.156435" timestamp="2020-02-19T16:19:49.447380"/>
+   </testsuite>
+   <testsuite failures="0" name="RateLimitAndEnablement" skipped="0" tests="1" testsuite_failed="False" time="4.703064" timestamp="2020-02-19T16:19:54.854046">
+    <testcase name="RateLimit" status="run" time="2.12509" timestamp="2020-02-19T16:19:57.291414"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="CompoundOrders" skipped="0" tests="41" testsuite_failed="False" time="25.657135" timestamp="2020-02-19T16:19:59.869621">
+   <testsuite failures="0" name="Brackets" skipped="0" tests="7" testsuite_failed="False" time="5.250025" timestamp="2020-02-19T16:20:00.041665">
+    <testcase name="10LegsBracket" status="run" time="0.422387" timestamp="2020-02-19T16:20:01.463436"/>
+    <testcase name="CancelBothOCOLegs" status="run" time="0.078141" timestamp="2020-02-19T16:20:02.041553"/>
+    <testcase name="CancelFirstOCOLeg" status="run" time="0.093744" timestamp="2020-02-19T16:20:02.291589"/>
+    <testcase name="CancelOPOLeg" status="run" time="0.093751" timestamp="2020-02-19T16:20:02.557210"/>
+    <testcase name="CancelSecondOCOLeg" status="run" time="0.078393" timestamp="2020-02-19T16:20:02.838461"/>
+    <testcase name="FillBracketsLegs" status="run" time="0.218715" timestamp="2020-02-19T16:20:03.182279"/>
+    <testcase name="NestedLegsOnly" status="run" time="0.031509" timestamp="2020-02-19T16:20:03.588481"/>
+   </testsuite>
+   <testsuite failures="0" name="OCOSingleLevel" skipped="0" tests="16" testsuite_failed="False" time="8.250247" timestamp="2020-02-19T16:20:05.369843">
+    <testcase name="10OCOLegs" status="run" time="0.359437" timestamp="2020-02-19T16:20:06.697967"/>
+    <testcase name="11OCOLegs" status="run" time="0.124976" timestamp="2020-02-19T16:20:07.229270"/>
+    <testcase name="AckAndFillOnlyOneLeg" status="run" time="0.093826" timestamp="2020-02-19T16:20:07.541765"/>
+    <testcase name="BothLegOptions" status="run" time="0.203175" timestamp="2020-02-19T16:20:07.807377"/>
+    <testcase name="LegsFromTwoAccounts" status="run" time="0.046884" timestamp="2020-02-19T16:20:08.182391"/>
+    <testcase name="LimitDay_StopDay" status="run" time="0.140639" timestamp="2020-02-19T16:20:08.526152"/>
+    <testcase name="LimitFAK_LimitDAY" status="run" time="0.046874" timestamp="2020-02-19T16:20:08.901160"/>
+    <testcase name="LimitGTC_LimitGTC" status="run" time="0.142995" timestamp="2020-02-19T16:20:09.104299"/>
+    <testcase name="LimitParked_LimitParked" status="run" time="0.031229" timestamp="2020-02-19T16:20:09.416905"/>
+    <testcase name="RejectOneLegOnExchange" status="run" time="0.077903" timestamp="2020-02-19T16:20:09.620147"/>
+    <testcase name="RejectOneLegOnRS" status="run" time="0.046171" timestamp="2020-02-19T16:20:09.855044"/>
+    <testcase name="StopDAY_StopFOK" status="run" time="0.032264" timestamp="2020-02-19T16:20:10.119932"/>
+    <testcase name="StopGTD_LimitDay" status="run" time="0.156255" timestamp="2020-02-19T16:20:10.323074"/>
+    <testcase name="StopLimitAON_Market" status="run" time="0.032105" timestamp="2020-02-19T16:20:10.776198"/>
+    <testcase name="StopLimitGTD_StopLimitDay" status="run" time="0.18796" timestamp="2020-02-19T16:20:11.041847"/>
+    <testcase name="TrailingStop_StopLimitGTD" status="run" time="0.015611" timestamp="2020-02-19T16:20:11.448101"/>
+   </testsuite>
+   <testsuite failures="0" name="OPOSingleLevel" skipped="0" tests="13" testsuite_failed="False" time="7.265834" timestamp="2020-02-19T16:20:13.698145">
+    <testcase name="10OPOLegs" status="run" time="0.265643" timestamp="2020-02-19T16:20:14.995056"/>
+    <testcase name="11OPOLegs" status="run" time="0.062504" timestamp="2020-02-19T16:20:15.463835"/>
+    <testcase name="BothLegOptions" status="run" time="0.187766" timestamp="2020-02-19T16:20:15.713821"/>
+    <testcase name="LegsFromTwoAccounts" status="run" time="0.031367" timestamp="2020-02-19T16:20:16.166960"/>
+    <testcase name="LimitDay_StopDay" status="run" time="0.172555" timestamp="2020-02-19T16:20:16.385729"/>
+    <testcase name="LimitFAK_LimitDAY" status="run" time="0.06249" timestamp="2020-02-19T16:20:16.791989"/>
+    <testcase name="LimitGTC_LimitGTC" status="run" time="0.140625" timestamp="2020-02-19T16:20:17.041994"/>
+    <testcase name="LimitParked_LimitParked" status="run" time="0.015524" timestamp="2020-02-19T16:20:17.432718"/>
+    <testcase name="StopDAY_StopFOK" status="run" time="0.046895" timestamp="2020-02-19T16:20:17.635745"/>
+    <testcase name="StopGTD_LimitDay" status="run" time="0.140631" timestamp="2020-02-19T16:20:17.838875"/>
+    <testcase name="StopLimitAON_Market" status="run" time="0.031319" timestamp="2020-02-19T16:20:18.167025"/>
+    <testcase name="StopLimitGTD_StopLimitDay" status="run" time="0.155548" timestamp="2020-02-19T16:20:18.464639"/>
+    <testcase name="TrailingStop_StopLimitGTD" status="run" time="0.018345" timestamp="2020-02-19T16:20:18.854969"/>
+   </testsuite>
+   <testsuite failures="0" name="ProportionalExecution" skipped="0" tests="5" testsuite_failed="False" time="4.296981" timestamp="2020-02-19T16:20:21.057736">
+    <testcase name="FillOPOModifyOCOLegs" status="run" time="0.234306" timestamp="2020-02-19T16:20:22.448460"/>
+    <testcase name="OCOFirstOCOLeg" status="run" time="0.046868" timestamp="2020-02-19T16:20:22.885894"/>
+    <testcase name="OCOFirstOPOLeg" status="run" time="0.046906" timestamp="2020-02-19T16:20:23.104843"/>
+    <testcase name="OPOFirstOCOLeg" status="run" time="0.04361" timestamp="2020-02-19T16:20:23.326798"/>
+    <testcase name="OPOFirstOPOLeg" status="run" time="0.031692" timestamp="2020-02-19T16:20:23.542159"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Configuration" skipped="0" tests="33" testsuite_failed="False" time="29.563283" timestamp="2020-02-19T16:20:25.604721">
+   <testsuite failures="0" name="AccountNameAdj" skipped="0" tests="8" testsuite_failed="False" time="4.703744" timestamp="2020-02-19T16:20:28.949025">
+    <testcase name="SendAccountDataRequest" status="run" time="0.062294" timestamp="2020-02-19T16:20:29.323795"/>
+    <testcase name="SendAccountRiskParametersRequest" status="run" time="0.028863" timestamp="2020-02-19T16:20:29.607210"/>
+    <testcase name="SendCollateralInquiry" status="run" time="0.03112" timestamp="2020-02-19T16:20:29.839349"/>
+    <testcase name="SendMassStatusRequest" status="run" time="0.046895" timestamp="2020-02-19T16:20:30.057953"/>
+    <testcase name="SendNewOrderList" status="run" time="0.046916" timestamp="2020-02-19T16:20:30.417343"/>
+    <testcase name="SendNewOrderSingle" status="run" time="0.046852" timestamp="2020-02-19T16:20:30.667400"/>
+    <testcase name="SendOrderCancelRequest" status="run" time="0.078106" timestamp="2020-02-19T16:20:30.948640"/>
+    <testcase name="SendRequestForPosition" status="run" time="2.187559" timestamp="2020-02-19T16:20:31.261128"/>
+   </testsuite>
+   <testsuite failures="0" name="FCMAccountNumberAdj" skipped="0" tests="8" testsuite_failed="False" time="4.781396" timestamp="2020-02-19T16:20:33.729929">
+    <testcase name="SendAccountDataRequest" status="run" time="0.017289" timestamp="2020-02-19T16:20:34.027240"/>
+    <testcase name="SendAccountRiskParametersRequest" status="run" time="0.013799" timestamp="2020-02-19T16:20:34.247405"/>
+    <testcase name="SendCollateralInquiry" status="run" time="0.312545" timestamp="2020-02-19T16:20:34.558082"/>
+    <testcase name="SendMassStatusRequest" status="run" time="0.062501" timestamp="2020-02-19T16:20:35.073731"/>
+    <testcase name="SendNewOrderList" status="run" time="0.0786" timestamp="2020-02-19T16:20:35.339366"/>
+    <testcase name="SendNewOrderSingle" status="run" time="0.031266" timestamp="2020-02-19T16:20:35.636247"/>
+    <testcase name="SendOrderCancelRequest" status="run" time="0.077652" timestamp="2020-02-19T16:20:35.886728"/>
+    <testcase name="SendRequestForPosition" status="run" time="2.125074" timestamp="2020-02-19T16:20:36.214383"/>
+   </testsuite>
+   <testsuite failures="0" name="InstrumentTagAdj" skipped="0" tests="8" testsuite_failed="False" time="2.562572" timestamp="2020-02-19T16:20:38.620694">
+    <testcase name="SendFutureToAdj" status="run" time="0.04721" timestamp="2020-02-19T16:20:38.980060"/>
+    <testcase name="SendFutureToEmptyPipeline" status="run" time="0.046878" timestamp="2020-02-19T16:20:39.261340"/>
+    <testcase name="SendOptionToAdj" status="run" time="0.031366" timestamp="2020-02-19T16:20:39.495710"/>
+    <testcase name="SendOptionToEmptyPipeline" status="run" time="0.031234" timestamp="2020-02-19T16:20:39.745722"/>
+    <testcase name="SendRDFToAdj" status="run" time="0.062505" timestamp="2020-02-19T16:20:39.995735"/>
+    <testcase name="SendRDFToEmptyPipeline" status="run" time="0.031271" timestamp="2020-02-19T16:20:40.292594"/>
+    <testcase name="SendStrategyToAdj" status="run" time="0.047017" timestamp="2020-02-19T16:20:40.542623"/>
+    <testcase name="SendStrategyToEmptyPipeline" status="run" time="0.061683" timestamp="2020-02-19T16:20:40.902824"/>
+   </testsuite>
+   <testsuite failures="0" name="Parameters" skipped="0" tests="1" testsuite_failed="False" time="7.437687" timestamp="2020-02-19T16:20:41.292654">
+    <testcase name="SendLastModifierUsername" status="run" time="0.125007" timestamp="2020-02-19T16:20:45.698998"/>
+   </testsuite>
+   <testsuite failures="0" name="SalesSeriesAdj" skipped="0" tests="8" testsuite_failed="False" time="4.328324" timestamp="2020-02-19T16:20:48.824296">
+    <testcase name="SendAccountDataRequest" status="run" time="0.031247" timestamp="2020-02-19T16:20:49.089729"/>
+    <testcase name="SendAccountRiskParametersRequest" status="run" time="0.015603" timestamp="2020-02-19T16:20:49.324122"/>
+    <testcase name="SendCollateralInquiry" status="run" time="0.015607" timestamp="2020-02-19T16:20:49.589738"/>
+    <testcase name="SendMassStatusRequest" status="run" time="0.015597" timestamp="2020-02-19T16:20:49.808514"/>
+    <testcase name="SendNewOrderList" status="run" time="0.027494" timestamp="2020-02-19T16:20:50.030987"/>
+    <testcase name="SendNewOrderSingle" status="run" time="0.046781" timestamp="2020-02-19T16:20:50.292969"/>
+    <testcase name="SendOrderCancelRequest" status="run" time="0.062499" timestamp="2020-02-19T16:20:50.574124"/>
+    <testcase name="SendRequestForPosition" status="run" time="2.109182" timestamp="2020-02-19T16:20:50.871296"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Dialects" skipped="0" tests="1" testsuite_failed="False" time="8.589506" timestamp="2020-02-19T16:20:55.375639">
+   <testcase name="SendLogonPlaceOrderAndLogout" status="run" time="0.093493" timestamp="2020-02-19T16:21:00.996553"/>
+  </testsuite>
+  <testsuite failures="0" name="FCMCurrencyRateRequest" skipped="0" tests="1" testsuite_failed="False" time="4.140725" timestamp="2020-02-19T16:21:04.074495">
+   <testsuite failures="0" name="Functional" skipped="0" tests="1" testsuite_failed="False" time="3.656348" timestamp="2020-02-19T16:21:04.308861">
+    <testcase name="GetCurrencyRates" status="run" time="3.1251160000000002" timestamp="2020-02-19T16:21:04.621376"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="FIDForMiFIDII" skipped="0" tests="1" testsuite_failed="False" time="3.671959" timestamp="2020-02-19T16:21:08.309001">
+   <testcase name="PlaceModifyCancel_FID" status="run" time="3.140707" timestamp="2020-02-19T16:21:08.637121"/>
+  </testsuite>
+  <testsuite failures="0" name="FillCareOrders" skipped="0" tests="18" testsuite_failed="False" time="51.985748" timestamp="2020-02-19T16:21:12.121602">
+   <testsuite failures="0" name="FillCareOrdersRequestPlacement" skipped="0" tests="6" testsuite_failed="False" time="20.609909000000002" timestamp="2020-02-19T16:21:12.340355">
+    <testcase name="CheckMassStatusRequest" status="run" time="4.140735" timestamp="2020-02-19T16:21:14.809153"/>
+    <testcase name="PlaceHandlInstOrdersAndSendFillCareOrder" status="run" time="4.156388" timestamp="2020-02-19T16:21:19.137385"/>
+    <testcase name="SendFillCareOrdersOnNotExistingOrder" status="run" time="2.140718" timestamp="2020-02-19T16:21:23.575005"/>
+    <testcase name="SendFillCareOrdersWithCorrectStrategyLegs" status="run" time="2.125067" timestamp="2020-02-19T16:21:25.903205"/>
+    <testcase name="SendFillCareOrdersWithIncorrectAccountID" status="run" time="2.125002" timestamp="2020-02-19T16:21:28.247086"/>
+    <testcase name="SendFillCareOrdersWithOnlyOneLeg" status="run" time="2.171938" timestamp="2020-02-19T16:21:30.559572"/>
+   </testsuite>
+   <testsuite failures="0" name="TagsAndTagValueVerification" skipped="0" tests="12" testsuite_failed="False" time="30.82894" timestamp="2020-02-19T16:21:33.044027">
+    <testcase name="SendFillCareOrdersWithIncorrectNoOrdersDescription" status="run" time="2.125065" timestamp="2020-02-19T16:21:35.450322"/>
+    <testcase name="SendFillCareOrdersWithInvalidStrategyLegs" status="run" time="2.125062" timestamp="2020-02-19T16:21:37.872268"/>
+    <testcase name="SendFillCareOrdersWithMissingAccount" status="run" time="2.125042" timestamp="2020-02-19T16:21:40.184860"/>
+    <testcase name="SendFillCareOrdersWithMissingFillCareOrderRequestID" status="run" time="2.140705" timestamp="2020-02-19T16:21:42.528641"/>
+    <testcase name="SendFillCareOrdersWithMissingLegPrice" status="run" time="2.140711" timestamp="2020-02-19T16:21:44.856835"/>
+    <testcase name="SendFillCareOrdersWithMissingLegQty" status="run" time="2.171924" timestamp="2020-02-19T16:21:47.216283"/>
+    <testcase name="SendFillCareOrdersWithMissingLegTradeID" status="run" time="2.109447" timestamp="2020-02-19T16:21:49.560069"/>
+    <testcase name="SendFillCareOrdersWithMissingNoOrdersDescription" status="run" time="2.140669" timestamp="2020-02-19T16:21:51.935159"/>
+    <testcase name="SendFillCareOrdersWithMissingPrice" status="run" time="2.109543" timestamp="2020-02-19T16:21:54.310258"/>
+    <testcase name="SendFillCareOrdersWithMissingShares" status="run" time="2.10954" timestamp="2020-02-19T16:21:56.825900"/>
+    <testcase name="SendFillCareOrdersWithMissingSymbol" status="run" time="2.140645" timestamp="2020-02-19T16:21:59.185378"/>
+    <testcase name="SendFillCareOrdersWithMissingTradeID" status="run" time="2.140662" timestamp="2020-02-19T16:22:01.544811"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="FixedIncomeTrading" skipped="0" tests="9" testsuite_failed="False" time="19.516157" timestamp="2020-02-19T16:22:04.247967">
+   <testsuite failures="0" name="CompoundOrders" skipped="0" tests="2" testsuite_failed="False" time="1.2812700000000001" timestamp="2020-02-19T16:22:09.716890">
+    <testcase name="FixedIncomeOCO" status="run" time="0.140583" timestamp="2020-02-19T16:22:10.154410"/>
+    <testcase name="FixedIncomeOPO" status="run" time="0.156239" timestamp="2020-02-19T16:22:10.545019"/>
+   </testsuite>
+   <testsuite failures="0" name="InstrumentTagAdj" skipped="0" tests="2" testsuite_failed="False" time="0.875022" timestamp="2020-02-19T16:22:11.138779">
+    <testcase name="SendFixedIncomeToAdj" status="run" time="0.031458" timestamp="2020-02-19T16:22:11.513789"/>
+    <testcase name="SendFixedIncomeToEmptyPipeline" status="run" time="0.046879" timestamp="2020-02-19T16:22:11.763799"/>
+   </testsuite>
+   <testsuite failures="0" name="SymbolMappingAdj" skipped="0" tests="5" testsuite_failed="False" time="9.984656" timestamp="2020-02-19T16:22:12.170050">
+    <testsuite failures="0" name="TelventDTN" skipped="0" tests="2" testsuite_failed="False" time="5.406378" timestamp="2020-02-19T16:22:12.498217">
+     <testcase name="SendFItoEmptyPipeline" status="run" time="0.050035" timestamp="2020-02-19T16:22:16.045166"/>
+     <testcase name="SendFItoInstrTagAdj" status="run" time="0.030588" timestamp="2020-02-19T16:22:16.295837"/>
+    </testsuite>
+    <testsuite failures="0" name="TrueNorthPaladyne" skipped="0" tests="1" testsuite_failed="False" time="2.734429" timestamp="2020-02-19T16:22:18.013972">
+     <testcase name="SendOrderMassStatusRequest" status="run" time="2.171945" timestamp="2020-02-19T16:22:18.357727"/>
+    </testsuite>
+    <testsuite failures="0" name="ULLink" skipped="0" tests="2" testsuite_failed="False" time="0.984422" timestamp="2020-02-19T16:22:20.967159">
+     <testcase name="SendFItoEmptyPipeline" status="run" time="0.046863" timestamp="2020-02-19T16:22:21.404681"/>
+     <testcase name="SendFItoInstrTagAdj" status="run" time="0.03153" timestamp="2020-02-19T16:22:21.670309"/>
+    </testsuite>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="GWLongAndShort" skipped="0" tests="2" testsuite_failed="False" time="10.218994" timestamp="2020-02-19T16:22:23.857911">
+   <testcase name="PlaceOrderWithOpenCloseIndicator" status="run" time="5.281422" timestamp="2020-02-19T16:22:24.217264"/>
+   <testcase name="PlaceOrderWithoutOpenCloseIndicator" status="run" time="4.21886" timestamp="2020-02-19T16:22:29.670540"/>
+  </testsuite>
+  <testsuite failures="0" name="Logon" skipped="0" tests="7" testsuite_failed="False" time="8.937757" timestamp="2020-02-19T16:22:34.201891">
+   <testcase name="SendLogonMessage" status="run" time="2.125053" timestamp="2020-02-19T16:22:34.514413"/>
+   <testcase name="SendLogonWithEncryptMethodTagMissed" status="run" time="1.140676" timestamp="2020-02-19T16:22:36.858233"/>
+   <testcase name="SendLogonWithIncorrectEncryptMethod" status="run" time="0.156222" timestamp="2020-02-19T16:22:38.202060"/>
+   <testcase name="SendLogonWithIncorrectHeartBtInt" status="run" time="1.140655" timestamp="2020-02-19T16:22:38.639525"/>
+   <testcase name="SendLogonWithIncorrectRawData" status="run" time="1.015671" timestamp="2020-02-19T16:22:40.014563"/>
+   <testcase name="SendLogonWithRawDataTagEmpty" status="run" time="0.218791" timestamp="2020-02-19T16:22:41.342717"/>
+   <testcase name="SendLogonWithRawDataTagMissed" status="run" time="1.125026" timestamp="2020-02-19T16:22:41.795880"/>
+  </testsuite>
+  <testsuite failures="0" name="Logout" skipped="0" tests="2" testsuite_failed="False" time="7.390805" timestamp="2020-02-19T16:22:43.233399">
+   <testcase name="SendLogonAndLogout" status="run" time="2.156327" timestamp="2020-02-19T16:22:45.764723"/>
+   <testcase name="SendLogonPlaceOrderAndLogout" status="run" time="2.140717" timestamp="2020-02-19T16:22:48.249157"/>
+  </testsuite>
+  <testsuite failures="0" name="NewOrderSingle" skipped="0" tests="45" testsuite_failed="False" time="100.908983" timestamp="2020-02-19T16:22:50.749226">
+   <testsuite failures="0" name="OrderPlacement" skipped="0" tests="12" testsuite_failed="False" time="12.344087" timestamp="2020-02-19T16:22:51.014854">
+    <testcase name="CallOption" status="run" time="0.500072" timestamp="2020-02-19T16:22:52.452374"/>
+    <testcase name="Limit" status="run" time="0.484385" timestamp="2020-02-19T16:22:53.202415"/>
+    <testcase name="LimitDAY" status="run" time="0.484382" timestamp="2020-02-19T16:22:53.889922"/>
+    <testcase name="LimitDAYIceberg" status="run" time="0.468742" timestamp="2020-02-19T16:22:54.702458"/>
+    <testcase name="LimitFillAndKill" status="run" time="0.468935" timestamp="2020-02-19T16:22:55.405603"/>
+    <testcase name="PutOption" status="run" time="0.500013" timestamp="2020-02-19T16:22:56.139986"/>
+    <testcase name="RelativeDailyFutures" status="run" time="0.499995" timestamp="2020-02-19T16:22:56.890028"/>
+    <testcase name="Spread" status="run" time="0.531844" timestamp="2020-02-19T16:22:57.593162"/>
+    <testcase name="Stop" status="run" time="0.515191" timestamp="2020-02-19T16:22:58.343649"/>
+    <testcase name="StopFillOrKill" status="run" time="0.484442" timestamp="2020-02-19T16:22:59.077568"/>
+    <testcase name="StopGoodTillDate" status="run" time="0.609485" timestamp="2020-02-19T16:22:59.843208"/>
+    <testcase name="StopLimit" status="run" time="0.562251" timestamp="2020-02-19T16:23:00.749752"/>
+   </testsuite>
+   <testsuite failures="0" name="TagsAndTagValuesVerification" skipped="0" tests="33" testsuite_failed="False" time="87.939872" timestamp="2020-02-19T16:23:03.468315">
+    <testcase name="SendNOSDAYWithExpireDate" status="run" time="2.140677" timestamp="2020-02-19T16:23:05.952890"/>
+    <testcase name="SendNOSForTRAILLMT" status="run" time="2.1250809999999998" timestamp="2020-02-19T16:23:08.296565"/>
+    <testcase name="SendNOSForTRAILLMTWithMissingPeggedStopPx" status="run" time="2.17194" timestamp="2020-02-19T16:23:10.656010"/>
+    <testcase name="SendNOSForTRAILMKT" status="run" time="2.125057" timestamp="2020-02-19T16:23:13.140433"/>
+    <testcase name="SendNOSGTDWithMissignExpireDate" status="run" time="2.140823" timestamp="2020-02-19T16:23:15.499869"/>
+    <testcase name="SendNOSICBRGWithIncorrectMaxShow" status="run" time="2.156086" timestamp="2020-02-19T16:23:17.906651"/>
+    <testcase name="SendNOSICBRGWithMissingMaxShow" status="run" time="4.172" timestamp="2020-02-19T16:23:20.265641"/>
+    <testcase name="SendNOSICBRGWithZeroMaxShow" status="run" time="2.109512" timestamp="2020-02-19T16:23:24.703265"/>
+    <testcase name="SendNOSLMTWithMissignPrice" status="run" time="2.140744" timestamp="2020-02-19T16:23:27.047110"/>
+    <testcase name="SendNOSLMTWithZeroPrice" status="run" time="2.14071" timestamp="2020-02-19T16:23:29.390882"/>
+    <testcase name="SendNOSLMTWithZeroStopPx" status="run" time="2.125085" timestamp="2020-02-19T16:23:31.875336"/>
+    <testcase name="SendNOSMKTWithPrice" status="run" time="2.109432" timestamp="2020-02-19T16:23:34.219152"/>
+    <testcase name="SendNOSMKTWithZeroStopPx" status="run" time="2.109462" timestamp="2020-02-19T16:23:36.516082"/>
+    <testcase name="SendNOSNonICBRGWithMaxShow" status="run" time="2.140684" timestamp="2020-02-19T16:23:38.828649"/>
+    <testcase name="SendNOSNonQTSWithTriggerQty" status="run" time="3.119488" timestamp="2020-02-19T16:23:41.240563"/>
+    <testcase name="SendNOSQTSWithIncorrectTriggerQty" status="run" time="2.124855" timestamp="2020-02-19T16:23:44.610283"/>
+    <testcase name="SendNOSQTSWithMissingTriggerQty" status="run" time="4.187651" timestamp="2020-02-19T16:23:46.953864"/>
+    <testcase name="SendNOSSTLWithMissingStopPx" status="run" time="2.109469" timestamp="2020-02-19T16:23:51.438355"/>
+    <testcase name="SendNOSSTPWithIncorrectStopPx" status="run" time="2.109417" timestamp="2020-02-19T16:23:53.782194"/>
+    <testcase name="SendNOSSTPWithMissingStopPx" status="run" time="2.156185" timestamp="2020-02-19T16:23:56.141781"/>
+    <testcase name="SendNOSSTPWithPrice" status="run" time="2.140688" timestamp="2020-02-19T16:23:58.547931"/>
+    <testcase name="SendNOSWithExecBroker" status="run" time="2.125061" timestamp="2020-02-19T16:24:00.954239"/>
+    <testcase name="SendNOSWithExtraTagListID" status="run" time="2.125074" timestamp="2020-02-19T16:24:03.298055"/>
+    <testcase name="SendNOSWithIncorrectAccount" status="run" time="3.10949" timestamp="2020-02-19T16:24:05.751248"/>
+    <testcase name="SendNOSWithIncorrectExecInst" status="run" time="2.093814" timestamp="2020-02-19T16:24:09.048215"/>
+    <testcase name="SendNOSWithIncorrectSymbol" status="run" time="2.125054" timestamp="2020-02-19T16:24:11.407667"/>
+    <testcase name="SendNOSWithIncorrectTimeInForce" status="run" time="2.109453" timestamp="2020-02-19T16:24:13.735845"/>
+    <testcase name="SendNOSWithMissingAccountTag" status="run" time="2.152904" timestamp="2020-02-19T16:24:16.098691"/>
+    <testcase name="SendNOSWithMissingClOrdIDTag" status="run" time="2.1250809999999998" timestamp="2020-02-19T16:24:18.454709"/>
+    <testcase name="SendNOSWithMissingSide" status="run" time="3.17199" timestamp="2020-02-19T16:24:20.829785"/>
+    <testcase name="SendNOSWithMissingSymbol" status="run" time="2.10962" timestamp="2020-02-19T16:24:24.314256"/>
+    <testcase name="SendNOSWithZeroOrderQty" status="run" time="2.156395" timestamp="2020-02-19T16:24:26.658059"/>
+    <testcase name="SendNOSWithZeroSide" status="run" time="2.109432" timestamp="2020-02-19T16:24:29.048767"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OnBehalfOf" skipped="0" tests="3" testsuite_failed="False" time="10.5942" timestamp="2020-02-19T16:24:31.767586">
+   <testcase name="ActivateParked" status="run" time="3.171664" timestamp="2020-02-19T16:24:32.158545"/>
+   <testcase name="ClOrdIDDuplicate" status="run" time="3.108281" timestamp="2020-02-19T16:24:35.643877"/>
+   <testcase name="PlaceModifyCancel" status="run" time="3.109131" timestamp="2020-02-19T16:24:39.002491"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderCancelRequest" skipped="0" tests="4" testsuite_failed="False" time="13.03159" timestamp="2020-02-19T16:24:42.502253">
+   <testcase name="ModifyOrderToGTDandReplaceWithNewExpireDateValue" status="run" time="3.125106" timestamp="2020-02-19T16:24:45.002307"/>
+   <testcase name="SendOrderCancelRequestWithMissingAccount" status="run" time="2.105276" timestamp="2020-02-19T16:24:48.381607"/>
+   <testcase name="SendOrderCancelRequestWithMissingClOrdID" status="run" time="2.15631" timestamp="2020-02-19T16:24:50.830603"/>
+   <testcase name="SendOrderCancelRequestWithMissingOrderID" status="run" time="2.125086" timestamp="2020-02-19T16:24:53.205652"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderMassStatusRequest" skipped="0" tests="5" testsuite_failed="False" time="113.38853" timestamp="2020-02-19T16:24:55.632895">
+   <testcase name="SendOMSRForAccount1" status="run" time="17.327996" timestamp="2020-02-19T16:25:06.300385"/>
+   <testcase name="SendOMSRForAccount1With1SideAndEPSymbol" status="run" time="25.313192" timestamp="2020-02-19T16:25:23.862774"/>
+   <testcase name="SendOMSRForAccount1WithBuySide" status="run" time="20.266169" timestamp="2020-02-19T16:25:49.394739"/>
+   <testcase name="SendOMSRForAccount1WithEPSymbol" status="run" time="19.297403" timestamp="2020-02-19T16:26:09.957784"/>
+   <testcase name="SendOMSRWithNoAccountSpecified" status="run" time="19.2975" timestamp="2020-02-19T16:26:29.505183"/>
+  </testsuite>
+  <testsuite failures="0" name="ParkedOrders" skipped="0" tests="2" testsuite_failed="False" time="6.406201" timestamp="2020-02-19T16:26:49.131103">
+   <testcase name="DropCopySessionOfNativeClient" status="run" time="1.078951" timestamp="2020-02-19T16:26:52.646573"/>
+   <testcase name="SendParkedOrderAndUnpark" status="run" time="0.061288" timestamp="2020-02-19T16:26:53.960310"/>
+  </testsuite>
+  <testsuite failures="0" name="PreTradeOrderAllocation" skipped="0" tests="6" testsuite_failed="False" time="5.2658249999999995" timestamp="2020-02-19T16:26:55.646669">
+   <testcase name="AllocationTags" status="run" time="0.156267" timestamp="2020-02-19T16:26:57.037340"/>
+   <testcase name="MultiLegOrderAllocationTagValues" status="run" time="0.077323" timestamp="2020-02-19T16:26:57.428878"/>
+   <testcase name="NoAllocsNewOrderMultileg" status="run" time="0.031248" timestamp="2020-02-19T16:26:57.709234"/>
+   <testcase name="NoAllocsNewOrderSingle" status="run" time="0.031665" timestamp="2020-02-19T16:26:57.943628"/>
+   <testcase name="NoAllocsOrderCancelReplaceRequest" status="run" time="0.046837" timestamp="2020-02-19T16:26:58.256165"/>
+   <testcase name="SingleLegOrderAllocationTagValues" status="run" time="0.138216" timestamp="2020-02-19T16:26:58.539860"/>
+  </testsuite>
+  <testsuite failures="0" name="RDFContracts" skipped="0" tests="2" testsuite_failed="False" time="7.422176" timestamp="2020-02-19T16:27:01.068734">
+   <testcase name="SendMarketOrderWithRDFContract" status="run" time="0.078874" timestamp="2020-02-19T16:27:05.662769"/>
+   <testcase name="SendTradesRequestForPositions" status="run" time="1.15631" timestamp="2020-02-19T16:27:06.006402"/>
+  </testsuite>
+  <testsuite failures="0" name="RegulatoryAlgorithmID" skipped="0" tests="6" testsuite_failed="False" time="23.59363" timestamp="2020-02-19T16:27:08.585600">
+   <testsuite failures="0" name="ClientSideRegulatoryAlgorithmID" skipped="0" tests="2" testsuite_failed="False" time="1.32831" timestamp="2020-02-19T16:27:12.131653">
+    <testcase name="AlgoIDProvided" status="run" time="0.31253" timestamp="2020-02-19T16:27:12.553531"/>
+    <testcase name="NoAlgoIDProvided" status="run" time="0.109378" timestamp="2020-02-19T16:27:13.100414"/>
+   </testsuite>
+   <testsuite failures="0" name="CombinedAlgorithmID" skipped="0" tests="2" testsuite_failed="False" time="9.07784" timestamp="2020-02-19T16:27:13.554174">
+    <testcase name="ClientAlgoAndGWAlgoOCO" status="run" time="0.140599" timestamp="2020-02-19T16:27:13.975482"/>
+    <testcase name="ClientAlgoAndGWAlgoTrailing" status="run" time="8.015984" timestamp="2020-02-19T16:27:14.381717"/>
+   </testsuite>
+   <testsuite failures="0" name="GWsideAlgorithmID" skipped="0" tests="2" testsuite_failed="False" time="8.015743" timestamp="2020-02-19T16:27:22.741553">
+    <testcase name="GWAlgo2LegOCOOrders" status="run" time="0.12441" timestamp="2020-02-19T16:27:23.070117"/>
+    <testcase name="GWAlgoTrailingOrders" status="run" time="7.001036" timestamp="2020-02-19T16:27:23.397666"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Reject" skipped="0" tests="12" testsuite_failed="False" time="46.767333" timestamp="2020-02-19T16:27:32.319842">
+   <testcase name="SendLogonNewOrderSingleDuplicateClOrderID" status="run" time="2.203183" timestamp="2020-02-19T16:27:35.913737"/>
+   <testcase name="SendLogonNewOrderSingleFillRejectModify" status="run" time="2.140697" timestamp="2020-02-19T16:27:38.351329"/>
+   <testcase name="SendLogonNewOrderSingleModifyDuplicateClOrderID" status="run" time="3.14079" timestamp="2020-02-19T16:27:40.726386"/>
+   <testcase name="SendLogonNewOrderSingleModifyInvalidOrigClOrderID" status="run" time="2.125086" timestamp="2020-02-19T16:27:44.210903"/>
+   <testcase name="SendLogonNewOrderSingleRejectModifies" status="run" time="4.156411" timestamp="2020-02-19T16:27:46.554755"/>
+   <testcase name="SendLogonNewOrderSingleWithIncorrectSide" status="run" time="3.187612" timestamp="2020-02-19T16:27:51.008058"/>
+   <testcase name="SendLogonNewOrderSingleWithIncorrectTransactTime" status="run" time="2.155983" timestamp="2020-02-19T16:27:54.492874"/>
+   <testcase name="SendLogonNewOrderSingleWithNotExistTag" status="run" time="2.156346" timestamp="2020-02-19T16:27:56.867591"/>
+   <testcase name="SendLogonNewOrderSingleWithoutSideValue" status="run" time="2.140716" timestamp="2020-02-19T16:27:59.273928"/>
+   <testcase name="SendLogonWithIncorrectHardBtInt" status="run" time="15.313067" timestamp="2020-02-19T16:28:01.664635"/>
+   <testcase name="SendLogonWithIncorrectRawData" status="run" time="0.171696" timestamp="2020-02-19T16:28:17.321652"/>
+   <testcase name="SendLogonWithNotExistTag" status="run" time="1.124798" timestamp="2020-02-19T16:28:17.743597"/>
+  </testsuite>
+  <testsuite failures="1" name="RequestForPosition" skipped="0" tests="15" testsuite_failed="True" time="182.897114" timestamp="2020-02-19T16:28:19.212179">
+   <testcase name="SendRFPforAcc1withPosReqType0andSubscriptionReqType0" status="run" time="12.250451" timestamp="2020-02-19T16:28:24.806090"/>
+   <testcase name="SendRFPforAcc1withPosReqType0andSubscriptionReqType1" status="run" time="12.219179" timestamp="2020-02-19T16:28:37.322180"/>
+   <testcase name="SendRFPforAcc1withPosReqType0andSubscriptionReqType2" status="run" time="12.23483" timestamp="2020-02-19T16:28:49.838231"/>
+   <testcase name="SendRFPforAcc1withPosReqType1andSubscriptionReqType0" status="run" time="12.281724" timestamp="2020-02-19T16:29:02.338676"/>
+   <testcase name="SendRFPforAcc1withPosReqType1andSubscriptionReqType1" status="run" time="12.187604" timestamp="2020-02-19T16:29:14.855103"/>
+   <testcase name="SendRFPforAcc1withPosReqType1andSubscriptionReqType2" status="run" time="12.219078" timestamp="2020-02-19T16:29:27.277214"/>
+   <testcase name="SendRFPforAcc2withPosReqType0andSubscriptionReqType0" status="run" time="12.250401" timestamp="2020-02-19T16:29:39.699440"/>
+   <testcase name="SendRFPforAcc2withPosReqType0andSubscriptionReqType1" status="run" time="12.281733" timestamp="2020-02-19T16:29:52.262328"/>
+   <testcase name="SendRFPforAcc2withPosReqType0andSubscriptionReqType2" status="run" time="12.183387" timestamp="2020-02-19T16:30:04.845472"/>
+   <testcase name="SendRFPforAcc2withPosReqType1andSubscriptionReqType0" status="run" time="12.219202" timestamp="2020-02-19T16:30:17.310098"/>
+   <testcase name="SendRFPforAcc2withPosReqType1andSubscriptionReqType1" status="run" time="12.187371" timestamp="2020-02-19T16:30:29.764247"/>
+   <testcase name="SendRFPforAcc2withPosReqType1andSubscriptionReqType2" status="run" time="12.219218" timestamp="2020-02-19T16:30:42.201612"/>
+   <testcase name="SendRFPforAccWithALotOfPositions" status="run" time="8.203221" timestamp="2020-02-19T16:30:54.655386"/>
+   <testcase name="SendRFPforStrategies" status="run" time="16.296115" timestamp="2020-02-19T16:31:03.094351">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File &quot;C:\Python36\Lib\queue.py&quot;, line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\RequestForPosition\SendRFPforStrategies.tc.py&quot;, line 83, in &lt;module&gt;
+    SendUANrequestAndCheckUAPresponce(clStrgy, requestUAN, [simpleOrder, strategy, strategyLeg1, strategyLeg2])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\RequestForPositionScenarios.py&quot;, line 90, in SendUANrequestAndCheckUAPresponce
+    responseMsgList = client.ReceiveMessages(len(responseContext))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 82, in ReceiveMessages
+    return self.__fixCl.WaitNAppMessages(numMsg, timeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 136, in __waitMessages
+    raise Exception(&quot;TIMEOUT/Message number: {0}/{1} - {2}&quot;.format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 10/1 - Application message don't come
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File &quot;C:\Python36\Lib\queue.py&quot;, line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\RequestForPosition\SendRFPforStrategies.tc.py&quot;, line 83, in &lt;module&gt;
+    SendUANrequestAndCheckUAPresponce(clStrgy, requestUAN, [simpleOrder, strategy, strategyLeg1, strategyLeg2])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\RequestForPositionScenarios.py&quot;, line 90, in SendUANrequestAndCheckUAPresponce
+    responseMsgList = client.ReceiveMessages(len(responseContext))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 82, in ReceiveMessages
+    return self.__fixCl.WaitNAppMessages(numMsg, timeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 136, in __waitMessages
+    raise Exception(&quot;TIMEOUT/Message number: {0}/{1} - {2}&quot;.format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 10/1 - Application message don't come
+</failure>
+   </testcase>
+   <testcase name="SendRFPforTwoAccounts" status="run" time="2.1246140000000002" timestamp="2020-02-19T16:31:19.719041"/>
+  </testsuite>
+  <testsuite failures="0" name="RFQ" skipped="0" tests="5" testsuite_failed="False" time="18.422557" timestamp="2020-02-19T16:31:22.234291">
+   <testcase name="RFQ01" status="run" time="1.7642039999999999" timestamp="2020-02-19T16:31:26.657812"/>
+   <testcase name="RFQ02" status="run" time="5.937709" timestamp="2020-02-19T16:31:28.687654"/>
+   <testcase name="RFQ03" status="run" time="1.296955" timestamp="2020-02-19T16:31:34.875358"/>
+   <testcase name="RFQ04" status="run" time="0.046842" timestamp="2020-02-19T16:31:36.500457"/>
+   <testcase name="RFQ05" status="run" time="0.031249" timestamp="2020-02-19T16:31:36.828553"/>
+  </testsuite>
+  <testsuite failures="0" name="SaveRestoreTags" skipped="0" tests="6" testsuite_failed="False" time="16.938023" timestamp="2020-02-19T16:31:40.797520">
+   <testcase name="CancelReplaceWithIncorrectSymbol" status="run" time="2.140744" timestamp="2020-02-19T16:31:43.485025"/>
+   <testcase name="CancelReplaceWithoutModificationFields" status="run" time="2.125088" timestamp="2020-02-19T16:31:45.891401"/>
+   <testcase name="CancelReplaceWithoutRequiredField" status="run" time="2.125258" timestamp="2020-02-19T16:31:48.313339"/>
+   <testcase name="CompoundOrder" status="run" time="2.140728" timestamp="2020-02-19T16:31:50.688413"/>
+   <testcase name="NewOrderSingleWithIncorrectSymbol" status="run" time="2.140752" timestamp="2020-02-19T16:31:53.063497"/>
+   <testcase name="NewOrderSingleWithoutRequiredField" status="run" time="2.109245" timestamp="2020-02-19T16:31:55.438795"/>
+  </testsuite>
+  <testsuite failures="2" name="SecurityDefinitionRequest" skipped="0" tests="2" testsuite_failed="True" time="145.005017" timestamp="2020-02-19T16:31:57.876178">
+   <testsuite failures="2" name="Functional" skipped="0" tests="2" testsuite_failed="True" time="144.457923" timestamp="2020-02-19T16:31:58.188698">
+    <testcase name="DefineFuturesStrategy" status="run" time="70.908805" timestamp="2020-02-19T16:31:59.610600">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File &quot;C:\Python36\Lib\queue.py&quot;, line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\SecurityDefinitionRequest\Functional\DefineFuturesStrategy.tc.py&quot;, line 60, in &lt;module&gt;
+    Tag.TotalNumSecurities : '1'
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 337, in WaitSetOfMessages
+    msg = fixSink.WaitNAppMessages(1, timeout - (time.clock() - beginPoint))[0]
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 136, in __waitMessages
+    raise Exception(&quot;TIMEOUT/Message number: {0}/{1} - {2}&quot;.format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 9.996309399999973/1 - Application message don't come
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File &quot;C:\Python36\Lib\queue.py&quot;, line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\SecurityDefinitionRequest\Functional\DefineFuturesStrategy.tc.py&quot;, line 60, in &lt;module&gt;
+    Tag.TotalNumSecurities : '1'
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 337, in WaitSetOfMessages
+    msg = fixSink.WaitNAppMessages(1, timeout - (time.clock() - beginPoint))[0]
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 136, in __waitMessages
+    raise Exception(&quot;TIMEOUT/Message number: {0}/{1} - {2}&quot;.format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 9.996309399999973/1 - Application message don't come
+</failure>
+    </testcase>
+    <testcase name="DefineOptionsStrategy" status="run" time="70.064707" timestamp="2020-02-19T16:33:10.753754">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File &quot;C:\Python36\Lib\queue.py&quot;, line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\SecurityDefinitionRequest\Functional\DefineOptionsStrategy.tc.py&quot;, line 60, in &lt;module&gt;
+    Tag.TotalNumSecurities : '1'
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 337, in WaitSetOfMessages
+    msg = fixSink.WaitNAppMessages(1, timeout - (time.clock() - beginPoint))[0]
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 136, in __waitMessages
+    raise Exception(&quot;TIMEOUT/Message number: {0}/{1} - {2}&quot;.format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 9.996584200000143/1 - Application message don't come
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File &quot;C:\Python36\Lib\queue.py&quot;, line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\SecurityDefinitionRequest\Functional\DefineOptionsStrategy.tc.py&quot;, line 60, in &lt;module&gt;
+    Tag.TotalNumSecurities : '1'
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 337, in WaitSetOfMessages
+    msg = fixSink.WaitNAppMessages(1, timeout - (time.clock() - beginPoint))[0]
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py&quot;, line 136, in __waitMessages
+    raise Exception(&quot;TIMEOUT/Message number: {0}/{1} - {2}&quot;.format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 9.996584200000143/1 - Application message don't come
+</failure>
+    </testcase>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="SequenceReset" skipped="0" tests="1" testsuite_failed="False" time="20.516133" timestamp="2020-02-19T16:34:23.006135">
+   <testcase name="SendSRwithMsgSeqNum1" status="run" time="15.06296" timestamp="2020-02-19T16:34:26.693617"/>
+  </testsuite>
+  <testsuite failures="0" name="UserRequest" skipped="0" tests="2" testsuite_failed="False" time="24.21946" timestamp="2020-02-19T16:34:43.631652">
+   <testsuite failures="0" name="Functional" skipped="0" tests="2" testsuite_failed="False" time="23.735104" timestamp="2020-02-19T16:34:43.850383">
+    <testcase name="BadNewPassword" status="run" time="2.140717" timestamp="2020-02-19T16:34:44.194147"/>
+    <testcase name="ChangePwdLogonLogout" status="run" time="20.547511" timestamp="2020-02-19T16:34:46.647336"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

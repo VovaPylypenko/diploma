@@ -1,0 +1,363 @@
+ 1:45:24.45  Test starded without threads
+23:45:25.049 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders/InFlightFills/PythonModules' added.
+23:45:25.049 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills/PythonModules' added.
+23:45:25.049 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:45:25.049 Python Module Path 'ScriptKit' added.
+23:45:25.533 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders' full execution.
+23:45:25.580 Suite '.'. [3 test cases, 2 sub-suites]
+23:45:33.020 Case 'TLMT_Parked_TrailPriceUpdate' execution.
+23:45:33.049 Case 'TLMT_TrailPriceUpdate' execution.
+23:45:33.080 Case 'TSTP_Parked_Activation' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\TLMT_Parked_TrailPriceUpdate_tc.py", line 27, in <module>
+    instructions = Common.trail, trailOffset = trailOffset, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:35.033 Case 'TLMT_Parked_TrailPriceUpdate' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\TLMT_TrailPriceUpdate_tc.py", line 24, in <module>
+    instructions = Common.trail, trailOffset = trailOffset, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:35.080 Case 'TLMT_TrailPriceUpdate' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\TSTP_Parked_Activation_tc.py", line 19, in <module>
+    duration = OrderDuration.Day, trailOffset = 15, trailPeg = OrderTrailPeg.LastTrade)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:35.112 Case 'TSTP_Parked_Activation' failed.
+23:45:35.174 Suite 'InFlightFills'. [22 test cases, 0 sub-suites]
+23:45:46.206 Case 'CancelNonZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\CancelNonZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.221 Case 'CancelNonZero_Accepted' failed.
+23:45:46.270 Case 'CancelNonZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\CancelNonZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.284 Case 'CancelNonZero_Rejected' failed.
+23:45:46.299 Case 'CancelZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\CancelZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.299 Case 'CancelZero_Accepted' failed.
+23:45:46.331 Case 'CancelZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\CancelZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.362 Case 'CancelZero_Rejected' failed.
+23:45:46.378 Case 'ModifyToNonZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyToNonZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.393 Case 'ModifyToNonZero_Accepted' failed.
+23:45:46.409 Case 'ModifyToNonZero_AcceptFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyToNonZero_AcceptFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.409 Case 'ModifyToNonZero_AcceptFirst' failed.
+23:45:46.456 Case 'ModifyToNonZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyToNonZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.456 Case 'ModifyToNonZero_Rejected' failed.
+23:45:46.471 Case 'ModifyToZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyToZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.487 Case 'ModifyToZero_Accepted' failed.
+23:45:46.518 Case 'ModifyToZero_AcceptFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyToZero_AcceptFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.534 Case 'ModifyToZero_AcceptFirst' failed.
+23:45:46.549 Case 'ModifyToZero_PlaceCanceled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyToZero_PlaceCanceled_tc.py", line 20, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.565 Case 'ModifyToZero_PlaceCanceled' failed.
+23:45:46.612 Case 'ModifyToZero_PlaceCancelFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyToZero_PlaceCancelFirst_tc.py", line 19, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.674 Case 'ModifyToZero_PlaceCancelFirst' failed.
+23:45:46.721 Case 'ModifyToZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyToZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.737 Case 'ModifyToZero_Rejected' failed.
+23:45:46.800 Case 'ModifyToZero_RejectFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyToZero_RejectFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.816 Case 'ModifyToZero_RejectFirst' failed.
+23:45:46.879 Case 'ModifyToZero_ReplaceCanceled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyToZero_ReplaceCanceled_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.893 Case 'ModifyToZero_ReplaceCanceled' failed.
+23:45:46.940 Case 'ModifyZeroToNonZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyZeroToNonZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:46.956 Case 'ModifyZeroToNonZero_Accepted' failed.
+23:45:47.003 Case 'ModifyZeroToNonZero_AcceptFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyZeroToNonZero_AcceptFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:47.034 Case 'ModifyZeroToNonZero_AcceptFirst' failed.
+23:45:47.081 Case 'ModifyZeroToNonZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyZeroToNonZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:47.112 Case 'ModifyZeroToNonZero_Rejected' failed.
+23:45:47.159 Case 'ModifyZeroToNonZero_RejectFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyZeroToNonZero_RejectFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:47.174 Case 'ModifyZeroToNonZero_RejectFirst' failed.
+23:45:47.221 Case 'ModifyZeroToZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyZeroToZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[1])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:47.237 Case 'ModifyZeroToZero_Accepted' failed.
+23:45:47.315 Case 'ModifyZeroToZero_AcceptFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyZeroToZero_AcceptFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[2])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:47.346 Case 'ModifyZeroToZero_AcceptFirst' failed.
+23:45:47.471 Case 'ModifyZeroToZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyZeroToZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[3])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:47.487 Case 'ModifyZeroToZero_Rejected' failed.
+23:45:47.643 Case 'ModifyZeroToZero_RejectFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\InFlightFills\ModifyZeroToZero_RejectFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialTLOrders(trader, exchangeFactory, acctInfo, contractList[0], contractList[4])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\SyntheticProcessing\suites\TrailingOrders\InFlightFills\PythonModules\MarketActionUtils.py", line 32, in PlaceInitialTLOrders
+    trailOffset = 10, trailPeg = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:47.675 Case 'ModifyZeroToZero_RejectFirst' failed.
+23:45:48.003 Suite 'viaOmnibus'. [3 test cases, 0 sub-suites]
+23:45:54.284 Case 'mass_TLMT_modification' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\viaOmnibus\mass_TLMT_modification_tc.py", line 43, in <module>
+    trailPeg     = OrderTrailPeg.BestBid)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:54.316 Case 'mass_TLMT_modification' failed.
+23:45:54.347 Case 'mass_TSTP_activation' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\viaOmnibus\mass_TSTP_activation_tc.py", line 44, in <module>
+    trailPeg     = OrderTrailPeg.LastTrade)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:54.378 Case 'mass_TSTP_activation' failed.
+23:45:54.425 Case 'TSTL_Actions' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders\viaOmnibus\TSTL_Actions_tc.py", line 35, in <module>
+    trailPeg     = OrderTrailPeg.LastTrade)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:45:56.456 Case 'TSTL_Actions' failed.
+23:46:01.222 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders' execution finished. It took 0:00:35.657352.
+23:46:01.222 Test cases results: 28 total, 0 succeeded, 28 failed, 0 skipped.

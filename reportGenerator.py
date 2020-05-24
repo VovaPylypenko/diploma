@@ -1,4 +1,0 @@
-
-class ReportGenerator:
-
-    pass

@@ -1,0 +1,24 @@
+20:23:50.05  Test starded without threads
+18:23:50.614 Python Module Path 'ScriptKit' added.
+18:23:50.614 Python Module Path 'Scripts/Gateway/PythonModules' added.
+18:23:50.614 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+18:23:51.098 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins' full execution.
+18:23:51.114 Suite '.'. [8 test cases, 0 sub-suites]
+18:24:06.692 Case 'Basic' execution.
+18:24:06.848 Case 'Basic' succeeded.
+18:24:06.880 Case 'SpecificMarginDisabledOnAccountLevel' execution.
+18:24:07.053 Case 'SpecificMarginDisabledOnAccountLevel' succeeded.
+18:24:07.098 Case 'SpecificMarginDisabledOnFcmLevel' execution.
+18:24:07.348 Case 'SpecificMarginDisabledOnFcmLevel' succeeded.
+18:24:07.380 Case 'SpecificMarginValueEqualToDefault' execution.
+18:24:07.552 Case 'SpecificMarginValueEqualToDefault' succeeded.
+18:24:07.600 Case 'SpecificMarginValueGreatDefault' execution.
+18:24:07.786 Case 'SpecificMarginValueGreatDefault' succeeded.
+18:24:07.833 Case 'SpecificMarginValueIsNotSet' execution.
+18:24:07.927 Case 'SpecificMarginValueIsNotSet' succeeded.
+18:24:07.974 Case 'SpecificMarginValueLessDefault' execution.
+18:24:08.145 Case 'SpecificMarginValueLessDefault' succeeded.
+18:24:08.192 Case 'TradeMarginLimitCheck' execution.
+18:24:08.380 Case 'TradeMarginLimitCheck' succeeded.
+18:24:14.146 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins' execution finished. It took 0:00:23.032094.
+18:24:14.146 Test cases results: 8 total, 8 succeeded, 0 failed, 0 skipped.

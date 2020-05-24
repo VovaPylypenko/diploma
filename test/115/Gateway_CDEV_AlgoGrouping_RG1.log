@@ -1,0 +1,73 @@
+22:09:27.46  Test starded without threads
+20:09:28.062 Python Module Path 'ScriptKit' added.
+20:09:28.078 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+20:09:28.078 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:09:28.078 Python Module Path 'ScriptKit/TroubleMaker' added.
+20:09:28.562 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping' filtered execution.
+20:09:28.593 Suite '.'. [0 test cases, 1 sub-suites]
+20:09:47.828 Suite 'GWAutoTest1'. [0 test cases, 5 sub-suites]
+20:09:47.891 Suite 'GWAutoTest1\Complex'. [4 test cases, 0 sub-suites]
+20:09:47.938 Case '01_DEA' execution.
+20:09:48.110 Case '01_DEA' succeeded.
+20:09:48.172 Case '04_OmniDiffFCMs' execution.
+20:09:48.235 Case '04_OmniDiffFCMs' succeeded.
+20:09:48.297 Case '05_OmniSameFCMs' execution.
+20:09:48.375 Case '05_OmniSameFCMs' succeeded.
+20:09:48.453 Case '06_NativeSpread' execution.
+20:09:48.485 Case '06_NativeSpread' succeeded.
+20:09:48.594 Suite 'GWAutoTest1\ExecutionAndInvestmentDecisions'. [5 test cases, 0 sub-suites]
+20:09:48.657 Case '01_CQGandFCMAlgo' execution.
+20:09:48.766 Case '01_CQGandFCMAlgo' succeeded.
+20:09:48.844 Case '02_TraderShortCode' execution.
+20:09:48.985 Case '02_TraderShortCode' succeeded.
+20:09:49.032 Case '03_Omnibus' execution.
+20:09:49.157 Case '03_Omnibus' succeeded.
+20:09:49.219 Case '04_CareOrder' execution.
+20:09:49.266 Case '04_CareOrder' succeeded.
+20:09:49.407 Case '05_DecisionOverrides' execution.
+20:09:49.469 Case '05_DecisionOverrides' succeeded.
+20:09:49.610 Suite 'GWAutoTest1\FCMRoute'. [6 test cases, 0 sub-suites]
+20:09:49.704 Case '01_ShortCodeNotConfigured_AlgoFlagSet' execution.
+20:09:49.735 Case '01_ShortCodeNotConfigured_AlgoFlagSet' succeeded.
+20:09:49.813 Case '02_ShortCodeNotConfigured_AlgoFlagNotSet' execution.
+20:09:49.860 Case '02_ShortCodeNotConfigured_AlgoFlagNotSet' succeeded.
+20:09:49.922 Case '03_ShortCodeConfigured_AlgoFlagSet' execution.
+20:09:49.969 Case '03_ShortCodeConfigured_AlgoFlagSet' succeeded.
+20:09:50.047 Case '04_DiffInstrOrRouteGroup_AlgoFlagSet' execution.
+20:09:50.078 Case '04_DiffInstrOrRouteGroup_AlgoFlagSet' succeeded.
+20:09:50.157 Case '05_DiffInstrOrRouteGroup_AlgoFlagNotSet' execution.
+20:09:50.204 Case '05_DiffInstrOrRouteGroup_AlgoFlagNotSet' succeeded.
+20:09:50.266 Case '06_Omnibus' execution.
+20:09:50.501 Case '06_Omnibus' succeeded.
+20:09:50.641 Suite 'GWAutoTest1\InstrumentRouteGroup'. [6 test cases, 0 sub-suites]
+20:09:50.720 Case '01_ShortCodeNotConfigured_AlgoFlagSet' execution.
+20:09:50.766 Case '01_ShortCodeNotConfigured_AlgoFlagSet' succeeded.
+20:09:50.844 Case '02_ShortCodeNotConfigured_AlgoFlagNotSet' execution.
+20:09:50.938 Case '02_ShortCodeNotConfigured_AlgoFlagNotSet' succeeded.
+20:09:51.016 Case '03_ShortCodeConfigured_AlgoFlagSet' execution.
+20:09:51.094 Case '03_ShortCodeConfigured_AlgoFlagSet' succeeded.
+20:09:51.157 Case '04_DiffInstrOrRouteGroup_AlgoFlagSet' execution.
+20:09:51.501 Case '04_DiffInstrOrRouteGroup_AlgoFlagSet' succeeded.
+20:09:51.563 Case '05_DiffInstrOrRouteGroup_AlgoFlagNotSet' execution.
+20:09:51.672 Case '05_DiffInstrOrRouteGroup_AlgoFlagNotSet' succeeded.
+20:09:51.719 Case '06_Omnibus' execution.
+20:09:51.922 Case '06_Omnibus' succeeded.
+20:09:52.047 Suite 'GWAutoTest1\OrderRequests'. [8 test cases, 0 sub-suites]
+20:09:52.110 Case '01_Modify' execution.
+20:09:52.266 Case '01_Modify' succeeded.
+20:09:52.329 Case '02_Activate' execution.
+20:09:52.485 Case '02_Activate' succeeded.
+20:09:52.547 Case '03_Cancel' execution.
+20:09:52.672 Case '03_Cancel' succeeded.
+20:09:52.735 Case '04_Park' execution.
+20:09:52.844 Case '04_Park' succeeded.
+20:09:52.907 Case '07_1_Compound_OCO' execution.
+20:09:53.016 Case '07_1_Compound_OCO' succeeded.
+20:09:53.110 Case '07_2_Compound_OPO' execution.
+20:09:53.266 Case '07_2_Compound_OPO' succeeded.
+20:09:53.344 Case '08_Activate_Parked_Short_Code' execution.
+20:09:55.407 Case '08_Activate_Parked_Short_Code' succeeded.
+20:09:55.485 Case '09_Activate_Parked_Algorithm' execution.
+20:10:03.766 Case '09_Activate_Parked_Algorithm' succeeded.
+20:10:13.423 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping' execution finished. It took 0:00:44.829559.
+20:10:13.423 Test cases results: 29 total, 29 succeeded, 0 failed, 0 skipped.

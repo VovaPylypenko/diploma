@@ -1,0 +1,223 @@
+ 7:56:07.66  Test starded without threads
+05:56:08.229 Python Module Path 'ScriptKit' added.
+05:56:08.229 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+05:56:08.229 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits/GroupAccounts/PythonModules' added.
+05:56:08.229 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits/PythonModules' added.
+05:56:08.229 Python Module Path 'Scripts/Gateway/PythonModules' added.
+05:56:09.026 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits' filtered execution.
+05:56:09.073 Suite '.'. [0 test cases, 6 sub-suites]
+05:56:17.073 Suite 'AllowableMarkets'. [3 test cases, 0 sub-suites]
+05:56:17.167 Case 'AllowableMarkets' execution.
+05:56:17.214 Case 'AllowableMarketsCheckType' execution.
+05:56:17.266 Case 'TraderAllowableMarkets' execution.
+05:56:18.636 Case 'AllowableMarkets' succeeded.
+05:56:20.870 Case 'AllowableMarketsCheckType' succeeded.
+05:56:21.136 Case 'TraderAllowableMarkets' succeeded.
+05:56:21.339 Suite 'GroupAccounts'. [3 test cases, 0 sub-suites]
+05:56:22.402 Case 'BorrowFromMasterGroupAccountLimits' execution.
+05:56:22.449 Case 'CoMarginGroupAccountLimits' execution.
+05:56:22.511 Case 'JoinPurchasingPowerGroupAccountLimits' execution.
+05:56:23.296 Case 'BorrowFromMasterGroupAccountLimits' succeeded.
+05:56:23.355 Case 'CoMarginGroupAccountLimits' succeeded.
+05:56:23.386 Case 'JoinPurchasingPowerGroupAccountLimits' succeeded.
+05:56:23.589 Suite 'PositionLimits'. [3 test cases, 1 sub-suites]
+05:56:23.683 Case 'CommodityPositionLimits' execution.
+05:56:23.730 Case 'ContractPositionLimits' execution.
+05:56:23.792 Case 'InstrumentPositionLimits' execution.
+05:56:25.198 Case 'CommodityPositionLimits' succeeded.
+05:56:25.339 Case 'ContractPositionLimits' succeeded.
+05:56:25.402 Case 'InstrumentPositionLimits' succeeded.
+05:56:25.511 Suite 'PositionLimits\SubSuite'. [11 test cases, 0 sub-suites]
+05:56:26.620 Case 'CommodityAndInstrumentLimit' execution.
+05:56:26.667 Case 'CommodityLimitAccountLevel' execution.
+05:56:26.699 Case 'CommodityLimitOverridesInstrumentLimit' execution.
+05:56:26.777 Case 'CommodityLimitUnlimited' execution.
+05:56:26.839 Case 'ContractLimitAccountLevel' execution.
+05:56:26.886 Case 'CommodityLimitOverridesInstrumentLimit' succeeded.
+05:56:26.921 Case 'CommodityLimitAccountLevel' succeeded.
+05:56:26.949 Case 'CommodityAndInstrumentLimit' succeeded.
+05:56:26.964 Case 'ContractLimitCommodityLevelEB' execution.
+05:56:26.996 Case 'CommodityLimitUnlimited' succeeded.
+05:56:27.018 Case 'ContractLimitCommodityLevelRegular' execution.
+05:56:27.058 Case 'ContractLimitAccountLevel' succeeded.
+05:56:27.074 Case 'ContractLimitInstrumentLevelEB' execution.
+05:56:27.136 Case 'ContractLimitInstrumentLevelOverridesCommodityLevel' execution.
+05:56:27.199 Case 'ContractLimitInstrumentLevelRegular' execution.
+05:56:27.292 Case 'ContractLimitCommodityLevelRegular' succeeded.
+05:56:27.292 Case 'ContractLimitInstrumentOverridesCommodityLevelEB' execution.
+05:56:27.339 Case 'ContractLimitInstrumentLevelEB' succeeded.
+05:56:27.355 Case 'ContractLimitCommodityLevelEB' succeeded.
+05:56:27.417 Case 'ContractLimitInstrumentLevelOverridesCommodityLevel' succeeded.
+05:56:27.417 Case 'ContractLimitInstrumentLevelRegular' succeeded.
+05:56:27.433 Case 'ContractLimitInstrumentOverridesCommodityLevelEB' succeeded.
+05:56:28.683 Suite 'TradePriceLimitEnhancement'. [6 test cases, 7 sub-suites]
+05:56:53.231 Case 'CASTtoRSnotifications' execution.
+05:56:53.278 Case 'MarketStateChangePercent' execution.
+05:56:53.325 Case 'MarketStateChangeTicks' execution.
+05:56:53.465 Case 'NoPrice' execution.
+05:56:53.637 Case 'NoTPLSettings' execution.
+05:56:53.778 Case 'PriceChange' execution.
+05:56:59.372 Case 'NoPrice' succeeded.
+05:56:59.543 Case 'NoTPLSettings' succeeded.
+05:57:04.950 Case 'MarketStateChangeTicks' succeeded.
+05:57:04.981 Case 'MarketStateChangePercent' succeeded.
+05:57:34.982 Case 'PriceChange' succeeded.
+05:58:15.234 Case 'CASTtoRSnotifications' succeeded.
+05:58:15.313 Suite 'TradePriceLimitEnhancement\AllCommoditiesLevel_ts.py'. [6 test cases, 0 sub-suites]
+05:58:15.422 Case 'PercentOfBidAsk' execution.
+05:58:15.485 Case 'PercentOfLastTrade' execution.
+05:58:15.656 Case 'PercentOfOpen' execution.
+05:58:15.672 Case 'PercentOfPrevClose' execution.
+05:58:15.750 Case 'PercentOfBidAsk_AllLimitsInherited' execution.
+05:58:15.813 Case 'PercentOfBidAsk_DBPrices' execution.
+05:58:18.000 Case 'PercentOfBidAsk_DBPrices' succeeded.
+05:58:28.172 Case 'PercentOfLastTrade' succeeded.
+05:58:29.423 Case 'PercentOfBidAsk' succeeded.
+05:58:30.579 Case 'PercentOfBidAsk_AllLimitsInherited' succeeded.
+05:58:38.938 Case 'PercentOfOpen' succeeded.
+05:58:39.032 Case 'PercentOfPrevClose' succeeded.
+05:58:39.251 Suite 'TradePriceLimitEnhancement\AllUSCommoditiesLevel_ts.py'. [8 test cases, 0 sub-suites]
+05:58:39.345 Case 'PercentOfBidAsk' execution.
+05:58:39.392 Case 'PercentOfLastTrade' execution.
+05:58:39.438 Case 'PercentOfOpen' execution.
+05:58:39.501 Case 'PercentOfPrevClose' execution.
+05:58:39.563 Case 'TicksOfBidAsk' execution.
+05:58:39.610 Case 'TicksOfLastTrade' execution.
+05:58:39.673 Case 'TicksOfOpen' execution.
+05:58:39.720 Case 'TicksOfPrevClose' execution.
+05:58:53.845 Case 'PercentOfLastTrade' succeeded.
+05:58:54.079 Case 'TicksOfLastTrade' succeeded.
+05:58:54.955 Case 'PercentOfBidAsk' succeeded.
+05:58:55.142 Case 'TicksOfBidAsk' succeeded.
+05:59:05.705 Case 'PercentOfOpen' succeeded.
+05:59:05.814 Case 'PercentOfPrevClose' succeeded.
+05:59:05.924 Case 'TicksOfPrevClose' succeeded.
+05:59:06.033 Case 'TicksOfOpen' succeeded.
+05:59:06.361 Suite 'TradePriceLimitEnhancement\CommodityLevel_ts.py'. [8 test cases, 0 sub-suites]
+05:59:06.471 Case 'PercentOfBidAsk' execution.
+05:59:06.533 Case 'PercentOfLastTrade' execution.
+05:59:06.596 Case 'PercentOfOpen' execution.
+05:59:06.658 Case 'PercentOfPrevClose' execution.
+05:59:06.721 Case 'TicksOfBidAsk' execution.
+05:59:06.768 Case 'TicksOfLastTrade' execution.
+05:59:06.830 Case 'TicksOfOpen' execution.
+05:59:06.892 Case 'TicksOfPrevClose' execution.
+05:59:21.330 Case 'PercentOfLastTrade' succeeded.
+05:59:21.909 Case 'TicksOfLastTrade' succeeded.
+05:59:22.784 Case 'PercentOfBidAsk' succeeded.
+05:59:22.893 Case 'TicksOfBidAsk' succeeded.
+05:59:32.831 Case 'TicksOfOpen' succeeded.
+05:59:32.925 Case 'PercentOfOpen' succeeded.
+05:59:32.988 Case 'TicksOfPrevClose' succeeded.
+05:59:33.018 Case 'PercentOfPrevClose' succeeded.
+05:59:33.284 Suite 'TradePriceLimitEnhancement\ExchangeLevel_ts.py'. [8 test cases, 0 sub-suites]
+05:59:33.393 Case 'PercentOfBidAsk' execution.
+05:59:33.456 Case 'PercentOfLastTrade' execution.
+05:59:33.503 Case 'PercentOfOpen' execution.
+05:59:33.565 Case 'PercentOfPrevClose' execution.
+05:59:33.612 Case 'TicksOfBidAsk' execution.
+05:59:33.675 Case 'TicksOfLastTrade' execution.
+05:59:33.753 Case 'TicksOfOpen' execution.
+05:59:33.800 Case 'TicksOfPrevClose' execution.
+05:59:47.988 Case 'PercentOfLastTrade' succeeded.
+05:59:48.316 Case 'TicksOfLastTrade' succeeded.
+05:59:49.456 Case 'PercentOfBidAsk' succeeded.
+05:59:49.769 Case 'TicksOfBidAsk' succeeded.
+06:00:01.957 Case 'PercentOfOpen' succeeded.
+06:00:02.113 Case 'PercentOfPrevClose' succeeded.
+06:00:02.144 Case 'TicksOfOpen' succeeded.
+06:00:02.160 Case 'TicksOfPrevClose' succeeded.
+06:00:02.504 Suite 'TradePriceLimitEnhancement\InstrumentLevel_ts.py'. [8 test cases, 0 sub-suites]
+06:00:02.629 Case 'PercentOfBidAsk' execution.
+06:00:02.691 Case 'PercentOfLastTrade' execution.
+06:00:02.738 Case 'PercentOfOpen' execution.
+06:00:02.801 Case 'PercentOfPrevClose' execution.
+06:00:02.879 Case 'TicksOfBidAsk' execution.
+06:00:02.941 Case 'TicksOfLastTrade' execution.
+06:00:03.004 Case 'TicksOfOpen' execution.
+06:00:03.097 Case 'TicksOfPrevClose' execution.
+06:00:17.895 Case 'PercentOfLastTrade' succeeded.
+06:00:18.426 Case 'TicksOfLastTrade' succeeded.
+06:00:19.239 Case 'PercentOfBidAsk' succeeded.
+06:00:19.489 Case 'TicksOfBidAsk' succeeded.
+06:00:29.645 Case 'PercentOfOpen' succeeded.
+06:00:29.864 Case 'PercentOfPrevClose' succeeded.
+06:00:30.317 Case 'TicksOfOpen' succeeded.
+06:00:30.458 Case 'TicksOfPrevClose' succeeded.
+06:00:30.692 Suite 'TradePriceLimitEnhancement\MixedLimits_ts.py'. [7 test cases, 0 sub-suites]
+06:00:30.817 Case 'PercentOfBidAsk' execution.
+06:00:30.911 Case 'PercentOfLastTrade' execution.
+06:00:30.973 Case 'PercentOfOpen' execution.
+06:00:31.036 Case 'PercentOfPrevClose' execution.
+06:00:31.098 Case 'TicksOfBidAsk' execution.
+06:00:31.145 Case 'TicksOfOpen' execution.
+06:00:31.208 Case 'TicksOfPrevClose' execution.
+06:00:37.458 Case 'TicksOfBidAsk' succeeded.
+06:00:38.052 Case 'PercentOfBidAsk' succeeded.
+06:00:44.146 Case 'TicksOfOpen' succeeded.
+06:00:44.177 Case 'TicksOfPrevClose' succeeded.
+06:00:45.864 Case 'PercentOfLastTrade' succeeded.
+06:00:46.162 Case 'PercentOfOpen' succeeded.
+06:00:46.224 Case 'PercentOfPrevClose' succeeded.
+06:00:46.505 Suite 'TradePriceLimitEnhancement\PriceLevel_ts.py'. [8 test cases, 0 sub-suites]
+06:00:46.614 Case 'PercentOfBidAsk' execution.
+06:00:46.677 Case 'PercentOfLastTrade' execution.
+06:00:46.739 Case 'PercentOfOpen' execution.
+06:00:46.786 Case 'PercentOfPrevClose' execution.
+06:00:46.849 Case 'TicksOfBidAsk' execution.
+06:00:46.943 Case 'TicksOfLastTrade' execution.
+06:00:47.021 Case 'TicksOfOpen' execution.
+06:00:47.052 Case 'TicksOfPrevClose' execution.
+06:00:59.365 Case 'PercentOfLastTrade' succeeded.
+06:00:59.724 Case 'TicksOfLastTrade' succeeded.
+06:01:00.865 Case 'PercentOfBidAsk' succeeded.
+06:01:01.177 Case 'TicksOfBidAsk' succeeded.
+06:01:12.912 Case 'TicksOfOpen' succeeded.
+06:01:13.006 Case 'PercentOfOpen' succeeded.
+06:01:13.147 Case 'TicksOfPrevClose' succeeded.
+06:01:13.210 Case 'PercentOfPrevClose' succeeded.
+06:01:13.631 Suite 'TradePriceLimits'. [1 test cases, 1 sub-suites]
+06:01:13.772 Case 'TradePriceLimits' execution.
+06:01:15.787 Case 'TradePriceLimits' succeeded.
+06:01:15.912 Suite 'TradePriceLimits\SubSuite'. [1 test cases, 2 sub-suites]
+06:01:16.975 Case 'CASTtoRSnotifications' execution.
+06:02:06.117 Case 'CASTtoRSnotifications' succeeded.
+06:02:06.289 Suite 'TradePriceLimits\SubSuite\TraderModifiesOrder'. [1 test cases, 0 sub-suites]
+06:02:06.398 Case 'OrderPriceWithinLimit' execution.
+06:02:06.539 Case 'OrderPriceWithinLimit' succeeded.
+06:02:06.789 Suite 'TradePriceLimits\SubSuite\TraderPlacesOrder'. [14 test cases, 0 sub-suites]
+06:02:06.898 Case 'AccountLevelLimit' execution.
+06:02:06.945 Case 'NoAskPriceCommodityLevelLimit' execution.
+06:02:07.008 Case 'NoBidAskPrice' execution.
+06:02:07.070 Case 'NoBidAskTradePrice' execution.
+06:02:07.180 Case 'AccountLevelLimit' succeeded.
+06:02:07.180 Case 'NoBidPriceExchangeLevelLimit' execution.
+06:02:07.242 Case 'NoAskPriceCommodityLevelLimit' succeeded.
+06:02:07.273 Case 'NoPrice' execution.
+06:02:07.338 Case 'NoBidAskTradePrice' succeeded.
+06:02:07.338 Case 'NoBidAskPrice' succeeded.
+06:02:07.353 Case 'NoTraderSpecifiedPrice_MKT' execution.
+06:02:07.430 Case 'NoPrice' succeeded.
+06:02:07.430 Case 'NoBidPriceExchangeLevelLimit' succeeded.
+06:02:07.445 Case 'TPLnotEnforcedOnAccount' execution.
+06:02:07.508 Case 'TraderSpecifiedLMTpriceInSTL' execution.
+06:02:07.545 Case 'NoTraderSpecifiedPrice_MKT' succeeded.
+06:02:07.586 Case 'TraderSpecifiedPrice_LMT' execution.
+06:02:07.633 Case 'TPLnotEnforcedOnAccount' succeeded.
+06:02:07.664 Case 'TraderSpecifiedPrice_STP' execution.
+06:02:07.758 Case 'TradingOnCoMarginGroupAccount' execution.
+06:02:07.836 Case 'TraderSpecifiedLMTpriceInSTL' succeeded.
+06:02:07.851 Case 'TradingOnJoinPPGroupAccount' execution.
+06:02:07.961 Case 'TradingViaOmnibus' execution.
+06:02:08.040 Case 'TraderSpecifiedPrice_LMT' succeeded.
+06:02:08.117 Case 'TradingOnCoMarginGroupAccount' succeeded.
+06:02:08.148 Case 'TraderSpecifiedPrice_STP' succeeded.
+06:02:08.148 Case 'TradingOnJoinPPGroupAccount' succeeded.
+06:02:08.195 Case 'TradingViaOmnibus' succeeded.
+06:02:09.383 Suite 'TradeSizeLimits'. [2 test cases, 0 sub-suites]
+06:02:09.539 Case 'TraderTradeSizeLimits' execution.
+06:02:09.570 Case 'TradeSizeLimits' execution.
+06:02:10.898 Case 'TraderTradeSizeLimits' succeeded.
+06:02:11.399 Case 'TradeSizeLimits' succeeded.
+06:03:37.214 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits' execution finished. It took 0:07:28.140797.
+06:03:37.230 Test cases results: 98 total, 98 succeeded, 0 failed, 0 skipped.

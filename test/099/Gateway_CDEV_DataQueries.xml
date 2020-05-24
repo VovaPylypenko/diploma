@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="194" testsuite_failed="False" time="629.647945" timestamp="2020-02-06T05:25:34.775410">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/GenericQueries/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/Orders/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/Orders/QMOrdersQuery/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/Orders/OrderQueryMatrix/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/GenericQueries/QMAllowedInstruments"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="20"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="AccountDataQueries" skipped="0" tests="194" testsuite_failed="False" time="629.647945" timestamp="2020-02-06T05:25:34.775410">
+  <testsuite failures="0" name="GenericQueries" skipped="0" tests="160" testsuite_failed="False" time="153.973873" timestamp="2020-02-06T05:25:50.682461">
+   <testcase name="GetAccountMappings" status="run" time="0.281211" timestamp="2020-02-06T05:25:50.900998"/>
+   <testcase name="GetAlgostrategies" status="run" time="0.12497" timestamp="2020-02-06T05:25:50.994749"/>
+   <testcase name="GetContractRootSettings" status="run" time="4.078189" timestamp="2020-02-06T05:25:51.057300"/>
+   <testcase name="GetCurrentDayFills" status="run" time="7.094006" timestamp="2020-02-06T05:25:51.135353"/>
+   <testcase name="GetCurrentDayFillsWithExtras" status="run" time="7.984685" timestamp="2020-02-06T05:25:51.182209"/>
+   <testcase name="GetCurrentNetPosition" status="run" time="0.997266" timestamp="2020-02-06T05:25:51.278761"/>
+   <testcase name="GetPreviousBalances" status="run" time="0.265616" timestamp="2020-02-06T05:25:51.338512"/>
+   <testsuite failures="0" name="FullLocalQM" skipped="0" tests="133" testsuite_failed="False" time="124.301243" timestamp="2020-02-06T05:25:59.213751">
+    <testsuite failures="0" name="CentralQM_Acctid" skipped="0" tests="23" testsuite_failed="False" time="28.032252" timestamp="2020-02-06T05:26:37.777585">
+     <testcase name="Accountriskparameters" status="run" time="1.531314" timestamp="2020-02-06T05:26:37.949477"/>
+     <testcase name="Allowedinstrumentsrevision" status="run" time="1.8426930000000001" timestamp="2020-02-06T05:26:38.028765"/>
+     <testcase name="Authorizedtraders" status="run" time="2.48629" timestamp="2020-02-06T05:26:38.121486"/>
+     <testcase name="Disallowedaccounttradintrfelem" status="run" time="2.312605" timestamp="2020-02-06T05:26:38.183852"/>
+     <testcase name="Disallowedaccounttradintrfelemrevision" status="run" time="2.171005" timestamp="2020-02-06T05:26:38.248107"/>
+     <testcase name="Getaccountsummaries" status="run" time="3.219285" timestamp="2020-02-06T05:26:38.324499"/>
+     <testcase name="Getaccountsummarytotal" status="run" time="2.7197139999999997" timestamp="2020-02-06T05:26:38.449487"/>
+     <testcase name="Getcollaterals" status="run" time="2.703431" timestamp="2020-02-06T05:26:38.527763"/>
+     <testcase name="Getconfirmations" status="run" time="9.266894" timestamp="2020-02-06T05:26:38.637015"/>
+     <testcase name="Getcurrentdayfills" status="run" time="11.609799" timestamp="2020-02-06T05:26:38.730748"/>
+     <testcase name="Getcurrentdayfillswithextras" status="run" time="11.203597" timestamp="2020-02-06T05:26:38.855751"/>
+     <testcase name="Getcurrentdayorderfills" status="run" time="16.081527" timestamp="2020-02-06T05:26:38.965139"/>
+     <testcase name="Getcurrentdayfillsandstrategyorderfills" status="run" time="26.563483" timestamp="2020-02-06T05:26:39.121382"/>
+     <testcase name="Getcurrentnetpositionex" status="run" time="7.359631" timestamp="2020-02-06T05:26:39.230768"/>
+     <testcase name="Getmissingtrades" status="run" time="14.734777" timestamp="2020-02-06T05:26:39.309028"/>
+     <testcase name="Getoffsetspl" status="run" time="2.718857" timestamp="2020-02-06T05:26:39.418311"/>
+     <testcase name="Getoffsettrades" status="run" time="2.234498" timestamp="2020-02-06T05:26:39.527661"/>
+     <testcase name="Getopenpositions" status="run" time="2.562614" timestamp="2020-02-06T05:26:39.652654"/>
+     <testcase name="Getpreviousclosepositions" status="run" time="2.2502269999999998" timestamp="2020-02-06T05:26:39.762045"/>
+     <testcase name="Getstatementtimestamp" status="run" time="1.9844140000000001" timestamp="2020-02-06T05:26:39.902698"/>
+     <testcase name="Getunknowntrades" status="run" time="2.062585" timestamp="2020-02-06T05:26:40.152683"/>
+     <testcase name="Getuserattributes" status="run" time="7.59403" timestamp="2020-02-06T05:26:40.480808"/>
+     <testcase name="Getorderattributes" status="run" time="23.343903" timestamp="2020-02-06T05:26:40.997137"/>
+    </testsuite>
+    <testsuite failures="0" name="CentralQM_Fcmid" skipped="0" tests="5" testsuite_failed="False" time="0.984409" timestamp="2020-02-06T05:27:05.872342">
+     <testcase name="Disallowedtradintrfelem" status="run" time="0.156285" timestamp="2020-02-06T05:27:06.075470"/>
+     <testcase name="Getcurrentcurrencyrates" status="run" time="0.32989" timestamp="2020-02-06T05:27:06.153780"/>
+     <testcase name="Orderenablements" status="run" time="0.330418" timestamp="2020-02-06T05:27:06.231755"/>
+     <testcase name="Orderenablementstimestamp" status="run" time="0.312496" timestamp="2020-02-06T05:27:06.294228"/>
+     <testcase name="Careautoactivationparams" status="run" time="0.249768" timestamp="2020-02-06T05:27:06.388211"/>
+    </testsuite>
+    <testsuite failures="0" name="CentralQM_Other" skipped="0" tests="23" testsuite_failed="False" time="4.156394" timestamp="2020-02-06T05:27:06.934883">
+     <testcase name="Genericordertypes" status="run" time="0.249997" timestamp="2020-02-06T05:27:07.122392"/>
+     <testcase name="Genericordertypestimestamp" status="run" time="0.187397" timestamp="2020-02-06T05:27:07.184992"/>
+     <testcase name="Getalloweddata" status="run" time="1.312266" timestamp="2020-02-06T05:27:07.294540"/>
+     <testcase name="Getalloweddatatimestamp" status="run" time="0.140501" timestamp="2020-02-06T05:27:07.388130"/>
+     <testcase name="Getallowedmarketdata" status="run" time="0.515103" timestamp="2020-02-06T05:27:07.451470"/>
+     <testcase name="Getallowedmarketdatarevision" status="run" time="0.31249" timestamp="2020-02-06T05:27:07.544270"/>
+     <testcase name="Getclientmessages" status="run" time="0.418483" timestamp="2020-02-06T05:27:07.625919"/>
+     <testcase name="Getcombinedcommodities" status="run" time="0.515644" timestamp="2020-02-06T05:27:07.778644"/>
+     <testcase name="Getcontractrootsettingsrevision" status="run" time="0.250033" timestamp="2020-02-06T05:27:07.856760"/>
+     <testcase name="Getexecinstructions" status="run" time="0.374884" timestamp="2020-02-06T05:27:07.981913"/>
+     <testcase name="Getexecinstructionstimestamp" status="run" time="0.312649" timestamp="2020-02-06T05:27:08.059902"/>
+     <testcase name="Getfeatureenablements" status="run" time="0.340179" timestamp="2020-02-06T05:27:08.125981"/>
+     <testcase name="Getfungiblecommodities" status="run" time="0.328205" timestamp="2020-02-06T05:27:08.856870"/>
+     <testcase name="Getfungibleinstruments" status="run" time="0.390512" timestamp="2020-02-06T05:27:08.372551"/>
+     <testcase name="Getprivatelabelclientapplicationtypes" status="run" time="0.234396" timestamp="2020-02-06T05:27:08.466160"/>
+     <testcase name="Multilevelsyntheticstrategydefinition" status="run" time="2.01551" timestamp="2020-02-06T05:27:08.529228"/>
+     <testcase name="Strategies" status="run" time="0.890652" timestamp="2020-02-06T05:27:09.888101"/>
+     <testcase name="Strategytimestamp" status="run" time="0.218813" timestamp="2020-02-06T05:27:08.700556"/>
+     <testcase name="Syntheticstrategydefinition" status="run" time="0.406375" timestamp="2020-02-06T05:27:08.778700"/>
+     <testcase name="Traderfeatureenablements" status="run" time="0.546887" timestamp="2020-02-06T05:27:10.231866"/>
+     <testcase name="Udstrategies" status="run" time="0.579329" timestamp="2020-02-06T05:27:09.028683"/>
+     <testcase name="Getexternalaccountextragroups" status="run" time="0.404426" timestamp="2020-02-06T05:27:09.203586"/>
+     <testcase name="Getexternalaccountextraattributes" status="run" time="0.171858" timestamp="2020-02-06T05:27:10.450627"/>
+    </testsuite>
+    <testsuite failures="0" name="LocalQM_Acctid" skipped="0" tests="26" testsuite_failed="False" time="15.984961" timestamp="2020-02-06T05:27:11.153758">
+     <testcase name="Accountriskparameters" status="run" time="3.1407" timestamp="2020-02-06T05:27:11.372550"/>
+     <testcase name="Allowedinstruments" status="run" time="9.719047" timestamp="2020-02-06T05:27:11.435095"/>
+     <testcase name="Allowedinstrumentsrevision" status="run" time="3.73559" timestamp="2020-02-06T05:27:11.544852"/>
+     <testcase name="Authorizedtraders" status="run" time="3.077952" timestamp="2020-02-06T05:27:11.638436"/>
+     <testcase name="Disallowedaccounttradintrfelem" status="run" time="3.406333" timestamp="2020-02-06T05:27:11.731940"/>
+     <testcase name="Disallowedaccounttradintrfelemrevision" status="run" time="2.50001" timestamp="2020-02-06T05:27:11.810171"/>
+     <testcase name="Getaccountsummaries" status="run" time="3.26573" timestamp="2020-02-06T05:27:11.903792"/>
+     <testcase name="Getaccountsummarytotal" status="run" time="3.218871" timestamp="2020-02-06T05:27:11.966288"/>
+     <testcase name="Getcollaterals" status="run" time="2.9532410000000002" timestamp="2020-02-06T05:27:12.075667"/>
+     <testcase name="Getconfirmations" status="run" time="8.500281" timestamp="2020-02-06T05:27:12.185063"/>
+     <testcase name="Getcurrentdayfills_Local" status="run" time="10.484725" timestamp="2020-02-06T05:27:12.325703"/>
+     <testcase name="Getcurrentdayfillswithextras_Local" status="run" time="10.875367" timestamp="2020-02-06T05:27:12.466313"/>
+     <testcase name="Getcurrentdayorderfills" status="run" time="7.343986" timestamp="2020-02-06T05:27:12.575695"/>
+     <testcase name="Getcurrentdayfillsandstrategyorderfills" status="run" time="14.310465" timestamp="2020-02-06T05:27:12.704182"/>
+     <testcase name="Getcurrentnetposition" status="run" time="8.047196" timestamp="2020-02-06T05:27:12.919441"/>
+     <testcase name="Getcurrentnetpositionex" status="run" time="7.98462" timestamp="2020-02-06T05:27:13.060112"/>
+     <testcase name="Getmissingtrades" status="run" time="9.37285" timestamp="2020-02-06T05:27:13.171944"/>
+     <testcase name="Getoffsetspl" status="run" time="3.673884" timestamp="2020-02-06T05:27:13.310089"/>
+     <testcase name="Getoffsettrades" status="run" time="3.6094850000000003" timestamp="2020-02-06T05:27:13.513223"/>
+     <testcase name="Getopenpositions" status="run" time="3.484394" timestamp="2020-02-06T05:27:13.685203"/>
+     <testcase name="Getpreviousbalances" status="run" time="3.203244" timestamp="2020-02-06T05:27:14.513250"/>
+     <testcase name="Getpreviousclosepositions" status="run" time="2.750062" timestamp="2020-02-06T05:27:14.794558"/>
+     <testcase name="Getstatementtimestamp" status="run" time="2.031256" timestamp="2020-02-06T05:27:15.044577"/>
+     <testcase name="Getunknowntrades" status="run" time="2.156768" timestamp="2020-02-06T05:27:15.857051"/>
+     <testcase name="Getuserattributes" status="run" time="2.781281" timestamp="2020-02-06T05:27:15.482114"/>
+     <testcase name="Getorderattributes" status="run" time="9.062858" timestamp="2020-02-06T05:27:15.732037"/>
+    </testsuite>
+    <testsuite failures="0" name="LocalQM_Fcmid" skipped="0" tests="5" testsuite_failed="False" time="1.125044" timestamp="2020-02-06T05:27:27.216823">
+     <testcase name="Disallowedtradintrfelem" status="run" time="0.187509" timestamp="2020-02-06T05:27:27.419964"/>
+     <testcase name="Getcurrentcurrencyrates" status="run" time="0.640639" timestamp="2020-02-06T05:27:27.498110"/>
+     <testcase name="Orderenablements" status="run" time="0.390578" timestamp="2020-02-06T05:27:27.576261"/>
+     <testcase name="Orderenablementstimestamp" status="run" time="0.234401" timestamp="2020-02-06T05:27:27.669991"/>
+     <testcase name="Careautoactivationparams" status="run" time="0.328306" timestamp="2020-02-06T05:27:27.732490"/>
+    </testsuite>
+    <testsuite failures="0" name="LocalQM_Other" skipped="0" tests="25" testsuite_failed="False" time="4.8439250000000005" timestamp="2020-02-06T05:27:28.419994">
+     <testcase name="Genericordertypes" status="run" time="0.265762" timestamp="2020-02-06T05:27:28.638781"/>
+     <testcase name="Genericordertypestimestamp" status="run" time="0.250015" timestamp="2020-02-06T05:27:28.716871"/>
+     <testcase name="Getaccountmappings" status="run" time="0.281252" timestamp="2020-02-06T05:27:28.795009"/>
+     <testcase name="Getalloweddata" status="run" time="1.03112" timestamp="2020-02-06T05:27:28.904543"/>
+     <testcase name="Getalloweddatatimestamp" status="run" time="0.23064" timestamp="2020-02-06T05:27:28.986242"/>
+     <testcase name="Getallowedmarketdata" status="run" time="0.531322" timestamp="2020-02-06T05:27:29.076261"/>
+     <testcase name="Getallowedmarketdatarevision" status="run" time="0.32817" timestamp="2020-02-06T05:27:29.154397"/>
+     <testcase name="Getclientmessages" status="run" time="0.452497" timestamp="2020-02-06T05:27:29.248781"/>
+     <testcase name="Getcombinedcommodities" status="run" time="0.453146" timestamp="2020-02-06T05:27:29.326272"/>
+     <testcase name="Getcontractrootsettings" status="run" time="0.296872" timestamp="2020-02-06T05:27:29.404406"/>
+     <testcase name="Getcontractrootsettingsrevision" status="run" time="0.281182" timestamp="2020-02-06T05:27:29.513857"/>
+     <testcase name="Getexecinstructions" status="run" time="0.35936" timestamp="2020-02-06T05:27:29.623175"/>
+     <testcase name="Getexecinstructionstimestamp" status="run" time="0.250006" timestamp="2020-02-06T05:27:29.795039"/>
+     <testcase name="Getfeatureenablements" status="run" time="0.312451" timestamp="2020-02-06T05:27:29.888842"/>
+     <testcase name="Getfungiblecommodities" status="run" time="0.390666" timestamp="2020-02-06T05:27:29.982535"/>
+     <testcase name="Getfungibleinstruments" status="run" time="0.575578" timestamp="2020-02-06T05:27:32.328961"/>
+     <testcase name="Getprivatelabelclientapplicationtypes" status="run" time="0.35887" timestamp="2020-02-06T05:27:30.108066"/>
+     <testcase name="Multilevelsyntheticstrategydefinition" status="run" time="0.875008" timestamp="2020-02-06T05:27:30.295082"/>
+     <testcase name="Strategies" status="run" time="0.6719" timestamp="2020-02-06T05:27:30.623201"/>
+     <testcase name="Strategytimestamp" status="run" time="0.406242" timestamp="2020-02-06T05:27:30.795107"/>
+     <testcase name="Syntheticstrategydefinition" status="run" time="0.578144" timestamp="2020-02-06T05:27:30.888830"/>
+     <testcase name="Traderfeatureenablements" status="run" time="0.593422" timestamp="2020-02-06T05:27:31.076702"/>
+     <testcase name="Udstrategies" status="run" time="0.781291" timestamp="2020-02-06T05:27:31.216972"/>
+     <testcase name="Getexternalaccountextragroups" status="run" time="0.39051" timestamp="2020-02-06T05:27:31.373353"/>
+     <testcase name="Getexternalaccountextraattributes" status="run" time="0.343329" timestamp="2020-02-06T05:27:32.748978"/>
+    </testsuite>
+    <testsuite failures="0" name="MultiQM_Acctid" skipped="0" tests="26" testsuite_failed="False" time="30.016664" timestamp="2020-02-06T05:27:33.326419">
+     <testcase name="Accountriskparameters" status="run" time="4.781246" timestamp="2020-02-06T05:27:33.623460"/>
+     <testcase name="Allowedinstruments" status="run" time="9.625351" timestamp="2020-02-06T05:27:33.717039"/>
+     <testcase name="Allowedinstrumentsrevision" status="run" time="4.952347" timestamp="2020-02-06T05:27:33.827375"/>
+     <testcase name="Authorizedtraders" status="run" time="5.328311" timestamp="2020-02-06T05:27:33.935807"/>
+     <testcase name="Disallowedaccounttradintrfelem" status="run" time="4.500155" timestamp="2020-02-06T05:27:34.045178"/>
+     <testcase name="Disallowedaccounttradintrfelemrevision" status="run" time="4.968967" timestamp="2020-02-06T05:27:34.154553"/>
+     <testcase name="Getaccountsummaries" status="run" time="5.828316" timestamp="2020-02-06T05:27:34.248328"/>
+     <testcase name="Getaccountsummarytotal" status="run" time="5.422063" timestamp="2020-02-06T05:27:34.373344"/>
+     <testcase name="Getcollaterals" status="run" time="5.281435" timestamp="2020-02-06T05:27:34.498319"/>
+     <testcase name="Getconfirmations" status="run" time="6.659414" timestamp="2020-02-06T05:27:34.607768"/>
+     <testcase name="Getcurrentdayfills_Multi" status="run" time="10.921825" timestamp="2020-02-06T05:27:34.733175"/>
+     <testcase name="Getcurrentdayfillswithextras_Multi" status="run" time="13.672364" timestamp="2020-02-06T05:27:34.842086"/>
+     <testcase name="Getcurrentdayorderfills" status="run" time="12.172319" timestamp="2020-02-06T05:27:34.967087"/>
+     <testcase name="Getcurrentdayfillsandstrategyorderfills" status="run" time="28.094726" timestamp="2020-02-06T05:27:35.123367"/>
+     <testcase name="Getcurrentnetposition" status="run" time="7.453342" timestamp="2020-02-06T05:27:35.295323"/>
+     <testcase name="Getcurrentnetpositionex" status="run" time="7.469014" timestamp="2020-02-06T05:27:35.451493"/>
+     <testcase name="Getmissingtrades" status="run" time="8.453375" timestamp="2020-02-06T05:27:35.623399"/>
+     <testcase name="Getoffsetspl" status="run" time="6.765866" timestamp="2020-02-06T05:27:35.951489"/>
+     <testcase name="Getoffsettrades" status="run" time="6.5471070000000005" timestamp="2020-02-06T05:27:36.107748"/>
+     <testcase name="Getopenpositions" status="run" time="6.624971" timestamp="2020-02-06T05:27:36.233070"/>
+     <testcase name="Getpreviousbalances" status="run" time="6.000226" timestamp="2020-02-06T05:27:38.592208"/>
+     <testcase name="Getpreviousclosepositions" status="run" time="5.390882" timestamp="2020-02-06T05:27:38.779722"/>
+     <testcase name="Getstatementtimestamp" status="run" time="5.375418" timestamp="2020-02-06T05:27:39.076613"/>
+     <testcase name="Getunknowntrades" status="run" time="5.000192" timestamp="2020-02-06T05:27:39.576625"/>
+     <testcase name="Getuserattributes" status="run" time="5.03132" timestamp="2020-02-06T05:27:39.764391"/>
+     <testcase name="Getorderattributes" status="run" time="16.031799" timestamp="2020-02-06T05:27:40.467307"/>
+    </testsuite>
+   </testsuite>
+   <testsuite failures="0" name="PrivateLabelDataRestriction" skipped="0" tests="5" testsuite_failed="False" time="2.03129" timestamp="2020-02-06T05:28:03.593129">
+    <testcase name="AllDataAllowed" status="run" time="1.094922" timestamp="2020-02-06T05:28:03.874368"/>
+    <testcase name="AXIWMD" status="run" time="1.1406399999999999" timestamp="2020-02-06T05:28:03.936891"/>
+    <testcase name="B2C2WMD" status="run" time="1.186879" timestamp="2020-02-06T05:28:04.015641"/>
+    <testcase name="NoDataAllowed" status="run" time="1.000116" timestamp="2020-02-06T05:28:04.186880"/>
+    <testcase name="Plotinus" status="run" time="1.015732" timestamp="2020-02-06T05:28:04.249405"/>
+   </testsuite>
+   <testsuite failures="0" name="QMAllowedInstruments" skipped="0" tests="15" testsuite_failed="False" time="18.797534" timestamp="2020-02-06T05:28:05.718167">
+    <testsuite failures="0" name="QMAllowedInstruments" skipped="0" tests="15" testsuite_failed="False" time="11.937914" timestamp="2020-02-06T05:28:12.359035">
+     <testcase name="allowedinstruments_50_acct_chunked_DTD47" status="run" time="10.625347" timestamp="2020-02-06T05:28:12.640297"/>
+     <testcase name="allowedinstruments_50_acct_chunked_DTD48" status="run" time="11.422282" timestamp="2020-02-06T05:28:12.718401"/>
+     <testcase name="allowedinstruments_50_acct_chunked_DTD49" status="run" time="9.718094" timestamp="2020-02-06T05:28:12.828769"/>
+     <testcase name="allowedinstruments_50_acct_chunked_DTD50" status="run" time="9.375286" timestamp="2020-02-06T05:28:12.937196"/>
+     <testcase name="allowedinstruments_50_acct_chunked_DTD51" status="run" time="9.390784" timestamp="2020-02-06T05:28:13.046701"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD47" status="run" time="6.312204" timestamp="2020-02-06T05:28:13.156428"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD48" status="run" time="6.749977" timestamp="2020-02-06T05:28:13.281175"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD49" status="run" time="9.172175" timestamp="2020-02-06T05:28:13.390324"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD50" status="run" time="9.109687" timestamp="2020-02-06T05:28:13.484052"/>
+     <testcase name="allowedinstruments_500_acct_unchunked_DTD51" status="run" time="8.640897" timestamp="2020-02-06T05:28:13.577833"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD47" status="run" time="0.187506" timestamp="2020-02-06T05:28:13.671576"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD48" status="run" time="0.078081" timestamp="2020-02-06T05:28:13.874734"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD49" status="run" time="0.078619" timestamp="2020-02-06T05:28:13.984085"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD50" status="run" time="0.077138" timestamp="2020-02-06T05:28:14.094536"/>
+     <testcase name="allowedinstruments_501_acct_unchunked_DTD51" status="run" time="0.078279" timestamp="2020-02-06T05:28:14.187218"/>
+    </testsuite>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Orders" skipped="0" tests="34" testsuite_failed="False" time="458.563856" timestamp="2020-02-06T05:28:24.875096">
+   <testcase name="GetByAccountID" status="run" time="52.783107" timestamp="2020-02-06T05:28:25.125140"/>
+   <testcase name="GetByCQGID" status="run" time="74.877618" timestamp="2020-02-06T05:28:25.234477"/>
+   <testcase name="GetByGUID" status="run" time="45.860995" timestamp="2020-02-06T05:28:25.375091"/>
+   <testcase name="GetByOStat" status="run" time="92.925145" timestamp="2020-02-06T05:28:25.468844"/>
+   <testcase name="GetByOType" status="run" time="127.285725" timestamp="2020-02-06T05:28:25.609483"/>
+   <testcase name="GetBySide" status="run" time="66.721066" timestamp="2020-02-06T05:28:25.703247"/>
+   <testcase name="GetByTraderID" status="run" time="77.533997" timestamp="2020-02-06T05:28:25.765741"/>
+   <testcase name="GetByUEName" status="run" time="62.315105" timestamp="2020-02-06T05:28:25.890786"/>
+   <testcase name="GetOrderTrans" status="run" time="45.501597" timestamp="2020-02-06T05:28:25.984506"/>
+   <testcase name="SeparateOSPerTS" status="run" time="14.07864" timestamp="2020-02-06T05:28:26.078242"/>
+   <testcase name="SortByDuration" status="run" time="47.861193" timestamp="2020-02-06T05:28:26.156371"/>
+   <testsuite failures="0" name="OrderQueryMatrix" skipped="0" tests="16" testsuite_failed="False" time="274.697036" timestamp="2020-02-06T05:30:32.988945">
+    <testcase name="OrdersQueryTest1" status="run" time="27.032205" timestamp="2020-02-06T05:31:00.911766"/>
+    <testcase name="OrdersQueryTest12" status="run" time="100.706534" timestamp="2020-02-06T05:31:01.021248"/>
+    <testcase name="OrdersQueryTest14" status="run" time="165.833897" timestamp="2020-02-06T05:31:01.130523"/>
+    <testcase name="OrdersQueryTest15" status="run" time="224.6797" timestamp="2020-02-06T05:31:01.239896"/>
+    <testcase name="OrdersQueryTest18" status="run" time="168.427716" timestamp="2020-02-06T05:31:01.364901"/>
+    <testcase name="OrdersQueryTest19" status="run" time="184.412561" timestamp="2020-02-06T05:31:01.443142"/>
+    <testcase name="OrdersQueryTest20" status="run" time="245.271621" timestamp="2020-02-06T05:31:01.523684"/>
+    <testcase name="OrdersQueryTest21" status="run" time="211.788616" timestamp="2020-02-06T05:31:01.646165"/>
+    <testcase name="OrdersQueryTest22" status="run" time="170.537157" timestamp="2020-02-06T05:31:01.771191"/>
+    <testcase name="OrdersQueryTest23" status="run" time="245.508092" timestamp="2020-02-06T05:31:01.912223"/>
+    <testcase name="OrdersQueryTest24" status="run" time="93.175068" timestamp="2020-02-06T05:31:02.021282"/>
+    <testcase name="OrdersQueryTest3" status="run" time="51.298644" timestamp="2020-02-06T05:31:02.130559"/>
+    <testcase name="OrdersQueryTest4" status="run" time="48.22228" timestamp="2020-02-06T05:31:02.239936"/>
+    <testcase name="OrdersQueryTest6" status="run" time="43.204648" timestamp="2020-02-06T05:31:02.380553"/>
+    <testcase name="OrdersQueryTest8" status="run" time="87.753072" timestamp="2020-02-06T05:31:02.489939"/>
+    <testcase name="OrdersQueryTest9" status="run" time="49.486087" timestamp="2020-02-06T05:31:02.599326"/>
+   </testsuite>
+   <testsuite failures="0" name="PTOA" skipped="0" tests="2" testsuite_failed="False" time="18.486057" timestamp="2020-02-06T05:35:07.795351">
+    <testcase name="AllocAccountElement" status="run" time="9.923289" timestamp="2020-02-06T05:35:11.154842"/>
+    <testsuite failures="0" name="Automodification" skipped="0" tests="1" testsuite_failed="False" time="3.484488" timestamp="2020-02-06T05:35:21.171878">
+     <testcase name="AutomodificationMessage" status="run" time="3.093813" timestamp="2020-02-06T05:35:21.406281"/>
+    </testsuite>
+   </testsuite>
+   <testsuite failures="0" name="QMOrdersQuery" skipped="0" tests="5" testsuite_failed="False" time="36.923152" timestamp="2020-02-06T05:35:26.359554">
+    <testcase name="CancelledOrders" status="run" time="29.375991" timestamp="2020-02-06T05:35:31.094122"/>
+    <testcase name="FilledOrders" status="run" time="31.860648" timestamp="2020-02-06T05:35:31.172221"/>
+    <testcase name="ParkedOrders" status="run" time="17.531875" timestamp="2020-02-06T05:35:31.281605"/>
+    <testcase name="RejectedOrders" status="run" time="27.016553" timestamp="2020-02-06T05:35:31.406605"/>
+    <testcase name="WorkingOrders" status="run" time="16.156833" timestamp="2020-02-06T05:35:31.531590"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,12 @@
+10:09:26.37  Test starded without threads
+08:09:26.876 Python Module Path 'ScriptKit' added.
+08:09:26.876 Python Module Path 'ScriptKit/TroubleMaker' added.
+08:09:26.876 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:09:26.876 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:09:27.269 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation' filtered execution.
+08:09:27.297 Suite '.'. [0 test cases, 1 sub-suites]
+08:09:32.657 Suite 'Synthetic'. [1 test cases, 0 sub-suites]
+08:09:41.829 Case '07_PositionLimits_SSP' execution.
+08:09:41.970 Case '07_PositionLimits_SSP' succeeded.
+08:09:42.782 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation' execution finished. It took 0:00:15.481935.
+08:09:42.782 Test cases results: 1 total, 1 succeeded, 0 failed, 0 skipped.

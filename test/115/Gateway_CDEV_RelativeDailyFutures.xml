@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="8" testsuite_failed="False" time="39.063917000000004" timestamp="2020-02-19T19:32:04.286903">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="21"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="RelativeDailyFutures" skipped="0" tests="8" testsuite_failed="False" time="39.063917000000004" timestamp="2020-02-19T19:32:04.286903">
+  <testcase name="AddFillDaily" status="run" time="2.595746" timestamp="2020-02-19T19:32:19.132023"/>
+  <testcase name="AddFillNativeSpread" status="run" time="2.655974" timestamp="2020-02-19T19:32:19.147171"/>
+  <testcase name="AddFillRelative" status="run" time="2.6243030000000003" timestamp="2020-02-19T19:32:19.178842"/>
+  <testcase name="CastAddFillDaily" status="run" time="3.922555" timestamp="2020-02-19T19:32:19.193674"/>
+  <testcase name="CastAddFillRelative" status="run" time="4.45327" timestamp="2020-02-19T19:32:19.224937"/>
+  <testcase name="CastAddOrderAndFillDaily" status="run" time="3.015749" timestamp="2020-02-19T19:32:19.271804"/>
+  <testcase name="CastAddOrderAndFillRelative" status="run" time="4.234523" timestamp="2020-02-19T19:32:19.303052"/>
+  <testcase name="LMEStylePriceAdjustment" status="run" time="22.235088" timestamp="2020-02-19T19:32:19.350078"/>
+ </testsuite>
+</testsuites>

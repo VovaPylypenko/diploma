@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="14" testsuite_failed="False" time="66.017746" timestamp="2020-02-19T19:54:32.674685">
+ <properties>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites/FlexibleAuthentication/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SMMT"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Suites" skipped="0" tests="14" testsuite_failed="False" time="66.017746" timestamp="2020-02-19T19:54:32.674685">
+  <testsuite failures="0" name="FlexibleAuthentication" skipped="0" tests="14" testsuite_failed="False" time="64.830173" timestamp="2020-02-19T19:54:33.815367">
+   <testcase name="LogonAbortOnTraderAgreement" status="run" time="1.90633" timestamp="2020-02-19T19:54:37.581095"/>
+   <testcase name="LogonAbort" status="run" time="1.609439" timestamp="2020-02-19T19:54:39.518629"/>
+   <testcase name="LogonIncorrectLogonInitParameter" status="run" time="0.874962" timestamp="2020-02-19T19:54:41.175007"/>
+   <testcase name="LogonSuccessfulLogonWithAgreement" status="run" time="1.343849" timestamp="2020-02-19T19:54:42.096849"/>
+   <testcase name="LogonSuccessfulLogon" status="run" time="0.906294" timestamp="2020-02-19T19:54:43.471886"/>
+   <testcase name="LogonUnsuccessfulOneStepLogon" status="run" time="0.859408" timestamp="2020-02-19T19:54:44.425050"/>
+   <testcase name="LogonUnsuccessful" status="run" time="0.874986" timestamp="2020-02-19T19:54:45.315753"/>
+   <testcase name="LogonWrongMessageSequence" status="run" time="1.6250550000000001" timestamp="2020-02-19T19:54:46.237612"/>
+   <testcase name="LogonWrongRequestID" status="run" time="0.578141" timestamp="2020-02-19T19:54:47.893913"/>
+   <testcase name="PasswordChangeAbortAndSuccess" status="run" time="15.500483" timestamp="2020-02-19T19:54:48.518935"/>
+   <testcase name="PasswordChangeAbort" status="run" time="2.750096" timestamp="2020-02-19T19:55:04.081926"/>
+   <testcase name="PasswordIncorrect" status="run" time="4.23196" timestamp="2020-02-19T19:55:06.881510"/>
+   <testcase name="PasswordRestrictionViolation" status="run" time="25.563289" timestamp="2020-02-19T19:55:11.160284"/>
+   <testcase name="PasswordUnexpectedMessage" status="run" time="1.765072" timestamp="2020-02-19T19:55:36.833576"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

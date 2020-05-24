@@ -1,0 +1,33 @@
+20:24:14.47  Test starded without threads
+18:24:15.006 Python Module Path 'Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover/PythonModules' added.
+18:24:15.006 Python Module Path 'Scripts/Gateway/PythonModules' added.
+18:24:15.006 Python Module Path 'ScriptKit/TroubleMaker' added.
+18:24:15.006 Python Module Path 'ScriptKit' added.
+18:24:15.006 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules' added.
+18:24:15.599 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover' filtered execution.
+18:24:15.614 Suite '.'. [0 test cases, 1 sub-suites]
+18:24:18.961 Suite 'SmokeTests'. [11 test cases, 0 sub-suites]
+18:24:19.005 Case 'CASTSmokeTest' execution.
+18:24:33.271 Case 'CASTSmokeTest' succeeded.
+18:24:33.303 Case 'FixMsgSeqNumSmokeTest' execution.
+18:24:52.553 Case 'FixMsgSeqNumSmokeTest' succeeded.
+18:24:52.600 Case 'LimitOrdersFixClientSmokeTest' execution.
+18:25:05.741 Case 'LimitOrdersFixClientSmokeTest' succeeded.
+18:25:05.788 Case 'LimitOrdersNativeClientSmokeTest' execution.
+18:25:16.914 Case 'LimitOrdersNativeClientSmokeTest' succeeded.
+18:25:16.960 Case 'MarketOrdersFixClientSmokeTest' execution.
+18:25:27.070 Case 'MarketOrdersFixClientSmokeTest' succeeded.
+18:25:27.117 Case 'MarketOrdersNativeClientSmokeTest' execution.
+18:25:36.214 Case 'MarketOrdersNativeClientSmokeTest' succeeded.
+18:25:36.258 Case 'Monitor2SmokeTest' execution.
+18:26:34.901 Case 'Monitor2SmokeTest' succeeded.
+18:26:34.963 Case 'NetPositionsSmokeTest' execution.
+18:26:44.057 Case 'NetPositionsSmokeTest' succeeded.
+18:26:44.104 Case 'QueryManagerSmokeTest' execution.
+18:27:01.339 Case 'QueryManagerSmokeTest' succeeded.
+18:27:01.402 Case 'RouteOrderIDSmokeTest' execution.
+18:27:52.014 Case 'RouteOrderIDSmokeTest' succeeded.
+18:27:52.045 Case 'SOMSmokeTest' execution.
+18:28:19.359 Case 'SOMSmokeTest' succeeded.
+18:28:19.484 Root suite 'Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover' execution finished. It took 0:04:03.869318.
+18:28:19.484 Test cases results: 11 total, 11 succeeded, 0 failed, 0 skipped.

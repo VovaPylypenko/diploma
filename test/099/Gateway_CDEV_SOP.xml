@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="9" testsuite_failed="False" time="85.143502" timestamp="2020-02-06T06:40:40.130764">
+ <properties>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SOP"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SOP"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="SOP" skipped="0" tests="9" testsuite_failed="False" time="85.143502" timestamp="2020-02-06T06:40:40.130764">
+  <testcase name="IgnoreActivationForZeroVolQuote" status="run" time="40.673249" timestamp="2020-02-06T06:40:50.677959"/>
+  <testcase name="MarketToLimitActivationPrice" status="run" time="4.312657" timestamp="2020-02-06T06:41:31.413725"/>
+  <testcase name="QTStoLimitActivation" status="run" time="0.18753" timestamp="2020-02-06T06:41:35.788864"/>
+  <testcase name="STLtoLimitActivation" status="run" time="0.218776" timestamp="2020-02-06T06:41:36.023252"/>
+  <testcase name="StopToLimitActivationPrice" status="run" time="0.359443" timestamp="2020-02-06T06:41:36.288899"/>
+  <testcase name="SyntheticIsNotAllowedOnAccount" status="run" time="0.03124" timestamp="2020-02-06T06:41:36.695152"/>
+  <testcase name="TSTLtoLimitActivation" status="run" time="0.127954" timestamp="2020-02-06T06:41:36.773281"/>
+  <testcase name="TSTP_Parked_Activation" status="run" time="0.250022" timestamp="2020-02-06T06:41:36.960822"/>
+  <testsuite failures="0" name="viaOmnibus" skipped="0" tests="1" testsuite_failed="False" time="27.688462" timestamp="2020-02-06T06:41:37.242046">
+   <testcase name="mass_TSTP_activation" status="run" time="27.54796" timestamp="2020-02-06T06:41:37.320180"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

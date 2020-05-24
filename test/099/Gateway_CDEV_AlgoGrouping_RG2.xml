@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="11" testsuite_failed="False" time="40.623827" timestamp="2020-02-06T08:08:21.735744">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="AlgoGrouping" skipped="0" tests="11" testsuite_failed="False" time="40.623827" timestamp="2020-02-06T08:08:21.735744">
+  <testsuite failures="0" name="GWAutoTest2" skipped="0" tests="11" testsuite_failed="False" time="25.094385" timestamp="2020-02-06T08:08:37.030821">
+   <testsuite failures="0" name="Complex" skipped="0" tests="2" testsuite_failed="False" time="4.437641" timestamp="2020-02-06T08:08:45.265322">
+    <testcase name="02_SSPAndOmni" status="run" time="2.812462" timestamp="2020-02-06T08:08:45.343626"/>
+    <testcase name="03_SSPAndMapped" status="run" time="1.421926" timestamp="2020-02-06T08:08:48.218536"/>
+   </testsuite>
+   <testsuite failures="0" name="FCMRoute" skipped="0" tests="5" testsuite_failed="False" time="0.656252" timestamp="2020-02-06T08:08:49.734218">
+    <testcase name="01_ShortCodeNotConfigured_AlgoFlagSet" status="run" time="0.031243" timestamp="2020-02-06T08:08:49.812339"/>
+    <testcase name="02_ShortCodeNotConfigured_AlgoFlagNotSet" status="run" time="0.046863" timestamp="2020-02-06T08:08:49.906088"/>
+    <testcase name="03_ShortCodeConfigured_AlgoFlagSet" status="run" time="0.062519" timestamp="2020-02-06T08:08:50.015450"/>
+    <testcase name="04_DiffInstrOrRouteGroup_AlgoFlagSet" status="run" time="0.046872" timestamp="2020-02-06T08:08:50.140469"/>
+    <testcase name="05_DiffInstrOrRouteGroup_AlgoFlagNotSet" status="run" time="0.062495" timestamp="2020-02-06T08:08:50.249849"/>
+   </testsuite>
+   <testsuite failures="0" name="InstrumentRouteGroup" skipped="0" tests="2" testsuite_failed="False" time="0.359328" timestamp="2020-02-06T08:08:50.421769">
+    <testcase name="04_DiffInstrOrRouteGroup_AlgoFlagSet" status="run" time="0.093753" timestamp="2020-02-06T08:08:50.499853"/>
+    <testcase name="05_DiffInstrOrRouteGroup_AlgoFlagNotSet" status="run" time="0.062498" timestamp="2020-02-06T08:08:50.656105"/>
+   </testsuite>
+   <testsuite failures="0" name="OrderRequests" skipped="0" tests="2" testsuite_failed="False" time="11.265944" timestamp="2020-02-06T08:08:50.796736">
+    <testcase name="05_SOM" status="run" time="8.828171" timestamp="2020-02-06T08:08:50.890695"/>
+    <testcase name="06_SSP" status="run" time="2.234437" timestamp="2020-02-06T08:08:59.781364"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

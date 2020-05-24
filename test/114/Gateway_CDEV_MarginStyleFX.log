@@ -1,0 +1,20 @@
+ 2:02:48.91  Test starded without threads
+00:02:49.441 Python Module Path 'ScriptKit' added.
+00:02:49.441 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX/PythonModules' added.
+00:02:49.441 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:02:49.769 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX' full execution.
+00:02:49.801 Suite '.'. [6 test cases, 3 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX\test_suite.su.py", line 37, in <module>
+    trader1, exchange, trader1.GetAccountInfoByName(suitePrefix + 'Acct1_1'), MakeOrder('+20 {} LMT'.format(sym)))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\MarginStyleFX\PythonModules\SuiteHelper.py", line 39, in MakeOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, type, limitPrice=price if type == OrderType.Limit else 0)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:03:11.848 Suite '.' setup failed, child test cases and sub-suites will be skipped.
+00:03:15.442 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX' execution finished. It took 0:00:25.657231.
+00:03:15.442 Test cases results: 26 total, 0 succeeded, 0 failed, 26 skipped.

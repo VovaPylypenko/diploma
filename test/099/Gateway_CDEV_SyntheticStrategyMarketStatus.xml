@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="207" testsuite_failed="False" time="419.015181" timestamp="2020-02-06T07:20:58.092554">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_IQRMS"/>
+  <property name="scripts-cfg-instance" value="SF_IQRMS"/>
+  <property name="threads-count" value="30"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyMarketStatus/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Suites" skipped="0" tests="207" testsuite_failed="False" time="419.015181" timestamp="2020-02-06T07:20:58.092554">
+  <testsuite failures="0" name="AggregationOrder" skipped="0" tests="35" testsuite_failed="False" time="55.707454" timestamp="2020-02-06T07:21:12.436785">
+   <testsuite failures="0" name="IgnoringMMLOCancellationRejects" skipped="0" tests="5" testsuite_failed="False" time="19.109622" timestamp="2020-02-06T07:21:12.624955">
+    <testcase name="1" status="run" time="18.500652" timestamp="2020-02-06T07:21:12.889970"/>
+    <testcase name="2" status="run" time="18.375978" timestamp="2020-02-06T07:21:12.968050"/>
+    <testcase name="3" status="run" time="18.344373" timestamp="2020-02-06T07:21:13.077451"/>
+    <testcase name="4" status="run" time="18.047473" timestamp="2020-02-06T07:21:13.155580"/>
+    <testcase name="5" status="run" time="18.279435" timestamp="2020-02-06T07:21:13.251774"/>
+   </testsuite>
+   <testsuite failures="0" name="InitialMMLOAllocation" skipped="0" tests="12" testsuite_failed="False" time="5.955968" timestamp="2020-02-06T07:21:31.781241">
+    <testcase name="1" status="run" time="0.202576" timestamp="2020-02-06T07:21:32.016136"/>
+    <testcase name="2" status="run" time="1.7656960000000002" timestamp="2020-02-06T07:21:32.124978"/>
+    <testcase name="3" status="run" time="1.796969" timestamp="2020-02-06T07:21:32.218712"/>
+    <testcase name="4" status="run" time="1.859387" timestamp="2020-02-06T07:21:32.312546"/>
+    <testcase name="5" status="run" time="2.984552" timestamp="2020-02-06T07:21:32.406237"/>
+    <testcase name="6" status="run" time="4.059562" timestamp="2020-02-06T07:21:32.487532"/>
+    <testcase name="7" status="run" time="2.250007" timestamp="2020-02-06T07:21:32.562542"/>
+    <testcase name="8" status="run" time="3.937621" timestamp="2020-02-06T07:21:32.656246"/>
+    <testcase name="9" status="run" time="3.890882" timestamp="2020-02-06T07:21:32.718734"/>
+    <testcase name="10" status="run" time="3.797113" timestamp="2020-02-06T07:21:32.812503"/>
+    <testcase name="11" status="run" time="4.718935" timestamp="2020-02-06T07:21:32.890609"/>
+    <testcase name="12" status="run" time="3.500099" timestamp="2020-02-06T07:21:32.937575"/>
+   </testsuite>
+   <testsuite failures="0" name="MMLOReallocationOnStatusChange" skipped="0" tests="8" testsuite_failed="False" time="7.016603" timestamp="2020-02-06T07:21:37.797037">
+    <testcase name="1" status="run" time="5.922021" timestamp="2020-02-06T07:21:38.000236"/>
+    <testcase name="2" status="run" time="5.934332" timestamp="2020-02-06T07:21:38.097299"/>
+    <testcase name="3" status="run" time="5.953191" timestamp="2020-02-06T07:21:38.172244"/>
+    <testcase name="4" status="run" time="5.953072" timestamp="2020-02-06T07:21:38.250449"/>
+    <testcase name="5" status="run" time="5.998918" timestamp="2020-02-06T07:21:38.329591"/>
+    <testcase name="6" status="run" time="5.953321" timestamp="2020-02-06T07:21:38.390824"/>
+    <testcase name="7" status="run" time="6.031417" timestamp="2020-02-06T07:21:38.468999"/>
+    <testcase name="8" status="run" time="5.953332" timestamp="2020-02-06T07:21:38.562683"/>
+   </testsuite>
+   <testsuite failures="0" name="PlacingMTLO" skipped="0" tests="10" testsuite_failed="False" time="23.078895" timestamp="2020-02-06T07:21:44.891075">
+    <testcase name="1" status="run" time="21.763115" timestamp="2020-02-06T07:21:45.097432"/>
+    <testcase name="2" status="run" time="21.828886" timestamp="2020-02-06T07:21:45.172284"/>
+    <testcase name="3" status="run" time="21.844265" timestamp="2020-02-06T07:21:45.250678"/>
+    <testcase name="4" status="run" time="21.86006" timestamp="2020-02-06T07:21:45.328609"/>
+    <testcase name="5" status="run" time="21.969865" timestamp="2020-02-06T07:21:45.422311"/>
+    <testcase name="6" status="run" time="21.828684" timestamp="2020-02-06T07:21:45.485014"/>
+    <testcase name="7" status="run" time="21.907009" timestamp="2020-02-06T07:21:45.562939"/>
+    <testcase name="8" status="run" time="21.874629" timestamp="2020-02-06T07:21:45.642189"/>
+    <testcase name="9" status="run" time="21.828993" timestamp="2020-02-06T07:21:45.734802"/>
+    <testcase name="10" status="run" time="21.766473" timestamp="2020-02-06T07:21:45.797322"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="MarketOrder" skipped="0" tests="26" testsuite_failed="False" time="55.814295" timestamp="2020-02-06T07:22:08.220102">
+   <testsuite failures="0" name="MarketGoesToNoTradingState" skipped="0" tests="4" testsuite_failed="False" time="15.924425" timestamp="2020-02-06T07:22:08.360589">
+    <testcase name="1" status="run" time="15.35991" timestamp="2020-02-06T07:22:08.579344"/>
+    <testcase name="2" status="run" time="15.35994" timestamp="2020-02-06T07:22:08.657480"/>
+    <testcase name="3" status="run" time="15.260952" timestamp="2020-02-06T07:22:08.818940"/>
+    <testcase name="4" status="run" time="15.25043" timestamp="2020-02-06T07:22:08.751333"/>
+   </testsuite>
+   <testsuite failures="0" name="MarketOpening" skipped="0" tests="2" testsuite_failed="False" time="13.188051" timestamp="2020-02-06T07:22:24.361133">
+    <testcase name="1" status="run" time="12.734759" timestamp="2020-02-06T07:22:24.548709"/>
+    <testcase name="2" status="run" time="12.782836" timestamp="2020-02-06T07:22:24.595522"/>
+   </testsuite>
+   <testsuite failures="0" name="NoTradingMarkets" skipped="0" tests="20" testsuite_failed="False" time="26.297887" timestamp="2020-02-06T07:22:37.611929">
+    <testcase name="1" status="run" time="20.219404" timestamp="2020-02-06T07:22:37.892922"/>
+    <testcase name="2" status="run" time="20.219395" timestamp="2020-02-06T07:22:37.971046"/>
+    <testcase name="3" status="run" time="20.250821" timestamp="2020-02-06T07:22:38.064891"/>
+    <testcase name="4" status="run" time="20.215515" timestamp="2020-02-06T07:22:38.162632"/>
+    <testcase name="5" status="run" time="21.500551" timestamp="2020-02-06T07:22:38.252429"/>
+    <testcase name="6" status="run" time="21.360107" timestamp="2020-02-06T07:22:38.361637"/>
+    <testcase name="7" status="run" time="21.360087" timestamp="2020-02-06T07:22:38.455397"/>
+    <testcase name="8" status="run" time="21.266362" timestamp="2020-02-06T07:22:38.533523"/>
+    <testcase name="9" status="run" time="21.328846" timestamp="2020-02-06T07:22:38.611646"/>
+    <testcase name="10" status="run" time="21.250721" timestamp="2020-02-06T07:22:38.689771"/>
+    <testcase name="11" status="run" time="24.434951" timestamp="2020-02-06T07:22:38.786904"/>
+    <testcase name="12" status="run" time="24.312748" timestamp="2020-02-06T07:22:38.862405"/>
+    <testcase name="13" status="run" time="24.125804" timestamp="2020-02-06T07:22:38.939794"/>
+    <testcase name="14" status="run" time="24.188337" timestamp="2020-02-06T07:22:39.033518"/>
+    <testcase name="15" status="run" time="24.203383" timestamp="2020-02-06T07:22:39.127868"/>
+    <testcase name="16" status="run" time="24.062536" timestamp="2020-02-06T07:22:39.237456"/>
+    <testcase name="17" status="run" time="24.278655" timestamp="2020-02-06T07:22:39.318206"/>
+    <testcase name="18" status="run" time="24.126228" timestamp="2020-02-06T07:22:39.408537"/>
+    <testcase name="19" status="run" time="24.094598" timestamp="2020-02-06T07:22:39.596052"/>
+    <testcase name="20" status="run" time="24.000856" timestamp="2020-02-06T07:22:39.689794"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Misc" skipped="0" tests="5" testsuite_failed="False" time="107.363078" timestamp="2020-02-06T07:23:04.112520">
+   <testsuite failures="0" name="GroupMarketStatusUpdate" skipped="0" tests="1" testsuite_failed="False" time="16.876175" timestamp="2020-02-06T07:23:04.331290">
+    <testcase name="1" status="run" time="16.48495" timestamp="2020-02-06T07:23:04.581275"/>
+   </testsuite>
+   <testsuite failures="0" name="IgnoreRules" skipped="0" tests="1" testsuite_failed="False" time="20.861274" timestamp="2020-02-06T07:23:21.363099">
+    <testcase name="1" status="run" time="20.454356" timestamp="2020-02-06T07:23:21.566236"/>
+   </testsuite>
+   <testsuite failures="0" name="ProcessingStatusResponses" skipped="0" tests="1" testsuite_failed="False" time="0.406269" timestamp="2020-02-06T07:23:42.316945">
+    <testcase name="1" status="run" time="0.0" timestamp="2020-02-06T07:23:42.551549"/>
+   </testsuite>
+   <testsuite failures="0" name="RequestingStatusOnFirstSubscription" skipped="0" tests="1" testsuite_failed="False" time="0.374829" timestamp="2020-02-06T07:23:42.801540">
+    <testcase name="1" status="run" time="0.015498" timestamp="2020-02-06T07:23:43.004710"/>
+   </testsuite>
+   <testsuite failures="0" name="RestoringStatusOnSequenceGap" skipped="0" tests="1" testsuite_failed="False" time="67.986833" timestamp="2020-02-06T07:23:43.270125">
+    <testcase name="1" status="run" time="67.547448" timestamp="2020-02-06T07:23:43.521890"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="SniperOrder" skipped="0" tests="26" testsuite_failed="False" time="50.429254" timestamp="2020-02-06T07:24:51.569363">
+   <testsuite failures="0" name="MarketGoesToNoTradingState" skipped="0" tests="4" testsuite_failed="False" time="13.701945" timestamp="2020-02-06T07:24:51.758512">
+    <testcase name="1" status="run" time="12.922333" timestamp="2020-02-06T07:24:52.022482"/>
+    <testcase name="2" status="run" time="12.985891" timestamp="2020-02-06T07:24:52.084986"/>
+    <testcase name="3" status="run" time="12.969181" timestamp="2020-02-06T07:24:52.194366"/>
+    <testcase name="4" status="run" time="12.969349" timestamp="2020-02-06T07:24:52.288108"/>
+   </testsuite>
+   <testsuite failures="0" name="MarketOpening" skipped="0" tests="2" testsuite_failed="False" time="13.406692" timestamp="2020-02-06T07:25:05.554209">
+    <testcase name="1" status="run" time="12.922313" timestamp="2020-02-06T07:25:05.804212"/>
+    <testcase name="2" status="run" time="12.859472" timestamp="2020-02-06T07:25:05.898307"/>
+   </testsuite>
+   <testsuite failures="0" name="NoTradingMarkets" skipped="0" tests="20" testsuite_failed="False" time="22.750806" timestamp="2020-02-06T07:25:19.039028">
+    <testcase name="1" status="run" time="20.219431" timestamp="2020-02-06T07:25:19.367189"/>
+    <testcase name="2" status="run" time="20.203963" timestamp="2020-02-06T07:25:19.476595"/>
+    <testcase name="3" status="run" time="20.391327" timestamp="2020-02-06T07:25:19.554690"/>
+    <testcase name="4" status="run" time="20.266315" timestamp="2020-02-06T07:25:19.648446"/>
+    <testcase name="5" status="run" time="20.297732" timestamp="2020-02-06T07:25:19.726573"/>
+    <testcase name="6" status="run" time="20.39131" timestamp="2020-02-06T07:25:19.804706"/>
+    <testcase name="7" status="run" time="20.376818" timestamp="2020-02-06T07:25:19.914072"/>
+    <testcase name="8" status="run" time="20.283006" timestamp="2020-02-06T07:25:20.007884"/>
+    <testcase name="9" status="run" time="20.281971" timestamp="2020-02-06T07:25:20.101562"/>
+    <testcase name="10" status="run" time="20.297231" timestamp="2020-02-06T07:25:20.226923"/>
+    <testcase name="11" status="run" time="20.156938" timestamp="2020-02-06T07:25:21.351610"/>
+    <testcase name="12" status="run" time="20.251056" timestamp="2020-02-06T07:25:20.320338"/>
+    <testcase name="13" status="run" time="20.221729" timestamp="2020-02-06T07:25:20.414073"/>
+    <testcase name="14" status="run" time="20.188353" timestamp="2020-02-06T07:25:20.539093"/>
+    <testcase name="15" status="run" time="20.203846" timestamp="2020-02-06T07:25:20.617203"/>
+    <testcase name="16" status="run" time="20.297472" timestamp="2020-02-06T07:25:20.742333"/>
+    <testcase name="17" status="run" time="20.297545" timestamp="2020-02-06T07:25:20.835989"/>
+    <testcase name="18" status="run" time="20.3913" timestamp="2020-02-06T07:25:20.929742"/>
+    <testcase name="19" status="run" time="20.311364" timestamp="2020-02-06T07:25:21.103448"/>
+    <testcase name="20" status="run" time="20.219457" timestamp="2020-02-06T07:25:21.242239"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="StopOrder" skipped="0" tests="5" testsuite_failed="False" time="14.672393" timestamp="2020-02-06T07:25:42.086720">
+   <testsuite failures="0" name="SpreadStop" skipped="0" tests="5" testsuite_failed="False" time="14.312993" timestamp="2020-02-06T07:25:42.242979">
+    <testcase name="1" status="run" time="13.35919" timestamp="2020-02-06T07:25:42.556126"/>
+    <testcase name="2" status="run" time="13.376915" timestamp="2020-02-06T07:25:42.649239"/>
+    <testcase name="3" status="run" time="13.375458" timestamp="2020-02-06T07:25:42.742990"/>
+    <testcase name="4" status="run" time="13.406784" timestamp="2020-02-06T07:25:42.852359"/>
+    <testcase name="5" status="run" time="13.281770999999999" timestamp="2020-02-06T07:25:42.977372"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="SymmetricOrder" skipped="0" tests="110" testsuite_failed="False" time="118.867458" timestamp="2020-02-06T07:25:56.837202">
+   <testsuite failures="0" name="IgnoringCancellationRejects" skipped="0" tests="8" testsuite_failed="False" time="4.390763" timestamp="2020-02-06T07:25:57.009094">
+    <testcase name="1" status="run" time="3.186751" timestamp="2020-02-06T07:25:57.338104"/>
+    <testcase name="2" status="run" time="3.000096" timestamp="2020-02-06T07:25:57.430990"/>
+    <testcase name="3" status="run" time="3.031346" timestamp="2020-02-06T07:25:57.524730"/>
+    <testcase name="4" status="run" time="3.029982" timestamp="2020-02-06T07:25:57.635488"/>
+    <testcase name="5" status="run" time="3.015737" timestamp="2020-02-06T07:25:57.727866"/>
+    <testcase name="6" status="run" time="2.891516" timestamp="2020-02-06T07:25:57.899741"/>
+    <testcase name="7" status="run" time="2.968857" timestamp="2020-02-06T07:25:58.024745"/>
+    <testcase name="8" status="run" time="3.015747" timestamp="2020-02-06T07:25:58.180996"/>
+   </testsuite>
+   <testsuite failures="0" name="NoTradingMarkets" skipped="0" tests="20" testsuite_failed="False" time="22.812787" timestamp="2020-02-06T07:26:01.494290">
+    <testcase name="1" status="run" time="20.203396" timestamp="2020-02-06T07:26:01.775310"/>
+    <testcase name="2" status="run" time="20.188413" timestamp="2020-02-06T07:26:01.884261"/>
+    <testcase name="3" status="run" time="20.203799" timestamp="2020-02-06T07:26:02.009302"/>
+    <testcase name="4" status="run" time="20.172423" timestamp="2020-02-06T07:26:02.103301"/>
+    <testcase name="5" status="run" time="20.28195" timestamp="2020-02-06T07:26:03.524928"/>
+    <testcase name="6" status="run" time="20.235376" timestamp="2020-02-06T07:26:02.181205"/>
+    <testcase name="7" status="run" time="20.251635" timestamp="2020-02-06T07:26:02.306153"/>
+    <testcase name="8" status="run" time="20.266391" timestamp="2020-02-06T07:26:02.415519"/>
+    <testcase name="9" status="run" time="20.344471" timestamp="2020-02-06T07:26:02.493687"/>
+    <testcase name="10" status="run" time="20.375743" timestamp="2020-02-06T07:26:02.665545"/>
+    <testcase name="11" status="run" time="20.203802" timestamp="2020-02-06T07:26:03.821831"/>
+    <testcase name="12" status="run" time="20.313166" timestamp="2020-02-06T07:26:02.759338"/>
+    <testcase name="13" status="run" time="20.250717" timestamp="2020-02-06T07:26:02.868665"/>
+    <testcase name="14" status="run" time="20.391327" timestamp="2020-02-06T07:26:02.993663"/>
+    <testcase name="15" status="run" time="20.298235" timestamp="2020-02-06T07:26:03.103050"/>
+    <testcase name="16" status="run" time="20.25119" timestamp="2020-02-06T07:26:03.228059"/>
+    <testcase name="17" status="run" time="20.252862" timestamp="2020-02-06T07:26:03.337447"/>
+    <testcase name="18" status="run" time="20.219448" timestamp="2020-02-06T07:26:03.431175"/>
+    <testcase name="19" status="run" time="20.281949" timestamp="2020-02-06T07:26:03.618696"/>
+    <testcase name="20" status="run" time="20.202331" timestamp="2020-02-06T07:26:03.713947"/>
+   </testsuite>
+   <testsuite failures="0" name="PreOpeningPrimaryMarket" skipped="0" tests="4" testsuite_failed="False" time="18.954177" timestamp="2020-02-06T07:26:24.385023">
+    <testcase name="1" status="run" time="3.437414" timestamp="2020-02-06T07:26:24.619629"/>
+    <testcase name="2" status="run" time="18.324238" timestamp="2020-02-06T07:26:24.717824"/>
+    <testcase name="3" status="run" time="3.375191" timestamp="2020-02-06T07:26:24.806914"/>
+    <testcase name="4" status="run" time="18.219377" timestamp="2020-02-06T07:26:24.900677"/>
+   </testsuite>
+   <testsuite failures="0" name="PrimaryTradingToPreOpening" skipped="0" tests="4" testsuite_failed="False" time="4.078493" timestamp="2020-02-06T07:26:43.432558">
+    <testcase name="1" status="run" time="3.312192" timestamp="2020-02-06T07:26:43.667372"/>
+    <testcase name="2" status="run" time="3.338247" timestamp="2020-02-06T07:26:43.781941"/>
+    <testcase name="3" status="run" time="3.359342" timestamp="2020-02-06T07:26:43.854593"/>
+    <testcase name="4" status="run" time="3.392039" timestamp="2020-02-06T07:26:43.948216"/>
+   </testsuite>
+   <testsuite failures="0" name="QuoteTimeoutOnMarketOpening" skipped="0" tests="20" testsuite_failed="False" time="29.584279" timestamp="2020-02-06T07:26:47.620202">
+    <testcase name="1" status="run" time="26.546561" timestamp="2020-02-06T07:26:47.980838"/>
+    <testcase name="2" status="run" time="26.391532" timestamp="2020-02-06T07:26:48.088963"/>
+    <testcase name="3" status="run" time="26.391511" timestamp="2020-02-06T07:26:48.182738"/>
+    <testcase name="4" status="run" time="26.563414" timestamp="2020-02-06T07:26:48.307721"/>
+    <testcase name="5" status="run" time="26.563514" timestamp="2020-02-06T07:26:48.417097"/>
+    <testcase name="6" status="run" time="26.50089" timestamp="2020-02-06T07:26:48.495254"/>
+    <testcase name="7" status="run" time="26.610299" timestamp="2020-02-06T07:26:48.698362"/>
+    <testcase name="8" status="run" time="26.638523" timestamp="2020-02-06T07:26:48.795131"/>
+    <testcase name="9" status="run" time="26.735386" timestamp="2020-02-06T07:26:48.917118"/>
+    <testcase name="10" status="run" time="26.719753" timestamp="2020-02-06T07:26:49.042129"/>
+    <testcase name="11" status="run" time="26.750829" timestamp="2020-02-06T07:26:49.182847"/>
+    <testcase name="12" status="run" time="26.61056" timestamp="2020-02-06T07:26:49.307784"/>
+    <testcase name="13" status="run" time="26.360302" timestamp="2020-02-06T07:26:49.417137"/>
+    <testcase name="14" status="run" time="26.407419" timestamp="2020-02-06T07:26:49.510925"/>
+    <testcase name="15" status="run" time="26.327475" timestamp="2020-02-06T07:26:49.606201"/>
+    <testcase name="16" status="run" time="26.657164" timestamp="2020-02-06T07:26:49.698406"/>
+    <testcase name="17" status="run" time="26.683986" timestamp="2020-02-06T07:26:49.812234"/>
+    <testcase name="18" status="run" time="26.594693" timestamp="2020-02-06T07:26:49.901527"/>
+    <testcase name="19" status="run" time="26.613649" timestamp="2020-02-06T07:26:49.995294"/>
+    <testcase name="20" status="run" time="26.500906" timestamp="2020-02-06T07:26:50.120287"/>
+   </testsuite>
+   <testsuite failures="0" name="QuoteUpdateOnMarketOpening" skipped="0" tests="20" testsuite_failed="False" time="19.375676" timestamp="2020-02-06T07:27:17.293097">
+    <testcase name="1" status="run" time="16.313197" timestamp="2020-02-06T07:27:17.574374"/>
+    <testcase name="2" status="run" time="16.422051" timestamp="2020-02-06T07:27:17.668493"/>
+    <testcase name="3" status="run" time="16.469193" timestamp="2020-02-06T07:27:17.793631"/>
+    <testcase name="4" status="run" time="16.485026" timestamp="2020-02-06T07:27:17.902517"/>
+    <testcase name="5" status="run" time="16.359926" timestamp="2020-02-06T07:27:18.105634"/>
+    <testcase name="6" status="run" time="16.688973" timestamp="2020-02-06T07:27:18.230626"/>
+    <testcase name="7" status="run" time="16.516587" timestamp="2020-02-06T07:27:18.324391"/>
+    <testcase name="8" status="run" time="16.297439" timestamp="2020-02-06T07:27:19.636922"/>
+    <testcase name="9" status="run" time="16.454574" timestamp="2020-02-06T07:27:18.465025"/>
+    <testcase name="10" status="run" time="16.359964" timestamp="2020-02-06T07:27:19.527560"/>
+    <testcase name="11" status="run" time="16.383873" timestamp="2020-02-06T07:27:18.558775"/>
+    <testcase name="12" status="run" time="16.547821" timestamp="2020-02-06T07:27:18.668199"/>
+    <testcase name="13" status="run" time="16.594306" timestamp="2020-02-06T07:27:18.761903"/>
+    <testcase name="14" status="run" time="16.594306" timestamp="2020-02-06T07:27:18.871289"/>
+    <testcase name="15" status="run" time="16.500571" timestamp="2020-02-06T07:27:18.965024"/>
+    <testcase name="16" status="run" time="16.516423" timestamp="2020-02-06T07:27:19.043173"/>
+    <testcase name="17" status="run" time="16.422432" timestamp="2020-02-06T07:27:19.152538"/>
+    <testcase name="18" status="run" time="16.453823" timestamp="2020-02-06T07:27:19.230674"/>
+    <testcase name="19" status="run" time="16.547461" timestamp="2020-02-06T07:27:19.340063"/>
+    <testcase name="20" status="run" time="16.44796" timestamp="2020-02-06T07:27:19.439564"/>
+   </testsuite>
+   <testsuite failures="0" name="SecondaryTradingToPreOpening" skipped="0" tests="4" testsuite_failed="False" time="8.187144" timestamp="2020-02-06T07:27:36.794585">
+    <testcase name="1" status="run" time="1.702883" timestamp="2020-02-06T07:27:37.231586"/>
+    <testcase name="2" status="run" time="7.2190010000000004" timestamp="2020-02-06T07:27:37.356297"/>
+    <testcase name="3" status="run" time="1.7344490000000001" timestamp="2020-02-06T07:27:37.450049"/>
+    <testcase name="4" status="run" time="7.234637" timestamp="2020-02-06T07:27:37.575041"/>
+   </testsuite>
+   <testsuite failures="0" name="SuspendingResuming" skipped="0" tests="30" testsuite_failed="False" time="10.391017" timestamp="2020-02-06T07:27:45.090926">
+    <testcase name="1" status="run" time="4.672091" timestamp="2020-02-06T07:27:45.403434"/>
+    <testcase name="2" status="run" time="4.547079" timestamp="2020-02-06T07:27:45.528446"/>
+    <testcase name="3" status="run" time="4.468904" timestamp="2020-02-06T07:27:45.622192"/>
+    <testcase name="4" status="run" time="4.656334" timestamp="2020-02-06T07:27:45.747302"/>
+    <testcase name="5" status="run" time="4.575578" timestamp="2020-02-06T07:27:45.859286"/>
+    <testcase name="6" status="run" time="4.325623" timestamp="2020-02-06T07:27:45.952986"/>
+    <testcase name="7" status="run" time="4.6408190000000005" timestamp="2020-02-06T07:27:46.059730"/>
+    <testcase name="8" status="run" time="3.780831" timestamp="2020-02-06T07:27:46.763435"/>
+    <testcase name="9" status="run" time="3.109481" timestamp="2020-02-06T07:27:46.981615"/>
+    <testcase name="10" status="run" time="3.11455" timestamp="2020-02-06T07:27:47.153514"/>
+    <testcase name="11" status="run" time="3.21852" timestamp="2020-02-06T07:27:47.294479"/>
+    <testcase name="12" status="run" time="3.312641" timestamp="2020-02-06T07:27:47.403521"/>
+    <testcase name="13" status="run" time="3.311302" timestamp="2020-02-06T07:27:47.545759"/>
+    <testcase name="14" status="run" time="3.015785" timestamp="2020-02-06T07:27:47.684764"/>
+    <testcase name="15" status="run" time="3.234361" timestamp="2020-02-06T07:27:47.778950"/>
+    <testcase name="16" status="run" time="3.344095" timestamp="2020-02-06T07:27:47.919147"/>
+    <testcase name="17" status="run" time="5.001879" timestamp="2020-02-06T07:27:50.278609"/>
+    <testcase name="18" status="run" time="3.48451" timestamp="2020-02-06T07:27:48.028527"/>
+    <testcase name="19" status="run" time="3.531387" timestamp="2020-02-06T07:27:48.216031"/>
+    <testcase name="20" status="run" time="3.437628" timestamp="2020-02-06T07:27:48.403545"/>
+    <testcase name="21" status="run" time="3.375109" timestamp="2020-02-06T07:27:48.559808"/>
+    <testcase name="22" status="run" time="4.7501750000000005" timestamp="2020-02-06T07:27:48.747300"/>
+    <testcase name="23" status="run" time="4.359834" timestamp="2020-02-06T07:27:48.934804"/>
+    <testcase name="24" status="run" time="4.038785" timestamp="2020-02-06T07:27:49.083671"/>
+    <testcase name="25" status="run" time="4.033289" timestamp="2020-02-06T07:27:49.216138"/>
+    <testcase name="26" status="run" time="4.656423" timestamp="2020-02-06T07:27:50.091096"/>
+    <testcase name="27" status="run" time="3.218879" timestamp="2020-02-06T07:27:49.309821"/>
+    <testcase name="28" status="run" time="5.468975" timestamp="2020-02-06T07:27:49.497324"/>
+    <testcase name="29" status="run" time="5.375177" timestamp="2020-02-06T07:27:49.591122"/>
+    <testcase name="30" status="run" time="4.951494" timestamp="2020-02-06T07:27:49.905423"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

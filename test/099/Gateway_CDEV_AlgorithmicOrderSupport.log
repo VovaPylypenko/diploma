@@ -1,0 +1,80 @@
+ 8:43:23.15  Test starded without threads
+06:43:23.636 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgorithmicOrderSupport/PythonModules' added.
+06:43:23.636 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:43:23.636 Python Module Path 'ScriptKit' added.
+06:43:24.011 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgorithmicOrderSupport' full execution.
+06:43:24.042 Suite '.'. [0 test cases, 4 sub-suites]
+06:43:33.004 Suite 'OrderActions'. [12 test cases, 0 sub-suites]
+06:43:33.074 Case 'Algostrategy_And_ClientOrderExtra_In_ACTIVATEORDER' execution.
+06:43:33.105 Case 'Algostrategy_And_ClientOrderExtra_In_CANCELORDER' execution.
+06:43:33.152 Case 'Algostrategy_And_ClientOrderExtra_In_MODORDER' execution.
+06:43:33.168 Case 'Algostrategy_And_ClientOrderExtra_In_PARKORDER' execution.
+06:43:33.214 Case 'Algostrategy_And_ClientOrderExtra_In_PO' execution.
+06:43:33.245 Case 'ClientOrderExtra_In_ACTIVATEORDER' execution.
+06:43:33.308 Case 'ClientOrderExtra_In_CANCELORDER' execution.
+06:43:33.355 Case 'ClientOrderExtra_In_MODORDER' execution.
+06:43:33.402 Case 'ClientOrderExtra_In_PARKORDER' execution.
+06:43:33.465 Case 'ClientOrderExtra_In_PO' execution.
+06:43:33.542 Case 'ClientOrderExtra_Modification_InParkedOrder' execution.
+06:43:33.620 Case 'ClientOrderExtra_Only_Modification' execution.
+06:43:33.886 Case 'Algostrategy_And_ClientOrderExtra_In_PO' succeeded.
+06:43:33.917 Case 'Algostrategy_And_ClientOrderExtra_In_ACTIVATEORDER' succeeded.
+06:43:34.027 Case 'ClientOrderExtra_In_ACTIVATEORDER' succeeded.
+06:43:34.058 Case 'Algostrategy_And_ClientOrderExtra_In_CANCELORDER' succeeded.
+06:43:34.199 Case 'ClientOrderExtra_In_PO' succeeded.
+06:43:34.293 Case 'Algostrategy_And_ClientOrderExtra_In_PARKORDER' succeeded.
+06:43:34.355 Case 'ClientOrderExtra_Only_Modification' succeeded.
+06:43:34.433 Case 'ClientOrderExtra_In_CANCELORDER' succeeded.
+06:43:34.464 Case 'ClientOrderExtra_In_PARKORDER' succeeded.
+06:43:34.480 Case 'ClientOrderExtra_Modification_InParkedOrder' succeeded.
+06:43:34.527 Case 'Algostrategy_And_ClientOrderExtra_In_MODORDER' succeeded.
+06:43:34.558 Case 'ClientOrderExtra_In_MODORDER' succeeded.
+06:43:34.761 Suite 'OrderRejects'. [4 test cases, 0 sub-suites]
+06:43:34.826 Case 'LMT' execution.
+06:43:34.855 Case 'MKT' execution.
+06:43:34.918 Case 'STL' execution.
+06:43:34.949 Case 'STP' execution.
+06:43:35.183 Case 'LMT' succeeded.
+06:43:35.215 Case 'MKT' succeeded.
+06:43:35.292 Case 'STL' succeeded.
+06:43:35.324 Case 'STP' succeeded.
+06:43:35.480 Suite 'OrderRouting'. [2 test cases, 0 sub-suites]
+06:43:35.589 Case 'GWAutoTest2' execution.
+06:43:35.636 Case 'GWAutoTest' execution.
+06:43:35.824 Case 'GWAutoTest2' succeeded.
+06:43:35.871 Case 'GWAutoTest' succeeded.
+06:43:36.027 Suite 'OrderSpecs'. [16 test cases, 0 sub-suites]
+06:43:38.183 Case 'Iceberg_LMT' execution.
+06:43:38.214 Case 'LMT' execution.
+06:43:38.246 Case 'MKT' execution.
+06:43:38.292 Case 'Other_LMT' execution.
+06:43:38.324 Case 'Other_MKT' execution.
+06:43:38.371 Case 'Other_STL' execution.
+06:43:38.418 Case 'Other_STP' execution.
+06:43:38.449 Case 'QT_STL' execution.
+06:43:38.496 Case 'Other_LMT' succeeded.
+06:43:38.511 Case 'QT_STP' execution.
+06:43:38.574 Case 'Other_MKT' succeeded.
+06:43:38.589 Case 'Other_STP' succeeded.
+06:43:38.589 Case 'Other_STL' succeeded.
+06:43:38.589 Case 'QT_Trail_STL' execution.
+06:43:38.636 Case 'QT_Trail_STP' execution.
+06:43:38.668 Case 'STL' execution.
+06:43:38.761 Case 'STP' execution.
+06:43:38.808 Case 'Trail_LMT' execution.
+06:43:38.855 Case 'Trail_STL' execution.
+06:43:38.964 Case 'Trail_STP' execution.
+06:43:39.902 Case 'Trail_LMT' succeeded.
+06:43:39.949 Case 'Iceberg_LMT' succeeded.
+06:43:39.980 Case 'LMT' succeeded.
+06:43:40.043 Case 'MKT' succeeded.
+06:43:40.246 Case 'STL' succeeded.
+06:43:40.277 Case 'STP' succeeded.
+06:43:48.605 Case 'Trail_STP' succeeded.
+06:43:48.637 Case 'QT_STL' succeeded.
+06:43:48.668 Case 'QT_STP' succeeded.
+06:43:48.699 Case 'Trail_STL' succeeded.
+06:43:48.699 Case 'QT_Trail_STP' succeeded.
+06:43:48.730 Case 'QT_Trail_STL' succeeded.
+06:43:57.528 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgorithmicOrderSupport' execution finished. It took 0:00:33.469868.
+06:43:57.528 Test cases results: 34 total, 34 succeeded, 0 failed, 0 skipped.

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="25" testsuite_failed="False" time="409.920449" timestamp="2020-02-06T07:14:05.484541">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LongShortPositions"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="LongShortPositions" skipped="0" tests="25" testsuite_failed="False" time="409.920449" timestamp="2020-02-06T07:14:05.484541">
+  <testsuite failures="0" name="LiqAll" skipped="0" tests="3" testsuite_failed="False" time="48.423523" timestamp="2020-02-06T07:14:11.953524">
+   <testsuite failures="0" name="Synthetic" skipped="0" tests="3" testsuite_failed="False" time="48.201695" timestamp="2020-02-06T07:14:12.066111">
+    <testcase name="TC22_SyntheticSpread" status="run" time="25.969521" timestamp="2020-02-06T07:14:21.407380"/>
+    <testcase name="TC27_SSMapped1" status="run" time="6.4846260000000004" timestamp="2020-02-06T07:14:47.439094"/>
+    <testcase name="TC28_SSMapped2" status="run" time="6.200226" timestamp="2020-02-06T07:14:53.973710"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OpenClose_FillEffect" skipped="0" tests="16" testsuite_failed="False" time="257.64365" timestamp="2020-02-06T07:15:00.429824">
+   <testsuite failures="0" name="SyntheticStrategyOrder" skipped="0" tests="16" testsuite_failed="False" time="256.540111" timestamp="2020-02-06T07:15:01.470846">
+    <testcase name="AcceptableOpenClose" status="run" time="18.187648" timestamp="2020-02-06T07:15:10.721821"/>
+    <testcase name="EmptyFillEffect" status="run" time="10.078711" timestamp="2020-02-06T07:15:28.971822"/>
+    <testcase name="FillEffect" status="run" time="8.173385" timestamp="2020-02-06T07:15:39.112850"/>
+    <testcase name="LegMargin" status="run" time="16.203706" timestamp="2020-02-06T07:15:47.363046"/>
+    <testcase name="MixedLegs" status="run" time="19.704635" timestamp="2020-02-06T07:16:03.660496"/>
+    <testcase name="UnacceptableOpenClose" status="run" time="0.09342" timestamp="2020-02-06T07:16:23.427144"/>
+    <testsuite failures="0" name="MultilegSyntheticStrategyOrder" skipped="0" tests="5" testsuite_failed="False" time="99.754577" timestamp="2020-02-06T07:16:23.551804">
+     <testcase name="AcceptableOpenClose" status="run" time="53.220449" timestamp="2020-02-06T07:16:29.489679"/>
+     <testcase name="EmptyFillEffect" status="run" time="6.60959" timestamp="2020-02-06T07:17:22.788256"/>
+     <testcase name="FillEffect" status="run" time="11.328609" timestamp="2020-02-06T07:17:29.460340"/>
+     <testcase name="LegMargin" status="run" time="22.094677" timestamp="2020-02-06T07:17:40.866990"/>
+     <testcase name="UnacceptableOpenClose" status="run" time="0.187931" timestamp="2020-02-06T07:18:03.055285"/>
+    </testsuite>
+    <testsuite failures="0" name="WithNativeStrategyLeg" skipped="0" tests="5" testsuite_failed="False" time="74.57992" timestamp="2020-02-06T07:18:03.337281">
+     <testcase name="AcceptableOpenClose" status="run" time="39.266951" timestamp="2020-02-06T07:18:03.461535"/>
+     <testcase name="EmptyFillEffect" status="run" time="4.984878" timestamp="2020-02-06T07:18:42.791016"/>
+     <testcase name="FillEffect" status="run" time="8.407151" timestamp="2020-02-06T07:18:47.853676"/>
+     <testcase name="LegMargin" status="run" time="21.235103" timestamp="2020-02-06T07:18:56.353972"/>
+     <testcase name="UnacceptableOpenClose" status="run" time="0.140653" timestamp="2020-02-06T07:19:17.682822"/>
+    </testsuite>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="SpecType" skipped="0" tests="6" testsuite_failed="False" time="89.346822" timestamp="2020-02-06T07:19:18.104727">
+   <testsuite failures="0" name="Synthetic" skipped="0" tests="6" testsuite_failed="False" time="89.190589" timestamp="2020-02-06T07:19:18.182854">
+    <testcase name="TC22_SyntheticSpread" status="run" time="13.65616" timestamp="2020-02-06T07:19:27.324347"/>
+    <testcase name="TC23_SyntheticSpread_NativeSpreadLeg" status="run" time="29.703631" timestamp="2020-02-06T07:19:41.090417"/>
+    <testcase name="TC24_SyntheticSpread_SyntheticSpreadLeg" status="run" time="20.460875" timestamp="2020-02-06T07:20:10.880753"/>
+    <testcase name="TC25_SpecTypeMissing" status="run" time="8.265956" timestamp="2020-02-06T07:20:31.419741"/>
+    <testcase name="TC26_SpecTypeExtra" status="run" time="4.140791" timestamp="2020-02-06T07:20:39.748154"/>
+    <testcase name="TC27_SpecTypeDiffers" status="run" time="3.359103" timestamp="2020-02-06T07:20:43.952144"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

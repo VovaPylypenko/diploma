@@ -1,0 +1,66 @@
+10:51:55.47  Test starded without threads
+08:51:56.052 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AutoTradingRegulatoryAlgorithms/PythonModules' added.
+08:51:56.052 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:51:56.052 Python Module Path 'ScriptKit' added.
+08:51:56.490 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AutoTradingRegulatoryAlgorithms' filtered execution.
+08:51:56.521 Suite '.'. [0 test cases, 4 sub-suites]
+08:52:19.881 Suite 'ClientSideAlgorithmID'. [8 test cases, 0 sub-suites]
+08:52:19.991 Case 'AlgoIDAndDescriptionProvided' execution.
+08:52:23.897 Case 'AlgoIDAndDescriptionProvided' succeeded.
+08:52:23.944 Case 'ExistingAlgoDescriptionProvided' execution.
+08:52:26.319 Case 'ExistingAlgoDescriptionProvided' succeeded.
+08:52:26.381 Case 'ExternalAlgoIDProvided' execution.
+08:52:28.694 Case 'ExternalAlgoIDProvided' succeeded.
+08:52:28.757 Case 'InternalAlgoIDProvided' execution.
+08:52:30.100 Case 'InternalAlgoIDProvided' succeeded.
+08:52:30.210 Case 'MaximumAlgoIDProvided' execution.
+08:52:32.569 Case 'MaximumAlgoIDProvided' succeeded.
+08:52:32.647 Case 'NewAlgoDescriptionProvided' execution.
+08:52:35.054 Case 'NewAlgoDescriptionProvided' succeeded.
+08:52:35.132 Case 'NoAlgoProvided' execution.
+08:52:36.446 Case 'NoAlgoProvided' succeeded.
+08:52:36.522 Case 'NonAlgoCommodityExchange' execution.
+08:52:36.554 NonAlgoCommodityExchange test Part#1...
+08:52:38.851 NonAlgoCommodityExchange test Part#2...
+08:52:41.040 Case 'NonAlgoCommodityExchange' succeeded.
+08:52:41.241 Suite 'CombinedAlgorithmID'. [5 test cases, 0 sub-suites]
+08:52:41.320 Case 'CombinedAlgoOCO' execution.
+08:52:47.570 Case 'CombinedAlgoOCO' succeeded.
+08:52:47.617 Case 'CombinedAlgoOCO_TLMT' execution.
+08:52:58.289 Case 'CombinedAlgoOCO_TLMT' succeeded.
+08:52:58.367 Case 'CombinedAlgoSSP' execution.
+08:53:11.383 Case 'CombinedAlgoSSP' succeeded.
+08:53:11.446 Case 'CombinedAlgoTLMT' execution.
+08:53:23.916 Case 'CombinedAlgoTLMT' succeeded.
+08:53:23.963 Case 'CombinedAlgoTSTP' execution.
+08:53:31.385 Case 'CombinedAlgoTSTP' succeeded.
+08:53:31.528 Suite 'GWSideAlgoritrhmID'. [8 test cases, 0 sub-suites]
+08:53:31.588 Case 'GWAlgoModifiedOCO' execution.
+08:53:34.260 Case 'GWAlgoModifiedOCO' succeeded.
+08:53:34.322 Case 'GWAlgoOnNonAlgoRoute' execution.
+08:53:44.541 Case 'GWAlgoOnNonAlgoRoute' succeeded.
+08:53:44.620 Case 'GWAlgoSSP' execution.
+08:53:50.762 Case 'GWAlgoSSP' succeeded.
+08:53:50.838 Case 'GWAlgoTLMT' execution.
+08:53:56.183 Case 'GWAlgoTLMT' succeeded.
+08:53:56.276 Case 'GWAlgoTSTP' execution.
+08:54:01.651 Case 'GWAlgoTSTP' succeeded.
+08:54:01.715 Case 'GWAlgoTwoExchangeSSP' execution.
+08:54:07.620 Case 'GWAlgoTwoExchangeSSP' succeeded.
+08:54:07.683 Case 'GWAlgoTwoLegOCO' execution.
+08:54:17.621 Case 'GWAlgoTwoLegOCO' succeeded.
+08:54:17.683 Case 'GWAlgoTwoLegOPO' execution.
+08:54:20.089 Case 'GWAlgoTwoLegOPO' succeeded.
+08:54:20.230 Suite 'Misc'. [5 test cases, 0 sub-suites]
+08:54:20.324 Case 'RegulatoryAlgoInterRiskServerReplication' execution.
+08:54:34.902 Case 'RegulatoryAlgoInterRiskServerReplication' succeeded.
+08:54:34.996 Case 'RegulatoryAlgoMassCancellation' execution.
+08:54:40.481 Case 'RegulatoryAlgoMassCancellation' succeeded.
+08:54:40.543 Case 'RegulatoryAlgoOmnibusAccountHandling' execution.
+08:54:44.668 Case 'RegulatoryAlgoOmnibusAccountHandling' succeeded.
+08:54:44.747 Case 'RegulatoryAlgoOrderSuspend' execution.
+08:54:50.262 Case 'RegulatoryAlgoOrderSuspend' succeeded.
+08:54:50.340 Case 'RegulatoryAlgoScheduledOrderSuspend' execution.
+08:55:13.794 Case 'RegulatoryAlgoScheduledOrderSuspend' succeeded.
+08:55:14.544 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AutoTradingRegulatoryAlgorithms' execution finished. It took 0:03:18.023305.
+08:55:14.544 Test cases results: 26 total, 26 succeeded, 0 failed, 0 skipped.

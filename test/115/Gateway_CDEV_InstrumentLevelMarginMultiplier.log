@@ -1,0 +1,34 @@
+22:02:15.89  Test starded without threads
+20:02:16.376 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+20:02:16.376 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:02:16.376 Python Module Path 'ScriptKit' added.
+20:02:16.376 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier/PythonModules' added.
+20:02:16.783 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier' full execution.
+20:02:16.830 Suite '.'. [0 test cases, 3 sub-suites]
+20:08:33.357 Suite 'RiskModule1'. [7 test cases, 0 sub-suites]
+20:08:33.420 Case 'ILMM_disabled' execution.
+20:08:33.451 Case 'ILMM_EnablementUpdate' execution.
+20:08:33.482 Case 'ILMM_ValueUpdate' execution.
+20:08:33.498 Case 'ILMM_vs_AccountLevelMM' execution.
+20:08:33.529 Case 'ILMM_vs_ExchangeLevelMM' execution.
+20:08:33.560 Case 'OHTrader_AccountSettings' execution.
+20:08:33.702 Case 'OHTrader_TraderSettings' execution.
+20:08:34.717 Case 'ILMM_disabled' succeeded.
+20:08:34.842 Case 'ILMM_vs_ExchangeLevelMM' succeeded.
+20:08:34.857 Case 'OHTrader_AccountSettings' succeeded.
+20:08:34.857 Case 'OHTrader_TraderSettings' succeeded.
+20:08:34.857 Case 'ILMM_vs_AccountLevelMM' succeeded.
+20:09:25.687 Case 'ILMM_ValueUpdate' succeeded.
+20:09:25.703 Case 'ILMM_EnablementUpdate' succeeded.
+20:09:25.796 Suite 'RiskModulePrisma'. [3 test cases, 0 sub-suites]
+20:09:25.859 Case 'VDKCM_A1' execution.
+20:09:25.890 Case 'VDKCM_A3' execution.
+20:09:25.906 Case 'VDKCM_A1' succeeded.
+20:09:25.921 Case 'VDKCM_A6' execution.
+20:09:25.938 Case 'VDKCM_A3' succeeded.
+20:09:25.953 Case 'VDKCM_A6' succeeded.
+20:09:26.078 Suite 'RiskModuleSPAN'. [1 test cases, 0 sub-suites]
+20:09:26.140 Case 'ILMM_vs_AccountLevelMM' execution.
+20:09:26.375 Case 'ILMM_vs_AccountLevelMM' succeeded.
+20:09:27.125 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier' execution finished. It took 0:07:10.310691.
+20:09:27.125 Test cases results: 11 total, 11 succeeded, 0 failed, 0 skipped.

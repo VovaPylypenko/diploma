@@ -1,0 +1,177 @@
+ 2:14:01.90  Test starded without threads
+00:14:02.466 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier/PythonModules' added.
+00:14:02.466 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:14:02.466 Python Module Path 'ScriptKit' added.
+00:14:02.466 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+00:14:02.919 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier' full execution.
+00:14:02.935 Suite '.'. [0 test cases, 3 sub-suites]
+00:20:18.948 Suite 'RiskModule1'. [7 test cases, 0 sub-suites]
+00:20:19.011 Case 'ILMM_disabled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModule1\ILMM_disabled_tc.py", line 20, in <module>
+    currency='USD', availableMargin=50001, usedMargin=30000, totalMargin=52000, orderMargin=22000))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:19.027 Case 'ILMM_disabled' failed.
+00:20:19.027 Case 'ILMM_EnablementUpdate' execution.
+00:20:19.058 Case 'ILMM_ValueUpdate' execution.
+00:20:19.073 Case 'ILMM_vs_AccountLevelMM' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModule1\ILMM_vs_AccountLevelMM_tc.py", line 20, in <module>
+    currency='USD', availableMargin=50001, usedMargin=25000, totalMargin=51000, orderMargin=26000))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:19.089 Case 'ILMM_vs_AccountLevelMM' failed.
+00:20:19.105 Case 'ILMM_vs_ExchangeLevelMM' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModule1\ILMM_vs_ExchangeLevelMM_tc.py", line 20, in <module>
+    currency='USD', availableMargin=50001, usedMargin=2500, totalMargin=51000, orderMargin=26000))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:19.214 Case 'OHTrader_AccountSettings' execution.
+00:20:19.230 Case 'ILMM_vs_ExchangeLevelMM' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModule1\OHTrader_AccountSettings_tc.py", line 20, in <module>
+    currency='USD', availableMargin=50001, usedMargin=40000, totalMargin=52000, orderMargin=12000))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:19.308 Case 'OHTrader_AccountSettings' failed.
+00:20:19.340 Case 'OHTrader_TraderSettings' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModule1\OHTrader_TraderSettings_tc.py", line 20, in <module>
+    currency='USD', availableMargin=50001, usedMargin=25000, totalMargin=51000, orderMargin=26000))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:19.433 Case 'OHTrader_TraderSettings' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModule1\ILMM_EnablementUpdate_tc.py", line 32, in <module>
+    currency='USD', availableMargin=50001, usedMargin=25000, totalMargin=51000, orderMargin=26000))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:55.387 Case 'ILMM_EnablementUpdate' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModule1\ILMM_ValueUpdate_tc.py", line 33, in <module>
+    currency='USD', availableMargin=50001, usedMargin=25000, totalMargin=51000, orderMargin=26000))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:55.434 Case 'ILMM_ValueUpdate' failed.
+00:20:55.528 Suite 'RiskModulePrisma'. [3 test cases, 0 sub-suites]
+00:20:55.590 Case 'VDKCM_A1' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModulePrisma\VDKCM_A1_tc.py", line 10, in <module>
+    currency='EUR', availableMargin=650355, usedMargin=650354, totalMargin=679634, orderMargin=29280))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:55.590 Case 'VDKCM_A1' failed.
+00:20:55.606 Case 'VDKCM_A3' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModulePrisma\VDKCM_A3_tc.py", line 10, in <module>
+    currency='EUR', availableMargin=1574, usedMargin=675, totalMargin=1576, orderMargin=901))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:55.622 Case 'VDKCM_A3' failed.
+00:20:55.637 Case 'VDKCM_A6' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModulePrisma\VDKCM_A6_tc.py", line 10, in <module>
+    currency='EUR', availableMargin=28730, usedMargin=28728, totalMargin=31582, orderMargin=2855))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:55.653 Case 'VDKCM_A6' failed.
+00:20:55.793 Suite 'RiskModuleSPAN'. [1 test cases, 0 sub-suites]
+00:20:55.840 Case 'ILMM_vs_AccountLevelMM' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier\RiskModuleSPAN\ILMM_vs_AccountLevelMM_tc.py", line 21, in <module>
+    currency='USD', availableMargin=19800, usedMargin=11100, totalMargin=21100, orderMargin=10000))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:20:55.856 Case 'ILMM_vs_AccountLevelMM' failed.
+00:20:56.716 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/InstrumentLevelMarginMultiplier' execution finished. It took 0:06:53.764954.
+00:20:56.716 Test cases results: 11 total, 0 succeeded, 11 failed, 0 skipped.

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="13" testsuite_failed="False" time="17.968731" timestamp="2020-02-19T18:28:20.828597">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LMERiskManagement"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="LMERiskManagement" skipped="0" tests="13" testsuite_failed="False" time="17.968731" timestamp="2020-02-19T18:28:20.828597">
+  <testcase name="001_RejectNoLMEExchange" status="run" time="0.04689" timestamp="2020-02-19T18:28:33.093959"/>
+  <testcase name="002_RejectNoLMEAccount" status="run" time="0.014416" timestamp="2020-02-19T18:28:33.188920"/>
+  <testcase name="003_HappyPath" status="run" time="0.062518" timestamp="2020-02-19T18:28:33.250215"/>
+  <testcase name="004_Reject" status="run" time="0.031702" timestamp="2020-02-19T18:28:33.359595"/>
+  <testcase name="005_RejectExcluded" status="run" time="0.031138" timestamp="2020-02-19T18:28:33.437852"/>
+  <testcase name="007_NoStalePrice" status="run" time="0.062478" timestamp="2020-02-19T18:28:33.515880"/>
+  <testcase name="008_Reference" status="run" time="0.14063" timestamp="2020-02-19T18:28:33.609603"/>
+  <testcase name="009_ReferenceHasNoTradePrice" status="run" time="0.046419" timestamp="2020-02-19T18:28:33.797636"/>
+  <testcase name="010_ReferenceHasNoSettlement" status="run" time="0.078169" timestamp="2020-02-19T18:28:33.906489"/>
+  <testcase name="011_NoReference" status="run" time="0.077723" timestamp="2020-02-19T18:28:34.016277"/>
+  <testcase name="012_NegativeOTE" status="run" time="0.062506" timestamp="2020-02-19T18:28:34.140871"/>
+  <testcase name="014_NoOTE" status="run" time="0.15735" timestamp="2020-02-19T18:28:34.250786"/>
+  <testcase name="022_RejectRiskyMarket" status="run" time="0.031802" timestamp="2020-02-19T18:28:34.453801"/>
+ </testsuite>
+</testsuites>

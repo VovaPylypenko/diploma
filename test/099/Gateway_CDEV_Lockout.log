@@ -1,0 +1,71 @@
+ 6:36:03.28  Test starded without threads
+04:36:03.865 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/PythonModules' not found. Ignored.
+04:36:03.865 Python Module Path 'Scripts/Gateway/PythonModules' added.
+04:36:03.865 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites/FlexibleAuthentication/PythonModules' added.
+04:36:03.865 Python Module Path 'ScriptKit' added.
+04:36:03.865 Python Module Path '../cqgcommon/Proto/CMS/classes/python' not found. Ignored.
+04:36:04.615 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites' filtered execution.
+04:36:04.631 Suite '.'. [0 test cases, 1 sub-suites]
+04:36:06.537 Suite 'Lockout'. [3 test cases, 5 sub-suites]
+04:36:08.506 Case '01_ICForceLogoffOnASNotify' execution.
+04:36:08.537 Case 'InvalidCASTAuthKey' execution.
+04:36:08.553 Case 'LimitSessionCntPerLocation' execution.
+04:37:15.930 Case 'LimitSessionCntPerLocation' succeeded.
+04:37:18.165 Case 'InvalidCASTAuthKey' succeeded.
+04:37:20.384 Case '01_ICForceLogoffOnASNotify' succeeded.
+04:37:20.431 Suite 'Lockout\02_SelectingASInstance_ts.py'. [1 test cases, 0 sub-suites]
+04:37:20.493 Case 'SelectingASInstance' execution.
+04:42:50.692 Case 'SelectingASInstance' succeeded.
+04:42:50.802 Suite 'Lockout\03_LogonToGWKicksIC_ts.py'. [8 test cases, 0 sub-suites]
+04:42:54.912 Case 'Params1' execution.
+* trader=SF_Lockout_Trader1, id=60001; PL=cqg; CAT=CQGWEBCLIENT; tradersOff=[60001, 60002, 60003, 60004]
+04:42:54.943 Case 'Params2' execution.
+* trader=SF_Lockout_Trader2_1, id=60012; PL=cqg; CAT=CQGWEBCLIENT; tradersOff=[60012, 60013, 60014]
+04:42:54.974 Case 'Params3' execution.
+* trader=SF_Lockout_Trader3_2, id=60023; PL=cqg; CAT=CQGWEBCLIENT; tradersOff=[60023, 60024]
+04:42:55.005 Case 'Params4' execution.
+* trader=SF_Lockout_Trader4_3, id=60034; PL=cqg; CAT=CQGWEBCLIENT; tradersOff=[60034]
+04:42:55.036 Case 'Params5' execution.
+* trader=SF_Lockout_Trader5_4, id=60045; PL=cqg; CAT=CQGWEBCLIENT; tradersOff=[]
+04:42:55.068 Case 'Params6' execution.
+* trader=SF_Lockout_Trader1_5, id=60051; PL=SF_Lockout_PL; CAT=CQGWEBCLIENT; tradersOff=[]
+04:42:55.099 Case 'Params7' execution.
+* trader=SF_Lockout_Trader1_6, id=60061; PL=cqg; CAT=CQGFW; tradersOff=[]
+04:42:55.130 Case 'Params8' execution.
+* trader=SF_Lockout_Trader1_7, id=60071; PL=cqg; CAT=FIXCLIENT; tradersOff=[]
+04:43:28.053 Case 'Params5' succeeded.
+04:43:28.069 Case 'Params6' succeeded.
+04:43:28.178 Case 'Params7' succeeded.
+04:43:28.178 Case 'Params8' succeeded.
+04:43:28.600 Case 'Params2' succeeded.
+04:43:28.850 Case 'Params3' succeeded.
+04:43:28.913 Case 'Params4' succeeded.
+04:43:30.850 Case 'Params1' succeeded.
+04:43:31.163 Suite 'Lockout\ASNotificationOnMobileLogin_ts.py'. [1 test cases, 0 sub-suites]
+04:43:31.241 Case 'ASNotificationOnMofileLogin' execution.
+04:43:36.897 Case 'ASNotificationOnMofileLogin' succeeded.
+04:43:37.038 Suite 'Lockout\ICLogonKicksGWSessions_ts.py'. [5 test cases, 0 sub-suites]
+04:43:37.085 Case 'Params1' execution.
+* SystemID = 60001; ExpectedForcedLogoff ids = [(1, 1), (2, 1)]
+04:43:37.116 Case 'Params2' execution.
+* SystemID = 60012; ExpectedForcedLogoff ids = [(1, 1), (1, 2), (2, 1), (2, 2)]
+04:43:37.163 Case 'Params3' execution.
+* SystemID = 60023; ExpectedForcedLogoff ids = []
+04:43:37.194 Case 'Params4' execution.
+* SystemID = 60034; ExpectedForcedLogoff ids = []
+04:43:37.225 Case 'Params5' execution.
+* SystemID = 60045; ExpectedForcedLogoff ids = []
+04:46:06.434 Case 'Params1' succeeded.
+04:46:06.449 Case 'Params4' succeeded.
+04:46:06.527 Case 'Params3' succeeded.
+04:46:06.652 Case 'Params5' succeeded.
+04:46:11.090 Case 'Params2' succeeded.
+04:46:11.371 Suite 'Lockout\NumSessionsPerIP_Parameter_ts.py'. [3 test cases, 0 sub-suites]
+04:46:11.434 Case 'Steps_1_to_2' execution.
+04:46:11.481 Case 'Steps_3_to_6' execution.
+04:46:11.512 Case 'Steps_7_to_10' execution.
+04:47:19.030 Case 'Steps_1_to_2' succeeded.
+04:49:21.221 Case 'Steps_3_to_6' succeeded.
+04:49:22.268 Case 'Steps_7_to_10' succeeded.
+04:49:22.674 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites' execution finished. It took 0:13:18.012254.
+04:49:22.674 Test cases results: 21 total, 21 succeeded, 0 failed, 0 skipped.

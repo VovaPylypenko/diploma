@@ -1,0 +1,50 @@
+ 9:51:42.37  Test starded without threads
+07:51:42.858 Python Module Path 'Scripts/Gateway/PythonModules' added.
+07:51:42.858 Python Module Path 'ScriptKit' added.
+07:51:42.874 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+07:51:43.264 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/OrderHandlerTraderExtensions' full execution.
+07:51:43.295 Suite '.'. [21 test cases, 0 sub-suites]
+07:52:00.343 Case 'AcctPL_CommodityMultLess' execution.
+07:52:00.608 Case 'AcctPL_CommodityMultLess' succeeded.
+07:52:00.671 Case 'AcctPL_CommodityMultMore' execution.
+07:52:00.827 Case 'AcctPL_CommodityMultMore' succeeded.
+07:52:00.890 Case 'AcctPL_ContractMultLess' execution.
+07:52:01.078 Case 'AcctPL_ContractMultLess' succeeded.
+07:52:01.140 Case 'AcctPL_ContractMultMore' execution.
+07:52:01.327 Case 'AcctPL_ContractMultMore' succeeded.
+07:52:01.390 Case 'CommodityPL_CommodityMultLess' execution.
+07:52:01.624 Case 'CommodityPL_CommodityMultLess' succeeded.
+07:52:01.687 Case 'CommodityPL_CommodityMultMore' execution.
+07:52:01.999 Case 'CommodityPL_CommodityMultMore' succeeded.
+07:52:02.062 Case 'CommodityPL_ContractMultLess' execution.
+07:52:02.421 Case 'CommodityPL_ContractMultLess' succeeded.
+07:52:02.483 Case 'CommodityPL_ContractMultMore' execution.
+07:52:02.733 Case 'CommodityPL_ContractMultMore' succeeded.
+07:52:02.827 Case 'CommodityPL_InstrumentMultLess' execution.
+07:52:03.202 Case 'CommodityPL_InstrumentMultLess' succeeded.
+07:52:03.265 Case 'CommodityPL_InstrumentMultMore' execution.
+07:52:03.609 Case 'CommodityPL_InstrumentMultMore' succeeded.
+07:52:03.672 Case 'ExchangePL_AcctChecksOff' execution.
+07:52:04.030 Case 'ExchangePL_AcctChecksOff' succeeded.
+07:52:04.077 Case 'ExchangePL_CommodityMultLess' execution.
+07:52:04.374 Case 'ExchangePL_CommodityMultLess' succeeded.
+07:52:04.421 Case 'ExchangePL_CommodityMultMore' execution.
+07:52:04.671 Case 'ExchangePL_CommodityMultMore' succeeded.
+07:52:04.718 Case 'ExchangePL_ContractMultLess' execution.
+07:52:04.984 Case 'ExchangePL_ContractMultLess' succeeded.
+07:52:05.046 Case 'ExchangePL_ContractMultMore' execution.
+07:52:05.249 Case 'ExchangePL_ContractMultMore' succeeded.
+07:52:05.359 Case 'ExchangePL_InstrumentMultLess' execution.
+07:52:05.687 Case 'ExchangePL_InstrumentMultLess' succeeded.
+07:52:05.749 Case 'ExchangePL_InstrumentMultMore' execution.
+07:52:06.124 Case 'ExchangePL_InstrumentMultMore' succeeded.
+07:52:06.187 Case 'LiquidationOnly_Enforce_No' execution.
+07:52:06.359 Case 'LiquidationOnly_Enforce_No' succeeded.
+07:52:06.421 Case 'LiquidationOnly_Enforce_Yes' execution.
+07:52:06.530 Case 'LiquidationOnly_Enforce_Yes' succeeded.
+07:52:06.593 Case 'LiquidationOnly_UseAccount_No' execution.
+07:52:06.984 Case 'LiquidationOnly_UseAccount_No' succeeded.
+07:52:07.046 Case 'LiquidationOnly_UseAccount_Yes' execution.
+07:52:07.156 Case 'LiquidationOnly_UseAccount_Yes' succeeded.
+07:52:07.452 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/OrderHandlerTraderExtensions' execution finished. It took 0:00:24.172685.
+07:52:07.452 Test cases results: 21 total, 21 succeeded, 0 failed, 0 skipped.

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="11" testsuite_failed="False" time="243.869318" timestamp="2020-02-19T18:24:15.599291">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="GWLocationFailover" skipped="0" tests="11" testsuite_failed="False" time="243.869318" timestamp="2020-02-19T18:24:15.599291">
+  <testsuite failures="0" name="SmokeTests" skipped="0" tests="11" testsuite_failed="False" time="240.462229" timestamp="2020-02-19T18:24:18.928122">
+   <testcase name="CASTSmokeTest" status="run" time="14.265958" timestamp="2020-02-19T18:24:19.005834"/>
+   <testcase name="FixMsgSeqNumSmokeTest" status="run" time="19.250703" timestamp="2020-02-19T18:24:33.303031"/>
+   <testcase name="LimitOrdersFixClientSmokeTest" status="run" time="13.141117" timestamp="2020-02-19T18:24:52.600616"/>
+   <testcase name="LimitOrdersNativeClientSmokeTest" status="run" time="11.125437" timestamp="2020-02-19T18:25:05.788583"/>
+   <testcase name="MarketOrdersFixClientSmokeTest" status="run" time="10.109783" timestamp="2020-02-19T18:25:16.960836"/>
+   <testcase name="MarketOrdersNativeClientSmokeTest" status="run" time="9.096545" timestamp="2020-02-19T18:25:27.117478"/>
+   <testcase name="Monitor2SmokeTest" status="run" time="58.642722" timestamp="2020-02-19T18:25:36.258429"/>
+   <testcase name="NetPositionsSmokeTest" status="run" time="9.094075" timestamp="2020-02-19T18:26:34.963634"/>
+   <testcase name="QueryManagerSmokeTest" status="run" time="17.235011" timestamp="2020-02-19T18:26:44.104564"/>
+   <testcase name="RouteOrderIDSmokeTest" status="run" time="50.612251" timestamp="2020-02-19T18:27:01.402140"/>
+   <testcase name="SOMSmokeTest" status="run" time="27.313468" timestamp="2020-02-19T18:27:52.045641"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,26 @@
+22:25:54.87  Test starded without threads
+20:25:55.501 Python Module Path 'ScriptKit' added.
+20:25:55.501 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:25:55.501 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+20:25:55.501 Python Module Path 'ScriptKit/TroubleMaker' added.
+20:25:56.111 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/PlacingOrdersIntoAnyAccount' filtered execution.
+20:25:56.142 Suite '.'. [0 test cases, 1 sub-suites]
+20:26:06.345 Suite 'Synthetic'. [0 test cases, 2 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/PlacingOrdersIntoAnyAccount\Synthetic\test_suite_su.py", line 19, in <module>
+    generator.Open()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\IHEGenerator.py", line 44, in Open
+    self.__generator.Open(self.__name)
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\ModuleAgent.py", line 8898, in Open
+    return _ModuleAgent.IIHEGenerator_Open(self, name)
+RuntimeError: Failed to resolve interface  (from Interface): interface not found.
+Available interfaces:
+name=\DEVICE\TCPIP_{CFF7A875-51FB-48C1-9B78-ABA35ACC4BDF}, ip=172.26.65.55, network=172.26.65.0, up=1
+name=\DEVICE\TCPIP_{1F777394-0B42-11E3-80AD-806E6F6E6963}, ip=127.0.0.1, network=127.0.0.0, up=1
+
+
+20:26:06.502 Suite 'Synthetic' setup failed, child test cases and sub-suites will be skipped.
+20:26:07.564 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/PlacingOrdersIntoAnyAccount' execution finished. It took 0:00:11.422267.
+20:26:07.564 Test cases results: 3 total, 0 succeeded, 0 failed, 3 skipped.

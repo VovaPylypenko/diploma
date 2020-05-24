@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="47" testsuite_failed="False" time="725.180349" timestamp="2020-02-06T05:36:12.017416">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/QO/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="20"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/DataQueries/QO"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="QO" skipped="0" tests="47" testsuite_failed="False" time="725.180349" timestamp="2020-02-06T05:36:12.017416">
+  <testcase name="SortingAndFiltering" status="run" time="3.59393" timestamp="2020-02-06T05:36:40.971500"/>
+  <testsuite failures="0" name="CQM_Unavailable" skipped="0" tests="1" testsuite_failed="False" time="75.346709" timestamp="2020-02-06T05:36:44.596665">
+   <testcase name="CQM_Restart" status="run" time="73.049351" timestamp="2020-02-06T05:36:46.456117"/>
+  </testsuite>
+  <testsuite failures="0" name="Filtering" skipped="0" tests="21" testsuite_failed="False" time="541.923981" timestamp="2020-02-06T05:37:59.974238">
+   <testcase name="By_ACCTID" status="run" time="300.870424" timestamp="2020-02-06T05:38:00.083624"/>
+   <testcase name="By_BDRANGE" status="run" time="351.807991" timestamp="2020-02-06T05:38:00.114875"/>
+   <testcase name="By_BDTOCUR" status="run" time="25.985195" timestamp="2020-02-06T05:38:00.161751"/>
+   <testcase name="By_UATTR" status="run" time="341.323289" timestamp="2020-02-06T05:38:00.208630"/>
+   <testcase name="By_SYMBOL" status="run" time="235.663469" timestamp="2020-02-06T05:38:00.255487"/>
+   <testcase name="By_stix" status="run" time="16.953677" timestamp="2020-02-06T05:38:00.302378"/>
+   <testcase name="By_endix" status="run" time="21.92255" timestamp="2020-02-06T05:38:00.349262"/>
+   <testcase name="By_fromdate" status="run" time="311.181571" timestamp="2020-02-06T05:38:00.396128"/>
+   <testcase name="By_todate" status="run" time="349.277409" timestamp="2020-02-06T05:38:00.443013"/>
+   <testcase name="By_traderid" status="run" time="354.198692" timestamp="2020-02-06T05:38:00.489887"/>
+   <testcase name="By_guid" status="run" time="234.55407" timestamp="2020-02-06T05:38:00.536749"/>
+   <testcase name="By_orderid" status="run" time="238.819826" timestamp="2020-02-06T05:38:00.599245"/>
+   <testcase name="By_uename" status="run" time="303.837599" timestamp="2020-02-06T05:38:00.771137"/>
+   <testcase name="By_side" status="run" time="315.369228" timestamp="2020-02-06T05:38:00.802397"/>
+   <testcase name="By_otype_market" status="run" time="452.811508" timestamp="2020-02-06T05:38:00.849277"/>
+   <testcase name="By_otype_limit" status="run" time="463.015018" timestamp="2020-02-06T05:38:00.896154"/>
+   <testcase name="By_otype_stop" status="run" time="454.404858" timestamp="2020-02-06T05:38:00.943488"/>
+   <testcase name="By_otype_stop_limit" status="run" time="446.389413" timestamp="2020-02-06T05:38:01.021158"/>
+   <testcase name="By_transid" status="run" time="263.007211" timestamp="2020-02-06T05:38:01.068856"/>
+   <testcase name="By_algo_strategy" status="run" time="122.659975" timestamp="2020-02-06T05:38:01.130577"/>
+   <testcase name="By_ostat" status="run" time="524.501533" timestamp="2020-02-06T05:38:17.318559"/>
+  </testsuite>
+  <testsuite failures="0" name="LQM_Unavailable" skipped="0" tests="8" testsuite_failed="False" time="50.127327" timestamp="2020-02-06T05:47:01.929478">
+   <testcase name="By_ACCTID" status="run" time="19.719397" timestamp="2020-02-06T05:47:17.601930"/>
+   <testcase name="By_SYMBOL" status="run" time="21.500742" timestamp="2020-02-06T05:47:17.648779"/>
+   <testcase name="By_traderid" status="run" time="30.391684" timestamp="2020-02-06T05:47:17.711276"/>
+   <testcase name="By_orderid" status="run" time="7.578047" timestamp="2020-02-06T05:47:17.758491"/>
+   <testcase name="By_uename" status="run" time="13.969133" timestamp="2020-02-06T05:47:17.805163"/>
+   <testcase name="By_side" status="run" time="15.297414" timestamp="2020-02-06T05:47:17.851896"/>
+   <testcase name="By_transid" status="run" time="11.562888000000001" timestamp="2020-02-06T05:47:17.898785"/>
+   <testcase name="By_ostat" status="run" time="29.126037" timestamp="2020-02-06T05:47:17.961267"/>
+  </testsuite>
+  <testsuite failures="0" name="Sorting" skipped="0" tests="16" testsuite_failed="False" time="24.141466" timestamp="2020-02-06T05:47:52.087474">
+   <testcase name="By_PLACETIME" status="run" time="20.078969" timestamp="2020-02-06T05:47:52.212465"/>
+   <testcase name="By_ACCT" status="run" time="21.406982" timestamp="2020-02-06T05:47:52.228227"/>
+   <testcase name="By_TRADER" status="run" time="19.95327" timestamp="2020-02-06T05:47:52.275524"/>
+   <testcase name="By_CQGID" status="run" time="22.438298" timestamp="2020-02-06T05:47:52.353087"/>
+   <testcase name="By_SYM" status="run" time="20.531047" timestamp="2020-02-06T05:47:52.400898"/>
+   <testcase name="By_STAT" status="run" time="23.485195" timestamp="2020-02-06T05:47:52.462490"/>
+   <testcase name="By_TYPE" status="run" time="21.563319" timestamp="2020-02-06T05:47:52.524990"/>
+   <testcase name="By_SIDE" status="run" time="21.391366" timestamp="2020-02-06T05:47:52.556240"/>
+   <testcase name="By_SZ" status="run" time="20.751813" timestamp="2020-02-06T05:47:52.603114"/>
+   <testcase name="By_PRICE" status="run" time="22.875928000000002" timestamp="2020-02-06T05:47:52.665604"/>
+   <testcase name="By_FILLTIME" status="run" time="23.301471" timestamp="2020-02-06T05:47:52.712490"/>
+   <testcase name="By_CHECKED" status="run" time="23.157875" timestamp="2020-02-06T05:47:52.743731"/>
+   <testcase name="By_UATTR" status="run" time="22.141421" timestamp="2020-02-06T05:47:52.790619"/>
+   <testcase name="By_DUR" status="run" time="22.95399" timestamp="2020-02-06T05:47:52.837493"/>
+   <testcase name="By_CANCELTIME" status="run" time="23.23519" timestamp="2020-02-06T05:47:52.900000"/>
+   <testcase name="By_ALGOSTRATEGY" status="run" time="14.312986" timestamp="2020-02-06T05:47:52.946879"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

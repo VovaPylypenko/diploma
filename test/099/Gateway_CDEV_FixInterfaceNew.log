@@ -1,0 +1,441 @@
+ 7:02:06.46  Test starded without threads
+05:02:07.026 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites/PythonModules' added.
+05:02:07.026 Python Module Path 'Scripts/Gateway/PythonModules' added.
+05:02:07.026 Python Module Path 'ScriptKit' added.
+05:02:07.839 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites' filtered execution.
+05:02:07.917 Suite '.'. [0 test cases, 31 sub-suites]
+05:02:14.073 Suite 'AlgoExecLimits'. [1 test cases, 0 sub-suites]
+05:02:16.292 Case '11_FixTest' execution.
+05:04:16.923 Case '11_FixTest' succeeded.
+05:04:18.468 Suite 'AlgoGrouping'. [1 test cases, 0 sub-suites]
+05:04:22.690 Case '08_FixTest' execution.
+05:04:22.968 Case '08_FixTest' succeeded.
+05:04:25.812 Suite 'BloombergStrategyMapping'. [3 test cases, 0 sub-suites]
+05:04:28.078 Case 'LegMapping' execution.
+05:04:28.125 Case 'SymbolAndLegMapping' execution.
+05:04:28.236 Case 'WrongSymbol' execution.
+05:04:28.406 Case 'LegMapping' succeeded.
+05:04:28.485 Case 'SymbolAndLegMapping' succeeded.
+05:04:28.593 Case 'WrongSymbol' succeeded.
+05:04:30.140 Suite 'ChildOrders'. [3 test cases, 0 sub-suites]
+05:04:36.969 Case 'OrderDTDEvents' execution.
+05:04:37.031 Case 'PlaceModifyCancel' execution.
+05:04:37.096 Case 'RiskCalculation' execution.
+05:04:37.359 Case 'PlaceModifyCancel' succeeded.
+05:05:00.313 Case 'OrderDTDEvents' succeeded.
+05:05:02.204 Case 'RiskCalculation' succeeded.
+05:05:19.829 Suite 'ClientExtras'. [1 test cases, 0 sub-suites]
+05:05:24.111 Case 'IsDirectOnBehalfOfSubID_and_SendSenderSubIDToExchange' execution.
+05:05:24.580 Case 'IsDirectOnBehalfOfSubID_and_SendSenderSubIDToExchange' succeeded.
+05:05:26.126 Suite 'CollateralReport'. [1 test cases, 0 sub-suites]
+05:05:28.330 Case 'RealizedProfitLoss' execution.
+05:05:35.580 Case 'RealizedProfitLoss' succeeded.
+05:05:37.455 Suite 'CombinationOfAdjusters'. [4 test cases, 0 sub-suites]
+05:05:43.705 Case 'AlwaysRejectWithExecutionReportDisabled' execution.
+05:05:43.799 Case 'AlwaysRejectWithExecutionReportEnabled' execution.
+05:05:43.893 Case 'MultilegOrder' execution.
+05:05:43.987 Case 'SingleOrder' execution.
+05:05:44.002 Case 'AlwaysRejectWithExecutionReportDisabled' succeeded.
+05:05:44.189 Case 'AlwaysRejectWithExecutionReportEnabled' succeeded.
+05:05:44.408 Case 'SingleOrder' succeeded.
+05:05:44.471 Case 'MultilegOrder' succeeded.
+05:05:49.830 Suite 'ContractSearch'. [1 test cases, 0 sub-suites]
+05:05:53.409 Case 'ContractIdStyleFture' execution.
+05:05:53.644 Case 'ContractIdStyleFture' succeeded.
+05:05:55.159 Suite 'DiscretionaryOrderPlacement'. [3 test cases, 0 sub-suites]
+05:05:59.362 Case '01_ModifyCancel' execution.
+05:05:59.424 Case '02_TraderNotEnabled' execution.
+05:05:59.487 Case '03_Rejections' execution.
+05:05:59.549 Case '02_TraderNotEnabled' succeeded.
+05:05:59.987 Case '01_ModifyCancel' succeeded.
+05:06:02.878 Case '03_Rejections' succeeded.
+05:06:07.550 Suite 'Envchange'. [1 test cases, 0 sub-suites]
+05:06:09.893 Case 'Envchange' execution.
+05:06:53.989 Case 'Envchange' succeeded.
+05:06:55.442 Suite 'ErisDigital'. [1 test cases, 0 sub-suites]
+05:06:57.629 Case '11_ModifyCancel' execution.
+05:06:57.964 Case '11_ModifyCancel' succeeded.
+05:06:59.770 Suite 'ExecutionReport'. [6 test cases, 1 sub-suites]
+05:07:04.020 Case 'AutomaticMultilegOrder' execution.
+05:07:04.098 Case 'AutomaticOrder' execution.
+05:07:04.176 Case 'FillCorrection' execution.
+05:07:04.255 Case 'FutSettDate' execution.
+05:07:04.348 Case 'RejectAndCommentInTextTag' execution.
+05:07:04.442 Case 'RejectAndCommentInTextTag' succeeded.
+05:07:04.458 Case 'SuspendedOrderReplace' execution.
+05:07:04.645 Case 'AutomaticMultilegOrder' succeeded.
+05:07:04.739 Case 'AutomaticOrder' succeeded.
+05:07:04.911 Case 'SuspendedOrderReplace' succeeded.
+05:07:09.802 Case 'FillCorrection' succeeded.
+05:07:12.427 Case 'FutSettDate' succeeded.
+05:07:12.583 Suite 'ExecutionReport\AggressorIndicator_ts.py'. [4 test cases, 0 sub-suites]
+05:07:12.724 Case 'FullFill' execution.
+05:07:12.802 Case 'PartialFill' execution.
+05:07:12.897 Case 'NativeStrategyFullFill' execution.
+05:07:12.974 Case 'NativeStrategyPartialFill' execution.
+05:07:13.208 Case 'PartialFill' succeeded.
+05:07:13.412 Case 'FullFill' succeeded.
+05:07:14.161 Case 'NativeStrategyPartialFill' succeeded.
+05:07:14.442 Case 'NativeStrategyFullFill' succeeded.
+05:07:19.193 Suite 'ExecutionSourceCode'. [1 test cases, 0 sub-suites]
+05:07:21.364 Case 'Fix_SimpleOrder' execution.
+05:07:24.755 Case 'Fix_SimpleOrder' succeeded.
+05:07:26.505 Suite 'ForceCareOrderEnhancements'. [0 test cases, 2 sub-suites]
+05:07:49.693 Suite 'ForceCareOrderEnhancements\AutomatedCare'. [3 test cases, 0 sub-suites]
+05:07:49.834 Case '02_TwoAcctOneOrder' execution.
+05:07:49.912 Case '04_TwoAcctTwoOrders' execution.
+05:07:50.022 Case '05_TwoAcctTwoOrdersRejections' execution.
+05:07:51.990 Case '05_TwoAcctTwoOrdersRejections' succeeded.
+05:07:56.803 Case '02_TwoAcctOneOrder' succeeded.
+05:08:03.897 Case '04_TwoAcctTwoOrders' succeeded.
+05:08:04.163 Suite 'ForceCareOrderEnhancements\AutomatedParkRisk'. [5 test cases, 0 sub-suites]
+05:08:04.350 Case '01_CPLandTML' execution.
+05:08:04.428 Case '03_OrderHandler_Liq' execution.
+05:08:04.522 Case '04_OrderHandler_CommPL' execution.
+05:08:04.632 Case '05_OrderHandler_ContrPL' execution.
+05:08:04.725 Case '06_CPLandTML_NoForceCare' execution.
+05:08:04.928 Case '04_OrderHandler_CommPL' succeeded.
+05:08:05.056 Case '03_OrderHandler_Liq' succeeded.
+05:08:05.194 Case '05_OrderHandler_ContrPL' succeeded.
+05:08:05.335 Case '01_CPLandTML' succeeded.
+05:08:05.475 Case '06_CPLandTML_NoForceCare' succeeded.
+05:08:18.523 Suite 'HeartBeat'. [1 test cases, 0 sub-suites]
+05:08:19.648 Case 'HeartBeatInterval' execution.
+05:09:49.994 Case 'HeartBeatInterval' succeeded.
+05:09:51.635 Suite 'Logon'. [1 test cases, 0 sub-suites]
+05:09:51.854 Case 'MissingSenderSubID' execution.
+05:09:52.041 Case 'MissingSenderSubID' succeeded.
+05:09:52.416 Suite 'ManualTestAutomation'. [2 test cases, 0 sub-suites]
+05:09:58.682 Case '13_InstrumentTagAdjuster' execution.
+05:09:58.760 Case '2_General' execution.
+05:09:59.401 Case '2_General' succeeded.
+05:10:09.479 Case '13_InstrumentTagAdjuster' succeeded.
+05:10:14.932 Suite 'MessageHeader'. [6 test cases, 0 sub-suites]
+05:10:15.136 Case 'SendLogonNewOrderSingleWithIncorrectMsgType' execution.
+05:10:15.214 Case 'SendLogonNewOrderSingleWithMissingMsgType' execution.
+05:10:15.292 Case 'SendLogonRequestForPositionWithIncorrectMsgType' execution.
+05:10:15.386 Case 'SendLogonWithIncorrectMsgType' execution.
+05:10:15.464 Case 'SendLogonWithMissingMsgType' execution.
+05:10:15.557 Case 'SendLogonWithMissingTargetCompID' execution.
+05:10:18.354 Case 'SendLogonNewOrderSingleWithIncorrectMsgType' succeeded.
+05:10:18.511 Case 'SendLogonRequestForPositionWithIncorrectMsgType' succeeded.
+05:10:58.668 Case 'SendLogonWithMissingMsgType' succeeded.
+05:10:58.700 Case 'SendLogonWithIncorrectMsgType' succeeded.
+05:10:58.762 Case 'SendLogonWithMissingTargetCompID' succeeded.
+05:11:01.762 Case 'SendLogonNewOrderSingleWithMissingMsgType' succeeded.
+05:11:02.121 Suite 'NewOrderMultileg'. [0 test cases, 3 sub-suites]
+05:11:02.325 Suite 'NewOrderMultileg\OrderSpecs'. [17 test cases, 0 sub-suites]
+05:11:04.546 Case 'AON' execution.
+05:11:04.640 Case 'AON' succeeded.
+05:11:04.640 Case 'Day' execution.
+05:11:04.731 Case 'FOK' execution.
+05:11:04.825 Case 'Funari' execution.
+05:11:04.919 Case 'Day' succeeded.
+05:11:04.919 Case 'GTC' execution.
+05:11:04.981 Case 'Funari' succeeded.
+05:11:05.031 Case 'FOK' succeeded.
+05:11:05.031 Case 'GTD' execution.
+05:11:05.106 Case 'Iceberg' execution.
+05:11:05.200 Case 'IOC' execution.
+05:11:05.293 Case 'GTC' succeeded.
+05:11:05.293 Case 'Limit' execution.
+05:11:05.372 Case 'Market' execution.
+05:11:05.453 Case 'GTD' succeeded.
+05:11:05.465 Case 'MIT' execution.
+05:11:05.544 Case 'Iceberg' succeeded.
+05:11:05.668 Case 'IOC' succeeded.
+05:11:05.700 Case 'ML' execution.
+05:11:05.715 Case 'MIT' succeeded.
+05:11:05.747 Case 'QTS' execution.
+05:11:05.840 Case 'ML' succeeded.
+05:11:05.856 Case 'StopLimitTrail' execution.
+05:11:05.934 Case 'Market' succeeded.
+05:11:05.965 Case 'Limit' succeeded.
+05:11:06.059 Case 'StopLimit' execution.
+05:11:06.139 Case 'StopTrail' execution.
+05:11:06.231 Case 'Stop' execution.
+05:11:06.372 Case 'StopLimit' succeeded.
+05:11:06.434 Case 'Stop' succeeded.
+05:11:10.887 Case 'QTS' succeeded.
+05:11:11.028 Case 'StopLimitTrail' succeeded.
+05:11:11.263 Case 'StopTrail' succeeded.
+05:11:12.717 Suite 'NewOrderMultileg\TagsVerification'. [17 test cases, 0 sub-suites]
+05:11:53.670 Case 'DayWithExpireTag' execution.
+05:11:53.732 Case 'ExtraTag' execution.
+05:11:53.811 Case 'ExtraTag' succeeded.
+05:11:53.828 Case 'MissingAccountTag' execution.
+05:11:53.842 Case 'DayWithExpireTag' succeeded.
+05:11:53.904 Case 'MissingAccountTag' succeeded.
+05:11:53.904 Case 'MissingClOrdIDTag' execution.
+05:11:53.983 Case 'MissingClOrdIDTag' succeeded.
+05:11:53.998 Case 'MissingGTDExpireTag' execution.
+05:11:54.076 Case 'MissingGTDExpireTag' succeeded.
+05:11:54.107 Case 'MissingICBRGMaxShowTag' execution.
+05:11:54.248 Case 'MissingICBRGMaxShowTag' succeeded.
+05:11:54.295 Case 'MissingLegRatioQtyTag' execution.
+05:11:54.342 Case 'MissingLegRefIDTag' execution.
+05:11:54.420 Case 'MissingLegRatioQtyTag' succeeded.
+05:11:54.420 Case 'MissingLegRefIDTag' succeeded.
+05:11:54.467 Case 'MissingLegSideTag' execution.
+05:11:54.498 Case 'MissingLimitPriceTag' execution.
+05:11:54.608 Case 'MissingLegSideTag' succeeded.
+05:11:54.608 Case 'MissingLimitPriceTag' succeeded.
+05:11:54.623 Case 'MissingQTSTriggerQtyTag' execution.
+05:11:54.717 Case 'MissingQTSTriggerQtyTag' succeeded.
+05:11:54.717 Case 'MissingSideTag' execution.
+05:11:54.795 Case 'MissingSideTag' succeeded.
+05:11:54.795 Case 'MissingStopLimitPriceTag' execution.
+05:11:54.889 Case 'MissingStopLimitPriceTag' succeeded.
+05:11:54.967 Case 'MissingStopLimitPxTag' execution.
+05:11:55.077 Case 'MissingStopLimitPxTag' succeeded.
+05:11:55.092 Case 'MissingStopPxTag' execution.
+05:11:55.154 Case 'MissingStopPxTag' succeeded.
+05:11:55.186 Case 'NonICBRGWithMaxShowTag' execution.
+05:11:55.279 Case 'NonICBRGWithMaxShowTag' succeeded.
+05:11:55.389 Case 'NonQTSWithTriggerQty' execution.
+05:11:55.592 Case 'NonQTSWithTriggerQty' succeeded.
+05:12:28.046 Suite 'NewOrderMultileg\TagValuesVerification'. [20 test cases, 0 sub-suites]
+05:13:08.579 Case 'EmptyAccount' execution.
+05:13:08.672 Case 'EmptyAccount' succeeded.
+05:13:08.672 Case 'ICBRGWithZeroMaxShow' execution.
+05:13:08.750 Case 'ICBRGWithZeroMaxShow' succeeded.
+05:13:08.750 Case 'InvalidExecInst' execution.
+05:13:08.829 Case 'InvalidExecInst' succeeded.
+05:13:08.829 Case 'InvalidICBRGMaxShow' execution.
+05:13:08.908 Case 'InvalidICBRGMaxShow' succeeded.
+05:13:08.908 Case 'InvalidLegRatioQty' execution.
+05:13:08.985 Case 'InvalidLegRatioQty' succeeded.
+05:13:08.985 Case 'InvalidLegSide' execution.
+05:13:09.063 Case 'InvalidLegSide' succeeded.
+05:13:09.063 Case 'InvalidQTSTriggerQty' execution.
+05:13:09.141 Case 'InvalidQTSTriggerQty' succeeded.
+05:13:09.157 Case 'InvalidSide' execution.
+05:13:09.204 Case 'InvalidSide' succeeded.
+05:13:09.219 Case 'InvalidSymbol' execution.
+05:13:09.329 Case 'InvalidSymbol' succeeded.
+05:13:09.329 Case 'InvalidTimeInForce' execution.
+05:13:09.407 Case 'InvalidTimeInForce' succeeded.
+05:13:09.422 Case 'LimitWithStopPx' execution.
+05:13:09.485 Case 'LimitWithStopPx' succeeded.
+05:13:09.579 Case 'MarketWithPrice' execution.
+05:13:09.657 Case 'MarketWithPrice' succeeded.
+05:13:09.672 Case 'MarketWithStopPx' execution.
+05:13:09.735 Case 'MarketWithStopPx' succeeded.
+05:13:09.750 Case 'OneNoLegs' execution.
+05:13:09.813 Case 'OneNoLegs' succeeded.
+05:13:09.829 Case 'StopWithInvalidStopPx' execution.
+05:13:09.985 Case 'StopWithInvalidStopPx' succeeded.
+05:13:09.985 Case 'StopWithPrice' execution.
+05:13:10.063 Case 'StopWithPrice' succeeded.
+05:13:10.157 Case 'TrailMarket' execution.
+05:13:10.235 Case 'TrailMarket' succeeded.
+05:13:10.250 Case 'UnauthorizedAccount' execution.
+05:13:10.330 Case 'UnauthorizedAccount' succeeded.
+05:13:10.330 Case 'ZeroOrderQty' execution.
+05:13:10.391 Case 'ZeroOrderQty' succeeded.
+05:13:10.922 Case 'TrailLimit' execution.
+05:13:11.001 Case 'TrailLimit' succeeded.
+05:13:50.267 Suite 'OrderCancelReject'. [2 test cases, 0 sub-suites]
+05:13:52.549 Case 'CancelRejectAccountID' execution.
+05:13:52.643 Case 'IncorrectOrderID' execution.
+05:13:52.752 Case 'CancelRejectAccountID' succeeded.
+05:13:52.877 Case 'IncorrectOrderID' succeeded.
+05:13:54.580 Suite 'OrderCancelReplaceMultileg'. [0 test cases, 3 sub-suites]
+05:13:54.830 Suite 'OrderCancelReplaceMultileg\Functional'. [8 test cases, 0 sub-suites]
+05:14:35.581 Case 'LimitNewPrice' execution.
+05:14:35.675 Case 'NegativeOffsetPrice' execution.
+05:14:35.784 Case 'NegativeOffsetStopPx' execution.
+05:14:35.909 Case 'NewOrderQty' execution.
+05:14:36.097 Case 'LimitNewPrice' succeeded.
+05:14:36.113 Case 'ReplaceSuspended' execution.
+05:14:36.128 Case 'NegativeOffsetPrice' succeeded.
+05:14:36.206 Case 'StopLimitNewPrice' execution.
+05:14:36.285 Case 'StopLimitNewStopPx' execution.
+05:14:36.347 Case 'NegativeOffsetStopPx' succeeded.
+05:14:36.425 Case 'StopNewStopPx' execution.
+05:14:36.425 Case 'NewOrderQty' succeeded.
+05:14:36.550 Case 'ReplaceSuspended' succeeded.
+05:14:36.691 Case 'StopLimitNewPrice' succeeded.
+05:14:36.816 Case 'StopLimitNewStopPx' succeeded.
+05:14:36.878 Case 'StopNewStopPx' succeeded.
+05:15:13.067 Suite 'OrderCancelReplaceMultileg\TagsVerification'. [7 test cases, 0 sub-suites]
+05:15:53.834 Case 'MissingAccountTag' execution.
+05:15:53.943 Case 'MissingClOrdIDTag' execution.
+05:15:54.037 Case 'MissingOrderIDTag' execution.
+05:15:54.131 Case 'MissingAccountTag' succeeded.
+05:15:54.162 Case 'MissingOrigClOrdIDTag' execution.
+05:15:54.271 Case 'MissingSymbolTag' execution.
+05:15:54.334 Case 'MissingClOrdIDTag' succeeded.
+05:15:54.353 Case 'MissingOrderIDTag' succeeded.
+05:15:54.365 Case 'MissingTransactTimeTag' execution.
+05:15:54.459 Case 'MissingOrigClOrdIDTag' succeeded.
+05:15:54.474 Case 'NoModificationTag' execution.
+05:15:54.693 Case 'MissingSymbolTag' succeeded.
+05:15:54.693 Case 'MissingTransactTimeTag' succeeded.
+05:15:54.802 Case 'NoModificationTag' succeeded.
+05:16:27.210 Suite 'OrderCancelReplaceMultileg\TagValuesVerification'. [12 test cases, 0 sub-suites]
+05:17:07.836 Case 'ICBRGwithEmptyMaxShow' execution.
+05:17:07.945 Case 'IncorrectAccount' execution.
+05:17:08.102 Case 'ICBRGwithEmptyMaxShow' succeeded.
+05:17:08.118 Case 'IncorrectSymbol' execution.
+05:17:08.211 Case 'IncorrectAccount' succeeded.
+05:17:08.258 Case 'IncorrectTimeInForce' execution.
+05:17:08.305 Case 'LMTwithStopPx' execution.
+05:17:08.430 Case 'MKTwithPrice' execution.
+05:17:08.555 Case 'IncorrectSymbol' succeeded.
+05:17:08.586 Case 'MKTwithStopPx' execution.
+05:17:08.695 Case 'IncorrectTimeInForce' succeeded.
+05:17:08.711 Case 'OneNoLegs' execution.
+05:17:08.836 Case 'STPwithEmptyStopPx' execution.
+05:17:08.961 Case 'MKTwithPrice' succeeded.
+05:17:08.977 Case 'LMTwithStopPx' succeeded.
+05:17:08.977 Case 'STPwithPrice' execution.
+05:17:09.164 Case 'OneNoLegs' succeeded.
+05:17:09.211 Case 'ICBRGWithZeroMaxShow' execution.
+05:17:09.258 Case 'WithSide' execution.
+05:17:09.414 Case 'MKTwithStopPx' succeeded.
+05:17:09.445 Case 'STPwithEmptyStopPx' succeeded.
+05:17:09.680 Case 'STPwithPrice' succeeded.
+05:17:09.680 Case 'ICBRGWithZeroMaxShow' succeeded.
+05:17:09.774 Case 'WithSide' succeeded.
+05:17:42.712 Suite 'OrderCheckMark'. [2 test cases, 0 sub-suites]
+05:17:44.900 Case 'NewOrderSingle' execution.
+05:17:44.978 Case 'OrderCancelReplace' execution.
+05:17:50.120 Case 'NewOrderSingle' succeeded.
+05:17:51.400 Case 'OrderCancelReplace' succeeded.
+05:17:53.041 Suite 'OrderStatusRequest'. [0 test cases, 1 sub-suites]
+05:17:53.291 Suite 'OrderStatusRequest\OrderStatusRequest_ts.py'. [5 test cases, 0 sub-suites]
+05:18:03.557 Case 'OSR_OrderID' execution.
+05:18:03.682 Case 'OSR_NoOrders' execution.
+05:18:03.775 Case 'OSR_WrongAccount' execution.
+05:18:03.900 Case 'OSR_MissingID' execution.
+05:18:04.010 Case 'OSR_ClOrderID' execution.
+05:18:05.963 Case 'OSR_NoOrders' succeeded.
+05:18:06.072 Case 'OSR_OrderID' succeeded.
+05:18:06.182 Case 'OSR_WrongAccount' succeeded.
+05:18:06.197 Case 'OSR_MissingID' succeeded.
+05:18:06.213 Case 'OSR_ClOrderID' succeeded.
+05:18:15.010 Suite 'PriceAdjuster'. [20 test cases, 0 sub-suites]
+05:18:19.323 Case 'LimitWithBothDecMultipliers' execution.
+05:18:19.432 Case 'LimitWithBothIncMultipliers' execution.
+05:18:19.510 Case 'LimitWithIncMultiplier' execution.
+05:18:19.588 Case 'MultilegLimitWithIncMultiplier' execution.
+05:18:19.713 Case 'MultilegStopLimitWithIncMultiplier' execution.
+05:18:19.807 Case 'MultilegStopWithIncMultiplier' execution.
+05:18:19.932 Case 'OrderListWithIncMultiplier' execution.
+05:18:20.057 Case 'StopLimitWithBothDecMultipliers' execution.
+05:18:20.213 Case 'StopLimitWithBothIncMultipliers' execution.
+05:18:20.354 Case 'StopLimitWithDecMultiplier' execution.
+05:18:20.463 Case 'StopLimitWithIncMultiplier' execution.
+05:18:20.604 Case 'StopWithBothDecMultipliers' execution.
+05:18:20.807 Case 'StopWithBothIncMultipliers' execution.
+05:18:20.948 Case 'StopWithDecMultiplier' execution.
+05:18:21.120 Case 'StopWithIncMultiplier' execution.
+05:18:21.276 Case 'LimitWithDecMultiplier' execution.
+05:18:21.401 Case 'StrikeWithIncMultiplier' execution.
+05:18:21.682 Case 'SymbolMappingWithIncMultiplier' execution.
+05:18:21.823 Case 'ZeroMultiplier' execution.
+05:18:21.995 Case 'StrikeWithDecMultiplier' execution.
+05:18:23.323 Case 'ZeroMultiplier' succeeded.
+05:18:23.823 Case 'LimitWithBothDecMultipliers' succeeded.
+05:18:24.510 Case 'LimitWithBothIncMultipliers' succeeded.
+05:18:24.932 Case 'StopLimitWithBothIncMultipliers' succeeded.
+05:18:25.151 Case 'StopLimitWithDecMultiplier' succeeded.
+05:18:25.307 Case 'StopLimitWithIncMultiplier' succeeded.
+05:18:25.526 Case 'StopLimitWithBothDecMultipliers' succeeded.
+05:18:25.776 Case 'StopWithIncMultiplier' succeeded.
+05:18:25.885 Case 'LimitWithIncMultiplier' succeeded.
+05:18:26.213 Case 'MultilegStopLimitWithIncMultiplier' succeeded.
+05:18:26.354 Case 'SymbolMappingWithIncMultiplier' succeeded.
+05:18:26.604 Case 'StopWithDecMultiplier' succeeded.
+05:18:26.682 Case 'MultilegStopWithIncMultiplier' succeeded.
+05:18:26.729 Case 'StrikeWithIncMultiplier' succeeded.
+05:18:26.979 Case 'LimitWithDecMultiplier' succeeded.
+05:18:26.995 Case 'StopWithBothIncMultipliers' succeeded.
+05:18:27.293 Case 'StopWithBothDecMultipliers' succeeded.
+05:18:27.385 Case 'MultilegLimitWithIncMultiplier' succeeded.
+05:18:27.401 Case 'StrikeWithDecMultiplier' succeeded.
+05:18:28.182 Case 'OrderListWithIncMultiplier' succeeded.
+05:18:31.479 Suite 'RegulatoryAlgorithmID'. [1 test cases, 0 sub-suites]
+05:18:33.839 Case 'SuspendedOrder' execution.
+05:18:33.917 Case 'SuspendedOrder' succeeded.
+05:18:35.823 Suite 'Reject'. [1 test cases, 0 sub-suites]
+05:18:38.042 Case 'UndefinedTag' execution.
+05:18:38.073 Case 'UndefinedTag' succeeded.
+05:18:40.167 Suite 'ReutersRejectCodeAdjuster'. [4 test cases, 0 sub-suites]
+05:18:42.495 Case 'RejectCode110' execution.
+05:18:42.652 Case 'RejectCode110' succeeded.
+05:18:42.667 Case 'RejectCode17' execution.
+05:18:42.761 Case 'RejectCode17' succeeded.
+05:18:42.761 Case 'RejectCode7' execution.
+05:18:42.855 Case 'RejectCode7' succeeded.
+05:18:42.855 Case 'RejectCode9' execution.
+05:18:42.948 Case 'RejectCode9' succeeded.
+05:18:44.558 Suite 'SessionPersistence'. [9 test cases, 0 sub-suites]
+05:18:44.777 Case 'LogonWithSeqNumGreaterThan1' execution.
+05:18:44.855 Case 'SendLogonWithIncorrectMsgSeqNum' execution.
+05:18:44.964 Case 'SendLogonWithMajorMsgSeqNum' execution.
+05:18:45.058 Case 'LogonWithSeqNumGreaterThan1' succeeded.
+05:18:45.074 Case 'TestLogonAndReceiveMissingMsgs' execution.
+05:18:45.214 Case 'TestSessionPersistenceOFF' execution.
+05:18:45.323 Case 'TestSessionPersistenceOnFor2Traders' execution.
+05:18:45.417 Case 'TestSessionPersistenceON' execution.
+05:18:45.511 Case 'TestSyncByLastTransIdAndLastSyncTime' execution.
+05:18:45.605 Case 'TestSyncFor2From3AccountsOnly' execution.
+05:18:48.574 Case 'TestSessionPersistenceOFF' succeeded.
+05:18:49.043 Case 'SendLogonWithIncorrectMsgSeqNum' succeeded.
+05:18:50.386 Case 'SendLogonWithMajorMsgSeqNum' succeeded.
+05:18:57.480 Case 'TestLogonAndReceiveMissingMsgs' succeeded.
+05:19:10.371 Case 'TestSyncFor2From3AccountsOnly' succeeded.
+05:19:11.621 Case 'TestSessionPersistenceOnFor2Traders' succeeded.
+05:19:15.074 Case 'TestSyncByLastTransIdAndLastSyncTime' succeeded.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\FixClientCommon\MsgBookBase.py", line 36, in Wait
+    msg = queue.get(timeout=timeout)
+  File "C:\Python36\Lib\queue.py", line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites\SessionPersistence\TestSessionPersistenceON_tc.py", line 37, in <module>
+    trader.Logoff()
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\FixClientCommon\FIXConnectionBase.py", line 100, in Logoff
+    self.msgBook.CheckLogout()
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\FixClientCommon\MsgBookBase.py", line 211, in CheckLogout
+    logout = Wait(self._constants, self._logoff, "Logout (5)", timeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\FixClientCommon\MsgBookBase.py", line 38, in Wait
+    raise Exception("{0} waiting timeout: {1} sec".format(errorMsg, timeout))
+Exception: Logout (5) waiting timeout: 60 sec
+
+05:19:50.810 Case 'TestSessionPersistenceON' failed.
+05:19:51.216 Suite 'SeveralConnections'. [4 test cases, 0 sub-suites]
+05:20:01.341 Case 'ClientWithTwoConnections' execution.
+05:20:01.420 Case 'FixAndNativeClients' execution.
+05:20:01.529 Case 'OnBehalfOfSubID' execution.
+05:20:01.670 Case 'TwoFixClients' execution.
+05:20:02.232 Case 'OnBehalfOfSubID' succeeded.
+05:20:02.842 Case 'ClientWithTwoConnections' succeeded.
+05:20:03.310 Case 'TwoFixClients' succeeded.
+05:20:03.373 Case 'FixAndNativeClients' succeeded.
+05:20:11.576 Suite 'TagManagerAdjuster'. [5 test cases, 0 sub-suites]
+05:20:22.045 Case 'AdjustersCombination' execution.
+05:20:22.139 Case 'CopyTag' execution.
+05:20:22.264 Case 'MoveTag' execution.
+05:20:22.342 Case 'AdjustersCombination' succeeded.
+05:20:22.373 Case 'RemoveTag' execution.
+05:20:22.498 Case 'SetTag' execution.
+05:20:22.842 Case 'CopyTag' succeeded.
+05:20:22.998 Case 'MoveTag' succeeded.
+05:20:23.030 Case 'RemoveTag' succeeded.
+05:20:23.108 Case 'SetTag' succeeded.
+05:20:30.296 Suite 'ULLinkIcebergAdjuster'. [2 test cases, 0 sub-suites]
+05:20:32.702 Case 'MaxShowTag' execution.
+05:20:32.811 Case 'NoIcebergTags' execution.
+05:20:32.842 Case 'MaxShowTag' succeeded.
+05:20:32.983 Case 'NoIcebergTags' succeeded.
+05:20:35.077 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites' execution finished. It took 0:18:27.159912.
+05:20:35.077 Test cases results: 185 total, 184 succeeded, 1 failed, 0 skipped.

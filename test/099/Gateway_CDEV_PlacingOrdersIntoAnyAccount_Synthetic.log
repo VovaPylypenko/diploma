@@ -1,0 +1,18 @@
+10:33:16.34  Test starded without threads
+08:33:16.891 Python Module Path 'ScriptKit' added.
+08:33:16.907 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:33:16.907 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:33:16.907 Python Module Path 'ScriptKit/TroubleMaker' added.
+08:33:17.360 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/PlacingOrdersIntoAnyAccount' filtered execution.
+08:33:17.391 Suite '.'. [0 test cases, 1 sub-suites]
+08:33:30.485 Suite 'Synthetic'. [0 test cases, 2 sub-suites]
+08:33:38.861 Suite 'Synthetic\Complex'. [2 test cases, 0 sub-suites]
+08:33:38.907 Case '05_SomActivation' execution.
+08:33:43.736 Case '05_SomActivation' succeeded.
+08:33:43.783 Case '06_SomTrail' execution.
+08:33:47.830 Case '06_SomTrail' succeeded.
+08:33:47.923 Suite 'Synthetic\Rejections'. [1 test cases, 0 sub-suites]
+08:33:47.970 Case '03_SSP' execution.
+08:33:48.001 Case '03_SSP' succeeded.
+08:33:48.939 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/PlacingOrdersIntoAnyAccount' execution finished. It took 0:00:31.547914.
+08:33:48.939 Test cases results: 3 total, 3 succeeded, 0 failed, 0 skipped.

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="15" skipped="0" tests="70" testsuite_failed="True" time="136.347951" timestamp="2020-02-06T08:36:27.460590">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="40"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="15" name="FCMContractControls" skipped="0" tests="70" testsuite_failed="True" time="136.347951" timestamp="2020-02-06T08:36:27.460590">
+  <testsuite failures="15" name="AllowedToTrade" skipped="0" tests="38" testsuite_failed="True" time="67.37722" timestamp="2020-02-06T08:36:36.788722">
+   <testcase name="TC101_AllCommoditiesDisabled" status="run" time="17.047926" timestamp="2020-02-06T08:37:01.008292">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC101_AllCommoditiesDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[131], traders[131], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.All, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC101_AllCommoditiesDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[131], traders[131], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.All, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC102_USCommoditiesDisabled" status="run" time="17.641208" timestamp="2020-02-06T08:37:01.086396">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC102_USCommoditiesDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[132], traders[132], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.US, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC102_USCommoditiesDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[132], traders[132], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.US, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC103_NonUSCommoditiesDisabled" status="run" time="17.686931" timestamp="2020-02-06T08:37:01.134432">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC103_NonUSCommoditiesDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[133], traders[133], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.NonUS, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC103_NonUSCommoditiesDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[133], traders[133], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.NonUS, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC104_ExchangeDisabled" status="run" time="18.26927" timestamp="2020-02-06T08:37:01.164510">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC104_ExchangeDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[134], traders[134], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.Exchange, contract = SFEPZ99, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC104_ExchangeDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[134], traders[134], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.Exchange, contract = SFEPZ99, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC105_CommodityDisabled" status="run" time="32.829226" timestamp="2020-02-06T08:37:01.320764"/>
+   <testcase name="TC106_InstrumentDisabled" status="run" time="17.703712" timestamp="2020-02-06T08:37:01.430156">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC106_InstrumentDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[136], traders[136], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.Instrument, contract = CSFFLKZ99, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC106_InstrumentDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[136], traders[136], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.Instrument, contract = CSFFLKZ99, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC107_ContractDisabled" status="run" time="17.844341" timestamp="2020-02-06T08:37:01.492680">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC107_ContractDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[137], traders[137], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.Contract, contract = SFEPZ99, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC107_ContractDisabled_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[137], traders[137], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.Contract, contract = SFEPZ99, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC211_InstrumentContract" status="run" time="20.406881" timestamp="2020-02-06T08:37:01.570811"/>
+   <testcase name="TC212_CommodityContract" status="run" time="18.703298" timestamp="2020-02-06T08:37:03.836926"/>
+   <testcase name="TC213_CommodityInstrument" status="run" time="14.750863" timestamp="2020-02-06T08:37:01.664530"/>
+   <testcase name="TC214_ExchangeContract" status="run" time="14.34436" timestamp="2020-02-06T08:37:01.727029"/>
+   <testcase name="TC215_ExchangeInstrument" status="run" time="14.719245" timestamp="2020-02-06T08:37:01.820784"/>
+   <testcase name="TC216_ExchangeCommodity" status="run" time="19.125631" timestamp="2020-02-06T08:37:03.305202"/>
+   <testcase name="TC221_NonUSCommoditiesContract" status="run" time="14.481643" timestamp="2020-02-06T08:37:01.902115"/>
+   <testcase name="TC222_NonUSCommoditiesInstrument" status="run" time="31.704172" timestamp="2020-02-06T08:37:01.961412"/>
+   <testcase name="TC223_NonUSCommoditiesCommodity" status="run" time="17.485553" timestamp="2020-02-06T08:37:02.055162">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC223_NonUSCommoditiesCommodity_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[223], traders[1], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.Commodity, contract = SFKLFZ99, allowedToTrade = '1'),
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC223_NonUSCommoditiesCommodity_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[223], traders[1], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.Commodity, contract = SFKLFZ99, allowedToTrade = '1'),
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC224_USCommoditiesContract" status="run" time="19.34438" timestamp="2020-02-06T08:37:02.133296"/>
+   <testcase name="TC225_USCommoditiesInstrument" status="run" time="20.094401" timestamp="2020-02-06T08:37:02.195802"/>
+   <testcase name="TC226_USCommoditiesCommodity" status="run" time="28.501335" timestamp="2020-02-06T08:37:04.930258"/>
+   <testcase name="TC227_USCommoditiesExchange" status="run" time="19.844399" timestamp="2020-02-06T08:37:02.242676"/>
+   <testcase name="TC231_AllCommoditiesContract" status="run" time="19.609494" timestamp="2020-02-06T08:37:02.477581"/>
+   <testcase name="TC232_AllCommoditiesInstrument" status="run" time="19.2506" timestamp="2020-02-06T08:37:02.602090"/>
+   <testcase name="TC233_AllCommoditiesCommodity" status="run" time="19.438138" timestamp="2020-02-06T08:37:02.758313"/>
+   <testcase name="TC234_AllCommoditiesExchange" status="run" time="19.672804" timestamp="2020-02-06T08:37:02.836437"/>
+   <testcase name="TC235_AllCommoditiesNonUSCommodities" status="run" time="19.277587" timestamp="2020-02-06T08:37:03.028244"/>
+   <testcase name="TC236_AllCommoditiesUSCommodities" status="run" time="19.360264" timestamp="2020-02-06T08:37:03.148977"/>
+   <testcase name="TC301_AccountAllCommoditiesEnabled" status="run" time="14.724201" timestamp="2020-02-06T08:37:04.523991">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC301_AccountAllCommoditiesEnabled_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[31], traders[31], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.All, allowedToTrade = '1')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC301_AccountAllCommoditiesEnabled_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[31], traders[31], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.All, allowedToTrade = '1')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC302_AccountAllCommoditiesDisabled" status="run" time="15.781796" timestamp="2020-02-06T08:37:03.258328">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC302_AccountAllCommoditiesDisabled_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[32], traders[32], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.All, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC302_AccountAllCommoditiesDisabled_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[32], traders[32], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.All, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC303_AllCommoditiesInstrument" status="run" time="5.265813" timestamp="2020-02-06T08:37:03.398960">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC303_AllCommoditiesInstrument_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[33], traders[33], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Instrument, contract = SFEPZ99, allowedToTrade = '1')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC303_AllCommoditiesInstrument_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[33], traders[33], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Instrument, contract = SFEPZ99, allowedToTrade = '1')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC304_InstrumentAllCommodities" status="run" time="30.313509" timestamp="2020-02-06T08:37:03.477084"/>
+   <testcase name="TC305_DefaultAllCommodities" status="run" time="12.656738" timestamp="2020-02-06T08:37:03.570837">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC305_DefaultAllCommodities_tc.py&quot;, line 6, in &lt;module&gt;
+    setupAllowedToTrade(Restriction(accounts[35], traders[35], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.All, allowedToTrade = '0'))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC305_DefaultAllCommodities_tc.py&quot;, line 6, in &lt;module&gt;
+    setupAllowedToTrade(Restriction(accounts[35], traders[35], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.All, allowedToTrade = '0'))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC306_InstrumentContract" status="run" time="35.704316" timestamp="2020-02-06T08:37:03.602087"/>
+   <testcase name="TC307_DefaultAllCommodities" status="run" time="18.781869" timestamp="2020-02-06T08:37:03.633339"/>
+   <testcase name="TC308_ExchangeUSCommodities" status="run" time="14.938035" timestamp="2020-02-06T08:37:03.680213">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC308_ExchangeUSCommodities_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[38], traders[38], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.US, allowedToTrade = '1')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC308_ExchangeUSCommodities_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[38], traders[38], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.US, allowedToTrade = '1')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC309_DefaultUSCommoditiesExchange" status="run" time="13.985026" timestamp="2020-02-06T08:37:04.555242">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC309_DefaultUSCommoditiesExchange_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[39], traders[39], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Exchange, contract = SFEPZ99, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC309_DefaultUSCommoditiesExchange_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[39], traders[39], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Exchange, contract = SFEPZ99, allowedToTrade = '0')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC310_USCommoditiesAllCommoditiesCommodity" status="run" time="14.28248" timestamp="2020-02-06T08:37:04.649001">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC310_USCommoditiesAllCommoditiesCommodity_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[310], traders[310], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Commodity, contract = SFEPZ99, allowedToTrade = '1')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC310_USCommoditiesAllCommoditiesCommodity_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[310], traders[310], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Commodity, contract = SFEPZ99, allowedToTrade = '1')
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC313_AllCommoditiesInstrument" status="run" time="13.687981" timestamp="2020-02-06T08:37:04.680244">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC313_AllCommoditiesInstrument_tc.py&quot;, line 9, in &lt;module&gt;
+    limitLevel = LimitLevel.Instrument, contract = SFEPZ99, allowedToTrade = '1', enforce = True)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC313_AllCommoditiesInstrument_tc.py&quot;, line 9, in &lt;module&gt;
+    limitLevel = LimitLevel.Instrument, contract = SFEPZ99, allowedToTrade = '1', enforce = True)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py&quot;, line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py&quot;, line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, &quot;operation_status&quot;)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 81, in AssertEqualMessage
+    raise Failure(msg + &quot;'&quot; + GetStr(a) + &quot;'&quot; + &quot; is not equal to &quot; + &quot;'&quot; + GetStr(b) + &quot;'&quot;)
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+</failure>
+   </testcase>
+   <testcase name="TC314_InstrumentAllCommodities" status="run" time="28.49864" timestamp="2020-02-06T08:37:04.745077"/>
+  </testsuite>
+  <testsuite failures="0" name="Tenors" skipped="0" tests="32" testsuite_failed="False" time="58.767613" timestamp="2020-02-06T08:37:44.212824">
+   <testcase name="TC101_AllCommoditiesLimited" status="run" time="20.922569" timestamp="2020-02-06T08:38:07.604212"/>
+   <testcase name="TC102_USCommoditiesLimited" status="run" time="20.516267" timestamp="2020-02-06T08:38:07.713627"/>
+   <testcase name="TC103_NonUSCommoditiesLimited" status="run" time="20.016262" timestamp="2020-02-06T08:38:07.791728"/>
+   <testcase name="TC104_ExchangeLimited" status="run" time="20.797557" timestamp="2020-02-06T08:38:07.869837"/>
+   <testcase name="TC105_CommodityLimited" status="run" time="20.485048" timestamp="2020-02-06T08:38:07.932337"/>
+   <testcase name="TC106_InstrumentLimited" status="run" time="20.235038" timestamp="2020-02-06T08:38:08.057341"/>
+   <testcase name="TC211_CommodityInstrument" status="run" time="17.53182" timestamp="2020-02-06T08:38:08.182345"/>
+   <testcase name="TC212_ExchangeInstrument" status="run" time="17.297462" timestamp="2020-02-06T08:38:08.229218"/>
+   <testcase name="TC213_ExchangeCommodity" status="run" time="17.688115" timestamp="2020-02-06T08:38:08.385470"/>
+   <testcase name="TC214_NonUSCommoditiesInstrument" status="run" time="16.609915" timestamp="2020-02-06T08:38:08.447980"/>
+   <testcase name="TC221_NonUSCommoditiesCommodity" status="run" time="16.781806" timestamp="2020-02-06T08:38:08.619861"/>
+   <testcase name="TC222_USCommoditiesInstrument" status="run" time="16.375534" timestamp="2020-02-06T08:38:08.744862"/>
+   <testcase name="TC223_USCommoditiesCommodity" status="run" time="16.750546" timestamp="2020-02-06T08:38:08.807364"/>
+   <testcase name="TC224_USCommoditiesExchange" status="run" time="13.531718" timestamp="2020-02-06T08:38:11.119936"/>
+   <testcase name="TC225_AllCommoditiesInstrument" status="run" time="17.098638" timestamp="2020-02-06T08:38:08.869867"/>
+   <testcase name="TC231_AllCommoditiesCommodity" status="run" time="16.219283" timestamp="2020-02-06T08:38:09.229252"/>
+   <testcase name="TC232_AllCommoditiesExchange" status="run" time="16.031989" timestamp="2020-02-06T08:38:09.432385"/>
+   <testcase name="TC233_AllCommoditiesNonUSCommodities" status="run" time="15.172349" timestamp="2020-02-06T08:38:09.651164"/>
+   <testcase name="TC234_AllCommoditiesUSCommodities" status="run" time="15.813038" timestamp="2020-02-06T08:38:09.713642"/>
+   <testcase name="TC301_AccountAllCommoditiesDefault" status="run" time="14.437991" timestamp="2020-02-06T08:38:09.838649"/>
+   <testcase name="TC302_AccountDefaultAllCommodities" status="run" time="15.28175" timestamp="2020-02-06T08:38:10.088657"/>
+   <testcase name="TC303_AllCommoditiesInstrument" status="run" time="14.29733" timestamp="2020-02-06T08:38:10.244920"/>
+   <testcase name="TC304_InstrumentAllCommodities" status="run" time="13.906678" timestamp="2020-02-06T08:38:10.401195"/>
+   <testcase name="TC305_DefaultAllCommodities" status="run" time="12.937927" timestamp="2020-02-06T08:38:10.619922"/>
+   <testcase name="TC306_ExchangeInstrument" status="run" time="14.500479" timestamp="2020-02-06T08:38:10.791802"/>
+   <testcase name="TC307_DefaultAllCommodities" status="run" time="13.109805" timestamp="2020-02-06T08:38:10.901186"/>
+   <testcase name="TC308_CommodityUSCommodities" status="run" time="14.312647" timestamp="2020-02-06T08:38:11.042132"/>
+   <testcase name="TC309_DefaultUSCommoditiesExchange" status="run" time="12.641046" timestamp="2020-02-06T08:38:11.338693"/>
+   <testcase name="TC310_NonUSCommoditiesAllCommoditiesCommodity" status="run" time="14.453061" timestamp="2020-02-06T08:38:11.432986"/>
+   <testcase name="TC312_DailyFutures" status="run" time="17.453717" timestamp="2020-02-06T08:38:11.588704"/>
+   <testcase name="TC313_AllCommoditiesInstrument" status="run" time="17.168894" timestamp="2020-02-06T08:38:11.670387"/>
+   <testcase name="TC314_InstrumentAllCommodities" status="run" time="13.874841" timestamp="2020-02-06T08:38:11.823706"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

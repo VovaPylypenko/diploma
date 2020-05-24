@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="26" testsuite_failed="False" time="147.442123" timestamp="2020-02-19T19:40:39.428539">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="MarginStyleFX" skipped="0" tests="26" testsuite_failed="False" time="147.442123" timestamp="2020-02-19T19:40:39.428539">
+  <testcase name="DailyLossLimit" status="run" time="5.422061" timestamp="2020-02-19T19:42:14.103363"/>
+  <testcase name="PositionAndTradeSizeLimit" status="run" time="0.56252" timestamp="2020-02-19T19:42:14.134615"/>
+  <testcase name="RiskyMarket" status="run" time="20.326425" timestamp="2020-02-19T19:42:14.152598"/>
+  <testcase name="SSOrder" status="run" time="0.203128" timestamp="2020-02-19T19:42:14.197120"/>
+  <testcase name="TradeMarginLimit" status="run" time="0.531793" timestamp="2020-02-19T19:42:14.243992"/>
+  <testcase name="TradePriceLimit" status="run" time="0.499898" timestamp="2020-02-19T19:42:14.291009"/>
+  <testsuite failures="0" name="NonRegularAccountOrderMargin" skipped="0" tests="4" testsuite_failed="False" time="0.858813" timestamp="2020-02-19T19:42:34.510859">
+   <testcase name="BorrowFromMasterGroup" status="run" time="0.562506" timestamp="2020-02-19T19:42:34.588399"/>
+   <testcase name="CoMarginGroup" status="run" time="0.625" timestamp="2020-02-19T19:42:34.619656"/>
+   <testcase name="JoinPPGroup" status="run" time="0.593819" timestamp="2020-02-19T19:42:34.666584"/>
+   <testcase name="OmnibusChain" status="run" time="0.500014" timestamp="2020-02-19T19:42:34.697767"/>
+  </testsuite>
+  <testsuite failures="0" name="PortfolioMargin" skipped="0" tests="3" testsuite_failed="False" time="0.718765" timestamp="2020-02-19T19:42:35.400930">
+   <testcase name="NetPositionMargin" status="run" time="0.515608" timestamp="2020-02-19T19:42:35.479072"/>
+   <testcase name="NetPositionOTE" status="run" time="0.515578" timestamp="2020-02-19T19:42:35.525974"/>
+   <testcase name="NetPositionProfitLoss" status="run" time="0.500011" timestamp="2020-02-19T19:42:35.541541"/>
+  </testsuite>
+  <testsuite failures="0" name="RegularAccountOrderMargin" skipped="0" tests="13" testsuite_failed="False" time="21.703843" timestamp="2020-02-19T19:42:36.135317">
+   <testcase name="AccountLevelMultiplier" status="run" time="0.812474" timestamp="2020-02-19T19:42:36.213483"/>
+   <testcase name="DefaultMarginRate" status="run" time="0.843873" timestamp="2020-02-19T19:42:36.244930"/>
+   <testcase name="DelayedPrices" status="run" time="0.840354" timestamp="2020-02-19T19:42:36.279356"/>
+   <testcase name="EquityPrices" status="run" time="20.985142" timestamp="2020-02-19T19:42:36.307187"/>
+   <testcase name="ExchangeLevelMultiplierOHTrader" status="run" time="0.859438" timestamp="2020-02-19T19:42:36.354065"/>
+   <testcase name="ExchangeLevelMultiplier" status="run" time="0.951328" timestamp="2020-02-19T19:42:36.418389"/>
+   <testcase name="ExchangeMarginDisabled" status="run" time="0.875023" timestamp="2020-02-19T19:42:36.463442"/>
+   <testcase name="FCMUsesDefaultMargin" status="run" time="0.812519" timestamp="2020-02-19T19:42:36.525946"/>
+   <testcase name="ForexPrices" status="run" time="20.98479" timestamp="2020-02-19T19:42:36.588737"/>
+   <testcase name="OrderHandlerTrader" status="run" time="0.671893" timestamp="2020-02-19T19:42:36.682199"/>
+   <testcase name="OrderPriceModification" status="run" time="20.531917" timestamp="2020-02-19T19:42:37.135335"/>
+   <testcase name="OrderSizeModification" status="run" time="20.516233" timestamp="2020-02-19T19:42:37.260397"/>
+   <testcase name="PriceChange" status="run" time="10.281604" timestamp="2020-02-19T19:42:37.354092"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

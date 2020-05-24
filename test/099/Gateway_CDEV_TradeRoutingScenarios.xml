@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="16" testsuite_failed="False" time="30.157346" timestamp="2020-02-06T06:33:13.896326">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="20"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="TradeRoutingScenarios" skipped="0" tests="16" testsuite_failed="False" time="30.157346" timestamp="2020-02-06T06:33:13.896326">
+  <testcase name="BustLastFill" status="run" time="0.453321" timestamp="2020-02-06T06:33:20.427768"/>
+  <testcase name="CallOption" status="run" time="2.312702" timestamp="2020-02-06T06:33:20.459022"/>
+  <testcase name="FixedIncome" status="run" time="2.203158" timestamp="2020-02-06T06:33:20.490314"/>
+  <testcase name="InvalidSymbol" status="run" time="0.078125" timestamp="2020-02-06T06:33:20.568399"/>
+  <testcase name="LimitDAY" status="run" time="2.328315" timestamp="2020-02-06T06:33:20.927780"/>
+  <testcase name="ModifyCtiOrigin" status="run" time="0.515646" timestamp="2020-02-06T06:33:20.615274"/>
+  <testcase name="OrderFill_SettlementDate" status="run" time="10.60977" timestamp="2020-02-06T06:33:20.662152"/>
+  <testcase name="PutOption" status="run" time="2.203213" timestamp="2020-02-06T06:33:21.130920"/>
+  <testcase name="RejectZeroQuantityModify" status="run" time="0.421974" timestamp="2020-02-06T06:33:20.724656"/>
+  <testcase name="Spread" status="run" time="2.18748" timestamp="2020-02-06T06:33:20.849753"/>
+  <testsuite failures="0" name="AggressorIndicator" skipped="0" tests="6" testsuite_failed="False" time="1.219" timestamp="2020-02-06T06:33:31.350292">
+   <testcase name="FullFill_FixedIncome" status="run" time="0.906265" timestamp="2020-02-06T06:33:31.443774"/>
+   <testcase name="PartialFill_FixedIncome" status="run" time="0.640674" timestamp="2020-02-06T06:33:31.475015"/>
+   <testcase name="FullFill_Future" status="run" time="0.406209" timestamp="2020-02-06T06:33:31.521944"/>
+   <testcase name="PartialFill_Future" status="run" time="0.281964" timestamp="2020-02-06T06:33:31.568760"/>
+   <testcase name="FullFill_NativeStrategy" status="run" time="0.923499" timestamp="2020-02-06T06:33:31.600014"/>
+   <testcase name="PartialFill_NativeStrategy" status="run" time="0.734406" timestamp="2020-02-06T06:33:31.646886"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

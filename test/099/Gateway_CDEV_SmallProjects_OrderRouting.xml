@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="35" testsuite_failed="False" time="135.316964" timestamp="2020-02-06T08:33:50.533237">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects/AccountSubscription/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="SmallProjects" skipped="0" tests="35" testsuite_failed="False" time="135.316964" timestamp="2020-02-06T08:33:50.533237">
+  <testsuite failures="0" name="AccountSubscription" skipped="0" tests="3" testsuite_failed="False" time="26.016366" timestamp="2020-02-06T08:33:50.627124">
+   <testcase name="PlaceCancelOrderForDifferentAccounts" status="run" time="10.720817" timestamp="2020-02-06T08:34:04.877485"/>
+   <testcase name="PlaceOrderBeforeReceivedSubscibeAck" status="run" time="7.297141" timestamp="2020-02-06T08:34:04.908706"/>
+   <testcase name="TradersFromDifferentSMLocations" status="run" time="0.146745" timestamp="2020-02-06T08:34:04.939977"/>
+  </testsuite>
+  <testsuite failures="0" name="DiscretionaryOrderPlacement" skipped="0" tests="11" testsuite_failed="False" time="15.297387" timestamp="2020-02-06T08:34:16.674736">
+   <testsuite failures="0" name="Basic" skipped="0" tests="3" testsuite_failed="False" time="2.40636" timestamp="2020-02-06T08:34:21.065486">
+    <testcase name="01_ModifyCancel" status="run" time="0.187671" timestamp="2020-02-06T08:34:21.221763"/>
+    <testcase name="02_ModifyFill" status="run" time="0.171228" timestamp="2020-02-06T08:34:21.253787"/>
+    <testcase name="05_OrderUpdate" status="run" time="2.109763" timestamp="2020-02-06T08:34:21.284372"/>
+   </testsuite>
+   <testsuite failures="0" name="Complex" skipped="0" tests="5" testsuite_failed="False" time="4.501041" timestamp="2020-02-06T08:34:23.503086">
+    <testcase name="03_Trails" status="run" time="4.32742" timestamp="2020-02-06T08:34:23.597791"/>
+    <testcase name="04_Iceberg" status="run" time="0.233374" timestamp="2020-02-06T08:34:23.644741"/>
+    <testcase name="05_NativeSpread" status="run" time="0.234694" timestamp="2020-02-06T08:34:23.674974"/>
+    <testcase name="06_OPO" status="run" time="0.281394" timestamp="2020-02-06T08:34:23.737450"/>
+    <testcase name="07_Parked" status="run" time="0.265611" timestamp="2020-02-06T08:34:23.768745"/>
+   </testsuite>
+   <testsuite failures="0" name="Rejections" skipped="0" tests="3" testsuite_failed="False" time="0.3906" timestamp="2020-02-06T08:34:28.050122">
+    <testcase name="02_ExtraDiscrOffset_Place" status="run" time="0.046872" timestamp="2020-02-06T08:34:28.159476"/>
+    <testcase name="03_ExtraDiscrOffset_Modify" status="run" time="0.098274" timestamp="2020-02-06T08:34:28.221983"/>
+    <testcase name="04_MissingDiscrOffset" status="run" time="0.049412" timestamp="2020-02-06T08:34:28.270845"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="ErisDigital" skipped="0" tests="2" testsuite_failed="False" time="17.562795" timestamp="2020-02-06T08:34:32.019258">
+   <testsuite failures="0" name="Basic" skipped="0" tests="2" testsuite_failed="False" time="2.937545" timestamp="2020-02-06T08:34:43.769411">
+    <testcase name="01_ModifyCancel" status="run" time="0.18751" timestamp="2020-02-06T08:34:43.878738"/>
+    <testcase name="02_ModifyFill" status="run" time="2.718839" timestamp="2020-02-06T08:34:43.909990"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="ExcludeFromRiskCalculation" skipped="0" tests="3" testsuite_failed="False" time="14.031677" timestamp="2020-02-06T08:34:49.628981">
+   <testcase name="ExcludeExpiredFill" status="run" time="0.14064" timestamp="2020-02-06T08:35:03.020012"/>
+   <testcase name="ExcludeExpiredFillOmnibus" status="run" time="0.328055" timestamp="2020-02-06T08:35:03.051358"/>
+   <testcase name="ExcludeWorkingOrder" status="run" time="0.265666" timestamp="2020-02-06T08:35:03.113747"/>
+  </testsuite>
+  <testsuite failures="0" name="ManualOrderIdentifier" skipped="0" tests="7" testsuite_failed="False" time="7.172111" timestamp="2020-02-06T08:35:03.691911">
+   <testcase name="AL_UserEnd" status="run" time="0.40483" timestamp="2020-02-06T08:35:07.146568"/>
+   <testcase name="ATR_UserEnd" status="run" time="0.50001" timestamp="2020-02-06T08:35:07.192012"/>
+   <testcase name="AT_UserEnd" status="run" time="0.421878" timestamp="2020-02-06T08:35:07.238893"/>
+   <testcase name="Automatic" status="run" time="0.578157" timestamp="2020-02-06T08:35:07.270137"/>
+   <testcase name="CO_UserEnd" status="run" time="0.513828" timestamp="2020-02-06T08:35:07.365990"/>
+   <testcase name="EXL_UserEnd" status="run" time="0.531262" timestamp="2020-02-06T08:35:07.410772"/>
+   <testcase name="Manual_EXL_UserEnd" status="run" time="0.625782" timestamp="2020-02-06T08:35:07.458279"/>
+  </testsuite>
+  <testsuite failures="0" name="MassOrderActions" skipped="0" tests="8" testsuite_failed="False" time="25.969773" timestamp="2020-02-06T08:35:10.895266">
+   <testcase name="GlobalActivateReject" status="run" time="0.453169" timestamp="2020-02-06T08:35:24.333198"/>
+   <testcase name="GlobalCancel" status="run" time="0.391058" timestamp="2020-02-06T08:35:24.364459"/>
+   <testsuite failures="0" name="CancelAll" skipped="0" tests="6" testsuite_failed="False" time="7.7814820000000005" timestamp="2020-02-06T08:35:24.848874">
+    <testcase name="ActiveAtOrders" status="run" time="0.249949" timestamp="2020-02-06T08:35:31.161604"/>
+    <testcase name="ByComment" status="run" time="0.953511" timestamp="2020-02-06T08:35:31.208447"/>
+    <testcase name="ByOrderSide" status="run" time="1.000047" timestamp="2020-02-06T08:35:31.255300"/>
+    <testcase name="ByOrderState" status="run" time="0.984558" timestamp="2020-02-06T08:35:31.302182"/>
+    <testcase name="BySymbol" status="run" time="0.93756" timestamp="2020-02-06T08:35:31.364675"/>
+    <testcase name="MultiTraderAccount" status="run" time="1.09379" timestamp="2020-02-06T08:35:31.442800"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OrderSpecifications" skipped="0" tests="1" testsuite_failed="False" time="28.861728" timestamp="2020-02-06T08:35:36.911753">
+   <testcase name="OrderSpec" status="run" time="9.469577" timestamp="2020-02-06T08:35:48.912144"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,39 @@
+11:06:52.89  Test starded without threads
+09:06:53.461 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+09:06:53.461 Python Module Path 'ScriptKit/TroubleMaker' added.
+09:06:53.461 Python Module Path 'ScriptKit' added.
+09:06:53.461 Python Module Path 'Scripts/Gateway/PythonModules' added.
+09:06:54.006 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize' full execution.
+09:06:54.038 Suite '.'. [15 test cases, 0 sub-suites]
+09:17:43.686 Case 'TC01_TradePriceLimit_PriceBased' execution.
+09:17:45.014 Case 'TC01_TradePriceLimit_PriceBased' succeeded.
+09:17:45.061 Case 'TC02_TradePriceLimit_TimeBased' execution.
+09:17:46.170 Case 'TC02_TradePriceLimit_TimeBased' succeeded.
+09:17:46.217 Case 'TC03_SynMktStp_PriceBased' execution.
+09:17:56.530 Case 'TC03_SynMktStp_PriceBased' succeeded.
+09:17:56.577 Case 'TC04_SynMktStp_TimeBased' execution.
+09:18:09.000 Case 'TC04_SynMktStp_TimeBased' succeeded.
+09:18:09.046 Case 'TC05_SpreadFill' execution.
+09:18:09.202 Case 'TC05_SpreadFill' succeeded.
+09:18:09.249 Case 'TC06_TheoPrice_DisableAskBid_NOV_PriceBased' execution.
+09:18:10.124 Case 'TC06_TheoPrice_DisableAskBid_NOV_PriceBased' succeeded.
+09:18:10.187 Case 'TC07_TheoPrice_NOV_PriceBased' execution.
+09:18:11.437 Case 'TC07_TheoPrice_NOV_PriceBased' succeeded.
+09:18:11.515 Case 'TC08_TheoPrice_DisableAskBid_OTE_PriceBased' execution.
+09:18:12.781 Case 'TC08_TheoPrice_DisableAskBid_OTE_PriceBased' succeeded.
+09:18:12.843 Case 'TC09_TheoPrice_OTE_PriceBased' execution.
+09:18:13.874 Case 'TC09_TheoPrice_OTE_PriceBased' succeeded.
+09:18:13.937 Case 'TC10_TheoPrice_DisableAskBid_NOV_TimeBased' execution.
+09:18:15.109 Case 'TC10_TheoPrice_DisableAskBid_NOV_TimeBased' succeeded.
+09:18:15.171 Case 'TC11_TheoPrice_NOV_TimeBased' execution.
+09:18:16.296 Case 'TC11_TheoPrice_NOV_TimeBased' succeeded.
+09:18:16.343 Case 'TC12_TheoPrice_DisableAskBid_OTE_TimeBased' execution.
+09:18:17.437 Case 'TC12_TheoPrice_DisableAskBid_OTE_TimeBased' succeeded.
+09:18:17.499 Case 'TC13_TheoPrice_OTE_TimeBased' execution.
+09:18:18.688 Case 'TC13_TheoPrice_OTE_TimeBased' succeeded.
+09:18:18.734 Case 'TC14_TheoPrice_DisableAskBid_NOV_TimeBased' execution.
+09:18:19.812 Case 'TC14_TheoPrice_DisableAskBid_NOV_TimeBased' succeeded.
+09:18:19.859 Case 'TC15_TheoPrice_NOV_TimeBased' execution.
+09:18:21.015 Case 'TC15_TheoPrice_NOV_TimeBased' succeeded.
+09:18:25.500 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize' execution finished. It took 0:11:31.462506.
+09:18:25.500 Test cases results: 15 total, 15 succeeded, 0 failed, 0 skipped.

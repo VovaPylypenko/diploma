@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="26" testsuite_failed="False" time="46.017237" timestamp="2020-02-19T18:23:03.565501">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="21"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="CASTOrders" skipped="0" tests="26" testsuite_failed="False" time="46.017237" timestamp="2020-02-19T18:23:03.565501">
+  <testcase name="Activate" status="run" time="5.406409" timestamp="2020-02-19T18:23:17.769114"/>
+  <testcase name="AddFill" status="run" time="1.7187890000000001" timestamp="2020-02-19T18:23:17.800354"/>
+  <testcase name="AddPartialFill" status="run" time="2.921976" timestamp="2020-02-19T18:23:17.831587"/>
+  <testcase name="BustFill" status="run" time="15.87556" timestamp="2020-02-19T18:23:17.862839"/>
+  <testcase name="BustFillsInsideChain" status="run" time="10.203512" timestamp="2020-02-19T18:23:17.894088"/>
+  <testcase name="BustLastFill" status="run" time="14.078629" timestamp="2020-02-19T18:23:17.925340"/>
+  <testcase name="BustLastTwoFills" status="run" time="20.360332" timestamp="2020-02-19T18:23:17.972216"/>
+  <testcase name="CancelExternalOrder" status="run" time="7.875278" timestamp="2020-02-19T18:23:18.034720"/>
+  <testcase name="CancelExternalOrderLastFill" status="run" time="8.781561" timestamp="2020-02-19T18:23:18.065972"/>
+  <testcase name="CancelPartialFill" status="run" time="15.859969" timestamp="2020-02-19T18:23:18.128471"/>
+  <testcase name="CreateExternalOrder" status="run" time="4.047016" timestamp="2020-02-19T18:23:18.159724"/>
+  <testcase name="OCOAddFill" status="run" time="7.28151" timestamp="2020-02-19T18:23:18.175349"/>
+  <testcase name="OCOAddPartialFill" status="run" time="7.265886" timestamp="2020-02-19T18:23:18.347228"/>
+  <testcase name="OCOBustFill" status="run" time="17.93818" timestamp="2020-02-19T18:23:18.612865"/>
+  <testcase name="OCOCancelFill" status="run" time="17.391142" timestamp="2020-02-19T18:23:18.644219"/>
+  <testcase name="OCORequestCancelCompoundOrder" status="run" time="6.7658760000000004" timestamp="2020-02-19T18:23:18.722243"/>
+  <testcase name="OCORequestConfirmCancel" status="run" time="8.890945" timestamp="2020-02-19T18:23:18.894125"/>
+  <testcase name="OmnibusCreateOrderFill" status="run" time="5.453326" timestamp="2020-02-19T18:23:19.987909"/>
+  <testcase name="OPOPriAddFill" status="run" time="6.4064820000000005" timestamp="2020-02-19T18:23:18.925373"/>
+  <testcase name="OPOPriAddPartialFill" status="run" time="8.453429" timestamp="2020-02-19T18:23:19.300390"/>
+  <testcase name="OPOPriBustFill" status="run" time="17.625636" timestamp="2020-02-19T18:23:19.925408"/>
+  <testcase name="OPOPriCancelFill" status="run" time="16.578728" timestamp="2020-02-19T18:23:20.097290"/>
+  <testcase name="OPOPriRequestConfirmCancel" status="run" time="5.718955" timestamp="2020-02-19T18:23:21.237954"/>
+  <testcase name="OPOSecConfirmCancel" status="run" time="4.093915" timestamp="2020-02-19T18:23:22.284872"/>
+  <testcase name="OPOSecRequestCancelCompoundOrder" status="run" time="2.781352" timestamp="2020-02-19T18:23:23.878673"/>
+  <testcase name="RequestConfirmCancel" status="run" time="2.171959" timestamp="2020-02-19T18:23:25.503734"/>
+ </testsuite>
+</testsuites>

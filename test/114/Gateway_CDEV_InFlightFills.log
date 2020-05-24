@@ -1,0 +1,294 @@
+ 1:47:04.25  Test starded without threads
+23:47:04.790 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills/PythonModules' added.
+23:47:04.790 Python Module Path 'ScriptKit' added.
+23:47:04.790 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:47:05.255 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills' full execution.
+23:47:05.286 Suite '.'. [22 test cases, 0 sub-suites]
+23:47:16.162 Case 'CancelNonZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\CancelNonZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.177 Case 'CancelNonZero_Accepted' failed.
+23:47:16.193 Case 'CancelNonZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\CancelNonZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.209 Case 'CancelNonZero_Rejected' failed.
+23:47:16.224 Case 'CancelZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\CancelZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.241 Case 'CancelZero_Accepted' failed.
+23:47:16.255 Case 'CancelZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\CancelZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.271 Case 'CancelZero_Rejected' failed.
+23:47:16.287 Case 'ModifyToNonZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyToNonZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.302 Case 'ModifyToNonZero_Accepted' failed.
+23:47:16.318 Case 'ModifyToNonZero_AcceptFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyToNonZero_AcceptFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.333 Case 'ModifyToNonZero_AcceptFirst' failed.
+23:47:16.381 Case 'ModifyToNonZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyToNonZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.396 Case 'ModifyToNonZero_Rejected' failed.
+23:47:16.412 Case 'ModifyToZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyToZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.427 Case 'ModifyToZero_Accepted' failed.
+23:47:16.443 Case 'ModifyToZero_AcceptFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyToZero_AcceptFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.458 Case 'ModifyToZero_AcceptFirst' failed.
+23:47:16.474 Case 'ModifyToZero_PlaceCanceled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyToZero_PlaceCanceled_tc.py", line 19, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.490 Case 'ModifyToZero_PlaceCanceled' failed.
+23:47:16.537 Case 'ModifyToZero_PlaceCancelFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyToZero_PlaceCancelFirst_tc.py", line 19, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.552 Case 'ModifyToZero_PlaceCancelFirst' failed.
+23:47:16.615 Case 'ModifyToZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyToZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.630 Case 'ModifyToZero_Rejected' failed.
+23:47:16.724 Case 'ModifyToZero_ReplaceCanceled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyToZero_ReplaceCanceled_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.740 Case 'ModifyToZero_ReplaceCanceled' failed.
+23:47:16.787 Case 'ModifyZeroToNonZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyZeroToNonZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.802 Case 'ModifyZeroToNonZero_Accepted' failed.
+23:47:16.912 Case 'ModifyZeroToNonZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyZeroToNonZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:16.927 Case 'ModifyZeroToNonZero_Rejected' failed.
+23:47:16.974 Case 'ModifyZeroToNonZero_RejectFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyZeroToNonZero_RejectFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:17.005 Case 'ModifyZeroToNonZero_RejectFirst' failed.
+23:47:17.052 Case 'ModifyZeroToZero_Accepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyZeroToZero_Accepted_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:17.115 Case 'ModifyZeroToZero_Accepted' failed.
+23:47:17.115 Case 'ModifyToZero_RejectFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyToZero_RejectFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:17.130 Case 'ModifyToZero_RejectFirst' failed.
+23:47:17.208 Case 'ModifyZeroToZero_AcceptFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyZeroToZero_AcceptFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:17.224 Case 'ModifyZeroToZero_AcceptFirst' failed.
+23:47:17.302 Case 'ModifyZeroToZero_Rejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyZeroToZero_Rejected_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:17.333 Case 'ModifyZeroToZero_Rejected' failed.
+23:47:17.367 Case 'ModifyZeroToZero_RejectFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyZeroToZero_RejectFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:17.397 Case 'ModifyZeroToZero_RejectFirst' failed.
+23:47:17.599 Case 'ModifyZeroToNonZero_AcceptFirst' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills\ModifyZeroToNonZero_AcceptFirst_tc.py", line 15, in <module>
+    o1_init, o2_init = PlaceInitialOrders(trader, exchange, acctInfo, contract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\InFlightFills\PythonModules\InFlightFillUtils.py", line 89, in PlaceInitialOrders
+    order1 = CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:47:17.599 Case 'ModifyZeroToNonZero_AcceptFirst' failed.
+23:47:22.115 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills' execution finished. It took 0:00:16.828652.
+23:47:22.115 Test cases results: 22 total, 0 succeeded, 22 failed, 0 skipped.

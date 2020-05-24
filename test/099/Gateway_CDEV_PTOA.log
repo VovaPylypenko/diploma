@@ -1,0 +1,108 @@
+ 8:31:19.51  Test starded without threads
+06:31:20.002 Python Module Path 'ScriptKit' added.
+06:31:20.002 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules' added.
+06:31:20.002 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA/PythonModules' added.
+06:31:20.002 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:31:20.564 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA' full execution.
+06:31:20.595 Suite '.'. [0 test cases, 5 sub-suites]
+06:31:39.002 Suite 'AllocationRequest'. [13 test cases, 0 sub-suites]
+06:31:39.049 Case 'AllocatedAccountCheck' execution.
+06:31:39.268 Case 'AllocatedAccountCheck' succeeded.
+06:31:39.361 Case 'AllocatedOrderDuration' execution.
+06:31:39.627 Case 'AllocatedOrderDuration' succeeded.
+06:31:39.674 Case 'AllocatedOrderMultifill' execution.
+06:31:39.815 Case 'AllocatedOrderMultifill' succeeded.
+06:31:39.877 Case 'AllocatedSizeCheck' execution.
+06:31:40.033 Case 'AllocatedSizeCheck' succeeded.
+06:31:40.111 Case 'AllocationFillsChangeCheck' execution.
+06:31:40.377 Case 'AllocationFillsChangeCheck' succeeded.
+06:31:40.455 Case 'AllocationFillsCheck' execution.
+06:31:40.646 Case 'AllocationFillsCheck' succeeded.
+06:31:40.736 Case 'AllocationOrdersCheck' execution.
+06:31:40.955 Case 'AllocationOrdersCheck' succeeded.
+06:31:41.033 Case 'AllocationSizeCheck' execution.
+06:31:41.299 Case 'AllocationSizeCheck' succeeded.
+06:31:41.362 Case 'ClientAllocIdUsedBefore' execution.
+06:31:41.533 Case 'ClientAllocIdUsedBefore' succeeded.
+06:31:41.596 Case 'MultipleFillsCheck' execution.
+06:31:41.799 Case 'MultipleFillsCheck' succeeded.
+06:31:41.861 Case 'NativeStrategyLegFillAllocation' execution.
+06:31:41.971 Case 'NativeStrategyLegFillAllocation' succeeded.
+06:31:42.082 Case 'UnauthorizedAccount' execution.
+06:31:42.205 Case 'UnauthorizedAccount' succeeded.
+06:31:42.284 Case 'UsedAllocationCheck' execution.
+06:31:42.519 Case 'UsedAllocationCheck' succeeded.
+06:31:42.674 Suite 'AllocationRequestXml'. [1 test cases, 0 sub-suites]
+06:31:42.721 Case 'AllocatedOrderXml' execution.
+06:31:43.987 Case 'AllocatedOrderXml' succeeded.
+06:31:44.112 Suite 'AllocOrderBasicRiskChecks'. [16 test cases, 0 sub-suites]
+06:31:44.268 Case 'AccountsOnDifferentRS' execution.
+06:31:44.377 Case 'AccountsOnDifferentRS' succeeded.
+06:31:44.455 Case 'ActivaAtState' execution.
+06:31:44.502 Case 'ActivaAtState' succeeded.
+06:31:44.566 Case 'AllocationAccountOmnibusRisks' execution.
+06:31:44.690 Case 'AllocationAccountOmnibusRisks' succeeded.
+06:31:44.768 Case 'AllocationAccountRisks' execution.
+06:31:44.940 Case 'AllocationAccountRisks' succeeded.
+06:31:45.033 Case 'BFMGroupAllocatedAccounts' execution.
+06:31:45.299 Case 'BFMGroupAllocatedAccounts' succeeded.
+06:31:45.377 Case 'CMGroupAllocatedAccounts' execution.
+06:31:45.549 Case 'CMGroupAllocatedAccounts' succeeded.
+06:31:45.627 Case 'DisabledMarket' execution.
+06:31:45.955 Case 'DisabledMarket' succeeded.
+06:31:46.019 Case 'JPPGroupAllocatedAccounts' execution.
+06:31:46.193 Case 'JPPGroupAllocatedAccounts' succeeded.
+06:31:46.268 Case 'ModificationRejectAfterPartFill' execution.
+06:31:46.502 Case 'ModificationRejectAfterPartFill' succeeded.
+06:31:46.580 Case 'ModificationReject' execution.
+06:31:46.674 Case 'ModificationReject' succeeded.
+06:31:46.768 Case 'ModificationSize' execution.
+06:31:47.002 Case 'ModificationSize' succeeded.
+06:31:47.081 Case 'OmnibusAllocatedAccount' execution.
+06:31:47.191 Case 'OmnibusAllocatedAccount' succeeded.
+06:31:47.268 Case 'PlacementSize' execution.
+06:31:47.393 Case 'PlacementSize' succeeded.
+06:31:47.456 Case 'SizeAutomodification' execution.
+06:31:47.691 Case 'SizeAutomodification' succeeded.
+06:31:47.785 Case 'TradePriceLimit' execution.
+06:31:47.987 Case 'TradePriceLimit' succeeded.
+06:31:48.080 Case 'UnauthorizedAccount' execution.
+06:31:48.299 Case 'UnauthorizedAccount' succeeded.
+06:31:48.471 Suite 'Misc'. [7 test cases, 0 sub-suites]
+06:31:48.674 Case 'AllocationOrderFillCancelCheck' execution.
+06:31:48.909 Case 'AllocationOrderFillCancelCheck' succeeded.
+06:31:49.018 Case 'AllocationOrderFillCorrectionCheck' execution.
+06:31:53.049 Case 'AllocationOrderFillCorrectionCheck' succeeded.
+06:31:53.163 Case 'AllocationOrderRequestOnExchange' execution.
+06:31:53.518 Case 'AllocationOrderRequestOnExchange' succeeded.
+06:31:53.596 Case 'CancelAllActionCheck' execution.
+06:32:04.722 Case 'CancelAllActionCheck' succeeded.
+06:32:04.784 Case 'DailyFutureContractCheck' execution.
+06:32:05.003 Case 'DailyFutureContractCheck' succeeded.
+06:32:05.065 Case 'ParkAllActionCheck' execution.
+06:32:16.238 Case 'ParkAllActionCheck' succeeded.
+06:32:16.316 Case 'SyntheticStpAllocOrder' execution.
+06:32:20.644 Case 'SyntheticStpAllocOrder' succeeded.
+06:32:20.944 Suite 'PortfolioRiskCalculation'. [10 test cases, 0 sub-suites]
+06:32:21.004 Case 'CanceledAllocatedFill' execution.
+06:32:21.222 Case 'CanceledAllocatedFill' succeeded.
+06:32:21.300 Case 'FullFillOnAllocationOmnibus' execution.
+06:32:21.613 Case 'FullFillOnAllocationOmnibus' succeeded.
+06:32:21.691 Case 'FullFillOnAllocationOrder' execution.
+06:32:21.878 Case 'FullFillOnAllocationOrder' succeeded.
+06:32:21.957 Case 'ModifiedAllocatedFillPrice' execution.
+06:32:22.253 Case 'ModifiedAllocatedFillPrice' succeeded.
+06:32:22.317 Case 'ModifiedAllocatedFillSize' execution.
+06:32:22.645 Case 'ModifiedAllocatedFillSize' succeeded.
+06:32:22.754 Case 'MultiFillsAndAllocationsWithCancel' execution.
+06:32:23.035 Case 'MultiFillsAndAllocationsWithCancel' succeeded.
+06:32:23.113 Case 'MultiFillsAndAllocations' execution.
+06:32:23.644 Case 'MultiFillsAndAllocations' succeeded.
+06:32:23.722 Case 'PartFillOnAllocationOmnibus' execution.
+06:32:24.066 Case 'PartFillOnAllocationOmnibus' succeeded.
+06:32:24.144 Case 'PartFillOnAllocationOrder' execution.
+06:32:24.347 Case 'PartFillOnAllocationOrder' succeeded.
+06:32:24.425 Case 'SeveralFillsOnAllocationOrder' execution.
+06:32:24.738 Case 'SeveralFillsOnAllocationOrder' succeeded.
+06:32:31.301 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA' execution finished. It took 0:01:10.689847.
+06:32:31.301 Test cases results: 47 total, 47 succeeded, 0 failed, 0 skipped.

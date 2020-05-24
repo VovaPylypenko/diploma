@@ -1,0 +1,1672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="70" skipped="0" tests="70" testsuite_failed="True" time="168.395531" timestamp="2020-02-19T00:28:56.637314">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="40"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="70" name="FCMContractControls" skipped="0" tests="70" testsuite_failed="True" time="168.395531" timestamp="2020-02-19T00:28:56.637314">
+  <testsuite failures="38" name="AllowedToTrade" skipped="0" tests="38" testsuite_failed="True" time="95.252927" timestamp="2020-02-19T00:29:00.684304">
+   <testcase name="TC101_AllCommoditiesDisabled" status="run" time="33.811107" timestamp="2020-02-19T00:29:24.968659">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC101_AllCommoditiesDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[111], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC101_AllCommoditiesDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[111], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC102_USCommoditiesDisabled" status="run" time="66.50195" timestamp="2020-02-19T00:29:25.028749">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC102_USCommoditiesDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[112], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC102_USCommoditiesDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[112], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC103_NonUSCommoditiesDisabled" status="run" time="45.954459" timestamp="2020-02-19T00:29:25.200638">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC103_NonUSCommoditiesDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[113], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC103_NonUSCommoditiesDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[113], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC104_ExchangeDisabled" status="run" time="48.938919" timestamp="2020-02-19T00:29:27.591341">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC104_ExchangeDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[114], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC104_ExchangeDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[114], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC105_CommodityDisabled" status="run" time="36.142336" timestamp="2020-02-19T00:29:25.403886">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC105_CommodityDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[115], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC105_CommodityDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[115], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC106_InstrumentDisabled" status="run" time="40.704206" timestamp="2020-02-19T00:29:25.560119">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC106_InstrumentDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[116], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC106_InstrumentDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[116], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC107_ContractDisabled" status="run" time="35.751043" timestamp="2020-02-19T00:29:25.638148">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC107_ContractDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[117], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC107_ContractDisabled_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[117], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC211_InstrumentContract" status="run" time="19.344331" timestamp="2020-02-19T00:29:25.716276">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC211_InstrumentContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[211], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC211_InstrumentContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[211], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC212_CommodityContract" status="run" time="24.516328" timestamp="2020-02-19T00:29:25.810041">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC212_CommodityContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[212], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC212_CommodityContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[212], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC213_CommodityInstrument" status="run" time="22.172505" timestamp="2020-02-19T00:29:25.935036">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC213_CommodityInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[213], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC213_CommodityInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[213], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC214_ExchangeContract" status="run" time="23.469451" timestamp="2020-02-19T00:29:26.028774">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC214_ExchangeContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[214], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC214_ExchangeContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[214], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC215_ExchangeInstrument" status="run" time="20.531868" timestamp="2020-02-19T00:29:26.075648">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC215_ExchangeInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[215], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC215_ExchangeInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[215], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC216_ExchangeCommodity" status="run" time="21.938162" timestamp="2020-02-19T00:29:26.122525">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC216_ExchangeCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[216], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC216_ExchangeCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[216], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC221_NonUSCommoditiesContract" status="run" time="23.094423" timestamp="2020-02-19T00:29:26.153774">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC221_NonUSCommoditiesContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[221], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC221_NonUSCommoditiesContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[221], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC222_NonUSCommoditiesInstrument" status="run" time="26.000762" timestamp="2020-02-19T00:29:26.200652">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC222_NonUSCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[222], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC222_NonUSCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[222], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC223_NonUSCommoditiesCommodity" status="run" time="24.875749" timestamp="2020-02-19T00:29:26.231900">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC223_NonUSCommoditiesCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[223], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC223_NonUSCommoditiesCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[223], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC224_USCommoditiesContract" status="run" time="25.797642" timestamp="2020-02-19T00:29:26.560106">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC224_USCommoditiesContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[224], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC224_USCommoditiesContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[224], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC225_USCommoditiesInstrument" status="run" time="22.782555" timestamp="2020-02-19T00:29:26.747541">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC225_USCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[225], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC225_USCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[225], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC226_USCommoditiesCommodity" status="run" time="25.406451" timestamp="2020-02-19T00:29:26.904945">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC226_USCommoditiesCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[226], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC226_USCommoditiesCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[226], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC227_USCommoditiesExchange" status="run" time="28.578982" timestamp="2020-02-19T00:29:27.028797">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC227_USCommoditiesExchange_tc.py&quot;, line 12, in &lt;module&gt;
+    PlaceAndCancel(traders[1], exchange, accounts[227], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC227_USCommoditiesExchange_tc.py&quot;, line 12, in &lt;module&gt;
+    PlaceAndCancel(traders[1], exchange, accounts[227], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC231_AllCommoditiesContract" status="run" time="30.12591" timestamp="2020-02-19T00:29:27.075675">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC231_AllCommoditiesContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[231], exchange, accounts[231], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC231_AllCommoditiesContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[231], exchange, accounts[231], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC232_AllCommoditiesInstrument" status="run" time="29.967519" timestamp="2020-02-19T00:29:27.452812">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC232_AllCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[232], exchange, accounts[232], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC232_AllCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[232], exchange, accounts[232], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC233_AllCommoditiesCommodity" status="run" time="35.57918" timestamp="2020-02-19T00:29:27.872577">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC233_AllCommoditiesCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[233], exchange, accounts[233], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC233_AllCommoditiesCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[233], exchange, accounts[233], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC234_AllCommoditiesExchange" status="run" time="29.500347" timestamp="2020-02-19T00:29:27.951512">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC234_AllCommoditiesExchange_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[234], exchange, accounts[234], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC234_AllCommoditiesExchange_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[234], exchange, accounts[234], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC235_AllCommoditiesNonUSCommodities" status="run" time="33.204088" timestamp="2020-02-19T00:29:27.997581">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC235_AllCommoditiesNonUSCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[235], exchange, accounts[235], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC235_AllCommoditiesNonUSCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[235], exchange, accounts[235], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC236_AllCommoditiesUSCommodities" status="run" time="36.719726" timestamp="2020-02-19T00:29:28.060187">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC236_AllCommoditiesUSCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[236], exchange, accounts[236], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC236_AllCommoditiesUSCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[236], exchange, accounts[236], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC301_AccountAllCommoditiesEnabled" status="run" time="35.300419" timestamp="2020-02-19T00:29:28.106978">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC301_AccountAllCommoditiesEnabled_tc.py&quot;, line 12, in &lt;module&gt;
+    PlaceAndCancel(traders[31], exchange, accounts[31], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC301_AccountAllCommoditiesEnabled_tc.py&quot;, line 12, in &lt;module&gt;
+    PlaceAndCancel(traders[31], exchange, accounts[31], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC302_AccountAllCommoditiesDisabled" status="run" time="42.68876" timestamp="2020-02-19T00:29:28.138206">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC302_AccountAllCommoditiesDisabled_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[32], exchange, accounts[32], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC302_AccountAllCommoditiesDisabled_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[32], exchange, accounts[32], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC303_AllCommoditiesInstrument" status="run" time="48.563944" timestamp="2020-02-19T00:29:28.185079">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC303_AllCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[33], exchange, accounts[33], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC303_AllCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[33], exchange, accounts[33], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC304_InstrumentAllCommodities" status="run" time="35.063535" timestamp="2020-02-19T00:29:28.294464">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC304_InstrumentAllCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[34], exchange, accounts[34], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC304_InstrumentAllCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[34], exchange, accounts[34], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC305_DefaultAllCommodities" status="run" time="33.188478" timestamp="2020-02-19T00:29:28.341353">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC305_DefaultAllCommodities_tc.py&quot;, line 9, in &lt;module&gt;
+    PlaceAndCancel(traders[35], exchange, accounts[35], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC305_DefaultAllCommodities_tc.py&quot;, line 9, in &lt;module&gt;
+    PlaceAndCancel(traders[35], exchange, accounts[35], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC306_InstrumentContract" status="run" time="42.032486" timestamp="2020-02-19T00:29:28.388218">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC306_InstrumentContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[36], exchange, accounts[36], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC306_InstrumentContract_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[36], exchange, accounts[36], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC307_DefaultAllCommodities" status="run" time="33.235368" timestamp="2020-02-19T00:29:28.419465">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC307_DefaultAllCommodities_tc.py&quot;, line 9, in &lt;module&gt;
+    PlaceAndCancel(traders[37], exchange, accounts[37], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC307_DefaultAllCommodities_tc.py&quot;, line 9, in &lt;module&gt;
+    PlaceAndCancel(traders[37], exchange, accounts[37], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC308_ExchangeUSCommodities" status="run" time="63.79875" timestamp="2020-02-19T00:29:28.497592">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC308_ExchangeUSCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[38], exchange, accounts[38], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC308_ExchangeUSCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[38], exchange, accounts[38], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC309_DefaultUSCommoditiesExchange" status="run" time="62.595602" timestamp="2020-02-19T00:29:28.560092">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC309_DefaultUSCommoditiesExchange_tc.py&quot;, line 12, in &lt;module&gt;
+    PlaceAndCancel(traders[39], exchange, accounts[39], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC309_DefaultUSCommoditiesExchange_tc.py&quot;, line 12, in &lt;module&gt;
+    PlaceAndCancel(traders[39], exchange, accounts[39], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC310_USCommoditiesAllCommoditiesCommodity" status="run" time="54.157856" timestamp="2020-02-19T00:29:28.606968">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC310_USCommoditiesAllCommoditiesCommodity_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[310], exchange, accounts[310], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC310_USCommoditiesAllCommoditiesCommodity_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[310], exchange, accounts[310], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC313_AllCommoditiesInstrument" status="run" time="37.532354" timestamp="2020-02-19T00:29:28.700724">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC313_AllCommoditiesInstrument_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[313], exchange, accounts[313], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC313_AllCommoditiesInstrument_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[313], exchange, accounts[313], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC314_InstrumentAllCommodities" status="run" time="40.844953" timestamp="2020-02-19T00:29:28.778852">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC314_InstrumentAllCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[314], exchange, accounts[314], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC314_InstrumentAllCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[314], exchange, accounts[314], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="32" name="Tenors" skipped="0" tests="32" testsuite_failed="True" time="68.252012" timestamp="2020-02-19T00:30:35.999571">
+   <testcase name="TC101_AllCommoditiesLimited" status="run" time="22.39129" timestamp="2020-02-19T00:30:58.437720">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC101_AllCommoditiesLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[111], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC101_AllCommoditiesLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[111], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC102_USCommoditiesLimited" status="run" time="22.344199" timestamp="2020-02-19T00:30:58.484811">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC102_USCommoditiesLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[112], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC102_USCommoditiesLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[112], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC103_NonUSCommoditiesLimited" status="run" time="23.610055" timestamp="2020-02-19T00:30:58.531485">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC103_NonUSCommoditiesLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[113], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC103_NonUSCommoditiesLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[113], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC104_ExchangeLimited" status="run" time="22.235046" timestamp="2020-02-19T00:30:58.593964">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC104_ExchangeLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[114], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC104_ExchangeLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[114], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC105_CommodityLimited" status="run" time="23.219444" timestamp="2020-02-19T00:30:58.797096">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC105_CommodityLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[115], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC105_CommodityLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[115], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC106_InstrumentLimited" status="run" time="21.969424" timestamp="2020-02-19T00:30:58.875220">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC106_InstrumentLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[116], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC106_InstrumentLimited_tc.py&quot;, line 14, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[116], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC211_CommodityInstrument" status="run" time="23.145248" timestamp="2020-02-19T00:30:58.953348">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC211_CommodityInstrument_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[211], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC211_CommodityInstrument_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[211], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC212_ExchangeInstrument" status="run" time="21.453621" timestamp="2020-02-19T00:30:59.109749">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC212_ExchangeInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[212], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC212_ExchangeInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[212], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC213_ExchangeCommodity" status="run" time="21.281884" timestamp="2020-02-19T00:30:59.343985">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC213_ExchangeCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[213], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC213_ExchangeCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[213], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC214_NonUSCommoditiesInstrument" status="run" time="21.672517" timestamp="2020-02-19T00:30:59.625245">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC214_NonUSCommoditiesInstrument_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[214], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC214_NonUSCommoditiesInstrument_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[214], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC221_NonUSCommoditiesCommodity" status="run" time="21.438134" timestamp="2020-02-19T00:30:59.859628">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC221_NonUSCommoditiesCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[221], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC221_NonUSCommoditiesCommodity_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[221], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC222_USCommoditiesInstrument" status="run" time="21.078771" timestamp="2020-02-19T00:31:00.156511">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC222_USCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[222], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC222_USCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[222], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC223_USCommoditiesCommodity" status="run" time="20.266229" timestamp="2020-02-19T00:31:00.359640">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC223_USCommoditiesCommodity_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[223], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC223_USCommoditiesCommodity_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[223], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC224_USCommoditiesExchange" status="run" time="21.641267" timestamp="2020-02-19T00:31:00.422144">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC224_USCommoditiesExchange_tc.py&quot;, line 12, in &lt;module&gt;
+    PlaceAndCancel(traders[1], exchange, accounts[224], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC224_USCommoditiesExchange_tc.py&quot;, line 12, in &lt;module&gt;
+    PlaceAndCancel(traders[1], exchange, accounts[224], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC225_AllCommoditiesInstrument" status="run" time="21.547428" timestamp="2020-02-19T00:31:00.531617">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC225_AllCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[225], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC225_AllCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[1], exchange, accounts[225], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC231_AllCommoditiesCommodity" status="run" time="21.391271" timestamp="2020-02-19T00:31:00.687774">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC231_AllCommoditiesCommodity_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[231], exchange, accounts[231], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC231_AllCommoditiesCommodity_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[231], exchange, accounts[231], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC232_AllCommoditiesExchange" status="run" time="20.704179" timestamp="2020-02-19T00:31:00.750275">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC232_AllCommoditiesExchange_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[232], exchange, accounts[232], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC232_AllCommoditiesExchange_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[232], exchange, accounts[232], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC233_AllCommoditiesNonUSCommodities" status="run" time="21.172515" timestamp="2020-02-19T00:31:00.906530">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC233_AllCommoditiesNonUSCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[233], exchange, accounts[233], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC233_AllCommoditiesNonUSCommodities_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[233], exchange, accounts[233], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC234_AllCommoditiesUSCommodities" status="run" time="19.516444" timestamp="2020-02-19T00:31:00.969270">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC234_AllCommoditiesUSCommodities_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[234], exchange, accounts[234], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC234_AllCommoditiesUSCommodities_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[234], exchange, accounts[234], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC301_AccountAllCommoditiesDefault" status="run" time="19.531833" timestamp="2020-02-19T00:31:01.094036">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC301_AccountAllCommoditiesDefault_tc.py&quot;, line 9, in &lt;module&gt;
+    PlaceAndCancel(traders[31], exchange, accounts[31], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC301_AccountAllCommoditiesDefault_tc.py&quot;, line 9, in &lt;module&gt;
+    PlaceAndCancel(traders[31], exchange, accounts[31], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC302_AccountDefaultAllCommodities" status="run" time="19.437905" timestamp="2020-02-19T00:31:01.187964">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC302_AccountDefaultAllCommodities_tc.py&quot;, line 10, in &lt;module&gt;
+    PlaceRejected(traders[32], exchange, accounts[32], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC302_AccountDefaultAllCommodities_tc.py&quot;, line 10, in &lt;module&gt;
+    PlaceRejected(traders[32], exchange, accounts[32], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC303_AllCommoditiesInstrument" status="run" time="21.188022" timestamp="2020-02-19T00:31:01.328534">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC303_AllCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[33], exchange, accounts[33], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC303_AllCommoditiesInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[33], exchange, accounts[33], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC304_InstrumentAllCommodities" status="run" time="19.953945" timestamp="2020-02-19T00:31:01.406548">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC304_InstrumentAllCommodities_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[34], exchange, accounts[34], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC304_InstrumentAllCommodities_tc.py&quot;, line 16, in &lt;module&gt;
+    PlaceRejected(traders[34], exchange, accounts[34], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC305_DefaultAllCommodities" status="run" time="20.500647" timestamp="2020-02-19T00:31:01.547175">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC305_DefaultAllCommodities_tc.py&quot;, line 9, in &lt;module&gt;
+    PlaceAndCancel(traders[35], exchange, accounts[35], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC305_DefaultAllCommodities_tc.py&quot;, line 9, in &lt;module&gt;
+    PlaceAndCancel(traders[35], exchange, accounts[35], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC306_ExchangeInstrument" status="run" time="20.172514" timestamp="2020-02-19T00:31:01.672180">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC306_ExchangeInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[36], exchange, accounts[36], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC306_ExchangeInstrument_tc.py&quot;, line 13, in &lt;module&gt;
+    PlaceRejected(traders[36], exchange, accounts[36], contract, rejectReason)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 101, in PlaceRejected
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC307_DefaultAllCommodities" status="run" time="20.750695" timestamp="2020-02-19T00:31:01.797195">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC307_DefaultAllCommodities_tc.py&quot;, line 9, in &lt;module&gt;
+    PlaceAndCancel(traders[37], exchange, accounts[37], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC307_DefaultAllCommodities_tc.py&quot;, line 9, in &lt;module&gt;
+    PlaceAndCancel(traders[37], exchange, accounts[37], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC308_CommodityUSCommodities" status="run" time="34.70414" timestamp="2020-02-19T00:31:01.890955">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC308_CommodityUSCommodities_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[38], traders[38], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.US, expirationLimit = getExpirationLimit('V99'))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\test_suite_su.py&quot;, line 123, in setupAllowedToTrade
+    CASTClient.WaitReplicationFromCentralToLocal(castClient)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 954, in WaitReplicationFromCentralToLocal
+    castClient.ProcessControllerRequest(&quot;Common/Replication&quot;, &quot;WaitReplication&quot;, data)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 218, in ProcessControllerRequest
+    raise Exception(msg)
+Exception: Action 'WaitReplication' of controller 'Common/Replication' returned an error: An unexpected error occurred while processing the request. Contact CQG customer support for assistance..
+JSON request:
+{&quot;direction&quot;: 1, &quot;multiplier&quot;: 1, &quot;locations&quot;: [0]}
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC308_CommodityUSCommodities_tc.py&quot;, line 8, in &lt;module&gt;
+    Restriction(accounts[38], traders[38], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.US, expirationLimit = getExpirationLimit('V99'))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\test_suite_su.py&quot;, line 123, in setupAllowedToTrade
+    CASTClient.WaitReplicationFromCentralToLocal(castClient)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 954, in WaitReplicationFromCentralToLocal
+    castClient.ProcessControllerRequest(&quot;Common/Replication&quot;, &quot;WaitReplication&quot;, data)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 218, in ProcessControllerRequest
+    raise Exception(msg)
+Exception: Action 'WaitReplication' of controller 'Common/Replication' returned an error: An unexpected error occurred while processing the request. Contact CQG customer support for assistance..
+JSON request:
+{&quot;direction&quot;: 1, &quot;multiplier&quot;: 1, &quot;locations&quot;: [0]}
+</failure>
+   </testcase>
+   <testcase name="TC309_DefaultUSCommoditiesExchange" status="run" time="20.392199" timestamp="2020-02-19T00:31:02.094073">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC309_DefaultUSCommoditiesExchange_tc.py&quot;, line 12, in &lt;module&gt;
+    PlaceAndCancel(traders[39], exchange, accounts[39], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC309_DefaultUSCommoditiesExchange_tc.py&quot;, line 12, in &lt;module&gt;
+    PlaceAndCancel(traders[39], exchange, accounts[39], contract)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\test_suite_su.py&quot;, line 96, in PlaceAndCancel
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, size, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TC310_NonUSCommoditiesAllCommoditiesCommodity" status="run" time="34.781771" timestamp="2020-02-19T00:31:02.250951">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC310_NonUSCommoditiesAllCommoditiesCommodity_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[310], traders[310], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Commodity, contract = SFEPZ99, expirationLimit = getExpirationLimit('Z99'))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\test_suite_su.py&quot;, line 123, in setupAllowedToTrade
+    CASTClient.WaitReplicationFromCentralToLocal(castClient)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 954, in WaitReplicationFromCentralToLocal
+    castClient.ProcessControllerRequest(&quot;Common/Replication&quot;, &quot;WaitReplication&quot;, data)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 218, in ProcessControllerRequest
+    raise Exception(msg)
+Exception: Action 'WaitReplication' of controller 'Common/Replication' returned an error: An unexpected error occurred while processing the request. Contact CQG customer support for assistance..
+JSON request:
+{&quot;direction&quot;: 1, &quot;multiplier&quot;: 1, &quot;locations&quot;: [0]}
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC310_NonUSCommoditiesAllCommoditiesCommodity_tc.py&quot;, line 9, in &lt;module&gt;
+    Restriction(accounts[310], traders[310], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Commodity, contract = SFEPZ99, expirationLimit = getExpirationLimit('Z99'))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\test_suite_su.py&quot;, line 123, in setupAllowedToTrade
+    CASTClient.WaitReplicationFromCentralToLocal(castClient)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 954, in WaitReplicationFromCentralToLocal
+    castClient.ProcessControllerRequest(&quot;Common/Replication&quot;, &quot;WaitReplication&quot;, data)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 218, in ProcessControllerRequest
+    raise Exception(msg)
+Exception: Action 'WaitReplication' of controller 'Common/Replication' returned an error: An unexpected error occurred while processing the request. Contact CQG customer support for assistance..
+JSON request:
+{&quot;direction&quot;: 1, &quot;multiplier&quot;: 1, &quot;locations&quot;: [0]}
+</failure>
+   </testcase>
+   <testcase name="TC312_DailyFutures" status="run" time="38.29739" timestamp="2020-02-19T00:31:02.438443">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC312_DailyFutures_tc.py&quot;, line 13, in &lt;module&gt;
+    Restriction(accounts[332], traders[332], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.All, expirationLimit = getExpirationLimit('Z99'))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\test_suite_su.py&quot;, line 123, in setupAllowedToTrade
+    CASTClient.WaitReplicationFromCentralToLocal(castClient)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 954, in WaitReplicationFromCentralToLocal
+    castClient.ProcessControllerRequest(&quot;Common/Replication&quot;, &quot;WaitReplication&quot;, data)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 218, in ProcessControllerRequest
+    raise Exception(msg)
+Exception: Action 'WaitReplication' of controller 'Common/Replication' returned an error: An unexpected error occurred while processing the request. Contact CQG customer support for assistance..
+JSON request:
+{&quot;direction&quot;: 1, &quot;multiplier&quot;: 1, &quot;locations&quot;: [0]}
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC312_DailyFutures_tc.py&quot;, line 13, in &lt;module&gt;
+    Restriction(accounts[332], traders[332], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.All, expirationLimit = getExpirationLimit('Z99'))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\test_suite_su.py&quot;, line 123, in setupAllowedToTrade
+    CASTClient.WaitReplicationFromCentralToLocal(castClient)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 954, in WaitReplicationFromCentralToLocal
+    castClient.ProcessControllerRequest(&quot;Common/Replication&quot;, &quot;WaitReplication&quot;, data)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 218, in ProcessControllerRequest
+    raise Exception(msg)
+Exception: Action 'WaitReplication' of controller 'Common/Replication' returned an error: An unexpected error occurred while processing the request. Contact CQG customer support for assistance..
+JSON request:
+{&quot;direction&quot;: 1, &quot;multiplier&quot;: 1, &quot;locations&quot;: [0]}
+</failure>
+   </testcase>
+   <testcase name="TC313_AllCommoditiesInstrument" status="run" time="36.080411" timestamp="2020-02-19T00:31:02.625406">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC313_AllCommoditiesInstrument_tc.py&quot;, line 9, in &lt;module&gt;
+    limitLevel = LimitLevel.Instrument, contract = SFEPZ99, expirationLimit = getExpirationLimit('Z99'), enforce = True)]
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\test_suite_su.py&quot;, line 123, in setupAllowedToTrade
+    CASTClient.WaitReplicationFromCentralToLocal(castClient)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 954, in WaitReplicationFromCentralToLocal
+    castClient.ProcessControllerRequest(&quot;Common/Replication&quot;, &quot;WaitReplication&quot;, data)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 218, in ProcessControllerRequest
+    raise Exception(msg)
+Exception: Action 'WaitReplication' of controller 'Common/Replication' returned an error: An unexpected error occurred while processing the request. Contact CQG customer support for assistance..
+JSON request:
+{&quot;direction&quot;: 1, &quot;multiplier&quot;: 1, &quot;locations&quot;: [0]}
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC313_AllCommoditiesInstrument_tc.py&quot;, line 9, in &lt;module&gt;
+    limitLevel = LimitLevel.Instrument, contract = SFEPZ99, expirationLimit = getExpirationLimit('Z99'), enforce = True)]
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\test_suite_su.py&quot;, line 123, in setupAllowedToTrade
+    CASTClient.WaitReplicationFromCentralToLocal(castClient)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 954, in WaitReplicationFromCentralToLocal
+    castClient.ProcessControllerRequest(&quot;Common/Replication&quot;, &quot;WaitReplication&quot;, data)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 218, in ProcessControllerRequest
+    raise Exception(msg)
+Exception: Action 'WaitReplication' of controller 'Common/Replication' returned an error: An unexpected error occurred while processing the request. Contact CQG customer support for assistance..
+JSON request:
+{&quot;direction&quot;: 1, &quot;multiplier&quot;: 1, &quot;locations&quot;: [0]}
+</failure>
+   </testcase>
+   <testcase name="TC314_InstrumentAllCommodities" status="run" time="36.766727" timestamp="2020-02-19T00:31:02.703460">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC314_InstrumentAllCommodities_tc.py&quot;, line 11, in &lt;module&gt;
+    Restriction(accounts[314], traders[314], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.All, expirationLimit = limit2, enforce = True)]
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\test_suite_su.py&quot;, line 123, in setupAllowedToTrade
+    CASTClient.WaitReplicationFromCentralToLocal(castClient)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 954, in WaitReplicationFromCentralToLocal
+    castClient.ProcessControllerRequest(&quot;Common/Replication&quot;, &quot;WaitReplication&quot;, data)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 218, in ProcessControllerRequest
+    raise Exception(msg)
+Exception: Action 'WaitReplication' of controller 'Common/Replication' returned an error: An unexpected error occurred while processing the request. Contact CQG customer support for assistance..
+JSON request:
+{&quot;direction&quot;: 1, &quot;multiplier&quot;: 1, &quot;locations&quot;: [0]}
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\TC314_InstrumentAllCommodities_tc.py&quot;, line 11, in &lt;module&gt;
+    Restriction(accounts[314], traders[314], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.All, expirationLimit = limit2, enforce = True)]
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\Tenors\test_suite_su.py&quot;, line 123, in setupAllowedToTrade
+    CASTClient.WaitReplicationFromCentralToLocal(castClient)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 954, in WaitReplicationFromCentralToLocal
+    castClient.ProcessControllerRequest(&quot;Common/Replication&quot;, &quot;WaitReplication&quot;, data)
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\CASTClient.py&quot;, line 218, in ProcessControllerRequest
+    raise Exception(msg)
+Exception: Action 'WaitReplication' of controller 'Common/Replication' returned an error: An unexpected error occurred while processing the request. Contact CQG customer support for assistance..
+JSON request:
+{&quot;direction&quot;: 1, &quot;multiplier&quot;: 1, &quot;locations&quot;: [0]}
+</failure>
+   </testcase>
+  </testsuite>
+ </testsuite>
+</testsuites>

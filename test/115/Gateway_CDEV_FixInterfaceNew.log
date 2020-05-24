@@ -1,0 +1,735 @@
+19:45:51.10  Test starded without threads
+17:45:51.662 Python Module Path 'ScriptKit' added.
+17:45:51.662 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites/PythonModules' added.
+17:45:51.662 Python Module Path 'Scripts/Gateway/PythonModules' added.
+17:45:52.569 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites' filtered execution.
+17:45:52.600 Suite '.'. [0 test cases, 32 sub-suites]
+17:46:00.397 Suite 'AlgoExecLimits'. [1 test cases, 0 sub-suites]
+17:46:02.663 Case '11_FixTest' execution.
+17:48:03.323 Case '11_FixTest' succeeded.
+17:48:04.823 Suite 'AlgoGrouping'. [1 test cases, 0 sub-suites]
+17:48:08.980 Case '08_FixTest' execution.
+17:48:09.214 Case '08_FixTest' succeeded.
+17:48:13.089 Suite 'BloombergStrategyMapping'. [3 test cases, 0 sub-suites]
+17:48:15.417 Case 'LegMapping' execution.
+17:48:15.495 Case 'SymbolAndLegMapping' execution.
+17:48:15.558 Case 'WrongSymbol' execution.
+17:48:15.730 Case 'LegMapping' succeeded.
+17:48:15.808 Case 'WrongSymbol' succeeded.
+17:48:15.886 Case 'SymbolAndLegMapping' succeeded.
+17:48:17.386 Suite 'ChildOrders'. [3 test cases, 0 sub-suites]
+17:48:24.747 Case 'OrderDTDEvents' execution.
+17:48:24.809 Case 'PlaceModifyCancel' execution.
+17:48:24.902 Case 'RiskCalculation' execution.
+17:48:25.183 Case 'PlaceModifyCancel' succeeded.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites\ChildOrders\OrderDTDEvents_tc.py", line 93, in <module>
+    test(acctDTDEvt, acctInfoDTDEvt)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites\ChildOrders\OrderDTDEvents_tc.py", line 91, in test
+    queryParentOrderEvents(traderGW_DTD51, acctInfo, parentPlace_DTD51)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites\ChildOrders\OrderDTDEvents_tc.py", line 37, in queryParentOrderEvents
+    Queries.AssertOrdersQueryEventsAccepted(gwConnection, query, [lastOrderEvent], chunkssupported=True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 513, in AssertOrdersQueryEventsAccepted
+    gwConnection, query, expectedOrderList, queryID=queryID, resultList=resultList, skipElementsPath=skipElementsPath)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 388, in AssertOrdersQueryAccepted
+    CompareXML(__sortCompoundLegs(result), __sortCompoundLegs(expectedResult))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 311, in CompareXML
+    __lexicalXMLString(rootVerifiedXML)))
+AssertionError: Expected:
+<?xml version="1.0" ?>
+<O>
+  <S2C sessionid="2000446">
+    <QR lastchunk="Y" qid="Test_3472f77d-3230-4687-80bb-d3bb07611dee">
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INTRANSIT" remainsz="4.0" timeactiveat="Any" timecancelled="Any" timefirst="20200219T174824.941314" timelast="20200219T174824.941405" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219T174824">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="1789953" tstat="T_INTRANSIT" when="20200219T174824.941405"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-22" exec_system_order_id="20200219-17:48:24-22" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2110138" timeactiveat="Any" timecancelled="Any" timefirst="20200219T174824.941314" timelast="20200219T174824.993292" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219T174824">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2110138" transid="1790977" tstat="T_ACKPLACE" when="20200219T174824.993292"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-22" exec_system_order_id="20200219-17:48:24-22" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2110138" timeactiveat="Any" timecancelled="Any" timefirst="20200219T174824.941314" timelast="20200219T174825.041012" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" is_parent="Y" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219T174824">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2110138" transid="1791745" tstat="T_NOP" when="20200219T174825.041012"/>
+      </OS>
+    </QR>
+  </S2C>
+</O>
+
+Got:
+<?xml version="1.0" ?>
+<O>
+  <S2C sessionid="2000446">
+    <QR lastchunk="Y" qid="Test_3472f77d-3230-4687-80bb-d3bb07611dee">
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INTRANSIT" remainsz="4" timeactiveat="Any" timecancelled="Any" timefirst="20200219T174824.941314" timelast="20200219T174824.941405" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219T174824">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="1789953" tstat="T_INTRANSIT" when="20200219T174824.941405"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-22" exec_system_order_id="20200219-17:48:24-22" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2110138" timeactiveat="Any" timecancelled="Any" timefirst="20200219T174824.941314" timelast="20200219T174824.993292" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219T174824">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2110138" transid="1790977" tstat="T_ACKPLACE" when="20200219T174824.993292"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-22" exec_system_order_id="20200219-17:48:24-22" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2110138" timeactiveat="Any" timecancelled="Any" timefirst="20200219T174824.941314" timelast="20200219T174825.041012" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" is_parent="Y" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219T174824">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219T000000" bd_to="20200219T000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" execution_source_code="Y" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2110138" transid="1791745" tstat="T_NOP" when="20200219T174825.041012"/>
+      </OS>
+    </QR>
+  </S2C>
+</O>
+
+
+17:48:48.215 Case 'OrderDTDEvents' failed.
+17:48:50.028 Case 'RiskCalculation' succeeded.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites\ChildOrders\test_suite_td.py", line 7, in <module>
+    Queries.AssertQueryForOrders(GWConnection.GWConnectionList)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 473, in AssertQueryForOrders
+    AssertOrdersQueryEventsAccepted(gwConnection, query, expectedEventList, chunkssupported=True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 513, in AssertOrdersQueryEventsAccepted
+    gwConnection, query, expectedOrderList, queryID=queryID, resultList=resultList, skipElementsPath=skipElementsPath)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 388, in AssertOrdersQueryAccepted
+    CompareXML(__sortCompoundLegs(result), __sortCompoundLegs(expectedResult))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\Queries\QueryActions.py", line 311, in CompareXML
+    __lexicalXMLString(rootVerifiedXML)))
+AssertionError: Expected:
+<?xml version="1.0" ?>
+<O>
+  <S2C sessionid="2000442">
+    <QR lastchunk="Y" qid="Test_db3e33c2-19a7-43ea-bd97-64dfb9144a7b">
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INTRANSIT" remainsz="4.0" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824941" timelast="20200219174824941" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="1789953" tstat="T_INTRANSIT" when="20200219174824941"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-22" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2110138" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824941" timelast="20200219174824993" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2110138" transid="1790977" tstat="T_ACKPLACE" when="20200219174824993"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-22" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2110138" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824941" timelast="20200219174825041" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2110138" transid="1791745" tstat="T_NOP" when="20200219174825041"/>
+      </OS>
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2140138" ostat="O_INTRANSIT" remainsz="4.0" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824869" timelast="20200219174824869" traderid="5294">
+        <PO acttime="Any" clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" parktime="Any" poguid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336812"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="1789441" tstat="T_INTRANSIT" when="20200219174824869"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-21" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2140138" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2140138" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824869" timelast="20200219174824924" traderid="5294">
+        <PO acttime="Any" clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" parktime="Any" poguid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336812"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2140138" transid="1789697" tstat="T_ACKPLACE" when="20200219174824924"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-21" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2140138" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2140138" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824869" timelast="20200219174824975" traderid="5294">
+        <PO acttime="Any" clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" parktime="Any" poguid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336812"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2140138" transid="1790721" tstat="T_NOP" when="20200219174824975"/>
+      </OS>
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2140139" ostat="O_INTRANSIT" remainsz="4.0" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824975" timelast="20200219174824975" traderid="5294">
+        <PO acttime="Any" clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" parktime="Any" poguid="9751f02b-49b2-49ff-bd81-f07828eea71c" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336813"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="1790209" tstat="T_INTRANSIT" when="20200219174824975"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-23" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2140139" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2140139" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824975" timelast="20200219174825019" traderid="5294">
+        <PO acttime="Any" clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" parktime="Any" poguid="9751f02b-49b2-49ff-bd81-f07828eea71c" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336813"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2140139" transid="1791233" tstat="T_ACKPLACE" when="20200219174825019"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-23" fillcnt="0" fillsz="0.0" hangcount="0" lasttransactionid="Any" orderid="2140139" ostat="O_INORDERBOOK" remainsz="4.0" routeclorderid="OrderID2140139" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824975" timelast="20200219174829975" traderid="5294">
+        <PO acttime="Any" clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" parktime="Any" poguid="9751f02b-49b2-49ff-bd81-f07828eea71c" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336813"/>
+          <LIMITORDER limitprice="100" side="B" sz="4.0"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2140139" transid="1794305" tstat="T_NOP" when="20200219174829975"/>
+      </OS>
+    </QR>
+  </S2C>
+</O>
+
+Got:
+<?xml version="1.0" ?>
+<O>
+  <S2C sessionid="2000442">
+    <QR lastchunk="Y" qid="Test_db3e33c2-19a7-43ea-bd97-64dfb9144a7b">
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INTRANSIT" remainsz="4" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824941" timelast="20200219174824941" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="1789953" tstat="T_INTRANSIT" when="20200219174824941"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-22" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2110138" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824941" timelast="20200219174824993" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2110138" transid="1790977" tstat="T_ACKPLACE" when="20200219174824993"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-22" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2110138" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2110138" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824941" timelast="20200219174825041" traderid="5294">
+        <PO acttime="Any" clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" parktime="Any" poguid="81f76129-0041-4546-84de-ee0f9b368205" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="337300"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="81f76129-0041-4546-84de-ee0f9b368205" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2110138" transid="1791745" tstat="T_NOP" when="20200219174825041"/>
+      </OS>
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2140138" ostat="O_INTRANSIT" remainsz="4" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824869" timelast="20200219174824869" traderid="5294">
+        <PO acttime="Any" clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" parktime="Any" poguid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336812"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="1789441" tstat="T_INTRANSIT" when="20200219174824869"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-21" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2140138" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2140138" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824869" timelast="20200219174824924" traderid="5294">
+        <PO acttime="Any" clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" parktime="Any" poguid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336812"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2140138" transid="1789697" tstat="T_ACKPLACE" when="20200219174824924"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-21" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2140138" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2140138" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824869" timelast="20200219174824975" traderid="5294">
+        <PO acttime="Any" clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" parktime="Any" poguid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336812"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="c7e2e918-aa23-4feb-b447-6d70fdc82dc1" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2140138" transid="1790721" tstat="T_NOP" when="20200219174824975"/>
+      </OS>
+      <OS avfillprice="0" excconf="" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2140139" ostat="O_INTRANSIT" remainsz="4" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824975" timelast="20200219174824975" traderid="5294">
+        <PO acttime="Any" clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" parktime="Any" poguid="9751f02b-49b2-49ff-bd81-f07828eea71c" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336813"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" transid="1790209" tstat="T_INTRANSIT" when="20200219174824975"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-23" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2140139" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2140139" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824975" timelast="20200219174825019" traderid="5294">
+        <PO acttime="Any" clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" parktime="Any" poguid="9751f02b-49b2-49ff-bd81-f07828eea71c" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336813"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2140139" transid="1791233" tstat="T_ACKPLACE" when="20200219174825019"/>
+      </OS>
+      <OS avfillprice="0" excconf="20200219-17:48:24-23" fillcnt="0" fillsz="0" hangcount="0" lasttransactionid="Any" orderid="2140139" ostat="O_INORDERBOOK" remainsz="4" routeclorderid="OrderID2140139" timeactiveat="Any" timecancelled="Any" timefirst="20200219174824975" timelast="20200219174829975" traderid="5294">
+        <PO acttime="Any" clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" parktime="Any" poguid="9751f02b-49b2-49ff-bd81-f07828eea71c" sym="F.SF.SFEP.Z99" trading_expression="" ue_name="FIX.4.2" when="20200219174824000">
+          <ACCTID gwacctid="336813"/>
+          <LIMITORDER limitprice="100" side="B" sz="4"/>
+          <DUR/>
+          <SRC cqgid="0" username="SF_FIX_CO_Trader1"/>
+        </PO>
+        <BDRANGE bd_from="20200219000000000" bd_to="20200219000000000"/>
+        <TS clorderid="9751f02b-49b2-49ff-bd81-f07828eea71c" manual_order="Y" mifid_execution_decision="NORE" mifid_execution_decision_is_algo="N" routeclorderid="OrderID2140139" transid="1794305" tstat="T_NOP" when="20200219174829975"/>
+      </OS>
+    </QR>
+  </S2C>
+</O>
+
+
+17:48:57.138 Suite 'ChildOrders' teardown failed.
+17:48:57.294 Suite 'ClientExtras'. [1 test cases, 0 sub-suites]
+17:49:01.575 Case 'IsDirectOnBehalfOfSubID_and_SendSenderSubIDToExchange' execution.
+17:49:01.903 Case 'IsDirectOnBehalfOfSubID_and_SendSenderSubIDToExchange' succeeded.
+17:49:03.591 Suite 'CollateralReport'. [1 test cases, 0 sub-suites]
+17:49:05.935 Case 'RealizedProfitLoss' execution.
+17:49:13.201 Case 'RealizedProfitLoss' succeeded.
+17:49:14.966 Suite 'CombinationOfAdjusters'. [4 test cases, 0 sub-suites]
+17:49:21.232 Case 'AlwaysRejectWithExecutionReportDisabled' execution.
+17:49:21.326 Case 'AlwaysRejectWithExecutionReportEnabled' execution.
+17:49:21.435 Case 'AlwaysRejectWithExecutionReportDisabled' succeeded.
+17:49:21.467 Case 'MultilegOrder' execution.
+17:49:21.545 Case 'SingleOrder' execution.
+17:49:21.638 Case 'AlwaysRejectWithExecutionReportEnabled' succeeded.
+17:49:21.904 Case 'SingleOrder' succeeded.
+17:49:22.029 Case 'MultilegOrder' succeeded.
+17:49:29.404 Suite 'ContractSearch'. [1 test cases, 0 sub-suites]
+17:49:31.576 Case 'ContractIdStyleFture' execution.
+17:49:31.733 Case 'ContractIdStyleFture' succeeded.
+17:49:33.670 Suite 'DiscretionaryOrderPlacement'. [3 test cases, 0 sub-suites]
+17:49:37.889 Case '01_ModifyCancel' execution.
+17:49:37.983 Case '02_TraderNotEnabled' execution.
+17:49:38.062 Case '02_TraderNotEnabled' succeeded.
+17:49:38.062 Case '03_Rejections' execution.
+17:49:38.389 Case '01_ModifyCancel' succeeded.
+17:49:40.967 Case '03_Rejections' succeeded.
+17:49:45.014 Suite 'Envchange'. [1 test cases, 0 sub-suites]
+17:49:47.452 Case 'Envchange' execution.
+17:50:45.001 Case 'Envchange' succeeded.
+17:50:46.938 Suite 'ErisDigital'. [1 test cases, 0 sub-suites]
+17:50:49.173 Case '11_ModifyCancel' execution.
+17:50:49.563 Case '11_ModifyCancel' succeeded.
+17:50:51.267 Suite 'ExecutionReport'. [6 test cases, 1 sub-suites]
+17:50:55.533 Case 'AutomaticMultilegOrder' execution.
+17:50:55.611 Case 'AutomaticOrder' execution.
+17:50:55.736 Case 'FillCorrection' execution.
+17:50:55.814 Case 'FutSettDate' execution.
+17:50:55.923 Case 'RejectAndCommentInTextTag' execution.
+17:50:56.032 Case 'SuspendedOrderReplace' execution.
+17:50:56.064 Case 'RejectAndCommentInTextTag' succeeded.
+17:50:56.173 Case 'AutomaticOrder' succeeded.
+17:50:56.189 Case 'AutomaticMultilegOrder' succeeded.
+17:50:56.501 Case 'SuspendedOrderReplace' succeeded.
+17:51:01.221 Case 'FillCorrection' succeeded.
+17:51:06.970 Case 'FutSettDate' succeeded.
+17:51:07.111 Suite 'ExecutionReport\AggressorIndicator_ts.py'. [4 test cases, 0 sub-suites]
+17:51:07.252 Case 'FullFill' execution.
+17:51:07.345 Case 'PartialFill' execution.
+17:51:07.439 Case 'NativeStrategyFullFill' execution.
+17:51:07.534 Case 'NativeStrategyPartialFill' execution.
+17:51:07.689 Case 'PartialFill' succeeded.
+17:51:07.882 Case 'FullFill' succeeded.
+17:51:08.642 Case 'NativeStrategyPartialFill' succeeded.
+17:51:08.783 Case 'NativeStrategyFullFill' succeeded.
+17:51:11.752 Suite 'ExecutionSourceCode'. [1 test cases, 0 sub-suites]
+17:51:13.955 Case 'Fix_SimpleOrder' execution.
+17:51:16.908 Case 'Fix_SimpleOrder' succeeded.
+17:51:19.065 Suite 'ForceCareOrderEnhancements'. [0 test cases, 2 sub-suites]
+17:51:38.768 Suite 'ForceCareOrderEnhancements\AutomatedCare'. [3 test cases, 0 sub-suites]
+17:51:38.940 Case '02_TwoAcctOneOrder' execution.
+17:51:39.050 Case '04_TwoAcctTwoOrders' execution.
+17:51:39.143 Case '05_TwoAcctTwoOrdersRejections' execution.
+17:51:40.956 Case '05_TwoAcctTwoOrdersRejections' succeeded.
+17:51:45.940 Case '02_TwoAcctOneOrder' succeeded.
+17:51:52.816 Case '04_TwoAcctTwoOrders' succeeded.
+17:51:53.175 Suite 'ForceCareOrderEnhancements\AutomatedParkRisk'. [5 test cases, 0 sub-suites]
+17:51:53.363 Case '01_CPLandTML' execution.
+17:51:53.426 Case '03_OrderHandler_Liq' execution.
+17:51:53.488 Case '04_OrderHandler_CommPL' execution.
+17:51:53.597 Case '05_OrderHandler_ContrPL' execution.
+17:51:53.692 Case '06_CPLandTML_NoForceCare' execution.
+17:51:53.972 Case '04_OrderHandler_CommPL' succeeded.
+17:51:54.097 Case '03_OrderHandler_Liq' succeeded.
+17:51:54.222 Case '05_OrderHandler_ContrPL' succeeded.
+17:51:54.347 Case '01_CPLandTML' succeeded.
+17:51:54.503 Case '06_CPLandTML_NoForceCare' succeeded.
+17:52:07.113 Suite 'HeartBeat'. [1 test cases, 0 sub-suites]
+17:52:08.473 Case 'HeartBeatInterval' execution.
+17:53:38.741 Case 'HeartBeatInterval' succeeded.
+17:53:40.304 Suite 'Logon'. [1 test cases, 0 sub-suites]
+17:53:40.476 Case 'MissingSenderSubID' execution.
+17:53:40.601 Case 'MissingSenderSubID' succeeded.
+17:53:40.976 Suite 'ManualTestAutomation'. [2 test cases, 0 sub-suites]
+17:53:47.351 Case '13_InstrumentTagAdjuster' execution.
+17:53:47.445 Case '2_General' execution.
+17:53:48.117 Case '2_General' succeeded.
+17:53:57.976 Case '13_InstrumentTagAdjuster' succeeded.
+17:54:03.508 Suite 'MessageHeader'. [6 test cases, 0 sub-suites]
+17:54:03.727 Case 'SendLogonNewOrderSingleWithIncorrectMsgType' execution.
+17:54:03.820 Case 'SendLogonNewOrderSingleWithMissingMsgType' execution.
+17:54:03.883 Case 'SendLogonRequestForPositionWithIncorrectMsgType' execution.
+17:54:03.977 Case 'SendLogonWithIncorrectMsgType' execution.
+17:54:04.055 Case 'SendLogonWithMissingMsgType' execution.
+17:54:04.149 Case 'SendLogonWithMissingTargetCompID' execution.
+17:54:06.946 Case 'SendLogonNewOrderSingleWithIncorrectMsgType' succeeded.
+17:54:07.102 Case 'SendLogonRequestForPositionWithIncorrectMsgType' succeeded.
+17:54:47.134 Case 'SendLogonWithIncorrectMsgType' succeeded.
+17:54:47.244 Case 'SendLogonWithMissingMsgType' succeeded.
+17:54:47.291 Case 'SendLogonWithMissingTargetCompID' succeeded.
+17:54:50.353 Case 'SendLogonNewOrderSingleWithMissingMsgType' succeeded.
+17:54:50.666 Suite 'NewOrderMultileg'. [0 test cases, 3 sub-suites]
+17:54:50.932 Suite 'NewOrderMultileg\OrderSpecs'. [17 test cases, 0 sub-suites]
+17:54:53.150 Case 'AON' execution.
+17:54:53.228 Case 'AON' succeeded.
+17:54:53.244 Case 'Day' execution.
+17:54:53.369 Case 'FOK' execution.
+17:54:53.463 Case 'Funari' execution.
+17:54:53.588 Case 'Day' succeeded.
+17:54:53.588 Case 'GTC' execution.
+17:54:53.635 Case 'Funari' succeeded.
+17:54:53.699 Case 'FOK' succeeded.
+17:54:53.744 Case 'GTD' execution.
+17:54:53.807 Case 'Iceberg' execution.
+17:54:53.932 Case 'IOC' execution.
+17:54:54.057 Case 'GTC' succeeded.
+17:54:54.057 Case 'Limit' execution.
+17:54:54.135 Case 'GTD' succeeded.
+17:54:54.166 Case 'Iceberg' succeeded.
+17:54:54.183 Case 'Market' execution.
+17:54:54.244 Case 'MIT' execution.
+17:54:54.353 Case 'MIT' succeeded.
+17:54:54.463 Case 'Limit' succeeded.
+17:54:54.479 Case 'ML' execution.
+17:54:54.510 Case 'IOC' succeeded.
+17:54:54.557 Case 'Market' succeeded.
+17:54:54.572 Case 'QTS' execution.
+17:54:54.666 Case 'ML' succeeded.
+17:54:57.650 Case 'StopLimitTrail' execution.
+17:54:57.729 Case 'StopLimit' execution.
+17:54:57.822 Case 'StopTrail' execution.
+17:54:58.010 Case 'StopLimit' succeeded.
+17:54:58.010 Case 'Stop' execution.
+17:54:58.229 Case 'Stop' succeeded.
+17:54:59.729 Case 'QTS' succeeded.
+17:55:02.792 Case 'StopLimitTrail' succeeded.
+17:55:02.979 Case 'StopTrail' succeeded.
+17:55:05.338 Suite 'NewOrderMultileg\TagsVerification'. [17 test cases, 0 sub-suites]
+17:55:46.262 Case 'DayWithExpireTag' execution.
+17:55:46.357 Case 'ExtraTag' execution.
+17:55:46.433 Case 'DayWithExpireTag' succeeded.
+17:55:46.449 Case 'ExtraTag' succeeded.
+17:55:46.449 Case 'MissingClOrdIDTag' execution.
+17:55:46.512 Case 'MissingClOrdIDTag' succeeded.
+17:55:46.512 Case 'MissingGTDExpireTag' execution.
+17:55:46.605 Case 'MissingGTDExpireTag' succeeded.
+17:55:46.605 Case 'MissingICBRGMaxShowTag' execution.
+17:55:46.686 Case 'MissingICBRGMaxShowTag' succeeded.
+17:55:46.699 Case 'MissingLegRatioQtyTag' execution.
+17:55:46.762 Case 'MissingLegRatioQtyTag' succeeded.
+17:55:46.777 Case 'MissingLegRefIDTag' execution.
+17:55:46.840 Case 'MissingLegRefIDTag' succeeded.
+17:55:46.855 Case 'MissingLegSideTag' execution.
+17:55:46.934 Case 'MissingLegSideTag' succeeded.
+17:55:46.934 Case 'MissingLimitPriceTag' execution.
+17:55:46.996 Case 'MissingLimitPriceTag' succeeded.
+17:55:47.012 Case 'MissingQTSTriggerQtyTag' execution.
+17:55:47.090 Case 'MissingQTSTriggerQtyTag' succeeded.
+17:55:47.090 Case 'MissingSideTag' execution.
+17:55:47.168 Case 'MissingSideTag' succeeded.
+17:55:47.184 Case 'MissingStopLimitPriceTag' execution.
+17:55:47.293 Case 'MissingStopLimitPriceTag' succeeded.
+17:55:47.387 Case 'MissingStopLimitPxTag' execution.
+17:55:47.496 Case 'MissingStopLimitPxTag' succeeded.
+17:55:47.496 Case 'MissingStopPxTag' execution.
+17:55:47.576 Case 'MissingStopPxTag' succeeded.
+17:55:47.576 Case 'NonICBRGWithMaxShowTag' execution.
+17:55:47.668 Case 'NonICBRGWithMaxShowTag' succeeded.
+17:55:47.668 Case 'NonQTSWithTriggerQty' execution.
+17:55:47.855 Case 'NonQTSWithTriggerQty' succeeded.
+17:55:48.934 Case 'MissingAccountTag' execution.
+17:55:48.996 Case 'MissingAccountTag' succeeded.
+17:56:22.654 Suite 'NewOrderMultileg\TagValuesVerification'. [20 test cases, 0 sub-suites]
+17:57:04.390 Case 'EmptyAccount' execution.
+17:57:04.483 Case 'EmptyAccount' succeeded.
+17:57:04.499 Case 'ICBRGWithZeroMaxShow' execution.
+17:57:04.593 Case 'ICBRGWithZeroMaxShow' succeeded.
+17:57:04.608 Case 'InvalidExecInst' execution.
+17:57:04.702 Case 'InvalidExecInst' succeeded.
+17:57:04.718 Case 'InvalidICBRGMaxShow' execution.
+17:57:04.813 Case 'InvalidICBRGMaxShow' succeeded.
+17:57:04.827 Case 'InvalidLegRatioQty' execution.
+17:57:04.905 Case 'InvalidLegRatioQty' succeeded.
+17:57:04.921 Case 'InvalidLegSide' execution.
+17:57:05.030 Case 'InvalidLegSide' succeeded.
+17:57:05.061 Case 'InvalidQTSTriggerQty' execution.
+17:57:05.155 Case 'InvalidQTSTriggerQty' succeeded.
+17:57:05.155 Case 'InvalidSide' execution.
+17:57:05.251 Case 'InvalidSide' succeeded.
+17:57:05.251 Case 'InvalidSymbol' execution.
+17:57:05.405 Case 'InvalidSymbol' succeeded.
+17:57:05.421 Case 'InvalidTimeInForce' execution.
+17:57:05.501 Case 'InvalidTimeInForce' succeeded.
+17:57:05.501 Case 'LimitWithStopPx' execution.
+17:57:05.580 Case 'LimitWithStopPx' succeeded.
+17:57:05.671 Case 'MarketWithPrice' execution.
+17:57:05.764 Case 'MarketWithPrice' succeeded.
+17:57:05.780 Case 'MarketWithStopPx' execution.
+17:57:05.905 Case 'MarketWithStopPx' succeeded.
+17:57:05.921 Case 'OneNoLegs' execution.
+17:57:06.014 Case 'OneNoLegs' succeeded.
+17:57:06.139 Case 'StopWithPrice' execution.
+17:57:06.202 Case 'StopWithPrice' succeeded.
+17:57:06.218 Case 'TrailLimit' execution.
+17:57:06.343 Case 'TrailLimit' succeeded.
+17:57:06.358 Case 'TrailMarket' execution.
+17:57:06.437 Case 'TrailMarket' succeeded.
+17:57:06.452 Case 'UnauthorizedAccount' execution.
+17:57:06.530 Case 'UnauthorizedAccount' succeeded.
+17:57:06.530 Case 'ZeroOrderQty' execution.
+17:57:06.608 Case 'ZeroOrderQty' succeeded.
+17:57:07.718 Case 'StopWithInvalidStopPx' execution.
+17:57:07.811 Case 'StopWithInvalidStopPx' succeeded.
+17:57:47.016 Suite 'OrderCancelReject'. [2 test cases, 0 sub-suites]
+17:57:49.313 Case 'CancelRejectAccountID' execution.
+17:57:49.422 Case 'IncorrectOrderID' execution.
+17:57:49.469 Case 'CancelRejectAccountID' succeeded.
+17:57:49.641 Case 'IncorrectOrderID' succeeded.
+17:57:51.329 Suite 'OrderCancelReplaceMultileg'. [0 test cases, 3 sub-suites]
+17:57:51.610 Suite 'OrderCancelReplaceMultileg\Functional'. [8 test cases, 0 sub-suites]
+17:58:33.236 Case 'LimitNewPrice' execution.
+17:58:33.314 Case 'NegativeOffsetPrice' execution.
+17:58:33.456 Case 'NegativeOffsetStopPx' execution.
+17:58:33.549 Case 'NegativeOffsetPrice' succeeded.
+17:58:33.580 Case 'NewOrderQty' execution.
+17:58:33.674 Case 'LimitNewPrice' succeeded.
+17:58:33.705 Case 'NegativeOffsetStopPx' succeeded.
+17:58:33.705 Case 'ReplaceSuspended' execution.
+17:58:33.799 Case 'StopLimitNewPrice' execution.
+17:58:33.877 Case 'NewOrderQty' succeeded.
+17:58:33.893 Case 'StopLimitNewStopPx' execution.
+17:58:34.002 Case 'StopNewStopPx' execution.
+17:58:34.252 Case 'ReplaceSuspended' succeeded.
+17:58:34.252 Case 'StopLimitNewPrice' succeeded.
+17:58:34.361 Case 'StopLimitNewStopPx' succeeded.
+17:58:34.440 Case 'StopNewStopPx' succeeded.
+17:59:05.503 Suite 'OrderCancelReplaceMultileg\TagsVerification'. [7 test cases, 0 sub-suites]
+17:59:46.270 Case 'MissingAccountTag' execution.
+17:59:46.364 Case 'MissingClOrdIDTag' execution.
+17:59:46.473 Case 'MissingAccountTag' succeeded.
+17:59:46.506 Case 'MissingOrderIDTag' execution.
+17:59:46.583 Case 'MissingClOrdIDTag' succeeded.
+17:59:46.601 Case 'MissingOrigClOrdIDTag' execution.
+17:59:46.708 Case 'MissingOrderIDTag' succeeded.
+17:59:46.708 Case 'MissingSymbolTag' execution.
+17:59:46.817 Case 'MissingOrigClOrdIDTag' succeeded.
+17:59:46.817 Case 'MissingTransactTimeTag' execution.
+17:59:46.911 Case 'MissingSymbolTag' succeeded.
+17:59:46.911 Case 'NoModificationTag' execution.
+17:59:47.020 Case 'MissingTransactTimeTag' succeeded.
+17:59:47.098 Case 'NoModificationTag' succeeded.
+18:00:26.772 Suite 'OrderCancelReplaceMultileg\TagValuesVerification'. [12 test cases, 0 sub-suites]
+18:01:07.273 Case 'ICBRGwithEmptyMaxShow' execution.
+18:01:07.367 Case 'ICBRGWithZeroMaxShow' execution.
+18:01:07.523 Case 'ICBRGwithEmptyMaxShow' succeeded.
+18:01:07.541 Case 'IncorrectAccount' execution.
+18:01:07.648 Case 'ICBRGWithZeroMaxShow' succeeded.
+18:01:07.648 Case 'IncorrectSymbol' execution.
+18:01:07.742 Case 'IncorrectAccount' succeeded.
+18:01:07.757 Case 'IncorrectTimeInForce' execution.
+18:01:07.870 Case 'LMTwithStopPx' execution.
+18:01:07.978 Case 'IncorrectTimeInForce' succeeded.
+18:01:07.992 Case 'MKTwithPrice' execution.
+18:01:08.086 Case 'IncorrectSymbol' succeeded.
+18:01:08.101 Case 'MKTwithStopPx' execution.
+18:01:08.197 Case 'OneNoLegs' execution.
+18:01:08.211 Case 'LMTwithStopPx' succeeded.
+18:01:08.289 Case 'STPwithEmptyStopPx' execution.
+18:01:08.414 Case 'STPwithPrice' execution.
+18:01:08.539 Case 'MKTwithPrice' succeeded.
+18:01:08.554 Case 'WithSide' execution.
+18:01:08.679 Case 'OneNoLegs' succeeded.
+18:01:08.695 Case 'STPwithEmptyStopPx' succeeded.
+18:01:08.711 Case 'MKTwithStopPx' succeeded.
+18:01:08.914 Case 'STPwithPrice' succeeded.
+18:01:09.039 Case 'WithSide' succeeded.
+18:01:44.946 Suite 'OrderCheckMark'. [2 test cases, 0 sub-suites]
+18:01:47.198 Case 'NewOrderSingle' execution.
+18:01:47.291 Case 'OrderCancelReplace' execution.
+18:01:52.478 Case 'NewOrderSingle' succeeded.
+18:01:53.759 Case 'OrderCancelReplace' succeeded.
+18:01:55.384 Suite 'OrderStatusRequest'. [0 test cases, 1 sub-suites]
+18:01:55.572 Suite 'OrderStatusRequest\OrderStatusRequest_ts.py'. [5 test cases, 0 sub-suites]
+18:02:05.869 Case 'OSR_OrderID' execution.
+18:02:05.966 Case 'OSR_ClOrderID' execution.
+18:02:06.088 Case 'OSR_NoOrders' execution.
+18:02:06.197 Case 'OSR_WrongAccount' execution.
+18:02:06.431 Case 'OSR_MissingID' execution.
+18:02:07.275 Case 'OSR_OrderID' succeeded.
+18:02:07.400 Case 'OSR_ClOrderID' succeeded.
+18:02:07.463 Case 'OSR_NoOrders' succeeded.
+18:02:07.557 Case 'OSR_WrongAccount' succeeded.
+18:02:07.666 Case 'OSR_MissingID' succeeded.
+18:02:15.197 Suite 'PartialQty'. [4 test cases, 0 sub-suites]
+18:02:25.526 Case 'NewOrderList' execution.
+18:02:25.620 Case 'NewOrderSingle' execution.
+18:02:25.713 Case 'OrderMassStatusRequest' execution.
+18:02:25.855 Case 'PositionReport' execution.
+18:02:26.323 Case 'NewOrderSingle' succeeded.
+18:02:26.463 Case 'NewOrderList' succeeded.
+18:02:27.120 Case 'OrderMassStatusRequest' succeeded.
+18:02:27.263 Case 'PositionReport' succeeded.
+18:02:35.667 Suite 'PriceAdjuster'. [20 test cases, 0 sub-suites]
+18:02:39.995 Case 'LimitWithBothDecMultipliers' execution.
+18:02:40.104 Case 'LimitWithBothIncMultipliers' execution.
+18:02:40.261 Case 'LimitWithDecMultiplier' execution.
+18:02:40.370 Case 'LimitWithIncMultiplier' execution.
+18:02:40.495 Case 'MultilegLimitWithIncMultiplier' execution.
+18:02:40.683 Case 'MultilegStopLimitWithIncMultiplier' execution.
+18:02:40.776 Case 'MultilegStopWithIncMultiplier' execution.
+18:02:40.933 Case 'OrderListWithIncMultiplier' execution.
+18:02:41.121 Case 'StopLimitWithBothDecMultipliers' execution.
+18:02:41.308 Case 'StopLimitWithBothIncMultipliers' execution.
+18:02:41.448 Case 'StopLimitWithDecMultiplier' execution.
+18:02:41.667 Case 'StopLimitWithIncMultiplier' execution.
+18:02:41.886 Case 'StopWithBothDecMultipliers' execution.
+18:02:42.073 Case 'StopWithBothIncMultipliers' execution.
+18:02:42.230 Case 'StopWithDecMultiplier' execution.
+18:02:42.437 Case 'StopWithIncMultiplier' execution.
+18:02:42.792 Case 'StrikeWithDecMultiplier' execution.
+18:02:42.936 Case 'StrikeWithIncMultiplier' execution.
+18:02:43.120 Case 'SymbolMappingWithIncMultiplier' execution.
+18:02:43.355 Case 'ZeroMultiplier' execution.
+18:02:44.417 Case 'LimitWithBothDecMultipliers' succeeded.
+18:02:44.448 Case 'ZeroMultiplier' succeeded.
+18:02:45.183 Case 'LimitWithIncMultiplier' succeeded.
+18:02:46.230 Case 'MultilegLimitWithIncMultiplier' succeeded.
+18:02:46.402 Case 'SymbolMappingWithIncMultiplier' succeeded.
+18:02:46.683 Case 'LimitWithBothIncMultipliers' succeeded.
+18:02:46.777 Case 'MultilegStopLimitWithIncMultiplier' succeeded.
+18:02:46.823 Case 'LimitWithDecMultiplier' succeeded.
+18:02:46.917 Case 'StopLimitWithBothDecMultipliers' succeeded.
+18:02:46.980 Case 'StopLimitWithBothIncMultipliers' succeeded.
+18:02:47.245 Case 'MultilegStopWithIncMultiplier' succeeded.
+18:02:47.605 Case 'StopLimitWithIncMultiplier' succeeded.
+18:02:47.777 Case 'StopWithBothIncMultipliers' succeeded.
+18:02:47.917 Case 'StopWithDecMultiplier' succeeded.
+18:02:47.980 Case 'StopWithBothDecMultipliers' succeeded.
+18:02:48.136 Case 'StrikeWithIncMultiplier' succeeded.
+18:02:48.402 Case 'StopLimitWithDecMultiplier' succeeded.
+18:02:48.528 Case 'StrikeWithDecMultiplier' succeeded.
+18:02:48.671 Case 'StopWithIncMultiplier' succeeded.
+18:02:49.324 Case 'OrderListWithIncMultiplier' succeeded.
+18:02:52.136 Suite 'RegulatoryAlgorithmID'. [1 test cases, 0 sub-suites]
+18:02:54.340 Case 'SuspendedOrder' execution.
+18:02:54.417 Case 'SuspendedOrder' succeeded.
+18:02:56.433 Suite 'Reject'. [1 test cases, 0 sub-suites]
+18:02:58.636 Case 'UndefinedTag' execution.
+18:02:58.668 Case 'UndefinedTag' succeeded.
+18:03:00.777 Suite 'ReutersRejectCodeAdjuster'. [4 test cases, 0 sub-suites]
+18:03:03.262 Case 'RejectCode110' execution.
+18:03:03.372 Case 'RejectCode110' succeeded.
+18:03:03.387 Case 'RejectCode17' execution.
+18:03:03.496 Case 'RejectCode17' succeeded.
+18:03:03.512 Case 'RejectCode7' execution.
+18:03:03.590 Case 'RejectCode7' succeeded.
+18:03:03.605 Case 'RejectCode9' execution.
+18:03:03.715 Case 'RejectCode9' succeeded.
+18:03:06.137 Suite 'SessionPersistence'. [9 test cases, 0 sub-suites]
+18:03:06.402 Case 'LogonWithSeqNumGreaterThan1' execution.
+18:03:06.543 Case 'SendLogonWithIncorrectMsgSeqNum' execution.
+18:03:06.652 Case 'LogonWithSeqNumGreaterThan1' succeeded.
+18:03:06.652 Case 'SendLogonWithMajorMsgSeqNum' execution.
+18:03:06.762 Case 'TestLogonAndReceiveMissingMsgs' execution.
+18:03:06.918 Case 'TestSessionPersistenceOFF' execution.
+18:03:07.027 Case 'TestSessionPersistenceON' execution.
+18:03:07.730 Case 'TestSyncByLastTransIdAndLastSyncTime' execution.
+18:03:07.855 Case 'TestSyncFor2From3AccountsOnly' execution.
+18:03:08.059 Case 'TestSessionPersistenceOnFor2Traders' execution.
+18:03:10.277 Case 'TestSessionPersistenceOFF' succeeded.
+18:03:10.793 Case 'SendLogonWithIncorrectMsgSeqNum' succeeded.
+18:03:12.402 Case 'TestSessionPersistenceON' succeeded.
+18:03:12.996 Case 'SendLogonWithMajorMsgSeqNum' succeeded.
+18:03:23.231 Case 'TestLogonAndReceiveMissingMsgs' succeeded.
+18:03:32.325 Case 'TestSyncFor2From3AccountsOnly' succeeded.
+18:03:34.622 Case 'TestSessionPersistenceOnFor2Traders' succeeded.
+18:03:36.310 Case 'TestSyncByLastTransIdAndLastSyncTime' succeeded.
+18:03:36.747 Suite 'SeveralConnections'. [4 test cases, 0 sub-suites]
+18:03:46.920 Case 'ClientWithTwoConnections' execution.
+18:03:47.013 Case 'FixAndNativeClients' execution.
+18:03:47.826 Case 'OnBehalfOfSubID' execution.
+18:03:47.982 Case 'TwoFixClients' execution.
+18:03:49.935 Case 'OnBehalfOfSubID' succeeded.
+18:03:50.061 Case 'ClientWithTwoConnections' succeeded.
+18:03:50.747 Case 'FixAndNativeClients' succeeded.
+18:03:50.826 Case 'TwoFixClients' succeeded.
+18:03:57.201 Suite 'TagManagerAdjuster'. [5 test cases, 0 sub-suites]
+18:04:07.701 Case 'AdjustersCombination' execution.
+18:04:07.826 Case 'CopyTag' execution.
+18:04:07.982 Case 'MoveTag' execution.
+18:04:08.092 Case 'AdjustersCombination' succeeded.
+18:04:08.154 Case 'RemoveTag' execution.
+18:04:08.232 Case 'SetTag' execution.
+18:04:08.561 Case 'CopyTag' succeeded.
+18:04:08.701 Case 'MoveTag' succeeded.
+18:04:08.732 Case 'RemoveTag' succeeded.
+18:04:08.811 Case 'SetTag' succeeded.
+18:04:17.826 Suite 'ULLinkIcebergAdjuster'. [2 test cases, 0 sub-suites]
+18:04:20.045 Case 'MaxShowTag' execution.
+18:04:20.139 Case 'NoIcebergTags' execution.
+18:04:20.186 Case 'MaxShowTag' succeeded.
+18:04:20.248 Case 'NoIcebergTags' succeeded.
+18:04:22.686 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterfaceNew/Suites' execution finished. It took 0:18:30.023600.
+18:04:22.686 Test cases results: 189 total, 188 succeeded, 1 failed, 0 skipped.

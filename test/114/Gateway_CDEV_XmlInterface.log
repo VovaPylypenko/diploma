@@ -1,0 +1,22 @@
+ 1:27:04.39  Test starded without threads
+23:27:04.930 Python Module Path 'ScriptKit' added.
+23:27:04.930 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:27:05.243 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/XmlInterface/Suites' full execution.
+23:27:05.259 Suite '.'. [0 test cases, 1 sub-suites]
+23:27:05.290 Suite 'Logon'. [7 test cases, 0 sub-suites]
+23:27:05.418 Case 'CQGT_CQGIC_concurrent_session' execution.
+23:27:05.431 Case 'CQGT_CQGWeb_CQGIC_concurrent_session' execution.
+23:27:05.462 Case 'CQGWeb_CQGIC_concurrent_session' execution.
+23:27:05.477 Case 'CQGWeb_CQGT_concurrent_session' execution.
+23:27:05.509 Case 'CQGWeb_CQGWeb_concurrent_session' execution.
+23:27:05.524 Case 'CQGWeb_FIXService_concurrent_session' execution.
+23:27:05.540 Case 'WebClient_not_enabled' execution.
+23:27:08.540 Case 'WebClient_not_enabled' succeeded.
+23:29:31.045 Case 'CQGWeb_CQGWeb_concurrent_session' succeeded.
+23:29:31.452 Case 'CQGWeb_CQGT_concurrent_session' succeeded.
+23:30:40.564 Case 'CQGWeb_CQGIC_concurrent_session' succeeded.
+23:30:40.564 Case 'CQGT_CQGIC_concurrent_session' succeeded.
+23:30:41.907 Case 'CQGT_CQGWeb_CQGIC_concurrent_session' succeeded.
+23:31:58.879 Case 'CQGWeb_FIXService_concurrent_session' succeeded.
+23:31:58.973 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/XmlInterface/Suites' execution finished. It took 0:04:53.714554.
+23:31:58.988 Test cases results: 7 total, 7 succeeded, 0 failed, 0 skipped.

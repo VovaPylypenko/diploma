@@ -1,0 +1,54 @@
+10:20:04.75  Test starded without threads
+08:20:05.239 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:20:05.239 Python Module Path 'ScriptKit' added.
+08:20:05.239 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:20:05.645 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RegularAccountsAdvancedFunctionality' filtered execution.
+08:20:05.677 Suite '.'. [23 test cases, 0 sub-suites]
+08:20:15.161 Case 'DLL01_IgnoreUPL' execution.
+08:20:16.336 Case 'DLL01_IgnoreUPL' succeeded.
+08:20:16.396 Case 'DLL02_YesterdayPosition' execution.
+08:20:17.302 Case 'DLL02_YesterdayPosition' succeeded.
+08:20:17.365 Case 'DLL04_OTE' execution.
+08:20:19.005 Case 'DLL04_OTE' succeeded.
+08:20:19.052 Case 'DLL05_AMC' execution.
+08:20:19.662 Case 'DLL05_AMC' succeeded.
+08:20:19.724 Case 'DLL06_CT' execution.
+08:20:20.318 Case 'DLL06_CT' succeeded.
+08:20:20.380 Case 'TC01_TradePriceLimitEnforcementOptions' execution.
+08:20:27.240 Case 'TC01_TradePriceLimitEnforcementOptions' succeeded.
+08:20:27.303 Case 'TC02_RejectRiskyMarketOrders' execution.
+08:20:49.335 Case 'TC02_RejectRiskyMarketOrders' succeeded.
+08:20:49.382 Case 'TC03_CheckForNegativeBalance' execution.
+08:20:49.976 Case 'TC03_CheckForNegativeBalance' succeeded.
+08:20:50.038 Case 'TC04_MarketLimitsMarginMultiplier' execution.
+08:20:51.241 Case 'TC04_MarketLimitsMarginMultiplier' succeeded.
+08:20:51.319 Case 'TC06_CRagainstCB' execution.
+08:20:52.975 Case 'TC06_CRagainstCB' succeeded.
+08:20:53.038 Case 'TC07_CRagainstCBwithOP' execution.
+08:20:54.007 Case 'TC07_CRagainstCBwithOP' succeeded.
+08:20:54.074 Case 'TC08_CRagainstCBwithPL' execution.
+08:20:55.511 Case 'TC08_CRagainstCBwithPL' succeeded.
+08:20:55.569 Case 'TC09_CRagainstCBwithAMC' execution.
+08:20:56.179 Case 'TC09_CRagainstCBwithAMC' succeeded.
+08:20:56.242 Case 'TC10_PPwithOP' execution.
+08:20:57.651 Case 'TC10_PPwithOP' succeeded.
+08:20:57.710 Case 'TC11_PPwithPL' execution.
+08:20:59.476 Case 'TC11_PPwithPL' succeeded.
+08:20:59.554 Case 'TC12_InitToMaintenanceMarginRatio' execution.
+08:21:00.929 Case 'TC12_InitToMaintenanceMarginRatio' succeeded.
+08:21:01.025 Case 'TC13_OPExceptPremiumStyleOptions' execution.
+08:21:01.445 Case 'TC13_OPExceptPremiumStyleOptions' succeeded.
+08:21:01.507 Case 'TC14_OTEForPremiumStyleOptions' execution.
+08:21:01.835 Case 'TC14_OTEForPremiumStyleOptions' succeeded.
+08:21:01.898 Case 'TC15_NOVExceptPremiumStyleOptions' execution.
+08:21:02.413 Case 'TC15_NOVExceptPremiumStyleOptions' succeeded.
+08:21:02.477 Case 'TC16_CheckForNegativeBalanceAdv' execution.
+08:21:04.040 Case 'TC16_CheckForNegativeBalanceAdv' succeeded.
+08:21:04.101 Case 'TC17_TradeEnablementBuySellOptions ' execution.
+08:21:05.273 Case 'TC17_TradeEnablementBuySellOptions ' succeeded.
+08:21:05.352 Case 'TC18_PPwithCT' execution.
+08:21:06.476 Case 'TC18_PPwithCT' succeeded.
+08:21:06.538 Case 'TC19_CRExceptPremiumStyleLongOptions' execution.
+08:21:08.960 Case 'TC19_CRExceptPremiumStyleLongOptions' succeeded.
+08:21:09.695 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RegularAccountsAdvancedFunctionality' execution finished. It took 0:01:04.002523.
+08:21:09.695 Test cases results: 23 total, 23 succeeded, 0 failed, 0 skipped.

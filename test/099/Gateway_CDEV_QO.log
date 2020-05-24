@@ -1,0 +1,107 @@
+ 7:36:05.42  Test starded without threads
+05:36:06.001 Python Module Path 'ScriptKit' added.
+05:36:06.001 Python Module Path 'ScriptKit/TroubleMaker' added.
+05:36:06.001 Python Module Path 'Scripts/Gateway/SystemAreas/DataQueries/QO/PythonModules' added.
+05:36:06.001 Python Module Path 'Scripts/Gateway/PythonModules' added.
+05:36:12.017 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/DataQueries/QO' filtered execution.
+05:36:12.048 Suite '.'. [1 test cases, 4 sub-suites]
+05:36:40.971 Case 'SortingAndFiltering' execution.
+05:36:44.565 Case 'SortingAndFiltering' succeeded.
+05:36:44.627 Suite 'CQM_Unavailable_ts.py'. [1 test cases, 0 sub-suites]
+05:36:46.456 Case 'CQM_Restart' execution.
+05:37:59.505 Case 'CQM_Restart' succeeded.
+05:38:00.005 Suite 'Filtering_ts.py'. [21 test cases, 0 sub-suites]
+05:38:00.083 Case 'By_ACCTID' execution.
+05:38:00.114 Case 'By_BDRANGE' execution.
+05:38:00.161 Case 'By_BDTOCUR' execution.
+05:38:00.208 Case 'By_UATTR' execution.
+05:38:00.255 Case 'By_SYMBOL' execution.
+05:38:00.302 Case 'By_stix' execution.
+05:38:00.349 Case 'By_endix' execution.
+05:38:00.396 Case 'By_fromdate' execution.
+05:38:00.443 Case 'By_todate' execution.
+05:38:00.489 Case 'By_traderid' execution.
+05:38:00.536 Case 'By_guid' execution.
+05:38:00.599 Case 'By_orderid' execution.
+05:38:00.771 Case 'By_uename' execution.
+05:38:00.802 Case 'By_side' execution.
+05:38:00.849 Case 'By_otype_market' execution.
+05:38:00.896 Case 'By_otype_limit' execution.
+05:38:00.943 Case 'By_otype_stop' execution.
+05:38:01.021 Case 'By_otype_stop_limit' execution.
+05:38:01.068 Case 'By_transid' execution.
+05:38:01.130 Case 'By_algo_strategy' execution.
+05:38:17.256 Case 'By_stix' succeeded.
+05:38:17.318 Case 'By_ostat' execution.
+05:38:22.271 Case 'By_endix' succeeded.
+05:38:26.146 Case 'By_BDTOCUR' succeeded.
+05:40:03.790 Case 'By_algo_strategy' succeeded.
+05:41:55.090 Case 'By_guid' succeeded.
+05:41:55.904 Case 'By_SYMBOL' succeeded.
+05:41:59.419 Case 'By_orderid' succeeded.
+05:42:24.076 Case 'By_transid' succeeded.
+05:43:00.954 Case 'By_ACCTID' succeeded.
+05:43:04.608 Case 'By_uename' succeeded.
+05:43:11.577 Case 'By_fromdate' succeeded.
+05:43:16.171 Case 'By_side' succeeded.
+05:43:41.531 Case 'By_UATTR' succeeded.
+05:43:49.720 Case 'By_todate' succeeded.
+05:43:51.922 Case 'By_BDRANGE' succeeded.
+05:43:54.688 Case 'By_traderid' succeeded.
+05:45:27.410 Case 'By_otype_stop_limit' succeeded.
+05:45:33.660 Case 'By_otype_market' succeeded.
+05:45:35.348 Case 'By_otype_stop' succeeded.
+05:45:43.911 Case 'By_otype_limit' succeeded.
+05:47:01.820 Case 'By_ostat' succeeded.
+05:47:01.991 Suite 'LQM_Unavailable_ts.py'. [8 test cases, 0 sub-suites]
+05:47:17.601 Case 'By_ACCTID' execution.
+05:47:17.648 Case 'By_SYMBOL' execution.
+05:47:17.711 Case 'By_traderid' execution.
+05:47:17.758 Case 'By_orderid' execution.
+05:47:17.805 Case 'By_uename' execution.
+05:47:17.851 Case 'By_side' execution.
+05:47:17.898 Case 'By_transid' execution.
+05:47:17.961 Case 'By_ostat' execution.
+05:47:25.320 Case 'By_orderid' succeeded.
+05:47:29.461 Case 'By_transid' succeeded.
+05:47:31.774 Case 'By_uename' succeeded.
+05:47:33.149 Case 'By_side' succeeded.
+05:47:37.321 Case 'By_ACCTID' succeeded.
+05:47:39.149 Case 'By_SYMBOL' succeeded.
+05:47:47.087 Case 'By_ostat' succeeded.
+05:47:48.102 Case 'By_traderid' succeeded.
+05:47:52.118 Suite 'Sorting_ts.py'. [16 test cases, 0 sub-suites]
+05:47:52.212 Case 'By_PLACETIME' execution.
+05:47:52.228 Case 'By_ACCT' execution.
+05:47:52.275 Case 'By_TRADER' execution.
+05:47:52.353 Case 'By_CQGID' execution.
+05:47:52.400 Case 'By_SYM' execution.
+05:47:52.462 Case 'By_STAT' execution.
+05:47:52.524 Case 'By_TYPE' execution.
+05:47:52.556 Case 'By_SIDE' execution.
+05:47:52.603 Case 'By_SZ' execution.
+05:47:52.665 Case 'By_PRICE' execution.
+05:47:52.712 Case 'By_FILLTIME' execution.
+05:47:52.743 Case 'By_CHECKED' execution.
+05:47:52.790 Case 'By_UATTR' execution.
+05:47:52.837 Case 'By_DUR' execution.
+05:47:52.900 Case 'By_CANCELTIME' execution.
+05:47:52.946 Case 'By_ALGOSTRATEGY' execution.
+05:48:07.259 Case 'By_ALGOSTRATEGY' succeeded.
+05:48:12.213 Case 'By_TRADER' succeeded.
+05:48:12.275 Case 'By_PLACETIME' succeeded.
+05:48:12.931 Case 'By_SYM' succeeded.
+05:48:13.338 Case 'By_SZ' succeeded.
+05:48:13.619 Case 'By_ACCT' succeeded.
+05:48:13.932 Case 'By_SIDE' succeeded.
+05:48:14.072 Case 'By_TYPE' succeeded.
+05:48:14.791 Case 'By_CQGID' succeeded.
+05:48:14.916 Case 'By_UATTR' succeeded.
+05:48:15.525 Case 'By_PRICE' succeeded.
+05:48:15.791 Case 'By_DUR' succeeded.
+05:48:15.869 Case 'By_CHECKED' succeeded.
+05:48:15.901 Case 'By_STAT' succeeded.
+05:48:16.013 Case 'By_FILLTIME' succeeded.
+05:48:16.135 Case 'By_CANCELTIME' succeeded.
+05:48:17.244 Root suite 'Scripts/Gateway/SystemAreas/DataQueries/QO' execution finished. It took 0:12:05.180349.
+05:48:17.244 Test cases results: 47 total, 47 succeeded, 0 failed, 0 skipped.

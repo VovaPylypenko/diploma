@@ -1,0 +1,23 @@
+ 1:36:02.56  Test starded without threads
+23:36:03.154 Python Module Path 'ScriptKit/TroubleMaker' added.
+23:36:03.154 Python Module Path 'ScriptKit' added.
+23:36:03.154 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:36:03.154 Python Module Path 'Scripts/Gateway/SystemAreas/DataQueries/QO/PythonModules' added.
+23:36:04.701 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/DataQueries/QO' filtered execution.
+23:36:04.732 Suite '.'. [1 test cases, 4 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/DataQueries/QO\test_suite_su.py", line 44, in <module>
+    fullGuidList = PrepareAccountPortfolio(traderList1[-1], traderList2[-1], acct1, acct2, acct3, acct4, exchange)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\QO\PythonModules\SuiteOrderHelper.py", line 16, in PrepareAccountPortfolio
+    guid1 = Order1(trader1, acct1, trader2, exchange)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\QO\PythonModules\SuiteOrderHelper.py", line 43, in Order1
+    'F.SF.SFEP.Z99', OrderSide.Buy, 10, OrderType.Market, duration=OrderDuration.GoodTillCancel, ueName='GW6024_01')
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:36:26.858 Suite '.' setup failed, child test cases and sub-suites will be skipped.
+23:36:27.155 Root suite 'Scripts/Gateway/SystemAreas/DataQueries/QO' execution finished. It took 0:00:22.423830.
+23:36:27.155 Test cases results: 47 total, 0 succeeded, 0 failed, 47 skipped.

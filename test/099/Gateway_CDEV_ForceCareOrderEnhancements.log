@@ -1,0 +1,75 @@
+10:22:48.44  Test starded without threads
+08:22:48.887 Python Module Path 'ScriptKit' added.
+08:22:48.887 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:22:48.887 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:22:48.887 Python Module Path 'ScriptKit/TroubleMaker' added.
+08:22:49.308 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements' full execution.
+08:22:49.355 Suite '.'. [0 test cases, 4 sub-suites]
+08:23:21.857 Suite 'AutomatedCare'. [9 test cases, 0 sub-suites]
+08:23:21.903 Case '01_AutoAck' execution.
+08:23:22.200 Case '01_AutoAck' succeeded.
+08:23:22.262 Case '02_TwoAccountsOneOrder' execution.
+08:23:22.684 Case '02_TwoAccountsOneOrder' succeeded.
+08:23:22.731 Case '03_TwoAccountsOneOrderAuto' execution.
+08:23:23.059 Case '03_TwoAccountsOneOrderAuto' succeeded.
+08:23:23.106 Case '04_TwoAccountsTwoOrders' execution.
+08:23:24.184 Case '04_TwoAccountsTwoOrders' succeeded.
+08:23:24.262 Case '05_TwoAccountsTwoOrdersRej' execution.
+08:23:24.528 Case '05_TwoAccountsTwoOrdersRej' succeeded.
+08:23:24.622 Case '06_TwoAccountsDiffRS' execution.
+08:23:24.700 Case '06_TwoAccountsDiffRS' succeeded.
+08:23:24.747 Case '07_EnvChange' execution.
+08:24:00.154 Case '07_EnvChange' succeeded.
+08:24:00.232 Case '08_ParkPartFilledOrder' execution.
+08:24:00.638 Case '08_ParkPartFilledOrder' succeeded.
+08:24:00.748 Case '09_ParkPartFilledOrderOmni' execution.
+08:24:01.217 Case '09_ParkPartFilledOrderOmni' succeeded.
+08:24:01.373 Suite 'AutomatedPark'. [2 test cases, 0 sub-suites]
+08:24:01.436 Case '01_General' execution.
+08:24:04.982 Case '01_General' succeeded.
+08:24:05.045 Case '02_SpecialModifications' execution.
+08:24:06.171 Case '02_SpecialModifications' succeeded.
+08:24:06.310 Suite 'AutomatedParkRisk'. [11 test cases, 0 sub-suites]
+08:24:06.373 Case '01_CPLandTML' execution.
+08:24:06.748 Case '01_CPLandTML' succeeded.
+08:24:06.812 Case '02_TPL' execution.
+08:24:06.873 Case '02_TPL' succeeded.
+08:24:06.920 Case '03_OrderHandler_Liq' execution.
+08:24:07.014 Case '03_OrderHandler_Liq' succeeded.
+08:24:07.094 Case '04_OrderHandler_CommPL' execution.
+08:24:07.170 Case '04_OrderHandler_CommPL' succeeded.
+08:24:07.248 Case '05_OrderHandler_ContrPL' execution.
+08:24:07.404 Case '05_OrderHandler_ContrPL' succeeded.
+08:24:07.482 Case '06_CPLandTML_NoForceCare' execution.
+08:24:07.623 Case '06_CPLandTML_NoForceCare' succeeded.
+08:24:07.701 Case '07_TPL_NoForceCare' execution.
+08:24:07.889 Case '07_TPL_NoForceCare' succeeded.
+08:24:07.967 Case '12_CPLandTML_ActAll' execution.
+08:24:08.092 Case '12_CPLandTML_ActAll' succeeded.
+08:24:08.170 Case '13_TPL_ActAll' execution.
+08:24:08.248 Case '13_TPL_ActAll' succeeded.
+08:24:08.311 Case '15_CPLandTML_Omni' execution.
+08:24:08.701 Case '15_CPLandTML_Omni' succeeded.
+08:24:08.779 Case '16_ParkedModification' execution.
+08:24:08.826 Case '16_ParkedModification' succeeded.
+08:24:08.951 Suite 'CareOrderTraderSubstitution'. [9 test cases, 0 sub-suites]
+08:24:11.654 Case '01_CareCancelAccepted' execution.
+08:24:18.889 Case '01_CareCancelAccepted' succeeded.
+08:24:18.952 Case '02_CareCancelNotEnabled' execution.
+08:24:19.030 Case '02_CareCancelNotEnabled' succeeded.
+08:24:19.092 Case '03_CareCancelDeskTraderLogoff' execution.
+08:24:41.077 Case '03_CareCancelDeskTraderLogoff' succeeded.
+08:24:41.155 Case '04_CareModifyAccepted' execution.
+08:24:48.437 Case '04_CareModifyAccepted' succeeded.
+08:24:48.499 Case '05_CareModifyNotEnabled' execution.
+08:24:48.593 Case '05_CareModifyNotEnabled' succeeded.
+08:24:48.656 Case '06_CareModifyDeskTraderLogoff' execution.
+08:25:10.875 Case '06_CareModifyDeskTraderLogoff' succeeded.
+08:25:10.969 Case '07_CareParkAccepted' execution.
+08:25:18.282 Case '07_CareParkAccepted' succeeded.
+08:25:18.360 Case '08_CareParkNotEnabled' execution.
+08:25:18.453 Case '08_CareParkNotEnabled' succeeded.
+08:25:18.532 Case '09_CareParkDeskTraderLogoff' execution.
+08:25:40.532 Case '09_CareParkDeskTraderLogoff' succeeded.
+08:25:54.080 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements' execution finished. It took 0:03:04.740489.
+08:25:54.080 Test cases results: 31 total, 31 succeeded, 0 failed, 0 skipped.

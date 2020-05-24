@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="70" testsuite_failed="False" time="153.989623" timestamp="2020-02-19T20:28:54.461033">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="40"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="FCMContractControls" skipped="0" tests="70" testsuite_failed="False" time="153.989623" timestamp="2020-02-19T20:28:54.461033">
+  <testsuite failures="0" name="AllowedToTrade" skipped="0" tests="38" testsuite_failed="False" time="93.378202" timestamp="2020-02-19T20:28:58.476773">
+   <testcase name="TC101_AllCommoditiesDisabled" status="run" time="34.45663" timestamp="2020-02-19T20:29:22.821376"/>
+   <testcase name="TC102_USCommoditiesDisabled" status="run" time="38.829437" timestamp="2020-02-19T20:29:22.868232"/>
+   <testcase name="TC103_NonUSCommoditiesDisabled" status="run" time="35.280555" timestamp="2020-02-19T20:29:22.948389"/>
+   <testcase name="TC104_ExchangeDisabled" status="run" time="35.29814" timestamp="2020-02-19T20:29:23.040118"/>
+   <testcase name="TC105_CommodityDisabled" status="run" time="35.235454" timestamp="2020-02-19T20:29:23.133977"/>
+   <testcase name="TC106_InstrumentDisabled" status="run" time="34.704321" timestamp="2020-02-19T20:29:23.227622"/>
+   <testcase name="TC107_ContractDisabled" status="run" time="31.922976" timestamp="2020-02-19T20:29:23.336983"/>
+   <testcase name="TC211_InstrumentContract" status="run" time="20.625699" timestamp="2020-02-19T20:29:23.461985"/>
+   <testcase name="TC212_CommodityContract" status="run" time="20.063166" timestamp="2020-02-19T20:29:23.555751"/>
+   <testcase name="TC213_CommodityInstrument" status="run" time="20.282299" timestamp="2020-02-19T20:29:23.633870"/>
+   <testcase name="TC214_ExchangeContract" status="run" time="19.531913" timestamp="2020-02-19T20:29:23.743245"/>
+   <testcase name="TC215_ExchangeInstrument" status="run" time="19.641293" timestamp="2020-02-19T20:29:23.837000"/>
+   <testcase name="TC216_ExchangeCommodity" status="run" time="18.841754" timestamp="2020-02-19T20:29:23.949016"/>
+   <testcase name="TC221_NonUSCommoditiesContract" status="run" time="18.500629" timestamp="2020-02-19T20:29:24.008879"/>
+   <testcase name="TC222_NonUSCommoditiesInstrument" status="run" time="19.609977" timestamp="2020-02-19T20:29:24.258952"/>
+   <testcase name="TC223_NonUSCommoditiesCommodity" status="run" time="18.500138" timestamp="2020-02-19T20:29:24.415638"/>
+   <testcase name="TC224_USCommoditiesContract" status="run" time="19.000637" timestamp="2020-02-19T20:29:24.462030"/>
+   <testcase name="TC225_USCommoditiesInstrument" status="run" time="21.844528" timestamp="2020-02-19T20:29:24.555773"/>
+   <testcase name="TC226_USCommoditiesCommodity" status="run" time="19.328789" timestamp="2020-02-19T20:29:24.852652"/>
+   <testcase name="TC227_USCommoditiesExchange" status="run" time="19.000701" timestamp="2020-02-19T20:29:24.899615"/>
+   <testcase name="TC231_AllCommoditiesContract" status="run" time="18.891406" timestamp="2020-02-19T20:29:25.008910"/>
+   <testcase name="TC232_AllCommoditiesInstrument" status="run" time="18.938157" timestamp="2020-02-19T20:29:25.477679"/>
+   <testcase name="TC233_AllCommoditiesCommodity" status="run" time="18.328884" timestamp="2020-02-19T20:29:25.571432"/>
+   <testcase name="TC234_AllCommoditiesExchange" status="run" time="18.547518" timestamp="2020-02-19T20:29:25.665184"/>
+   <testcase name="TC235_AllCommoditiesNonUSCommodities" status="run" time="20.594446" timestamp="2020-02-19T20:29:25.821444"/>
+   <testcase name="TC236_AllCommoditiesUSCommodities" status="run" time="18.125719" timestamp="2020-02-19T20:29:26.102701"/>
+   <testcase name="TC301_AccountAllCommoditiesEnabled" status="run" time="28.657225" timestamp="2020-02-19T20:29:26.118327"/>
+   <testcase name="TC302_AccountAllCommoditiesDisabled" status="run" time="37.691274" timestamp="2020-02-19T20:29:26.430836"/>
+   <testcase name="TC303_AllCommoditiesInstrument" status="run" time="17.016204" timestamp="2020-02-19T20:29:26.524589"/>
+   <testcase name="TC304_InstrumentAllCommodities" status="run" time="24.235217" timestamp="2020-02-19T20:29:26.618343"/>
+   <testcase name="TC305_DefaultAllCommodities" status="run" time="17.938119" timestamp="2020-02-19T20:29:26.696477"/>
+   <testcase name="TC306_InstrumentContract" status="run" time="56.345702" timestamp="2020-02-19T20:29:26.790224"/>
+   <testcase name="TC307_DefaultAllCommodities" status="run" time="17.625695" timestamp="2020-02-19T20:29:26.852729"/>
+   <testcase name="TC308_ExchangeUSCommodities" status="run" time="30.016653" timestamp="2020-02-19T20:29:26.962105"/>
+   <testcase name="TC309_DefaultUSCommoditiesExchange" status="run" time="27.564042" timestamp="2020-02-19T20:29:27.040232"/>
+   <testcase name="TC310_USCommoditiesAllCommoditiesCommodity" status="run" time="36.626241" timestamp="2020-02-19T20:29:27.087108"/>
+   <testcase name="TC313_AllCommoditiesInstrument" status="run" time="27.03221" timestamp="2020-02-19T20:29:27.243368"/>
+   <testcase name="TC314_InstrumentAllCommodities" status="run" time="36.141988" timestamp="2020-02-19T20:29:27.493372"/>
+  </testsuite>
+  <testsuite failures="0" name="Tenors" skipped="0" tests="32" testsuite_failed="False" time="55.580084" timestamp="2020-02-19T20:30:31.886207">
+   <testcase name="TC101_AllCommoditiesLimited" status="run" time="22.297766" timestamp="2020-02-19T20:30:54.152591"/>
+   <testcase name="TC102_USCommoditiesLimited" status="run" time="21.250691" timestamp="2020-02-19T20:30:54.246347"/>
+   <testcase name="TC103_NonUSCommoditiesLimited" status="run" time="21.875725" timestamp="2020-02-19T20:30:54.308837"/>
+   <testcase name="TC104_ExchangeLimited" status="run" time="22.016366" timestamp="2020-02-19T20:30:54.386954"/>
+   <testcase name="TC105_CommodityLimited" status="run" time="21.672605" timestamp="2020-02-19T20:30:54.480705"/>
+   <testcase name="TC106_InstrumentLimited" status="run" time="20.926547" timestamp="2020-02-19T20:30:54.527582"/>
+   <testcase name="TC211_CommodityInstrument" status="run" time="18.750513" timestamp="2020-02-19T20:30:54.605831"/>
+   <testcase name="TC212_ExchangeInstrument" status="run" time="17.359963" timestamp="2020-02-19T20:30:54.761962"/>
+   <testcase name="TC213_ExchangeCommodity" status="run" time="17.563098" timestamp="2020-02-19T20:30:54.886967"/>
+   <testcase name="TC214_NonUSCommoditiesInstrument" status="run" time="16.891198" timestamp="2020-02-19T20:30:54.949466"/>
+   <testcase name="TC221_NonUSCommoditiesCommodity" status="run" time="17.672478" timestamp="2020-02-19T20:30:55.043219"/>
+   <testcase name="TC222_USCommoditiesInstrument" status="run" time="16.875573" timestamp="2020-02-19T20:30:55.121347"/>
+   <testcase name="TC223_USCommoditiesCommodity" status="run" time="18.108266" timestamp="2020-02-19T20:30:55.326206"/>
+   <testcase name="TC224_USCommoditiesExchange" status="run" time="17.078707" timestamp="2020-02-19T20:30:55.574490"/>
+   <testcase name="TC225_AllCommoditiesInstrument" status="run" time="17.375595" timestamp="2020-02-19T20:30:55.933873"/>
+   <testcase name="TC231_AllCommoditiesCommodity" status="run" time="17.000585" timestamp="2020-02-19T20:30:56.027626"/>
+   <testcase name="TC232_AllCommoditiesExchange" status="run" time="16.782104" timestamp="2020-02-19T20:30:56.121381"/>
+   <testcase name="TC233_AllCommoditiesNonUSCommodities" status="run" time="16.953701" timestamp="2020-02-19T20:30:56.183886"/>
+   <testcase name="TC234_AllCommoditiesUSCommodities" status="run" time="16.924327" timestamp="2020-02-19T20:30:56.262015"/>
+   <testcase name="TC301_AccountAllCommoditiesDefault" status="run" time="19.422495" timestamp="2020-02-19T20:30:56.387052"/>
+   <testcase name="TC302_AccountDefaultAllCommodities" status="run" time="18.875645" timestamp="2020-02-19T20:30:56.496396"/>
+   <testcase name="TC303_AllCommoditiesInstrument" status="run" time="19.391276" timestamp="2020-02-19T20:30:56.668278"/>
+   <testcase name="TC304_InstrumentAllCommodities" status="run" time="19.234385" timestamp="2020-02-19T20:30:56.762666"/>
+   <testcase name="TC305_DefaultAllCommodities" status="run" time="19.391276" timestamp="2020-02-19T20:30:56.933915"/>
+   <testcase name="TC306_ExchangeInstrument" status="run" time="19.219416" timestamp="2020-02-19T20:30:56.996416"/>
+   <testcase name="TC307_DefaultAllCommodities" status="run" time="18.219364" timestamp="2020-02-19T20:30:57.058917"/>
+   <testcase name="TC308_CommodityUSCommodities" status="run" time="19.172522" timestamp="2020-02-19T20:30:57.152669"/>
+   <testcase name="TC309_DefaultUSCommoditiesExchange" status="run" time="17.391216" timestamp="2020-02-19T20:30:57.262047"/>
+   <testcase name="TC310_NonUSCommoditiesAllCommoditiesCommodity" status="run" time="18.437759" timestamp="2020-02-19T20:30:57.340538"/>
+   <testcase name="TC312_DailyFutures" status="run" time="18.766261" timestamp="2020-02-19T20:30:57.480805"/>
+   <testcase name="TC313_AllCommoditiesInstrument" status="run" time="18.749839" timestamp="2020-02-19T20:30:57.544102"/>
+   <testcase name="TC314_InstrumentAllCommodities" status="run" time="18.296638" timestamp="2020-02-19T20:30:57.747293"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

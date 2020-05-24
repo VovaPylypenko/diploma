@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="72" skipped="21" tests="93" testsuite_failed="True" time="342.307847" timestamp="2020-02-18T23:57:06.071291">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions/AvgPriceAndPL/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions/Regression/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="8"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="72" name="NetPositions" skipped="21" tests="93" testsuite_failed="True" time="342.307847" timestamp="2020-02-18T23:57:06.071291">
+  <testsuite failures="10" name="AvgPriceAndPL" skipped="0" tests="10" testsuite_failed="True" time="62.205229" timestamp="2020-02-18T23:57:19.884217">
+   <testcase name="AddingToPosition" status="run" time="0.031246" timestamp="2020-02-18T23:57:21.149906">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\AddingToPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 9, rejectAdding)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 38, in TestNewOrderFills
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\AddingToPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 9, rejectAdding)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 38, in TestNewOrderFills
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastAddingToPosition" status="run" time="0.03126" timestamp="2020-02-18T23:57:21.196769">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastAddingToPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 9, rejectAdding)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 18, in TestCastAddOrderAndFill
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastAddingToPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 9, rejectAdding)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 18, in TestCastAddOrderAndFill
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastAddPosition" status="run" time="60.533195" timestamp="2020-02-18T23:57:21.228029">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastAddPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 9, rejectAdding)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 31, in TestCastAddPosition
+    order = OrderActionUtils.CreateOrder(contract, side, qty, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastAddPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 9, rejectAdding)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 31, in TestCastAddPosition
+    order = OrderActionUtils.CreateOrder(contract, side, qty, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastClosingPosition" status="run" time="0.031253" timestamp="2020-02-18T23:57:21.274907">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastClosingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 15, rejectClosing)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 18, in TestCastAddOrderAndFill
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastClosingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 15, rejectClosing)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 18, in TestCastAddOrderAndFill
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastPartiallyOffsettingPosition" status="run" time="0.044273" timestamp="2020-02-18T23:57:21.324390">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastPartiallyOffsettingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Sell, 11, rejectOffsetting)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 18, in TestCastAddOrderAndFill
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastPartiallyOffsettingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Sell, 11, rejectOffsetting)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 18, in TestCastAddOrderAndFill
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastReversingPosition" status="run" time="0.047481" timestamp="2020-02-18T23:57:21.446785">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastReversingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 15, rejectReversing)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 18, in TestCastAddOrderAndFill
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastReversingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 15, rejectReversing)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 18, in TestCastAddOrderAndFill
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastSettlementNew" status="run" time="60.517555" timestamp="2020-02-18T23:57:21.509285">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastSettlementNew_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract2, OrderSide.Buy, 9, rejectSettlement)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 31, in TestCastAddPosition
+    order = OrderActionUtils.CreateOrder(contract, side, qty, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\CastSettlementNew_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract2, OrderSide.Buy, 9, rejectSettlement)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 31, in TestCastAddPosition
+    order = OrderActionUtils.CreateOrder(contract, side, qty, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ClosingPosition" status="run" time="0.031251" timestamp="2020-02-18T23:57:21.696776">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\ClosingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 15, rejectClosing)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 38, in TestNewOrderFills
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\ClosingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 15, rejectClosing)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 38, in TestNewOrderFills
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="PartiallyOffsettingPosition" status="run" time="0.015681" timestamp="2020-02-18T23:57:21.743652">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\PartiallyOffsettingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Sell, 11, rejectOffsetting)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 38, in TestNewOrderFills
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\PartiallyOffsettingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Sell, 11, rejectOffsetting)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 38, in TestNewOrderFills
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ReversingPosition" status="run" time="0.047043" timestamp="2020-02-18T23:57:21.775231">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\ReversingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 15, rejectReversing)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 38, in TestNewOrderFills
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\AvgPriceAndPL\ReversingPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    trader1, contract1, OrderSide.Buy, 15, rejectReversing)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\NetPositions\AvgPriceAndPL\PythonModules\AvgPriceAndPLScenarios.py&quot;, line 38, in TestNewOrderFills
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="12" name="DeltaPL" skipped="0" tests="12" testsuite_failed="True" time="61.892619" timestamp="2020-02-18T23:58:22.136229">
+   <testcase name="ClosePositionCastOrder" status="run" time="0.015632" timestamp="2020-02-18T23:58:23.198744">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\ClosePositionCastOrder_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\ClosePositionCastOrder_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ClosePosition" status="run" time="0.046886" timestamp="2020-02-18T23:58:23.245633">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\ClosePosition_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\ClosePosition_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="IncreaseInitPositionCastPosition" status="run" time="60.602624" timestamp="2020-02-18T23:58:23.308150">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\IncreaseInitPositionCastPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\IncreaseInitPositionCastPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="IncreaseMaintPositionCastPosition" status="run" time="60.45508" timestamp="2020-02-18T23:58:23.370623">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\IncreaseMaintPositionCastPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\IncreaseMaintPositionCastPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="IncreasePositionCastOrder" status="run" time="0.031252" timestamp="2020-02-18T23:58:23.433142">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\IncreasePositionCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\IncreasePositionCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="IncreasePosition" status="run" time="0.046871" timestamp="2020-02-18T23:58:23.526886">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\IncreasePosition_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\IncreasePosition_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetNewPositionCastOrder" status="run" time="0.031228" timestamp="2020-02-18T23:58:23.589410">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\OffsetNewPositionCastOrder_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\OffsetNewPositionCastOrder_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetNewPosition" status="run" time="0.031252" timestamp="2020-02-18T23:58:23.683134">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\OffsetNewPosition_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\OffsetNewPosition_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetOldPositionCastOrder" status="run" time="0.015629" timestamp="2020-02-18T23:58:23.761259">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\OffsetOldPositionCastOrder_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\OffsetOldPositionCastOrder_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetOldPosition" status="run" time="0.03125" timestamp="2020-02-18T23:58:23.901890">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\OffsetOldPosition_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\OffsetOldPosition_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ReversePositionCastOrder" status="run" time="0.03033" timestamp="2020-02-18T23:58:24.012191">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\ReversePositionCastOrder_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\ReversePositionCastOrder_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ReversePosition" status="run" time="0.046886" timestamp="2020-02-18T23:58:24.073773">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\ReversePosition_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\DeltaPL\ReversePosition_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=101)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="0" name="NewPosition" skipped="9" tests="9" testsuite_failed="False" time="1.031267" timestamp="2020-02-18T23:59:24.075708">
+   <testcase name="NewAvgPriceCastInitPosition" status="notrun"/>
+   <testcase name="NewAvgPriceCastOrder" status="notrun"/>
+   <testcase name="NewAvgPrice" status="notrun"/>
+   <testcase name="NewPositionCastInitPosition" status="notrun"/>
+   <testcase name="NewPositionCastMaintPosition" status="notrun"/>
+   <testcase name="NewPositionCastOrder" status="notrun"/>
+   <testcase name="NewPosition" status="notrun"/>
+   <testcase name="SettlementCastMaintPosition" status="notrun"/>
+   <testcase name="YestQtyCastMaintPosition" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="NewQuantity" skipped="12" tests="12" testsuite_failed="False" time="0.999991" timestamp="2020-02-18T23:59:25.169539">
+   <testcase name="ClosePositionCastOrder" status="notrun"/>
+   <testcase name="ClosePosition" status="notrun"/>
+   <testcase name="IncreasePositionCastInitPosition" status="notrun"/>
+   <testcase name="IncreasePositionCastMaintPosition" status="notrun"/>
+   <testcase name="IncreasePositionCastOrder" status="notrun"/>
+   <testcase name="IncreasePosition" status="notrun"/>
+   <testcase name="OffsetInitPositionCastOrder" status="notrun"/>
+   <testcase name="OffsetInitPosition" status="notrun"/>
+   <testcase name="OffsetMaintPositionCastOrder" status="notrun"/>
+   <testcase name="OffsetMaintPosition" status="notrun"/>
+   <testcase name="ReversePositionCastOrder" status="notrun"/>
+   <testcase name="ReversePosition" status="notrun"/>
+  </testsuite>
+  <testsuite failures="17" name="OptionsPremium" skipped="0" tests="17" testsuite_failed="True" time="63.158276" timestamp="2020-02-18T23:59:26.247655">
+   <testcase name="CallOption_FutStyleCastOrder" status="run" time="0.046855" timestamp="2020-02-18T23:59:27.278946">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_FutStyleCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract5, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_FutStyleCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract5, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CallOption_FutStyleCastPosition_Init" status="run" time="60.595696" timestamp="2020-02-18T23:59:27.357094">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_FutStyleCastPosition_Init_tc.py&quot;, line 17, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract5, OrderSide.Sell, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_FutStyleCastPosition_Init_tc.py&quot;, line 17, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract5, OrderSide.Sell, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CallOption_FutStyle" status="run" time="0.046668" timestamp="2020-02-18T23:59:27.404135">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_FutStyle_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract5, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_FutStyle_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract5, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CallOption_PremStyleCastOrder" status="run" time="0.031265" timestamp="2020-02-18T23:59:27.466426">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_PremStyleCastOrder_tc.py&quot;, line 14, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract2, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_PremStyleCastOrder_tc.py&quot;, line 14, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract2, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CallOption_PremStyleCastPosition_Init" status="run" time="60.533216" timestamp="2020-02-18T23:59:27.528928">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_PremStyleCastPosition_Init_tc.py&quot;, line 17, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Sell, 11, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_PremStyleCastPosition_Init_tc.py&quot;, line 17, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Sell, 11, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CallOption_PremStyleCastPosition_Maint" status="run" time="60.501765" timestamp="2020-02-18T23:59:27.638506">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_PremStyleCastPosition_Maint_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Sell, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_PremStyleCastPosition_Maint_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Sell, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CallOption_PremStyle" status="run" time="0.031251" timestamp="2020-02-18T23:59:27.763309">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_PremStyle_tc.py&quot;, line 14, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract2, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\CallOption_PremStyle_tc.py&quot;, line 14, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract2, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="FuturesCastOrder" status="run" time="0.03125" timestamp="2020-02-18T23:59:27.841437">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\FuturesCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\FuturesCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="FuturesCastPosition" status="run" time="60.626061" timestamp="2020-02-18T23:59:27.904874">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\FuturesCastPosition_tc.py&quot;, line 17, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\FuturesCastPosition_tc.py&quot;, line 17, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="Futures" status="run" time="0.015625" timestamp="2020-02-18T23:59:27.997693">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\Futures_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\Futures_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="PutOption_FutStyleCastOrder" status="run" time="0.015622" timestamp="2020-02-18T23:59:28.091443">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_FutStyleCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract6, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_FutStyleCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract6, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="PutOption_FutStyleCastPosition_Init" status="run" time="60.486339" timestamp="2020-02-18T23:59:28.263329">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_FutStyleCastPosition_Init_tc.py&quot;, line 17, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract6, OrderSide.Sell, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_FutStyleCastPosition_Init_tc.py&quot;, line 17, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract6, OrderSide.Sell, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="PutOption_FutStyle" status="run" time="0.025376" timestamp="2020-02-18T23:59:28.331705">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_FutStyle_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract6, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_FutStyle_tc.py&quot;, line 13, in &lt;module&gt;
+    order5 = OrderActionUtils.CreateOrder(contract6, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="PutOption_PremStyleCasPosition_Init" status="run" time="60.392565" timestamp="2020-02-18T23:59:28.544592">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_PremStyleCasPosition_Init_tc.py&quot;, line 17, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract2, OrderSide.Sell, 11, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_PremStyleCasPosition_Init_tc.py&quot;, line 17, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract2, OrderSide.Sell, 11, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="PutOption_PremStyleCastOrder" status="run" time="0.031263" timestamp="2020-02-18T23:59:28.700848">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_PremStyleCastOrder_tc.py&quot;, line 14, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_PremStyleCastOrder_tc.py&quot;, line 14, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="PutOption_PremStyleCastPosition_Maint" status="run" time="60.564462" timestamp="2020-02-18T23:59:28.747716">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_PremStyleCastPosition_Maint_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract2, OrderSide.Sell, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_PremStyleCastPosition_Maint_tc.py&quot;, line 19, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract2, OrderSide.Sell, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="PutOption_PremStyle" status="run" time="0.0" timestamp="2020-02-18T23:59:28.903976">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_PremStyle_tc.py&quot;, line 14, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\OptionsPremium\PutOption_PremStyle_tc.py&quot;, line 14, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="18" name="PremiumStyleOptionsPL" skipped="0" tests="18" testsuite_failed="True" time="62.126988" timestamp="2020-02-19T00:00:29.452816">
+   <testcase name="IncreaseLongPositionCastOrder" status="run" time="0.109179" timestamp="2020-02-19T00:00:30.531152">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseLongPositionCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseLongPositionCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="IncreaseLongPositionCastPosition" status="run" time="60.5332" timestamp="2020-02-19T00:00:30.655974">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseLongPositionCastPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Buy, 1, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseLongPositionCastPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Buy, 1, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="IncreaseLongPosition" status="run" time="0.046373" timestamp="2020-02-19T00:00:30.718963">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseLongPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseLongPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="IncreaseShortPositionCastOrder" status="run" time="0.062508" timestamp="2020-02-19T00:00:30.812224">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseShortPositionCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseShortPositionCastOrder_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="IncreaseShortPositionCastPosition" status="run" time="60.517554" timestamp="2020-02-19T00:00:30.905990">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseShortPositionCastPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Buy, 1, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseShortPositionCastPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract3, OrderSide.Buy, 1, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="IncreaseShortPosition" status="run" time="0.0" timestamp="2020-02-19T00:00:31.062215">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseShortPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\IncreaseShortPosition_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetNewLongPositionCastOrder" status="run" time="0.046529" timestamp="2020-02-19T00:00:31.203191">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetNewLongPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetNewLongPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetNewLongPosition" status="run" time="0.062534" timestamp="2020-02-19T00:00:31.265355">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetNewLongPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetNewLongPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetNewShortPositionCastOrder" status="run" time="0.046721" timestamp="2020-02-19T00:00:31.999924">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetNewShortPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetNewShortPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetNewShortPosition" status="run" time="0.031221" timestamp="2020-02-19T00:00:31.531010">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetNewShortPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetNewShortPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetOldLongPositionCastOrder" status="run" time="0.031239" timestamp="2020-02-19T00:00:31.624755">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetOldLongPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetOldLongPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetOldLongPosition" status="run" time="0.046876" timestamp="2020-02-19T00:00:31.671625">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetOldLongPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetOldLongPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetOldShortPositionCastOrder" status="run" time="0.031315" timestamp="2020-02-19T00:00:31.796627">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetOldShortPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetOldShortPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OffsetOldShortPosition" status="run" time="0.046855" timestamp="2020-02-19T00:00:31.937265">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetOldShortPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\OffsetOldShortPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ReverseLongPositionCastOrder" status="run" time="0.031263" timestamp="2020-02-19T00:00:32.077874">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\ReverseLongPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\ReverseLongPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ReverseLongPosition" status="run" time="0.046796" timestamp="2020-02-19T00:00:32.202956">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\ReverseLongPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\ReverseLongPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Sell, 5, OrderType.Limit, limitPrice = 90)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ReverseShortPositionCastOrder" status="run" time="0.031235" timestamp="2020-02-19T00:00:32.343527">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\ReverseShortPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\ReverseShortPositionCastOrder_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ReverseShortPosition" status="run" time="0.04688" timestamp="2020-02-19T00:00:32.468517">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\ReverseShortPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\PremiumStyleOptionsPL\ReverseShortPosition_tc.py&quot;, line 16, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="15" name="Regression" skipped="0" tests="15" testsuite_failed="True" time="73.846874" timestamp="2020-02-19T00:01:31.642293">
+   <testcase name="AddFill" status="run" time="0.046884" timestamp="2020-02-19T00:01:33.579910">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\AddFill_tc.py&quot;, line 13, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\AddFill_tc.py&quot;, line 13, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="BustFill" status="run" time="0.046833" timestamp="2020-02-19T00:01:33.642400">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\BustFill_tc.py&quot;, line 15, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\BustFill_tc.py&quot;, line 15, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CancelFill" status="run" time="0.046902" timestamp="2020-02-19T00:01:33.704877">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CancelFill_tc.py&quot;, line 15, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CancelFill_tc.py&quot;, line 15, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastAddOrderAndFill" status="run" time="0.046889" timestamp="2020-02-19T00:01:33.783003">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastAddOrderAndFill_tc.py&quot;, line 14, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastAddOrderAndFill_tc.py&quot;, line 14, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastBustFill" status="run" time="0.046862" timestamp="2020-02-19T00:01:33.876773">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastBustFill_tc.py&quot;, line 16, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastBustFill_tc.py&quot;, line 16, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastCancelFill" status="run" time="0.078548" timestamp="2020-02-19T00:01:34.017381">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastCancelFill_tc.py&quot;, line 16, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastCancelFill_tc.py&quot;, line 16, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastCorrectFill" status="run" time="0.125006" timestamp="2020-02-19T00:01:34.517395">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastCorrectFill_tc.py&quot;, line 14, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 4, OrderType.Market))[0]
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastCorrectFill_tc.py&quot;, line 14, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 4, OrderType.Market))[0]
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastDeleteAllPositions" status="run" time="70.392888" timestamp="2020-02-19T00:01:34.204886">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastDeleteAllPositions_tc.py&quot;, line 16, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Buy, 11, OrderType.Market),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastDeleteAllPositions_tc.py&quot;, line 16, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Buy, 11, OrderType.Market),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CastDeletePositions" status="run" time="69.955382" timestamp="2020-02-19T00:01:34.408024">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastDeletePositions_tc.py&quot;, line 17, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Buy, 11, OrderType.Market),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\CastDeletePositions_tc.py&quot;, line 17, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Buy, 11, OrderType.Market),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OmnibusAddFill" status="run" time="0.062498" timestamp="2020-02-19T00:01:34.783041">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusAddFill_tc.py&quot;, line 16, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusAddFill_tc.py&quot;, line 16, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OmnibusBustFill" status="run" time="0.031252" timestamp="2020-02-19T00:01:35.564293">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusBustFill_tc.py&quot;, line 18, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusBustFill_tc.py&quot;, line 18, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OmnibusCancelFill" status="run" time="0.078144" timestamp="2020-02-19T00:01:34.954903">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusCancelFill_tc.py&quot;, line 18, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusCancelFill_tc.py&quot;, line 18, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OmnibusCastAddOrderAndFill" status="run" time="0.078103" timestamp="2020-02-19T00:01:35.158052">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusCastAddOrderAndFill_tc.py&quot;, line 17, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusCastAddOrderAndFill_tc.py&quot;, line 17, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Sell, 3, OrderType.Market))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OmnibusCastDeleteAllPositions" status="run" time="70.096007" timestamp="2020-02-19T00:01:35.251798">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusCastDeleteAllPositions_tc.py&quot;, line 21, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Buy, 10, OrderType.Market),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusCastDeleteAllPositions_tc.py&quot;, line 21, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Buy, 10, OrderType.Market),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OmnibusCastDeletePositions" status="run" time="69.158481" timestamp="2020-02-19T00:01:35.736191">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusCastDeletePositions_tc.py&quot;, line 21, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Buy, 10, OrderType.Market),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions\Regression\OmnibusCastDeletePositions_tc.py&quot;, line 21, in &lt;module&gt;
+    OrderActionUtils.CreateOrder(contractZ99, OrderSide.Buy, 10, OrderType.Market),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="178" testsuite_failed="False" time="3469.869075" timestamp="2020-02-06T02:22:54.450416">
+ <properties>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/ManagmentInterface/CastApi/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules/CastApi"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/ManagmentInterface/CastApi"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="CastApi" skipped="0" tests="178" testsuite_failed="False" time="3469.869075" timestamp="2020-02-06T02:22:54.450416">
+  <testsuite failures="0" name="Accounts" skipped="0" tests="58" testsuite_failed="False" time="860.078682" timestamp="2020-02-06T02:23:17.137065">
+   <testsuite failures="0" name="AccountBalances" skipped="0" tests="7" testsuite_failed="False" time="3.968918" timestamp="2020-02-06T02:23:17.308927">
+    <testcase name="GetBalanceRecordsSuccessful" status="run" time="1.2969330000000001" timestamp="2020-02-06T02:23:17.574570"/>
+    <testcase name="CreateAndUpdateBalanceRecordSuccesful" status="run" time="0.312516" timestamp="2020-02-06T02:23:19.027750"/>
+    <testcase name="CreateAndUpdateBalanceRecordWithCollateralSuccessful" status="run" time="0.234351" timestamp="2020-02-06T02:23:19.496562"/>
+    <testcase name="CreateAndGetBalanceRecordsAccountNotFound" status="run" time="0.203127" timestamp="2020-02-06T02:23:19.887160"/>
+    <testcase name="CreateBalanceRecordInvalidCurrency" status="run" time="0.156222" timestamp="2020-02-06T02:23:20.246569"/>
+    <testcase name="CreateUpdateAndGetBalanceRecordsNoPermission" status="run" time="0.220502" timestamp="2020-02-06T02:23:20.590303"/>
+    <testcase name="UpdateAndGetBalanceRecordsFailed" status="run" time="0.124968" timestamp="2020-02-06T02:23:20.996606"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountCollateral" skipped="0" tests="1" testsuite_failed="False" time="0.687538" timestamp="2020-02-06T02:23:21.387203">
+    <testcase name="GetAccountCollateralSuccessful" status="run" time="0.20314" timestamp="2020-02-06T02:23:21.699712"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountCommon" skipped="0" tests="3" testsuite_failed="False" time="6.828386" timestamp="2020-02-06T02:23:22.152850">
+    <testcase name="AccountNoPermission" status="run" time="0.843789" timestamp="2020-02-06T02:23:22.418478"/>
+    <testcase name="AccountNotFound" status="run" time="4.547067" timestamp="2020-02-06T02:23:23.418530"/>
+    <testcase name="AccountNotAuthority" status="run" time="0.671832" timestamp="2020-02-06T02:23:28.137500"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountEquity" skipped="0" tests="1" testsuite_failed="False" time="0.703156" timestamp="2020-02-06T02:23:29.074980">
+    <testcase name="GetAccountEquitySuccessful" status="run" time="0.22146" timestamp="2020-02-06T02:23:29.340618"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountExchanges" skipped="0" tests="1" testsuite_failed="False" time="1.125034" timestamp="2020-02-06T02:23:29.856271">
+    <testcase name="GetAccountExchangesSuccessful" status="run" time="0.625016" timestamp="2020-02-06T02:23:30.200038"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountGroup" skipped="0" tests="2" testsuite_failed="False" time="51.720636" timestamp="2020-02-06T02:23:31.075067">
+    <testcase name="AccountGroupCRUDSuccessfull" status="run" time="48.908192" timestamp="2020-02-06T02:23:31.325062"/>
+    <testcase name="CreateAccountGroupSameFcmFailed" status="run" time="2.218904" timestamp="2020-02-06T02:24:20.420619"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountMarketLimits" skipped="0" tests="3" testsuite_failed="False" time="74.925586" timestamp="2020-02-06T02:24:22.889431">
+    <testcase name="UpdateMarketLimitsSuccessful" status="run" time="36.674193" timestamp="2020-02-06T02:24:23.186317"/>
+    <testcase name="UpdateMarketLimitsClearedFields" status="run" time="37.501179" timestamp="2020-02-06T02:25:00.001381"/>
+    <testcase name="UpdateMarketLimitsWithOriginal" status="run" time="0.0" timestamp="2020-02-06T02:25:37.658764"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountPositions" skipped="0" tests="1" testsuite_failed="False" time="0.656263" timestamp="2020-02-06T02:25:37.893152">
+    <testcase name="GetAccountPositionsSuccessful" status="run" time="0.218732" timestamp="2020-02-06T02:25:38.174434"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountRiskParameters" skipped="0" tests="3" testsuite_failed="False" time="105.863242" timestamp="2020-02-06T02:25:38.611925">
+    <testcase name="RiskParametersSuccessful" status="run" time="33.563685" timestamp="2020-02-06T02:25:38.877587"/>
+    <testcase name="AccountRiskParametersIGMM" status="run" time="38.70443" timestamp="2020-02-06T02:26:12.628894"/>
+    <testcase name="TradePriceLimitCompatibility" status="run" time="32.703791" timestamp="2020-02-06T02:26:51.599548"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountRoutesSom" skipped="0" tests="1" testsuite_failed="False" time="37.751387" timestamp="2020-02-06T02:27:24.568899">
+    <testcase name="AccountRoutesSomSuccessful" status="run" time="37.345199" timestamp="2020-02-06T02:27:24.803304"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountRoutes" skipped="0" tests="2" testsuite_failed="False" time="37.860696" timestamp="2020-02-06T02:28:02.507795">
+    <testcase name="AccountRoutesSuccessful" status="run" time="2.593827" timestamp="2020-02-06T02:28:02.773408"/>
+    <testcase name="GetClearingAccountRoutesSuccessful" status="run" time="34.673036" timestamp="2020-02-06T02:28:05.523611"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountSearch" skipped="0" tests="3" testsuite_failed="False" time="109.519521" timestamp="2020-02-06T02:28:40.462318">
+    <testcase name="PrimaryAndSecondaryCriteriaSearch" status="run" time="36.657582" timestamp="2020-02-06T02:29:17.010458"/>
+    <testcase name="SecondaryCriteriaOnlySearch" status="run" time="34.985627" timestamp="2020-02-06T02:29:53.839925"/>
+    <testcase name="AccountSearchOldApproachSuccessful" status="run" time="0.765582" timestamp="2020-02-06T02:30:28.997511"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountSettings" skipped="0" tests="1" testsuite_failed="False" time="35.095007" timestamp="2020-02-06T02:30:30.091222">
+    <testcase name="UpdateAccountSettingsSuccessful" status="run" time="34.626245" timestamp="2020-02-06T02:30:30.372474"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountTypeOverrides" skipped="0" tests="1" testsuite_failed="False" time="35.938785" timestamp="2020-02-06T02:31:05.279987">
+    <testcase name="UpdateAndGetTypeOverridesSuccessful" status="run" time="35.548116" timestamp="2020-02-06T02:31:05.498771"/>
+   </testsuite>
+   <testsuite failures="0" name="AccountUserAuthorizations" skipped="0" tests="2" testsuite_failed="False" time="1.593782" timestamp="2020-02-06T02:31:41.328213">
+    <testcase name="GetAccountUserAuthorizations" status="run" time="0.531279" timestamp="2020-02-06T02:31:41.640664"/>
+    <testcase name="GetAccountUserAuthorizationsForceCarePermission" status="run" time="0.390639" timestamp="2020-02-06T02:31:42.375078"/>
+   </testsuite>
+   <testsuite failures="0" name="CloneAccount" skipped="0" tests="7" testsuite_failed="False" time="4.515783" timestamp="2020-02-06T02:31:43.000109">
+    <testcase name="CloneAccountSuccessful" status="run" time="0.437173" timestamp="2020-02-06T02:31:43.250449"/>
+    <testcase name="CloneAccountExistentBrokerageNumber" status="run" time="0.140622" timestamp="2020-02-06T02:31:43.828281"/>
+    <testcase name="CloneAccountTraderSuccess" status="run" time="1.156293" timestamp="2020-02-06T02:31:44.156378"/>
+    <testcase name="CloneAccountTraderFromOtherFcm" status="run" time="0.296859" timestamp="2020-02-06T02:31:45.468952"/>
+    <testcase name="CloneAccountTraderNotFound" status="run" time="0.281687" timestamp="2020-02-06T02:31:46.109588"/>
+    <testcase name="CloneAccountTraderNoAuthority" status="run" time="0.359392" timestamp="2020-02-06T02:31:46.640846"/>
+    <testcase name="CloneAccountTraderNotLinkedWithCustomer" status="run" time="0.203149" timestamp="2020-02-06T02:31:47.156503"/>
+   </testsuite>
+   <testsuite failures="0" name="CreateAccount" skipped="0" tests="7" testsuite_failed="False" time="232.508258" timestamp="2020-02-06T02:31:47.594016">
+    <testcase name="CreateAccount" status="run" time="35.173126" timestamp="2020-02-06T02:31:49.094069"/>
+    <testcase name="CreateDuplicateAccount" status="run" time="31.876268" timestamp="2020-02-06T02:32:24.439059"/>
+    <testcase name="CreateAccountInvalidParameters" status="run" time="31.829175" timestamp="2020-02-06T02:32:56.487230"/>
+    <testcase name="SimulationAccountOk" status="run" time="31.87614" timestamp="2020-02-06T02:33:28.488260"/>
+    <testcase name="SimAccountInvalidPrefix" status="run" time="31.688648" timestamp="2020-02-06T02:34:00.614404"/>
+    <testcase name="CreateAccountForTempFcm" status="run" time="32.485515" timestamp="2020-02-06T02:34:32.506173"/>
+    <testcase name="TempAccountInvalidPrefix" status="run" time="34.750925" timestamp="2020-02-06T02:35:05.195124"/>
+   </testsuite>
+   <testsuite failures="0" name="DeleteRestoreAccount" skipped="0" tests="1" testsuite_failed="False" time="38.626347" timestamp="2020-02-06T02:35:40.180411">
+    <testcase name="DeleteRestoreRegularAccountSuccessfully" status="run" time="38.157584" timestamp="2020-02-06T02:35:40.446050"/>
+   </testsuite>
+   <testsuite failures="0" name="GetAccount" skipped="0" tests="1" testsuite_failed="False" time="0.593743" timestamp="2020-02-06T02:36:18.869280">
+    <testcase name="GetAccountSuccessful" status="run" time="0.125153" timestamp="2020-02-06T02:36:19.134882"/>
+   </testsuite>
+   <testsuite failures="0" name="UpdateAccountTraderAuthorization" skipped="0" tests="2" testsuite_failed="False" time="70.87749" timestamp="2020-02-06T02:36:19.572394">
+    <testcase name="AddAccountTraderAuthorizationSuccessful" status="run" time="34.907451" timestamp="2020-02-06T02:36:19.853675"/>
+    <testcase name="ImplicitAuthorizationFlag" status="run" time="35.298176" timestamp="2020-02-06T02:36:54.964249"/>
+   </testsuite>
+   <testsuite failures="0" name="UpdateAccount" skipped="0" tests="8" testsuite_failed="False" time="6.453353" timestamp="2020-02-06T02:37:30.543636">
+    <testcase name="UpdateAccountSuccessful" status="run" time="0.750053" timestamp="2020-02-06T02:37:30.809290"/>
+    <testcase name="UpdateOriginalAccountSuccessful" status="run" time="0.392766" timestamp="2020-02-06T02:37:31.778050"/>
+    <testcase name="UpdateAccountTryChangeFCM" status="run" time="0.156249" timestamp="2020-02-06T02:37:32.371835"/>
+    <testcase name="UpdateAccountInvalidCustomerId" status="run" time="0.843764" timestamp="2020-02-06T02:37:32.715599"/>
+    <testcase name="UpdateAccountDEMOPrefix" status="run" time="0.765979" timestamp="2020-02-06T02:37:33.840635"/>
+    <testcase name="UpdateAccountDEMOPrefixFail" status="run" time="0.562509" timestamp="2020-02-06T02:37:34.793783"/>
+    <testcase name="AccountSIMPrefix" status="run" time="0.531274" timestamp="2020-02-06T02:37:35.543807"/>
+    <testcase name="UpdateAccountSIMPrefixFail" status="run" time="0.531273" timestamp="2020-02-06T02:37:36.262584"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Admin" skipped="0" tests="19" testsuite_failed="False" time="83.143797" timestamp="2020-02-06T02:37:37.309501">
+   <testsuite failures="0" name="AdminCommon" skipped="0" tests="1" testsuite_failed="False" time="1.015685" timestamp="2020-02-06T02:37:37.543884">
+    <testcase name="AdminDataNoPermission" status="run" time="0.546874" timestamp="2020-02-06T02:37:37.809537"/>
+   </testsuite>
+   <testsuite failures="0" name="ClientAppType" skipped="0" tests="5" testsuite_failed="False" time="5.625437" timestamp="2020-02-06T02:37:38.637672">
+    <testcase name="ClientAppTypeImplicitCrudRequest" status="run" time="0.28186" timestamp="2020-02-06T02:37:38.997082"/>
+    <testcase name="ClientAppTypeExplicitCrudRequest" status="run" time="0.23446" timestamp="2020-02-06T02:37:39.434572"/>
+    <testcase name="RemoveClientAppTypeFailed" status="run" time="0.18776" timestamp="2020-02-06T02:37:39.825226"/>
+    <testcase name="UpdateClientAppTypeDuplicateDataFailed" status="run" time="3.515719" timestamp="2020-02-06T02:37:40.184609"/>
+    <testcase name="CreateClientAppTypeDuplicateDataFailed" status="run" time="0.249845" timestamp="2020-02-06T02:37:43.856806"/>
+   </testsuite>
+   <testsuite failures="0" name="PrivateLabel" skipped="0" tests="5" testsuite_failed="False" time="4.218901" timestamp="2020-02-06T02:37:44.356608">
+    <testcase name="PrivateLabelImplicitCrudRequest" status="run" time="0.265645" timestamp="2020-02-06T02:37:44.622239"/>
+    <testcase name="PrivateLabelExplicitCrudRequest" status="run" time="0.25001" timestamp="2020-02-06T02:37:45.075398"/>
+    <testcase name="RemovePrivateLabelFailed" status="run" time="0.140647" timestamp="2020-02-06T02:37:45.606667"/>
+    <testcase name="UpdatePrivateLabelDuplicateDataFailed" status="run" time="2.01569" timestamp="2020-02-06T02:37:45.934791"/>
+    <testcase name="CreatePrivateLabelDuplicateDataFailed" status="run" time="0.249963" timestamp="2020-02-06T02:37:48.122405"/>
+   </testsuite>
+   <testsuite failures="0" name="Product" skipped="0" tests="8" testsuite_failed="False" time="71.564891" timestamp="2020-02-06T02:37:48.669355">
+    <testcase name="ProductImplicitCrudRequest" status="run" time="0.82815" timestamp="2020-02-06T02:37:48.919276"/>
+    <testcase name="ProductExplicitCrudRequest" status="run" time="0.375026" timestamp="2020-02-06T02:37:49.934937"/>
+    <testcase name="ProductSearchSuccessful" status="run" time="0.171934" timestamp="2020-02-06T02:37:50.528741"/>
+    <testcase name="CreateProductIDExists" status="run" time="0.203631" timestamp="2020-02-06T02:37:50.950582"/>
+    <testcase name="CreateProductExists" status="run" time="0.155842" timestamp="2020-02-06T02:37:51.357279"/>
+    <testcase name="UpdateProductExists" status="run" time="0.218695" timestamp="2020-02-06T02:37:51.778814"/>
+    <testcase name="GetCastUserProducts" status="run" time="32.266731" timestamp="2020-02-06T02:37:52.169416"/>
+    <testcase name="GetCastUserNoProducts" status="run" time="35.422436" timestamp="2020-02-06T02:38:24.639927"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Brokerage" skipped="0" tests="2" testsuite_failed="False" time="39.235729" timestamp="2020-02-06T02:39:00.593657">
+   <testsuite failures="0" name="MinimumMarketLimits" skipped="0" tests="2" testsuite_failed="False" time="38.673183" timestamp="2020-02-06T02:39:00.984332">
+    <testcase name="BrokerageMinMarketLimitsRequestSuccessful" status="run" time="35.078906" timestamp="2020-02-06T02:39:01.391021"/>
+    <testcase name="AccountMarketLimitsValidation" status="run" time="2.796868" timestamp="2020-02-06T02:39:36.673135"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="CastUsers" skipped="0" tests="6" testsuite_failed="False" time="368.419165" timestamp="2020-02-06T02:39:39.923139">
+   <testsuite failures="0" name="CastUserCrud" skipped="0" tests="2" testsuite_failed="False" time="132.05146" timestamp="2020-02-06T02:39:40.095036">
+    <testcase name="CastUserCrudSuccessful" status="run" time="67.517994" timestamp="2020-02-06T02:39:40.423168"/>
+    <testcase name="CastUserRestoreSuccessful" status="run" time="63.848886" timestamp="2020-02-06T02:40:48.144264"/>
+   </testsuite>
+   <testsuite failures="0" name="CastUserOperations" skipped="0" tests="3" testsuite_failed="False" time="167.349594" timestamp="2020-02-06T02:41:52.255877">
+    <testcase name="CastUserLinkedBrokeragesSuccessful" status="run" time="64.095984" timestamp="2020-02-06T02:41:52.521507"/>
+    <testcase name="CastUserBrokerageAuthorizations" status="run" time="36.436277" timestamp="2020-02-06T02:42:56.807468"/>
+    <testcase name="CastUserSSAuthorizations" status="run" time="65.9867" timestamp="2020-02-06T02:43:33.446899"/>
+   </testsuite>
+   <testsuite failures="0" name="SearchCastUser" skipped="0" tests="1" testsuite_failed="False" time="68.502291" timestamp="2020-02-06T02:44:39.683737">
+    <testcase name="SearchCastUserSuccessful" status="run" time="68.002393" timestamp="2020-02-06T02:44:39.996121"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Common" skipped="0" tests="12" testsuite_failed="False" time="340.231041" timestamp="2020-02-06T02:45:48.420406">
+   <testsuite failures="0" name="FormatErrorMessageValidation" skipped="0" tests="2" testsuite_failed="False" time="68.096166" timestamp="2020-02-06T02:45:48.623541">
+    <testcase name="ErrorWithoutParametersHasFormat" status="run" time="35.548061" timestamp="2020-02-06T02:45:48.967348"/>
+    <testcase name="ErrorWithTwoParametersHasFormat" status="run" time="31.844751" timestamp="2020-02-06T02:46:24.687406"/>
+   </testsuite>
+   <testsuite failures="0" name="NonAsciiValidation" skipped="0" tests="10" testsuite_failed="False" time="271.65002" timestamp="2020-02-06T02:46:56.829228">
+    <testcase name="TradeRoutingRequestSuccessfull" status="run" time="1.202259" timestamp="2020-02-06T02:46:57.204987"/>
+    <testcase name="AccountScopeRequestFailed" status="run" time="33.532434" timestamp="2020-02-06T02:46:58.594745"/>
+    <testcase name="OperationRequestSuccessfull" status="run" time="31.86048" timestamp="2020-02-06T02:47:32.330343"/>
+    <testcase name="OperationRequestFailed" status="run" time="31.985487" timestamp="2020-02-06T02:48:04.378327"/>
+    <testcase name="InformationRequestSuccessfull" status="run" time="31.812977" timestamp="2020-02-06T02:48:36.536351"/>
+    <testcase name="InformationRequestFailed" status="run" time="31.532376" timestamp="2020-02-06T02:49:08.552437"/>
+    <testcase name="AssertFrameworkRequestSuccessfull" status="run" time="36.610916" timestamp="2020-02-06T02:49:40.272316"/>
+    <testcase name="AssertFrameworkRequestFailed" status="run" time="35.204284" timestamp="2020-02-06T02:50:17.086175"/>
+    <testcase name="AssertSearchRequestSuccessfull" status="run" time="0.078156" timestamp="2020-02-06T02:50:52.524836"/>
+    <testcase name="AssertSearchRequestFailed" status="run" time="35.501348" timestamp="2020-02-06T02:50:52.790469"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Customers" skipped="0" tests="15" testsuite_failed="False" time="517.346167" timestamp="2020-02-06T02:51:28.744882">
+   <testsuite failures="0" name="AddressStatus" skipped="0" tests="2" testsuite_failed="False" time="99.331614" timestamp="2020-02-06T02:51:28.901106">
+    <testcase name="ModifyAddressStatusSuccessfully" status="run" time="66.720297" timestamp="2020-02-06T02:51:29.261288"/>
+    <testcase name="ModifyAddressStatusNoPermission" status="run" time="31.891735" timestamp="2020-02-06T02:52:36.137852"/>
+   </testsuite>
+   <testsuite failures="0" name="CustomerCommon" skipped="0" tests="2" testsuite_failed="False" time="68.346091" timestamp="2020-02-06T02:53:08.342122">
+    <testcase name="CustomerNoPermission" status="run" time="31.892106" timestamp="2020-02-06T02:53:08.717110"/>
+    <testcase name="CustomerEntityRemoved" status="run" time="35.688753" timestamp="2020-02-06T02:53:40.811984"/>
+   </testsuite>
+   <testsuite failures="0" name="CustomerCrud" skipped="0" tests="7" testsuite_failed="False" time="240.289618" timestamp="2020-02-06T02:54:16.766346">
+    <testcase name="CustomerCrudSuccessful" status="run" time="35.641993" timestamp="2020-02-06T02:54:17.063255"/>
+    <testcase name="CreateCustomerInvalidCountry" status="run" time="35.48561" timestamp="2020-02-06T02:54:52.939508"/>
+    <testcase name="CreateCustomerInvalidState" status="run" time="31.485512" timestamp="2020-02-06T02:55:28.612602"/>
+    <testcase name="CreateCustomerCountryStateMismatch" status="run" time="32.048146" timestamp="2020-02-06T02:56:00.270221"/>
+    <testcase name="UpdateCustomerInvalidCountry" status="run" time="32.106203" timestamp="2020-02-06T02:56:32.494127"/>
+    <testcase name="UpdateCustomerInvalidState" status="run" time="35.923125" timestamp="2020-02-06T02:57:04.772222"/>
+    <testcase name="UpdateCustomerCountryStateMismatch" status="run" time="35.874262" timestamp="2020-02-06T02:57:40.962981"/>
+   </testsuite>
+   <testsuite failures="0" name="CustomerWithoutBrokerage" skipped="0" tests="2" testsuite_failed="False" time="67.361736" timestamp="2020-02-06T02:58:17.149727">
+    <testcase name="CustomerCrudSuccess" status="run" time="34.907459" timestamp="2020-02-06T02:58:17.430988"/>
+    <testcase name="LinkUserToCustomerFail" status="run" time="31.688575" timestamp="2020-02-06T02:58:52.635355"/>
+   </testsuite>
+   <testsuite failures="0" name="RemoveCustomer" skipped="0" tests="1" testsuite_failed="False" time="39.282552" timestamp="2020-02-06T02:59:24.636537">
+    <testcase name="RemoveCustomerWithTraderAndAccountSuccessful" status="run" time="38.813822" timestamp="2020-02-06T02:59:24.917730"/>
+   </testsuite>
+   <testsuite failures="0" name="SearchCustomer" skipped="0" tests="1" testsuite_failed="False" time="1.843817" timestamp="2020-02-06T03:00:04.028448">
+    <testcase name="SearchCustomerSuccessful" status="run" time="1.312517" timestamp="2020-02-06T03:00:04.356610"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="DemoAccess" skipped="0" tests="2" testsuite_failed="False" time="2.718827" timestamp="2020-02-06T03:00:06.200407">
+   <testsuite failures="0" name="ObtainDemoAccess" skipped="0" tests="2" testsuite_failed="False" time="2.375059" timestamp="2020-02-06T03:00:06.356679">
+    <testcase name="ObtainDemoAccessInvalidProduct" status="run" time="0.828177" timestamp="2020-02-06T03:00:06.606669"/>
+    <testcase name="ObtainDemoAccessSuccessful" status="run" time="0.937544" timestamp="2020-02-06T03:00:07.622349"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="EventLogs" skipped="0" tests="1" testsuite_failed="False" time="91.378253" timestamp="2020-02-06T03:00:08.997360">
+   <testsuite failures="0" name="SearchEventLog" skipped="0" tests="1" testsuite_failed="False" time="90.893823" timestamp="2020-02-06T03:00:09.263036">
+    <testcase name="SearchEventLogSuccessful" status="run" time="90.440753" timestamp="2020-02-06T03:00:09.559889"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Framework" skipped="0" tests="16" testsuite_failed="False" time="439.687015" timestamp="2020-02-06T03:01:40.453748">
+   <testsuite failures="0" name="Brokerages" skipped="0" tests="7" testsuite_failed="False" time="195.350822" timestamp="2020-02-06T03:01:40.656858">
+    <testcase name="GetFcmsSuccessful" status="run" time="0.468757" timestamp="2020-02-06T03:01:41.047516"/>
+    <testcase name="GetBrokerageRiskParameters" status="run" time="34.485599" timestamp="2020-02-06T03:01:41.703798"/>
+    <testcase name="GetCurrencyRates" status="run" time="31.46987" timestamp="2020-02-06T03:02:16.345694"/>
+    <testcase name="GetBrokerageRouteGroupListSuccessful" status="run" time="32.063664" timestamp="2020-02-06T03:02:48.018665"/>
+    <testcase name="BrokerageClassRiskParametersRequestSuccessful" status="run" time="31.579235" timestamp="2020-02-06T03:03:20.254242"/>
+    <testcase name="BrokerageMarketLimitsRequestSuccessful" status="run" time="32.29806" timestamp="2020-02-06T03:03:52.005364"/>
+    <testcase name="SearchBrokerageSuccessful" status="run" time="31.219861" timestamp="2020-02-06T03:04:24.569063"/>
+   </testsuite>
+   <testsuite failures="0" name="ContractSearch" skipped="0" tests="2" testsuite_failed="False" time="63.986748" timestamp="2020-02-06T03:04:56.085810">
+    <testcase name="ContractSearchByRegularSetOfCriteria" status="run" time="32.266792" timestamp="2020-02-06T03:04:56.398330"/>
+    <testcase name="ContractSearchByBunchOfIds" status="run" time="31.016691" timestamp="2020-02-06T03:05:28.837012"/>
+   </testsuite>
+   <testsuite failures="0" name="ExportToExcel" skipped="0" tests="1" testsuite_failed="False" time="2.890733" timestamp="2020-02-06T03:06:00.197459">
+    <testcase name="ExportToExcelSuccessful" status="run" time="2.203707" timestamp="2020-02-06T03:06:00.634977"/>
+   </testsuite>
+   <testsuite failures="0" name="GetUser" skipped="0" tests="1" testsuite_failed="False" time="1.7032479999999999" timestamp="2020-02-06T03:06:03.166311">
+    <testcase name="GetCastUserSuccessfull" status="run" time="1.250025" timestamp="2020-02-06T03:06:03.431972"/>
+   </testsuite>
+   <testsuite failures="0" name="ProductAndServices" skipped="0" tests="2" testsuite_failed="False" time="171.364878" timestamp="2020-02-06T03:06:04.932029">
+    <testcase name="UpdateProductServicesSuccessful" status="run" time="104.112884" timestamp="2020-02-06T03:06:05.228889"/>
+    <testcase name="UpdateProductServicesByAdminFail" status="run" time="66.517565" timestamp="2020-02-06T03:07:49.529296"/>
+   </testsuite>
+   <testsuite failures="0" name="RecentEntity" skipped="0" tests="1" testsuite_failed="False" time="2.546958" timestamp="2020-02-06T03:08:56.390662">
+    <testcase name="RecentEntityCustomerSuccessful" status="run" time="2.077571" timestamp="2020-02-06T03:08:56.688491"/>
+   </testsuite>
+   <testsuite failures="0" name="SessionLimit" skipped="0" tests="2" testsuite_failed="False" time="0.843986" timestamp="2020-02-06T03:08:59.015726">
+    <testcase name="NonAdminSessionLimitSuccessful" status="run" time="0.109382" timestamp="2020-02-06T03:08:59.281354"/>
+    <testcase name="AdminSessionLimitSuccessful" status="run" time="0.093746" timestamp="2020-02-06T03:08:59.578242"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="InternalRequest" skipped="0" tests="2" testsuite_failed="False" time="1.5156049999999999" timestamp="2020-02-06T03:09:00.234580">
+   <testsuite failures="0" name="InternalRequest" skipped="0" tests="2" testsuite_failed="False" time="1.046915" timestamp="2020-02-06T03:09:00.515759">
+    <testcase name="InternalRequestInvalidAuthenticationKey" status="run" time="0.078346" timestamp="2020-02-06T03:09:00.890773"/>
+    <testcase name="InternalRequestSuccessful" status="run" time="0.109372" timestamp="2020-02-06T03:09:01.187660"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Orders" skipped="0" tests="17" testsuite_failed="False" time="302.916466" timestamp="2020-02-06T03:09:01.843924">
+   <testsuite failures="0" name="CompoundOrderTreeRequest" skipped="0" tests="1" testsuite_failed="False" time="51.485886" timestamp="2020-02-06T03:09:06.609707">
+    <testcase name="CompoundOrderTreeRequestSuccessful" status="run" time="35.157343" timestamp="2020-02-06T03:09:22.719545"/>
+   </testsuite>
+   <testsuite failures="0" name="CreateExternalOrder" skipped="0" tests="4" testsuite_failed="False" time="4.718897" timestamp="2020-02-06T03:09:58.173731">
+    <testcase name="CreateExternalOrderSuccessful" status="run" time="1.953522" timestamp="2020-02-06T03:09:58.470610"/>
+    <testcase name="CreateExternalOrderWithDisplayPricesSuccessful" status="run" time="1.063715" timestamp="2020-02-06T03:10:00.705036"/>
+    <testcase name="CreateExternalOrderContractNotFound" status="run" time="0.218771" timestamp="2020-02-06T03:10:02.080089"/>
+    <testcase name="CreateExternalOrderNoPermission" status="run" time="0.203129" timestamp="2020-02-06T03:10:02.517606"/>
+   </testsuite>
+   <testsuite failures="0" name="GetOrder" skipped="0" tests="4" testsuite_failed="False" time="76.392957" timestamp="2020-02-06T03:10:03.002030">
+    <testcase name="GetOrdersConcurrently" status="run" time="74.672495" timestamp="2020-02-06T03:10:03.269251"/>
+    <testcase name="GetOrderSuccessful" status="run" time="0.328108" timestamp="2020-02-06T03:11:18.191772"/>
+    <testcase name="GetOrderNoPermision" status="run" time="0.093623" timestamp="2020-02-06T03:11:18.738764"/>
+    <testcase name="GetOrderNotFound" status="run" time="0.109357" timestamp="2020-02-06T03:11:19.113650"/>
+   </testsuite>
+   <testsuite failures="0" name="RelatedOrderTreeRequest" skipped="0" tests="1" testsuite_failed="False" time="53.673559" timestamp="2020-02-06T03:11:19.488677">
+    <testcase name="RelatedOrderTreeRequestSuccessful" status="run" time="34.766684" timestamp="2020-02-06T03:11:38.129834"/>
+   </testsuite>
+   <testsuite failures="0" name="SearchOrder" skipped="0" tests="7" testsuite_failed="False" time="111.270127" timestamp="2020-02-06T03:12:13.287128">
+    <testcase name="SearchOrderCentralSuccessful" status="run" time="7.375227" timestamp="2020-02-06T03:12:13.693407"/>
+    <testcase name="SearchOrderLocalSuccessful" status="run" time="3.000201" timestamp="2020-02-06T03:12:21.412390"/>
+    <testcase name="SearchArchivedOrderCentralSuccessful" status="run" time="32.672853" timestamp="2020-02-06T03:12:24.584373"/>
+    <testcase name="SearchArchivedOrderLocalSuccessful" status="run" time="1.5313050000000001" timestamp="2020-02-06T03:12:57.444729"/>
+    <testcase name="SearchOrderNoPerm" status="run" time="32.985325" timestamp="2020-02-06T03:12:59.194807"/>
+    <testcase name="SearchArchivedOrderNoPerm" status="run" time="31.627095" timestamp="2020-02-06T03:13:32.414521"/>
+    <testcase name="SearchOrderTop" status="run" time="0.124985" timestamp="2020-02-06T03:14:04.229121"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Session" skipped="0" tests="9" testsuite_failed="False" time="12.311805" timestamp="2020-02-06T03:14:04.855198">
+   <testsuite failures="0" name="Login" skipped="0" tests="7" testsuite_failed="False" time="2.921951" timestamp="2020-02-06T03:14:05.057274">
+    <testcase name="LoginSuccessful" status="run" time="0.078127" timestamp="2020-02-06T03:14:05.401024"/>
+    <testcase name="LoginWrongCredentials" status="run" time="0.093731" timestamp="2020-02-06T03:14:05.713540"/>
+    <testcase name="LoginInvalidClientApplicationType" status="run" time="0.296911" timestamp="2020-02-06T03:14:06.010401"/>
+    <testcase name="LoginProtocolViolation" status="run" time="0.093772" timestamp="2020-02-06T03:14:06.619819"/>
+    <testcase name="LoginApiDisabled" status="run" time="0.109383" timestamp="2020-02-06T03:14:06.916698"/>
+    <testcase name="LoginPasswordExpired" status="run" time="0.125007" timestamp="2020-02-06T03:14:07.260451"/>
+    <testcase name="LoginAgain" status="run" time="0.140623" timestamp="2020-02-06T03:14:07.635480"/>
+   </testsuite>
+   <testsuite failures="0" name="Session" skipped="0" tests="2" testsuite_failed="False" time="8.922381" timestamp="2020-02-06T03:14:08.057349">
+    <testcase name="ConcurrentSessionCastApi" status="run" time="5.922052" timestamp="2020-02-06T03:14:08.322993"/>
+    <testcase name="ConcurrentSessionsInCastAndCastApi" status="run" time="2.359591" timestamp="2020-02-06T03:14:14.448215"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Traderouting" skipped="0" tests="1" testsuite_failed="False" time="35.594823" timestamp="2020-02-06T03:14:17.276376">
+   <testsuite failures="0" name="LookupProperty" skipped="0" tests="1" testsuite_failed="False" time="35.110445" timestamp="2020-02-06T03:14:17.479518">
+    <testcase name="GetLookupPropertiesSuccessful" status="run" time="34.579173" timestamp="2020-02-06T03:14:17.776385"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Traders" skipped="0" tests="18" testsuite_failed="False" time="351.089016" timestamp="2020-02-06T03:14:52.980571">
+   <testsuite failures="0" name="ActivateDeactivateTrader" skipped="0" tests="4" testsuite_failed="False" time="41.063742" timestamp="2020-02-06T03:14:53.168102">
+    <testcase name="DeactivateTraderSuccessful" status="run" time="35.297947" timestamp="2020-02-06T03:14:53.464978"/>
+    <testcase name="ActivateTraderSuccessful" status="run" time="1.484391" timestamp="2020-02-06T03:15:28.966086"/>
+    <testcase name="DeactivateWithExpirationDateTraderSuccessful" status="run" time="1.703221" timestamp="2020-02-06T03:15:30.716093"/>
+    <testcase name="ActivateTraderWithExpirationDateSuccessful" status="run" time="1.359406" timestamp="2020-02-06T03:15:32.653676"/>
+   </testsuite>
+   <testsuite failures="0" name="BillingCustomData" skipped="0" tests="1" testsuite_failed="False" time="34.954135" timestamp="2020-02-06T03:15:34.341254">
+    <testcase name="InsertGetBillingCustomDataSuccessfully" status="run" time="34.235416" timestamp="2020-02-06T03:15:34.684987"/>
+   </testsuite>
+   <testsuite failures="0" name="CloneTrader" skipped="0" tests="6" testsuite_failed="False" time="131.566514" timestamp="2020-02-06T03:16:09.389166">
+    <testcase name="CloneTraderSuccessful" status="run" time="0.828124" timestamp="2020-02-06T03:16:09.686053"/>
+    <testcase name="CloneTraderExistedCustomerSuccessful" status="run" time="33.579211" timestamp="2020-02-06T03:16:10.732948"/>
+    <testcase name="CloneTraderSourceTraderNotFound" status="run" time="31.625983" timestamp="2020-02-06T03:16:44.515248"/>
+    <testcase name="CloneTraderSourceTraderNoAuthority" status="run" time="32.016777" timestamp="2020-02-06T03:17:16.359950"/>
+    <testcase name="CloneNotSupportedClassTrader" status="run" time="31.563998" timestamp="2020-02-06T03:17:48.579680"/>
+    <testcase name="CloneTraderInvalidContactInformation" status="run" time="0.296903" timestamp="2020-02-06T03:18:20.361928"/>
+   </testsuite>
+   <testsuite failures="0" name="SearchTrader" skipped="0" tests="3" testsuite_failed="False" time="68.455222" timestamp="2020-02-06T03:18:21.096338">
+    <testcase name="PrimaryAndSecondaryCriteriaSearch" status="run" time="35.047951" timestamp="2020-02-06T03:18:21.455679"/>
+    <testcase name="SecondaryCriteriaOnlySearch" status="run" time="31.798133" timestamp="2020-02-06T03:18:56.831770"/>
+    <testcase name="SearchTraderSuccessful" status="run" time="0.484277" timestamp="2020-02-06T03:19:28.848559"/>
+   </testsuite>
+   <testsuite failures="0" name="TraderCommon" skipped="0" tests="2" testsuite_failed="False" time="1.8750390000000001" timestamp="2020-02-06T03:19:29.645315">
+    <testcase name="TraderNoPermission" status="run" time="0.609401" timestamp="2020-02-06T03:19:30.004685"/>
+    <testcase name="TraderNotFound" status="run" time="0.437485" timestamp="2020-02-06T03:19:30.832858"/>
+   </testsuite>
+   <testsuite failures="0" name="TraderCrud" skipped="0" tests="1" testsuite_failed="False" time="33.657253" timestamp="2020-02-06T03:19:31.707885">
+    <testcase name="CrudSuccessful" status="run" time="33.094718" timestamp="2020-02-06T03:19:32.051651"/>
+   </testsuite>
+   <testsuite failures="0" name="TraderEntitlements" skipped="0" tests="1" testsuite_failed="False" time="38.282553" timestamp="2020-02-06T03:20:05.458894">
+    <testcase name="ModifyUserEntitlementsSuccessful" status="run" time="37.688681" timestamp="2020-02-06T03:20:05.787020"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+17:17:58.62  Test starded without threads
+15:18:00.784 Python Module Path 'Scripts/Gateway/SystemAreas/Diagnostics/PythonModules' not found. Ignored.
+15:18:00.799 Python Module Path 'ScriptKit' added.
+15:18:00.799 Python Module Path 'Scripts/Gateway/PythonModules' added.
+15:18:00.799 Python Module Path 'ScriptKit/TroubleMaker' added.
+15:18:03.549 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/Diagnostics' filtered execution.
+15:18:03.565 Suite '.'. [3 test cases, 0 sub-suites]
+15:18:03.612 Case 'CAST' execution.
+15:18:40.098 Case 'CAST' succeeded.
+15:18:40.144 Case 'CollateralInquiry' execution.
+15:18:42.035 Case 'CollateralInquiry' succeeded.
+15:18:42.066 Case 'XML' execution.
+15:18:49.238 Case 'XML' succeeded.
+15:18:49.301 Root suite 'Scripts/Gateway/SystemAreas/Diagnostics' execution finished. It took 0:00:45.720362.
+15:18:49.301 Test cases results: 3 total, 3 succeeded, 0 failed, 0 skipped.

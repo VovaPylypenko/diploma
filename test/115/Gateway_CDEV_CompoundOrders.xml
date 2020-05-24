@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="95" testsuite_failed="False" time="135.958219" timestamp="2020-02-19T20:51:58.472670">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders/MultipleActions/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="CompoundOrders" skipped="0" tests="95" testsuite_failed="False" time="135.958219" timestamp="2020-02-19T20:51:58.472670">
+  <testsuite failures="0" name="Brackets" skipped="0" tests="4" testsuite_failed="False" time="2.453217" timestamp="2020-02-19T20:52:10.645011">
+   <testcase name="ModifyBracketOCOLegAfterFillOPOPriLeg" status="run" time="0.218817" timestamp="2020-02-19T20:52:10.785638"/>
+   <testcase name="OPO_L0_OCO_ModL2FlL0FlL0FlL2" status="run" time="0.31345" timestamp="2020-02-19T20:52:11.082522"/>
+   <testcase name="OPO_L1_OCO_FillL1FillL3" status="run" time="0.156248" timestamp="2020-02-19T20:52:11.535658"/>
+   <testsuite failures="0" name="CancelAll" skipped="0" tests="1" testsuite_failed="False" time="1.296267" timestamp="2020-02-19T20:52:11.723829">
+    <testcase name="BracketSuspendedCancel" status="run" time="0.124996" timestamp="2020-02-19T20:52:12.816974"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="MultipleActions" skipped="0" tests="1" testsuite_failed="False" time="2.500096" timestamp="2020-02-19T20:52:13.160723">
+   <testcase name="SuspendActions" status="run" time="2.25007" timestamp="2020-02-19T20:52:13.301352"/>
+  </testsuite>
+  <testsuite failures="0" name="OCO" skipped="0" tests="24" testsuite_failed="False" time="18.641321" timestamp="2020-02-19T20:52:15.707694">
+   <testcase name="AddTwoNewOrders" status="run" time="0.156401" timestamp="2020-02-19T20:52:15.801467"/>
+   <testcase name="DurationModificationForOCO" status="run" time="1.093767" timestamp="2020-02-19T20:52:16.035835"/>
+   <testcase name="FLegFilledPartialySLegFilledFully" status="run" time="0.125012" timestamp="2020-02-19T20:52:17.207739"/>
+   <testcase name="FLegFilledSLegCancelled" status="run" time="0.093285" timestamp="2020-02-19T20:52:17.426976"/>
+   <testcase name="Place4LegsCancel3Legs" status="run" time="0.156249" timestamp="2020-02-19T20:52:17.614054"/>
+   <testcase name="Place4LegsCancelFirstLeg" status="run" time="0.1411" timestamp="2020-02-19T20:52:17.864043"/>
+   <testcase name="PlaceFromAccountTraderNotAutorized" status="run" time="0.015623" timestamp="2020-02-19T20:52:18.082779"/>
+   <testcase name="PlaceFromAccountTraderNotAutorizedSkipListID" status="run" time="1.031387" timestamp="2020-02-19T20:52:18.176558"/>
+   <testcase name="PlaceOCOwithOneLeg" status="run" time="0.01561" timestamp="2020-02-19T20:52:19.285983"/>
+   <testcase name="RiskForOCO" status="run" time="0.109512" timestamp="2020-02-19T20:52:19.410962"/>
+   <testcase name="TwoLegsFilledFully" status="run" time="0.124847" timestamp="2020-02-19T20:52:19.614236"/>
+   <testsuite failures="0" name="CheckSendsCancelAfterPlace" skipped="0" tests="2" testsuite_failed="False" time="10.768251" timestamp="2020-02-19T20:52:19.785955">
+    <testcase name="LMT_MKT_OCO" status="run" time="5.265891" timestamp="2020-02-19T20:52:19.942251"/>
+    <testcase name="MKT_MKT_OCO" status="run" time="5.156455" timestamp="2020-02-19T20:52:25.301797"/>
+   </testsuite>
+   <testsuite failures="0" name="LegsSizeChangesAfterPartialFill" skipped="0" tests="2" testsuite_failed="False" time="0.796896" timestamp="2020-02-19T20:52:30.598883">
+    <testcase name="PartialFillsHandling_Disable" status="run" time="0.140632" timestamp="2020-02-19T20:52:30.755141"/>
+    <testcase name="PartialFillsHandling_Enable" status="run" time="0.281253" timestamp="2020-02-19T20:52:31.005151"/>
+   </testsuite>
+   <testsuite failures="0" name="PlaceModifyOneLegFill" skipped="0" tests="1" testsuite_failed="False" time="0.46876" timestamp="2020-02-19T20:52:31.442664">
+    <testcase name="LMT_GTC-LMT_GTD" status="run" time="0.234813" timestamp="2020-02-19T20:52:31.583281"/>
+   </testsuite>
+   <testsuite failures="0" name="WorkingCompoundAsLeg" skipped="0" tests="2" testsuite_failed="False" time="0.796781" timestamp="2020-02-19T20:52:31.958466">
+    <testcase name="AddWOPOtoWOCO1toWOCO2" status="run" time="0.187491" timestamp="2020-02-19T20:52:32.098940"/>
+    <testcase name="OCOOPOAcc1Acc2" status="run" time="0.250011" timestamp="2020-02-19T20:52:32.380192"/>
+   </testsuite>
+   <testsuite failures="0" name="WorkingOrderAsLeg" skipped="0" tests="6" testsuite_failed="False" time="1.4688050000000001" timestamp="2020-02-19T20:52:32.802086">
+    <testcase name="AddTwiceOneWO" status="run" time="0.125006" timestamp="2020-02-19T20:52:32.942702"/>
+    <testcase name="AddTwoWO" status="run" time="0.125005" timestamp="2020-02-19T20:52:33.145829"/>
+    <testcase name="AddWOtoWOCO" status="run" time="0.140617" timestamp="2020-02-19T20:52:33.364602"/>
+    <testcase name="AddWOtoWOCOFromDiffAcc" status="run" time="0.109374" timestamp="2020-02-19T20:52:33.661514"/>
+    <testcase name="OneWorkingOrderAsLeg" status="run" time="0.156214" timestamp="2020-02-19T20:52:33.849027"/>
+    <testcase name="TwoWorkingOrdersAsLegs" status="run" time="0.078098" timestamp="2020-02-19T20:52:34.083408"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OPO" skipped="0" tests="30" testsuite_failed="False" time="44.267288" timestamp="2020-02-19T20:52:34.395895">
+   <testcase name="AddTwoNewOrders" status="run" time="0.125007" timestamp="2020-02-19T20:52:34.552147"/>
+   <testcase name="DurationModificationForOPO" status="run" time="1.140591" timestamp="2020-02-19T20:52:34.770987"/>
+   <testcase name="ModifyOPOSecLegAfterFillPriLeg" status="run" time="0.156244" timestamp="2020-02-19T20:52:36.036585"/>
+   <testcase name="OCOasPRILegInOPO_PFH_Disable" status="run" time="0.078162" timestamp="2020-02-19T20:52:36.302213"/>
+   <testcase name="OCOasPRILegInOPO_PFH_Enable" status="run" time="0.062488" timestamp="2020-02-19T20:52:36.474098"/>
+   <testcase name="OPOPartialFill" status="run" time="0.177306" timestamp="2020-02-19T20:52:36.630379"/>
+   <testcase name="OPOwith1LMT_9MKT_FillLMT" status="run" time="0.515589" timestamp="2020-02-19T20:52:36.927291"/>
+   <testcase name="PlaceFromAccountTraderNotAutorized" status="run" time="0.03125" timestamp="2020-02-19T20:52:37.552298"/>
+   <testcase name="PlaceFromAccountTraderNotAutorizedSkipListID" status="run" time="0.906321" timestamp="2020-02-19T20:52:37.677265"/>
+   <testcase name="PlaceOPO2legsActiveAtCancelPRI" status="run" time="10.094102" timestamp="2020-02-19T20:52:38.677338"/>
+   <testcase name="PlaceOPO3legsCancelSecLegs" status="run" time="0.077374" timestamp="2020-02-19T20:52:48.850332"/>
+   <testcase name="PlaceOPO4legsCancelPRI" status="run" time="0.094725" timestamp="2020-02-19T20:52:49.005805"/>
+   <testcase name="PlaceOPO4legsRejectPRI" status="run" time="0.080881" timestamp="2020-02-19T20:52:49.193324"/>
+   <testcase name="PlaceOPOwithOneLeg" status="run" time="0.01561" timestamp="2020-02-19T20:52:49.380850"/>
+   <testcase name="PlaceOPO_L0_OCO_L1_OCO" status="run" time="0.046876" timestamp="2020-02-19T20:52:49.474591"/>
+   <testcase name="PLegFilledPartialyPLegFilledFully_LMT-MKT" status="run" time="5.140966" timestamp="2020-02-19T20:52:49.615218"/>
+   <testcase name="RiskForOPO" status="run" time="0.062443" timestamp="2020-02-19T20:52:54.896713"/>
+   <testsuite failures="0" name="LegsSizeChangesAfterPartialFill" skipped="0" tests="9" testsuite_failed="False" time="22.360257" timestamp="2020-02-19T20:52:54.990428">
+    <testcase name="PRIFillPartFillFull_PFH_Enable" status="run" time="5.187648" timestamp="2020-02-19T20:52:55.146728"/>
+    <testcase name="PRILegFill_1_1_PFH_Enable" status="run" time="5.109564" timestamp="2020-02-19T20:53:00.459359"/>
+    <testcase name="PRIModTo10PRIFill1" status="run" time="5.125178" timestamp="2020-02-19T20:53:05.662715"/>
+    <testcase name="PRIModTo10PRIFill5Fill5" status="run" time="0.156292" timestamp="2020-02-19T20:53:10.881648"/>
+    <testcase name="PRIModTo20PRIFillPart3Time" status="run" time="5.203319" timestamp="2020-02-19T20:53:11.131649"/>
+    <testcase name="PRIsize10Modto5Fill5" status="run" time="0.109353" timestamp="2020-02-19T20:53:16.413124"/>
+    <testcase name="PRIsize20Modto40Fill20" status="run" time="0.109548" timestamp="2020-02-19T20:53:16.678745"/>
+    <testcase name="SecModTo11PRIFillPartFillFull_PFH_Enable" status="run" time="0.124996" timestamp="2020-02-19T20:53:16.881863"/>
+    <testcase name="SecModTo30PRIFillPartFillFull_PFH_Enable" status="run" time="0.140667" timestamp="2020-02-19T20:53:17.116243"/>
+   </testsuite>
+   <testsuite failures="0" name="PlaceModifyOneLegFill" skipped="0" tests="1" testsuite_failed="False" time="0.406273" timestamp="2020-02-19T20:53:17.397499">
+    <testcase name="LMT_GTC-LMT_GTD" status="run" time="0.140626" timestamp="2020-02-19T20:53:17.522522"/>
+   </testsuite>
+   <testsuite failures="0" name="WorkingOrderAsLeg" skipped="0" tests="3" testsuite_failed="False" time="0.734409" timestamp="2020-02-19T20:53:17.850667">
+    <testcase name="AddWOtoWOPO" status="run" time="0.093734" timestamp="2020-02-19T20:53:18.038165"/>
+    <testcase name="CancelSecLegWOPOaddWOtoWOPO" status="run" time="0.109385" timestamp="2020-02-19T20:53:18.225675"/>
+    <testcase name="TwoSTPWOasLegs" status="run" time="0.063116" timestamp="2020-02-19T20:53:18.428792"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="PartialQty" skipped="0" tests="6" testsuite_failed="False" time="2.8125809999999998" timestamp="2020-02-19T20:53:18.710084">
+   <testcase name="Bracket_with_no_PFH" status="run" time="0.265646" timestamp="2020-02-19T20:53:19.741333"/>
+   <testcase name="Bracket_with_PFH" status="run" time="0.296875" timestamp="2020-02-19T20:53:20.116395"/>
+   <testcase name="OCO_with_no_PFH" status="run" time="0.093741" timestamp="2020-02-19T20:53:20.522637"/>
+   <testcase name="OCO_with_PFH" status="run" time="0.234386" timestamp="2020-02-19T20:53:20.710134"/>
+   <testcase name="OPO_with_no_PFH" status="run" time="0.09381" timestamp="2020-02-19T20:53:21.053892"/>
+   <testcase name="OPO_with_PFH" status="run" time="0.171873" timestamp="2020-02-19T20:53:21.241399"/>
+  </testsuite>
+  <testsuite failures="0" name="RiskCompoundOrderMargin" skipped="0" tests="6" testsuite_failed="False" time="5.32833" timestamp="2020-02-19T20:53:21.569530">
+   <testcase name="01_SecondaryOCO_Simple" status="run" time="0.359468" timestamp="2020-02-19T20:53:21.741411"/>
+   <testcase name="02_SecondaryOPO_Simple" status="run" time="0.578125" timestamp="2020-02-19T20:53:22.225827"/>
+   <testcase name="03_PrimaryOCO_Compounds" status="run" time="1.000032" timestamp="2020-02-19T20:53:22.944596"/>
+   <testcase name="04_PrimaryOPO_Compounds" status="run" time="0.671904" timestamp="2020-02-19T20:53:24.054019"/>
+   <testcase name="05_MultipleSecondaries" status="run" time="0.812489" timestamp="2020-02-19T20:53:24.804078"/>
+   <testcase name="06_AddingOrders" status="run" time="1.046896" timestamp="2020-02-19T20:53:25.725949"/>
+  </testsuite>
+  <testsuite failures="0" name="Suspend" skipped="0" tests="19" testsuite_failed="False" time="18.047504" timestamp="2020-02-19T20:53:26.944795">
+   <testcase name="ActivateAtLegs_OCO" status="run" time="0.046884" timestamp="2020-02-19T20:53:27.101047"/>
+   <testcase name="ActivateAtLegs_OPO" status="run" time="0.031243" timestamp="2020-02-19T20:53:27.257244"/>
+   <testcase name="Bracket_Leg1_OCO" status="run" time="0.093804" timestamp="2020-02-19T20:53:27.397882"/>
+   <testcase name="Bracket_Parked_FirstOCOLeg" status="run" time="0.031246" timestamp="2020-02-19T20:53:27.601017"/>
+   <testcase name="Bracket_Parked_SecondOCOLeg" status="run" time="0.046899" timestamp="2020-02-19T20:53:27.788566"/>
+   <testcase name="ModifyLegs_AAT_APT_inOCO_Autoactivate" status="run" time="2.140701" timestamp="2020-02-19T20:53:27.944775"/>
+   <testcase name="ModifyLegs_AAT_APT_inOCO_Autopark" status="run" time="2.203202" timestamp="2020-02-19T20:53:30.210497"/>
+   <testcase name="ModifyLegs_AAT_APT_inOPO_Autoactivate" status="run" time="2.172131" timestamp="2020-02-19T20:53:32.538725"/>
+   <testcase name="ModifyLegs_AAT_APT_inOPO_Autopark" status="run" time="2.20326" timestamp="2020-02-19T20:53:34.804408"/>
+   <testcase name="OCO_ActiveLegsWithDiff_APT" status="run" time="3.031381" timestamp="2020-02-19T20:53:37.101391"/>
+   <testcase name="OCO_ParkLegsWithDiff_AAT" status="run" time="3.0315" timestamp="2020-02-19T20:53:40.242142"/>
+   <testcase name="OPO_Parked_AllLegs" status="run" time="0.031216" timestamp="2020-02-19T20:53:43.382884"/>
+   <testcase name="OPO_Parked_OnlySecLeg" status="run" time="0.046931" timestamp="2020-02-19T20:53:43.492242"/>
+   <testcase name="OPO_SecLegWith_APT_ActivePRILeg" status="run" time="0.015622" timestamp="2020-02-19T20:53:43.648519"/>
+   <testcase name="OPO_SecLegWith_APT_ParkPRILeg" status="run" time="0.031291" timestamp="2020-02-19T20:53:43.773495"/>
+   <testcase name="ParkActivateBracketOCOLegsAfterFillOPOPriLeg" status="run" time="0.375009" timestamp="2020-02-19T20:53:43.898522"/>
+   <testcase name="ParkActivateOPOSecLegAfterFillPriLeg" status="run" time="0.156239" timestamp="2020-02-19T20:53:44.367291"/>
+   <testcase name="PartialFillOCO" status="run" time="0.07812" timestamp="2020-02-19T20:53:44.601670"/>
+   <testcase name="PartialFillOPO" status="run" time="0.109366" timestamp="2020-02-19T20:53:44.773550"/>
+  </testsuite>
+  <testsuite failures="0" name="viaOmnibus" skipped="0" tests="5" testsuite_failed="False" time="11.062904" timestamp="2020-02-19T20:53:45.039177">
+   <testcase name="BRACKETevents" status="run" time="0.234379" timestamp="2020-02-19T20:53:49.664346"/>
+   <testcase name="OCOevents" status="run" time="0.156273" timestamp="2020-02-19T20:53:50.008105"/>
+   <testcase name="OPOevents" status="run" time="1.7031809999999998" timestamp="2020-02-19T20:53:50.273761"/>
+   <testsuite failures="0" name="ExecutionAccountId" skipped="0" tests="2" testsuite_failed="False" time="3.937649" timestamp="2020-02-19T20:53:52.039428">
+    <testcase name="ExecutionAccountIDOpoOnInternalOmnibus" status="run" time="0.249989" timestamp="2020-02-19T20:53:55.242687"/>
+    <testcase name="ExecutionAccountIDOpoOnOmnibus" status="run" time="0.249946" timestamp="2020-02-19T20:53:55.586492"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

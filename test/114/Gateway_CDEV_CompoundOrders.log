@@ -1,0 +1,383 @@
+ 2:41:09.03  Test starded without threads
+00:41:09.485 Python Module Path 'ScriptKit' added.
+00:41:09.503 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+00:41:09.503 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:41:09.503 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders/MultipleActions/PythonModules' added.
+00:41:09.503 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders/PythonModules' added.
+00:41:10.000 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders' filtered execution.
+00:41:10.047 Suite '.'. [0 test cases, 8 sub-suites]
+00:41:21.938 Suite 'Brackets'. [3 test cases, 1 sub-suites]
+00:41:22.078 Case 'ModifyBracketOCOLegAfterFillOPOPriLeg' execution.
+00:41:22.329 Case 'ModifyBracketOCOLegAfterFillOPOPriLeg' succeeded.
+00:41:22.438 Case 'OPO_L0_OCO_ModL2FlL0FlL0FlL2' execution.
+00:41:22.720 Case 'OPO_L0_OCO_ModL2FlL0FlL0FlL2' succeeded.
+00:41:22.828 Case 'OPO_L1_OCO_FillL1FillL3' execution.
+00:41:23.078 Case 'OPO_L1_OCO_FillL1FillL3' succeeded.
+00:41:23.172 Suite 'Brackets\CancelAll'. [1 test cases, 0 sub-suites]
+00:41:24.235 Case 'BracketSuspendedCancel' execution.
+00:41:24.407 Case 'BracketSuspendedCancel' succeeded.
+00:41:24.735 Suite 'MultipleActions'. [1 test cases, 0 sub-suites]
+00:41:24.828 Case 'SuspendActions' execution.
+00:41:27.032 Case 'SuspendActions' succeeded.
+00:41:27.219 Suite 'OCO'. [11 test cases, 5 sub-suites]
+00:41:27.297 Case 'AddTwoNewOrders' execution.
+00:41:27.469 Case 'AddTwoNewOrders' succeeded.
+00:41:27.579 Case 'DurationModificationForOCO' execution.
+00:41:28.657 Case 'DurationModificationForOCO' succeeded.
+00:41:28.766 Case 'FLegFilledPartialySLegFilledFully' execution.
+00:41:28.875 Case 'FLegFilledPartialySLegFilledFully' succeeded.
+00:41:28.985 Case 'FLegFilledSLegCancelled' execution.
+00:41:29.094 Case 'FLegFilledSLegCancelled' succeeded.
+00:41:29.157 Case 'Place4LegsCancel3Legs' execution.
+00:41:29.424 Case 'Place4LegsCancel3Legs' succeeded.
+00:41:29.501 Case 'Place4LegsCancelFirstLeg' execution.
+00:41:29.672 Case 'Place4LegsCancelFirstLeg' succeeded.
+00:41:29.766 Case 'PlaceFromAccountTraderNotAutorized' execution.
+00:41:29.813 Case 'PlaceFromAccountTraderNotAutorized' succeeded.
+00:41:29.922 Case 'PlaceFromAccountTraderNotAutorizedSkipListID' execution.
+00:41:31.016 Case 'PlaceFromAccountTraderNotAutorizedSkipListID' succeeded.
+00:41:31.110 Case 'PlaceOCOwithOneLeg' execution.
+00:41:31.126 Case 'PlaceOCOwithOneLeg' succeeded.
+00:41:31.219 Case 'RiskForOCO' execution.
+00:41:31.297 Case 'RiskForOCO' succeeded.
+00:41:31.407 Case 'TwoLegsFilledFully' execution.
+00:41:31.547 Case 'TwoLegsFilledFully' succeeded.
+00:41:31.641 Suite 'OCO\CheckSendsCancelAfterPlace'. [2 test cases, 0 sub-suites]
+00:41:31.735 Case 'LMT_MKT_OCO' execution.
+00:41:36.891 Case 'LMT_MKT_OCO' succeeded.
+00:41:37.001 Case 'MKT_MKT_OCO' execution.
+00:41:42.173 Case 'MKT_MKT_OCO' succeeded.
+00:41:42.423 Suite 'OCO\LegsSizeChangesAfterPartialFill'. [2 test cases, 0 sub-suites]
+00:41:42.532 Case 'PartialFillsHandling_Disable' execution.
+00:41:42.689 Case 'PartialFillsHandling_Disable' succeeded.
+00:41:42.767 Case 'PartialFillsHandling_Enable' execution.
+00:41:42.970 Case 'PartialFillsHandling_Enable' succeeded.
+00:41:43.173 Suite 'OCO\PlaceModifyOneLegFill'. [1 test cases, 0 sub-suites]
+00:41:43.282 Case 'LMT_GTC-LMT_GTD' execution.
+00:41:43.532 Case 'LMT_GTC-LMT_GTD' succeeded.
+00:41:43.751 Suite 'OCO\WorkingCompoundAsLeg'. [2 test cases, 0 sub-suites]
+00:41:43.860 Case 'AddWOPOtoWOCO1toWOCO2' execution.
+00:41:44.110 Case 'AddWOPOtoWOCO1toWOCO2' succeeded.
+00:41:44.235 Case 'OCOOPOAcc1Acc2' execution.
+00:41:44.501 Case 'OCOOPOAcc1Acc2' succeeded.
+00:41:44.735 Suite 'OCO\WorkingOrderAsLeg'. [6 test cases, 0 sub-suites]
+00:41:44.829 Case 'AddTwiceOneWO' execution.
+00:41:44.970 Case 'AddTwiceOneWO' succeeded.
+00:41:45.079 Case 'AddTwoWO' execution.
+00:41:45.267 Case 'AddTwoWO' succeeded.
+00:41:45.360 Case 'AddWOtoWOCO' execution.
+00:41:45.532 Case 'AddWOtoWOCO' succeeded.
+00:41:45.720 Case 'AddWOtoWOCOFromDiffAcc' execution.
+00:41:45.860 Case 'AddWOtoWOCOFromDiffAcc' succeeded.
+00:41:45.954 Case 'OneWorkingOrderAsLeg' execution.
+00:41:46.095 Case 'OneWorkingOrderAsLeg' succeeded.
+00:41:46.204 Case 'TwoWorkingOrdersAsLegs' execution.
+00:41:46.298 Case 'TwoWorkingOrdersAsLegs' succeeded.
+00:41:46.579 Suite 'OPO'. [17 test cases, 3 sub-suites]
+00:41:46.658 Case 'AddTwoNewOrders' execution.
+00:41:46.767 Case 'AddTwoNewOrders' succeeded.
+00:41:46.863 Case 'DurationModificationForOPO' execution.
+00:41:47.939 Case 'DurationModificationForOPO' succeeded.
+00:41:48.048 Case 'ModifyOPOSecLegAfterFillPriLeg' execution.
+00:41:48.205 Case 'ModifyOPOSecLegAfterFillPriLeg' succeeded.
+00:41:48.314 Case 'OCOasPRILegInOPO_PFH_Disable' execution.
+00:41:48.407 Case 'OCOasPRILegInOPO_PFH_Disable' succeeded.
+00:41:48.532 Case 'OCOasPRILegInOPO_PFH_Enable' execution.
+00:41:48.611 Case 'OCOasPRILegInOPO_PFH_Enable' succeeded.
+00:41:48.720 Case 'OPOPartialFill' execution.
+00:41:48.907 Case 'OPOPartialFill' succeeded.
+00:41:49.032 Case 'OPOwith1LMT_9MKT_FillLMT' execution.
+00:41:49.704 Case 'OPOwith1LMT_9MKT_FillLMT' succeeded.
+00:41:49.829 Case 'PlaceFromAccountTraderNotAutorized' execution.
+00:41:49.861 Case 'PlaceFromAccountTraderNotAutorized' succeeded.
+00:41:49.970 Case 'PlaceFromAccountTraderNotAutorizedSkipListID' execution.
+00:41:50.861 Case 'PlaceFromAccountTraderNotAutorizedSkipListID' succeeded.
+00:41:51.001 Case 'PlaceOPO2legsActiveAtCancelPRI' execution.
+00:42:01.111 Case 'PlaceOPO2legsActiveAtCancelPRI' succeeded.
+00:42:01.220 Case 'PlaceOPO3legsCancelSecLegs' execution.
+00:42:01.314 Case 'PlaceOPO3legsCancelSecLegs' succeeded.
+00:42:01.424 Case 'PlaceOPO4legsCancelPRI' execution.
+00:42:01.548 Case 'PlaceOPO4legsCancelPRI' succeeded.
+00:42:01.627 Case 'PlaceOPO4legsRejectPRI' execution.
+00:42:01.736 Case 'PlaceOPO4legsRejectPRI' succeeded.
+00:42:01.830 Case 'PlaceOPOwithOneLeg' execution.
+00:42:01.861 Case 'PlaceOPOwithOneLeg' succeeded.
+00:42:01.955 Case 'PlaceOPO_L0_OCO_L1_OCO' execution.
+00:42:02.002 Case 'PlaceOPO_L0_OCO_L1_OCO' succeeded.
+00:42:02.111 Case 'PLegFilledPartialyPLegFilledFully_LMT-MKT' execution.
+00:42:07.283 Case 'PLegFilledPartialyPLegFilledFully_LMT-MKT' succeeded.
+00:42:07.408 Case 'RiskForOPO' execution.
+00:42:07.486 Case 'RiskForOPO' succeeded.
+00:42:07.596 Suite 'OPO\LegsSizeChangesAfterPartialFill'. [9 test cases, 0 sub-suites]
+00:42:07.705 Case 'PRIFillPartFillFull_PFH_Enable' execution.
+00:42:12.924 Case 'PRIFillPartFillFull_PFH_Enable' succeeded.
+00:42:13.018 Case 'PRILegFill_1_1_PFH_Enable' execution.
+00:42:18.158 Case 'PRILegFill_1_1_PFH_Enable' succeeded.
+00:42:18.315 Case 'PRIModTo10PRIFill1' execution.
+00:42:23.471 Case 'PRIModTo10PRIFill1' succeeded.
+00:42:23.612 Case 'PRIModTo10PRIFill5Fill5' execution.
+00:42:23.768 Case 'PRIModTo10PRIFill5Fill5' succeeded.
+00:42:23.909 Case 'PRIModTo20PRIFillPart3Time' execution.
+00:42:29.128 Case 'PRIModTo20PRIFillPart3Time' succeeded.
+00:42:29.257 Case 'PRIsize10Modto5Fill5' execution.
+00:42:29.409 Case 'PRIsize10Modto5Fill5' succeeded.
+00:42:29.534 Case 'PRIsize20Modto40Fill20' execution.
+00:42:29.659 Case 'PRIsize20Modto40Fill20' succeeded.
+00:42:29.737 Case 'SecModTo11PRIFillPartFillFull_PFH_Enable' execution.
+00:42:29.909 Case 'SecModTo11PRIFillPartFillFull_PFH_Enable' succeeded.
+00:42:30.018 Case 'SecModTo30PRIFillPartFillFull_PFH_Enable' execution.
+00:42:30.175 Case 'SecModTo30PRIFillPartFillFull_PFH_Enable' succeeded.
+00:42:30.393 Suite 'OPO\PlaceModifyOneLegFill'. [1 test cases, 0 sub-suites]
+00:42:30.503 Case 'LMT_GTC-LMT_GTD' execution.
+00:42:30.628 Case 'LMT_GTC-LMT_GTD' succeeded.
+00:42:30.909 Suite 'OPO\WorkingOrderAsLeg'. [3 test cases, 0 sub-suites]
+00:42:31.018 Case 'AddWOtoWOPO' execution.
+00:42:31.112 Case 'AddWOtoWOPO' succeeded.
+00:42:31.206 Case 'CancelSecLegWOPOaddWOtoWOPO' execution.
+00:42:31.315 Case 'CancelSecLegWOPOaddWOtoWOPO' succeeded.
+00:42:31.409 Case 'TwoSTPWOasLegs' execution.
+00:42:31.487 Case 'TwoSTPWOasLegs' succeeded.
+00:42:31.846 Suite 'PartialQty'. [6 test cases, 0 sub-suites]
+00:42:32.987 Case 'Bracket_with_no_PFH' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\PartialQty\Bracket_with_no_PFH_tc.py", line 17, in <module>
+    OrderActionUtils.CreateOrder(pqContract, ModuleAgent.OrderSide.Buy, 2, ModuleAgent.OrderType.Limit, limitPrice=100),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:42:33.019 Case 'Bracket_with_no_PFH' failed.
+00:42:33.112 Case 'Bracket_with_PFH' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\PartialQty\Bracket_with_PFH_tc.py", line 16, in <module>
+    OrderActionUtils.CreateOrder(pqContract, ModuleAgent.OrderSide.Buy, 0.02, ModuleAgent.OrderType.Limit, limitPrice=100),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:42:33.143 Case 'Bracket_with_PFH' failed.
+00:42:33.253 Case 'OCO_with_no_PFH' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\PartialQty\OCO_with_no_PFH_tc.py", line 14, in <module>
+    OrderActionUtils.CreateOrder(pqContract, ModuleAgent.OrderSide.Buy, 0.0009, ModuleAgent.OrderType.Limit, limitPrice=100),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:42:33.268 Case 'OCO_with_no_PFH' failed.
+00:42:33.378 Case 'OCO_with_PFH' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\PartialQty\OCO_with_PFH_tc.py", line 15, in <module>
+    OrderActionUtils.CreateOrder(epContract, ModuleAgent.OrderSide.Buy, 20, ModuleAgent.OrderType.Limit, limitPrice=100),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:42:33.409 Case 'OCO_with_PFH' failed.
+00:42:33.534 Case 'OPO_with_no_PFH' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\PartialQty\OPO_with_no_PFH_tc.py", line 15, in <module>
+    OrderActionUtils.CreateOrder(pqContract, ModuleAgent.OrderSide.Sell, 0.0001, ModuleAgent.OrderType.Limit, limitPrice=100),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:42:33.566 Case 'OPO_with_no_PFH' failed.
+00:42:33.690 Case 'OPO_with_PFH' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\PartialQty\OPO_with_PFH_tc.py", line 14, in <module>
+    OrderActionUtils.CreateOrder(pqContract, ModuleAgent.OrderSide.Buy, 0.02, ModuleAgent.OrderType.Limit, limitPrice=100),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:42:33.706 Case 'OPO_with_PFH' failed.
+00:42:34.003 Suite 'RiskCompoundOrderMargin'. [6 test cases, 0 sub-suites]
+00:42:34.159 Case '01_SecondaryOCO_Simple' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\01_SecondaryOCO_Simple.tc.py", line 55, in <module>
+    test("SecondaryOCO_Simple")
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\01_SecondaryOCO_Simple.tc.py", line 29, in test
+    ModifyCompoundLegOrderRejected(context1, OCOEvent, leg22, rejectReason, newQuantity = 2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\CompoundOrders\PythonModules\CompoundActions.py", line 283, in ModifyCompoundLegOrderRejected
+    rejectReason = rejectReason, isFailure = isFailure)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py", line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+
+00:42:34.237 Case '01_SecondaryOCO_Simple' failed.
+00:42:34.378 Case '02_SecondaryOPO_Simple' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\02_SecondaryOPO_Simple.tc.py", line 72, in <module>
+    test(caseName = "SecondaryOPO_Simple")
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\02_SecondaryOPO_Simple.tc.py", line 31, in test
+    ModifyCompoundLegOrderRejected(context1, OPOEvent, leg1, rejectReason, newQuantity = 2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\CompoundOrders\PythonModules\CompoundActions.py", line 283, in ModifyCompoundLegOrderRejected
+    rejectReason = rejectReason, isFailure = isFailure)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py", line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+
+00:42:34.471 Case '02_SecondaryOPO_Simple' failed.
+00:42:34.596 Case '03_PrimaryOCO_Compounds' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\03_PrimaryOCO_Compounds.tc.py", line 107, in <module>
+    test("PrimaryOCO_Compounds")
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\03_PrimaryOCO_Compounds.tc.py", line 52, in test
+    ModifyCompoundLegOrderRejected(context1, OPOEvent2, leg22, rejectReason, newQuantity = 2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\CompoundOrders\PythonModules\CompoundActions.py", line 283, in ModifyCompoundLegOrderRejected
+    rejectReason = rejectReason, isFailure = isFailure)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py", line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+
+00:42:34.768 Case '03_PrimaryOCO_Compounds' failed.
+00:42:34.893 Case '04_PrimaryOPO_Compounds' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\04_PrimaryOPO_Compounds.tc.py", line 94, in <module>
+    test(caseName = "PrimaryOPO_Compounds")
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\04_PrimaryOPO_Compounds.tc.py", line 40, in test
+    ModifyCompoundLegOrderRejected(context1, OPOEvent1, leg11, rejectReason, newQuantity = 2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\CompoundOrders\PythonModules\CompoundActions.py", line 283, in ModifyCompoundLegOrderRejected
+    rejectReason = rejectReason, isFailure = isFailure)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py", line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+
+00:42:35.003 Case '04_PrimaryOPO_Compounds' failed.
+00:42:35.143 Case '05_MultipleSecondaries' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\05_MultipleSecondaries.tc.py", line 88, in <module>
+    test(caseName = "OPO_MultipleSecondaries")
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\05_MultipleSecondaries.tc.py", line 28, in test
+    ModifyCompoundLegOrderRejected(context1, OPOEvent, leg1, rejectReason, newQuantity = 2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\CompoundOrders\PythonModules\CompoundActions.py", line 283, in ModifyCompoundLegOrderRejected
+    rejectReason = rejectReason, isFailure = isFailure)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py", line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+
+00:42:35.206 Case '05_MultipleSecondaries' failed.
+00:42:35.331 Case '06_AddingOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\06_AddingOrders.tc.py", line 97, in <module>
+    test(caseName = "OPO_AddingOrders")
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\RiskCompoundOrderMargin\06_AddingOrders.tc.py", line 31, in test
+    ModifyCompoundLegOrderRejected(context1, OPOEvent, leg1, rejectReason, newQuantity = 2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\CompoundOrders\PythonModules\CompoundActions.py", line 283, in ModifyCompoundLegOrderRejected
+    rejectReason = rejectReason, isFailure = isFailure)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py", line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+
+00:42:35.440 Case '06_AddingOrders' failed.
+00:42:35.690 Suite 'Suspend'. [19 test cases, 0 sub-suites]
+00:42:35.831 Case 'ActivateAtLegs_OCO' execution.
+00:42:35.909 Case 'ActivateAtLegs_OCO' succeeded.
+00:42:36.018 Case 'ActivateAtLegs_OPO' execution.
+00:42:36.065 Case 'ActivateAtLegs_OPO' succeeded.
+00:42:36.190 Case 'Bracket_Leg1_OCO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\Suspend\Bracket_Leg1_OCO.tc.py", line 36, in <module>
+    newActtime = GetTimeFromNow(hours = 1), isFailure = True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\CompoundOrders\PythonModules\CompoundActions.py", line 283, in ModifyCompoundLegOrderRejected
+    rejectReason = rejectReason, isFailure = isFailure)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py", line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+
+00:42:36.268 Case 'Bracket_Leg1_OCO' failed.
+00:42:36.393 Case 'Bracket_Parked_FirstOCOLeg' execution.
+00:42:36.425 Case 'Bracket_Parked_FirstOCOLeg' succeeded.
+00:42:36.550 Case 'Bracket_Parked_SecondOCOLeg' execution.
+00:42:36.597 Case 'Bracket_Parked_SecondOCOLeg' succeeded.
+00:42:36.722 Case 'ModifyLegs_AAT_APT_inOCO_Autoactivate' execution.
+00:42:38.847 Case 'ModifyLegs_AAT_APT_inOCO_Autoactivate' succeeded.
+00:42:39.018 Case 'ModifyLegs_AAT_APT_inOCO_Autopark' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\Suspend\ModifyLegs_AAT_APT_inOCO_Autopark.tc.py", line 36, in <module>
+    ModifyCompoundLegOrderRejected(context, OCOEvent, leg2, Reject_AATinThePast, newActtime = GetTimeFromNow(hours = -1))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\CompoundOrders\PythonModules\CompoundActions.py", line 283, in ModifyCompoundLegOrderRejected
+    rejectReason = rejectReason, isFailure = isFailure)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py", line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+
+00:42:39.081 Case 'ModifyLegs_AAT_APT_inOCO_Autopark' failed.
+00:42:39.222 Case 'ModifyLegs_AAT_APT_inOPO_Autoactivate' execution.
+00:42:41.394 Case 'ModifyLegs_AAT_APT_inOPO_Autoactivate' succeeded.
+00:42:41.550 Case 'ModifyLegs_AAT_APT_inOPO_Autopark' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders\Suspend\ModifyLegs_AAT_APT_inOPO_Autopark.tc.py", line 38, in <module>
+    ModifyCompoundLegOrderRejected(context, OPOEvent, leg1, Reject_AATinThePast, newActtime = GetTimeFromNow(hours = -1))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\CompoundOrders\PythonModules\CompoundActions.py", line 283, in ModifyCompoundLegOrderRejected
+    rejectReason = rejectReason, isFailure = isFailure)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py", line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+
+00:42:41.598 Case 'ModifyLegs_AAT_APT_inOPO_Autopark' failed.
+00:42:41.722 Case 'OCO_ActiveLegsWithDiff_APT' execution.
+00:42:44.769 Case 'OCO_ActiveLegsWithDiff_APT' succeeded.
+00:42:44.925 Case 'OCO_ParkLegsWithDiff_AAT' execution.
+00:42:47.972 Case 'OCO_ParkLegsWithDiff_AAT' succeeded.
+00:42:48.128 Case 'OPO_Parked_AllLegs' execution.
+00:42:48.175 Case 'OPO_Parked_AllLegs' succeeded.
+00:42:48.331 Case 'OPO_Parked_OnlySecLeg' execution.
+00:42:48.378 Case 'OPO_Parked_OnlySecLeg' succeeded.
+00:42:48.472 Case 'OPO_SecLegWith_APT_ActivePRILeg' execution.
+00:42:48.534 Case 'OPO_SecLegWith_APT_ActivePRILeg' succeeded.
+00:42:48.691 Case 'OPO_SecLegWith_APT_ParkPRILeg' execution.
+00:42:48.738 Case 'OPO_SecLegWith_APT_ParkPRILeg' succeeded.
+00:42:48.909 Case 'ParkActivateBracketOCOLegsAfterFillOPOPriLeg' execution.
+00:42:49.300 Case 'ParkActivateBracketOCOLegsAfterFillOPOPriLeg' succeeded.
+00:42:49.425 Case 'ParkActivateOPOSecLegAfterFillPriLeg' execution.
+00:42:49.644 Case 'ParkActivateOPOSecLegAfterFillPriLeg' succeeded.
+00:42:49.784 Case 'PartialFillOCO' execution.
+00:42:49.894 Case 'PartialFillOCO' succeeded.
+00:42:50.066 Case 'PartialFillOPO' execution.
+00:42:50.253 Case 'PartialFillOPO' succeeded.
+00:42:50.534 Suite 'viaOmnibus'. [3 test cases, 1 sub-suites]
+00:42:55.128 Case 'BRACKETevents' execution.
+00:42:55.378 Case 'BRACKETevents' succeeded.
+00:42:55.488 Case 'OCOevents' execution.
+00:42:55.628 Case 'OCOevents' succeeded.
+00:42:55.785 Case 'OPOevents' execution.
+00:42:55.988 Case 'OPOevents' succeeded.
+00:42:56.128 Suite 'viaOmnibus\ExecutionAccountId'. [2 test cases, 0 sub-suites]
+00:42:58.019 Case 'ExecutionAccountIDOpoOnInternalOmnibus' execution.
+00:42:58.253 Case 'ExecutionAccountIDOpoOnInternalOmnibus' succeeded.
+00:42:58.379 Case 'ExecutionAccountIDOpoOnOmnibus' execution.
+00:42:58.613 Case 'ExecutionAccountIDOpoOnOmnibus' succeeded.
+00:43:13.754 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders' execution finished. It took 0:02:03.691786.
+00:43:13.754 Test cases results: 95 total, 80 succeeded, 15 failed, 0 skipped.

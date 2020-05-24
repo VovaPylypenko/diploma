@@ -1,0 +1,186 @@
+ 2:03:47.00  Test starded without threads
+00:03:47.568 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:03:47.568 Python Module Path 'ScriptKit/TroubleMaker' added.
+00:03:47.568 Python Module Path 'ScriptKit' added.
+00:03:47.568 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/PythonModules' not found. Ignored.
+00:03:48.037 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites' filtered execution.
+00:03:48.068 Suite '.'. [0 test cases, 9 sub-suites]
+00:03:49.303 Suite 'AccountChanges'. [3 test cases, 0 sub-suites]
+00:03:49.365 Case 'AccountEnvironmentChange' execution.
+Traceback (most recent call last):
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py", line 79, in test
+    c2.GetAccountInfoByName(account3)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\GWConnection.py", line 120, in GetAccountInfoByName
+    raise Exception("Trader '{0}' is not authorized to the account '{1}'.".format(self._username, accountName))
+Exception: Trader 'SF_SM_Trader1' is not authorized to the account 'SF_SM_Account3'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py", line 104, in <module>
+    test()
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py", line 84, in test
+    VerifyEnvironmentChangeAcctAuthorization(c2, acctInfo3, True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py", line 37, in VerifyEnvironmentChangeAcctAuthorization
+    envChange = __waitOneEnvironmentChange(gwConnection, "account_authorization", timeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py", line 15, in __waitOneEnvironmentChange
+    envChangeList = gwConnection.orderBook.WaitEnvironmentChange(ectype=ectype, timeout=timeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 629, in WaitEnvironmentChange
+    envChanges = self.__wait(timeout, self.__environmentChangeMessages, msg, ectype)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 553, in __wait
+    return WaitMsg(container, errMsg, self.__condition, timeout, idx=idx)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 58, in WaitMsg
+    raise Exception(errMsg)
+Exception: TIMEOUT: 60 seconds for TIMEOUT: 60 seconds for EnvironmentChange
+EnvironmentChange ectype: account_authorization
+
+00:04:58.196 Case 'AccountEnvironmentChange' failed.
+00:04:58.243 Case 'AccountMigration' execution.
+AccountChanges/AccontMigration test case skipped because of non-integration environment
+00:05:03.336 Case 'AccountMigration' succeeded.
+00:05:03.415 Case 'AutoEventSubscrNewAccounts' execution.
+Traceback (most recent call last):
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py", line 85, in test
+    o1 = placeOrder(c1, acctInfo3)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py", line 12, in placeOrder
+    order = OrderActionUtils.CreateOrder(SFEP, OrderSide.Buy, 50, OrderType.Limit, limitPrice = 10)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py", line 130, in <module>
+    test(autosubscribe)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py", line 123, in test
+    cancelOrder(c1, acctInfo3, o1)
+UnboundLocalError: local variable 'o1' referenced before assignment
+
+00:05:25.728 Case 'AutoEventSubscrNewAccounts' failed.
+00:05:25.853 Suite 'ContractDefinition'. [2 test cases, 0 sub-suites]
+00:05:25.947 Case 'ContractDefinitionFailure' execution.
+00:05:28.806 Case 'ContractDefinitionFailure' succeeded.
+00:05:28.869 Case 'ContractDefinitionHappyPath' execution.
+00:05:29.962 Case 'ContractDefinitionHappyPath' succeeded.
+00:05:30.105 Suite 'DataExchange'. [7 test cases, 0 sub-suites]
+00:05:30.182 Case 'CI_HappyPath' execution.
+00:05:38.119 Case 'CI_HappyPath' succeeded.
+00:05:38.213 Case 'CI_Limiting' execution.
+DataExchange/CI_Limiting test case skipped because of non-integration environment
+00:05:38.228 Case 'CI_Limiting' succeeded.
+00:05:38.297 Case 'CI_Rejecting' execution.
+00:05:39.197 Case 'CI_Rejecting' succeeded.
+00:05:39.260 Case 'QueryHappyPath' execution.
+00:06:01.120 Case 'QueryHappyPath' succeeded.
+00:06:01.182 Case 'QueryLimiting' execution.
+The 'DataExchange/QueryLimiting.tc.py' is skipped because of non-integration environment
+00:06:01.182 Case 'QueryLimiting' succeeded.
+00:06:01.245 Case 'QueryQMOutage' execution.
+The 'DataExchange/QueryQMOutage.tc.py' is skipped because of non-integration environment
+00:06:01.245 Case 'QueryQMOutage' succeeded.
+00:06:01.323 Case 'QueryRejects' execution.
+The 'DataExchange/QueryRejects.tc.py' is skipped because of non-integration environment
+00:06:01.323 Case 'QueryRejects' succeeded.
+00:06:01.448 Suite 'Failover'. [1 test cases, 0 sub-suites]
+00:06:01.526 Case 'GWComponentsFailures' execution.
+Failover/GWComponentsFailures.tc.py is skipped because of non-integration environement
+00:06:01.526 Case 'GWComponentsFailures' succeeded.
+00:06:01.667 Suite 'OrderActions'. [6 test cases, 0 sub-suites]
+00:06:05.776 Case 'OrderActionsAuthorizationCheck' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\OrderActions\OrderActionsAuthorizationCheck.tc.py", line 36, in <module>
+    SimpleOrderActions.AssertModifyOrderRejected(c1, exchangeFactory, account2Info, order, rejectReason=rejectReason, isFailure=True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py", line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+
+00:06:07.746 Case 'OrderActionsAuthorizationCheck' failed.
+00:06:07.823 Case 'OrderActionsHappyPath' execution.
+00:06:08.776 Case 'OrderActionsHappyPath' succeeded.
+00:06:08.886 Case 'OrderActionsRiskServerReject' execution.
+00:06:09.808 Case 'OrderActionsRiskServerReject' succeeded.
+00:06:09.870 Case 'OrderActionsRiskServerUnavailable' execution.
+OrderActions/OrderActionsRiskServerUnavailable.tc.py is skipped because of non-integration environement
+00:06:09.886 Case 'OrderActionsRiskServerUnavailable' succeeded.
+00:06:09.986 Case 'OrderActionsThrottling' execution.
+00:06:11.167 max order rate = 5 orders per sec
+00:06:25.451 max order rate = 10 orders per sec
+00:06:44.700 max order rate = 20 orders per sec
+00:07:12.841 Case 'OrderActionsThrottling' succeeded.
+00:07:12.888 Case 'ParkedOrdersBatching' execution.
+00:09:49.597 Case 'ParkedOrdersBatching' succeeded.
+00:09:50.472 Suite 'OutMessageCache'. [1 test cases, 0 sub-suites]
+00:09:50.551 Case 'OutSerializationCache' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\OutMessageCache\OutSerializationCache.tc.py", line 27, in <module>
+    order = OrderActionUtils.CreateOrder(SFEP, OrderSide.Buy, 50, OrderType.Limit, limitPrice = 10)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:09:58.660 Case 'OutSerializationCache' failed.
+00:09:58.785 Suite 'Performance'. [1 test cases, 0 sub-suites]
+00:09:58.863 Case 'XML interface scalability' execution.
+Test 'Performance/XML interface scalability.tc.py' is skipped because of non-integration environement
+00:09:58.863 Case 'XML interface scalability' succeeded.
+00:09:59.035 Suite 'Protocol'. [4 test cases, 0 sub-suites]
+00:09:59.113 Case 'AuthCheck' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\Protocol\AuthCheck.tc.py", line 55, in <module>
+    msg(c)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\Protocol\AuthCheck.tc.py", line 27, in QA
+    order = OrderActionUtils.CreateOrder('F.SF.SFEP.Z99', OrderSide.Buy, 1, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:10:02.144 Case 'AuthCheck' failed.
+00:10:02.207 Case 'FloodProtection' execution.
+Protocol/FloodProtection test case skipped because of non-integration environment
+00:10:02.207 Case 'FloodProtection' succeeded.
+00:10:02.301 Case 'LogonHappyPath' execution.
+00:10:03.207 Case 'LogonHappyPath' succeeded.
+00:10:03.269 Case 'MalformedMessage' execution.
+00:10:08.207 Case 'MalformedMessage' succeeded.
+00:10:08.333 Suite 'SessionManagement'. [7 test cases, 0 sub-suites]
+00:10:08.395 Case 'AccountSubscription' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\SessionManagement\AccountSubscription.tc.py", line 44, in <module>
+    o1, acctInfo1 = placeOrder(c1, account1)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\SessionManagement\AccountSubscription.tc.py", line 17, in placeOrder
+    order = OrderActionUtils.CreateOrder(SFEP, OrderSide.Buy, 50, OrderType.Limit, limitPrice = 10)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+TODO[SMMT]: AccountSubscription test should be run vs both SM1 and SM2.
+00:10:17.504 Case 'AccountSubscription' failed.
+00:10:17.568 Case 'CSMAvailability' execution.
+SessionManagement/CSMAvailability.tc.py is skipped because of non-integration environement
+00:10:22.661 Case 'CSMAvailability' succeeded.
+00:10:22.728 Case 'InvalidLogon' execution.
+00:10:28.817 Case 'InvalidLogon' succeeded.
+00:10:28.896 Case 'LogoffTraderFromCAST' execution.
+00:10:36.005 Case 'LogoffTraderFromCAST' succeeded.
+00:10:36.099 Case 'LogonSplitAck' execution.
+SessionManagement/LogonSplitAck test case skipped because of non-integration environment
+00:10:41.193 Case 'LogonSplitAck' succeeded.
+00:10:41.271 Case 'MultipleTraderLogons' execution.
+00:10:53.444 Case 'MultipleTraderLogons' succeeded.
+00:10:53.521 Case 'PasswordChange' execution.
+00:11:04.709 Case 'PasswordChange' succeeded.
+00:11:04.928 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites' execution finished. It took 0:07:16.859906.
+00:11:04.928 Test cases results: 32 total, 26 succeeded, 6 failed, 0 skipped.

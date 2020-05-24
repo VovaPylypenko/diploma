@@ -1,0 +1,120 @@
+21:43:07.30  Test starded without threads
+19:43:07.839 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+19:43:07.839 Python Module Path 'Scripts/Gateway/PythonModules' added.
+19:43:07.839 Python Module Path 'ScriptKit' added.
+19:43:08.261 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrders' filtered execution.
+19:43:08.292 Suite '.'. [0 test cases, 7 sub-suites]
+19:43:31.355 Suite 'CareFills'. [10 test cases, 0 sub-suites]
+19:43:31.449 Case 'CareFill_Fill' execution.
+19:43:31.482 Case 'CareOrderFullCareFill' execution.
+19:43:31.512 Case 'CareOrderPartialCareFill' execution.
+19:43:31.558 Case 'CareOrderFullCareFill' succeeded.
+19:43:31.558 Case 'Fill_CareFill' execution.
+19:43:31.621 Case 'ForceCare_CareOrderCareFill' execution.
+19:43:31.652 Case 'CareOrderPartialCareFill' succeeded.
+19:43:31.652 Case 'NativeSpread_CareFill_byLegs' execution.
+19:43:31.700 Case 'CareFill_Fill' succeeded.
+19:43:31.715 Case 'ForceCare_CareOrderCareFill' succeeded.
+19:43:31.715 Case 'ParkedOrderCareFill' execution.
+19:43:31.748 Case 'NativeSpread_CareFill_byLegs' succeeded.
+19:43:31.777 Case 'ParkedOrderCareFill' succeeded.
+19:43:31.777 Case 'ParkedOrderCareFill_uattrs' execution.
+19:43:31.824 Case 'WorkingOrderCareFill' execution.
+19:43:31.887 Case 'ParkedOrderCareFill_uattrs' succeeded.
+19:43:31.887 Case 'Fill_CareFill' succeeded.
+19:43:31.965 Case 'WorkingOrderCareFill' succeeded.
+19:43:32.152 Case 'ParkedWasWorkingOrderCareFill' execution.
+19:43:32.277 Case 'ParkedWasWorkingOrderCareFill' succeeded.
+19:43:32.418 Suite 'CompoundActions'. [2 test cases, 0 sub-suites]
+19:43:32.512 Case 'ForceCare_ModifyCompoundAction' execution.
+19:43:32.543 Case 'ForceCare_PlaceCompoundAction' execution.
+19:43:32.621 Case 'ForceCare_ModifyCompoundAction' succeeded.
+19:43:32.653 Case 'ForceCare_PlaceCompoundAction' succeeded.
+19:43:32.887 Suite 'ForceCareOptionChange'. [1 test cases, 0 sub-suites]
+19:44:34.810 Case 'ForceCare_OptionChange' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrders\ForceCareOptionChange\ForceCare_OptionChange_tc.py", line 61, in <module>
+    OrderActionUtils.WaitForOrderParking(trader4, None, acctInfo7, o5ParkCopy, expectedOEAttrs=expectedOEAttrs)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 695, in WaitForOrderParking
+    acctInfo.id, order.chainClientOrderID, timeout, OrderStatus.Parked, TransactionStatus.Park)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 494, in WaitEvent
+    return chain.WaitEvent(clOrderID, timeout, status, transStatus, self.__unhandledEventsProcessor)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 270, in WaitEvent
+    return chain.WaitEvent(timeout, status, transStatus, unhandledEventsProcessor)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 158, in WaitEvent
+    raise Exception(msg)
+Exception: TIMEOUT: 10 seconds
+GW account ID: 335732
+Client order ID: 8dc679cf-e376-4480-ac8b-2ef906b9cb0a
+   Wait for order/transaction statuses: Parked/Park
+   Order/transaction statuses: InModify/InModify
+
+19:46:00.813 Case 'ForceCare_OptionChange' failed.
+19:46:00.985 Suite 'MassOrderActions'. [3 test cases, 0 sub-suites]
+19:46:01.064 Case 'ForceCare_ActivateAllAction' execution.
+19:46:01.110 Case 'ForceCare_CancelAllAction' execution.
+19:46:01.157 Case 'ForceCare_ParkAllAction' execution.
+19:46:01.173 Case 'ForceCare_ActivateAllAction' succeeded.
+19:46:05.798 Case 'ForceCare_CancelAllAction' succeeded.
+19:46:05.845 Case 'ForceCare_ParkAllAction' succeeded.
+19:46:06.001 Suite 'MixedAccountSettings'. [4 test cases, 0 sub-suites]
+19:46:06.079 Case 'AutoActivateAction_RegularAccount' execution.
+19:46:06.126 Case 'ParkAction_RegularAccount' execution.
+19:46:06.173 Case 'RegularAction_OmnibusAccount' execution.
+19:46:06.220 Case 'RegularAction_RegularAccount' execution.
+19:46:06.345 Case 'RegularAction_OmnibusAccount' succeeded.
+19:46:06.376 Case 'ParkAction_RegularAccount' succeeded.
+19:46:06.439 Case 'RegularAction_RegularAccount' succeeded.
+19:46:08.221 Case 'AutoActivateAction_RegularAccount' succeeded.
+19:46:08.345 Suite 'OnBehalfOf'. [8 test cases, 0 sub-suites]
+19:46:08.423 Case 'ActivateAllAction' execution.
+19:46:08.455 Case 'ActivateParkedOrderAction' execution.
+19:46:08.501 Case 'AutoActivateParkedOrderAction' execution.
+19:46:08.579 Case 'ForceCare_ActivateAllAction' execution.
+19:46:08.626 Case 'ActivateAllAction' succeeded.
+19:46:08.626 Case 'ForceCare_ActivateParkedOrderAction' execution.
+19:46:08.688 Case 'ActivateParkedOrderAction' succeeded.
+19:46:08.688 Case 'ForceCare_AutoActivateParkedOrderAction' execution.
+19:46:08.737 Case 'ForceCare_ActivateAllAction' succeeded.
+19:46:08.767 Case 'ForceCare_RegularOrderAction' execution.
+19:46:08.782 Case 'ForceCare_ActivateParkedOrderAction' succeeded.
+19:46:08.798 Case 'RegularOrderAction' execution.
+19:46:08.877 Case 'ForceCare_RegularOrderAction' succeeded.
+19:46:09.063 Case 'RegularOrderAction' succeeded.
+19:46:10.642 Case 'AutoActivateParkedOrderAction' succeeded.
+19:46:10.782 Case 'ForceCare_AutoActivateParkedOrderAction' succeeded.
+19:46:10.907 Suite 'OrderActions'. [15 test cases, 0 sub-suites]
+19:46:11.017 Case 'ActivateCareOrderAction' execution.
+19:46:11.110 Case 'AutoActivateParkedOrderAction' execution.
+19:46:11.157 Case 'ForceCare_ActivateCareOrderAction' execution.
+19:46:11.220 Case 'ForceCare_ActivateParkedOrderAction' execution.
+19:46:11.282 Case 'ForceCare_ActivateCareOrderAction' succeeded.
+19:46:11.298 Case 'ForceCare_AutoActivateParkedOrderAction' execution.
+19:46:11.345 Case 'ForceCare_ModifyAction' execution.
+19:46:11.376 Case 'ForceCare_ActivateParkedOrderAction' succeeded.
+19:46:11.392 Case 'ForceCare_ParkedOrder_uattrs' execution.
+19:46:11.438 Case 'ForceCare_ParkOrderAction_acttime_Manual' execution.
+19:46:11.470 Case 'ForceCare_ParkedOrder_uattrs' succeeded.
+19:46:11.470 Case 'ForceCare_ParkOrderAction_acttime' execution.
+19:46:11.532 Case 'ForceCare_ParkOrderAction' execution.
+19:46:11.627 Case 'ForceCare_ParkWorkingOrderAction' execution.
+19:46:11.657 Case 'ForceCare_ParkOrderAction' succeeded.
+19:46:11.688 Case 'ForceCare_RegularOrderAction_parktime' execution.
+19:46:11.735 Case 'ForceCare_RegularOrderAction' execution.
+19:46:11.829 Case 'ForceCare_RegularOrderAction' succeeded.
+19:46:11.845 Case 'ParkCareOrderAction' execution.
+19:46:11.939 Case 'ForceCare_ModifyParkedAction' execution.
+19:46:12.048 Case 'ParkCareOrderAction' succeeded.
+19:46:12.080 Case 'ForceCare_ModifyParkedAction' succeeded.
+19:46:13.267 Case 'AutoActivateParkedOrderAction' succeeded.
+19:46:13.439 Case 'ForceCare_AutoActivateParkedOrderAction' succeeded.
+19:46:13.550 Case 'ForceCare_ParkOrderAction_acttime' succeeded.
+19:46:15.673 Case 'ActivateCareOrderAction' succeeded.
+19:46:15.970 Case 'ForceCare_ModifyAction' succeeded.
+19:46:16.236 Case 'ForceCare_ParkWorkingOrderAction' succeeded.
+19:46:23.798 Case 'ForceCare_RegularOrderAction_parktime' succeeded.
+19:46:26.564 Case 'ForceCare_ParkOrderAction_acttime_Manual' succeeded.
+19:46:27.002 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrders' execution finished. It took 0:03:18.709384.
+19:46:27.017 Test cases results: 43 total, 42 succeeded, 1 failed, 0 skipped.

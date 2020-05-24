@@ -1,0 +1,36 @@
+22:16:36.60  Test starded without threads
+20:16:37.061 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:16:37.061 Python Module Path 'ScriptKit' added.
+20:16:37.061 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts/PythonModules' added.
+20:16:37.061 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+20:16:37.436 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ' full execution.
+20:16:37.451 Suite '.'. [7 test cases, 0 sub-suites]
+20:16:49.421 Case 'RFQ01' execution.
+20:16:51.108 Case 'RFQ01' succeeded.
+20:16:51.156 Case 'RFQ02' execution.
+20:16:57.780 Case 'RFQ02' succeeded.
+20:16:57.811 Case 'RFQ03' execution.
+20:16:58.952 Case 'RFQ03' succeeded.
+20:16:58.983 Case 'RFQ04' execution.
+20:16:59.030 Case 'RFQ04' succeeded.
+20:16:59.077 Case 'RFQ05' execution.
+20:16:59.093 Case 'RFQ05' succeeded.
+20:16:59.124 Case 'RFQ06' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ\RFQ06_tc.py", line 32, in <module>
+    SendAndAckQuoteRequest_Rejected(quoteRequest, "Cannot process the order (error code 9). Please contact customer support for assistance")
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ\test_suite_su.py", line 68, in SendAndAckQuoteRequest_Rejected
+    VerifyQuoteRequestAcknowledgement(requestAck, expectedRequestAck)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 484, in VerifyQuoteRequestAcknowledgement
+    exchangeRequest.message, expectedRequest.message, msg.format("message"))
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: QuoteRequestAcknowledgement for requestddbdde69-8e47-47b5-b7fc-18fa67fb5ab9 - wrong message: 'Commodity is disabled for trading at this time' is not equal to 'Cannot process the order (error code 9). Please contact customer support for assistance'
+
+20:17:08.812 Case 'RFQ06' failed.
+20:17:08.875 Case 'RFQ_DSI_1300395543' execution.
+20:17:10.140 Case 'RFQ_DSI_1300395543' succeeded.
+20:17:10.968 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ' execution finished. It took 0:00:33.516762.
+20:17:10.968 Test cases results: 7 total, 6 succeeded, 1 failed, 0 skipped.

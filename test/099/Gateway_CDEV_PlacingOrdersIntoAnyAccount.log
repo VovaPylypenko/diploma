@@ -1,0 +1,32 @@
+10:32:47.34  Test starded without threads
+08:32:47.812 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:32:47.812 Python Module Path 'ScriptKit/TroubleMaker' added.
+08:32:47.812 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:32:47.812 Python Module Path 'ScriptKit' added.
+08:32:48.203 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/PlacingOrdersIntoAnyAccount' filtered execution.
+08:32:48.234 Suite '.'. [0 test cases, 1 sub-suites]
+08:33:02.594 Suite 'Native'. [0 test cases, 2 sub-suites]
+08:33:02.656 Suite 'Native\Complex'. [8 test cases, 0 sub-suites]
+08:33:02.687 Case '01_Queries' execution.
+08:33:02.719 Case '02_ReplaceAndCancel' execution.
+08:33:02.766 Case '03_OPO' execution.
+08:33:02.797 Case '04_ScheduledActivation' execution.
+08:33:02.859 Case '07_NativeSpread' execution.
+08:33:02.906 Case '08_ProvidingDisabledExtra' execution.
+08:33:02.922 Case '02_ReplaceAndCancel' succeeded.
+08:33:02.937 Case '03_OPO' succeeded.
+08:33:02.937 Case '09_ActiveAt' execution.
+08:33:02.953 Case '07_NativeSpread' succeeded.
+08:33:02.969 Case '10_ReplaceAndFill_KnownAccount' execution.
+08:33:03.062 Case '08_ProvidingDisabledExtra' succeeded.
+08:33:03.703 Case '09_ActiveAt' succeeded.
+08:33:03.766 Case '01_Queries' succeeded.
+08:33:04.922 Case '04_ScheduledActivation' succeeded.
+08:33:13.078 Case '10_ReplaceAndFill_KnownAccount' succeeded.
+08:33:13.203 Suite 'Native\Rejections'. [2 test cases, 0 sub-suites]
+08:33:13.266 Case '02_Omnibus' execution.
+08:33:13.299 Case '04_ExternalAccountNumberTooLong' execution.
+08:33:13.328 Case '02_Omnibus' succeeded.
+08:33:13.328 Case '04_ExternalAccountNumberTooLong' succeeded.
+08:33:15.954 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/PlacingOrdersIntoAnyAccount' execution finished. It took 0:00:27.735299.
+08:33:15.954 Test cases results: 10 total, 10 succeeded, 0 failed, 0 skipped.

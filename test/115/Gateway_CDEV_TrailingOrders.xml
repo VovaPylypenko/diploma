@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="28" testsuite_failed="False" time="267.275156" timestamp="2020-02-19T19:05:15.119510">
+ <properties>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders/InFlightFills/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="TrailingOrders" skipped="0" tests="28" testsuite_failed="False" time="267.275156" timestamp="2020-02-19T19:05:15.119510">
+  <testcase name="TLMT_Parked_TrailPriceUpdate" status="run" time="16.125339" timestamp="2020-02-19T19:05:21.604629"/>
+  <testcase name="TLMT_TrailPriceUpdate" status="run" time="16.141171" timestamp="2020-02-19T19:05:21.635391"/>
+  <testcase name="TSTP_Parked_Activation" status="run" time="4.140087" timestamp="2020-02-19T19:05:21.651680"/>
+  <testsuite failures="0" name="InFlightFills" skipped="0" tests="22" testsuite_failed="False" time="15.500548" timestamp="2020-02-19T19:05:37.807824">
+   <testcase name="CancelNonZero_Accepted" status="run" time="0.421065" timestamp="2020-02-19T19:05:48.918403"/>
+   <testcase name="CancelNonZero_Rejected" status="run" time="0.687519" timestamp="2020-02-19T19:05:48.948831"/>
+   <testcase name="CancelZero_Accepted" status="run" time="0.625011" timestamp="2020-02-19T19:05:48.995717"/>
+   <testcase name="CancelZero_Rejected" status="run" time="0.641089" timestamp="2020-02-19T19:05:49.042582"/>
+   <testcase name="ModifyToNonZero_Accepted" status="run" time="0.828133" timestamp="2020-02-19T19:05:49.245729"/>
+   <testcase name="ModifyToNonZero_AcceptFirst" status="run" time="0.82202" timestamp="2020-02-19T19:05:49.089473"/>
+   <testcase name="ModifyToNonZero_Rejected" status="run" time="0.933899" timestamp="2020-02-19T19:05:49.139963"/>
+   <testcase name="ModifyToZero_Accepted" status="run" time="0.687527" timestamp="2020-02-19T19:05:49.167589"/>
+   <testcase name="ModifyToZero_AcceptFirst" status="run" time="0.6719" timestamp="2020-02-19T19:05:49.214460"/>
+   <testcase name="ModifyToZero_PlaceCanceled" status="run" time="0.78127" timestamp="2020-02-19T19:05:49.292592"/>
+   <testcase name="ModifyToZero_PlaceCancelFirst" status="run" time="0.703149" timestamp="2020-02-19T19:05:49.417595"/>
+   <testcase name="ModifyToZero_Rejected" status="run" time="0.983986" timestamp="2020-02-19T19:05:49.683671"/>
+   <testcase name="ModifyToZero_RejectFirst" status="run" time="1.01567" timestamp="2020-02-19T19:05:49.776982"/>
+   <testcase name="ModifyToZero_ReplaceCanceled" status="run" time="0.687518" timestamp="2020-02-19T19:05:49.855116"/>
+   <testcase name="ModifyZeroToNonZero_Accepted" status="run" time="1.093786" timestamp="2020-02-19T19:05:49.948862"/>
+   <testcase name="ModifyZeroToNonZero_AcceptFirst" status="run" time="1.062575" timestamp="2020-02-19T19:05:50.073862"/>
+   <testcase name="ModifyZeroToNonZero_Rejected" status="run" time="0.843776" timestamp="2020-02-19T19:05:50.120744"/>
+   <testcase name="ModifyZeroToNonZero_RejectFirst" status="run" time="0.890825" timestamp="2020-02-19T19:05:50.230122"/>
+   <testcase name="ModifyZeroToZero_Accepted" status="run" time="2.718997" timestamp="2020-02-19T19:05:50.339507"/>
+   <testcase name="ModifyZeroToZero_AcceptFirst" status="run" time="2.703239" timestamp="2020-02-19T19:05:50.448884"/>
+   <testcase name="ModifyZeroToZero_Rejected" status="run" time="2.625095" timestamp="2020-02-19T19:05:50.573882"/>
+   <testcase name="ModifyZeroToZero_RejectFirst" status="run" time="2.532938" timestamp="2020-02-19T19:05:50.652014"/>
+  </testsuite>
+  <testsuite failures="0" name="viaOmnibus" skipped="0" tests="3" testsuite_failed="False" time="94.956473" timestamp="2020-02-19T19:05:53.339627">
+   <testcase name="mass_TLMT_modification" status="run" time="88.646205" timestamp="2020-02-19T19:05:59.589851"/>
+   <testcase name="mass_TSTP_activation" status="run" time="78.346055" timestamp="2020-02-19T19:05:59.621565"/>
+   <testcase name="TSTL_Actions" status="run" time="12.356524" timestamp="2020-02-19T19:05:59.655742"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

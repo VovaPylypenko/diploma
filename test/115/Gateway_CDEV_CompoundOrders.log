@@ -1,0 +1,218 @@
+22:51:57.39  Test starded without threads
+20:51:57.925 Python Module Path 'ScriptKit' added.
+20:51:57.925 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:51:57.925 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders/PythonModules' added.
+20:51:57.925 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+20:51:57.925 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders/MultipleActions/PythonModules' added.
+20:51:58.472 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders' filtered execution.
+20:51:58.503 Suite '.'. [0 test cases, 8 sub-suites]
+20:52:10.691 Suite 'Brackets'. [3 test cases, 1 sub-suites]
+20:52:10.785 Case 'ModifyBracketOCOLegAfterFillOPOPriLeg' execution.
+20:52:11.004 Case 'ModifyBracketOCOLegAfterFillOPOPriLeg' succeeded.
+20:52:11.082 Case 'OPO_L0_OCO_ModL2FlL0FlL0FlL2' execution.
+20:52:11.395 Case 'OPO_L0_OCO_ModL2FlL0FlL0FlL2' succeeded.
+20:52:11.535 Case 'OPO_L1_OCO_FillL1FillL3' execution.
+20:52:11.691 Case 'OPO_L1_OCO_FillL1FillL3' succeeded.
+20:52:11.770 Suite 'Brackets\CancelAll'. [1 test cases, 0 sub-suites]
+20:52:12.816 Case 'BracketSuspendedCancel' execution.
+20:52:12.941 Case 'BracketSuspendedCancel' succeeded.
+20:52:13.207 Suite 'MultipleActions'. [1 test cases, 0 sub-suites]
+20:52:13.301 Case 'SuspendActions' execution.
+20:52:15.551 Case 'SuspendActions' succeeded.
+20:52:15.738 Suite 'OCO'. [11 test cases, 5 sub-suites]
+20:52:15.801 Case 'AddTwoNewOrders' execution.
+20:52:15.957 Case 'AddTwoNewOrders' succeeded.
+20:52:16.035 Case 'DurationModificationForOCO' execution.
+20:52:17.129 Case 'DurationModificationForOCO' succeeded.
+20:52:17.223 Case 'FLegFilledPartialySLegFilledFully' execution.
+20:52:17.332 Case 'FLegFilledPartialySLegFilledFully' succeeded.
+20:52:17.426 Case 'FLegFilledSLegCancelled' execution.
+20:52:17.520 Case 'FLegFilledSLegCancelled' succeeded.
+20:52:17.614 Case 'Place4LegsCancel3Legs' execution.
+20:52:17.770 Case 'Place4LegsCancel3Legs' succeeded.
+20:52:17.864 Case 'Place4LegsCancelFirstLeg' execution.
+20:52:18.005 Case 'Place4LegsCancelFirstLeg' succeeded.
+20:52:18.082 Case 'PlaceFromAccountTraderNotAutorized' execution.
+20:52:18.098 Case 'PlaceFromAccountTraderNotAutorized' succeeded.
+20:52:18.176 Case 'PlaceFromAccountTraderNotAutorizedSkipListID' execution.
+20:52:19.207 Case 'PlaceFromAccountTraderNotAutorizedSkipListID' succeeded.
+20:52:19.285 Case 'PlaceOCOwithOneLeg' execution.
+20:52:19.301 Case 'PlaceOCOwithOneLeg' succeeded.
+20:52:19.410 Case 'RiskForOCO' execution.
+20:52:19.520 Case 'RiskForOCO' succeeded.
+20:52:19.614 Case 'TwoLegsFilledFully' execution.
+20:52:19.739 Case 'TwoLegsFilledFully' succeeded.
+20:52:19.832 Suite 'OCO\CheckSendsCancelAfterPlace'. [2 test cases, 0 sub-suites]
+20:52:19.942 Case 'LMT_MKT_OCO' execution.
+20:52:25.208 Case 'LMT_MKT_OCO' succeeded.
+20:52:25.301 Case 'MKT_MKT_OCO' execution.
+20:52:30.458 Case 'MKT_MKT_OCO' succeeded.
+20:52:30.645 Suite 'OCO\LegsSizeChangesAfterPartialFill'. [2 test cases, 0 sub-suites]
+20:52:30.755 Case 'PartialFillsHandling_Disable' execution.
+20:52:30.895 Case 'PartialFillsHandling_Disable' succeeded.
+20:52:31.005 Case 'PartialFillsHandling_Enable' execution.
+20:52:31.286 Case 'PartialFillsHandling_Enable' succeeded.
+20:52:31.489 Suite 'OCO\PlaceModifyOneLegFill'. [1 test cases, 0 sub-suites]
+20:52:31.583 Case 'LMT_GTC-LMT_GTD' execution.
+20:52:31.818 Case 'LMT_GTC-LMT_GTD' succeeded.
+20:52:32.005 Suite 'OCO\WorkingCompoundAsLeg'. [2 test cases, 0 sub-suites]
+20:52:32.098 Case 'AddWOPOtoWOCO1toWOCO2' execution.
+20:52:32.286 Case 'AddWOPOtoWOCO1toWOCO2' succeeded.
+20:52:32.380 Case 'OCOOPOAcc1Acc2' execution.
+20:52:32.630 Case 'OCOOPOAcc1Acc2' succeeded.
+20:52:32.848 Suite 'OCO\WorkingOrderAsLeg'. [6 test cases, 0 sub-suites]
+20:52:32.942 Case 'AddTwiceOneWO' execution.
+20:52:33.067 Case 'AddTwiceOneWO' succeeded.
+20:52:33.145 Case 'AddTwoWO' execution.
+20:52:33.270 Case 'AddTwoWO' succeeded.
+20:52:33.364 Case 'AddWOtoWOCO' execution.
+20:52:33.505 Case 'AddWOtoWOCO' succeeded.
+20:52:33.661 Case 'AddWOtoWOCOFromDiffAcc' execution.
+20:52:33.770 Case 'AddWOtoWOCOFromDiffAcc' succeeded.
+20:52:33.849 Case 'OneWorkingOrderAsLeg' execution.
+20:52:34.005 Case 'OneWorkingOrderAsLeg' succeeded.
+20:52:34.083 Case 'TwoWorkingOrdersAsLegs' execution.
+20:52:34.161 Case 'TwoWorkingOrdersAsLegs' succeeded.
+20:52:34.442 Suite 'OPO'. [17 test cases, 3 sub-suites]
+20:52:34.552 Case 'AddTwoNewOrders' execution.
+20:52:34.677 Case 'AddTwoNewOrders' succeeded.
+20:52:34.770 Case 'DurationModificationForOPO' execution.
+20:52:35.911 Case 'DurationModificationForOPO' succeeded.
+20:52:36.036 Case 'ModifyOPOSecLegAfterFillPriLeg' execution.
+20:52:36.192 Case 'ModifyOPOSecLegAfterFillPriLeg' succeeded.
+20:52:36.302 Case 'OCOasPRILegInOPO_PFH_Disable' execution.
+20:52:36.380 Case 'OCOasPRILegInOPO_PFH_Disable' succeeded.
+20:52:36.474 Case 'OCOasPRILegInOPO_PFH_Enable' execution.
+20:52:36.536 Case 'OCOasPRILegInOPO_PFH_Enable' succeeded.
+20:52:36.630 Case 'OPOPartialFill' execution.
+20:52:36.807 Case 'OPOPartialFill' succeeded.
+20:52:36.927 Case 'OPOwith1LMT_9MKT_FillLMT' execution.
+20:52:37.442 Case 'OPOwith1LMT_9MKT_FillLMT' succeeded.
+20:52:37.552 Case 'PlaceFromAccountTraderNotAutorized' execution.
+20:52:37.583 Case 'PlaceFromAccountTraderNotAutorized' succeeded.
+20:52:37.677 Case 'PlaceFromAccountTraderNotAutorizedSkipListID' execution.
+20:52:38.583 Case 'PlaceFromAccountTraderNotAutorizedSkipListID' succeeded.
+20:52:38.677 Case 'PlaceOPO2legsActiveAtCancelPRI' execution.
+20:52:48.771 Case 'PlaceOPO2legsActiveAtCancelPRI' succeeded.
+20:52:48.850 Case 'PlaceOPO3legsCancelSecLegs' execution.
+20:52:48.927 Case 'PlaceOPO3legsCancelSecLegs' succeeded.
+20:52:49.005 Case 'PlaceOPO4legsCancelPRI' execution.
+20:52:49.100 Case 'PlaceOPO4legsCancelPRI' succeeded.
+20:52:49.193 Case 'PlaceOPO4legsRejectPRI' execution.
+20:52:49.274 Case 'PlaceOPO4legsRejectPRI' succeeded.
+20:52:49.380 Case 'PlaceOPOwithOneLeg' execution.
+20:52:49.396 Case 'PlaceOPOwithOneLeg' succeeded.
+20:52:49.474 Case 'PlaceOPO_L0_OCO_L1_OCO' execution.
+20:52:49.521 Case 'PlaceOPO_L0_OCO_L1_OCO' succeeded.
+20:52:49.615 Case 'PLegFilledPartialyPLegFilledFully_LMT-MKT' execution.
+20:52:54.756 Case 'PLegFilledPartialyPLegFilledFully_LMT-MKT' succeeded.
+20:52:54.896 Case 'RiskForOPO' execution.
+20:52:54.959 Case 'RiskForOPO' succeeded.
+20:52:55.037 Suite 'OPO\LegsSizeChangesAfterPartialFill'. [9 test cases, 0 sub-suites]
+20:52:55.146 Case 'PRIFillPartFillFull_PFH_Enable' execution.
+20:53:00.334 Case 'PRIFillPartFillFull_PFH_Enable' succeeded.
+20:53:00.459 Case 'PRILegFill_1_1_PFH_Enable' execution.
+20:53:05.568 Case 'PRILegFill_1_1_PFH_Enable' succeeded.
+20:53:05.662 Case 'PRIModTo10PRIFill1' execution.
+20:53:10.787 Case 'PRIModTo10PRIFill1' succeeded.
+20:53:10.881 Case 'PRIModTo10PRIFill5Fill5' execution.
+20:53:11.037 Case 'PRIModTo10PRIFill5Fill5' succeeded.
+20:53:11.131 Case 'PRIModTo20PRIFillPart3Time' execution.
+20:53:16.334 Case 'PRIModTo20PRIFillPart3Time' succeeded.
+20:53:16.413 Case 'PRIsize10Modto5Fill5' execution.
+20:53:16.522 Case 'PRIsize10Modto5Fill5' succeeded.
+20:53:16.678 Case 'PRIsize20Modto40Fill20' execution.
+20:53:16.788 Case 'PRIsize20Modto40Fill20' succeeded.
+20:53:16.881 Case 'SecModTo11PRIFillPartFillFull_PFH_Enable' execution.
+20:53:17.006 Case 'SecModTo11PRIFillPartFillFull_PFH_Enable' succeeded.
+20:53:17.116 Case 'SecModTo30PRIFillPartFillFull_PFH_Enable' execution.
+20:53:17.256 Case 'SecModTo30PRIFillPartFillFull_PFH_Enable' succeeded.
+20:53:17.428 Suite 'OPO\PlaceModifyOneLegFill'. [1 test cases, 0 sub-suites]
+20:53:17.522 Case 'LMT_GTC-LMT_GTD' execution.
+20:53:17.663 Case 'LMT_GTC-LMT_GTD' succeeded.
+20:53:17.913 Suite 'OPO\WorkingOrderAsLeg'. [3 test cases, 0 sub-suites]
+20:53:18.038 Case 'AddWOtoWOPO' execution.
+20:53:18.116 Case 'AddWOtoWOPO' succeeded.
+20:53:18.225 Case 'CancelSecLegWOPOaddWOtoWOPO' execution.
+20:53:18.335 Case 'CancelSecLegWOPOaddWOtoWOPO' succeeded.
+20:53:18.428 Case 'TwoSTPWOasLegs' execution.
+20:53:18.491 Case 'TwoSTPWOasLegs' succeeded.
+20:53:18.756 Suite 'PartialQty'. [6 test cases, 0 sub-suites]
+20:53:19.741 Case 'Bracket_with_no_PFH' execution.
+20:53:20.006 Case 'Bracket_with_no_PFH' succeeded.
+20:53:20.116 Case 'Bracket_with_PFH' execution.
+20:53:20.413 Case 'Bracket_with_PFH' succeeded.
+20:53:20.522 Case 'OCO_with_no_PFH' execution.
+20:53:20.616 Case 'OCO_with_no_PFH' succeeded.
+20:53:20.710 Case 'OCO_with_PFH' execution.
+20:53:20.944 Case 'OCO_with_PFH' succeeded.
+20:53:21.053 Case 'OPO_with_no_PFH' execution.
+20:53:21.147 Case 'OPO_with_no_PFH' succeeded.
+20:53:21.241 Case 'OPO_with_PFH' execution.
+20:53:21.413 Case 'OPO_with_PFH' succeeded.
+20:53:21.616 Suite 'RiskCompoundOrderMargin'. [6 test cases, 0 sub-suites]
+20:53:21.741 Case '01_SecondaryOCO_Simple' execution.
+20:53:22.100 Case '01_SecondaryOCO_Simple' succeeded.
+20:53:22.225 Case '02_SecondaryOPO_Simple' execution.
+20:53:22.803 Case '02_SecondaryOPO_Simple' succeeded.
+20:53:22.944 Case '03_PrimaryOCO_Compounds' execution.
+20:53:23.944 Case '03_PrimaryOCO_Compounds' succeeded.
+20:53:24.054 Case '04_PrimaryOPO_Compounds' execution.
+20:53:24.725 Case '04_PrimaryOPO_Compounds' succeeded.
+20:53:24.804 Case '05_MultipleSecondaries' execution.
+20:53:25.616 Case '05_MultipleSecondaries' succeeded.
+20:53:25.725 Case '06_AddingOrders' execution.
+20:53:26.772 Case '06_AddingOrders' succeeded.
+20:53:26.975 Suite 'Suspend'. [19 test cases, 0 sub-suites]
+20:53:27.101 Case 'ActivateAtLegs_OCO' execution.
+20:53:27.147 Case 'ActivateAtLegs_OCO' succeeded.
+20:53:27.257 Case 'ActivateAtLegs_OPO' execution.
+20:53:27.288 Case 'ActivateAtLegs_OPO' succeeded.
+20:53:27.397 Case 'Bracket_Leg1_OCO' execution.
+20:53:27.491 Case 'Bracket_Leg1_OCO' succeeded.
+20:53:27.601 Case 'Bracket_Parked_FirstOCOLeg' execution.
+20:53:27.632 Case 'Bracket_Parked_FirstOCOLeg' succeeded.
+20:53:27.788 Case 'Bracket_Parked_SecondOCOLeg' execution.
+20:53:27.835 Case 'Bracket_Parked_SecondOCOLeg' succeeded.
+20:53:27.944 Case 'ModifyLegs_AAT_APT_inOCO_Autoactivate' execution.
+20:53:30.085 Case 'ModifyLegs_AAT_APT_inOCO_Autoactivate' succeeded.
+20:53:30.210 Case 'ModifyLegs_AAT_APT_inOCO_Autopark' execution.
+20:53:32.413 Case 'ModifyLegs_AAT_APT_inOCO_Autopark' succeeded.
+20:53:32.538 Case 'ModifyLegs_AAT_APT_inOPO_Autoactivate' execution.
+20:53:34.710 Case 'ModifyLegs_AAT_APT_inOPO_Autoactivate' succeeded.
+20:53:34.804 Case 'ModifyLegs_AAT_APT_inOPO_Autopark' execution.
+20:53:36.991 Case 'ModifyLegs_AAT_APT_inOPO_Autopark' succeeded.
+20:53:37.101 Case 'OCO_ActiveLegsWithDiff_APT' execution.
+20:53:40.132 Case 'OCO_ActiveLegsWithDiff_APT' succeeded.
+20:53:40.242 Case 'OCO_ParkLegsWithDiff_AAT' execution.
+20:53:43.273 Case 'OCO_ParkLegsWithDiff_AAT' succeeded.
+20:53:43.382 Case 'OPO_Parked_AllLegs' execution.
+20:53:43.414 Case 'OPO_Parked_AllLegs' succeeded.
+20:53:43.492 Case 'OPO_Parked_OnlySecLeg' execution.
+20:53:43.539 Case 'OPO_Parked_OnlySecLeg' succeeded.
+20:53:43.648 Case 'OPO_SecLegWith_APT_ActivePRILeg' execution.
+20:53:43.664 Case 'OPO_SecLegWith_APT_ActivePRILeg' succeeded.
+20:53:43.773 Case 'OPO_SecLegWith_APT_ParkPRILeg' execution.
+20:53:43.804 Case 'OPO_SecLegWith_APT_ParkPRILeg' succeeded.
+20:53:43.898 Case 'ParkActivateBracketOCOLegsAfterFillOPOPriLeg' execution.
+20:53:44.273 Case 'ParkActivateBracketOCOLegsAfterFillOPOPriLeg' succeeded.
+20:53:44.367 Case 'ParkActivateOPOSecLegAfterFillPriLeg' execution.
+20:53:44.523 Case 'ParkActivateOPOSecLegAfterFillPriLeg' succeeded.
+20:53:44.601 Case 'PartialFillOCO' execution.
+20:53:44.679 Case 'PartialFillOCO' succeeded.
+20:53:44.773 Case 'PartialFillOPO' execution.
+20:53:44.882 Case 'PartialFillOPO' succeeded.
+20:53:45.101 Suite 'viaOmnibus'. [3 test cases, 1 sub-suites]
+20:53:49.664 Case 'BRACKETevents' execution.
+20:53:49.898 Case 'BRACKETevents' succeeded.
+20:53:50.008 Case 'OCOevents' execution.
+20:53:50.164 Case 'OCOevents' succeeded.
+20:53:50.273 Case 'OPOevents' execution.
+20:53:51.976 Case 'OPOevents' succeeded.
+20:53:52.133 Suite 'viaOmnibus\ExecutionAccountId'. [2 test cases, 0 sub-suites]
+20:53:55.242 Case 'ExecutionAccountIDOpoOnInternalOmnibus' execution.
+20:53:55.492 Case 'ExecutionAccountIDOpoOnInternalOmnibus' succeeded.
+20:53:55.586 Case 'ExecutionAccountIDOpoOnOmnibus' execution.
+20:53:55.836 Case 'ExecutionAccountIDOpoOnOmnibus' succeeded.
+20:54:14.477 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/CompoundOrders' execution finished. It took 0:02:15.958219.
+20:54:14.477 Test cases results: 95 total, 95 succeeded, 0 failed, 0 skipped.

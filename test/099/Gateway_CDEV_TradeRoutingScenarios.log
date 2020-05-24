@@ -1,0 +1,41 @@
+ 8:33:12.69  Test starded without threads
+06:33:13.302 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios' added.
+06:33:13.302 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:33:13.302 Python Module Path 'ScriptKit' added.
+06:33:13.896 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios' filtered execution.
+06:33:13.927 Suite '.'. [10 test cases, 1 sub-suites]
+06:33:20.427 Case 'BustLastFill' execution.
+06:33:20.459 Case 'CallOption' execution.
+06:33:20.490 Case 'FixedIncome' execution.
+06:33:20.568 Case 'InvalidSymbol' execution.
+06:33:20.615 Case 'ModifyCtiOrigin' execution.
+06:33:20.646 Case 'InvalidSymbol' succeeded.
+06:33:20.662 Case 'OrderFill_SettlementDate' execution.
+06:33:20.724 Case 'RejectZeroQuantityModify' execution.
+06:33:20.849 Case 'Spread' execution.
+06:33:20.881 Case 'BustLastFill' succeeded.
+06:33:20.927 Case 'LimitDAY' execution.
+06:33:21.130 Case 'ModifyCtiOrigin' succeeded.
+06:33:21.130 Case 'PutOption' execution.
+06:33:21.146 Case 'RejectZeroQuantityModify' succeeded.
+06:33:22.693 Case 'FixedIncome' succeeded.
+06:33:22.771 Case 'CallOption' succeeded.
+06:33:23.037 Case 'Spread' succeeded.
+06:33:23.256 Case 'LimitDAY' succeeded.
+06:33:23.334 Case 'PutOption' succeeded.
+06:33:31.271 Case 'OrderFill_SettlementDate' succeeded.
+06:33:31.384 Suite 'AggressorIndicator_ts.py'. [6 test cases, 0 sub-suites]
+06:33:31.443 Case 'FullFill_FixedIncome' execution.
+06:33:31.475 Case 'PartialFill_FixedIncome' execution.
+06:33:31.521 Case 'FullFill_Future' execution.
+06:33:31.568 Case 'PartialFill_Future' execution.
+06:33:31.600 Case 'FullFill_NativeStrategy' execution.
+06:33:31.646 Case 'PartialFill_NativeStrategy' execution.
+06:33:31.850 Case 'PartialFill_Future' succeeded.
+06:33:31.928 Case 'FullFill_Future' succeeded.
+06:33:32.115 Case 'PartialFill_FixedIncome' succeeded.
+06:33:32.334 Case 'FullFill_FixedIncome' succeeded.
+06:33:32.381 Case 'PartialFill_NativeStrategy' succeeded.
+06:33:32.523 Case 'FullFill_NativeStrategy' succeeded.
+06:33:44.069 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/TradeRoutingScenarios' execution finished. It took 0:00:30.157346.
+06:33:44.069 Test cases results: 16 total, 16 succeeded, 0 failed, 0 skipped.

@@ -1,0 +1,66 @@
+ 9:14:04.26  Test starded without threads
+07:14:04.765 Python Module Path 'Scripts/Gateway/PythonModules' added.
+07:14:04.765 Python Module Path 'ScriptKit' added.
+07:14:04.765 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+07:14:05.484 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LongShortPositions' filtered execution.
+07:14:05.515 Suite '.'. [0 test cases, 3 sub-suites]
+07:14:12.017 Suite 'LiqAll'. [0 test cases, 1 sub-suites]
+07:14:12.094 Suite 'LiqAll\Synthetic'. [3 test cases, 0 sub-suites]
+07:14:21.407 Case 'TC22_SyntheticSpread' execution.
+07:14:47.376 Case 'TC22_SyntheticSpread' succeeded.
+07:14:47.439 Case 'TC27_SSMapped1' execution.
+07:14:53.923 Case 'TC27_SSMapped1' succeeded.
+07:14:53.973 Case 'TC28_SSMapped2' execution.
+07:15:00.173 Case 'TC28_SSMapped2' succeeded.
+07:15:00.470 Suite 'OpenClose_FillEffect'. [0 test cases, 1 sub-suites]
+07:15:01.502 Suite 'OpenClose_FillEffect\SyntheticStrategyOrder'. [6 test cases, 2 sub-suites]
+07:15:10.721 Case 'AcceptableOpenClose' execution.
+07:15:28.909 Case 'AcceptableOpenClose' succeeded.
+07:15:28.971 Case 'EmptyFillEffect' execution.
+07:15:39.050 Case 'EmptyFillEffect' succeeded.
+07:15:39.112 Case 'FillEffect' execution.
+07:15:47.286 Case 'FillEffect' succeeded.
+07:15:47.363 Case 'LegMargin' execution.
+07:16:03.566 Case 'LegMargin' succeeded.
+07:16:03.660 Case 'MixedLegs' execution.
+07:16:23.365 Case 'MixedLegs' succeeded.
+07:16:23.427 Case 'UnacceptableOpenClose' execution.
+07:16:23.520 Case 'UnacceptableOpenClose' succeeded.
+07:16:23.583 Suite 'OpenClose_FillEffect\SyntheticStrategyOrder\MultilegSyntheticStrategyOrder'. [5 test cases, 0 sub-suites]
+07:16:29.489 Case 'AcceptableOpenClose' execution.
+07:17:22.710 Case 'AcceptableOpenClose' succeeded.
+07:17:22.788 Case 'EmptyFillEffect' execution.
+07:17:29.397 Case 'EmptyFillEffect' succeeded.
+07:17:29.460 Case 'FillEffect' execution.
+07:17:40.773 Case 'FillEffect' succeeded.
+07:17:40.866 Case 'LegMargin' execution.
+07:18:02.961 Case 'LegMargin' succeeded.
+07:18:03.055 Case 'UnacceptableOpenClose' execution.
+07:18:03.243 Case 'UnacceptableOpenClose' succeeded.
+07:18:03.367 Suite 'OpenClose_FillEffect\SyntheticStrategyOrder\WithNativeStrategyLeg'. [5 test cases, 0 sub-suites]
+07:18:03.461 Case 'AcceptableOpenClose' execution.
+07:18:42.728 Case 'AcceptableOpenClose' succeeded.
+07:18:42.791 Case 'EmptyFillEffect' execution.
+07:18:47.775 Case 'EmptyFillEffect' succeeded.
+07:18:47.853 Case 'FillEffect' execution.
+07:18:56.260 Case 'FillEffect' succeeded.
+07:18:56.353 Case 'LegMargin' execution.
+07:19:17.589 Case 'LegMargin' succeeded.
+07:19:17.682 Case 'UnacceptableOpenClose' execution.
+07:19:17.823 Case 'UnacceptableOpenClose' succeeded.
+07:19:18.136 Suite 'SpecType'. [0 test cases, 1 sub-suites]
+07:19:18.229 Suite 'SpecType\Synthetic'. [6 test cases, 0 sub-suites]
+07:19:27.324 Case 'TC22_SyntheticSpread' execution.
+07:19:40.980 Case 'TC22_SyntheticSpread' succeeded.
+07:19:41.090 Case 'TC23_SyntheticSpread_NativeSpreadLeg' execution.
+07:20:10.794 Case 'TC23_SyntheticSpread_NativeSpreadLeg' succeeded.
+07:20:10.880 Case 'TC24_SyntheticSpread_SyntheticSpreadLeg' execution.
+07:20:31.341 Case 'TC24_SyntheticSpread_SyntheticSpreadLeg' succeeded.
+07:20:31.419 Case 'TC25_SpecTypeMissing' execution.
+07:20:39.685 Case 'TC25_SpecTypeMissing' succeeded.
+07:20:39.748 Case 'TC26_SpecTypeExtra' execution.
+07:20:43.888 Case 'TC26_SpecTypeExtra' succeeded.
+07:20:43.952 Case 'TC27_SpecTypeDiffers' execution.
+07:20:47.311 Case 'TC27_SpecTypeDiffers' succeeded.
+07:20:55.436 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LongShortPositions' execution finished. It took 0:06:49.920449.
+07:20:55.436 Test cases results: 25 total, 25 succeeded, 0 failed, 0 skipped.

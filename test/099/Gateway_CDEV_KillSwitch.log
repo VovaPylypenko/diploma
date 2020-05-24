@@ -1,0 +1,112 @@
+10:28:10.99  Test starded without threads
+08:28:11.537 Python Module Path 'ScriptKit' added.
+08:28:11.537 Python Module Path 'ScriptKit/TroubleMaker' added.
+08:28:11.537 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch/PythonModules' added.
+08:28:11.537 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:28:13.334 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch' filtered execution.
+08:28:13.365 Suite '.'. [1 test cases, 5 sub-suites]
+08:28:50.445 Case 'CancelRejects' execution.
+08:29:00.993 Case 'CancelRejects' succeeded.
+08:29:01.070 Suite 'CastUserScope_ts.py'. [3 test cases, 0 sub-suites]
+08:29:01.133 Case 'FcmScopeAuthorized' execution.
+08:29:04.461 Case 'FcmScopeAuthorized' succeeded.
+08:29:04.539 Case 'SalesRepScopeAuthorized' execution.
+08:29:07.445 Case 'SalesRepScopeAuthorized' succeeded.
+08:29:07.523 Case 'FcmScopeUnauthorized' execution.
+08:29:09.899 Case 'FcmScopeUnauthorized' succeeded.
+08:29:10.039 Suite 'IrrelevantRequest_ts.py'. [14 test cases, 0 sub-suites]
+08:29:10.117 Case 'IrrelevantAccountFcm' execution.
+08:29:12.399 Case 'IrrelevantAccountFcm' succeeded.
+08:29:12.477 Case 'IrrelevantAccountCustomer' execution.
+08:29:17.289 Case 'IrrelevantAccountCustomer' succeeded.
+08:29:17.368 Case 'IrrelevantAccountSs' execution.
+08:29:19.680 Case 'IrrelevantAccountSs' succeeded.
+08:29:19.758 Case 'IrrelevantAccountTrader' execution.
+08:29:21.930 Case 'IrrelevantAccountTrader' succeeded.
+08:29:22.008 Case 'IrrelevantAccountRoute' execution.
+08:29:24.071 Case 'IrrelevantAccountRoute' succeeded.
+08:29:24.150 Case 'IrrelevantTraderFcm' execution.
+08:29:25.852 Case 'IrrelevantTraderFcm' succeeded.
+08:29:25.977 Case 'IrrelevantTraderCustomer' execution.
+08:29:28.852 Case 'IrrelevantTraderCustomer' succeeded.
+08:29:28.930 Case 'IrrelevantTraderSs' execution.
+08:29:30.696 Case 'IrrelevantTraderSs' succeeded.
+08:29:30.774 Case 'IrrelevantTraderRoute' execution.
+08:29:32.696 Case 'IrrelevantTraderRoute' succeeded.
+08:29:32.774 Case 'IrrelevantSsFcm' execution.
+08:29:35.509 Case 'IrrelevantSsFcm' succeeded.
+08:29:35.587 Case 'IrrelevantSsCustomer' execution.
+08:29:38.353 Case 'IrrelevantSsCustomer' succeeded.
+08:29:38.416 Case 'IrrelevantSsRoute' execution.
+08:29:40.025 Case 'IrrelevantSsRoute' succeeded.
+08:29:40.103 Case 'IrrelevantCustomerFcm' execution.
+08:29:43.822 Case 'IrrelevantCustomerFcm' succeeded.
+08:29:43.884 Case 'IrrelevantCustomerRoute' execution.
+08:29:46.462 Case 'IrrelevantCustomerRoute' succeeded.
+08:29:46.619 Suite 'MultipleFilterOptions_ts.py'. [26 test cases, 0 sub-suites]
+08:29:46.681 Case 'CurrentDayOnly_N' execution.
+08:29:50.853 Case 'CurrentDayOnly_N' succeeded.
+08:29:50.931 Case 'CurrentDayOnly_Y' execution.
+08:29:55.463 Case 'CurrentDayOnly_Y' succeeded.
+08:29:55.541 Case 'ParkedOnly_Y' execution.
+08:29:59.478 Case 'ParkedOnly_Y' succeeded.
+08:29:59.556 Case 'Side_Both' execution.
+08:30:05.557 Case 'Side_Both' succeeded.
+08:30:05.635 Case 'Side_Sell' execution.
+08:30:10.666 Case 'Side_Sell' succeeded.
+08:30:10.760 Case 'Contract_All' execution.
+08:30:16.354 Case 'Contract_All' succeeded.
+08:30:16.432 Case 'Contract_B' execution.
+08:30:21.573 Case 'Contract_B' succeeded.
+08:30:21.651 Case 'Contract_A_B' execution.
+08:30:26.620 Case 'Contract_A_B' succeeded.
+08:30:26.682 Case 'RouteGroup_All' execution.
+08:30:33.386 Case 'RouteGroup_All' succeeded.
+08:30:33.464 Case 'RouteGroup_2' execution.
+08:30:39.261 Case 'RouteGroup_2' succeeded.
+08:30:39.339 Case 'RouteGroup_1_2' execution.
+08:30:43.402 Case 'RouteGroup_1_2' succeeded.
+08:30:43.464 Case 'Trader_All' execution.
+08:30:48.058 Case 'Trader_All' succeeded.
+08:30:48.136 Case 'Trader_B' execution.
+08:30:53.136 Case 'Trader_B' succeeded.
+08:30:53.214 Case 'Trader_A_B' execution.
+08:30:58.605 Case 'Trader_A_B' succeeded.
+08:30:58.699 Case 'Account_All' execution.
+08:31:03.918 Case 'Account_All' succeeded.
+08:31:03.980 Case 'Account_17' execution.
+08:31:08.824 Case 'Account_17' succeeded.
+08:31:08.918 Case 'Account_18_181' execution.
+08:31:14.981 Case 'Account_18_181' succeeded.
+08:31:15.074 Case 'SS_All' execution.
+08:31:21.153 Case 'SS_All' succeeded.
+08:31:21.231 Case 'SS_A2' execution.
+08:31:25.559 Case 'SS_A2' succeeded.
+08:31:25.637 Case 'SS_A_A2' execution.
+08:31:31.138 Case 'SS_A_A2' succeeded.
+08:31:31.231 Case 'Customer_All' execution.
+08:31:36.700 Case 'Customer_All' succeeded.
+08:31:36.794 Case 'Customer_B' execution.
+08:31:41.950 Case 'Customer_B' succeeded.
+08:31:42.060 Case 'Customer_A_B' execution.
+08:31:48.810 Case 'Customer_A_B' succeeded.
+08:31:48.904 Case 'FCM_All' execution.
+08:31:56.123 Case 'FCM_All' succeeded.
+08:31:56.216 Case 'FCM_B' execution.
+08:32:03.654 Case 'FCM_B' succeeded.
+08:32:03.732 Case 'FCM_A_B' execution.
+08:32:09.389 Case 'FCM_A_B' succeeded.
+08:32:09.562 Suite 'RequestToMultipleRS_ts.py'. [2 test cases, 0 sub-suites]
+08:32:09.654 Case '1_TwoRsAvailable' execution.
+08:32:13.530 Case '1_TwoRsAvailable' succeeded.
+08:32:13.608 Case '2_OneRsUnavailable' execution.
+08:32:27.764 Case '2_OneRsUnavailable' succeeded.
+08:32:27.952 Suite 'SingleFilterOptions_ts.py'. [3 test cases, 0 sub-suites]
+08:32:28.046 Case 'Fcm' execution.
+08:32:32.483 Case 'Fcm' succeeded.
+08:32:32.577 Case 'Ss' execution.
+08:32:37.405 Case 'Ss' succeeded.
+08:32:37.499 Case 'Customer' execution.
+08:32:42.109 Case 'Customer' succeeded.
+08:32:46.812 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch' execution finished. It took 0:04:33.430846.
+08:32:46.812 Test cases results: 49 total, 49 succeeded, 0 failed, 0 skipped.

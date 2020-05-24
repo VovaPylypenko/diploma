@@ -1,0 +1,52 @@
+19:13:42.05  Test starded without threads
+17:13:42.709 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma/PythonModules' added.
+17:13:42.709 Python Module Path 'Scripts/Gateway/PythonModules' added.
+17:13:42.709 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+17:13:42.709 Python Module Path 'ScriptKit' added.
+17:13:43.740 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma' full execution.
+17:13:43.755 Suite '.'. [0 test cases, 6 sub-suites]
+17:13:55.834 Suite 'VDK_Portfolio_Part1'. [7 test cases, 0 sub-suites]
+17:16:56.527 Case 'PRBRC_A1' execution.
+17:16:56.559 Case 'PRIFR_A1_PQ' execution.
+17:16:56.716 Case 'PRIFR_A1' execution.
+17:16:56.746 Case 'PRIFR_A2' execution.
+17:16:56.777 Case 'PRIFR_A1_PQ' succeeded.
+17:16:56.793 Case 'PRIFR_A3' execution.
+17:16:56.858 Case 'PRIFR_A1' succeeded.
+17:16:56.871 Case 'PRIFR_A4' execution.
+17:16:56.949 Case 'PRIFR_A2' succeeded.
+17:16:56.980 Case 'PRIFR_A3' succeeded.
+17:16:57.074 Case 'VDKCM_A6' execution.
+17:16:57.136 Case 'PRIFR_A4' succeeded.
+17:16:57.246 Case 'VDKCM_A6' succeeded.
+17:16:57.293 Case 'PRBRC_A1' succeeded.
+17:16:57.402 Suite 'VDK_Portfolio_Part2'. [4 test cases, 0 sub-suites]
+17:19:58.064 Case 'VDKCM_A1' execution.
+17:19:58.142 Case 'VDKCM_A3' execution.
+17:19:58.173 Case 'VDKCM_A5' execution.
+17:19:58.204 Case 'VDKCM_A1' succeeded.
+17:19:58.235 Case 'VDKCM_A7' execution.
+17:19:58.267 Case 'VDKCM_A3' succeeded.
+17:19:58.360 Case 'VDKCM_A5' succeeded.
+17:19:59.486 Case 'VDKCM_A7' succeeded.
+17:19:59.626 Suite 'VDK_Portfolio_Part3'. [2 test cases, 0 sub-suites]
+17:23:00.351 Case 'PRIFR_A5' execution.
+17:23:00.397 Case 'PRIFR_A6' execution.
+17:23:00.647 Case 'PRIFR_A6' succeeded.
+17:23:00.710 Case 'PRIFR_A5' succeeded.
+17:23:00.835 Suite 'VDK_Portfolio_Part4'. [1 test cases, 0 sub-suites]
+17:26:01.512 Case 'PRIFR_A7' execution.
+17:26:02.481 Case 'PRIFR_A7' succeeded.
+17:26:02.669 Suite 'VDK_Portfolio_Part5'. [1 test cases, 0 sub-suites]
+17:29:03.346 Case 'A1' execution.
+17:29:03.565 Case 'A1' succeeded.
+17:29:03.690 Suite 'VDK_Portfolio_V80'. [0 test cases, 1 sub-suites]
+17:29:03.752 Suite 'VDK_Portfolio_V80\DPBBN_A1_ts.py'. [3 test cases, 0 sub-suites]
+17:32:04.445 Case 'TEA_days_2' execution.
+17:32:04.492 Case 'TEA_days_1' execution.
+17:32:04.539 Case 'TEA_days_0' execution.
+17:32:04.695 Case 'TEA_days_2' succeeded.
+17:32:04.774 Case 'TEA_days_1' succeeded.
+17:32:04.789 Case 'TEA_days_0' succeeded.
+17:32:05.105 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma' execution finished. It took 0:18:21.330569.
+17:32:05.105 Test cases results: 18 total, 18 succeeded, 0 failed, 0 skipped.

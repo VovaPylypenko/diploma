@@ -1,0 +1,62 @@
+ 2:23:41.39  Test starded without threads
+00:23:42.096 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:23:42.096 Python Module Path 'ScriptKit' added.
+00:23:42.565 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NoMarginForPremiumStyleOptions' full execution.
+00:23:42.581 Suite '.'. [5 test cases, 0 sub-suites]
+00:23:55.441 Case 'Test_01_RejectOptionByMargin' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NoMarginForPremiumStyleOptions\Test_01_RejectOptionByMargin_tc.py", line 10, in <module>
+    order1 = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:23:55.441 Case 'Test_01_RejectOptionByMargin' failed.
+00:23:55.487 Case 'Test_02_AcceptOptionNoMargin' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NoMarginForPremiumStyleOptions\Test_02_AcceptOptionNoMargin_tc.py", line 10, in <module>
+    order1 = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:23:55.487 Case 'Test_02_AcceptOptionNoMargin' failed.
+00:23:55.535 Case 'Test_03_RejectOptionByCashReserve' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NoMarginForPremiumStyleOptions\Test_03_RejectOptionByCashReserve_tc.py", line 10, in <module>
+    order1 = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:23:55.535 Case 'Test_03_RejectOptionByCashReserve' failed.
+00:23:55.582 Case 'Test_04_RejectOptionFutureStyle' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NoMarginForPremiumStyleOptions\Test_04_RejectOptionFutureStyle_tc.py", line 10, in <module>
+    order1 = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:23:55.597 Case 'Test_04_RejectOptionFutureStyle' failed.
+00:23:55.644 Case 'Test_05_RejectOptionBuySell' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NoMarginForPremiumStyleOptions\Test_05_RejectOptionBuySell_tc.py", line 10, in <module>
+    order1 = OrderActionUtils.CreateOrder(contract1, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:23:55.644 Case 'Test_05_RejectOptionBuySell' failed.
+00:24:00.128 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NoMarginForPremiumStyleOptions' execution finished. It took 0:00:17.531890.
+00:24:00.128 Test cases results: 5 total, 0 succeeded, 5 failed, 0 skipped.

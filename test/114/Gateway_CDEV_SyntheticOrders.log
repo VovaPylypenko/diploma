@@ -1,0 +1,62 @@
+ 1:46:01.56  Test starded without threads
+23:46:02.034 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:46:02.034 Python Module Path 'ScriptKit' added.
+23:46:02.394 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SyntheticOrders' full execution.
+23:46:02.425 Suite '.'. [5 test cases, 0 sub-suites]
+23:46:10.847 Case 'IgnoreActivationForZeroVolQuote' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SyntheticOrders\IgnoreActivationForZeroVolQuote_tc.py", line 21, in <module>
+    o1 = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Stop, stopPrice=65)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:46:12.863 Case 'IgnoreActivationForZeroVolQuote' failed.
+23:46:12.894 Case 'MarketToLimitActivationPrice' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SyntheticOrders\MarketToLimitActivationPrice_tc.py", line 23, in <module>
+    o1 = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Market)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:46:14.910 Case 'MarketToLimitActivationPrice' failed.
+23:46:14.957 Case 'QTStoLimitActivation' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SyntheticOrders\QTStoLimitActivation_tc.py", line 15, in <module>
+    instructions = [OrderExecInstruction.QuantityTriggered], stopPrice=65, triggerQuantity=50)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:46:16.957 Case 'QTStoLimitActivation' failed.
+23:46:16.991 Case 'STLtoLimitActivation' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SyntheticOrders\STLtoLimitActivation_tc.py", line 11, in <module>
+    stopPrice=65, limitPrice=67)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:46:19.006 Case 'STLtoLimitActivation' failed.
+23:46:19.051 Case 'StopToLimitActivationPrice' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SyntheticOrders\StopToLimitActivationPrice_tc.py", line 27, in <module>
+    o1 = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Stop, stopPrice=65)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:46:21.066 Case 'StopToLimitActivationPrice' failed.
+23:46:25.441 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SyntheticOrders' execution finished. It took 0:00:23.031974.
+23:46:25.441 Test cases results: 5 total, 0 succeeded, 5 failed, 0 skipped.

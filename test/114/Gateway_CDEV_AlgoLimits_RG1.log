@@ -1,0 +1,213 @@
+ 2:22:07.31  Test starded without threads
+00:22:07.843 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+00:22:07.843 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:22:07.859 Python Module Path 'ScriptKit/TroubleMaker' added.
+00:22:07.859 Python Module Path 'ScriptKit' added.
+00:22:08.296 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits' filtered execution.
+00:22:08.327 Suite '.'. [0 test cases, 1 sub-suites]
+00:22:17.375 Suite 'Native'. [0 test cases, 3 sub-suites]
+00:22:17.421 Suite 'Native\Basic'. [6 test cases, 0 sub-suites]
+00:22:17.469 Case '01_Place' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Basic\01_Place_tc.py", line 10, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:17.484 Case '01_Place' failed.
+00:22:17.484 Case '02_Modify' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Basic\02_Modify_tc.py", line 11, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:17.499 Case '02_Modify' failed.
+00:22:17.515 Case '03_Cancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Basic\03_Cancel_tc.py", line 11, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:17.515 Case '03_Cancel' failed.
+00:22:17.531 Case '05_Reject' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Basic\05_Reject_tc.py", line 10, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:17.546 Case '05_Reject' failed.
+00:22:17.578 Case '_04_Fill' execution.
+00:22:17.593 Case '_04_Fill' succeeded.
+00:22:17.828 Case '06_Park' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Basic\06_Park_tc.py", line 10, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:17.843 Case '06_Park' failed.
+00:22:18.015 Suite 'Native\Complex'. [10 test cases, 0 sub-suites]
+00:22:18.078 Case '01_CareOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Complex\01_CareOrder_tc.py", line 8, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:18.093 Case '01_CareOrder' failed.
+00:22:18.109 Case '04_OCO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Complex\04_OCO_tc.py", line 8, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:18.125 Case '04_OCO' failed.
+00:22:18.157 Case '05_OPO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Complex\05_OPO_tc.py", line 8, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:18.171 Case '05_OPO' failed.
+00:22:18.187 Case '08_OmniDiffFCMs' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Complex\08_OmniDiffFCMs_tc.py", line 12, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:18.203 Case '08_OmniDiffFCMs' failed.
+00:22:18.234 Case '09_ResetOneAlgo' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Complex\09_ResetOneAlgo_tc.py", line 12, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:18.281 Case '09_ResetOneAlgo' failed.
+00:22:18.296 Case '10_ResetAllAlgos' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Complex\10_ResetAllAlgos_tc.py", line 8, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:18.312 Case '10_ResetAllAlgos' failed.
+00:22:18.343 Case '12_MultipleTraders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Complex\12_MultipleTraders_tc.py", line 10, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:18.360 Case '12_MultipleTraders' failed.
+00:22:18.375 Case '07_OmniSameFCMs' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Complex\07_OmniSameFCMs_tc.py", line 10, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:18.406 Case '07_OmniSameFCMs' failed.
+00:22:18.421 Case '15_OrderHandler' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Complex\15_OrderHandler_tc.py", line 10, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:18.437 Case '15_OrderHandler' failed.
+00:22:18.500 Case '16_ExternalAlgo' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\Complex\16_ExternalAlgo_tc.py", line 11, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:18.515 Case '16_ExternalAlgo' failed.
+00:22:19.171 Suite 'Native\DoNotCount'. [3 test cases, 0 sub-suites]
+00:22:19.270 Case '01_Unconfirmed' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\DoNotCount\01_Unconfirmed_tc.py", line 37, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:19.296 Case '01_Unconfirmed' failed.
+00:22:19.328 Case '02_ActiveAt' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\DoNotCount\02_ActiveAt_tc.py", line 8, in <module>
+    order = OrderActionUtils.CreateOrder(caz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:19.344 Case '02_ActiveAt' failed.
+00:22:19.375 Case '05_Different' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits\Native\DoNotCount\05_Different_tc.py", line 8, in <module>
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:22:19.406 Case '05_Different' failed.
+00:22:21.864 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits' execution finished. It took 0:00:13.516137.
+00:22:21.864 Test cases results: 19 total, 1 succeeded, 18 failed, 0 skipped.

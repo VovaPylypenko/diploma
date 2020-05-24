@@ -1,0 +1,38 @@
+21:54:31.73  Test starded without threads
+19:54:32.190 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites/FlexibleAuthentication/PythonModules' added.
+19:54:32.190 Python Module Path 'Scripts/Gateway/PythonModules' added.
+19:54:32.190 Python Module Path 'ScriptKit' added.
+19:54:32.190 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/PythonModules' not found. Ignored.
+19:54:32.674 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites' filtered execution.
+19:54:32.706 Suite '.'. [0 test cases, 1 sub-suites]
+19:54:33.846 Suite 'FlexibleAuthentication'. [14 test cases, 0 sub-suites]
+19:54:37.581 Case 'LogonAbortOnTraderAgreement' execution.
+19:54:39.487 Case 'LogonAbortOnTraderAgreement' succeeded.
+19:54:39.518 Case 'LogonAbort' execution.
+19:54:41.128 Case 'LogonAbort' succeeded.
+19:54:41.175 Case 'LogonIncorrectLogonInitParameter' execution.
+19:54:42.049 Case 'LogonIncorrectLogonInitParameter' succeeded.
+19:54:42.096 Case 'LogonSuccessfulLogonWithAgreement' execution.
+19:54:43.440 Case 'LogonSuccessfulLogonWithAgreement' succeeded.
+19:54:43.471 Case 'LogonSuccessfulLogon' execution.
+19:54:44.378 Case 'LogonSuccessfulLogon' succeeded.
+19:54:44.425 Case 'LogonUnsuccessfulOneStepLogon' execution.
+19:54:45.284 Case 'LogonUnsuccessfulOneStepLogon' succeeded.
+19:54:45.315 Case 'LogonUnsuccessful' execution.
+19:54:46.190 Case 'LogonUnsuccessful' succeeded.
+19:54:46.237 Case 'LogonWrongMessageSequence' execution.
+19:54:47.862 Case 'LogonWrongMessageSequence' succeeded.
+19:54:47.893 Case 'LogonWrongRequestID' execution.
+19:54:48.472 Case 'LogonWrongRequestID' succeeded.
+19:54:48.518 Case 'PasswordChangeAbortAndSuccess' execution.
+19:55:04.019 Case 'PasswordChangeAbortAndSuccess' succeeded.
+19:55:04.081 Case 'PasswordChangeAbort' execution.
+19:55:06.832 Case 'PasswordChangeAbort' succeeded.
+19:55:06.881 Case 'PasswordIncorrect' execution.
+19:55:11.113 Case 'PasswordIncorrect' succeeded.
+19:55:11.160 Case 'PasswordRestrictionViolation' execution.
+19:55:36.723 Case 'PasswordRestrictionViolation' succeeded.
+19:55:36.833 Case 'PasswordUnexpectedMessage' execution.
+19:55:38.598 Case 'PasswordUnexpectedMessage' succeeded.
+19:55:38.723 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites' execution finished. It took 0:01:06.017746.
+19:55:38.723 Test cases results: 14 total, 14 succeeded, 0 failed, 0 skipped.

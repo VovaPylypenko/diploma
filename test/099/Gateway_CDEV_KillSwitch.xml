@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="49" testsuite_failed="False" time="273.430846" timestamp="2020-02-06T08:28:13.334685">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_KS"/>
+  <property name="scripts-cfg-instance" value="SF_KS"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="KillSwitch" skipped="0" tests="49" testsuite_failed="False" time="273.430846" timestamp="2020-02-06T08:28:13.334685">
+  <testcase name="CancelRejects" status="run" time="10.548646" timestamp="2020-02-06T08:28:50.445257"/>
+  <testsuite failures="0" name="CastUserScope" skipped="0" tests="3" testsuite_failed="False" time="8.92217" timestamp="2020-02-06T08:29:01.039354">
+   <testcase name="FcmScopeAuthorized" status="run" time="3.328227" timestamp="2020-02-06T08:29:01.133113"/>
+   <testcase name="SalesRepScopeAuthorized" status="run" time="2.906353" timestamp="2020-02-06T08:29:04.539478"/>
+   <testcase name="FcmScopeUnauthorized" status="run" time="2.375069" timestamp="2020-02-06T08:29:07.523951"/>
+  </testsuite>
+  <testsuite failures="0" name="IrrelevantRequest" skipped="0" tests="14" testsuite_failed="False" time="36.548108" timestamp="2020-02-06T08:29:09.992776">
+   <testcase name="IrrelevantAccountFcm" status="run" time="2.281371" timestamp="2020-02-06T08:29:10.117781"/>
+   <testcase name="IrrelevantAccountCustomer" status="run" time="4.812414" timestamp="2020-02-06T08:29:12.477499"/>
+   <testcase name="IrrelevantAccountSs" status="run" time="2.311906" timestamp="2020-02-06T08:29:17.368836"/>
+   <testcase name="IrrelevantAccountTrader" status="run" time="2.1719749999999998" timestamp="2020-02-06T08:29:19.758737"/>
+   <testcase name="IrrelevantAccountRoute" status="run" time="2.062577" timestamp="2020-02-06T08:29:22.008809"/>
+   <testcase name="IrrelevantTraderFcm" status="run" time="1.702544" timestamp="2020-02-06T08:29:24.150237"/>
+   <testcase name="IrrelevantTraderCustomer" status="run" time="2.8752560000000003" timestamp="2020-02-06T08:29:25.977694"/>
+   <testcase name="IrrelevantTraderSs" status="run" time="1.765698" timestamp="2020-02-06T08:29:28.930916"/>
+   <testcase name="IrrelevantTraderRoute" status="run" time="1.921938" timestamp="2020-02-06T08:29:30.774721"/>
+   <testcase name="IrrelevantSsFcm" status="run" time="2.734441" timestamp="2020-02-06T08:29:32.774798"/>
+   <testcase name="IrrelevantSsCustomer" status="run" time="2.76571" timestamp="2020-02-06T08:29:35.587377"/>
+   <testcase name="IrrelevantSsRoute" status="run" time="1.608787" timestamp="2020-02-06T08:29:38.416218"/>
+   <testcase name="IrrelevantCustomerFcm" status="run" time="3.719396" timestamp="2020-02-06T08:29:40.103148"/>
+   <testcase name="IrrelevantCustomerRoute" status="run" time="2.578181" timestamp="2020-02-06T08:29:43.884537"/>
+  </testsuite>
+  <testsuite failures="0" name="MultipleFilterOptions" skipped="0" tests="26" testsuite_failed="False" time="142.895296" timestamp="2020-02-06T08:29:46.587741">
+   <testcase name="CurrentDayOnly_N" status="run" time="4.172011" timestamp="2020-02-06T08:29:46.681495"/>
+   <testcase name="CurrentDayOnly_Y" status="run" time="4.531413" timestamp="2020-02-06T08:29:50.931617"/>
+   <testcase name="ParkedOnly_Y" status="run" time="3.937628" timestamp="2020-02-06T08:29:55.541148"/>
+   <testcase name="Side_Both" status="run" time="6.000198" timestamp="2020-02-06T08:29:59.556899"/>
+   <testcase name="Side_Sell" status="run" time="5.031365" timestamp="2020-02-06T08:30:05.635278"/>
+   <testcase name="Contract_All" status="run" time="5.593964" timestamp="2020-02-06T08:30:10.760389"/>
+   <testcase name="Contract_B" status="run" time="5.140804" timestamp="2020-02-06T08:30:16.432461"/>
+   <testcase name="Contract_A_B" status="run" time="4.968902" timestamp="2020-02-06T08:30:21.651403"/>
+   <testcase name="RouteGroup_All" status="run" time="6.703375" timestamp="2020-02-06T08:30:26.682785"/>
+   <testcase name="RouteGroup_2" status="run" time="5.797048" timestamp="2020-02-06T08:30:33.464287"/>
+   <testcase name="RouteGroup_1_2" status="run" time="4.062631" timestamp="2020-02-06T08:30:39.339453"/>
+   <testcase name="Trader_All" status="run" time="4.5941220000000005" timestamp="2020-02-06T08:30:43.464595"/>
+   <testcase name="Trader_B" status="run" time="5.000122" timestamp="2020-02-06T08:30:48.136671"/>
+   <testcase name="Trader_A_B" status="run" time="5.390801" timestamp="2020-02-06T08:30:53.214919"/>
+   <testcase name="Account_All" status="run" time="5.218961" timestamp="2020-02-06T08:30:58.699513"/>
+   <testcase name="Account_17" status="run" time="4.843913" timestamp="2020-02-06T08:31:03.980887"/>
+   <testcase name="Account_18_181" status="run" time="6.062472" timestamp="2020-02-06T08:31:08.918775"/>
+   <testcase name="SS_All" status="run" time="6.078334" timestamp="2020-02-06T08:31:15.074999"/>
+   <testcase name="SS_A2" status="run" time="4.328265" timestamp="2020-02-06T08:31:21.231456"/>
+   <testcase name="SS_A_A2" status="run" time="5.500145" timestamp="2020-02-06T08:31:25.637878"/>
+   <testcase name="Customer_All" status="run" time="5.468935" timestamp="2020-02-06T08:31:31.231776"/>
+   <testcase name="Customer_B" status="run" time="5.156425" timestamp="2020-02-06T08:31:36.794464"/>
+   <testcase name="Customer_A_B" status="run" time="6.750439" timestamp="2020-02-06T08:31:42.060261"/>
+   <testcase name="FCM_All" status="run" time="7.21896" timestamp="2020-02-06T08:31:48.904266"/>
+   <testcase name="FCM_B" status="run" time="7.437772" timestamp="2020-02-06T08:31:56.216994"/>
+   <testcase name="FCM_A_B" status="run" time="5.656458" timestamp="2020-02-06T08:32:03.732849"/>
+  </testsuite>
+  <testsuite failures="0" name="RequestToMultipleRS" skipped="0" tests="2" testsuite_failed="False" time="18.344406" timestamp="2020-02-06T08:32:09.529907">
+   <testcase name="1_TwoRsAvailable" status="run" time="3.875136" timestamp="2020-02-06T08:32:09.654925"/>
+   <testcase name="2_OneRsUnavailable" status="run" time="14.156022" timestamp="2020-02-06T08:32:13.608885"/>
+  </testsuite>
+  <testsuite failures="0" name="SingleFilterOptions" skipped="0" tests="3" testsuite_failed="False" time="14.250464000000001" timestamp="2020-02-06T08:32:27.921159">
+   <testcase name="Fcm" status="run" time="4.437616" timestamp="2020-02-06T08:32:28.046175"/>
+   <testcase name="Ss" status="run" time="4.828292" timestamp="2020-02-06T08:32:32.577555"/>
+   <testcase name="Customer" status="run" time="4.6095880000000005" timestamp="2020-02-06T08:32:37.499582"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

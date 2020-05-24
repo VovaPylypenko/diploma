@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="2" testsuite_failed="False" time="48.957938" timestamp="2020-02-19T20:42:42.090982">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="RiskServerFailover" skipped="0" tests="2" testsuite_failed="False" time="48.957938" timestamp="2020-02-19T20:42:42.090982">
+  <testcase name="01_RiskServerSwitchover" status="run" time="18.860062" timestamp="2020-02-19T20:42:54.669625"/>
+  <testcase name="02_RiskServerFailover" status="run" time="17.39135" timestamp="2020-02-19T20:43:13.576580"/>
+ </testsuite>
+</testsuites>

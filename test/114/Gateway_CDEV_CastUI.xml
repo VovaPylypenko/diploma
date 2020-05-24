@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="1" testsuite_failed="False" time="235.863287" timestamp="2020-02-19T00:32:09.299178">
+ <properties>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/ManagmentInterface/CastUI/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value=""/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/ManagmentInterface/CastUI"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="CastUI" skipped="0" tests="1" testsuite_failed="False" time="235.863287" timestamp="2020-02-19T00:32:09.299178">
+  <testsuite failures="0" name="CastUI" skipped="0" tests="1" testsuite_failed="False" time="235.77156" timestamp="2020-02-19T00:32:09.330740">
+   <testcase name="Cast" status="run" time="235.674973" timestamp="2020-02-19T00:32:09.393281"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="22" testsuite_failed="False" time="20.656928" timestamp="2020-02-06T06:43:02.135549">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="InFlightFills" skipped="0" tests="22" testsuite_failed="False" time="20.656928" timestamp="2020-02-06T06:43:02.135549">
+  <testcase name="CancelNonZero_Accepted" status="run" time="0.578734" timestamp="2020-02-06T06:43:14.557837"/>
+  <testcase name="CancelNonZero_Rejected" status="run" time="0.812302" timestamp="2020-02-06T06:43:14.589298"/>
+  <testcase name="CancelZero_Accepted" status="run" time="0.671893" timestamp="2020-02-06T06:43:14.620329"/>
+  <testcase name="CancelZero_Rejected" status="run" time="0.656261" timestamp="2020-02-06T06:43:14.667208"/>
+  <testcase name="ModifyToNonZero_Accepted" status="run" time="0.810791" timestamp="2020-02-06T06:43:14.715807"/>
+  <testcase name="ModifyToNonZero_AcceptFirst" status="run" time="0.890661" timestamp="2020-02-06T06:43:14.745327"/>
+  <testcase name="ModifyToNonZero_Rejected" status="run" time="0.812788" timestamp="2020-02-06T06:43:14.792200"/>
+  <testcase name="ModifyToZero_Accepted" status="run" time="0.640583" timestamp="2020-02-06T06:43:14.839141"/>
+  <testcase name="ModifyToZero_AcceptFirst" status="run" time="0.672822" timestamp="2020-02-06T06:43:14.901583"/>
+  <testcase name="ModifyToZero_PlaceCanceled" status="run" time="0.641436" timestamp="2020-02-06T06:43:14.932969"/>
+  <testcase name="ModifyToZero_PlaceCancelFirst" status="run" time="0.640545" timestamp="2020-02-06T06:43:15.229813"/>
+  <testcase name="ModifyToZero_Rejected" status="run" time="0.937526" timestamp="2020-02-06T06:43:15.401600"/>
+  <testcase name="ModifyToZero_RejectFirst" status="run" time="1.000073" timestamp="2020-02-06T06:43:15.510981"/>
+  <testcase name="ModifyToZero_ReplaceCanceled" status="run" time="0.765388" timestamp="2020-02-06T06:43:15.604988"/>
+  <testcase name="ModifyZeroToNonZero_Accepted" status="run" time="1.078173" timestamp="2020-02-06T06:43:15.714107"/>
+  <testcase name="ModifyZeroToNonZero_AcceptFirst" status="run" time="1.01545" timestamp="2020-02-06T06:43:15.808084"/>
+  <testcase name="ModifyZeroToNonZero_Rejected" status="run" time="0.874066" timestamp="2020-02-06T06:43:15.886976"/>
+  <testcase name="ModifyZeroToNonZero_RejectFirst" status="run" time="0.734411" timestamp="2020-02-06T06:43:16.057869"/>
+  <testcase name="ModifyZeroToZero_Accepted" status="run" time="0.656263" timestamp="2020-02-06T06:43:16.214129"/>
+  <testcase name="ModifyZeroToZero_AcceptFirst" status="run" time="0.609409" timestamp="2020-02-06T06:43:16.276624"/>
+  <testcase name="ModifyZeroToZero_Rejected" status="run" time="0.609516" timestamp="2020-02-06T06:43:16.323503"/>
+  <testcase name="ModifyZeroToZero_RejectFirst" status="run" time="0.453144" timestamp="2020-02-06T06:43:16.542264"/>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="26" tests="26" testsuite_failed="False" time="15.60991" timestamp="2020-02-19T00:39:35.559678">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AutoTradingRegulatoryAlgorithms/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_EATRS"/>
+  <property name="scripts-cfg-instance" value="SF_EATRS"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AutoTradingRegulatoryAlgorithms"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="AutoTradingRegulatoryAlgorithms" skipped="26" tests="26" testsuite_failed="False" time="15.60991" timestamp="2020-02-19T00:39:35.559678">
+  <testsuite failures="0" name="ClientSideAlgorithmID" skipped="8" tests="8" testsuite_failed="False">
+   <testcase name="AlgoIDAndDescriptionProvided" status="notrun"/>
+   <testcase name="ExistingAlgoDescriptionProvided" status="notrun"/>
+   <testcase name="ExternalAlgoIDProvided" status="notrun"/>
+   <testcase name="InternalAlgoIDProvided" status="notrun"/>
+   <testcase name="MaximumAlgoIDProvided" status="notrun"/>
+   <testcase name="NewAlgoDescriptionProvided" status="notrun"/>
+   <testcase name="NoAlgoProvided" status="notrun"/>
+   <testcase name="NonAlgoCommodityExchange" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="CombinedAlgorithmID" skipped="5" tests="5" testsuite_failed="False">
+   <testcase name="CombinedAlgoOCO" status="notrun"/>
+   <testcase name="CombinedAlgoOCO_TLMT" status="notrun"/>
+   <testcase name="CombinedAlgoSSP" status="notrun"/>
+   <testcase name="CombinedAlgoTLMT" status="notrun"/>
+   <testcase name="CombinedAlgoTSTP" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="GWSideAlgoritrhmID" skipped="8" tests="8" testsuite_failed="False">
+   <testcase name="GWAlgoModifiedOCO" status="notrun"/>
+   <testcase name="GWAlgoOnNonAlgoRoute" status="notrun"/>
+   <testcase name="GWAlgoSSP" status="notrun"/>
+   <testcase name="GWAlgoTLMT" status="notrun"/>
+   <testcase name="GWAlgoTSTP" status="notrun"/>
+   <testcase name="GWAlgoTwoExchangeSSP" status="notrun"/>
+   <testcase name="GWAlgoTwoLegOCO" status="notrun"/>
+   <testcase name="GWAlgoTwoLegOPO" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Misc" skipped="5" tests="5" testsuite_failed="False">
+   <testcase name="RegulatoryAlgoInterRiskServerReplication" status="notrun"/>
+   <testcase name="RegulatoryAlgoMassCancellation" status="notrun"/>
+   <testcase name="RegulatoryAlgoOmnibusAccountHandling" status="notrun"/>
+   <testcase name="RegulatoryAlgoOrderSuspend" status="notrun"/>
+   <testcase name="RegulatoryAlgoScheduledOrderSuspend" status="notrun"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

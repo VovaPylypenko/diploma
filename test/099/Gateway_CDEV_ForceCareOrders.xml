@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="1" skipped="0" tests="43" testsuite_failed="True" time="201.022459" timestamp="2020-02-06T07:39:07.989426">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="16"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrders"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="1" name="ForceCareOrders" skipped="0" tests="43" testsuite_failed="True" time="201.022459" timestamp="2020-02-06T07:39:07.989426">
+  <testsuite failures="0" name="CareFills" skipped="0" tests="10" testsuite_failed="False" time="1.202746" timestamp="2020-02-06T07:39:31.584356">
+   <testcase name="CareFill_Fill" status="run" time="0.313022" timestamp="2020-02-06T07:39:31.756657"/>
+   <testcase name="CareOrderFullCareFill" status="run" time="0.156652" timestamp="2020-02-06T07:39:31.802687"/>
+   <testcase name="CareOrderPartialCareFill" status="run" time="0.22012" timestamp="2020-02-06T07:39:31.849559"/>
+   <testcase name="Fill_CareFill" status="run" time="0.355193" timestamp="2020-02-06T07:39:31.900630"/>
+   <testcase name="ForceCare_CareOrderCareFill" status="run" time="0.077838" timestamp="2020-02-06T07:39:31.974863"/>
+   <testcase name="NativeSpread_CareFill_byLegs" status="run" time="0.108164" timestamp="2020-02-06T07:39:32.022696"/>
+   <testcase name="ParkedOrderCareFill" status="run" time="0.078089" timestamp="2020-02-06T07:39:32.083987"/>
+   <testcase name="ParkedOrderCareFill_uattrs" status="run" time="0.124998" timestamp="2020-02-06T07:39:32.146449"/>
+   <testcase name="ParkedWasWorkingOrderCareFill" status="run" time="0.31252" timestamp="2020-02-06T07:39:32.177698"/>
+   <testcase name="WorkingOrderCareFill" status="run" time="0.232669" timestamp="2020-02-06T07:39:32.226286"/>
+  </testsuite>
+  <testsuite failures="0" name="CompoundActions" skipped="0" tests="2" testsuite_failed="False" time="0.453156" timestamp="2020-02-06T07:39:32.802771">
+   <testcase name="ForceCare_ModifyCompoundAction" status="run" time="0.203113" timestamp="2020-02-06T07:39:32.974615"/>
+   <testcase name="ForceCare_PlaceCompoundAction" status="run" time="0.060052" timestamp="2020-02-06T07:39:33.055185"/>
+  </testsuite>
+  <testsuite failures="1" name="ForceCareOptionChange" skipped="0" tests="1" testsuite_failed="True" time="148.926744" timestamp="2020-02-06T07:39:33.287305">
+   <testcase name="ForceCare_OptionChange" status="run" time="86.362307" timestamp="2020-02-06T07:40:35.789261">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrders\ForceCareOptionChange\ForceCare_OptionChange_tc.py&quot;, line 61, in &lt;module&gt;
+    OrderActionUtils.WaitForOrderParking(trader4, None, acctInfo7, o5ParkCopy, expectedOEAttrs=expectedOEAttrs)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 693, in WaitForOrderParking
+    acctInfo.id, order.chainClientOrderID, timeout, OrderStatus.Parked, TransactionStatus.Park)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 494, in WaitEvent
+    return chain.WaitEvent(clOrderID, timeout, status, transStatus, self.__unhandledEventsProcessor)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 270, in WaitEvent
+    return chain.WaitEvent(timeout, status, transStatus, unhandledEventsProcessor)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 158, in WaitEvent
+    raise Exception(msg)
+Exception: TIMEOUT: 10 seconds
+GW account ID: 335732
+Client order ID: aa33584e-1681-407c-b68b-a4b348e01e4e
+   Wait for order/transaction statuses: Parked/Park
+   Order/transaction statuses: InModify/InModify
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrders\ForceCareOptionChange\ForceCare_OptionChange_tc.py&quot;, line 61, in &lt;module&gt;
+    OrderActionUtils.WaitForOrderParking(trader4, None, acctInfo7, o5ParkCopy, expectedOEAttrs=expectedOEAttrs)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 693, in WaitForOrderParking
+    acctInfo.id, order.chainClientOrderID, timeout, OrderStatus.Parked, TransactionStatus.Park)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 494, in WaitEvent
+    return chain.WaitEvent(clOrderID, timeout, status, transStatus, self.__unhandledEventsProcessor)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 270, in WaitEvent
+    return chain.WaitEvent(timeout, status, transStatus, unhandledEventsProcessor)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 158, in WaitEvent
+    raise Exception(msg)
+Exception: TIMEOUT: 10 seconds
+GW account ID: 335732
+Client order ID: aa33584e-1681-407c-b68b-a4b348e01e4e
+   Wait for order/transaction statuses: Parked/Park
+   Order/transaction statuses: InModify/InModify
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="0" name="MassOrderActions" skipped="0" tests="3" testsuite_failed="False" time="5.000162" timestamp="2020-02-06T07:42:02.260945">
+   <testcase name="ForceCare_ActivateAllAction" status="run" time="0.140632" timestamp="2020-02-06T07:42:02.385930"/>
+   <testcase name="ForceCare_CancelAllAction" status="run" time="4.734553" timestamp="2020-02-06T07:42:02.417183"/>
+   <testcase name="ForceCare_ParkAllAction" status="run" time="4.703265" timestamp="2020-02-06T07:42:02.464074"/>
+  </testsuite>
+  <testsuite failures="0" name="MixedAccountSettings" skipped="0" tests="4" testsuite_failed="False" time="2.328168" timestamp="2020-02-06T07:42:07.308014">
+   <testcase name="AutoActivateAction_RegularAccount" status="run" time="2.125044" timestamp="2020-02-06T07:42:07.433014"/>
+   <testcase name="ParkAction_RegularAccount" status="run" time="0.327715" timestamp="2020-02-06T07:42:07.464675"/>
+   <testcase name="RegularAction_OmnibusAccount" status="run" time="0.234373" timestamp="2020-02-06T07:42:07.526736"/>
+   <testcase name="RegularAction_RegularAccount" status="run" time="0.421767" timestamp="2020-02-06T07:42:07.558145"/>
+  </testsuite>
+  <testsuite failures="0" name="OnBehalfOf" skipped="0" tests="8" testsuite_failed="False" time="2.642479" timestamp="2020-02-06T07:42:09.667443">
+   <testcase name="ActivateAllAction" status="run" time="0.312755" timestamp="2020-02-06T07:42:09.792446"/>
+   <testcase name="ActivateParkedOrderAction" status="run" time="0.35938" timestamp="2020-02-06T07:42:09.823691"/>
+   <testcase name="AutoActivateParkedOrderAction" status="run" time="2.187345" timestamp="2020-02-06T07:42:09.870807"/>
+   <testcase name="ForceCare_ActivateAllAction" status="run" time="0.234304" timestamp="2020-02-06T07:42:09.948767"/>
+   <testcase name="ForceCare_ActivateParkedOrderAction" status="run" time="0.187519" timestamp="2020-02-06T07:42:10.011189"/>
+   <testcase name="ForceCare_AutoActivateParkedOrderAction" status="run" time="2.109467" timestamp="2020-02-06T07:42:10.089310"/>
+   <testcase name="ForceCare_RegularOrderAction" status="run" time="0.125002" timestamp="2020-02-06T07:42:10.198708"/>
+   <testcase name="RegularOrderAction" status="run" time="0.171739" timestamp="2020-02-06T07:42:10.417591"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderActions" skipped="0" tests="15" testsuite_failed="False" time="15.911422" timestamp="2020-02-06T07:42:12.339394">
+   <testcase name="ActivateCareOrderAction" status="run" time="4.704461" timestamp="2020-02-06T07:42:12.526907"/>
+   <testcase name="AutoActivateParkedOrderAction" status="run" time="2.077954" timestamp="2020-02-06T07:42:12.574090"/>
+   <testcase name="ForceCare_ActivateCareOrderAction" status="run" time="0.171877" timestamp="2020-02-06T07:42:12.636293"/>
+   <testcase name="ForceCare_ActivateParkedOrderAction" status="run" time="0.218751" timestamp="2020-02-06T07:42:13.011295"/>
+   <testcase name="ForceCare_AutoActivateParkedOrderAction" status="run" time="2.218845" timestamp="2020-02-06T07:42:12.667533"/>
+   <testcase name="ForceCare_ModifyAction" status="run" time="4.70327" timestamp="2020-02-06T07:42:12.714429"/>
+   <testcase name="ForceCare_ModifyParkedAction" status="run" time="0.281268" timestamp="2020-02-06T07:42:12.776903"/>
+   <testcase name="ForceCare_ParkedOrder_uattrs" status="run" time="0.265417" timestamp="2020-02-06T07:42:12.824008"/>
+   <testcase name="ForceCare_ParkOrderAction_acttime_Manual" status="run" time="15.281684" timestamp="2020-02-06T07:42:12.902033"/>
+   <testcase name="ForceCare_ParkOrderAction_acttime" status="run" time="2.140825" timestamp="2020-02-06T07:42:12.980044"/>
+   <testcase name="ForceCare_ParkOrderAction" status="run" time="0.171875" timestamp="2020-02-06T07:42:13.058171"/>
+   <testcase name="ForceCare_ParkWorkingOrderAction" status="run" time="4.6251809999999995" timestamp="2020-02-06T07:42:13.120669"/>
+   <testcase name="ForceCare_RegularOrderAction_parktime" status="run" time="12.093505" timestamp="2020-02-06T07:42:13.246347"/>
+   <testcase name="ForceCare_RegularOrderAction" status="run" time="0.125433" timestamp="2020-02-06T07:42:13.308176"/>
+   <testcase name="ParkCareOrderAction" status="run" time="0.218751" timestamp="2020-02-06T07:42:13.355062"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

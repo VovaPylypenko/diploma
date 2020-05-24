@@ -1,0 +1,23 @@
+10:21:10.10  Test starded without threads
+08:21:10.804 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts/PythonModules' added.
+08:21:10.804 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:21:10.804 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:21:10.804 Python Module Path 'ScriptKit' added.
+08:21:11.289 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ' full execution.
+08:21:11.320 Suite '.'. [7 test cases, 0 sub-suites]
+08:21:23.180 Case 'RFQ01' execution.
+08:21:24.758 Case 'RFQ01' succeeded.
+08:21:24.805 Case 'RFQ02' execution.
+08:21:30.399 Case 'RFQ02' succeeded.
+08:21:30.446 Case 'RFQ03' execution.
+08:21:31.618 Case 'RFQ03' succeeded.
+08:21:31.649 Case 'RFQ04' execution.
+08:21:31.696 Case 'RFQ04' succeeded.
+08:21:31.758 Case 'RFQ05' execution.
+08:21:31.789 Case 'RFQ05' succeeded.
+08:21:31.836 Case 'RFQ06' execution.
+08:21:42.712 Case 'RFQ06' succeeded.
+08:21:42.759 Case 'RFQ_DSI_1300395543' execution.
+08:21:43.743 Case 'RFQ_DSI_1300395543' succeeded.
+08:21:44.227 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ' execution finished. It took 0:00:32.923148.
+08:21:44.227 Test cases results: 7 total, 7 succeeded, 0 failed, 0 skipped.

@@ -1,0 +1,71 @@
+ 5:55:26.38  Test starded without threads
+03:55:26.855 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+03:55:26.855 Python Module Path 'Scripts/Gateway/PythonModules' added.
+03:55:26.855 Python Module Path 'ScriptKit' added.
+03:55:27.528 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription' full execution.
+03:55:27.558 Suite '.'. [0 test cases, 3 sub-suites]
+03:55:41.012 Suite 'CollateralReportValues'. [3 test cases, 1 sub-suites]
+03:55:44.809 Case 'AllowableMarginCredit' execution.
+03:55:44.840 Case 'Loss' execution.
+03:55:44.871 Case 'Profit' execution.
+03:55:59.903 Case 'Loss' succeeded.
+03:56:10.013 Case 'Profit' succeeded.
+03:56:15.013 Case 'AllowableMarginCredit' succeeded.
+03:56:15.081 Suite 'CollateralReportValues\TotalMargin_ts.py'. [1 test cases, 0 sub-suites]
+03:56:15.155 Case 'TotalMargin' execution.
+03:56:56.514 Case 'TotalMargin' succeeded.
+03:56:56.811 Suite 'CollateralUpdates'. [5 test cases, 3 sub-suites]
+03:57:10.718 Case 'AccountAuthorizationRemoval' execution.
+03:57:10.749 Case 'CastOrderActions' execution.
+03:57:10.781 Case 'GroupAccountOrderActions' execution.
+03:57:10.843 Case 'OminbusAccountOrderActions' execution.
+03:57:10.874 Case 'OrderTransactions' execution.
+03:57:20.938 Case 'GroupAccountOrderActions' succeeded.
+03:57:20.953 Case 'OminbusAccountOrderActions' succeeded.
+03:57:31.062 Case 'OrderTransactions' succeeded.
+03:57:32.062 Case 'AccountAuthorizationRemoval' succeeded.
+03:57:56.424 Case 'CastOrderActions' succeeded.
+03:57:56.486 Suite 'CollateralUpdates\CastAccountSettings_ts.py'. [1 test cases, 0 sub-suites]
+03:57:56.549 Case 'CastAccountSettings' execution.
+03:59:20.880 Case 'CastAccountSettings' succeeded.
+03:59:21.036 Suite 'CollateralUpdates\CastPositionActions_ts.py'. [1 test cases, 0 sub-suites]
+03:59:21.098 Case 'CastPositionActions' execution.
+04:00:14.539 Case 'CastPositionActions' succeeded.
+04:00:14.695 Suite 'CollateralUpdates\CastTraderSettings_ts.py'. [1 test cases, 0 sub-suites]
+04:00:14.773 Case 'CastTraderSettings' execution.
+04:00:27.633 Case 'CastTraderSettings' succeeded.
+04:00:27.977 Suite 'Subscription'. [16 test cases, 0 sub-suites]
+04:00:28.039 Case 'Multi_Snapshot_NoInqId' execution.
+04:00:28.086 Case 'Multi_Snapshot' execution.
+04:00:28.102 Case 'Multi_Subscribe_NoInqId' execution.
+04:00:28.211 Case 'Multi_UnsubscribeOnSessionClose' execution.
+04:00:28.243 Case 'Multi_Unsubscribe_NoInqId' execution.
+04:00:28.289 Case 'Multi_Unsubscribe' execution.
+04:00:28.336 Case 'SubsTypes_InvalidSubscribe' execution.
+04:00:28.383 Case 'SubsTypes_InvalidUnsubscribe' execution.
+04:00:28.414 Case 'SubsTypes_Resubscribe' execution.
+04:00:28.446 Case 'SubsTypes_Snapshot_NoInqId' execution.
+04:00:28.492 Case 'SubsTypes_Snapshot' execution.
+04:00:28.526 Case 'SubsTypes_Subscribe_NoInqId' execution.
+04:00:28.555 Case 'SubsTypes_UnsubscribeByAccountid' execution.
+04:00:28.586 Case 'SubsTypes_UnsubscribeByACCTID' execution.
+04:00:28.633 Case 'SubsTypes_UnsubscribeOnSessionClose' execution.
+04:00:28.680 Case 'SubsTypes_Unsubscribe_NoInqId' execution.
+04:00:31.592 Case 'SubsTypes_InvalidSubscribe' succeeded.
+04:00:35.727 Case 'Multi_Snapshot_NoInqId' succeeded.
+04:01:12.103 Case 'SubsTypes_Snapshot_NoInqId' succeeded.
+04:01:12.103 Case 'SubsTypes_Snapshot' succeeded.
+04:01:12.197 Case 'Multi_Snapshot' succeeded.
+04:01:22.604 Case 'SubsTypes_UnsubscribeByAccountid' succeeded.
+04:01:22.619 Case 'SubsTypes_Subscribe_NoInqId' succeeded.
+04:01:22.619 Case 'SubsTypes_Unsubscribe_NoInqId' succeeded.
+04:01:22.635 Case 'SubsTypes_UnsubscribeByACCTID' succeeded.
+04:01:24.369 Case 'SubsTypes_UnsubscribeOnSessionClose' succeeded.
+04:01:32.416 Case 'SubsTypes_InvalidUnsubscribe' succeeded.
+04:01:43.901 Case 'Multi_UnsubscribeOnSessionClose' succeeded.
+04:01:52.011 Case 'Multi_Unsubscribe' succeeded.
+04:01:52.042 Case 'Multi_Subscribe_NoInqId' succeeded.
+04:01:52.073 Case 'Multi_Unsubscribe_NoInqId' succeeded.
+04:02:02.433 Case 'SubsTypes_Resubscribe' succeeded.
+04:02:03.011 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription' execution finished. It took 0:06:35.436530.
+04:02:03.011 Test cases results: 28 total, 28 succeeded, 0 failed, 0 skipped.

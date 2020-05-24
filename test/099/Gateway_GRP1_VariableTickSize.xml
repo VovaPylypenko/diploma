@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="15" testsuite_failed="False" time="691.462506" timestamp="2020-02-06T09:06:54.006441">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="IMSSimulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/VariableTickSize"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="VariableTickSize" skipped="0" tests="15" testsuite_failed="False" time="691.462506" timestamp="2020-02-06T09:06:54.006441">
+  <testcase name="TC01_TradePriceLimit_PriceBased" status="run" time="1.328176" timestamp="2020-02-06T09:17:43.686158"/>
+  <testcase name="TC02_TradePriceLimit_TimeBased" status="run" time="1.109381" timestamp="2020-02-06T09:17:45.061241"/>
+  <testcase name="TC03_SynMktStp_PriceBased" status="run" time="10.312861999999999" timestamp="2020-02-06T09:17:46.217525"/>
+  <testcase name="TC04_SynMktStp_TimeBased" status="run" time="12.422879" timestamp="2020-02-06T09:17:56.577264"/>
+  <testcase name="TC05_SpreadFill" status="run" time="0.156259" timestamp="2020-02-06T09:18:09.046440"/>
+  <testcase name="TC06_TheoPrice_DisableAskBid_NOV_PriceBased" status="run" time="0.875014" timestamp="2020-02-06T09:18:09.249593"/>
+  <testcase name="TC07_TheoPrice_NOV_PriceBased" status="run" time="1.250085" timestamp="2020-02-06T09:18:10.187114"/>
+  <testcase name="TC08_TheoPrice_DisableAskBid_OTE_PriceBased" status="run" time="1.2660879999999999" timestamp="2020-02-06T09:18:11.515296"/>
+  <testcase name="TC09_TheoPrice_OTE_PriceBased" status="run" time="1.031272" timestamp="2020-02-06T09:18:12.843473"/>
+  <testcase name="TC10_TheoPrice_DisableAskBid_NOV_TimeBased" status="run" time="1.171851" timestamp="2020-02-06T09:18:13.937380"/>
+  <testcase name="TC11_TheoPrice_NOV_TimeBased" status="run" time="1.125034" timestamp="2020-02-06T09:18:15.171658"/>
+  <testcase name="TC12_TheoPrice_DisableAskBid_OTE_TimeBased" status="run" time="1.093788" timestamp="2020-02-06T09:18:16.343594"/>
+  <testcase name="TC13_TheoPrice_OTE_TimeBased" status="run" time="1.188191" timestamp="2020-02-06T09:18:17.499884"/>
+  <testcase name="TC14_TheoPrice_DisableAskBid_NOV_TimeBased" status="run" time="1.078141" timestamp="2020-02-06T09:18:18.734307"/>
+  <testcase name="TC15_TheoPrice_NOV_TimeBased" status="run" time="1.1562890000000001" timestamp="2020-02-06T09:18:19.859340"/>
+ </testsuite>
+</testsuites>

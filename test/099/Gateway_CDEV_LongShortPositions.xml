@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="215" testsuite_failed="False" time="631.45948" timestamp="2020-02-06T07:03:31.775267">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LongShortPositions/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="18"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LongShortPositions"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="LongShortPositions" skipped="0" tests="215" testsuite_failed="False" time="631.45948" timestamp="2020-02-06T07:03:31.775267">
+  <testsuite failures="0" name="DailyLossLimit" skipped="0" tests="26" testsuite_failed="False" time="7.607327" timestamp="2020-02-06T07:03:40.482452">
+   <testsuite failures="0" name="ExplicitTracking" skipped="0" tests="18" testsuite_failed="False" time="4.046855" timestamp="2020-02-06T07:03:41.666480">
+    <testcase name="LongPosDec" status="run" time="2.437558" timestamp="2020-02-06T07:03:42.041294"/>
+    <testcase name="LongPosInc" status="run" time="0.093744" timestamp="2020-02-06T07:03:42.103786"/>
+    <testcase name="LongPosLiq_PrevLongPosDec" status="run" time="0.203734" timestamp="2020-02-06T07:03:42.213468"/>
+    <testcase name="LongPosLiq" status="run" time="1.390679" timestamp="2020-02-06T07:03:43.900702"/>
+    <testcase name="LongPosRev" status="run" time="0.234395" timestamp="2020-02-06T07:03:42.338169"/>
+    <testcase name="PrevLongPosDec" status="run" time="0.078072" timestamp="2020-02-06T07:03:42.431974"/>
+    <testcase name="PrevLongPosLiq_LongPosDec" status="run" time="2.078168" timestamp="2020-02-06T07:03:42.525689"/>
+    <testcase name="PrevLongPosLiq" status="run" time="0.062493" timestamp="2020-02-06T07:03:42.603802"/>
+    <testcase name="PrevLongPosRev" status="run" time="0.265623" timestamp="2020-02-06T07:03:42.713174"/>
+    <testcase name="PrevShortPosDec" status="run" time="0.453109" timestamp="2020-02-06T07:03:42.806949"/>
+    <testcase name="PrevShortPosLiq_ShortPosDec" status="run" time="1.765689" timestamp="2020-02-06T07:03:42.900670"/>
+    <testcase name="PrevShortPosLiq" status="run" time="0.671902" timestamp="2020-02-06T07:03:43.150675"/>
+    <testcase name="PrevShortPosRev" status="run" time="1.250047" timestamp="2020-02-06T07:03:43.260058"/>
+    <testcase name="ShortPosDec" status="run" time="0.828151" timestamp="2020-02-06T07:03:43.385065"/>
+    <testcase name="ShortPosInc" status="run" time="0.093756" timestamp="2020-02-06T07:03:43.463188"/>
+    <testcase name="ShortPosLiq_PrevShortPosDec" status="run" time="1.046918" timestamp="2020-02-06T07:03:43.541317"/>
+    <testcase name="ShortPosLiq" status="run" time="0.843783" timestamp="2020-02-06T07:03:43.744452"/>
+    <testcase name="ShortPosRev" status="run" time="0.671902" timestamp="2020-02-06T07:03:44.010082"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTracking" skipped="0" tests="8" testsuite_failed="False" time="2.130611" timestamp="2020-02-06T07:03:45.791415">
+    <testcase name="LongPosDec" status="run" time="0.093756" timestamp="2020-02-06T07:03:46.072678"/>
+    <testcase name="LongPosInc" status="run" time="0.062503" timestamp="2020-02-06T07:03:46.182039"/>
+    <testcase name="LongPosLiq" status="run" time="0.265827" timestamp="2020-02-06T07:03:46.260207"/>
+    <testcase name="LongPosRev" status="run" time="1.327313" timestamp="2020-02-06T07:03:46.354781"/>
+    <testcase name="ShortPosDec" status="run" time="1.312501" timestamp="2020-02-06T07:03:46.463345"/>
+    <testcase name="ShortPosInc" status="run" time="0.125006" timestamp="2020-02-06T07:03:46.572693"/>
+    <testcase name="ShortPosLiq" status="run" time="0.250404" timestamp="2020-02-06T07:03:46.728946"/>
+    <testcase name="ShortPosRev" status="run" time="0.296889" timestamp="2020-02-06T07:03:46.838311"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="DeltaDailyLossLimit" skipped="0" tests="52" testsuite_failed="False" time="250.774711" timestamp="2020-02-06T07:03:48.166504">
+   <testsuite failures="0" name="ExplicitTrackingFut" skipped="0" tests="18" testsuite_failed="False" time="62.6273" timestamp="2020-02-06T07:03:49.307150">
+    <testcase name="LongPosDec" status="run" time="1.703193" timestamp="2020-02-06T07:03:49.588410"/>
+    <testcase name="LongPosInc" status="run" time="0.234395" timestamp="2020-02-06T07:03:49.650910"/>
+    <testcase name="LongPosLiq_PrevLongPosDec" status="run" time="0.093759" timestamp="2020-02-06T07:03:53.307315"/>
+    <testcase name="LongPosLiq" status="run" time="1.6250520000000002" timestamp="2020-02-06T07:03:49.729050"/>
+    <testcase name="LongPosRev" status="run" time="0.187468" timestamp="2020-02-06T07:03:49.807209"/>
+    <testcase name="PrevLongPosDec" status="run" time="0.406263" timestamp="2020-02-06T07:03:49.900926"/>
+    <testcase name="PrevLongPosLiq_LongPosDec" status="run" time="0.421779" timestamp="2020-02-06T07:03:50.010433"/>
+    <testcase name="PrevLongPosLiq" status="run" time="0.234378" timestamp="2020-02-06T07:03:50.213439"/>
+    <testcase name="PrevLongPosRev" status="run" time="0.68612" timestamp="2020-02-06T07:03:50.339903"/>
+    <testcase name="PrevShortPosDec" status="run" time="0.906215" timestamp="2020-02-06T07:03:50.463511"/>
+    <testcase name="PrevShortPosLiq_ShortPosDec" status="run" time="1.750082" timestamp="2020-02-06T07:03:50.588450"/>
+    <testcase name="PrevShortPosLiq" status="run" time="0.671927" timestamp="2020-02-06T07:03:50.775957"/>
+    <testcase name="PrevShortPosRev" status="run" time="0.656272" timestamp="2020-02-06T07:03:50.869713"/>
+    <testcase name="ShortPosDec" status="run" time="0.48425" timestamp="2020-02-06T07:03:51.072988"/>
+    <testcase name="ShortPosInc" status="run" time="60.517848" timestamp="2020-02-06T07:03:51.213472"/>
+    <testcase name="ShortPosLiq_PrevShortPosDec" status="run" time="0.531268" timestamp="2020-02-06T07:03:51.463487"/>
+    <testcase name="ShortPosLiq" status="run" time="0.484003" timestamp="2020-02-06T07:03:51.713889"/>
+    <testcase name="ShortPosRev" status="run" time="0.27749" timestamp="2020-02-06T07:03:51.920402"/>
+   </testsuite>
+   <testsuite failures="0" name="ExplicitTrackingOpt" skipped="0" tests="18" testsuite_failed="False" time="62.970401" timestamp="2020-02-06T07:04:52.013243">
+    <testcase name="LongPosDec" status="run" time="2.031015" timestamp="2020-02-06T07:04:52.247251"/>
+    <testcase name="LongPosInc" status="run" time="0.364192" timestamp="2020-02-06T07:04:52.340715"/>
+    <testcase name="LongPosLiq_PrevLongPosDec" status="run" time="0.406236" timestamp="2020-02-06T07:04:52.450115"/>
+    <testcase name="LongPosLiq" status="run" time="1.5470709999999999" timestamp="2020-02-06T07:04:52.590735"/>
+    <testcase name="LongPosRev" status="run" time="1.0937540000000001" timestamp="2020-02-06T07:04:55.981488"/>
+    <testcase name="PrevLongPosDec" status="run" time="0.406248" timestamp="2020-02-06T07:04:52.653225"/>
+    <testcase name="PrevLongPosLiq_LongPosDec" status="run" time="0.453512" timestamp="2020-02-06T07:04:52.762587"/>
+    <testcase name="PrevLongPosLiq" status="run" time="0.328332" timestamp="2020-02-06T07:04:52.887767"/>
+    <testcase name="PrevLongPosRev" status="run" time="0.281263" timestamp="2020-02-06T07:04:53.012594"/>
+    <testcase name="PrevShortPosDec" status="run" time="2.000079" timestamp="2020-02-06T07:04:53.121970"/>
+    <testcase name="PrevShortPosLiq_ShortPosDec" status="run" time="2.202937" timestamp="2020-02-06T07:04:53.278499"/>
+    <testcase name="PrevShortPosLiq" status="run" time="2.078381" timestamp="2020-02-06T07:04:53.387911"/>
+    <testcase name="PrevShortPosRev" status="run" time="1.7969439999999999" timestamp="2020-02-06T07:04:53.684492"/>
+    <testcase name="ShortPosDec" status="run" time="1.5781809999999998" timestamp="2020-02-06T07:04:55.497061"/>
+    <testcase name="ShortPosInc" status="run" time="60.58038" timestamp="2020-02-06T07:04:54.200137"/>
+    <testcase name="ShortPosLiq_PrevShortPosDec" status="run" time="1.7970350000000002" timestamp="2020-02-06T07:04:54.418895"/>
+    <testcase name="ShortPosLiq" status="run" time="1.921943" timestamp="2020-02-06T07:04:55.153299"/>
+    <testcase name="ShortPosRev" status="run" time="1.718811" timestamp="2020-02-06T07:04:55.372058"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTrackingFut" skipped="0" tests="8" testsuite_failed="False" time="61.705358" timestamp="2020-02-06T07:05:55.061761">
+    <testcase name="LongPosDec" status="run" time="0.234378" timestamp="2020-02-06T07:05:55.327385"/>
+    <testcase name="LongPosInc" status="run" time="0.281251" timestamp="2020-02-06T07:05:55.436750"/>
+    <testcase name="LongPosLiq" status="run" time="0.374821" timestamp="2020-02-06T07:05:55.577570"/>
+    <testcase name="LongPosRev" status="run" time="1.2183329999999999" timestamp="2020-02-06T07:05:55.734081"/>
+    <testcase name="ShortPosDec" status="run" time="1.281285" timestamp="2020-02-06T07:05:55.858635"/>
+    <testcase name="ShortPosInc" status="run" time="60.548963" timestamp="2020-02-06T07:05:56.015063"/>
+    <testcase name="ShortPosLiq" status="run" time="0.344754" timestamp="2020-02-06T07:05:56.093170"/>
+    <testcase name="ShortPosRev" status="run" time="0.390402" timestamp="2020-02-06T07:05:56.218248"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTrackingOpt" skipped="0" tests="8" testsuite_failed="False" time="61.939725" timestamp="2020-02-06T07:06:56.829606">
+    <testcase name="LongPosDec" status="run" time="0.203367" timestamp="2020-02-06T07:06:57.173366"/>
+    <testcase name="LongPosInc" status="run" time="0.25321" timestamp="2020-02-06T07:06:57.282838"/>
+    <testcase name="LongPosLiq" status="run" time="1.687561" timestamp="2020-02-06T07:06:57.438995"/>
+    <testcase name="LongPosRev" status="run" time="1.390673" timestamp="2020-02-06T07:06:57.563995"/>
+    <testcase name="ShortPosDec" status="run" time="1.437348" timestamp="2020-02-06T07:06:57.626691"/>
+    <testcase name="ShortPosInc" status="run" time="60.79909" timestamp="2020-02-06T07:06:57.767124"/>
+    <testcase name="ShortPosLiq" status="run" time="0.671895" timestamp="2020-02-06T07:06:57.876502"/>
+    <testcase name="ShortPosRev" status="run" time="0.921836" timestamp="2020-02-06T07:06:58.001577"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="GroupAccounts" skipped="0" tests="6" testsuite_failed="False" time="38.78233" timestamp="2020-02-06T07:07:59.035194">
+   <testsuite failures="0" name="AccountMargin" skipped="0" tests="3" testsuite_failed="False" time="30.944045" timestamp="2020-02-06T07:08:04.644547">
+    <testcase name="BorrowFromMaster" status="run" time="30.183951" timestamp="2020-02-06T07:08:04.930355"/>
+    <testcase name="CoMargining" status="run" time="30.219759" timestamp="2020-02-06T07:08:05.035177"/>
+    <testcase name="JoinPurchasingPower" status="run" time="30.172866" timestamp="2020-02-06T07:08:05.175817"/>
+   </testsuite>
+   <testsuite failures="0" name="ContractPositionLimit" skipped="0" tests="3" testsuite_failed="False" time="1.948543" timestamp="2020-02-06T07:08:35.665839">
+    <testcase name="BorrowFromMaster" status="run" time="1.357284" timestamp="2020-02-06T07:08:35.960189"/>
+    <testcase name="CoMargining" status="run" time="1.31251" timestamp="2020-02-06T07:08:36.098723"/>
+    <testcase name="JoinPurchasingPower" status="run" time="1.203041" timestamp="2020-02-06T07:08:36.192744"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="LiqAll" skipped="0" tests="25" testsuite_failed="False" time="32.719794" timestamp="2020-02-06T07:08:37.911257">
+   <testsuite failures="0" name="Basic" skipped="0" tests="8" testsuite_failed="False" time="11.844132" timestamp="2020-02-06T07:08:38.114384">
+    <testcase name="TC11_Symbol" status="run" time="8.844025" timestamp="2020-02-06T07:08:39.395686"/>
+    <testcase name="TC12_SideB" status="run" time="9.016221" timestamp="2020-02-06T07:08:39.489717"/>
+    <testcase name="TC13_SideS" status="run" time="8.844201" timestamp="2020-02-06T07:08:39.598799"/>
+    <testcase name="TC14_CurrentdayY" status="run" time="7.875729" timestamp="2020-02-06T07:08:39.833189"/>
+    <testcase name="TC15_CurrentdayN" status="run" time="7.8127569999999995" timestamp="2020-02-06T07:08:39.989431"/>
+    <testcase name="TC16_NoFilters" status="run" time="9.609607" timestamp="2020-02-06T07:08:40.145784"/>
+    <testcase name="TC17_GoFlat" status="run" time="9.04461" timestamp="2020-02-06T07:08:40.304546"/>
+    <testcase name="TC18_NoPositions" status="run" time="1.016071" timestamp="2020-02-06T07:08:40.395701"/>
+   </testsuite>
+   <testsuite failures="0" name="Complex" skipped="0" tests="16" testsuite_failed="False" time="14.859845" timestamp="2020-02-06T07:08:50.052276">
+    <testcase name="TC311_LiquidationOrderDurations" status="run" time="4.921992" timestamp="2020-02-06T07:08:59.599500"/>
+    <testcase name="TC312_RDF_Relative" status="run" time="4.109748" timestamp="2020-02-06T07:08:59.724451"/>
+    <testcase name="TC313_RDF_Specific" status="run" time="2.578195" timestamp="2020-02-06T07:08:59.865078"/>
+    <testcase name="TC314_TASandTAM" status="run" time="2.406326" timestamp="2020-02-06T07:08:59.974502"/>
+    <testcase name="TC315_TAMDifferentTradeDates" status="run" time="0.92121" timestamp="2020-02-06T07:09:00.115999"/>
+    <testcase name="TC316_PreferredContract" status="run" time="2.656323" timestamp="2020-02-06T07:09:00.240094"/>
+    <testcase name="TC317_Concurrent" status="run" time="2.250069" timestamp="2020-02-06T07:09:00.490106"/>
+    <testcase name="TC318_Concurrent" status="run" time="2.218192" timestamp="2020-02-06T07:09:00.678225"/>
+    <testcase name="TC31_ActiveAt" status="run" time="1.7497479999999999" timestamp="2020-02-06T07:09:00.865406"/>
+    <testcase name="TC32_ActionsInParallel" status="run" time="2.125185" timestamp="2020-02-06T07:09:01.099486"/>
+    <testcase name="TC33_SOM" status="run" time="1.718826" timestamp="2020-02-06T07:09:01.302613"/>
+    <testcase name="TC35_RouteUnavailable" status="run" time="1.514901" timestamp="2020-02-06T07:09:01.506538"/>
+    <testcase name="TC36_RouteUnsupported" status="run" time="1.375064" timestamp="2020-02-06T07:09:01.662000"/>
+    <testcase name="TC37_Omnibus_Reject" status="run" time="0.700359" timestamp="2020-02-06T07:09:01.867921"/>
+    <testcase name="TC38_Omnibus_CancelAll" status="run" time="0.76646" timestamp="2020-02-06T07:09:02.193274"/>
+    <testcase name="TC39_Omnibus_LiquidateAll" status="run" time="2.390727" timestamp="2020-02-06T07:09:02.333897"/>
+   </testsuite>
+   <testsuite failures="0" name="Spreads" skipped="0" tests="1" testsuite_failed="False" time="5.328724" timestamp="2020-02-06T07:09:05.005882">
+    <testcase name="TC21_Symbol" status="run" time="3.8595040000000003" timestamp="2020-02-06T07:09:06.255916"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Margin" skipped="0" tests="26" testsuite_failed="False" time="67.87698" timestamp="2020-02-06T07:09:10.771893">
+   <testsuite failures="0" name="ExplicitTracking" skipped="0" tests="18" testsuite_failed="False" time="36.204292" timestamp="2020-02-06T07:09:12.068607">
+    <testcase name="LongPosDec" status="run" time="5.093908" timestamp="2020-02-06T07:09:12.381126"/>
+    <testcase name="LongPosInc" status="run" time="5.093703" timestamp="2020-02-06T07:09:12.506386"/>
+    <testcase name="LongPosLiq_PrevLongPosDec" status="run" time="5.077876" timestamp="2020-02-06T07:09:12.615914"/>
+    <testcase name="LongPosLiq" status="run" time="5.73433" timestamp="2020-02-06T07:09:12.740714"/>
+    <testcase name="LongPosRev" status="run" time="5.093791" timestamp="2020-02-06T07:09:12.834377"/>
+    <testcase name="PrevLongPosDec" status="run" time="5.093901" timestamp="2020-02-06T07:09:12.974904"/>
+    <testcase name="PrevLongPosLiq_LongPosDec" status="run" time="5.109546" timestamp="2020-02-06T07:09:13.084250"/>
+    <testcase name="PrevLongPosLiq" status="run" time="5.703299" timestamp="2020-02-06T07:09:13.224880"/>
+    <testcase name="PrevLongPosRev" status="run" time="5.062687" timestamp="2020-02-06T07:09:13.349878"/>
+    <testcase name="PrevShortPosDec" status="run" time="5.093856" timestamp="2020-02-06T07:09:13.490617"/>
+    <testcase name="PrevShortPosLiq_ShortPosDec" status="run" time="5.109584" timestamp="2020-02-06T07:09:13.615514"/>
+    <testcase name="PrevShortPosLiq" status="run" time="5.109541" timestamp="2020-02-06T07:09:13.756137"/>
+    <testcase name="PrevShortPosRev" status="run" time="5.156425" timestamp="2020-02-06T07:09:13.896773"/>
+    <testcase name="ShortPosDec" status="run" time="5.343927" timestamp="2020-02-06T07:09:14.271784"/>
+    <testcase name="ShortPosInc" status="run" time="34.047649" timestamp="2020-02-06T07:09:14.006485"/>
+    <testcase name="ShortPosLiq_PrevShortPosDec" status="run" time="5.4376999999999995" timestamp="2020-02-06T07:09:14.115526"/>
+    <testcase name="ShortPosLiq" status="run" time="5.109594" timestamp="2020-02-06T07:09:14.599915"/>
+    <testcase name="ShortPosRev" status="run" time="5.078315" timestamp="2020-02-06T07:09:14.724919"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTracking" skipped="0" tests="8" testsuite_failed="False" time="29.823363" timestamp="2020-02-06T07:09:48.466124">
+    <testcase name="LongPosDec" status="run" time="5.078306" timestamp="2020-02-06T07:09:48.757263"/>
+    <testcase name="LongPosInc" status="run" time="5.109599" timestamp="2020-02-06T07:09:48.866664"/>
+    <testcase name="LongPosLiq" status="run" time="5.843846" timestamp="2020-02-06T07:09:48.976147"/>
+    <testcase name="LongPosRev" status="run" time="5.078256" timestamp="2020-02-06T07:09:49.069825"/>
+    <testcase name="ShortPosDec" status="run" time="5.062672" timestamp="2020-02-06T07:09:49.163527"/>
+    <testcase name="ShortPosInc" status="run" time="28.797813" timestamp="2020-02-06T07:09:49.272913"/>
+    <testcase name="ShortPosLiq" status="run" time="5.187655" timestamp="2020-02-06T07:09:49.397934"/>
+    <testcase name="ShortPosRev" status="run" time="5.061401" timestamp="2020-02-06T07:09:49.492939"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OpenClose_FillEffect" skipped="0" tests="17" testsuite_failed="False" time="20.218974" timestamp="2020-02-06T07:10:18.743043">
+   <testsuite failures="0" name="NativeStrategyOrder" skipped="0" tests="8" testsuite_failed="False" time="16.2818" timestamp="2020-02-06T07:10:19.883262">
+    <testcase name="AcceptableOpenClose_Explicit" status="run" time="2.108783" timestamp="2020-02-06T07:10:20.212082"/>
+    <testcase name="AcceptableOpenClose_Implied" status="run" time="1.453161" timestamp="2020-02-06T07:10:20.383288"/>
+    <testcase name="EmptyFillEffect" status="run" time="0.906267" timestamp="2020-02-06T07:10:20.508295"/>
+    <testcase name="FillEffect_Explicit" status="run" time="1.328162" timestamp="2020-02-06T07:10:20.648915"/>
+    <testcase name="FillEffect_Implied" status="run" time="0.922418" timestamp="2020-02-06T07:10:21.164549"/>
+    <testcase name="LegMargin" status="run" time="15.187991" timestamp="2020-02-06T07:10:20.742679"/>
+    <testcase name="UnacceptableOpenClose_Explicit" status="run" time="0.420137" timestamp="2020-02-06T07:10:20.869910"/>
+    <testcase name="UnacceptableOpenClose_Implied" status="run" time="0.484392" timestamp="2020-02-06T07:10:21.039558"/>
+   </testsuite>
+   <testsuite failures="0" name="RegularOrder" skipped="0" tests="9" testsuite_failed="False" time="2.46846" timestamp="2020-02-06T07:10:36.290428">
+    <testcase name="AcceptableOpenClose" status="run" time="1.465014" timestamp="2020-02-06T07:10:36.606353"/>
+    <testcase name="EmptyFillEffect" status="run" time="0.576409" timestamp="2020-02-06T07:10:36.729290"/>
+    <testcase name="FillEffect_C_Explicit" status="run" time="0.589726" timestamp="2020-02-06T07:10:36.840989"/>
+    <testcase name="FillEffect_C_Implied" status="run" time="0.498716" timestamp="2020-02-06T07:10:36.947723"/>
+    <testcase name="FillEffect_O_Explicit" status="run" time="0.654522" timestamp="2020-02-06T07:10:37.073123"/>
+    <testcase name="FillEffect_O_Implied" status="run" time="0.657136" timestamp="2020-02-06T07:10:37.211941"/>
+    <testcase name="FillEffect_P_Explicit" status="run" time="0.516548" timestamp="2020-02-06T07:10:37.336946"/>
+    <testcase name="OpenClose_Net" status="run" time="0.609386" timestamp="2020-02-06T07:10:37.446439"/>
+    <testcase name="UnacceptableOpenClose" status="run" time="0.312524" timestamp="2020-02-06T07:10:37.618206"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OP_And_NOV" skipped="0" tests="18" testsuite_failed="False" time="26.31335" timestamp="2020-02-06T07:10:39.040143">
+   <testsuite failures="0" name="ExplicitTracking" skipped="0" tests="13" testsuite_failed="False" time="13.047292" timestamp="2020-02-06T07:10:40.180820">
+    <testcase name="LongPosLiq_PrevLongPosDec" status="run" time="5.625154" timestamp="2020-02-06T07:10:40.555849"/>
+    <testcase name="LongPosRev" status="run" time="5.671346" timestamp="2020-02-06T07:10:40.681537"/>
+    <testcase name="PosDec" status="run" time="10.796423" timestamp="2020-02-06T07:10:40.822251"/>
+    <testcase name="PosInc" status="run" time="10.57773" timestamp="2020-02-06T07:10:40.931567"/>
+    <testcase name="PosLiq" status="run" time="10.890997" timestamp="2020-02-06T07:10:41.055824"/>
+    <testcase name="PrevLongPosLiq_LongPosDec" status="run" time="5.218948" timestamp="2020-02-06T07:10:41.196446"/>
+    <testcase name="PrevLongPosRev" status="run" time="5.437701" timestamp="2020-02-06T07:10:41.305828"/>
+    <testcase name="PrevPosDec" status="run" time="10.953489" timestamp="2020-02-06T07:10:41.508961"/>
+    <testcase name="PrevPosLiq" status="run" time="11.328528" timestamp="2020-02-06T07:10:41.665216"/>
+    <testcase name="PrevShortPosLiq_ShortPosDec" status="run" time="6.14044" timestamp="2020-02-06T07:10:41.790613"/>
+    <testcase name="PrevShortPosRev" status="run" time="5.140738" timestamp="2020-02-06T07:10:42.618427"/>
+    <testcase name="ShortPosLiq_PrevShortPosDec" status="run" time="6.015827" timestamp="2020-02-06T07:10:42.055849"/>
+    <testcase name="ShortPosRev" status="run" time="6.250249" timestamp="2020-02-06T07:10:42.399613"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTracking" skipped="0" tests="5" testsuite_failed="False" time="11.734943" timestamp="2020-02-06T07:10:53.337485">
+    <testcase name="LongPosRev" status="run" time="5.734634" timestamp="2020-02-06T07:10:53.712618"/>
+    <testcase name="PosDec" status="run" time="10.734729" timestamp="2020-02-06T07:10:53.837497"/>
+    <testcase name="PosInc" status="run" time="10.531599" timestamp="2020-02-06T07:10:53.978131"/>
+    <testcase name="PosLiq" status="run" time="10.766015" timestamp="2020-02-06T07:10:54.103122"/>
+    <testcase name="ShortPosRev" status="run" time="5.078286" timestamp="2020-02-06T07:10:54.228118"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="PL_And_OTE" skipped="0" tests="14" testsuite_failed="False" time="46.925151" timestamp="2020-02-06T07:11:05.462880">
+   <testsuite failures="0" name="ExplicitTracking" skipped="0" tests="9" testsuite_failed="False" time="23.0015" timestamp="2020-02-06T07:11:06.634796">
+    <testcase name="LongPosRev" status="run" time="11.188358" timestamp="2020-02-06T07:11:06.931667"/>
+    <testcase name="PosDec" status="run" time="21.469425" timestamp="2020-02-06T07:11:07.087940"/>
+    <testcase name="PosInc" status="run" time="21.000659" timestamp="2020-02-06T07:11:07.181677"/>
+    <testcase name="PosLiq" status="run" time="21.302226" timestamp="2020-02-06T07:11:07.322309"/>
+    <testcase name="PrevLongPosRev" status="run" time="10.312875" timestamp="2020-02-06T07:11:07.494170"/>
+    <testcase name="PrevPosDec" status="run" time="21.469334" timestamp="2020-02-06T07:11:07.728687"/>
+    <testcase name="PrevPosLiq" status="run" time="21.485094" timestamp="2020-02-06T07:11:07.900432"/>
+    <testcase name="PrevShortPosRev" status="run" time="10.390988" timestamp="2020-02-06T07:11:08.056688"/>
+    <testcase name="ShortPosRev" status="run" time="11.203469" timestamp="2020-02-06T07:11:08.212965"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTracking" skipped="0" tests="5" testsuite_failed="False" time="22.376104" timestamp="2020-02-06T07:11:29.744907">
+    <testcase name="LongPosRev" status="run" time="11.422138" timestamp="2020-02-06T07:11:30.057503"/>
+    <testcase name="PosDec" status="run" time="21.328803" timestamp="2020-02-06T07:11:30.151174"/>
+    <testcase name="PosInc" status="run" time="21.156946" timestamp="2020-02-06T07:11:30.260526"/>
+    <testcase name="PosLiq" status="run" time="21.50067" timestamp="2020-02-06T07:11:30.416820"/>
+    <testcase name="ShortPosRev" status="run" time="10.078462" timestamp="2020-02-06T07:11:30.526158"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="PositionLimit" skipped="0" tests="24" testsuite_failed="False" time="44.236985" timestamp="2020-02-06T07:11:52.495615">
+   <testsuite failures="0" name="Commodity" skipped="0" tests="8" testsuite_failed="False" time="14.203564" timestamp="2020-02-06T07:11:58.073943">
+    <testcase name="ClosePos_CloseOrder" status="run" time="11.514912" timestamp="2020-02-06T07:11:58.371888"/>
+    <testcase name="ClosePos_OpenOrder" status="run" time="11.57851" timestamp="2020-02-06T07:11:58.589567"/>
+    <testcase name="ClosePrevPos_OpenOrder" status="run" time="8.624467" timestamp="2020-02-06T07:11:58.684153"/>
+    <testcase name="OpenPos_CloseOrder" status="run" time="12.625429" timestamp="2020-02-06T07:11:59.464595"/>
+    <testcase name="OpenPos_ClosePrevOrder" status="run" time="8.371606" timestamp="2020-02-06T07:11:58.796356"/>
+    <testcase name="OpenPos_OpenOrder_Explicit" status="run" time="10.015944" timestamp="2020-02-06T07:11:58.980202"/>
+    <testcase name="OpenPos_OpenOrder_Implied" status="run" time="10.047191" timestamp="2020-02-06T07:11:59.152084"/>
+    <testcase name="WorkingOrderOnly" status="run" time="8.672144" timestamp="2020-02-06T07:11:59.292719"/>
+   </testsuite>
+   <testsuite failures="0" name="Contract" skipped="0" tests="8" testsuite_failed="False" time="13.516057" timestamp="2020-02-06T07:12:12.386909">
+    <testcase name="ClosePos_CloseOrder" status="run" time="11.125344" timestamp="2020-02-06T07:12:12.715037"/>
+    <testcase name="ClosePos_OpenOrder" status="run" time="11.156609" timestamp="2020-02-06T07:12:12.840025"/>
+    <testcase name="ClosePrevPos_OpenOrder" status="run" time="7.891777" timestamp="2020-02-06T07:12:13.824426"/>
+    <testcase name="OpenPos_CloseOrder" status="run" time="12.657679" timestamp="2020-02-06T07:12:12.980700"/>
+    <testcase name="OpenPos_ClosePrevOrder" status="run" time="8.375482" timestamp="2020-02-06T07:12:13.137446"/>
+    <testcase name="OpenPos_OpenOrder_Explicit" status="run" time="9.967318" timestamp="2020-02-06T07:12:13.294914"/>
+    <testcase name="OpenPos_OpenOrder_Implied" status="run" time="9.609689" timestamp="2020-02-06T07:12:13.511914"/>
+    <testcase name="WorkingOrderOnly" status="run" time="8.500183" timestamp="2020-02-06T07:12:13.652652"/>
+   </testsuite>
+   <testsuite failures="0" name="Instrument" skipped="0" tests="8" testsuite_failed="False" time="10.422212" timestamp="2020-02-06T07:12:26.012342">
+    <testcase name="ClosePos_CloseOrder" status="run" time="8.000262" timestamp="2020-02-06T07:12:26.496712"/>
+    <testcase name="ClosePos_OpenOrder" status="run" time="8.045714" timestamp="2020-02-06T07:12:26.576265"/>
+    <testcase name="ClosePrevPos_OpenOrder" status="run" time="6.017474" timestamp="2020-02-06T07:12:26.716156"/>
+    <testcase name="OpenPos_CloseOrder" status="run" time="9.394402" timestamp="2020-02-06T07:12:26.856203"/>
+    <testcase name="OpenPos_ClosePrevOrder" status="run" time="6.109565" timestamp="2020-02-06T07:12:26.996732"/>
+    <testcase name="OpenPos_OpenOrder_Explicit" status="run" time="7.030906" timestamp="2020-02-06T07:12:27.153563"/>
+    <testcase name="OpenPos_OpenOrder_Implied" status="run" time="6.922467" timestamp="2020-02-06T07:12:27.309243"/>
+    <testcase name="WorkingOrderOnly" status="run" time="5.906841" timestamp="2020-02-06T07:12:27.465493"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="SpecType" skipped="0" tests="7" testsuite_failed="False" time="8.922202" timestamp="2020-02-06T07:12:36.872063">
+   <testsuite failures="0" name="DefaultSpeculationType" skipped="0" tests="1" testsuite_failed="False" time="1.937568" timestamp="2020-02-06T07:12:37.184586">
+    <testcase name="HappyPath" status="run" time="0.406277" timestamp="2020-02-06T07:12:38.497114"/>
+   </testsuite>
+   <testsuite failures="0" name="Native" skipped="0" tests="6" testsuite_failed="False" time="6.280297" timestamp="2020-02-06T07:12:39.201455">
+    <testcase name="TC11_OpenCloseSpecType" status="run" time="4.594289" timestamp="2020-02-06T07:12:40.528576"/>
+    <testcase name="TC12_Regular" status="run" time="4.343956" timestamp="2020-02-06T07:12:40.684708"/>
+    <testcase name="TC13_SpecTypeMissing" status="run" time="3.220418" timestamp="2020-02-06T07:12:40.825320"/>
+    <testcase name="TC14_SpecTypeExtra" status="run" time="3.405995" timestamp="2020-02-06T07:12:40.966328"/>
+    <testcase name="TC15_SpecTypeNotSentByExchange" status="run" time="3.078113" timestamp="2020-02-06T07:12:41.122327"/>
+    <testcase name="TC21_NativeSpread" status="run" time="3.968726" timestamp="2020-02-06T07:12:41.231758"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,39 @@
+10:25:54.53  Test starded without threads
+08:25:55.143 Python Module Path 'ScriptKit' added.
+08:25:55.143 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:25:55.143 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyDOM/Suites/PythonModules' not found. Ignored.
+08:25:55.595 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyDOM/Suites' full execution.
+08:25:55.618 Suite '.'. [0 test cases, 3 sub-suites]
+08:26:03.314 Suite 'DOMUsageMultilevels'. [9 test cases, 0 sub-suites]
+08:26:03.362 Case 'MultilevelAggr_Spread_MultilevelsMode' execution.
+08:26:08.893 Case 'MultilevelAggr_Spread_MultilevelsMode' succeeded.
+08:26:08.955 Case 'Spread_FullSizeAvgPrice' execution.
+08:26:13.346 Case 'Spread_FullSizeAvgPrice' succeeded.
+08:26:13.408 Case 'Spread_FullSizeWorstPrice' execution.
+08:26:18.362 Case 'Spread_FullSizeWorstPrice' succeeded.
+08:26:18.424 Case 'Spread_IHEPcrash' execution.
+08:26:19.456 Case 'Spread_IHEPcrash' succeeded.
+08:26:19.522 Case 'Spread_IncrementalDOMupdate' execution.
+08:26:28.456 Case 'Spread_IncrementalDOMupdate' succeeded.
+08:26:28.504 Case 'Spread_MultilevelsMode' execution.
+08:26:31.878 Case 'Spread_MultilevelsMode' succeeded.
+08:26:31.941 Case 'Spread_MultilevelsMode_interXchange' execution.
+08:26:36.769 Case 'Spread_MultilevelsMode_interXchange' succeeded.
+08:26:36.831 Case 'Spread_PrimaryOrders_SeveralLevels' execution.
+08:26:42.284 Case 'Spread_PrimaryOrders_SeveralLevels' succeeded.
+08:26:42.331 Case 'Spread_Sniper_MultilevelsMode' execution.
+08:26:45.050 Case 'Spread_Sniper_MultilevelsMode' succeeded.
+08:26:45.159 Suite 'IHESubscription'. [1 test cases, 0 sub-suites]
+08:26:45.257 Case 'IHESubscriptionNoMarketStatus' execution.
+08:27:51.287 Case 'IHESubscriptionNoMarketStatus' succeeded.
+08:27:51.427 Suite 'Yield'. [2 test cases, 0 sub-suites]
+08:27:51.475 Case 'Spread_YieldLeg' execution.
+'psservice' is not recognized as an internal or external command,
+operable program or batch file.
+'psservice' is not recognized as an internal or external command,
+operable program or batch file.
+08:28:04.553 Case 'Spread_YieldLeg' succeeded.
+08:28:04.600 Case 'Spread_YieldLeg_InterXchange' execution.
+08:28:09.381 Case 'Spread_YieldLeg_InterXchange' succeeded.
+08:28:10.600 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyDOM/Suites' execution finished. It took 0:02:14.957540.
+08:28:10.600 Test cases results: 12 total, 12 succeeded, 0 failed, 0 skipped.

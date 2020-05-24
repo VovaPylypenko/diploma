@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="6" skipped="0" tests="8" testsuite_failed="True" time="18.734753" timestamp="2020-02-18T23:56:45.867732">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="21"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="6" name="RelativeDailyFutures" skipped="0" tests="8" testsuite_failed="True" time="18.734753" timestamp="2020-02-18T23:56:45.867732">
+  <testcase name="AddFillDaily" status="run" time="0.062492" timestamp="2020-02-18T23:56:54.602174">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\AddFillDaily.tc.py&quot;, line 15, in &lt;module&gt;
+    expectedData, None, expectedClientTrades=expectedClientTrades)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\RelativeDailyFutures\PythonModules\AddFillScenarios.py&quot;, line 82, in AddFill
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 10, OrderType.Limit, limitPrice=1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\AddFillDaily.tc.py&quot;, line 15, in &lt;module&gt;
+    expectedData, None, expectedClientTrades=expectedClientTrades)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\RelativeDailyFutures\PythonModules\AddFillScenarios.py&quot;, line 82, in AddFill
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 10, OrderType.Limit, limitPrice=1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="AddFillNativeSpread" status="run" time="0.031233" timestamp="2020-02-18T23:56:54.633433">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\AddFillNativeSpread.tc.py&quot;, line 18, in &lt;module&gt;
+    AddFill(gwConnection, exchangeFactory, acctInfo, 'F.SF.SFEPW1.U99', expectedData, legFills)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\RelativeDailyFutures\PythonModules\AddFillScenarios.py&quot;, line 82, in AddFill
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 10, OrderType.Limit, limitPrice=1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\AddFillNativeSpread.tc.py&quot;, line 18, in &lt;module&gt;
+    AddFill(gwConnection, exchangeFactory, acctInfo, 'F.SF.SFEPW1.U99', expectedData, legFills)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\RelativeDailyFutures\PythonModules\AddFillScenarios.py&quot;, line 82, in AddFill
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 10, OrderType.Limit, limitPrice=1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="AddFillRelative" status="run" time="0.015308" timestamp="2020-02-18T23:56:54.649358">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\AddFillRelative.tc.py&quot;, line 15, in &lt;module&gt;
+    expectedData, None, expectedClientTrades=expectedClientTrades)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\RelativeDailyFutures\PythonModules\AddFillScenarios.py&quot;, line 82, in AddFill
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 10, OrderType.Limit, limitPrice=1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\AddFillRelative.tc.py&quot;, line 15, in &lt;module&gt;
+    expectedData, None, expectedClientTrades=expectedClientTrades)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\RelativeDailyFutures\PythonModules\AddFillScenarios.py&quot;, line 82, in AddFill
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 10, OrderType.Limit, limitPrice=1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CastAddFillDaily" status="run" time="0.015621" timestamp="2020-02-18T23:56:54.664666">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\CastAddFillDaily.tc.py&quot;, line 15, in &lt;module&gt;
+    expectedData, expectedClientTrades=expectedClientTrades)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\RelativeDailyFutures\PythonModules\AddFillScenarios.py&quot;, line 36, in CastAddFill
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 10, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\CastAddFillDaily.tc.py&quot;, line 15, in &lt;module&gt;
+    expectedData, expectedClientTrades=expectedClientTrades)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\RelativeDailyFutures\PythonModules\AddFillScenarios.py&quot;, line 36, in CastAddFill
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 10, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CastAddFillRelative" status="run" time="0.015181" timestamp="2020-02-18T23:56:54.696359">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\CastAddFillRelative.tc.py&quot;, line 15, in &lt;module&gt;
+    expectedData, expectedClientTrades=expectedClientTrades)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\RelativeDailyFutures\PythonModules\AddFillScenarios.py&quot;, line 36, in CastAddFill
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 10, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\CastAddFillRelative.tc.py&quot;, line 15, in &lt;module&gt;
+    expectedData, expectedClientTrades=expectedClientTrades)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\RelativeDailyFutures\PythonModules\AddFillScenarios.py&quot;, line 36, in CastAddFill
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 10, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CastAddOrderAndFillDaily" status="run" time="4.172024" timestamp="2020-02-18T23:56:54.711540"/>
+  <testcase name="CastAddOrderAndFillRelative" status="run" time="3.75816" timestamp="2020-02-18T23:56:54.742803"/>
+  <testcase name="LMEStylePriceAdjustment" status="run" time="7.622664" timestamp="2020-02-18T23:56:54.776645">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\LMEStylePriceAdjustment.tc.py&quot;, line 18, in &lt;module&gt;
+    order11 = OrderActionUtils.CreateOrder(contractName11, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures\LMEStylePriceAdjustment.tc.py&quot;, line 18, in &lt;module&gt;
+    order11 = OrderActionUtils.CreateOrder(contractName11, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+ </testsuite>
+</testsuites>

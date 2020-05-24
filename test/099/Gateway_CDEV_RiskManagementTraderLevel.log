@@ -1,0 +1,47 @@
+ 8:15:04.14  Test starded without threads
+06:15:04.768 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:15:04.768 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel/Modules' added.
+06:15:04.768 Python Module Path 'ScriptKit' added.
+06:15:05.189 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel' full execution.
+06:15:05.237 Suite '.'. [18 test cases, 1 sub-suites]
+06:15:19.112 Case '10_TestContractPositionLimit' execution.
+06:15:24.487 Case '10_TestContractPositionLimit' succeeded.
+06:15:24.534 Case '14_TestDailyLostLimit' execution.
+06:15:28.471 Case '14_TestDailyLostLimit' succeeded.
+06:15:28.518 Case '15_TestDeltaDailyLostLimit' execution.
+06:15:32.534 Case '15_TestDeltaDailyLostLimit' succeeded.
+06:15:32.597 Case '16_TestMarginMultiplier' execution.
+06:15:38.628 Case '16_TestMarginMultiplier' succeeded.
+06:15:38.676 Case '17_TestIncludeOTEinPP' execution.
+06:15:44.409 Case '17_TestIncludeOTEinPP' succeeded.
+06:15:44.472 Case '18_TestIncludeNOVinPP' execution.
+06:15:50.081 Case '18_TestIncludeNOVinPP' succeeded.
+06:15:50.129 Case '19_TestCheckForNegativeBalance' execution.
+06:15:54.066 Case '19_TestCheckForNegativeBalance' succeeded.
+06:15:54.113 Case '20_TestDisableBidAskPriceInOTE' execution.
+06:15:57.957 Case '20_TestDisableBidAskPriceInOTE' succeeded.
+06:15:58.004 Case '21_TestDisableBidAskPriceInNOV' execution.
+06:16:01.724 Case '21_TestDisableBidAskPriceInNOV' succeeded.
+06:16:01.787 Case '4_TestFuturesPermission' execution.
+06:16:08.629 Case '4_TestFuturesPermission' succeeded.
+06:16:08.693 Case '5_TestBuySellOption' execution.
+06:16:27.770 Case '5_TestBuySellOption' succeeded.
+06:16:27.833 Case '6_TestTradeSizeLimit' execution.
+06:16:34.755 Case '6_TestTradeSizeLimit' succeeded.
+06:16:34.824 Case '7_TestTradeMarginLimit' execution.
+06:16:42.317 Case '7_TestTradeMarginLimit' succeeded.
+06:16:42.380 Case '8_TestRejectRiskyOrders' execution.
+06:16:48.255 Case '8_TestRejectRiskyOrders' succeeded.
+06:16:48.303 Case '9_TestCommodityPositionLimit' execution.
+06:16:53.099 Case '9_TestCommodityPositionLimit' succeeded.
+06:16:53.162 Case 'TestCommodityEnablements' execution.
+06:17:00.896 Case 'TestCommodityEnablements' succeeded.
+06:17:00.943 Case 'TestLiquidationOnly' execution.
+06:17:06.615 Case 'TestLiquidationOnly' succeeded.
+06:17:06.678 Case 'TestTraderAuthorization' execution.
+06:17:14.490 Case 'TestTraderAuthorization' succeeded.
+06:17:14.553 Suite 'AuthorizedOmnibusSettingsOverride'. [1 test cases, 0 sub-suites]
+06:17:14.615 Case 'OrderHandlerVsOmnibusSettings' execution.
+06:17:21.022 Case 'OrderHandlerVsOmnibusSettings' succeeded.
+06:17:26.006 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel' execution finished. It took 0:02:20.770010.
+06:17:26.006 Test cases results: 19 total, 19 succeeded, 0 failed, 0 skipped.

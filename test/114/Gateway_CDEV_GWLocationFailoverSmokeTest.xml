@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="11" skipped="0" tests="11" testsuite_failed="True" time="110.379717" timestamp="2020-02-18T23:37:24.063468">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="11" name="GWLocationFailover" skipped="0" tests="11" testsuite_failed="True" time="110.379717" timestamp="2020-02-18T23:37:24.063468">
+  <testsuite failures="11" name="SmokeTests" skipped="0" tests="11" testsuite_failed="True" time="107.035183" timestamp="2020-02-18T23:37:27.344844">
+   <testcase name="CASTSmokeTest" status="run" time="12.141076" timestamp="2020-02-18T23:37:27.407346">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\CASTSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('CASTSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CASTCheck.py&quot;, line 22, in _doInit
+    self._orderActions(1, 'Place')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\CASTSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('CASTSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CASTCheck.py&quot;, line 22, in _doInit
+    self._orderActions(1, 'Place')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="FixMsgSeqNumSmokeTest" status="run" time="9.10974" timestamp="2020-02-18T23:37:39.595299">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\FixMsgSeqNumSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('FixMsgSeqNumSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\FixMsgSeqNumCheck.py&quot;, line 26, in _doInit
+    self.__makeTradingActivity()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\FixMsgSeqNumCheck.py&quot;, line 45, in __makeTradingActivity
+    self._assertPlace(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\FixMsgSeqNumSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('FixMsgSeqNumSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\FixMsgSeqNumCheck.py&quot;, line 26, in _doInit
+    self.__makeTradingActivity()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\FixMsgSeqNumCheck.py&quot;, line 45, in __makeTradingActivity
+    self._assertPlace(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="LimitOrdersFixClientSmokeTest" status="run" time="9.125344" timestamp="2020-02-18T23:37:48.751882">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\LimitOrdersFixClientSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('LimitOrdersFixClientSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\LimitOrdersCheck.py&quot;, line 23, in _doInit
+    self._orderActions(1, 'Place', 'Cancel')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsFixClient.py&quot;, line 40, in _assertPlace
+    CheckNewOrderSinglePending(pendingMsg, nosMsg)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\NOSscenarios.py&quot;, line 98, in CheckNewOrderSinglePending
+    CheckMessage(MsgType.ExecutionReport, incomingMsg, ConfirmationAcknowledgementTags, ConfirmationAcknowledgementMustTags, valueIfContain)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 214, in CheckMessage
+    CheckMessageConstraints(incomingMsg, mayContain + HeaderTags + TrailerTags, mustContain + HeaderMustTags + TrailerTags, valueIfContain)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 143, in CheckMessageConstraints
+    &quot;Missed obligatory tag #{0} in message.&quot;.format(tag))
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 30, in AssertMessage
+    raise Failure(msg)
+TestCheck.Failure: Missed obligatory tag #1028 in message.
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\LimitOrdersFixClientSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('LimitOrdersFixClientSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\LimitOrdersCheck.py&quot;, line 23, in _doInit
+    self._orderActions(1, 'Place', 'Cancel')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsFixClient.py&quot;, line 40, in _assertPlace
+    CheckNewOrderSinglePending(pendingMsg, nosMsg)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\NOSscenarios.py&quot;, line 98, in CheckNewOrderSinglePending
+    CheckMessage(MsgType.ExecutionReport, incomingMsg, ConfirmationAcknowledgementTags, ConfirmationAcknowledgementMustTags, valueIfContain)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 214, in CheckMessage
+    CheckMessageConstraints(incomingMsg, mayContain + HeaderTags + TrailerTags, mustContain + HeaderMustTags + TrailerTags, valueIfContain)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 143, in CheckMessageConstraints
+    &quot;Missed obligatory tag #{0} in message.&quot;.format(tag))
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 30, in AssertMessage
+    raise Failure(msg)
+TestCheck.Failure: Missed obligatory tag #1028 in message.
+</failure>
+   </testcase>
+   <testcase name="LimitOrdersNativeClientSmokeTest" status="run" time="9.125353" timestamp="2020-02-18T23:37:57.908458">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\LimitOrdersNativeClientSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('LimitOrdersNativeClientSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\LimitOrdersCheck.py&quot;, line 23, in _doInit
+    self._orderActions(1, 'Place', 'Cancel')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\LimitOrdersNativeClientSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('LimitOrdersNativeClientSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\LimitOrdersCheck.py&quot;, line 23, in _doInit
+    self._orderActions(1, 'Place', 'Cancel')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="MarketOrdersFixClientSmokeTest" status="run" time="9.140969" timestamp="2020-02-18T23:38:07.111943">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\MarketOrdersFixClientSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('MarketOrdersFixClientSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\MarketOrdersCheck.py&quot;, line 23, in _doInit
+    self._orderActions(1, 'Place', 'Fill')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsFixClient.py&quot;, line 40, in _assertPlace
+    CheckNewOrderSinglePending(pendingMsg, nosMsg)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\NOSscenarios.py&quot;, line 98, in CheckNewOrderSinglePending
+    CheckMessage(MsgType.ExecutionReport, incomingMsg, ConfirmationAcknowledgementTags, ConfirmationAcknowledgementMustTags, valueIfContain)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 214, in CheckMessage
+    CheckMessageConstraints(incomingMsg, mayContain + HeaderTags + TrailerTags, mustContain + HeaderMustTags + TrailerTags, valueIfContain)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 143, in CheckMessageConstraints
+    &quot;Missed obligatory tag #{0} in message.&quot;.format(tag))
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 30, in AssertMessage
+    raise Failure(msg)
+TestCheck.Failure: Missed obligatory tag #1028 in message.
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\MarketOrdersFixClientSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('MarketOrdersFixClientSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\MarketOrdersCheck.py&quot;, line 23, in _doInit
+    self._orderActions(1, 'Place', 'Fill')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsFixClient.py&quot;, line 40, in _assertPlace
+    CheckNewOrderSinglePending(pendingMsg, nosMsg)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\NOSscenarios.py&quot;, line 98, in CheckNewOrderSinglePending
+    CheckMessage(MsgType.ExecutionReport, incomingMsg, ConfirmationAcknowledgementTags, ConfirmationAcknowledgementMustTags, valueIfContain)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 214, in CheckMessage
+    CheckMessageConstraints(incomingMsg, mayContain + HeaderTags + TrailerTags, mustContain + HeaderMustTags + TrailerTags, valueIfContain)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py&quot;, line 143, in CheckMessageConstraints
+    &quot;Missed obligatory tag #{0} in message.&quot;.format(tag))
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py&quot;, line 30, in AssertMessage
+    raise Failure(msg)
+TestCheck.Failure: Missed obligatory tag #1028 in message.
+</failure>
+   </testcase>
+   <testcase name="MarketOrdersNativeClientSmokeTest" status="run" time="9.109722" timestamp="2020-02-18T23:38:16.315391">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\MarketOrdersNativeClientSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('MarketOrdersNativeClientSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\MarketOrdersCheck.py&quot;, line 23, in _doInit
+    self._orderActions(1, 'Place', 'Fill')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\MarketOrdersNativeClientSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('MarketOrdersNativeClientSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\MarketOrdersCheck.py&quot;, line 23, in _doInit
+    self._orderActions(1, 'Place', 'Fill')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="Monitor2SmokeTest" status="run" time="9.094098" timestamp="2020-02-18T23:38:25.487622">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\Monitor2SmokeTest.tc.py&quot;, line 8, in &lt;module&gt;
+    lfoCheckSuite.CheckSwitchover()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 36, in CheckSwitchover
+    self._doCheckSwitchover()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\Monitor2Check.py&quot;, line 26, in _doCheckSwitchover
+    self._orderActions(1, 'Place')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\Monitor2SmokeTest.tc.py&quot;, line 8, in &lt;module&gt;
+    lfoCheckSuite.CheckSwitchover()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 36, in CheckSwitchover
+    self._doCheckSwitchover()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\Monitor2Check.py&quot;, line 26, in _doCheckSwitchover
+    self._orderActions(1, 'Place')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="NetPositionsSmokeTest" status="run" time="9.140625" timestamp="2020-02-18T23:38:34.644522">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\NetPositionsSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('NetPositionsSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\NetPositionsCheck.py&quot;, line 33, in _doInit
+    self._orderActions(1, 'Place')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\NetPositionsSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('NetPositionsSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\NetPositionsCheck.py&quot;, line 33, in _doInit
+    self._orderActions(1, 'Place')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="QueryManagerSmokeTest" status="run" time="10.109682" timestamp="2020-02-18T23:38:43.832112">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\QueryManagerSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('QueryManagerSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\QueryManagerCheck.py&quot;, line 22, in _doInit
+    self._orderActions(1, 'Place', 'Fill', 'QueryOrderByGUID')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\QueryManagerSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('QueryManagerSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\QueryManagerCheck.py&quot;, line 22, in _doInit
+    self._orderActions(1, 'Place', 'Fill', 'QueryOrderByGUID')
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 62, in _orderActions
+    getattr(self, '_assert' + actionName)(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="RouteOrderIDSmokeTest" status="run" time="9.1093" timestamp="2020-02-18T23:38:54.051577">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\RouteOrderIDSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('RouteOrderIDSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\RouteOrderIDCheck.py&quot;, line 24, in _doInit
+    self.__placeOrders(1, 2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\RouteOrderIDCheck.py&quot;, line 43, in __placeOrders
+    self._assertPlace(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\RouteOrderIDSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('RouteOrderIDSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\RouteOrderIDCheck.py&quot;, line 24, in _doInit
+    self.__placeOrders(1, 2)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\RouteOrderIDCheck.py&quot;, line 43, in __placeOrders
+    self._assertPlace(id)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\OrderActionsNativeClient.py&quot;, line 25, in _assertPlace
+    limitPrice = 100, duration = OrderDuration.GoodTillCancel)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="SOMSmokeTest" status="run" time="11.140407" timestamp="2020-02-18T23:39:03.192762">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\SOMSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('SOMSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\SOMCheck.py&quot;, line 46, in _doInit
+    self.__placeTrailingStopOrders(1, 2, 4)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\SOMCheck.py&quot;, line 90, in __placeTrailingStopOrders
+    trailOffset = trailOffset)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/GWLocationFailover\SmokeTests\SOMSmokeTest.tc.py&quot;, line 7, in &lt;module&gt;
+    lfoCheckSuite.Init('SOMSmokeTest', isSmokeTest = True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\CheckBase.py&quot;, line 26, in Init
+    self._doInit()
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\SOMCheck.py&quot;, line 46, in _doInit
+    self.__placeTrailingStopOrders(1, 2, 4)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\SystemOperation\GWLocationFailover\PythonModules\LFOUtils\SOMCheck.py&quot;, line 90, in __placeTrailingStopOrders
+    trailOffset = trailOffset)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+ </testsuite>
+</testsuites>

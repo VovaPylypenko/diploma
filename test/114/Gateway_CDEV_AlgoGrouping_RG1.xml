@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="29" skipped="0" tests="29" testsuite_failed="True" time="30.766741" timestamp="2020-02-19T00:20:57.997133">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="29" name="AlgoGrouping" skipped="0" tests="29" testsuite_failed="True" time="30.766741" timestamp="2020-02-19T00:20:57.997133">
+  <testsuite failures="29" name="GWAutoTest1" skipped="0" tests="29" testsuite_failed="True" time="10.453538" timestamp="2020-02-19T00:21:17.247827">
+   <testsuite failures="4" name="Complex" skipped="0" tests="4" testsuite_failed="True" time="0.327877" timestamp="2020-02-19T00:21:17.294983">
+    <testcase name="01_DEA" status="run" time="0.0" timestamp="2020-02-19T00:21:17.372856">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\Complex\01_DEA_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\Complex\01_DEA_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="04_OmniDiffFCMs" status="run" time="0.0" timestamp="2020-02-19T00:21:17.450976">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\Complex\04_OmniDiffFCMs_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\Complex\04_OmniDiffFCMs_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="05_OmniSameFCMs" status="run" time="0.015621" timestamp="2020-02-19T00:21:17.513474">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\Complex\05_OmniSameFCMs_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\Complex\05_OmniSameFCMs_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="06_NativeSpread" status="run" time="0.0" timestamp="2020-02-19T00:21:17.575970">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\Complex\06_NativeSpread_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epw1u99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\Complex\06_NativeSpread_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epw1u99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+   <testsuite failures="5" name="ExecutionAndInvestmentDecisions" skipped="0" tests="5" testsuite_failed="True" time="0.437479" timestamp="2020-02-19T00:21:17.654136">
+    <testcase name="01_CQGandFCMAlgo" status="run" time="0.0" timestamp="2020-02-19T00:21:17.732251">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\ExecutionAndInvestmentDecisions\01_CQGandFCMAlgo_tc.py&quot;, line 5, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\ExecutionAndInvestmentDecisions\01_CQGandFCMAlgo_tc.py&quot;, line 5, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="02_TraderShortCode" status="run" time="0.015621" timestamp="2020-02-19T00:21:17.794731">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\ExecutionAndInvestmentDecisions\02_TraderShortCode_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\ExecutionAndInvestmentDecisions\02_TraderShortCode_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="03_Omnibus" status="run" time="0.015681" timestamp="2020-02-19T00:21:17.888483">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\ExecutionAndInvestmentDecisions\03_Omnibus_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\ExecutionAndInvestmentDecisions\03_Omnibus_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="04_CareOrder" status="run" time="0.015621" timestamp="2020-02-19T00:21:17.966617">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\ExecutionAndInvestmentDecisions\04_CareOrder_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\ExecutionAndInvestmentDecisions\04_CareOrder_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="05_DecisionOverrides" status="run" time="0.0" timestamp="2020-02-19T00:21:18.044767">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\ExecutionAndInvestmentDecisions\05_DecisionOverrides_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\ExecutionAndInvestmentDecisions\05_DecisionOverrides_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+   <testsuite failures="6" name="FCMRoute" skipped="0" tests="6" testsuite_failed="True" time="0.890653" timestamp="2020-02-19T00:21:18.122862">
+    <testcase name="01_ShortCodeNotConfigured_AlgoFlagSet" status="run" time="0.0" timestamp="2020-02-19T00:21:18.216620">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\01_ShortCodeNotConfigured_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\01_ShortCodeNotConfigured_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="02_ShortCodeNotConfigured_AlgoFlagNotSet" status="run" time="0.0" timestamp="2020-02-19T00:21:18.325991">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\02_ShortCodeNotConfigured_AlgoFlagNotSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\02_ShortCodeNotConfigured_AlgoFlagNotSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="03_ShortCodeConfigured_AlgoFlagSet" status="run" time="0.0" timestamp="2020-02-19T00:21:18.451017">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\03_ShortCodeConfigured_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\03_ShortCodeConfigured_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="04_DiffInstrOrRouteGroup_AlgoFlagSet" status="run" time="0.015625" timestamp="2020-02-19T00:21:18.544742">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\04_DiffInstrOrRouteGroup_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\04_DiffInstrOrRouteGroup_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="05_DiffInstrOrRouteGroup_AlgoFlagNotSet" status="run" time="0.0" timestamp="2020-02-19T00:21:18.747897">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\05_DiffInstrOrRouteGroup_AlgoFlagNotSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\05_DiffInstrOrRouteGroup_AlgoFlagNotSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="06_Omnibus" status="run" time="0.0" timestamp="2020-02-19T00:21:18.904143">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\06_Omnibus_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\FCMRoute\06_Omnibus_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ddz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+   <testsuite failures="6" name="InstrumentRouteGroup" skipped="0" tests="6" testsuite_failed="True" time="0.812543" timestamp="2020-02-19T00:21:19.076015">
+    <testcase name="01_ShortCodeNotConfigured_AlgoFlagSet" status="run" time="0.0" timestamp="2020-02-19T00:21:19.247903">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\01_ShortCodeNotConfigured_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\01_ShortCodeNotConfigured_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="02_ShortCodeNotConfigured_AlgoFlagNotSet" status="run" time="0.015633" timestamp="2020-02-19T00:21:19.357269">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\02_ShortCodeNotConfigured_AlgoFlagNotSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\02_ShortCodeNotConfigured_AlgoFlagNotSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="03_ShortCodeConfigured_AlgoFlagSet" status="run" time="0.0" timestamp="2020-02-19T00:21:19.482292">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\03_ShortCodeConfigured_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\03_ShortCodeConfigured_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="04_DiffInstrOrRouteGroup_AlgoFlagSet" status="run" time="0.016431" timestamp="2020-02-19T00:21:19.560413">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\04_DiffInstrOrRouteGroup_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order1 = OrderActionUtils.CreateOrder(cep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\04_DiffInstrOrRouteGroup_AlgoFlagSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order1 = OrderActionUtils.CreateOrder(cep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="05_DiffInstrOrRouteGroup_AlgoFlagNotSet" status="run" time="0.0" timestamp="2020-02-19T00:21:19.701130">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\05_DiffInstrOrRouteGroup_AlgoFlagNotSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order1 = OrderActionUtils.CreateOrder(cep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\05_DiffInstrOrRouteGroup_AlgoFlagNotSet_tc.py&quot;, line 6, in &lt;module&gt;
+    order1 = OrderActionUtils.CreateOrder(cep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="06_Omnibus" status="run" time="0.0" timestamp="2020-02-19T00:21:19.794784">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\06_Omnibus_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\InstrumentRouteGroup\06_Omnibus_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(ep2z99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+   <testsuite failures="8" name="OrderRequests" skipped="0" tests="8" testsuite_failed="True" time="1.015655" timestamp="2020-02-19T00:21:19.919810">
+    <testcase name="01_Modify" status="run" time="0.0" timestamp="2020-02-19T00:21:20.076048">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\01_Modify_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\01_Modify_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="02_Activate" status="run" time="0.0" timestamp="2020-02-19T00:21:20.169830">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\02_Activate_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\02_Activate_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="03_Cancel" status="run" time="0.0" timestamp="2020-02-19T00:21:20.263573">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\03_Cancel_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\03_Cancel_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="04_Park" status="run" time="0.0" timestamp="2020-02-19T00:21:20.372946">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\04_Park_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\04_Park_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="07_1_Compound_OCO" status="run" time="0.0" timestamp="2020-02-19T00:21:20.466946">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\07_1_Compound_OCO_tc.py&quot;, line 6, in &lt;module&gt;
+    o1Leg1 = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=40)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\07_1_Compound_OCO_tc.py&quot;, line 6, in &lt;module&gt;
+    o1Leg1 = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=40)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="07_2_Compound_OPO" status="run" time="0.0" timestamp="2020-02-19T00:21:20.591715">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\07_2_Compound_OPO_tc.py&quot;, line 6, in &lt;module&gt;
+    o1Leg1 = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 6, OrderType.Limit, limitPrice=40)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\07_2_Compound_OPO_tc.py&quot;, line 6, in &lt;module&gt;
+    o1Leg1 = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 6, OrderType.Limit, limitPrice=40)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="08_Activate_Parked_Short_Code" status="run" time="0.0" timestamp="2020-02-19T00:21:20.685455">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\08_Activate_Parked_Short_Code_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\08_Activate_Parked_Short_Code_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="09_Activate_Parked_Algorithm" status="run" time="0.0" timestamp="2020-02-19T00:21:20.810474">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\09_Activate_Parked_Algorithm_tc.py&quot;, line 21, in &lt;module&gt;
+    runTest(algoParams[0])
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\09_Activate_Parked_Algorithm_tc.py&quot;, line 7, in runTest
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\09_Activate_Parked_Algorithm_tc.py&quot;, line 21, in &lt;module&gt;
+    runTest(algoParams[0])
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping\GWAutoTest1\OrderRequests\09_Activate_Parked_Algorithm_tc.py&quot;, line 7, in runTest
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

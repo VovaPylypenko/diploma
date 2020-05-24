@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="7" testsuite_failed="False" time="32.923148" timestamp="2020-02-06T08:21:11.289155">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RFQ"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="RFQ" skipped="0" tests="7" testsuite_failed="False" time="32.923148" timestamp="2020-02-06T08:21:11.289155">
+  <testcase name="RFQ01" status="run" time="1.57812" timestamp="2020-02-06T08:21:23.180293"/>
+  <testcase name="RFQ02" status="run" time="5.593964" timestamp="2020-02-06T08:21:24.805311"/>
+  <testcase name="RFQ03" status="run" time="1.171907" timestamp="2020-02-06T08:21:30.446152"/>
+  <testcase name="RFQ04" status="run" time="0.046899" timestamp="2020-02-06T08:21:31.649310"/>
+  <testcase name="RFQ05" status="run" time="0.031248" timestamp="2020-02-06T08:21:31.758707"/>
+  <testcase name="RFQ06" status="run" time="10.875428" timestamp="2020-02-06T08:21:31.836826"/>
+  <testcase name="RFQ_DSI_1300395543" status="run" time="0.984438" timestamp="2020-02-06T08:21:42.759114"/>
+ </testsuite>
+</testsuites>

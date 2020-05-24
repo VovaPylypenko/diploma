@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="43" tests="43" testsuite_failed="False" time="29.829185" timestamp="2020-02-19T00:03:16.786360">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="16"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrders"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="ForceCareOrders" skipped="43" tests="43" testsuite_failed="False" time="29.829185" timestamp="2020-02-19T00:03:16.786360">
+  <testsuite failures="0" name="CareFills" skipped="10" tests="10" testsuite_failed="False">
+   <testcase name="CareFill_Fill" status="notrun"/>
+   <testcase name="CareOrderFullCareFill" status="notrun"/>
+   <testcase name="CareOrderPartialCareFill" status="notrun"/>
+   <testcase name="Fill_CareFill" status="notrun"/>
+   <testcase name="ForceCare_CareOrderCareFill" status="notrun"/>
+   <testcase name="NativeSpread_CareFill_byLegs" status="notrun"/>
+   <testcase name="ParkedOrderCareFill" status="notrun"/>
+   <testcase name="ParkedOrderCareFill_uattrs" status="notrun"/>
+   <testcase name="ParkedWasWorkingOrderCareFill" status="notrun"/>
+   <testcase name="WorkingOrderCareFill" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="CompoundActions" skipped="2" tests="2" testsuite_failed="False">
+   <testcase name="ForceCare_ModifyCompoundAction" status="notrun"/>
+   <testcase name="ForceCare_PlaceCompoundAction" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="ForceCareOptionChange" skipped="1" tests="1" testsuite_failed="False">
+   <testcase name="ForceCare_OptionChange" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="MassOrderActions" skipped="3" tests="3" testsuite_failed="False">
+   <testcase name="ForceCare_ActivateAllAction" status="notrun"/>
+   <testcase name="ForceCare_CancelAllAction" status="notrun"/>
+   <testcase name="ForceCare_ParkAllAction" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="MixedAccountSettings" skipped="4" tests="4" testsuite_failed="False">
+   <testcase name="AutoActivateAction_RegularAccount" status="notrun"/>
+   <testcase name="ParkAction_RegularAccount" status="notrun"/>
+   <testcase name="RegularAction_OmnibusAccount" status="notrun"/>
+   <testcase name="RegularAction_RegularAccount" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="OnBehalfOf" skipped="8" tests="8" testsuite_failed="False">
+   <testcase name="ActivateAllAction" status="notrun"/>
+   <testcase name="ActivateParkedOrderAction" status="notrun"/>
+   <testcase name="AutoActivateParkedOrderAction" status="notrun"/>
+   <testcase name="ForceCare_ActivateAllAction" status="notrun"/>
+   <testcase name="ForceCare_ActivateParkedOrderAction" status="notrun"/>
+   <testcase name="ForceCare_AutoActivateParkedOrderAction" status="notrun"/>
+   <testcase name="ForceCare_RegularOrderAction" status="notrun"/>
+   <testcase name="RegularOrderAction" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="OrderActions" skipped="15" tests="15" testsuite_failed="False">
+   <testcase name="ActivateCareOrderAction" status="notrun"/>
+   <testcase name="AutoActivateParkedOrderAction" status="notrun"/>
+   <testcase name="ForceCare_ActivateCareOrderAction" status="notrun"/>
+   <testcase name="ForceCare_ActivateParkedOrderAction" status="notrun"/>
+   <testcase name="ForceCare_AutoActivateParkedOrderAction" status="notrun"/>
+   <testcase name="ForceCare_ModifyAction" status="notrun"/>
+   <testcase name="ForceCare_ModifyParkedAction" status="notrun"/>
+   <testcase name="ForceCare_ParkedOrder_uattrs" status="notrun"/>
+   <testcase name="ForceCare_ParkOrderAction_acttime_Manual" status="notrun"/>
+   <testcase name="ForceCare_ParkOrderAction_acttime" status="notrun"/>
+   <testcase name="ForceCare_ParkOrderAction" status="notrun"/>
+   <testcase name="ForceCare_ParkWorkingOrderAction" status="notrun"/>
+   <testcase name="ForceCare_RegularOrderAction_parktime" status="notrun"/>
+   <testcase name="ForceCare_RegularOrderAction" status="notrun"/>
+   <testcase name="ParkCareOrderAction" status="notrun"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

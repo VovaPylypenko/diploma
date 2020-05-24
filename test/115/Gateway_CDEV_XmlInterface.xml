@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="7" testsuite_failed="False" time="293.774784" timestamp="2020-02-19T18:04:27.530393">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="XmlInterface"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="7"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/XmlInterface/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Suites" skipped="0" tests="7" testsuite_failed="False" time="293.774784" timestamp="2020-02-19T18:04:27.530393">
+  <testsuite failures="0" name="Logon" skipped="0" tests="7" testsuite_failed="False" time="293.696672" timestamp="2020-02-19T18:04:27.577267">
+   <testcase name="CQGT_CQGIC_concurrent_session" status="run" time="214.709784" timestamp="2020-02-19T18:04:27.749182"/>
+   <testcase name="CQGT_CQGWeb_CQGIC_concurrent_session" status="run" time="215.803597" timestamp="2020-02-19T18:04:27.780406"/>
+   <testcase name="CQGWeb_CQGIC_concurrent_session" status="run" time="214.662905" timestamp="2020-02-19T18:04:27.796061"/>
+   <testcase name="CQGWeb_CQGT_concurrent_session" status="run" time="145.035757" timestamp="2020-02-19T18:04:27.827280"/>
+   <testcase name="CQGWeb_CQGWeb_concurrent_session" status="run" time="144.676368" timestamp="2020-02-19T18:04:27.842902"/>
+   <testcase name="CQGWeb_FIXService_concurrent_session" status="run" time="293.321593" timestamp="2020-02-19T18:04:27.889837"/>
+   <testcase name="WebClient_not_enabled" status="run" time="2.374928" timestamp="2020-02-19T18:04:27.874392"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,17 @@
+ 8:38:42.00  Test starded without threads
+06:38:42.517 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:38:42.517 Python Module Path 'ScriptKit' added.
+06:38:42.814 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SyntheticOrders' full execution.
+06:38:42.845 Suite '.'. [5 test cases, 0 sub-suites]
+06:38:56.189 Case 'IgnoreActivationForZeroVolQuote' execution.
+06:40:00.988 Case 'IgnoreActivationForZeroVolQuote' succeeded.
+06:40:01.035 Case 'MarketToLimitActivationPrice' execution.
+06:40:09.379 Case 'MarketToLimitActivationPrice' succeeded.
+06:40:09.410 Case 'QTStoLimitActivation' execution.
+06:40:13.536 Case 'QTStoLimitActivation' succeeded.
+06:40:13.583 Case 'STLtoLimitActivation' execution.
+06:40:17.676 Case 'STLtoLimitActivation' succeeded.
+06:40:17.708 Case 'StopToLimitActivationPrice' execution.
+06:40:33.983 Case 'StopToLimitActivationPrice' succeeded.
+06:40:38.943 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SyntheticOrders' execution finished. It took 0:01:56.097926.
+06:40:38.943 Test cases results: 5 total, 5 succeeded, 0 failed, 0 skipped.

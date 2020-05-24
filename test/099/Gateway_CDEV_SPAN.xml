@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="31" testsuite_failed="False" time="934.328587" timestamp="2020-02-06T04:02:04.386759">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SPAN/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SPAN"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="SPAN" skipped="0" tests="31" testsuite_failed="False" time="934.328587" timestamp="2020-02-06T04:02:04.386759">
+  <testsuite failures="0" name="CommoditySpecificMargins" skipped="0" tests="3" testsuite_failed="False" time="181.568342" timestamp="2020-02-06T04:02:22.184239">
+   <testcase name="Disabled_on_Account" status="run" time="0.156181" timestamp="2020-02-06T04:05:22.971447"/>
+   <testcase name="Disabled_on_FCM" status="run" time="0.171875" timestamp="2020-02-06T04:05:23.174443"/>
+   <testcase name="Enabled" status="run" time="0.093715" timestamp="2020-02-06T04:05:23.408860"/>
+  </testsuite>
+  <testsuite failures="0" name="Currencies" skipped="0" tests="2" testsuite_failed="False" time="0.828001" timestamp="2020-02-06T04:05:23.799602">
+   <testcase name="Balance" status="run" time="0.218769" timestamp="2020-02-06T04:05:23.940107"/>
+   <testcase name="Commodity" status="run" time="0.171959" timestamp="2020-02-06T04:05:24.221346"/>
+  </testsuite>
+  <testsuite failures="0" name="DeliveryMonthCharge" skipped="0" tests="8" testsuite_failed="False" time="184.458978" timestamp="2020-02-06T04:05:24.658852">
+   <testcase name="Method_10_CC" status="run" time="0.359374" timestamp="2020-02-06T04:08:25.414589"/>
+   <testcase name="Method_10_CD" status="run" time="0.218753" timestamp="2020-02-06T04:08:25.836482"/>
+   <testcase name="Method_10_FC" status="run" time="0.234366" timestamp="2020-02-06T04:08:26.117735"/>
+   <testcase name="Method_10_OP_CD" status="run" time="0.265598" timestamp="2020-02-06T04:08:26.414646"/>
+   <testcase name="Method_10_OP_R2" status="run" time="0.249963" timestamp="2020-02-06T04:08:26.742789"/>
+   <testcase name="Method_10_OP" status="run" time="0.312491" timestamp="2020-02-06T04:08:27.055272"/>
+   <testcase name="Method_10_R2" status="run" time="0.250014" timestamp="2020-02-06T04:08:27.445912"/>
+   <testcase name="Method_1" status="run" time="0.296886" timestamp="2020-02-06T04:08:27.774027"/>
+  </testsuite>
+  <testsuite failures="0" name="InterCommoditySpreadCredit" skipped="0" tests="7" testsuite_failed="False" time="183.459967" timestamp="2020-02-06T04:08:29.149084">
+   <testcase name="InterExchange_Combined" status="run" time="0.234392" timestamp="2020-02-06T04:11:29.889218"/>
+   <testcase name="InterExchange_Fungible" status="run" time="0.171868" timestamp="2020-02-06T04:11:30.186092"/>
+   <testcase name="InterExchange" status="run" time="0.234371" timestamp="2020-02-06T04:11:30.436106"/>
+   <testcase name="IntraExchange_Combined" status="run" time="0.20312" timestamp="2020-02-06T04:11:30.748631"/>
+   <testcase name="IntraExchange_Fungible" status="run" time="0.171884" timestamp="2020-02-06T04:11:31.029868"/>
+   <testcase name="IntraExchange" status="run" time="0.171776" timestamp="2020-02-06T04:11:31.311223"/>
+   <testcase name="Priority" status="run" time="0.437532" timestamp="2020-02-06T04:11:31.561136"/>
+  </testsuite>
+  <testsuite failures="0" name="InterMonthSpreadCharge" skipped="0" tests="7" testsuite_failed="False" time="183.022091" timestamp="2020-02-06T04:11:32.654931">
+   <testcase name="Method_10_CC" status="run" time="0.203096" timestamp="2020-02-06T04:14:33.458219"/>
+   <testcase name="Method_10_CD" status="run" time="0.25" timestamp="2020-02-06T04:14:33.723832"/>
+   <testcase name="Method_10_FC" status="run" time="0.15625" timestamp="2020-02-06T04:14:34.051965"/>
+   <testcase name="Method_10_OP_CC" status="run" time="0.281242" timestamp="2020-02-06T04:14:34.270724"/>
+   <testcase name="Method_10_OP_CD_Liq" status="run" time="0.062595" timestamp="2020-02-06T04:14:34.614489"/>
+   <testcase name="Method_10_OP_CD" status="run" time="0.18751" timestamp="2020-02-06T04:14:34.786368"/>
+   <testcase name="Method_1" status="run" time="0.250016" timestamp="2020-02-06T04:14:35.052002"/>
+  </testsuite>
+  <testsuite failures="0" name="ShortOptionMinimumCharge" skipped="0" tests="4" testsuite_failed="False" time="182.428476" timestamp="2020-02-06T04:14:35.708704">
+   <testcase name="Method_1_OP" status="run" time="0.171987" timestamp="2020-02-06T04:17:36.465236"/>
+   <testcase name="Method_1" status="run" time="0.296878" timestamp="2020-02-06T04:17:36.715266"/>
+   <testcase name="Method_2_OP" status="run" time="0.203154" timestamp="2020-02-06T04:17:37.074658"/>
+   <testcase name="Method_2" status="run" time="0.23554" timestamp="2020-02-06T04:17:37.355939"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="6" skipped="0" tests="32" testsuite_failed="True" time="436.859906" timestamp="2020-02-19T00:03:48.037461">
+ <properties>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SMMT"/>
+  <property name="scripts-cfg-instance" value="SF_SMMT"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="6" name="Suites" skipped="0" tests="32" testsuite_failed="True" time="436.859906" timestamp="2020-02-19T00:03:48.037461">
+  <testsuite failures="2" name="AccountChanges" skipped="0" tests="3" testsuite_failed="True" time="96.519911" timestamp="2020-02-19T00:03:49.271912">
+   <testcase name="AccountEnvironmentChange" status="run" time="68.830514" timestamp="2020-02-19T00:03:49.365648">
+    <failure message="Traceback (most recent call last):
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 79, in test
+    c2.GetAccountInfoByName(account3)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\GWConnection.py&quot;, line 120, in GetAccountInfoByName
+    raise Exception(&quot;Trader '{0}' is not authorized to the account '{1}'.&quot;.format(self._username, accountName))
+Exception: Trader 'SF_SM_Trader1' is not authorized to the account 'SF_SM_Account3'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 104, in &lt;module&gt;
+    test()
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 84, in test
+    VerifyEnvironmentChangeAcctAuthorization(c2, acctInfo3, True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py&quot;, line 37, in VerifyEnvironmentChangeAcctAuthorization
+    envChange = __waitOneEnvironmentChange(gwConnection, &quot;account_authorization&quot;, timeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py&quot;, line 15, in __waitOneEnvironmentChange
+    envChangeList = gwConnection.orderBook.WaitEnvironmentChange(ectype=ectype, timeout=timeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 629, in WaitEnvironmentChange
+    envChanges = self.__wait(timeout, self.__environmentChangeMessages, msg, ectype)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 553, in __wait
+    return WaitMsg(container, errMsg, self.__condition, timeout, idx=idx)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 58, in WaitMsg
+    raise Exception(errMsg)
+Exception: TIMEOUT: 60 seconds for TIMEOUT: 60 seconds for EnvironmentChange
+EnvironmentChange ectype: account_authorization
+">Traceback (most recent call last):
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 79, in test
+    c2.GetAccountInfoByName(account3)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\GWConnection.py&quot;, line 120, in GetAccountInfoByName
+    raise Exception(&quot;Trader '{0}' is not authorized to the account '{1}'.&quot;.format(self._username, accountName))
+Exception: Trader 'SF_SM_Trader1' is not authorized to the account 'SF_SM_Account3'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 104, in &lt;module&gt;
+    test()
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py&quot;, line 84, in test
+    VerifyEnvironmentChangeAcctAuthorization(c2, acctInfo3, True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py&quot;, line 37, in VerifyEnvironmentChangeAcctAuthorization
+    envChange = __waitOneEnvironmentChange(gwConnection, &quot;account_authorization&quot;, timeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py&quot;, line 15, in __waitOneEnvironmentChange
+    envChangeList = gwConnection.orderBook.WaitEnvironmentChange(ectype=ectype, timeout=timeout)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 629, in WaitEnvironmentChange
+    envChanges = self.__wait(timeout, self.__environmentChangeMessages, msg, ectype)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 553, in __wait
+    return WaitMsg(container, errMsg, self.__condition, timeout, idx=idx)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py&quot;, line 58, in WaitMsg
+    raise Exception(errMsg)
+Exception: TIMEOUT: 60 seconds for TIMEOUT: 60 seconds for EnvironmentChange
+EnvironmentChange ectype: account_authorization
+</failure>
+   </testcase>
+   <testcase name="AccountMigration" status="run" time="5.093245" timestamp="2020-02-19T00:04:58.243719"/>
+   <testcase name="AutoEventSubscrNewAccounts" status="run" time="22.312965" timestamp="2020-02-19T00:05:03.415471">
+    <failure message="Traceback (most recent call last):
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 85, in test
+    o1 = placeOrder(c1, acctInfo3)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 12, in placeOrder
+    order = OrderActionUtils.CreateOrder(SFEP, OrderSide.Buy, 50, OrderType.Limit, limitPrice = 10)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 130, in &lt;module&gt;
+    test(autosubscribe)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 123, in test
+    cancelOrder(c1, acctInfo3, o1)
+UnboundLocalError: local variable 'o1' referenced before assignment
+">Traceback (most recent call last):
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 85, in test
+    o1 = placeOrder(c1, acctInfo3)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 12, in placeOrder
+    order = OrderActionUtils.CreateOrder(SFEP, OrderSide.Buy, 50, OrderType.Limit, limitPrice = 10)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 130, in &lt;module&gt;
+    test(autosubscribe)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py&quot;, line 123, in test
+    cancelOrder(c1, acctInfo3, o1)
+UnboundLocalError: local variable 'o1' referenced before assignment
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="0" name="ContractDefinition" skipped="0" tests="2" testsuite_failed="False" time="4.236038" timestamp="2020-02-19T00:05:25.806546">
+   <testcase name="ContractDefinitionFailure" status="run" time="2.859399" timestamp="2020-02-19T00:05:25.947266"/>
+   <testcase name="ContractDefinitionHappyPath" status="run" time="1.093798" timestamp="2020-02-19T00:05:28.869149"/>
+  </testsuite>
+  <testsuite failures="0" name="DataExchange" skipped="0" tests="7" testsuite_failed="False" time="31.313674" timestamp="2020-02-19T00:05:30.072330">
+   <testcase name="CI_HappyPath" status="run" time="7.937075" timestamp="2020-02-19T00:05:30.182431"/>
+   <testcase name="CI_Limiting" status="run" time="0.01564" timestamp="2020-02-19T00:05:38.213274"/>
+   <testcase name="CI_Rejecting" status="run" time="0.900615" timestamp="2020-02-19T00:05:38.297053"/>
+   <testcase name="QueryHappyPath" status="run" time="21.860192" timestamp="2020-02-19T00:05:39.260163"/>
+   <testcase name="QueryLimiting" status="run" time="0.0" timestamp="2020-02-19T00:06:01.182866"/>
+   <testcase name="QueryQMOutage" status="run" time="0.0" timestamp="2020-02-19T00:06:01.245582"/>
+   <testcase name="QueryRejects" status="run" time="0.0" timestamp="2020-02-19T00:06:01.323501"/>
+  </testsuite>
+  <testsuite failures="0" name="Failover" skipped="0" tests="1" testsuite_failed="False" time="0.172037" timestamp="2020-02-19T00:06:01.417457">
+   <testcase name="GWComponentsFailures" status="run" time="0.0" timestamp="2020-02-19T00:06:01.526623"/>
+  </testsuite>
+  <testsuite failures="1" name="OrderActions" skipped="0" tests="6" testsuite_failed="True" time="228.774145" timestamp="2020-02-19T00:06:01.620395">
+   <testcase name="OrderActionsAuthorizationCheck" status="run" time="1.9692150000000002" timestamp="2020-02-19T00:06:05.776785">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\OrderActions\OrderActionsAuthorizationCheck.tc.py&quot;, line 36, in &lt;module&gt;
+    SimpleOrderActions.AssertModifyOrderRejected(c1, exchangeFactory, account2Info, order, rejectReason=rejectReason, isFailure=True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py&quot;, line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\OrderActions\OrderActionsAuthorizationCheck.tc.py&quot;, line 36, in &lt;module&gt;
+    SimpleOrderActions.AssertModifyOrderRejected(c1, exchangeFactory, account2Info, order, rejectReason=rejectReason, isFailure=True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\SimpleOrderActions.py&quot;, line 772, in AssertModifyOrderRejected
+    expectedOEAttrs=expectedOEAttrs, visibleSize=visibleSize)
+TypeError: __assertModifyOrderRejected() got an unexpected keyword argument 'visibleSize'
+</failure>
+   </testcase>
+   <testcase name="OrderActionsHappyPath" status="run" time="0.953161" timestamp="2020-02-19T00:06:07.823732"/>
+   <testcase name="OrderActionsRiskServerReject" status="run" time="0.921413" timestamp="2020-02-19T00:06:08.886769"/>
+   <testcase name="OrderActionsRiskServerUnavailable" status="run" time="0.01564" timestamp="2020-02-19T00:06:09.870687"/>
+   <testcase name="OrderActionsThrottling" status="run" time="62.85554" timestamp="2020-02-19T00:06:09.986353"/>
+   <testcase name="ParkedOrdersBatching" status="run" time="156.708942" timestamp="2020-02-19T00:07:12.888674"/>
+  </testsuite>
+  <testsuite failures="1" name="OutMessageCache" skipped="0" tests="1" testsuite_failed="True" time="8.281575" timestamp="2020-02-19T00:09:50.441397">
+   <testcase name="OutSerializationCache" status="run" time="8.108566" timestamp="2020-02-19T00:09:50.551938">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\OutMessageCache\OutSerializationCache.tc.py&quot;, line 27, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(SFEP, OrderSide.Buy, 50, OrderType.Limit, limitPrice = 10)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\OutMessageCache\OutSerializationCache.tc.py&quot;, line 27, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(SFEP, OrderSide.Buy, 50, OrderType.Limit, limitPrice = 10)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="0" name="Performance" skipped="0" tests="1" testsuite_failed="False" time="0.186399" timestamp="2020-02-19T00:09:58.755627">
+   <testcase name="XML interface scalability" status="run" time="0.0" timestamp="2020-02-19T00:09:58.863650"/>
+  </testsuite>
+  <testsuite failures="1" name="Protocol" skipped="0" tests="4" testsuite_failed="True" time="9.279482" timestamp="2020-02-19T00:09:58.990736">
+   <testcase name="AuthCheck" status="run" time="3.031072" timestamp="2020-02-19T00:09:59.113905">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\Protocol\AuthCheck.tc.py&quot;, line 55, in &lt;module&gt;
+    msg(c)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\Protocol\AuthCheck.tc.py&quot;, line 27, in QA
+    order = OrderActionUtils.CreateOrder('F.SF.SFEP.Z99', OrderSide.Buy, 1, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\Protocol\AuthCheck.tc.py&quot;, line 55, in &lt;module&gt;
+    msg(c)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\Protocol\AuthCheck.tc.py&quot;, line 27, in QA
+    order = OrderActionUtils.CreateOrder('F.SF.SFEP.Z99', OrderSide.Buy, 1, OrderType.Limit, limitPrice = 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="FloodProtection" status="run" time="0.0" timestamp="2020-02-19T00:10:02.207477"/>
+   <testcase name="LogonHappyPath" status="run" time="0.906286" timestamp="2020-02-19T00:10:02.301226"/>
+   <testcase name="MalformedMessage" status="run" time="4.93773" timestamp="2020-02-19T00:10:03.269999"/>
+  </testsuite>
+  <testsuite failures="1" name="SessionManagement" skipped="0" tests="7" testsuite_failed="True" time="56.486089" timestamp="2020-02-19T00:10:08.302305">
+   <testcase name="AccountSubscription" status="run" time="9.109712" timestamp="2020-02-19T00:10:08.395202">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\SessionManagement\AccountSubscription.tc.py&quot;, line 44, in &lt;module&gt;
+    o1, acctInfo1 = placeOrder(c1, account1)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\SessionManagement\AccountSubscription.tc.py&quot;, line 17, in placeOrder
+    order = OrderActionUtils.CreateOrder(SFEP, OrderSide.Buy, 50, OrderType.Limit, limitPrice = 10)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\SessionManagement\AccountSubscription.tc.py&quot;, line 44, in &lt;module&gt;
+    o1, acctInfo1 = placeOrder(c1, account1)
+  File &quot;Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\SessionManagement\AccountSubscription.tc.py&quot;, line 17, in placeOrder
+    order = OrderActionUtils.CreateOrder(SFEP, OrderSide.Buy, 50, OrderType.Limit, limitPrice = 10)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CSMAvailability" status="run" time="5.093307" timestamp="2020-02-19T00:10:17.568056"/>
+   <testcase name="InvalidLogon" status="run" time="6.089381" timestamp="2020-02-19T00:10:22.728469"/>
+   <testcase name="LogoffTraderFromCAST" status="run" time="7.109429" timestamp="2020-02-19T00:10:28.896179"/>
+   <testcase name="LogonSplitAck" status="run" time="5.093909" timestamp="2020-02-19T00:10:36.099380"/>
+   <testcase name="MultipleTraderLogons" status="run" time="12.172545" timestamp="2020-02-19T00:10:41.271463"/>
+   <testcase name="PasswordChange" status="run" time="11.187955" timestamp="2020-02-19T00:10:53.521862"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

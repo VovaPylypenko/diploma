@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="28" testsuite_failed="False" time="395.43653" timestamp="2020-02-06T03:55:27.528318">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="16"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="CollateralSubscription" skipped="0" tests="28" testsuite_failed="False" time="395.43653" timestamp="2020-02-06T03:55:27.528318">
+  <testsuite failures="0" name="CollateralReportValues" skipped="0" tests="4" testsuite_failed="False" time="75.721207" timestamp="2020-02-06T03:55:40.981234">
+   <testcase name="AllowableMarginCredit" status="run" time="30.204102" timestamp="2020-02-06T03:55:44.809506"/>
+   <testcase name="Loss" status="run" time="15.06297" timestamp="2020-02-06T03:55:44.840779"/>
+   <testcase name="Profit" status="run" time="25.141464" timestamp="2020-02-06T03:55:44.871976"/>
+   <testsuite failures="0" name="TotalMargin" skipped="0" tests="1" testsuite_failed="False" time="41.5328" timestamp="2020-02-06T03:56:15.044854">
+    <testcase name="TotalMargin" status="run" time="41.359701" timestamp="2020-02-06T03:56:15.155257"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="CollateralUpdates" skipped="0" tests="8" testsuite_failed="False" time="211.134247" timestamp="2020-02-06T03:56:56.764952">
+   <testcase name="AccountAuthorizationRemoval" status="run" time="21.34415" timestamp="2020-02-06T03:57:10.718836"/>
+   <testcase name="CastOrderActions" status="run" time="45.674346" timestamp="2020-02-06T03:57:10.749842"/>
+   <testcase name="GroupAccountOrderActions" status="run" time="10.157199" timestamp="2020-02-06T03:57:10.781035"/>
+   <testcase name="OminbusAccountOrderActions" status="run" time="10.109645" timestamp="2020-02-06T03:57:10.843603"/>
+   <testcase name="OrderTransactions" status="run" time="20.188171" timestamp="2020-02-06T03:57:10.874780"/>
+   <testsuite failures="0" name="CastAccountSettings" skipped="0" tests="1" testsuite_failed="False" time="84.518366" timestamp="2020-02-06T03:57:56.455442">
+    <testcase name="CastAccountSettings" status="run" time="84.330854" timestamp="2020-02-06T03:57:56.549217"/>
+   </testsuite>
+   <testsuite failures="0" name="CastPositionActions" skipped="0" tests="1" testsuite_failed="False" time="53.581183" timestamp="2020-02-06T03:59:21.005082">
+    <testcase name="CastPositionActions" status="run" time="53.440564" timestamp="2020-02-06T03:59:21.098830"/>
+   </testsuite>
+   <testsuite failures="0" name="CastTraderSettings" skipped="0" tests="1" testsuite_failed="False" time="13.031693" timestamp="2020-02-06T04:00:14.664408">
+    <testcase name="CastTraderSettings" status="run" time="12.859793" timestamp="2020-02-06T04:00:14.773777"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Subscription" skipped="0" tests="16" testsuite_failed="False" time="94.596859" timestamp="2020-02-06T04:00:27.946082">
+   <testcase name="Multi_Snapshot_NoInqId" status="run" time="7.68798" timestamp="2020-02-06T04:00:28.039831"/>
+   <testcase name="Multi_Snapshot" status="run" time="44.126474" timestamp="2020-02-06T04:00:28.071068"/>
+   <testcase name="Multi_Subscribe_NoInqId" status="run" time="83.940499" timestamp="2020-02-06T04:00:28.102467"/>
+   <testcase name="Multi_UnsubscribeOnSessionClose" status="run" time="75.689934" timestamp="2020-02-06T04:00:28.211798"/>
+   <testcase name="Multi_Unsubscribe_NoInqId" status="run" time="83.830719" timestamp="2020-02-06T04:00:28.243126"/>
+   <testcase name="Multi_Unsubscribe" status="run" time="83.721508" timestamp="2020-02-06T04:00:28.289848"/>
+   <testcase name="SubsTypes_InvalidSubscribe" status="run" time="3.255772" timestamp="2020-02-06T04:00:28.336726"/>
+   <testcase name="SubsTypes_InvalidUnsubscribe" status="run" time="64.033191" timestamp="2020-02-06T04:00:28.383751"/>
+   <testcase name="SubsTypes_Resubscribe" status="run" time="94.018791" timestamp="2020-02-06T04:00:28.414854"/>
+   <testcase name="SubsTypes_Snapshot_NoInqId" status="run" time="43.657676" timestamp="2020-02-06T04:00:28.446100"/>
+   <testcase name="SubsTypes_Snapshot" status="run" time="43.610823" timestamp="2020-02-06T04:00:28.492953"/>
+   <testcase name="SubsTypes_Subscribe_NoInqId" status="run" time="54.093736" timestamp="2020-02-06T04:00:28.526009"/>
+   <testcase name="SubsTypes_UnsubscribeByAccountid" status="run" time="54.04865" timestamp="2020-02-06T04:00:28.555475"/>
+   <testcase name="SubsTypes_UnsubscribeByACCTID" status="run" time="54.048666" timestamp="2020-02-06T04:00:28.586707"/>
+   <testcase name="SubsTypes_UnsubscribeOnSessionClose" status="run" time="55.736198" timestamp="2020-02-06T04:00:28.633605"/>
+   <testcase name="SubsTypes_Unsubscribe_NoInqId" status="run" time="53.954873" timestamp="2020-02-06T04:00:28.680500"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

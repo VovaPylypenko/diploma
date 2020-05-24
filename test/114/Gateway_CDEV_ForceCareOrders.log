@@ -1,0 +1,18 @@
+ 2:03:15.78  Test starded without threads
+00:03:16.301 Python Module Path 'ScriptKit' added.
+00:03:16.301 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:03:16.301 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+00:03:16.786 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrders' filtered execution.
+00:03:16.817 Suite '.'. [0 test cases, 7 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrders\test_suite_su.py", line 99, in <module>
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 6, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:03:45.381 Suite '.' setup failed, child test cases and sub-suites will be skipped.
+00:03:46.646 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrders' execution finished. It took 0:00:29.829185.
+00:03:46.646 Test cases results: 43 total, 0 succeeded, 0 failed, 43 skipped.

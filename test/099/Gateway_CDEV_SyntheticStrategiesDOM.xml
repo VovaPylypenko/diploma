@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="12" testsuite_failed="False" time="134.95754" timestamp="2020-02-06T08:25:55.595810">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyDOM/Suites/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_D4S"/>
+  <property name="scripts-cfg-instance" value="SF_D4S"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyDOM/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Suites" skipped="0" tests="12" testsuite_failed="False" time="134.95754" timestamp="2020-02-06T08:25:55.595810">
+  <testsuite failures="0" name="DOMUsageMultilevels" skipped="0" tests="9" testsuite_failed="False" time="41.798145" timestamp="2020-02-06T08:26:03.299265">
+   <testcase name="MultilevelAggr_Spread_MultilevelsMode" status="run" time="5.530672" timestamp="2020-02-06T08:26:03.362444"/>
+   <testcase name="Spread_FullSizeAvgPrice" status="run" time="4.390992" timestamp="2020-02-06T08:26:08.955646"/>
+   <testcase name="Spread_FullSizeWorstPrice" status="run" time="4.953313" timestamp="2020-02-06T08:26:13.408873"/>
+   <testcase name="Spread_IHEPcrash" status="run" time="1.031666" timestamp="2020-02-06T08:26:18.424658"/>
+   <testcase name="Spread_IncrementalDOMupdate" status="run" time="8.933382" timestamp="2020-02-06T08:26:19.522879"/>
+   <testcase name="Spread_MultilevelsMode" status="run" time="3.374377" timestamp="2020-02-06T08:26:28.504105"/>
+   <testcase name="Spread_MultilevelsMode_interXchange" status="run" time="4.827309" timestamp="2020-02-06T08:26:31.941707"/>
+   <testcase name="Spread_PrimaryOrders_SeveralLevels" status="run" time="5.453316" timestamp="2020-02-06T08:26:36.831520"/>
+   <testcase name="Spread_Sniper_MultilevelsMode" status="run" time="2.718839" timestamp="2020-02-06T08:26:42.331692"/>
+  </testsuite>
+  <testsuite failures="0" name="IHESubscription" skipped="0" tests="1" testsuite_failed="False" time="66.238802" timestamp="2020-02-06T08:26:45.128662">
+   <testcase name="IHESubscriptionNoMarketStatus" status="run" time="66.029512" timestamp="2020-02-06T08:26:45.257583"/>
+  </testsuite>
+  <testsuite failures="0" name="Yield" skipped="0" tests="2" testsuite_failed="False" time="18.046635" timestamp="2020-02-06T08:27:51.397527">
+   <testcase name="Spread_YieldLeg" status="run" time="13.078093" timestamp="2020-02-06T08:27:51.475051"/>
+   <testcase name="Spread_YieldLeg_InterXchange" status="run" time="4.781379" timestamp="2020-02-06T08:28:04.600187"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

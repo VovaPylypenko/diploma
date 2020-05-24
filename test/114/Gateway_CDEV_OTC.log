@@ -1,0 +1,865 @@
+ 2:36:05.31  Test starded without threads
+00:36:05.865 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC/PythonModules' added.
+00:36:05.865 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:36:05.865 Python Module Path 'ScriptKit/WebApi' added.
+00:36:05.865 Python Module Path 'ScriptKit/CMS' added.
+00:36:05.865 Python Module Path 'ScriptKit' added.
+00:36:05.865 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC/EIME/PythonModules' added.
+00:36:05.865 Python Module Path 'ScriptKit/TroubleMaker' added.
+00:36:06.349 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC' full execution.
+00:36:06.380 Suite '.'. [0 test cases, 4 sub-suites]
+00:36:11.193 Suite 'EIME'. [0 test cases, 7 sub-suites]
+00:36:45.897 Suite 'EIME\BasicOrderRequests'. [3 test cases, 0 sub-suites]
+00:36:46.008 Case 'CancelOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\BasicOrderRequests\CancelOrder_tc.py", line 5, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=datetime.datetime.utcnow()+datetime.timedelta(minutes=5))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:36:46.022 Case 'CancelOrder' failed.
+00:36:46.116 Case 'ModifyOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\BasicOrderRequests\ModifyOrder_tc.py", line 5, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=datetime.datetime.utcnow()+datetime.timedelta(minutes=5))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:36:46.147 Case 'ModifyOrder' failed.
+00:36:46.241 Case 'PlaceOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\BasicOrderRequests\PlaceOrder_tc.py", line 5, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=datetime.datetime.utcnow()+datetime.timedelta(minutes=5))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:36:46.257 Case 'PlaceOrder' failed.
+00:36:46.491 Suite 'EIME\ContractsNotifications'. [1 test cases, 0 sub-suites]
+00:36:46.570 Case 'NewContract' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\ContractsNotifications\NewContract_tc.py", line 22, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=datetime.datetime.utcnow()+datetime.timedelta(minutes=5))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:36:51.616 Case 'NewContract' failed.
+00:36:51.821 Suite 'EIME\Exceptions'. [6 test cases, 0 sub-suites]
+00:36:51.913 Case 'ClosedMarket' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Exceptions\ClosedMarket_tc.py", line 8, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=datetime.datetime.utcnow()+datetime.timedelta(minutes=5))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:36:51.929 Case 'ClosedMarket' failed.
+00:36:52.023 Case 'WrongGttTime' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Exceptions\WrongGttTime_tc.py", line 5, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=datetime.datetime.utcnow()+datetime.timedelta(days=6))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:36:52.038 Case 'WrongGttTime' failed.
+00:36:52.132 Case 'WrongOrderDuration' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Exceptions\WrongOrderDuration_tc.py", line 5, in <module>
+    duration=OrderDuration.GoodTillCancel)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:36:52.148 Case 'WrongOrderDuration' failed.
+00:36:52.241 Case 'WrongOrderSize' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Exceptions\WrongOrderSize_tc.py", line 5, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=datetime.datetime.utcnow()+datetime.timedelta(minutes=5))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:36:52.257 Case 'WrongOrderSize' failed.
+00:36:52.366 Case 'WrongOrderType' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Exceptions\WrongOrderType_tc.py", line 4, in <module>
+    order = OrderActionUtils.CreateOrder(futureContracts[0], OrderSide.Buy, 10, OrderType.Market)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:36:52.382 Case 'WrongOrderType' failed.
+00:36:52.476 Case 'WrongQuoteSize' execution.
+00:36:52.741 Case 'WrongQuoteSize' succeeded.
+00:36:52.945 Suite 'EIME\MarketEvents'. [2 test cases, 0 sub-suites]
+00:36:53.038 Case 'MarketStatusUpdates' execution.
+00:37:03.070 Case 'MarketStatusUpdates' succeeded.
+00:37:03.163 Case 'SettlementPriceNotifications' execution.
+00:37:18.195 Case 'SettlementPriceNotifications' succeeded.
+00:37:18.398 Suite 'EIME\MatchOrders'. [4 test cases, 0 sub-suites]
+00:37:18.508 Case 'CrossDom' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\MatchOrders\CrossDom_tc.py", line 7, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:37:18.539 Case 'CrossDom' failed.
+00:37:18.633 Case 'MatchOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\MatchOrders\MatchOrders_tc.py", line 7, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:37:18.664 Case 'MatchOrders' failed.
+00:37:18.789 Case 'MultipleMatchOnModify' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\MatchOrders\MultipleMatchOnModify_tc.py", line 13, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:37:18.820 Case 'MultipleMatchOnModify' failed.
+00:37:18.961 Case 'MultipleMatchOnPlace' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\MatchOrders\MultipleMatchOnPlace_tc.py", line 13, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:37:19.008 Case 'MultipleMatchOnPlace' failed.
+00:37:19.227 Suite 'EIME\QuoteRequests'. [3 test cases, 0 sub-suites]
+00:37:19.320 Case 'WithExpiration' execution.
+00:37:19.367 Case 'WithExpiration' succeeded.
+00:37:19.477 Case 'WithoutExpiration' execution.
+00:37:19.508 Case 'WithoutExpiration' succeeded.
+00:37:19.617 Case 'WithoutSide' execution.
+00:37:19.649 Case 'WithoutSide' succeeded.
+00:37:19.852 Suite 'EIME\Spreads'. [0 test cases, 3 sub-suites]
+00:37:20.008 Suite 'EIME\Spreads\ContractsNotifications'. [1 test cases, 0 sub-suites]
+00:37:20.102 Case 'NewContract' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Spreads\ContractsNotifications\NewContract_tc.py", line 28, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=datetime.datetime.utcnow()+datetime.timedelta(minutes=5))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:37:25.133 Case 'NewContract' failed.
+00:37:25.352 Suite 'EIME\Spreads\Exceptions'. [2 test cases, 0 sub-suites]
+00:37:25.445 Case 'BothTradeReportsRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Spreads\Exceptions\BothTradeReportsRejected_tc.py", line 15, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:37:30.493 Case 'BothTradeReportsRejected' failed.
+00:37:30.633 Case 'OneTradeReportRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Spreads\Exceptions\OneTradeReportRejected_tc.py", line 15, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:37:35.665 Case 'OneTradeReportRejected' failed.
+00:37:35.836 Suite 'EIME\Spreads\SpreadFillPrices'. [3 test cases, 0 sub-suites]
+00:37:35.946 Case 'BasedOnLegBid' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Spreads\SpreadFillPrices\BasedOnLegBid_tc.py", line 15, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:37:40.977 Case 'BasedOnLegBid' failed.
+00:37:41.087 Case 'BasedOnLegSettlement' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Spreads\SpreadFillPrices\BasedOnLegSettlement_tc.py", line 15, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:37:46.087 Case 'BasedOnLegSettlement' failed.
+00:37:46.196 Case 'BasedOnLegTrade' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\Spreads\SpreadFillPrices\BasedOnLegTrade_tc.py", line 15, in <module>
+    duration=OrderDuration.GoodTillTime, goodThru=goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:37:51.228 Case 'BasedOnLegTrade' failed.
+00:37:52.728 Suite 'FillAndHedge'. [2 test cases, 0 sub-suites]
+00:38:12.072 Case 'Fill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\FillAndHedge\Fill.tc.py", line 39, in <module>
+    test(OrderSide.Buy, clientNoFillBuyPrice, clientFillBuyPrice, hedgeBuyPrice, {"ask": (askPrice, volume)})
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\FillAndHedge\Fill.tc.py", line 11, in test
+    notFilledOrderDesc = CreateOrder(symbol, side, size, OrderType.Limit, clientNoFillPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:12.103 Case 'Fill' failed.
+00:38:12.197 Case 'PlaceModifyCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\FillAndHedge\PlaceModifyCancel.tc.py", line 28, in <module>
+    test(OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\FillAndHedge\PlaceModifyCancel.tc.py", line 11, in test
+    orderDesc = CreateOrder(symbol, side, size, OrderType.Limit, limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:12.213 Case 'PlaceModifyCancel' failed.
+00:38:12.416 Suite 'HedgeAndFill'. [0 test cases, 5 sub-suites]
+00:38:19.307 Suite 'HedgeAndFill\Basic'. [6 test cases, 0 sub-suites]
+00:38:19.463 Case 'CancelRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\CancelRejected.tc.py", line 19, in <module>
+    test(OrderSide.Buy, 1000, 990, 2000, 1990)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\CancelRejected.tc.py", line 10, in test
+    clientAcctInfo, hedgeAcctInfo, symbol, side, size, initialClientPrice, initialHedgePrice, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:19.479 Case 'CancelRejected' failed.
+00:38:19.588 Case 'Fill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\Fill.tc.py", line 17, in <module>
+    test(OrderSide.Buy, 2000, 1990, 1000, 990)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\Fill.tc.py", line 11, in test
+    clientAcctInfo, hedgeAcctInfo, symbol, side, size, clientLimitPrice, hedgeLimitPrice, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:19.619 Case 'Fill' failed.
+00:38:19.746 Case 'FillMkt' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\FillMkt.tc.py", line 18, in <module>
+    test(OrderSide.Buy, 1000, 990)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\FillMkt.tc.py", line 12, in test
+    orderType=OrderType.Market)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:19.775 Case 'FillMkt' failed.
+00:38:19.916 Case 'ModifyRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\ModifyRejected.tc.py", line 19, in <module>
+    test(OrderSide.Buy, 1000, 990, 2000, 1990)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\ModifyRejected.tc.py", line 10, in test
+    clientAcctInfo, hedgeAcctInfo, symbol, side, size, initialClientPrice, initialHedgePrice, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:19.947 Case 'ModifyRejected' failed.
+00:38:20.057 Case 'PlaceModifyCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\PlaceModifyCancel.tc.py", line 27, in <module>
+    test(OrderSide.Buy, 1000, 990, 2000, 1990)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\PlaceModifyCancel.tc.py", line 11, in test
+    clientAcctInfo, hedgeAcctInfo, symbol, side, size, initialClientPrice, initialHedgePrice, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:20.088 Case 'PlaceModifyCancel' failed.
+00:38:20.229 Case 'PlaceRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\Basic\PlaceRejected.tc.py", line 13, in <module>
+    contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:20.244 Case 'PlaceRejected' failed.
+00:38:20.510 Suite 'HedgeAndFill\ContractMetadata'. [3 test cases, 0 sub-suites]
+00:38:20.729 Case 'DifferentContractsContributors' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\ContractMetadata\DifferentContractsContributors.tc.py", line 18, in <module>
+    OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:20.760 Case 'DifferentContractsContributors' failed.
+00:38:20.900 Case 'EnableDisable' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\ContractMetadata\EnableDisable.tc.py", line 18, in <module>
+    OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:20.947 Case 'EnableDisable' failed.
+00:38:21.072 Case 'OffsetChanges' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\ContractMetadata\OffsetChanges.tc.py", line 18, in <module>
+    contractA, OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:21.104 Case 'OffsetChanges' failed.
+00:38:21.385 Suite 'HedgeAndFill\ExternalHedgeRequests'. [7 test cases, 0 sub-suites]
+00:38:21.494 Case 'CancelAccepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\ExternalHedgeRequests\CancelAccepted.tc.py", line 10, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:21.510 Case 'CancelAccepted' failed.
+00:38:21.682 Case 'CancelRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\ExternalHedgeRequests\CancelRejected.tc.py", line 10, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:21.713 Case 'CancelRejected' failed.
+00:38:21.854 Case 'ModifiedPriceFill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\ExternalHedgeRequests\ModifiedPriceFill.tc.py", line 9, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:21.871 Case 'ModifiedPriceFill' failed.
+00:38:22.025 Case 'ModifiedSizeCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\ExternalHedgeRequests\ModifiedSizeCancel.tc.py", line 9, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, 2, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:22.041 Case 'ModifiedSizeCancel' failed.
+00:38:22.150 Case 'ModifiedSizeOverfill' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\ExternalHedgeRequests\ModifiedSizeOverfill.tc.py", line 10, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, size, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:22.182 Case 'ModifiedSizeOverfill' failed.
+00:38:22.308 Case 'ModifyAccepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\ExternalHedgeRequests\ModifyAccepted.tc.py", line 9, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:22.338 Case 'ModifyAccepted' failed.
+00:38:22.447 Case 'ModifyRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\ExternalHedgeRequests\ModifyRejected.tc.py", line 9, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:22.463 Case 'ModifyRejected' failed.
+00:38:22.716 Suite 'HedgeAndFill\InFlightFill'. [2 test cases, 0 sub-suites]
+00:38:22.822 Case 'PendingCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\InFlightFill\PendingCancel.tc.py", line 10, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:22.854 Case 'PendingCancel' failed.
+00:38:23.010 Case 'PendingModify' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\InFlightFill\PendingModify.tc.py", line 10, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:23.057 Case 'PendingModify' failed.
+00:38:23.385 Suite 'HedgeAndFill\UnsolicitedCancel'. [3 test cases, 0 sub-suites]
+00:38:23.526 Case 'PendingCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\UnsolicitedCancel\PendingCancel.tc.py", line 10, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:23.557 Case 'PendingCancel' failed.
+00:38:23.682 Case 'PendingModify' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\UnsolicitedCancel\PendingModify.tc.py", line 10, in <module>
+    clientAcctInfo, hedgeAcctInfo, symbol, OrderSide.Buy, 1, 1000, 990, contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 16, in AssertHAFOrderPlaced
+    expectedClientOrder = CreateOrder(symbol, side, size, orderType, clientLimitPrice, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:23.713 Case 'PendingModify' failed.
+00:38:23.869 Case 'PendingPlace' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\HedgeAndFill\UnsolicitedCancel\PendingPlace.tc.py", line 8, in <module>
+    expectedClientOrder = CreateOrder(symbol, OrderSide.Buy, 1, OrderType.Limit, 1000, contributorID=contributorID)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:38:23.901 Case 'PendingPlace' failed.
+00:38:24.338 Suite 'IMF'. [0 test cases, 5 sub-suites]
+00:39:26.403 Suite 'IMF\BasicRequestsAndEvents'. [8 test cases, 0 sub-suites]
+00:39:26.559 Case 'ExchangeChildOrderRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\ExchangeChildOrderRejected.tc.py", line 29, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\ExchangeChildOrderRejected.tc.py", line 11, in test
+    expectedParentOrder = CreateOrder(contract, side, size, OrderType.Limit, limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:26.606 Case 'ExchangeChildOrderRejected' failed.
+00:39:26.793 Case 'ExternalModificationOfChildOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\ExternalModificationOfChildOrder.tc.py", line 16, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\ExternalModificationOfChildOrder.tc.py", line 9, in test
+    connection1, exchangeFactory, account1, contract, side, size=1, parentLimitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:26.809 Case 'ExternalModificationOfChildOrder' failed.
+00:39:27.012 Case 'ModifyPartiallyFilledOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\ModifyPartiallyFilledOrder.tc.py", line 112, in <module>
+    test()
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\ModifyPartiallyFilledOrder.tc.py", line 59, in test
+    childOrderType=OrderType.Limit, childLimitPrice=limitPrice, timeout=eventWaitTimeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:27.028 Case 'ModifyPartiallyFilledOrder' failed.
+00:39:27.200 Case 'PlaceCancelAll' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\PlaceCancelAll.tc.py", line 17, in <module>
+    test(contract)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\PlaceCancelAll.tc.py", line 12, in test
+    childOrderType=OrderType.Limit, childLimitPrice=200)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:27.231 Case 'PlaceCancelAll' failed.
+00:39:27.356 Case 'PlaceModifyCancelLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\PlaceModifyCancelLimit.tc.py", line 17, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\PlaceModifyCancelLimit.tc.py", line 11, in test
+    childOrderType=OrderType.Limit, childLimitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:27.387 Case 'PlaceModifyCancelLimit' failed.
+00:39:27.559 Case 'PlaceModifyCancelMarket' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\PlaceModifyCancelMarket.tc.py", line 16, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\PlaceModifyCancelMarket.tc.py", line 10, in test
+    parentOrderType=OrderType.Market, childOrderType=OrderType.Market)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:27.590 Case 'PlaceModifyCancelMarket' failed.
+00:39:27.762 Case 'PlaceParkAllActivateAll' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\PlaceParkAllActivateAll.tc.py", line 20, in <module>
+    test(contract)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\PlaceParkAllActivateAll.tc.py", line 13, in test
+    childOrderType=OrderType.Limit, childLimitPrice=200)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:27.778 Case 'PlaceParkAllActivateAll' failed.
+00:39:27.934 Case 'UnsolicitedCancelOfExchangeChildOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\UnsolicitedCancelOfExchangeChildOrder.tc.py", line 15, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\BasicRequestsAndEvents\UnsolicitedCancelOfExchangeChildOrder.tc.py", line 9, in test
+    connection1, exchangeFactory, account1, contract, side, size=1, parentLimitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:27.965 Case 'UnsolicitedCancelOfExchangeChildOrder' failed.
+00:39:28.246 Suite 'IMF\FailuresProcessing'. [3 test cases, 0 sub-suites]
+00:39:28.371 Case 'ChildOrderCancelRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\FailuresProcessing\ChildOrderCancelRejected.tc.py", line 53, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\FailuresProcessing\ChildOrderCancelRejected.tc.py", line 15, in test
+    connection1, exchangeFactory, account1, contract, side, size=size, parentLimitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:28.403 Case 'ChildOrderCancelRejected' failed.
+00:39:28.512 Case 'ChildOrderCancelTimeout' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\FailuresProcessing\ChildOrderCancelTimeout.tc.py", line 56, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\FailuresProcessing\ChildOrderCancelTimeout.tc.py", line 16, in test
+    connection1, exchangeFactory, account1, contract, side, size=size, parentLimitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:28.528 Case 'ChildOrderCancelTimeout' failed.
+00:39:28.653 Case 'ChildOrderPlaceRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\FailuresProcessing\ChildOrderPlaceRejected.tc.py", line 48, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\FailuresProcessing\ChildOrderPlaceRejected.tc.py", line 16, in test
+    connection1, exchangeFactory, account1, contract, side, size=size1, parentLimitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:28.684 Case 'ChildOrderPlaceRejected' failed.
+00:39:28.981 Suite 'IMF\FillCancelCorrectionBust'. [2 test cases, 0 sub-suites]
+00:39:29.121 Case 'FillBust' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\FillCancelCorrectionBust\FillBust.tc.py", line 28, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\FillCancelCorrectionBust\FillBust.tc.py", line 13, in test
+    connection1, exchangeFactory, account1, contract, side, size=size, parentLimitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:29.137 Case 'FillBust' failed.
+00:39:29.293 Case 'FillCancel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\FillCancelCorrectionBust\FillCancel.tc.py", line 32, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\FillCancelCorrectionBust\FillCancel.tc.py", line 13, in test
+    connection1, exchangeFactory, account1, contract, side, size=size, parentLimitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:29.325 Case 'FillCancel' failed.
+00:39:29.637 Suite 'IMF\InFlightRaceConditions'. [3 test cases, 0 sub-suites]
+00:39:29.903 Case 'OrderFilledDuringMatching' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\InFlightRaceConditions\OrderFilledDuringMatching.tc.py", line 58, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\InFlightRaceConditions\OrderFilledDuringMatching.tc.py", line 15, in test
+    connection1, exchangeFactory, account1, contract, side, size=size1, parentLimitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:29.935 Case 'OrderFilledDuringMatching' failed.
+00:39:30.090 Case 'PendingCancelOrderFilled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\InFlightRaceConditions\PendingCancelOrderFilled.tc.py", line 55, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\InFlightRaceConditions\PendingCancelOrderFilled.tc.py", line 28, in test
+    connection1, exchangeFactory, account1, contract, side, size=size, parentLimitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:30.106 Case 'PendingCancelOrderFilled' failed.
+00:39:30.293 Case 'PendingModifyOrderCanceled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\InFlightRaceConditions\PendingModifyOrderCanceled.tc.py", line 54, in <module>
+    test(contract, OrderSide.Buy)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\InFlightRaceConditions\PendingModifyOrderCanceled.tc.py", line 28, in test
+    connection1, exchangeFactory, account1, contract, side, size=size, parentLimitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:30.340 Case 'PendingModifyOrderCanceled' failed.
+00:39:30.700 Suite 'IMF\MatchingAlgorithm'. [5 test cases, 0 sub-suites]
+00:39:30.856 Case 'MachingAfterModification' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\MatchingAlgorithm\MachingAfterModification_tc.py", line 8, in <module>
+    childOrderType=OrderType.Limit, childLimitPrice=98)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:30.887 Case 'MachingAfterModification' failed.
+00:39:31.059 Case 'MarketMovedAway' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\MatchingAlgorithm\MarketMovedAway_tc.py", line 8, in <module>
+    childOrderType=OrderType.Limit, childLimitPrice=96)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:31.090 Case 'MarketMovedAway' failed.
+00:39:31.247 Case 'OppositeFullyMatched' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\MatchingAlgorithm\OppositeFullyMatched_tc.py", line 8, in <module>
+    childOrderType=OrderType.Limit, childLimitPrice=96)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:31.278 Case 'OppositeFullyMatched' failed.
+00:39:31.439 Case 'OppositePartiallyMatched' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\MatchingAlgorithm\OppositePartiallyMatched_tc.py", line 8, in <module>
+    childOrderType=OrderType.Limit, childLimitPrice=96)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:31.439 Case 'OppositePartiallyMatched' failed.
+00:39:31.606 Case 'SeveralOrdersMatched' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\IMF\MatchingAlgorithm\SeveralOrdersMatched_tc.py", line 9, in <module>
+    childOrderType=OrderType.Limit, childLimitPrice=99)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:39:31.622 Case 'SeveralOrdersMatched' failed.
+00:39:32.434 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC' execution finished. It took 0:03:25.991280.
+00:39:32.434 Test cases results: 69 total, 6 succeeded, 63 failed, 0 skipped.

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="26" testsuite_failed="False" time="198.023305" timestamp="2020-02-06T08:51:56.490303">
+ <properties>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AutoTradingRegulatoryAlgorithms/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_EATRS"/>
+  <property name="scripts-cfg-instance" value="SF_EATRS"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AutoTradingRegulatoryAlgorithms"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="AutoTradingRegulatoryAlgorithms" skipped="0" tests="26" testsuite_failed="False" time="198.023305" timestamp="2020-02-06T08:51:56.490303">
+  <testsuite failures="0" name="ClientSideAlgorithmID" skipped="0" tests="8" testsuite_failed="False" time="21.328742" timestamp="2020-02-06T08:52:19.850652">
+   <testcase name="AlgoIDAndDescriptionProvided" status="run" time="3.906441" timestamp="2020-02-06T08:52:19.991103"/>
+   <testcase name="ExistingAlgoDescriptionProvided" status="run" time="2.375082" timestamp="2020-02-06T08:52:23.944385"/>
+   <testcase name="ExternalAlgoIDProvided" status="run" time="2.312588" timestamp="2020-02-06T08:52:26.381982"/>
+   <testcase name="InternalAlgoIDProvided" status="run" time="1.343797" timestamp="2020-02-06T08:52:28.757067"/>
+   <testcase name="MaximumAlgoIDProvided" status="run" time="2.359466" timestamp="2020-02-06T08:52:30.210238"/>
+   <testcase name="NewAlgoDescriptionProvided" status="run" time="2.406339" timestamp="2020-02-06T08:52:32.647828"/>
+   <testcase name="NoAlgoProvided" status="run" time="1.3139319999999999" timestamp="2020-02-06T08:52:35.132300"/>
+   <testcase name="NonAlgoCommodityExchange" status="run" time="4.517141" timestamp="2020-02-06T08:52:36.522987"/>
+  </testsuite>
+  <testsuite failures="0" name="CombinedAlgorithmID" skipped="0" tests="5" testsuite_failed="False" time="50.268135" timestamp="2020-02-06T08:52:41.210858">
+   <testcase name="CombinedAlgoOCO" status="run" time="6.250214" timestamp="2020-02-06T08:52:41.320031"/>
+   <testcase name="CombinedAlgoOCO_TLMT" status="run" time="10.672269" timestamp="2020-02-06T08:52:47.617110"/>
+   <testcase name="CombinedAlgoSSP" status="run" time="13.016451" timestamp="2020-02-06T08:52:58.367508"/>
+   <testcase name="CombinedAlgoTLMT" status="run" time="12.469867" timestamp="2020-02-06T08:53:11.446397"/>
+   <testcase name="CombinedAlgoTSTP" status="run" time="7.422222" timestamp="2020-02-06T08:53:23.963123"/>
+  </testsuite>
+  <testsuite failures="0" name="GWSideAlgoritrhmID" skipped="0" tests="8" testsuite_failed="False" time="48.658426" timestamp="2020-02-06T08:53:31.494624">
+   <testcase name="GWAlgoModifiedOCO" status="run" time="2.671925" timestamp="2020-02-06T08:53:31.588420"/>
+   <testcase name="GWAlgoOnNonAlgoRoute" status="run" time="10.219109" timestamp="2020-02-06T08:53:34.322836"/>
+   <testcase name="GWAlgoSSP" status="run" time="6.142206" timestamp="2020-02-06T08:53:44.620088"/>
+   <testcase name="GWAlgoTLMT" status="run" time="5.344671" timestamp="2020-02-06T08:53:50.838994"/>
+   <testcase name="GWAlgoTSTP" status="run" time="5.375176" timestamp="2020-02-06T08:53:56.276690"/>
+   <testcase name="GWAlgoTwoExchangeSSP" status="run" time="5.905615" timestamp="2020-02-06T08:54:01.715211"/>
+   <testcase name="GWAlgoTwoLegOCO" status="run" time="9.953454" timestamp="2020-02-06T08:54:07.683294"/>
+   <testcase name="GWAlgoTwoLegOPO" status="run" time="2.40613" timestamp="2020-02-06T08:54:17.683823"/>
+  </testsuite>
+  <testsuite failures="0" name="Misc" skipped="0" tests="5" testsuite_failed="False" time="53.688634" timestamp="2020-02-06T08:54:20.184316">
+   <testcase name="RegulatoryAlgoInterRiskServerReplication" status="run" time="14.594251" timestamp="2020-02-06T08:54:20.324323"/>
+   <testcase name="RegulatoryAlgoMassCancellation" status="run" time="5.48454" timestamp="2020-02-06T08:54:34.996736"/>
+   <testcase name="RegulatoryAlgoOmnibusAccountHandling" status="run" time="4.12512" timestamp="2020-02-06T08:54:40.543747"/>
+   <testcase name="RegulatoryAlgoOrderSuspend" status="run" time="5.515779" timestamp="2020-02-06T08:54:44.747036"/>
+   <testcase name="RegulatoryAlgoScheduledOrderSuspend" status="run" time="23.46953" timestamp="2020-02-06T08:54:50.325329"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

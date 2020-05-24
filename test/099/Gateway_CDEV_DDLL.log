@@ -1,0 +1,31 @@
+10:21:44.54  Test starded without threads
+08:21:44.977 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts/PythonModules' added.
+08:21:44.977 Python Module Path 'ScriptKit' added.
+08:21:44.977 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:21:44.977 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:21:45.352 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/DDLL' full execution.
+08:21:45.370 Suite '.'. [11 test cases, 0 sub-suites]
+08:21:57.915 Case 'DDLL01' execution.
+08:21:59.857 Case 'DDLL01' succeeded.
+08:21:59.884 Case 'DDLL02' execution.
+08:22:02.963 Case 'DDLL02' succeeded.
+08:22:03.025 Case 'DDLL03' execution.
+08:22:04.306 Case 'DDLL03' succeeded.
+08:22:04.353 Case 'DDLL04' execution.
+08:22:05.213 Case 'DDLL04' succeeded.
+08:22:05.291 Case 'DDLL05' execution.
+08:22:07.494 Case 'DDLL05' succeeded.
+08:22:07.541 Case 'DDLL06' execution.
+08:22:13.494 Case 'DDLL06' succeeded.
+08:22:13.557 Case 'DDLL07' execution.
+08:22:17.619 Case 'DDLL07' succeeded.
+08:22:17.683 Case 'DDLL08' execution.
+08:22:19.573 Case 'DDLL08' succeeded.
+08:22:19.620 Case 'DDLL09' execution.
+08:22:21.541 Case 'DDLL09' succeeded.
+08:22:21.620 Case 'DDLL10' execution.
+08:22:23.745 Case 'DDLL10' succeeded.
+08:22:23.791 Case 'DDLL11' execution.
+08:22:26.135 Case 'DDLL11' succeeded.
+08:22:26.323 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/DDLL' execution finished. It took 0:00:40.939098.
+08:22:26.323 Test cases results: 11 total, 11 succeeded, 0 failed, 0 skipped.

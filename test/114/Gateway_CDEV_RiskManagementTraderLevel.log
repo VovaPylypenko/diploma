@@ -1,0 +1,254 @@
+ 1:42:28.57  Test starded without threads
+23:42:29.074 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel/Modules' added.
+23:42:29.074 Python Module Path 'ScriptKit' added.
+23:42:29.074 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:42:29.496 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel' full execution.
+23:42:29.527 Suite '.'. [18 test cases, 1 sub-suites]
+23:42:43.516 Case '10_TestContractPositionLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\10_TestContractPositionLimit.tc.py", line 55, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase10_Trader1".format(prefix), "password", "{0}_TestCase10_Account1".format(prefix), orderSize = 30)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:44.451 Case '10_TestContractPositionLimit' failed.
+23:42:44.481 Case '14_TestDailyLostLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\14_TestDailyLostLimit.tc.py", line 51, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase14_Trader1".format(prefix), "password", "{0}_TestCase14_Account1".format(prefix))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:45.356 Case '14_TestDailyLostLimit' failed.
+23:42:45.419 Case '15_TestDeltaDailyLostLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\15_TestDeltaDailyLostLimit.tc.py", line 51, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase15_Trader1".format(prefix), "password", "{0}_TestCase15_Account1".format(prefix))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:46.325 Case '15_TestDeltaDailyLostLimit' failed.
+23:42:46.372 Case '16_TestMarginMultiplier' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\16_TestMarginMultiplier.tc.py", line 73, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase16_Trader1".format(prefix), "password", "{0}_TestCase16_Account1".format(prefix), orderSize = 350)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:47.247 Case '16_TestMarginMultiplier' failed.
+23:42:47.294 Case '17_TestIncludeOTEinPP' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\17_TestIncludeOTEinPP.tc.py", line 61, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase17_Trader1".format(prefix), "password", "{0}_TestCase17_Account1".format(prefix), orderSize = 29)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:48.169 Case '17_TestIncludeOTEinPP' failed.
+23:42:48.231 Case '18_TestIncludeNOVinPP' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\18_TestIncludeNOVinPP.tc.py", line 61, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase18_Trader1".format(prefix), "password", "{0}_TestCase18_Account1".format(prefix), orderSize = 29)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:49.091 Case '18_TestIncludeNOVinPP' failed.
+23:42:49.153 Case '19_TestCheckForNegativeBalance' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\19_TestCheckForNegativeBalance.tc.py", line 47, in <module>
+    scenarios.TestOrderRejected("{0}_TestCase19_Trader1".format(prefix), "password", "{0}_TestCase19_Account1".format(prefix), gwRejectReason = GWRejectReason.Reject_CurrentBalanceIsNegative())
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 174, in TestOrderRejected
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:50.028 Case '19_TestCheckForNegativeBalance' failed.
+23:42:50.091 Case '20_TestDisableBidAskPriceInOTE' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\20_TestDisableBidAskPriceInOTE.tc.py", line 50, in <module>
+    scenarios.TestOrderRejected("{0}_TestCase20_Trader1".format(prefix), "password", "{0}_TestCase20_Account1".format(prefix), gwRejectReason = GWRejectReason.Reject_MarginCallSituation())
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 174, in TestOrderRejected
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:50.966 Case '20_TestDisableBidAskPriceInOTE' failed.
+23:42:51.013 Case '21_TestDisableBidAskPriceInNOV' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\21_TestDisableBidAskPriceInNOV.tc.py", line 49, in <module>
+    scenarios.TestOrderRejected("{0}_TestCase21_Trader1".format(prefix), "password", "{0}_TestCase21_Account1".format(prefix), gwRejectReason = GWRejectReason.Reject_MarginCallSituation())
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 174, in TestOrderRejected
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:51.903 Case '21_TestDisableBidAskPriceInNOV' failed.
+23:42:51.966 Case '4_TestFuturesPermission' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\4_TestFuturesPermission.tc.py", line 62, in <module>
+    scenarios.TestOrderAccepted("{0}_TestCase4_Trader1".format(prefix), "password", enableAllAccountName)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 106, in TestOrderAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, self.__placementSize, OrderType.Limit, self.__placementLimitPrice),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:52.872 Case '4_TestFuturesPermission' failed.
+23:42:52.935 Case '5_TestBuySellOption' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\5_TestBuySellOption.tc.py", line 91, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase5_Trader1".format(prefix), "password", enableAllAccountName, orderSide = ModuleAgent.OrderSide.Sell, instrument = 'O')
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:53.809 Case '5_TestBuySellOption' failed.
+23:42:53.875 Case '6_TestTradeSizeLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\6_TestTradeSizeLimit.tc.py", line 77, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase6_Trader1".format(prefix), "password", tradeLimit20AccountName, orderSize = 30)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:54.747 Case '6_TestTradeSizeLimit' failed.
+23:42:54.809 Case '7_TestTradeMarginLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\7_TestTradeMarginLimit.tc.py", line 85, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase7_Trader1".format(prefix), "password", tradeMarginLimit20KAccountName, orderSize = 290)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:55.669 Case '7_TestTradeMarginLimit' failed.
+23:42:55.731 Case '8_TestRejectRiskyOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\8_TestRejectRiskyOrders.tc.py", line 67, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase8_Trader1".format(prefix), "password", "{0}_TestCase8_Account1".format(prefix), orderType = ModuleAgent.OrderType.Market)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:56.638 Case '8_TestRejectRiskyOrders' failed.
+23:42:56.700 Case '9_TestCommodityPositionLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\9_TestCommodityPositionLimit.tc.py", line 55, in <module>
+    scenarios.TestOrderPlaceCancelAccepted("{0}_TestCase9_Trader1".format(prefix), "password", "{0}_TestCase9_Account1".format(prefix), orderSize = 30)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 139, in TestOrderPlaceCancelAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, size, orderType, limitPrice))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:57.575 Case '9_TestCommodityPositionLimit' failed.
+23:42:57.669 Case 'TestCommodityEnablements' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\TestCommodityEnablements.tc.py", line 82, in <module>
+    scenarios.TestOrderAccepted("{0}_TestCase2_Trader1".format(prefix), "password", disableAllAccountName)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 106, in TestOrderAccepted
+    OrderActionUtils.CreateOrder(symbol, orderSide, self.__placementSize, OrderType.Limit, self.__placementLimitPrice),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:58.544 Case 'TestCommodityEnablements' failed.
+23:42:58.607 Case 'TestLiquidationOnly' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\TestLiquidationOnly.tc.py", line 77, in <module>
+    positionSide = ModuleAgent.OrderSide.Sell)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 199, in TestPositionAcquisitionAndLiquidation
+    OrderActionUtils.CreateOrder(self.__futureSymbolWithPrice, positionSide, self.__placementSize, OrderType.Market))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:42:59.497 Case 'TestLiquidationOnly' failed.
+23:42:59.575 Case 'TestTraderAuthorization' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\TestTraderAuthorization.tc.py", line 68, in <module>
+    scenarios.TestAuthorizedTrader("{0}_TestCase1_Trader1".format(prefix), "password", allAccounts)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RiskManagementOnTradingLevel\Modules\RmtlScenarios.py", line 55, in TestAuthorizedTrader
+    self.__placementSize, OrderType.Limit, self.__placementLimitPrice),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:43:00.466 Case 'TestTraderAuthorization' failed.
+23:43:00.544 Suite 'AuthorizedOmnibusSettingsOverride'. [1 test cases, 0 sub-suites]
+23:43:00.622 Case 'OrderHandlerVsOmnibusSettings' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel\AuthorizedOmnibusSettingsOverride\OrderHandlerVsOmnibusSettings.tc.py", line 17, in <module>
+    order           = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 1, OrderType.Limit, 1))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:43:06.810 Case 'OrderHandlerVsOmnibusSettings' failed.
+23:43:11.138 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel' execution finished. It took 0:00:41.610661.
+23:43:11.138 Test cases results: 19 total, 0 succeeded, 19 failed, 0 skipped.

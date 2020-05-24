@@ -1,0 +1,47 @@
+ 8:32:46.41  Test starded without threads
+06:32:46.864 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+06:32:46.864 Python Module Path 'ScriptKit' added.
+06:32:46.864 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:32:47.286 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows' full execution.
+06:32:47.317 Suite '.'. [0 test cases, 1 sub-suites]
+06:33:00.489 Suite 'OrderSpecOverriding'. [19 test cases, 0 sub-suites]
+06:33:00.552 Case 'ActivateParkedOrders' execution.
+06:33:00.942 Case 'ActivateParkedOrders' succeeded.
+06:33:01.005 Case 'LimitDayOrders' execution.
+06:33:01.177 Case 'LimitDayOrders' succeeded.
+06:33:01.239 Case 'LimitFakOrders' execution.
+06:33:01.380 Case 'LimitFakOrders' succeeded.
+06:33:01.411 Case 'LimitFokOrders' execution.
+06:33:01.583 Case 'LimitFokOrders' succeeded.
+06:33:01.630 Case 'LimitGtcOrders' execution.
+06:33:01.880 Case 'LimitGtcOrders' succeeded.
+06:33:01.942 Case 'LimitGtdOrders' execution.
+06:33:02.177 Case 'LimitGtdOrders' succeeded.
+06:33:02.255 Case 'LimitIcebergDayOrders' execution.
+06:33:02.552 Case 'LimitIcebergDayOrders' succeeded.
+06:33:02.614 Case 'LimitIcebergGtcOrders' execution.
+06:33:02.817 Case 'LimitIcebergGtcOrders' succeeded.
+06:33:02.864 Case 'MarketOrders' execution.
+06:33:03.020 Case 'MarketOrders' succeeded.
+06:33:03.083 Case 'StopDayOrders' execution.
+06:33:03.192 Case 'StopDayOrders' succeeded.
+06:33:03.255 Case 'StopFakOrders' execution.
+06:33:03.396 Case 'StopFakOrders' succeeded.
+06:33:03.444 Case 'StopFokOrders' execution.
+06:33:03.630 Case 'StopFokOrders' succeeded.
+06:33:03.692 Case 'StopGtcOrders' execution.
+06:33:03.927 Case 'StopGtcOrders' succeeded.
+06:33:03.990 Case 'StopGtdOrders' execution.
+06:33:04.192 Case 'StopGtdOrders' succeeded.
+06:33:04.240 Case 'StopLimitDayOrders' execution.
+06:33:04.474 Case 'StopLimitDayOrders' succeeded.
+06:33:04.586 Case 'StopLimitFakOrders' execution.
+06:33:04.755 Case 'StopLimitFakOrders' succeeded.
+06:33:04.817 Case 'StopLimitFokOrders' execution.
+06:33:05.099 Case 'StopLimitFokOrders' succeeded.
+06:33:05.162 Case 'StopLimitGtcOrders' execution.
+06:33:05.489 Case 'StopLimitGtcOrders' succeeded.
+06:33:05.536 Case 'StopLimitGtdOrders' execution.
+06:33:06.067 Case 'StopLimitGtdOrders' succeeded.
+06:33:12.302 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RoutingWindows' execution finished. It took 0:00:24.969569.
+06:33:12.302 Test cases results: 19 total, 19 succeeded, 0 failed, 0 skipped.

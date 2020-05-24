@@ -1,0 +1,67 @@
+21:05:14.16  Test starded without threads
+19:05:14.681 Python Module Path 'ScriptKit' added.
+19:05:14.681 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/InFlightFills/PythonModules' added.
+19:05:14.681 Python Module Path 'Scripts/Gateway/PythonModules' added.
+19:05:14.681 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders/InFlightFills/PythonModules' added.
+19:05:15.119 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders' full execution.
+19:05:15.150 Suite '.'. [3 test cases, 2 sub-suites]
+19:05:21.604 Case 'TLMT_Parked_TrailPriceUpdate' execution.
+19:05:21.635 Case 'TLMT_TrailPriceUpdate' execution.
+19:05:21.651 Case 'TSTP_Parked_Activation' execution.
+19:05:25.791 Case 'TSTP_Parked_Activation' succeeded.
+19:05:37.729 Case 'TLMT_Parked_TrailPriceUpdate' succeeded.
+19:05:37.776 Case 'TLMT_TrailPriceUpdate' succeeded.
+19:05:37.823 Suite 'InFlightFills'. [22 test cases, 0 sub-suites]
+19:05:48.918 Case 'CancelNonZero_Accepted' execution.
+19:05:48.948 Case 'CancelNonZero_Rejected' execution.
+19:05:48.995 Case 'CancelZero_Accepted' execution.
+19:05:49.042 Case 'CancelZero_Rejected' execution.
+19:05:49.089 Case 'ModifyToNonZero_AcceptFirst' execution.
+19:05:49.139 Case 'ModifyToNonZero_Rejected' execution.
+19:05:49.167 Case 'ModifyToZero_Accepted' execution.
+19:05:49.214 Case 'ModifyToZero_AcceptFirst' execution.
+19:05:49.245 Case 'ModifyToNonZero_Accepted' execution.
+19:05:49.292 Case 'ModifyToZero_PlaceCanceled' execution.
+19:05:49.339 Case 'CancelNonZero_Accepted' succeeded.
+19:05:49.417 Case 'ModifyToZero_PlaceCancelFirst' execution.
+19:05:49.620 Case 'CancelZero_Accepted' succeeded.
+19:05:49.636 Case 'CancelNonZero_Rejected' succeeded.
+19:05:49.683 Case 'CancelZero_Rejected' succeeded.
+19:05:49.683 Case 'ModifyToZero_Rejected' execution.
+19:05:49.776 Case 'ModifyToZero_RejectFirst' execution.
+19:05:49.855 Case 'ModifyToZero_Accepted' succeeded.
+19:05:49.855 Case 'ModifyToZero_ReplaceCanceled' execution.
+19:05:49.886 Case 'ModifyToZero_AcceptFirst' succeeded.
+19:05:49.886 Case 'ModifyToNonZero_AcceptFirst' succeeded.
+19:05:49.948 Case 'ModifyZeroToNonZero_Accepted' execution.
+19:05:50.073 Case 'ModifyToZero_PlaceCanceled' succeeded.
+19:05:50.073 Case 'ModifyToNonZero_Rejected' succeeded.
+19:05:50.073 Case 'ModifyToNonZero_Accepted' succeeded.
+19:05:50.073 Case 'ModifyZeroToNonZero_AcceptFirst' execution.
+19:05:50.120 Case 'ModifyToZero_PlaceCancelFirst' succeeded.
+19:05:50.120 Case 'ModifyZeroToNonZero_Rejected' execution.
+19:05:50.230 Case 'ModifyZeroToNonZero_RejectFirst' execution.
+19:05:50.355 Case 'ModifyZeroToZero_Accepted' execution.
+19:05:50.448 Case 'ModifyZeroToZero_AcceptFirst' execution.
+19:05:50.542 Case 'ModifyToZero_ReplaceCanceled' succeeded.
+19:05:50.573 Case 'ModifyZeroToZero_Rejected' execution.
+19:05:50.652 Case 'ModifyZeroToZero_RejectFirst' execution.
+19:05:50.667 Case 'ModifyToZero_Rejected' succeeded.
+19:05:50.792 Case 'ModifyToZero_RejectFirst' succeeded.
+19:05:50.964 Case 'ModifyZeroToNonZero_Rejected' succeeded.
+19:05:51.042 Case 'ModifyZeroToNonZero_Accepted' succeeded.
+19:05:51.120 Case 'ModifyZeroToNonZero_RejectFirst' succeeded.
+19:05:51.136 Case 'ModifyZeroToNonZero_AcceptFirst' succeeded.
+19:05:53.058 Case 'ModifyZeroToZero_Accepted' succeeded.
+19:05:53.152 Case 'ModifyZeroToZero_AcceptFirst' succeeded.
+19:05:53.184 Case 'ModifyZeroToZero_RejectFirst' succeeded.
+19:05:53.198 Case 'ModifyZeroToZero_Rejected' succeeded.
+19:05:53.370 Suite 'viaOmnibus'. [3 test cases, 0 sub-suites]
+19:05:59.589 Case 'mass_TLMT_modification' execution.
+19:05:59.621 Case 'mass_TSTP_activation' execution.
+19:05:59.655 Case 'TSTL_Actions' execution.
+19:06:12.012 Case 'TSTL_Actions' succeeded.
+19:07:17.967 Case 'mass_TSTP_activation' succeeded.
+19:07:28.236 Case 'mass_TLMT_modification' succeeded.
+19:09:42.426 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/TrailingOrders' execution finished. It took 0:04:27.275156.
+19:09:42.426 Test cases results: 28 total, 28 succeeded, 0 failed, 0 skipped.

@@ -1,5 +1,5 @@
 venv
 .idea
-test
-result
+#test
+#result
 *.pyc

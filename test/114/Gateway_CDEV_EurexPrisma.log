@@ -1,0 +1,298 @@
+ 0:36:32.60  Test starded without threads
+22:36:33.092 Python Module Path 'ScriptKit' added.
+22:36:33.092 Python Module Path 'Scripts/Gateway/PythonModules' added.
+22:36:33.092 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma/PythonModules' added.
+22:36:33.092 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+22:36:33.920 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma' full execution.
+22:36:33.938 Suite '.'. [0 test cases, 6 sub-suites]
+22:36:46.890 Suite 'VDK_Portfolio_Part1'. [7 test cases, 0 sub-suites]
+22:39:47.567 Case 'PRBRC_A1' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part1\PRBRC_A1_tc.py", line 5, in <module>
+    accounts[1].PlaceOrder_Filled('F.SF.SFFE.H96', OrderSide.Buy, 150, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:39:47.567 Case 'PRBRC_A1' failed.
+22:39:47.583 Case 'PRIFR_A1_PQ' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part1\PRIFR_A1_PQ_tc.py", line 5, in <module>
+    accounts[18].PlaceOrder_Filled('F.SF.SFPQP.Z95', OrderSide.Buy, 1.1, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:39:47.598 Case 'PRIFR_A1_PQ' failed.
+22:39:47.614 Case 'PRIFR_A1' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part1\PRIFR_A1_tc.py", line 5, in <module>
+    accounts[2].PlaceOrder_Filled('F.SF.SFF1.Z95', OrderSide.Buy, 100, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:39:47.614 Case 'PRIFR_A1' failed.
+22:39:47.629 Case 'PRIFR_A2' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part1\PRIFR_A2_tc.py", line 5, in <module>
+    accounts[3].PlaceOrder_Filled('F.SF.SFFE.U96', OrderSide.Sell, 150, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:39:47.661 Case 'PRIFR_A2' failed.
+22:39:47.692 Case 'PRIFR_A3' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part1\PRIFR_A3_tc.py", line 5, in <module>
+    accounts[4].PlaceOrder_Filled('C.SF.SFOL.U95.14600', OrderSide.Buy, 25, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:39:47.708 Case 'PRIFR_A3' failed.
+22:39:47.723 Case 'PRIFR_A4' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part1\PRIFR_A4_tc.py", line 5, in <module>
+    accounts[5].PlaceOrder_Filled('F.SF.SFF2.U95', OrderSide.Buy, 250, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:39:47.739 Case 'PRIFR_A4' failed.
+22:39:47.770 Case 'VDKCM_A6' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part1\VDKCM_A6_tc.py", line 5, in <module>
+    accounts[12].PlaceOrder_Filled('F.SF.SFAT.Q95', OrderSide.Buy, 10, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:39:47.786 Case 'VDKCM_A6' failed.
+22:39:48.005 Suite 'VDK_Portfolio_Part2'. [4 test cases, 0 sub-suites]
+22:42:48.667 Case 'VDKCM_A1' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part2\VDKCM_A1_tc.py", line 5, in <module>
+    accounts[9].PlaceOrder_Filled('F.SF.SFFE.H96', OrderSide.Buy, 225, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:42:48.682 Case 'VDKCM_A1' failed.
+22:42:48.713 Case 'VDKCM_A3' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part2\VDKCM_A3_tc.py", line 5, in <module>
+    accounts[10].PlaceOrder_Filled('P.SF.SFF1.U95.10000', OrderSide.Buy, 150, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:42:48.807 Case 'VDKCM_A3' failed.
+22:42:48.823 Case 'VDKCM_A5' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part2\VDKCM_A5_tc.py", line 5, in <module>
+    accounts[11].PlaceOrder_Filled('C.SF.SFF1.M96.10000', OrderSide.Sell, 500, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:42:48.839 Case 'VDKCM_A5' failed.
+22:42:48.854 Case 'VDKCM_A7' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part2\VDKCM_A7_tc.py", line 5, in <module>
+    accounts[13].PlaceOrder_Filled('F.SF.SFFE.U95', OrderSide.Sell, 500, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:42:48.870 Case 'VDKCM_A7' failed.
+22:42:49.057 Suite 'VDK_Portfolio_Part3'. [2 test cases, 0 sub-suites]
+22:45:49.673 Case 'PRIFR_A5' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part3\PRIFR_A5_tc.py", line 5, in <module>
+    accounts[6].PlaceOrder_Filled('F.SF.SFAT.M95', OrderSide.Sell, 450, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:45:49.704 Case 'PRIFR_A5' failed.
+22:45:49.720 Case 'PRIFR_A6' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part3\PRIFR_A6_tc.py", line 5, in <module>
+    accounts[7].PlaceOrder_Filled('F.SF.SFFE.U96', OrderSide.Sell, 200, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:45:49.736 Case 'PRIFR_A6' failed.
+22:45:49.861 Suite 'VDK_Portfolio_Part4'. [1 test cases, 0 sub-suites]
+22:48:50.525 Case 'PRIFR_A7' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part4\PRIFR_A7_tc.py", line 5, in <module>
+    accounts[8].PlaceOrder_Filled('F.SF.SFOL.Z95', OrderSide.Sell, 533, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:48:50.540 Case 'PRIFR_A7' failed.
+22:48:50.716 Suite 'VDK_Portfolio_Part5'. [1 test cases, 0 sub-suites]
+22:51:51.452 Case 'A1' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_Part5\A1_tc.py", line 5, in <module>
+    accounts[14].PlaceOrder_Filled('C.SF.SFOD.H96.8100', OrderSide.Buy, 1, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:51:51.468 Case 'A1' failed.
+22:51:51.624 Suite 'VDK_Portfolio_V80'. [0 test cases, 1 sub-suites]
+22:51:51.688 Suite 'VDK_Portfolio_V80\DPBBN_A1_ts.py'. [3 test cases, 0 sub-suites]
+22:54:52.380 Case 'TEA_days_2' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_V80\DPBBN_A1_ts.py", line 20, in Test_TEA_days_2
+    Scenario(accounts[15], 95, 17, 122839, 754561, 631723)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_V80\DPBBN_A1_ts.py", line 11, in Scenario
+    account.PlaceOrder_Filled('F.SF.SFF2.U{}'.format(year), OrderSide.Sell, 10, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:54:52.396 Case 'TEA_days_2' failed.
+22:54:52.412 Case 'TEA_days_1' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_V80\DPBBN_A1_ts.py", line 23, in Test_TEA_days_1
+    Scenario(accounts[16], 94, 14, 241167, 752911, 511744)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_V80\DPBBN_A1_ts.py", line 11, in Scenario
+    account.PlaceOrder_Filled('F.SF.SFF2.U{}'.format(year), OrderSide.Sell, 10, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:54:52.427 Case 'TEA_days_1' failed.
+22:54:52.459 Case 'TEA_days_0' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 97, in invoke_function
+    result = function()
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 131, in <lambda>
+    failure_message, _ = Invoker.invoke_function(lambda: func(**case_context))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_V80\DPBBN_A1_ts.py", line 26, in Test_TEA_days_0
+    Scenario(accounts[17], 93, 11, 355948, 751757, 395809)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma\VDK_Portfolio_V80\DPBBN_A1_ts.py", line 11, in Scenario
+    account.PlaceOrder_Filled('F.SF.SFF2.U{}'.format(year), OrderSide.Sell, 10, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 63, in PlaceOrder_Filled
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice=limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+22:54:52.474 Case 'TEA_days_0' failed.
+22:54:53.318 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/EurexPrisma' execution finished. It took 0:18:19.366892.
+22:54:53.318 Test cases results: 18 total, 0 succeeded, 18 failed, 0 skipped.

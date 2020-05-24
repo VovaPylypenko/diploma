@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="182" tests="182" testsuite_failed="False" time="9.793996" timestamp="2020-02-19T17:45:40.743746">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="IMSSimulator"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategy/Suites/InFlightFills/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategy/Suites/IncludeInReplication/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="18"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategy/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Suites" skipped="182" tests="182" testsuite_failed="False" time="9.793996" timestamp="2020-02-19T17:45:40.743746">
+  <testsuite failures="0" name="AccountMapping" skipped="7" tests="7" testsuite_failed="False">
+   <testcase name="PlaceModifyCancelSniperOneAccMapped" status="notrun"/>
+   <testcase name="PlaceModifyFillMultilevelTwoAccMapped" status="notrun"/>
+   <testcase name="PlaceModifyFillSimmOneAccMapped" status="notrun"/>
+   <testcase name="PlacePartFillCancelSymmTwoAccMapped" status="notrun"/>
+   <testcase name="PlacePartFillRejectMultilevelTwoAccMapped" status="notrun"/>
+   <testsuite failures="0" name="CancelAll" skipped="2" tests="2" testsuite_failed="False">
+    <testcase name="ByPrimaryLeg" status="notrun"/>
+    <testcase name="BySecondaryLeg" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="AlgorithmicOrderSupport" skipped="1" tests="1" testsuite_failed="False">
+   <testcase name="SyntheticStrategyOrder" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="BaseFunctionality" skipped="4" tests="4" testsuite_failed="False">
+   <testcase name="MultipleMsgrs" status="notrun"/>
+   <testcase name="PlaceMKTFullFill" status="notrun"/>
+   <testcase name="PlacePartialFillFullFill" status="notrun"/>
+   <testcase name="PlaceWithoutMarketModifyFillCancel" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="CancelAll" skipped="2" tests="2" testsuite_failed="False">
+   <testcase name="ByOrderState" status="notrun"/>
+   <testcase name="ByRootSymbol" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="CancelSSByPrimary" skipped="5" tests="5" testsuite_failed="False">
+   <testcase name="AggregativeLimitSpread" status="notrun"/>
+   <testcase name="MultilevelLimitSpread" status="notrun"/>
+   <testcase name="OnePrimary3LegsSymmetricLimitSpread" status="notrun"/>
+   <testcase name="OnePrimarySymmetricLimitSpread" status="notrun"/>
+   <testcase name="TwoPrimarySymmetricLimitSpread" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="ExchangeDisconnections" skipped="1" tests="1" testsuite_failed="False">
+   <testcase name="PrimaryLegCancellationOnNonDisconnectedRoute" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="ExecSourceCode" skipped="1" tests="1" testsuite_failed="False">
+   <testcase name="SyntheticStrategy" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Failure" skipped="11" tests="11" testsuite_failed="False">
+   <testcase name="AggrLimitations" status="notrun"/>
+   <testcase name="CancelAll3LegsSymmetricLimitSpread" status="notrun"/>
+   <testcase name="MultilevelLimitations" status="notrun"/>
+   <testcase name="MultiplicativeLimitations" status="notrun"/>
+   <testcase name="PrimaryRejectSymmetricLimitSpread" status="notrun"/>
+   <testcase name="SecondaryRejectSymmetricLimitSpread" status="notrun"/>
+   <testcase name="SpreadLimitations" status="notrun"/>
+   <testcase name="SSLeg_PartialQty" status="notrun"/>
+   <testcase name="SS_PartialQty" status="notrun"/>
+   <testcase name="TimeoutSymmetricMktSpread" status="notrun"/>
+   <testcase name="UnsolicitedCancelAggregativeLimitSpread" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="FillOverfill" skipped="13" tests="13" testsuite_failed="False">
+   <testcase name="AcceptOverfillsMultilevelSpread" status="notrun"/>
+   <testcase name="AutomaticHedgingSymmetricSpread" status="notrun"/>
+   <testcase name="AvoidOverfillsAggregation" status="notrun"/>
+   <testcase name="AvoidOverfillsSymmetricSpread" status="notrun"/>
+   <testcase name="FilledNestedSSOrderBecomesWorking" status="notrun"/>
+   <testcase name="FullFillLimitAggregation" status="notrun"/>
+   <testcase name="FullFillLimitSniperSpread" status="notrun"/>
+   <testcase name="FullFillLimitSymmetricSpread" status="notrun"/>
+   <testcase name="FullFillLimitSymmetricTwoWorkLegsSpread" status="notrun"/>
+   <testcase name="FullFillMarketSpread" status="notrun"/>
+   <testcase name="ManualOverfillSymmetricSpread" status="notrun"/>
+   <testcase name="PartFillLimitMultilevelSpread" status="notrun"/>
+   <testcase name="PreserveQueuePositionAggregation" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="ForceCareOrders" skipped="2" tests="2" testsuite_failed="False">
+   <testcase name="CareFillReject" status="notrun"/>
+   <testcase name="ForceCare_Actions" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="FractionalSizes" skipped="10" tests="10" testsuite_failed="False">
+   <testcase name="LegRatioNotMultipleSizeIncrementRejected" status="notrun"/>
+   <testcase name="NestedSpreadFractionalSizeRejected" status="notrun"/>
+   <testcase name="NonProportionalExecutionRejected" status="notrun"/>
+   <testcase name="ProportionalExecution" status="notrun"/>
+   <testcase name="RoundingModeDown" status="notrun"/>
+   <testcase name="RoundingModeMath" status="notrun"/>
+   <testcase name="RoundingModeUp" status="notrun"/>
+   <testcase name="SizeModificationRejected" status="notrun"/>
+   <testcase name="ZeroLegSizeRejected" status="notrun"/>
+   <testcase name="ZeroPrimaryLegSizeRejected" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Hang" skipped="10" tests="10" testsuite_failed="False">
+   <testcase name="FractionalSymmetricLimitSpread" status="notrun"/>
+   <testcase name="GoMarketSymmetricLimitSpread" status="notrun"/>
+   <testcase name="HangFailMultilevelLimitSpread" status="notrun"/>
+   <testcase name="HangLiquidateMultilevelLimitSpread" status="notrun"/>
+   <testcase name="HangResolutionMultilevelLimitSpread" status="notrun"/>
+   <testcase name="HangSniperSpread" status="notrun"/>
+   <testcase name="LiquidateSymmetricLimitSpread" status="notrun"/>
+   <testcase name="MultipleHangsSymmetricLimitSpread" status="notrun"/>
+   <testcase name="ScratchSymmetricLimitSpread" status="notrun"/>
+   <testcase name="TrailSymmetricLimitSpread" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Iceberg" skipped="12" tests="12" testsuite_failed="False">
+   <testcase name="IcbrgAggr_PartialQty" status="notrun"/>
+   <testcase name="IcbrgLegsSymmetricSSSizeModification" status="notrun"/>
+   <testcase name="IcbrgMultilevelSSPrimaryLegSizeModificationAfterPartialFill" status="notrun"/>
+   <testcase name="IcbrgNativeLegsAggregationSSPartialFill" status="notrun"/>
+   <testcase name="IcbrgSymmetricSSRejections" status="notrun"/>
+   <testcase name="IcbrgSymmetricSSSizeModification" status="notrun"/>
+   <testcase name="IcbrgSymmetricSSVisibleSizeModification" status="notrun"/>
+   <testcase name="IcbrgSymmetric_PartialQty" status="notrun"/>
+   <testcase name="InvalidIcbrg_PartialQty" status="notrun"/>
+   <testcase name="LegIcbrgAggr_PartialQty" status="notrun"/>
+   <testcase name="LegIcbrgSymmetric_PartialQty" status="notrun"/>
+   <testcase name="LegNativeIcbrgAggr_PartialQty" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="IncludeInReplication" skipped="4" tests="4" testsuite_failed="False">
+   <testcase name="ExcludeFromReplicationCancelled" status="notrun"/>
+   <testcase name="IncludeInReplicationFilledLegs" status="notrun"/>
+   <testcase name="IncludeInReplicationLateFills" status="notrun"/>
+   <testcase name="IncludeInReplicationReleasedLegs" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="InFlightFills" skipped="18" tests="18" testsuite_failed="False">
+   <testcase name="CancelNonZero_Accepted" status="notrun"/>
+   <testcase name="CancelNonZero_Rejected" status="notrun"/>
+   <testcase name="CancelZero_Rejected" status="notrun"/>
+   <testcase name="ModifyToNonZero_Accepted" status="notrun"/>
+   <testcase name="ModifyToNonZero_AcceptFirst" status="notrun"/>
+   <testcase name="ModifyToNonZero_Rejected" status="notrun"/>
+   <testcase name="ModifyToZero_Accepted" status="notrun"/>
+   <testcase name="ModifyToZero_AcceptFirst" status="notrun"/>
+   <testcase name="ModifyToZero_Rejected" status="notrun"/>
+   <testcase name="ModifyToZero_RejectFirst" status="notrun"/>
+   <testcase name="ModifyZeroToNonZero_Accepted" status="notrun"/>
+   <testcase name="ModifyZeroToNonZero_AcceptFirst" status="notrun"/>
+   <testcase name="ModifyZeroToNonZero_Rejected" status="notrun"/>
+   <testcase name="ModifyZeroToNonZero_RejectFirst" status="notrun"/>
+   <testcase name="ModifyZeroToZero_Accepted" status="notrun"/>
+   <testcase name="ModifyZeroToZero_AcceptFirst" status="notrun"/>
+   <testcase name="ModifyZeroToZero_Rejected" status="notrun"/>
+   <testcase name="ModifyZeroToZero_RejectFirst" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="LegOrderConversion" skipped="1" tests="1" testsuite_failed="False">
+   <testcase name="ConvertedLegRelease" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="MixOmnibusAccMapping" skipped="6" tests="6" testsuite_failed="False">
+   <testcase name="PlaceFillRejectSymmetric" status="notrun"/>
+   <testcase name="PlaceModifyCancelSniper" status="notrun"/>
+   <testcase name="PlaceModifyFillMultilevel" status="notrun"/>
+   <testcase name="PlaceModifyFillSimmetric" status="notrun"/>
+   <testcase name="PlacePartFillCancelSymmetric" status="notrun"/>
+   <testsuite failures="0" name="CancelAll" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="FromOmnibus" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OmnibusInternalOmnibus" skipped="5" tests="5" testsuite_failed="False">
+   <testcase name="FillMultilevel" status="notrun"/>
+   <testcase name="FillSymmetricSpread" status="notrun"/>
+   <testcase name="PlaceModifyCancelMultilevel" status="notrun"/>
+   <testcase name="PlaceModifyCancelSymmetricSpread" status="notrun"/>
+   <testcase name="PlaceRejectMultilevel" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Parked" skipped="5" tests="5" testsuite_failed="False">
+   <testcase name="ParkingActivationFill" status="notrun"/>
+   <testcase name="ParkingCancelByContractCriteria" status="notrun"/>
+   <testcase name="ParkingCancelByParkedCriteria" status="notrun"/>
+   <testcase name="ParkingMultilevel" status="notrun"/>
+   <testcase name="PlaceParkActivateCancel" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="PartialQty" skipped="9" tests="9" testsuite_failed="False">
+   <testcase name="MarketPartQty" status="notrun"/>
+   <testcase name="MultilevelPrimaryLegPartQty" status="notrun"/>
+   <testcase name="MultilevelSecondaryLegPartQty" status="notrun"/>
+   <testcase name="SniperPartQty" status="notrun"/>
+   <testcase name="SymmetricHangPartQty" status="notrun"/>
+   <testcase name="SymmetricIncompleteFillPartQty" status="notrun"/>
+   <testcase name="SymmetricOverfillPartQty" status="notrun"/>
+   <testcase name="SymmetricPrimaryLegPartQty" status="notrun"/>
+   <testcase name="SymmetricSecondaryLegPartQty" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="PlaceModifyCancel" skipped="18" tests="18" testsuite_failed="False">
+   <testcase name="MarketMULPlaceCancel" status="notrun"/>
+   <testcase name="MarketPlaceCancel" status="notrun"/>
+   <testcase name="MultilevelPlaceModifyCancel" status="notrun"/>
+   <testcase name="PlaceCancelAGGRBothLegs" status="notrun"/>
+   <testcase name="PlaceCancelMultilevelMKT" status="notrun"/>
+   <testcase name="PlaceCancelMultilevelSniper" status="notrun"/>
+   <testcase name="PlaceCancelMultilevelSTP" status="notrun"/>
+   <testcase name="PlaceModifyCancelAGGR" status="notrun"/>
+   <testcase name="PlaceModifyCancelAGGRMultilevel" status="notrun"/>
+   <testcase name="PlaceModifyCancelMULMultilevel" status="notrun"/>
+   <testcase name="PlaceModifyCancelSniperMUL" status="notrun"/>
+   <testcase name="PlaceModifyCancelSymmerticMUL" status="notrun"/>
+   <testcase name="SniperPlaceModifyCancel" status="notrun"/>
+   <testcase name="StopMULPlaceCancel" status="notrun"/>
+   <testcase name="StopPlaceCancel" status="notrun"/>
+   <testcase name="SymmerticPlaceModifyCancel" status="notrun"/>
+   <testcase name="ThreeLegsPlaceModifyCancel" status="notrun"/>
+   <testcase name="TwoWorkingLegsPlaceModifyCancel" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Race" skipped="5" tests="5" testsuite_failed="False">
+   <testcase name="PrimaryFilledBeforeCancelSymmetricLimitSpread" status="notrun"/>
+   <testcase name="SecondaryCancelAcceptedSymmetricLimitSpread" status="notrun"/>
+   <testcase name="SecondaryCancelFailSymmetricLimitSpread" status="notrun"/>
+   <testcase name="SecondaryModAcceptedSymmetricLimitSpread" status="notrun"/>
+   <testcase name="SecondaryModFailSymmetricLimitSpread" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="RelativeDailyFutures" skipped="1" tests="1" testsuite_failed="False">
+   <testcase name="FillLMEStyleContracts" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="ReleaseOwnership" skipped="8" tests="8" testsuite_failed="False">
+   <testcase name="AllLegsWorkingSSLegReleasedAfterCancellation" status="notrun"/>
+   <testcase name="FillReleasedNestedStrategyLeg" status="notrun"/>
+   <testcase name="ModifyNestedWithFakeFills" status="notrun"/>
+   <testcase name="SniperSSLegReleasedAfterModification" status="notrun"/>
+   <testcase name="SymmetricSSLegReleasedAfterCancellation" status="notrun"/>
+   <testcase name="SymmetricSSLegReleasedAfterModification" status="notrun"/>
+   <testcase name="SymmetricSSLegReleasedAfterPlacement" status="notrun"/>
+   <testsuite failures="0" name="CancelAll" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="ForReleasedLeg" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="StrategyDefinition" skipped="8" tests="8" testsuite_failed="False">
+   <testcase name="AggrLimitations" status="notrun"/>
+   <testcase name="BadStrategyDefinitions" status="notrun"/>
+   <testcase name="LegIsNotTradable" status="notrun"/>
+   <testcase name="MultilevelDefinitionQuery" status="notrun"/>
+   <testcase name="MultilevelLimitations" status="notrun"/>
+   <testcase name="MultiplicativeLimitations" status="notrun"/>
+   <testcase name="SpreadLimitations" status="notrun"/>
+   <testcase name="StrategyDuplicateDefinition_DE717247707" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Throttling" skipped="15" tests="15" testsuite_failed="False">
+   <testsuite failures="0" name="Throttle" skipped="15" tests="15" testsuite_failed="False">
+    <testcase name="PlaceRejectSecondaryLegFail_MTLO_InterExchange" status="notrun"/>
+    <testcase name="PlaceRejectSecondaryLegFail_IntraExchange" status="notrun"/>
+    <testcase name="PlaceRejectSecondaryLegSuccess_MTLO_IntraExchange" status="notrun"/>
+    <testcase name="PlaceRejectSecondaryLegSuccess_InterExchange" status="notrun"/>
+    <testcase name="PlaceRejectPrimaryLeg_IgnoreThrottle_InterExchange" status="notrun"/>
+    <testcase name="PlaceRejectPrimaryLeg_IgnoreThrottle_Fail1_IntraExchange" status="notrun"/>
+    <testcase name="PlaceRejectPrimaryLeg_IgnoreThrottle_Fail2_InterExchange" status="notrun"/>
+    <testcase name="PlaceRejectPrimaryLeg_IntraExchange" status="notrun"/>
+    <testcase name="ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_IntraExchange" status="notrun"/>
+    <testcase name="ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_Fail1_InterExchange" status="notrun"/>
+    <testcase name="ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_Fail2_InterExchange" status="notrun"/>
+    <testcase name="ModifyRejectPrimaryLeg_MMLO_InterExchange" status="notrun"/>
+    <testcase name="CancelRejectPrimaryLegSuccess_IntraExchange" status="notrun"/>
+    <testcase name="CancelRejectPrimaryLegFail1_InterExchange" status="notrun"/>
+    <testcase name="CancelRejectPrimaryLegFail2_IntraExchange" status="notrun"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

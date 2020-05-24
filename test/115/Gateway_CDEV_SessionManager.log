@@ -1,0 +1,138 @@
+21:46:27.51  Test starded without threads
+19:46:28.066 Python Module Path 'ScriptKit/TroubleMaker' added.
+19:46:28.066 Python Module Path 'Scripts/Gateway/PythonModules' added.
+19:46:28.066 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/PythonModules' not found. Ignored.
+19:46:28.066 Python Module Path 'ScriptKit' added.
+19:46:28.564 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites' filtered execution.
+19:46:28.580 Suite '.'. [0 test cases, 9 sub-suites]
+19:46:29.564 Suite 'AccountChanges'. [3 test cases, 0 sub-suites]
+19:46:29.642 Case 'AccountEnvironmentChange' execution.
+Traceback (most recent call last):
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py", line 79, in test
+    c2.GetAccountInfoByName(account3)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\GWConnection.py", line 120, in GetAccountInfoByName
+    raise Exception("Trader '{0}' is not authorized to the account '{1}'.".format(self._username, accountName))
+Exception: Trader 'SF_SM_Trader1' is not authorized to the account 'SF_SM_Account3'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py", line 104, in <module>
+    test()
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py", line 84, in test
+    VerifyEnvironmentChangeAcctAuthorization(c2, acctInfo3, True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py", line 37, in VerifyEnvironmentChangeAcctAuthorization
+    envChange = __waitOneEnvironmentChange(gwConnection, "account_authorization", timeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py", line 15, in __waitOneEnvironmentChange
+    envChangeList = gwConnection.orderBook.WaitEnvironmentChange(ectype=ectype, timeout=timeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 629, in WaitEnvironmentChange
+    envChanges = self.__wait(timeout, self.__environmentChangeMessages, msg, ectype)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 553, in __wait
+    return WaitMsg(container, errMsg, self.__condition, timeout, idx=idx)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 58, in WaitMsg
+    raise Exception(errMsg)
+Exception: TIMEOUT: 60 seconds for TIMEOUT: 60 seconds for EnvironmentChange
+EnvironmentChange ectype: account_authorization
+
+19:47:41.707 Case 'AccountEnvironmentChange' failed.
+19:47:41.769 Case 'AccountMigration' execution.
+AccountChanges/AccontMigration test case skipped because of non-integration environment
+19:47:46.832 Case 'AccountMigration' succeeded.
+19:47:46.879 Case 'AutoEventSubscrNewAccounts' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py", line 130, in <module>
+    test(autosubscribe)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py", line 90, in test
+    noFillEvents(c2, o1)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AutoEventSubscrNewAccounts.tc.py", line 32, in noFillEvents
+    raise TestCheck.Failure("There is no fill event expected")
+TestCheck.Failure: There is no fill event expected
+
+19:48:09.239 Case 'AutoEventSubscrNewAccounts' failed.
+19:48:09.348 Suite 'ContractDefinition'. [2 test cases, 0 sub-suites]
+19:48:09.458 Case 'ContractDefinitionFailure' execution.
+19:48:12.442 Case 'ContractDefinitionFailure' succeeded.
+19:48:12.505 Case 'ContractDefinitionHappyPath' execution.
+19:48:13.817 Case 'ContractDefinitionHappyPath' succeeded.
+19:48:13.927 Suite 'DataExchange'. [7 test cases, 0 sub-suites]
+19:48:13.974 Case 'CI_HappyPath' execution.
+19:48:21.802 Case 'CI_HappyPath' succeeded.
+19:48:21.865 Case 'CI_Limiting' execution.
+DataExchange/CI_Limiting test case skipped because of non-integration environment
+19:48:21.865 Case 'CI_Limiting' succeeded.
+19:48:21.927 Case 'CI_Rejecting' execution.
+19:48:22.834 Case 'CI_Rejecting' succeeded.
+19:48:22.911 Case 'QueryHappyPath' execution.
+19:48:44.693 Case 'QueryHappyPath' succeeded.
+19:48:44.756 Case 'QueryLimiting' execution.
+The 'DataExchange/QueryLimiting.tc.py' is skipped because of non-integration environment
+19:48:44.787 Case 'QueryLimiting' succeeded.
+19:48:44.850 Case 'QueryQMOutage' execution.
+The 'DataExchange/QueryQMOutage.tc.py' is skipped because of non-integration environment
+19:48:44.881 Case 'QueryQMOutage' succeeded.
+19:48:44.943 Case 'QueryRejects' execution.
+The 'DataExchange/QueryRejects.tc.py' is skipped because of non-integration environment
+19:48:44.959 Case 'QueryRejects' succeeded.
+19:48:45.084 Suite 'Failover'. [1 test cases, 0 sub-suites]
+19:48:45.147 Case 'GWComponentsFailures' execution.
+Failover/GWComponentsFailures.tc.py is skipped because of non-integration environement
+19:48:45.178 Case 'GWComponentsFailures' succeeded.
+19:48:45.334 Suite 'OrderActions'. [6 test cases, 0 sub-suites]
+19:48:49.553 Case 'OrderActionsAuthorizationCheck' execution.
+19:48:51.459 Case 'OrderActionsAuthorizationCheck' succeeded.
+19:48:51.506 Case 'OrderActionsHappyPath' execution.
+19:48:52.506 Case 'OrderActionsHappyPath' succeeded.
+19:48:52.569 Case 'OrderActionsRiskServerReject' execution.
+19:48:53.506 Case 'OrderActionsRiskServerReject' succeeded.
+19:48:53.600 Case 'OrderActionsRiskServerUnavailable' execution.
+OrderActions/OrderActionsRiskServerUnavailable.tc.py is skipped because of non-integration environement
+19:48:53.600 Case 'OrderActionsRiskServerUnavailable' succeeded.
+19:48:53.662 Case 'OrderActionsThrottling' execution.
+19:48:54.709 max order rate = 5 orders per sec
+19:49:07.835 max order rate = 10 orders per sec
+19:49:26.851 max order rate = 20 orders per sec
+19:49:57.602 Case 'OrderActionsThrottling' succeeded.
+19:49:57.684 Case 'ParkedOrdersBatching' execution.
+19:52:22.778 Case 'ParkedOrdersBatching' succeeded.
+19:52:23.060 Suite 'OutMessageCache'. [1 test cases, 0 sub-suites]
+19:52:23.138 Case 'OutSerializationCache' execution.
+19:52:32.279 Case 'OutSerializationCache' succeeded.
+19:52:32.404 Suite 'Performance'. [1 test cases, 0 sub-suites]
+19:52:32.482 Case 'XML interface scalability' execution.
+Test 'Performance/XML interface scalability.tc.py' is skipped because of non-integration environement
+19:52:32.513 Case 'XML interface scalability' succeeded.
+19:52:32.654 Suite 'Protocol'. [4 test cases, 0 sub-suites]
+19:52:32.732 Case 'AuthCheck' execution.
+TODO[SMMT]: CMSGST message not implemented yet.
+19:52:40.826 Case 'AuthCheck' succeeded.
+19:52:40.888 Case 'FloodProtection' execution.
+Protocol/FloodProtection test case skipped because of non-integration environment
+19:52:40.904 Case 'FloodProtection' succeeded.
+19:52:41.014 Case 'LogonHappyPath' execution.
+19:52:41.904 Case 'LogonHappyPath' succeeded.
+19:52:41.982 Case 'MalformedMessage' execution.
+19:52:46.967 Case 'MalformedMessage' succeeded.
+19:52:47.123 Suite 'SessionManagement'. [7 test cases, 0 sub-suites]
+19:52:47.217 Case 'AccountSubscription' execution.
+TODO[SMMT]: AccountSubscription test should be run vs both SM1 and SM2.
+19:53:39.953 Case 'AccountSubscription' succeeded.
+19:53:40.015 Case 'CSMAvailability' execution.
+SessionManagement/CSMAvailability.tc.py is skipped because of non-integration environement
+19:53:45.094 Case 'CSMAvailability' succeeded.
+19:53:45.156 Case 'InvalidLogon' execution.
+19:53:51.234 Case 'InvalidLogon' succeeded.
+19:53:51.313 Case 'LogoffTraderFromCAST' execution.
+19:53:58.422 Case 'LogoffTraderFromCAST' succeeded.
+19:53:58.469 Case 'LogonSplitAck' execution.
+SessionManagement/LogonSplitAck test case skipped because of non-integration environment
+19:54:03.563 Case 'LogonSplitAck' succeeded.
+19:54:03.641 Case 'MultipleTraderLogons' execution.
+19:54:15.814 Case 'MultipleTraderLogons' succeeded.
+19:54:15.877 Case 'PasswordChange' execution.
+19:54:29.065 Case 'PasswordChange' succeeded.
+19:54:29.237 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites' execution finished. It took 0:08:00.625660.
+19:54:29.237 Test cases results: 32 total, 30 succeeded, 2 failed, 0 skipped.

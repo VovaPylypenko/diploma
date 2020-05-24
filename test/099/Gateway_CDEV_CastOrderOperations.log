@@ -1,0 +1,59 @@
+ 7:50:46.42  Test starded without threads
+05:50:46.937 Python Module Path 'ScriptKit' added.
+05:50:46.937 Python Module Path 'Scripts/Gateway/PythonModules' added.
+05:50:47.359 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders' full execution.
+05:50:47.390 Suite '.'. [26 test cases, 0 sub-suites]
+05:51:01.906 Case 'Activate' execution.
+05:51:01.938 Case 'AddFill' execution.
+05:51:01.969 Case 'AddPartialFill' execution.
+05:51:02.015 Case 'BustFill' execution.
+05:51:02.047 Case 'BustFillsInsideChain' execution.
+05:51:02.094 Case 'BustLastFill' execution.
+05:51:02.156 Case 'BustLastTwoFills' execution.
+05:51:02.234 Case 'CancelExternalOrder' execution.
+05:51:02.265 Case 'CancelExternalOrderLastFill' execution.
+05:51:02.390 Case 'CancelPartialFill' execution.
+05:51:02.422 Case 'CreateExternalOrder' execution.
+05:51:02.469 Case 'OCOAddFill' execution.
+05:51:02.531 Case 'OCOAddPartialFill' execution.
+05:51:02.765 Case 'OCOBustFill' execution.
+05:51:02.984 Case 'OCOCancelFill' execution.
+05:51:03.000 Case 'OCORequestCancelCompoundOrder' execution.
+05:51:03.031 Case 'OCORequestConfirmCancel' execution.
+05:51:03.078 Case 'OmnibusCreateOrderFill' execution.
+05:51:03.109 Case 'OPOPriAddFill' execution.
+05:51:03.750 Case 'OPOPriAddPartialFill' execution.
+05:51:03.953 Case 'OPOPriBustFill' execution.
+05:51:04.078 Case 'AddPartialFill' succeeded.
+05:51:04.344 Case 'AddFill' succeeded.
+05:51:04.734 Case 'OPOPriCancelFill' execution.
+05:51:04.766 Case 'OPOPriRequestConfirmCancel' execution.
+05:51:06.156 Case 'Activate' succeeded.
+05:51:06.484 Case 'OPOSecConfirmCancel' execution.
+05:51:09.406 Case 'OmnibusCreateOrderFill' succeeded.
+05:51:09.734 Case 'CreateExternalOrder' succeeded.
+05:51:09.797 Case 'OPOSecRequestCancelCompoundOrder' execution.
+05:51:09.828 Case 'OPOPriAddFill' succeeded.
+05:51:09.844 Case 'OCOAddFill' succeeded.
+05:51:10.000 Case 'OCORequestCancelCompoundOrder' succeeded.
+05:51:10.125 Case 'RequestConfirmCancel' execution.
+05:51:10.172 Case 'CancelExternalOrder' succeeded.
+05:51:11.094 Case 'OPOSecConfirmCancel' succeeded.
+05:51:11.266 Case 'OCOAddPartialFill' succeeded.
+05:51:11.344 Case 'OPOSecRequestCancelCompoundOrder' succeeded.
+05:51:11.359 Case 'CancelExternalOrderLastFill' succeeded.
+05:51:11.406 Case 'OPOPriRequestConfirmCancel' succeeded.
+05:51:12.000 Case 'OPOPriAddPartialFill' succeeded.
+05:51:12.094 Case 'BustFillsInsideChain' succeeded.
+05:51:12.203 Case 'RequestConfirmCancel' succeeded.
+05:51:12.438 Case 'OCORequestConfirmCancel' succeeded.
+05:51:16.313 Case 'BustFill' succeeded.
+05:51:16.766 Case 'BustLastFill' succeeded.
+05:51:21.735 Case 'CancelPartialFill' succeeded.
+05:51:22.204 Case 'OPOPriCancelFill' succeeded.
+05:51:22.219 Case 'OCOBustFill' succeeded.
+05:51:22.329 Case 'OCOCancelFill' succeeded.
+05:51:23.172 Case 'BustLastTwoFills' succeeded.
+05:51:23.360 Case 'OPOPriBustFill' succeeded.
+05:51:27.188 Root suite 'Scripts/Gateway/SystemAreas/ManagmentInterface/OrdersPositions/Suites/CASTOrders' execution finished. It took 0:00:39.782613.
+05:51:27.188 Test cases results: 26 total, 26 succeeded, 0 failed, 0 skipped.

@@ -1,0 +1,933 @@
+ 1:49:03.44  Test starded without threads
+23:49:03.962 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:49:03.962 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC/PythonModules' added.
+23:49:03.962 Python Module Path 'ScriptKit' added.
+23:49:04.337 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC' full execution.
+23:49:04.368 Suite '.'. [0 test cases, 6 sub-suites]
+23:49:20.384 Suite 'CrossTradeCOMode'. [9 test cases, 0 sub-suites]
+23:49:20.462 Case 'Lmt_Lmt_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeCOMode\Lmt_Lmt_CO.tc.py", line 4, in <module>
+    COOS.TestCancelScenario(OrderType.Limit, 1000, OrderType.Limit, 1000.25, symbols[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 77, in TestCancelScenario
+    self.__getStopPrice(type1, price1), symbol)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:20.478 Case 'Lmt_Lmt_CO' failed.
+23:49:20.510 Case 'Lmt_Stl_High_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeCOMode\Lmt_Stl_High_CO.tc.py", line 4, in <module>
+    COOS.TestCancelScenario(OrderType.Limit, 999.25, OrderType.StopLimit, 1000.75, symbols[3])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 77, in TestCancelScenario
+    self.__getStopPrice(type1, price1), symbol)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:20.540 Case 'Lmt_Stl_High_CO' failed.
+23:49:20.556 Case 'Lmt_Stp_High_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeCOMode\Lmt_Stp_High_CO.tc.py", line 4, in <module>
+    COOS.TestCancelScenario(OrderType.Limit, 999.75, OrderType.Stop, 1000.5, symbols[1])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 77, in TestCancelScenario
+    self.__getStopPrice(type1, price1), symbol)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:20.572 Case 'Lmt_Stp_High_CO' failed.
+23:49:20.603 Case 'Lmt_Stp_Low_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeCOMode\Lmt_Stp_Low_CO.tc.py", line 4, in <module>
+    COOS.TestCancelScenario(OrderType.Limit, 999.75, OrderType.Stop, 999.25, symbols[2])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 77, in TestCancelScenario
+    self.__getStopPrice(type1, price1), symbol)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:20.619 Case 'Lmt_Stp_Low_CO' failed.
+23:49:20.634 Case 'NativeSpread_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeCOMode\NativeSpread_CO.tc.py", line 4, in <module>
+    COOS.TestCancelScenario(OrderType.Limit, 1000, OrderType.Limit, 1000.25, symbols[25])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 77, in TestCancelScenario
+    self.__getStopPrice(type1, price1), symbol)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:20.665 Case 'NativeSpread_CO' failed.
+23:49:20.790 Case 'Stp_High_Lmt_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeCOMode\Stp_High_Lmt_CO.tc.py", line 4, in <module>
+    COOS.TestCancelScenario(OrderType.Stop, 1001.5, OrderType.Limit, 1001, symbols[6])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 77, in TestCancelScenario
+    self.__getStopPrice(type1, price1), symbol)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:20.822 Case 'Stp_High_Lmt_CO' failed.
+23:49:20.931 Case 'Stp_Low_Lmt_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeCOMode\Stp_Low_Lmt_CO.tc.py", line 4, in <module>
+    COOS.TestCancelScenario(OrderType.Stop, 1000.75, OrderType.Limit, 1001, symbols[5])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 77, in TestCancelScenario
+    self.__getStopPrice(type1, price1), symbol)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:20.947 Case 'Stp_Low_Lmt_CO' failed.
+23:49:21.025 Case 'Stl_High_Lmt_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeCOMode\Stl_High_Lmt_CO.tc.py", line 4, in <module>
+    COOS.TestCancelScenario(OrderType.StopLimit, 1002.5, OrderType.Limit, 1002, symbols[8])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 77, in TestCancelScenario
+    self.__getStopPrice(type1, price1), symbol)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:21.040 Case 'Stl_High_Lmt_CO' failed.
+23:49:21.119 Case 'Stl_Low_Lmt_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeCOMode\Stl_Low_Lmt_CO.tc.py", line 4, in <module>
+    COOS.TestCancelScenario(OrderType.StopLimit, 1001.5, OrderType.Limit, 1002, symbols[7])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 77, in TestCancelScenario
+    self.__getStopPrice(type1, price1), symbol)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:21.150 Case 'Stl_Low_Lmt_CO' failed.
+23:49:21.306 Suite 'CrossTradeOmnibus'. [6 test cases, 0 sub-suites]
+23:49:21.384 Case 'ChangeRiskSettings' execution.
+23:49:21.447 Case 'COWithOmnibus' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeOmnibus\COWithOmnibus.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[8], CreateBuyLMTOrder(symbols[0], 500), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:21.665 Case 'COWithOmnibus' failed.
+23:49:21.697 Case 'COWithoutOmnibus' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeOmnibus\COWithoutOmnibus.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[6], CreateBuyLMTOrder(symbols[0], 500), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:21.915 Case 'COWithoutOmnibus' failed.
+23:49:21.947 Case 'RRWithOmnibus' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeOmnibus\RRWithOmnibus.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[4], CreateBuyLMTOrder(symbols[0], 500), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:22.134 Case 'RRWithOmnibus' failed.
+23:49:22.259 Case 'RRWithoutOmnibus' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeOmnibus\RRWithoutOmnibus.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[2], CreateBuyLMTOrder(symbols[0], 500), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:22.386 Case 'RRWithoutOmnibus' failed.
+23:49:22.462 Case 'XTC_Off_Omnibus_On' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeOmnibus\XTC_Off_Omnibus_On.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[15], CreateBuyLMTOrder(symbols[0], 500), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:22.494 Case 'XTC_Off_Omnibus_On' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeOmnibus\ChangeRiskSettings.tc.py", line 22, in <module>
+    gwConnection, exchangeFactory, accountInfoList[12], CreateBuyLMTOrder(symbols[0], 500), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:33.119 Case 'ChangeRiskSettings' failed.
+23:49:33.306 Suite 'CrossTradeRRMode'. [10 test cases, 0 sub-suites]
+23:49:33.400 Case 'Lmt_Lmt_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeRRMode\Lmt_Lmt_RR.tc.py", line 4, in <module>
+    RROS.TestRejectScenario(OrderType.Limit, 1000, OrderType.Limit, 1000.25, symbols[0])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 38, in TestRejectScenario
+    self.__getStopPrice(type1, price1), symbol))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:33.431 Case 'Lmt_Lmt_RR' failed.
+23:49:33.447 Case 'Lmt_Stl_High_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeRRMode\Lmt_Stl_High_RR.tc.py", line 4, in <module>
+    RROS.TestRejectScenario(OrderType.Limit, 999.25, OrderType.StopLimit, 1000.75, symbols[3])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 38, in TestRejectScenario
+    self.__getStopPrice(type1, price1), symbol))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:33.494 Case 'Lmt_Stl_High_RR' failed.
+23:49:33.510 Case 'Lmt_Stl_Low_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeRRMode\Lmt_Stl_Low_RR.tc.py", line 4, in <module>
+    RROS.TestRejectScenario(OrderType.Limit, 999.25, OrderType.StopLimit, 999, symbols[4])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 38, in TestRejectScenario
+    self.__getStopPrice(type1, price1), symbol))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:33.525 Case 'Lmt_Stl_Low_RR' failed.
+23:49:33.541 Case 'Lmt_Stp_High_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeRRMode\Lmt_Stp_High_RR.tc.py", line 4, in <module>
+    RROS.TestRejectScenario(OrderType.Limit, 999.75, OrderType.Stop, 1000.5, symbols[1])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 38, in TestRejectScenario
+    self.__getStopPrice(type1, price1), symbol))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:33.572 Case 'Lmt_Stp_High_RR' failed.
+23:49:33.603 Case 'Lmt_Stp_Low_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeRRMode\Lmt_Stp_Low_RR.tc.py", line 4, in <module>
+    RROS.TestRejectScenario(OrderType.Limit, 999.75, OrderType.Stop, 999.5, symbols[2])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 38, in TestRejectScenario
+    self.__getStopPrice(type1, price1), symbol))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:33.635 Case 'Lmt_Stp_Low_RR' failed.
+23:49:33.681 Case 'NativeSpread_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeRRMode\NativeSpread_RR.tc.py", line 4, in <module>
+    RROS.TestRejectScenario(OrderType.Limit, 1000, OrderType.Limit, 1000.25, symbols[25])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 38, in TestRejectScenario
+    self.__getStopPrice(type1, price1), symbol))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:33.713 Case 'NativeSpread_RR' failed.
+23:49:33.760 Case 'Stl_High_Lmt_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeRRMode\Stl_High_Lmt_RR.tc.py", line 4, in <module>
+    RROS.TestRejectScenario(OrderType.StopLimit, 1002.5, OrderType.Limit, 1002, symbols[8])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 38, in TestRejectScenario
+    self.__getStopPrice(type1, price1), symbol))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:33.791 Case 'Stl_High_Lmt_RR' failed.
+23:49:33.869 Case 'Stl_Low_Lmt_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeRRMode\Stl_Low_Lmt_RR.tc.py", line 4, in <module>
+    RROS.TestRejectScenario(OrderType.StopLimit, 1001.5, OrderType.Limit, 1002, symbols[7])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 38, in TestRejectScenario
+    self.__getStopPrice(type1, price1), symbol))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:33.900 Case 'Stl_Low_Lmt_RR' failed.
+23:49:34.010 Case 'Stp_Low_Lmt_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeRRMode\Stp_Low_Lmt_RR.tc.py", line 4, in <module>
+    RROS.TestRejectScenario(OrderType.Stop, 1001.75, OrderType.Limit, 1001, symbols[5])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 38, in TestRejectScenario
+    self.__getStopPrice(type1, price1), symbol))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:34.025 Case 'Stp_Low_Lmt_RR' failed.
+23:49:34.041 Case 'Stp_High_Lmt_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\CrossTradeRRMode\Stp_High_Lmt_RR.tc.py", line 4, in <module>
+    RROS.TestRejectScenario(OrderType.Stop, 1001.5, OrderType.Limit, 1001, symbols[6])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 38, in TestRejectScenario
+    self.__getStopPrice(type1, price1), symbol))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:34.073 Case 'Stp_High_Lmt_RR' failed.
+23:49:34.478 Suite 'DeferredOrdersHandling'. [33 test cases, 0 sub-suites]
+23:49:34.588 Case 'FullFillMod_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\FullFillMod_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateSellLMTOrder(symbols[14], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:34.603 Case 'FullFillMod_CO' failed.
+23:49:34.635 Case 'FullFillNewCan_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\FullFillNewCan_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateBuyLMTOrder(symbols[15], 100, size = 5), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:34.666 Case 'FullFillNewCan_CO' failed.
+23:49:34.697 Case 'FullFillNew_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\FullFillNew_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateBuyLMTOrder(symbols[8], 100, size = 5), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:34.728 Case 'FullFillNew_RR' failed.
+23:49:34.760 Case 'InCanAckMod_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InCanAckMod_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateSellLMTOrder(symbols[5], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:34.791 Case 'InCanAckMod_CO' failed.
+23:49:34.822 Case 'InCanAckNew_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InCanAckNew_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateBuyLMTOrder(symbols[4], 100), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:34.853 Case 'InCanAckNew_CO' failed.
+23:49:34.994 Case 'InCanRejMod_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InCanRejMod_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateSellLMTOrder(symbols[13], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:35.010 Case 'InCanRejMod_CO' failed.
+23:49:35.088 Case 'InCanRejNew_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InCanRejNew_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateBuyLMTOrder(symbols[12], 100), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:35.119 Case 'InCanRejNew_CO' failed.
+23:49:35.213 Case 'InCanRej_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InCanRej_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateSellLMTOrder(symbols[5], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:35.244 Case 'InCanRej_RR' failed.
+23:49:35.322 Case 'InModAckMod_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModAckMod_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateSellLMTOrder(symbols[3], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:35.369 Case 'InModAckMod_CO' failed.
+23:49:35.400 Case 'InCanAck_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InCanAck_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateSellLMTOrder(symbols[2], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:35.432 Case 'InCanAck_RR' failed.
+23:49:35.541 Case 'InModAckNewOldPrice_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModAckNewOldPrice_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateBuyLMTOrder(symbols[19], 100), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:35.588 Case 'InModAckNewOldPrice_CO' failed.
+23:49:35.650 Case 'InModAckNew_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModAckNew_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateBuyLMTOrder(symbols[2], 95), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:35.682 Case 'InModAckNew_CO' failed.
+23:49:35.760 Case 'InModAckOldPrice_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModAckOldPrice_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateSellLMTOrder(symbols[10], 110), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:35.791 Case 'InModAckOldPrice_RR' failed.
+23:49:35.963 Case 'InModRejModNoXT_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModRejModNoXT_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateSellLMTOrder(symbols[10], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:35.994 Case 'InModRejModNoXT_CO' failed.
+23:49:36.010 Case 'InModAck_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModAck_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateSellLMTOrder(symbols[1], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:36.057 Case 'InModAck_RR' failed.
+23:49:36.119 Case 'InModRejModOldPrice_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModRejModOldPrice_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateSellLMTOrder(symbols[20], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:36.150 Case 'InModRejModOldPrice_CO' failed.
+23:49:36.246 Case 'InModRejModXT_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModRejModXT_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateSellLMTOrder(symbols[11], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:36.276 Case 'InModRejModXT_CO' failed.
+23:49:36.416 Case 'InModRejNewNoXT_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModRejNewNoXT_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateBuyLMTOrder(symbols[8], 95), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:36.432 Case 'InModRejNewNoXT_CO' failed.
+23:49:36.525 Case 'InModRejNewXT_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModRejNewXT_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateBuyLMTOrder(symbols[9], 95), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:36.572 Case 'InModRejNewXT_CO' failed.
+23:49:36.635 Case 'InModRejOldPrice_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModRejOldPrice_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateSellLMTOrder(symbols[11], 110), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:36.650 Case 'InModRejOldPrice_RR' failed.
+23:49:36.744 Case 'InModRej_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InModRej_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateSellLMTOrder(symbols[4], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:36.791 Case 'InModRej_RR' failed.
+23:49:36.822 Case 'InTransitAckMod_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InTransitAckMod_CO.tc.py", line 6, in <module>
+    CreateSellLMTOrder(symbols[1], 105), receivedByExchange=True)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:36.854 Case 'InTransitAckMod_CO' failed.
+23:49:36.932 Case 'InTransitAckNew_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InTransitAckNew_CO.tc.py", line 6, in <module>
+    CreateBuyLMTOrder(symbols[0], 100), receivedByExchange=True)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:36.978 Case 'InTransitAckNew_CO' failed.
+23:49:37.057 Case 'InTransitAck_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InTransitAck_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateSellLMTOrder(symbols[0], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:37.103 Case 'InTransitAck_RR' failed.
+23:49:37.197 Case 'InTransitRejMod_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InTransitRejMod_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateSellLMTOrder(symbols[7], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:37.228 Case 'InTransitRejMod_CO' failed.
+23:49:37.369 Case 'InTransitRejNew_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InTransitRejNew_CO.tc.py", line 6, in <module>
+    CreateBuyLMTOrder(symbols[6], 100), receivedByExchange=True)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:37.385 Case 'InTransitRejNew_CO' failed.
+23:49:37.480 Case 'InTransitRej_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\InTransitRej_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateSellLMTOrder(symbols[3], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:37.525 Case 'InTransitRej_RR' failed.
+23:49:37.588 Case 'ModNoXT_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\ModNoXT_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateSellSTLOrder(symbols[7], 100, 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 60, in CreateSellSTLOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.StopLimit, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:37.635 Case 'ModNoXT_RR' failed.
+23:49:37.744 Case 'NewNoXT_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\NewNoXT_RR.tc.py", line 6, in <module>
+    CreateBuyLMTOrder(symbols[6], 100), receivedByExchange=True)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:37.775 Case 'NewNoXT_RR' failed.
+23:49:37.807 Case 'TimeoutMod_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\TimeoutMod_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateBuyLMTOrder(symbols[18], 100), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:37.825 Case 'TimeoutMod_CO' failed.
+23:49:37.916 Case 'TimeoutMod_RR' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\TimeoutMod_RR.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[10], CreateSellLMTOrder(symbols[9], 105), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:37.978 Case 'TimeoutMod_RR' failed.
+23:49:38.072 Case 'TimeoutNewCan_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\TimeoutNewCan_CO.tc.py", line 6, in <module>
+    gwConnection, exchangeFactory, accountInfoList[11], CreateBuyLMTOrder(symbols[17], 100), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:38.103 Case 'TimeoutNewCan_CO' failed.
+23:49:38.197 Case 'TimeoutNew_CO' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\DeferredOrdersHandling\TimeoutNew_CO.tc.py", line 6, in <module>
+    CreateBuyLMTOrder(symbols[16], 100), receivedByExchange=True)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 48, in CreateBuyLMTOrder
+    symbol, OrderSide.Buy, size, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:38.228 Case 'TimeoutNew_CO' failed.
+23:49:38.775 Suite 'MassOrdersCancel'. [4 test cases, 0 sub-suites]
+23:49:38.916 Case 'ModAllCancelled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\MassOrdersCancel\ModAllCancelled.tc.py", line 11, in <module>
+    CreateSellLMTOrder(symbols[11], (50 + 20 * i)), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:38.932 Case 'ModAllCancelled' failed.
+23:49:38.963 Case 'ModOneCancelRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\MassOrdersCancel\ModOneCancelRejected.tc.py", line 11, in <module>
+    CreateSellLMTOrder(symbols[12], (50 + 20 * i)), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:39.010 Case 'ModOneCancelRejected' failed.
+23:49:39.025 Case 'NewAllCancelled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\MassOrdersCancel\NewAllCancelled.tc.py", line 11, in <module>
+    CreateSellLMTOrder(symbols[9], (50 + 20 * i)), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:39.072 Case 'NewAllCancelled' failed.
+23:49:39.089 Case 'NewOneCancelRejected' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\MassOrdersCancel\NewOneCancelRejected.tc.py", line 11, in <module>
+    CreateSellLMTOrder(symbols[10], (50 + 20 * i)), timeout = generalTimeout)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\test_suite.su.py", line 52, in CreateSellLMTOrder
+    symbol, OrderSide.Sell, orderSize, OrderType.Limit, limitPrice = limitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:39.135 Case 'NewOneCancelRejected' failed.
+23:49:39.619 Suite 'NoCrossTradeContracts'. [5 test cases, 0 sub-suites]
+23:49:39.744 Case 'Lmt_Lmt' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\NoCrossTradeContracts\Lmt_Lmt.tc.py", line 4, in <module>
+    NOCTCOS.TestNoCTCScenario(OrderType.Limit, 200, OrderType.Limit, symbols[18:25])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 125, in TestNoCTCScenario
+    self.__getStopPrice(type1, price), symbols[0]))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:39.807 Case 'Lmt_Lmt' failed.
+23:49:39.838 Case 'Lmt_Stl' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\NoCrossTradeContracts\Lmt_Stl.tc.py", line 4, in <module>
+    NOCTCOS.TestNoCTCScenario(OrderType.Limit, 200, OrderType.StopLimit, symbols[18:25])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 125, in TestNoCTCScenario
+    self.__getStopPrice(type1, price), symbols[0]))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:39.885 Case 'Lmt_Stl' failed.
+23:49:39.916 Case 'Lmt_Stp' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\NoCrossTradeContracts\Lmt_Stp.tc.py", line 4, in <module>
+    NOCTCOS.TestNoCTCScenario(OrderType.Limit, 200, OrderType.Stop, symbols[18:25])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 125, in TestNoCTCScenario
+    self.__getStopPrice(type1, price), symbols[0]))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:39.963 Case 'Lmt_Stp' failed.
+23:49:39.979 Case 'Stl_Lmt' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\NoCrossTradeContracts\Stl_Lmt.tc.py", line 4, in <module>
+    NOCTCOS.TestNoCTCScenario(OrderType.StopLimit, 200, OrderType.Limit, symbols[18:25])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 125, in TestNoCTCScenario
+    self.__getStopPrice(type1, price), symbols[0]))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:39.994 Case 'Stl_Lmt' failed.
+23:49:40.057 Case 'Stp_Lmt' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC\NoCrossTradeContracts\Stp_Lmt.tc.py", line 4, in <module>
+    NOCTCOS.TestNoCTCScenario(OrderType.Stop, 200, OrderType.Limit, symbols[18:25])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 125, in TestNoCTCScenario
+    self.__getStopPrice(type1, price), symbols[0]))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\CTC\PythonModules\OrderScenarios.py", line 176, in __doPlaceOrderAccept
+    symbol, side, self.__quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:49:40.104 Case 'Stp_Lmt' failed.
+23:49:42.416 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CTC' execution finished. It took 0:00:38.016663.
+23:49:42.416 Test cases results: 67 total, 0 succeeded, 67 failed, 0 skipped.

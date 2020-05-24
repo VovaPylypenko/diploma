@@ -1,0 +1,27 @@
+ 8:40:39.27  Test starded without threads
+06:40:39.786 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SOP' added.
+06:40:39.786 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:40:39.786 Python Module Path 'ScriptKit' added.
+06:40:40.130 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SOP' full execution.
+06:40:40.177 Suite '.'. [8 test cases, 1 sub-suites]
+06:40:50.677 Case 'IgnoreActivationForZeroVolQuote' execution.
+06:41:31.351 Case 'IgnoreActivationForZeroVolQuote' succeeded.
+06:41:31.413 Case 'MarketToLimitActivationPrice' execution.
+06:41:35.726 Case 'MarketToLimitActivationPrice' succeeded.
+06:41:35.788 Case 'QTStoLimitActivation' execution.
+06:41:35.960 Case 'QTStoLimitActivation' succeeded.
+06:41:36.023 Case 'STLtoLimitActivation' execution.
+06:41:36.242 Case 'STLtoLimitActivation' succeeded.
+06:41:36.288 Case 'StopToLimitActivationPrice' execution.
+06:41:36.648 Case 'StopToLimitActivationPrice' succeeded.
+06:41:36.695 Case 'SyntheticIsNotAllowedOnAccount' execution.
+06:41:36.726 Case 'SyntheticIsNotAllowedOnAccount' succeeded.
+06:41:36.773 Case 'TSTLtoLimitActivation' execution.
+06:41:36.901 Case 'TSTLtoLimitActivation' succeeded.
+06:41:36.960 Case 'TSTP_Parked_Activation' execution.
+06:41:37.210 Case 'TSTP_Parked_Activation' succeeded.
+06:41:37.273 Suite 'viaOmnibus'. [1 test cases, 0 sub-suites]
+06:41:37.320 Case 'mass_TSTP_activation' execution.
+06:42:04.868 Case 'mass_TSTP_activation' succeeded.
+06:42:05.305 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticProcessing/suites/SOP' execution finished. It took 0:01:25.143502.
+06:42:05.305 Test cases results: 9 total, 9 succeeded, 0 failed, 0 skipped.

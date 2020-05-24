@@ -1,0 +1,22 @@
+ 2:40:50.32  Test starded without threads
+00:40:50.859 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:40:50.859 Python Module Path 'ScriptKit' added.
+00:40:50.859 Python Module Path 'ScriptKit/TroubleMaker' added.
+00:40:50.859 Python Module Path 'Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate/PythonModules' added.
+00:40:51.359 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate' full execution.
+00:40:51.374 Suite '.'. [1 test cases, 0 sub-suites]
+00:41:07.078 Case 'AddingNewContracts' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate\AddingNewContracts_tc.py", line 12, in <module>
+    trader, acctInfo, exchange, contractList, rejectReason=GWRejectReason.Reject_CommodityIsDisabled())
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\InternalInfrastructure\ContractMetadataUpdate\PythonModules\SuiteHelper.py", line 59, in PlaceAllOrders
+    instructions=instructions, trailOffset=trailOffset, trailPeg=trailPeg)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:41:07.109 Case 'AddingNewContracts' failed.
+00:41:08.594 Root suite 'Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate' execution finished. It took 0:00:17.219354.
+00:41:08.594 Test cases results: 1 total, 0 succeeded, 1 failed, 0 skipped.

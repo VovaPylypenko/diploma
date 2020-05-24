@@ -1,0 +1,29 @@
+ 8:03:37.94  Test starded without threads
+06:03:38.401 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+06:03:38.401 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts/PythonModules' added.
+06:03:38.401 Python Module Path 'ScriptKit' added.
+06:03:38.401 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:03:38.761 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset' full execution.
+06:03:38.776 Suite '.'. [10 test cases, 0 sub-suites]
+06:03:50.402 Case 'PriceTypeOffsetOTE_01' execution.
+06:03:50.464 Case 'PriceTypeOffsetOTE_01' succeeded.
+06:03:50.543 Case 'PriceTypeOffsetOTE_02' execution.
+06:03:50.605 Case 'PriceTypeOffsetOTE_02' succeeded.
+06:03:50.652 Case 'PriceTypeOffsetOTE_03' execution.
+06:03:50.730 Case 'PriceTypeOffsetOTE_03' succeeded.
+06:03:50.777 Case 'PriceTypeOffsetOTE_04' execution.
+06:03:50.824 Case 'PriceTypeOffsetOTE_04' succeeded.
+06:03:50.886 Case 'PriceTypeOffsetOTE_05' execution.
+06:03:50.933 Case 'PriceTypeOffsetOTE_05' succeeded.
+06:03:50.980 Case 'PriceTypeOffsetOTE_06' execution.
+06:03:51.011 Case 'PriceTypeOffsetOTE_06' succeeded.
+06:03:51.074 Case 'PriceTypeOffsetOTE_07' execution.
+06:03:51.121 Case 'PriceTypeOffsetOTE_07' succeeded.
+06:03:51.183 Case 'PriceTypeOffsetOTE_08' execution.
+06:03:51.230 Case 'PriceTypeOffsetOTE_08' succeeded.
+06:03:51.293 Case 'PriceTypeOffsetOTE_09' execution.
+06:03:51.339 Case 'PriceTypeOffsetOTE_09' succeeded.
+06:03:51.402 Case 'PriceTypeOffsetOTE_10' execution.
+06:03:51.480 Case 'PriceTypeOffsetOTE_10' succeeded.
+06:03:51.918 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset' execution finished. It took 0:00:13.141088.
+06:03:51.918 Test cases results: 10 total, 10 succeeded, 0 failed, 0 skipped.

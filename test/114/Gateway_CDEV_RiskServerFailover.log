@@ -1,0 +1,34 @@
+ 2:39:51.60  Test starded without threads
+00:39:52.075 Python Module Path 'ScriptKit' added.
+00:39:52.075 Python Module Path 'ScriptKit/TroubleMaker' added.
+00:39:52.075 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:39:52.435 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover' full execution.
+00:39:52.466 Suite '.'. [2 test cases, 0 sub-suites]
+00:40:04.341 Case '01_RiskServerSwitchover' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover\01_RiskServerSwitchover.tc.py", line 22, in <module>
+    stressFunc = functools.partial(SwitchRisk, tsGroupName))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderSequenceChecker.py", line 74, in CheckOrderSequence
+    orderInfo = OrderActionUtils.CreateOrder(contract, ModuleAgent.OrderSide.Buy, orderSize, ModuleAgent.OrderType.Limit, limitPrice = 1)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:40:13.342 Case '01_RiskServerSwitchover' failed.
+00:40:13.389 Case '02_RiskServerFailover' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover\02_RiskServerFailover.tc.py", line 27, in <module>
+    stressFunc = functools.partial(KillRisk, tsGroupName))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderSequenceChecker.py", line 74, in CheckOrderSequence
+    orderInfo = OrderActionUtils.CreateOrder(contract, ModuleAgent.OrderSide.Buy, orderSize, ModuleAgent.OrderType.Limit, limitPrice = 1)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:40:20.608 Case '02_RiskServerFailover' failed.
+00:40:21.217 Root suite 'Scripts/Gateway/SystemAreas/InternalInfrastructure/SystemOperation/ComponentsFailover/Suites/RiskServerFailover' execution finished. It took 0:00:28.735335.
+00:40:21.217 Test cases results: 2 total, 0 succeeded, 2 failed, 0 skipped.

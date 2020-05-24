@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="165" testsuite_failed="False" time="760.914305" timestamp="2020-02-06T04:49:24.503135">
+ <properties>
+  <property name="module" value="IMSSimulator"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategy/Suites/InFlightFills/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategy/Suites/IncludeInReplication/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="18"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategy/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Suites" skipped="0" tests="165" testsuite_failed="False" time="760.914305" timestamp="2020-02-06T04:49:24.503135">
+  <testsuite failures="0" name="AccountMapping" skipped="0" tests="7" testsuite_failed="False" time="32.95414" timestamp="2020-02-06T04:49:45.003782">
+   <testcase name="PlaceModifyCancelSniperOneAccMapped" status="run" time="22.563147999999998" timestamp="2020-02-06T04:49:45.222580"/>
+   <testcase name="PlaceModifyFillMultilevelTwoAccMapped" status="run" time="10.734747" timestamp="2020-02-06T04:49:45.285035"/>
+   <testcase name="PlaceModifyFillSimmOneAccMapped" status="run" time="15.419694" timestamp="2020-02-06T04:49:45.365791"/>
+   <testcase name="PlacePartFillCancelSymmTwoAccMapped" status="run" time="13.390904" timestamp="2020-02-06T04:49:45.410235"/>
+   <testcase name="PlacePartFillRejectMultilevelTwoAccMapped" status="run" time="6.26581" timestamp="2020-02-06T04:49:45.503769"/>
+   <testsuite failures="0" name="CancelAll" skipped="0" tests="2" testsuite_failed="False" time="10.015929" timestamp="2020-02-06T04:50:07.832607">
+    <testcase name="ByPrimaryLeg" status="run" time="5.843868" timestamp="2020-02-06T04:50:09.848344"/>
+    <testcase name="BySecondaryLeg" status="run" time="7.781494" timestamp="2020-02-06T04:50:09.942025"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="AlgorithmicOrderSupport" skipped="0" tests="1" testsuite_failed="False" time="0.703168" timestamp="2020-02-06T04:50:18.020404">
+   <testcase name="SyntheticStrategyOrder" status="run" time="0.390618" timestamp="2020-02-06T04:50:18.223546"/>
+  </testsuite>
+  <testsuite failures="0" name="BaseFunctionality" skipped="0" tests="4" testsuite_failed="False" time="13.828555" timestamp="2020-02-06T04:50:18.786045">
+   <testcase name="MultipleMsgrs" status="run" time="0.234366" timestamp="2020-02-06T04:50:18.957927"/>
+   <testcase name="PlaceMKTFullFill" status="run" time="11.094057" timestamp="2020-02-06T04:50:19.004834"/>
+   <testcase name="PlacePartialFillFullFill" status="run" time="10.828453" timestamp="2020-02-06T04:50:19.051686"/>
+   <testcase name="PlaceWithoutMarketModifyFillCancel" status="run" time="13.297302" timestamp="2020-02-06T04:50:19.192293"/>
+  </testsuite>
+  <testsuite failures="0" name="CancelAll" skipped="0" tests="2" testsuite_failed="False" time="5.062642" timestamp="2020-02-06T04:50:32.661505">
+   <testcase name="ByOrderState" status="run" time="2.9532030000000002" timestamp="2020-02-06T04:50:34.645915"/>
+   <testcase name="ByRootSymbol" status="run" time="1.2500339999999999" timestamp="2020-02-06T04:50:34.708411"/>
+  </testsuite>
+  <testsuite failures="0" name="CancelSSByPrimary" skipped="0" tests="5" testsuite_failed="False" time="16.15674" timestamp="2020-02-06T04:50:37.802268">
+   <testcase name="AggregativeLimitSpread" status="run" time="13.500409" timestamp="2020-02-06T04:50:37.989771"/>
+   <testcase name="MultilevelLimitSpread" status="run" time="15.578585" timestamp="2020-02-06T04:50:38.067899"/>
+   <testcase name="OnePrimary3LegsSymmetricLimitSpread" status="run" time="15.703616" timestamp="2020-02-06T04:50:38.114749"/>
+   <testcase name="OnePrimarySymmetricLimitSpread" status="run" time="11.594117" timestamp="2020-02-06T04:50:38.192909"/>
+   <testcase name="TwoPrimarySymmetricLimitSpread" status="run" time="10.156573999999999" timestamp="2020-02-06T04:50:38.255385"/>
+  </testsuite>
+  <testsuite failures="0" name="ExchangeDisconnections" skipped="0" tests="1" testsuite_failed="False" time="4.906421" timestamp="2020-02-06T04:50:54.021515">
+   <testcase name="PrimaryLegCancellationOnNonDisconnectedRoute" status="run" time="4.547025" timestamp="2020-02-06T04:50:54.271510"/>
+  </testsuite>
+  <testsuite failures="0" name="ExecSourceCode" skipped="0" tests="1" testsuite_failed="False" time="14.203553" timestamp="2020-02-06T04:50:58.990417">
+   <testcase name="SyntheticStrategy" status="run" time="12.953514" timestamp="2020-02-06T04:51:00.084198"/>
+  </testsuite>
+  <testsuite failures="0" name="Failure" skipped="0" tests="9" testsuite_failed="False" time="42.126296" timestamp="2020-02-06T04:51:13.256470">
+   <testcase name="AggrLimitations" status="run" time="4.218852" timestamp="2020-02-06T04:51:13.490870"/>
+   <testcase name="CancelAll3LegsSymmetricLimitSpread" status="run" time="10.015924" timestamp="2020-02-06T04:51:13.553363"/>
+   <testcase name="MultilevelLimitations" status="run" time="4.156335" timestamp="2020-02-06T04:51:13.615889"/>
+   <testcase name="MultiplicativeLimitations" status="run" time="4.078228" timestamp="2020-02-06T04:51:13.693996"/>
+   <testcase name="PrimaryRejectSymmetricLimitSpread" status="run" time="2.656666" timestamp="2020-02-06T04:51:13.787755"/>
+   <testcase name="SecondaryRejectSymmetricLimitSpread" status="run" time="9.000391" timestamp="2020-02-06T04:51:13.850231"/>
+   <testcase name="SpreadLimitations" status="run" time="4.671913" timestamp="2020-02-06T04:51:13.944090"/>
+   <testcase name="TimeoutSymmetricMktSpread" status="run" time="41.24927" timestamp="2020-02-06T04:51:14.024121"/>
+   <testcase name="UnsolicitedCancelAggregativeLimitSpread" status="run" time="10.937859" timestamp="2020-02-06T04:51:14.084607"/>
+  </testsuite>
+  <testsuite failures="0" name="FillOverfill" skipped="0" tests="13" testsuite_failed="False" time="44.735757" timestamp="2020-02-06T04:51:55.445273">
+   <testcase name="AcceptOverfillsMultilevelSpread" status="run" time="19.813132" timestamp="2020-02-06T04:51:55.648412"/>
+   <testcase name="AutomaticHedgingSymmetricSpread" status="run" time="16.109937" timestamp="2020-02-06T04:51:55.789052"/>
+   <testcase name="AvoidOverfillsAggregation" status="run" time="34.204107" timestamp="2020-02-06T04:51:55.882884"/>
+   <testcase name="AvoidOverfillsSymmetricSpread" status="run" time="27.235215" timestamp="2020-02-06T04:51:55.960909"/>
+   <testcase name="FilledNestedSSOrderBecomesWorking" status="run" time="5.687653" timestamp="2020-02-06T04:51:56.023422"/>
+   <testcase name="FullFillLimitAggregation" status="run" time="8.672164" timestamp="2020-02-06T04:51:56.101545"/>
+   <testcase name="FullFillLimitSniperSpread" status="run" time="8.797205" timestamp="2020-02-06T04:51:56.179734"/>
+   <testcase name="FullFillLimitSymmetricSpread" status="run" time="7.500186" timestamp="2020-02-06T04:51:56.242207"/>
+   <testcase name="FullFillLimitSymmetricTwoWorkLegsSpread" status="run" time="11.499706" timestamp="2020-02-06T04:51:56.618147"/>
+   <testcase name="FullFillMarketSpread" status="run" time="10.234716" timestamp="2020-02-06T04:51:56.320282"/>
+   <testcase name="ManualOverfillSymmetricSpread" status="run" time="33.922844" timestamp="2020-02-06T04:51:56.414123"/>
+   <testcase name="PartFillLimitMultilevelSpread" status="run" time="13.656478" timestamp="2020-02-06T04:51:56.476757"/>
+   <testcase name="PreserveQueuePositionAggregation" status="run" time="43.501363" timestamp="2020-02-06T04:51:56.554661"/>
+  </testsuite>
+  <testsuite failures="0" name="ForceCareOrders" skipped="0" tests="2" testsuite_failed="False" time="3.85951" timestamp="2020-02-06T04:52:40.243527">
+   <testcase name="CareFillReject" status="run" time="1.359413" timestamp="2020-02-06T04:52:42.524855"/>
+   <testcase name="ForceCare_Actions" status="run" time="1.375045" timestamp="2020-02-06T04:52:42.587339"/>
+  </testsuite>
+  <testsuite failures="0" name="FractionalSizes" skipped="0" tests="10" testsuite_failed="False" time="14.359813" timestamp="2020-02-06T04:52:44.165538">
+   <testcase name="LegRatioNotMultipleSizeIncrementRejected" status="run" time="5.736093" timestamp="2020-02-06T04:52:44.384336"/>
+   <testcase name="NestedSpreadFractionalSizeRejected" status="run" time="5.797034" timestamp="2020-02-06T04:52:44.431171"/>
+   <testcase name="NonProportionalExecutionRejected" status="run" time="5.469114" timestamp="2020-02-06T04:52:44.524901"/>
+   <testcase name="ProportionalExecution" status="run" time="13.797281" timestamp="2020-02-06T04:52:44.603042"/>
+   <testcase name="RoundingModeDown" status="run" time="7.172376" timestamp="2020-02-06T04:52:44.712427"/>
+   <testcase name="RoundingModeMath" status="run" time="6.937717" timestamp="2020-02-06T04:52:44.837432"/>
+   <testcase name="RoundingModeUp" status="run" time="6.562642" timestamp="2020-02-06T04:52:44.962509"/>
+   <testcase name="SizeModificationRejected" status="run" time="4.969046" timestamp="2020-02-06T04:52:45.274919"/>
+   <testcase name="ZeroLegSizeRejected" status="run" time="4.812638" timestamp="2020-02-06T04:52:45.056174"/>
+   <testcase name="ZeroPrimaryLegSizeRejected" status="run" time="4.954869" timestamp="2020-02-06T04:52:45.165560"/>
+  </testsuite>
+  <testsuite failures="0" name="Hang" skipped="0" tests="10" testsuite_failed="False" time="63.689447" timestamp="2020-02-06T04:52:58.572249">
+   <testcase name="FractionalSymmetricLimitSpread" status="run" time="63.284242" timestamp="2020-02-06T04:52:58.822266"/>
+   <testcase name="GoMarketSymmetricLimitSpread" status="run" time="41.563771" timestamp="2020-02-06T04:52:58.884757"/>
+   <testcase name="HangFailMultilevelLimitSpread" status="run" time="22.151978" timestamp="2020-02-06T04:52:58.952182"/>
+   <testcase name="HangLiquidateMultilevelLimitSpread" status="run" time="24.889426" timestamp="2020-02-06T04:52:59.027328"/>
+   <testcase name="HangResolutionMultilevelLimitSpread" status="run" time="20.938284" timestamp="2020-02-06T04:52:59.087844"/>
+   <testcase name="HangSniperSpread" status="run" time="13.062927" timestamp="2020-02-06T04:52:59.166010"/>
+   <testcase name="LiquidateSymmetricLimitSpread" status="run" time="41.970054" timestamp="2020-02-06T04:52:59.244103"/>
+   <testcase name="MultipleHangsSymmetricLimitSpread" status="run" time="28.815407" timestamp="2020-02-06T04:52:59.353479"/>
+   <testcase name="ScratchSymmetricLimitSpread" status="run" time="22.141315" timestamp="2020-02-06T04:52:59.431611"/>
+   <testcase name="TrailSymmetricLimitSpread" status="run" time="21.516282" timestamp="2020-02-06T04:52:59.509736"/>
+  </testsuite>
+  <testsuite failures="0" name="Iceberg" skipped="0" tests="6" testsuite_failed="False" time="74.001838" timestamp="2020-02-06T04:54:02.324655">
+   <testcase name="IcbrgLegsSymmetricSSSizeModification" status="run" time="73.549289" timestamp="2020-02-06T04:54:02.542971"/>
+   <testcase name="IcbrgMultilevelSSPrimaryLegSizeModificationAfterPartialFill" status="run" time="17.203983" timestamp="2020-02-06T04:54:02.605462"/>
+   <testcase name="IcbrgNativeLegsAggregationSSPartialFill" status="run" time="29.204052" timestamp="2020-02-06T04:54:02.699191"/>
+   <testcase name="IcbrgSymmetricSSRejections" status="run" time="0.656432" timestamp="2020-02-06T04:54:02.871075"/>
+   <testcase name="IcbrgSymmetricSSSizeModification" status="run" time="73.252101" timestamp="2020-02-06T04:54:02.949379"/>
+   <testcase name="IcbrgSymmetricSSVisibleSizeModification" status="run" time="13.359804" timestamp="2020-02-06T04:54:03.042950"/>
+  </testsuite>
+  <testsuite failures="0" name="IncludeInReplication" skipped="0" tests="4" testsuite_failed="False" time="24.094484" timestamp="2020-02-06T04:55:16.404652">
+   <testcase name="ExcludeFromReplicationCancelled" status="run" time="15.453559" timestamp="2020-02-06T04:55:16.607778"/>
+   <testcase name="IncludeInReplicationFilledLegs" status="run" time="15.062967" timestamp="2020-02-06T04:55:16.685863"/>
+   <testcase name="IncludeInReplicationLateFills" status="run" time="23.545624" timestamp="2020-02-06T04:55:16.766311"/>
+   <testcase name="IncludeInReplicationReleasedLegs" status="run" time="23.188207" timestamp="2020-02-06T04:55:16.842124"/>
+  </testsuite>
+  <testsuite failures="0" name="InFlightFills" skipped="0" tests="18" testsuite_failed="False" time="12.95353" timestamp="2020-02-06T04:55:40.577247">
+   <testcase name="CancelNonZero_Accepted" status="run" time="5.047009" timestamp="2020-02-06T04:55:40.796010"/>
+   <testcase name="CancelNonZero_Rejected" status="run" time="5.078257" timestamp="2020-02-06T04:55:40.889765"/>
+   <testcase name="CancelZero_Rejected" status="run" time="4.812418" timestamp="2020-02-06T04:55:40.983724"/>
+   <testcase name="ModifyToNonZero_Accepted" status="run" time="8.778807" timestamp="2020-02-06T04:55:41.064341"/>
+   <testcase name="ModifyToNonZero_AcceptFirst" status="run" time="9.000319" timestamp="2020-02-06T04:55:41.155370"/>
+   <testcase name="ModifyToNonZero_Rejected" status="run" time="7.62479" timestamp="2020-02-06T04:55:41.249585"/>
+   <testcase name="ModifyToZero_Accepted" status="run" time="6.922066" timestamp="2020-02-06T04:55:41.342902"/>
+   <testcase name="ModifyToZero_AcceptFirst" status="run" time="7.375228" timestamp="2020-02-06T04:55:41.467880"/>
+   <testcase name="ModifyToZero_Rejected" status="run" time="7.453366" timestamp="2020-02-06T04:55:41.561637"/>
+   <testcase name="ModifyToZero_RejectFirst" status="run" time="4.312624" timestamp="2020-02-06T04:55:41.655398"/>
+   <testcase name="ModifyZeroToNonZero_Accepted" status="run" time="11.51597" timestamp="2020-02-06T04:55:41.764819"/>
+   <testcase name="ModifyZeroToNonZero_AcceptFirst" status="run" time="11.140917" timestamp="2020-02-06T04:55:41.936738"/>
+   <testcase name="ModifyZeroToNonZero_Rejected" status="run" time="8.656539" timestamp="2020-02-06T04:55:42.061647"/>
+   <testcase name="ModifyZeroToNonZero_RejectFirst" status="run" time="7.109607" timestamp="2020-02-06T04:55:42.217903"/>
+   <testcase name="ModifyZeroToZero_Accepted" status="run" time="9.374883" timestamp="2020-02-06T04:55:42.312085"/>
+   <testcase name="ModifyZeroToZero_AcceptFirst" status="run" time="9.578423" timestamp="2020-02-06T04:55:42.405413"/>
+   <testcase name="ModifyZeroToZero_Rejected" status="run" time="8.328398" timestamp="2020-02-06T04:55:42.452288"/>
+   <testcase name="ModifyZeroToZero_RejectFirst" status="run" time="6.937771" timestamp="2020-02-06T04:55:42.530465"/>
+  </testsuite>
+  <testsuite failures="0" name="LegOrderConversion" skipped="0" tests="1" testsuite_failed="False" time="6.234562" timestamp="2020-02-06T04:55:53.608912">
+   <testcase name="ConvertedLegRelease" status="run" time="4.984546" timestamp="2020-02-06T04:55:54.718298"/>
+  </testsuite>
+  <testsuite failures="0" name="MixOmnibusAccMapping" skipped="0" tests="6" testsuite_failed="False" time="108.347126" timestamp="2020-02-06T04:55:59.905992">
+   <testcase name="PlaceFillRejectSymmetric" status="run" time="94.908865" timestamp="2020-02-06T04:56:00.484581"/>
+   <testcase name="PlaceModifyCancelSniper" status="run" time="77.564943" timestamp="2020-02-06T04:56:00.577851"/>
+   <testcase name="PlaceModifyFillMultilevel" status="run" time="37.26684" timestamp="2020-02-06T04:56:00.671628"/>
+   <testcase name="PlaceModifyFillSimmetric" status="run" time="65.814383" timestamp="2020-02-06T04:56:00.765545"/>
+   <testcase name="PlacePartFillCancelSymmetric" status="run" time="103.003225" timestamp="2020-02-06T04:56:00.827871"/>
+   <testsuite failures="0" name="CancelAll" skipped="0" tests="1" testsuite_failed="False" time="4.187877" timestamp="2020-02-06T04:57:43.924847">
+    <testcase name="FromOmnibus" status="run" time="1.859956" timestamp="2020-02-06T04:57:46.096770"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OmnibusInternalOmnibus" skipped="0" tests="5" testsuite_failed="False" time="53.939216" timestamp="2020-02-06T04:57:48.331222">
+   <testcase name="FillMultilevel" status="run" time="51.517277" timestamp="2020-02-06T04:57:48.628112"/>
+   <testcase name="FillSymmetricSpread" status="run" time="27.547744" timestamp="2020-02-06T04:57:48.706245"/>
+   <testcase name="PlaceModifyCancelMultilevel" status="run" time="53.32984" timestamp="2020-02-06T04:57:48.815609"/>
+   <testcase name="PlaceModifyCancelSymmetricSpread" status="run" time="29.70399" timestamp="2020-02-06T04:57:48.909447"/>
+   <testcase name="PlaceRejectMultilevel" status="run" time="24.296811" timestamp="2020-02-06T04:57:49.003974"/>
+  </testsuite>
+  <testsuite failures="0" name="Parked" skipped="0" tests="5" testsuite_failed="False" time="10.047187" timestamp="2020-02-06T04:58:42.332938">
+   <testcase name="ParkingActivationFill" status="run" time="5.765829" timestamp="2020-02-06T04:58:42.536056"/>
+   <testcase name="ParkingCancelByContractCriteria" status="run" time="2.296926" timestamp="2020-02-06T04:58:42.614201"/>
+   <testcase name="ParkingCancelByParkedCriteria" status="run" time="2.312554" timestamp="2020-02-06T04:58:42.707942"/>
+   <testcase name="ParkingMultilevel" status="run" time="5.625109" timestamp="2020-02-06T04:58:42.770493"/>
+   <testcase name="PlaceParkActivateCancel" status="run" time="9.375241" timestamp="2020-02-06T04:58:42.864228"/>
+  </testsuite>
+  <testsuite failures="0" name="PlaceModifyCancel" skipped="0" tests="18" testsuite_failed="False" time="27.797751" timestamp="2020-02-06T04:58:52.473870">
+   <testcase name="MarketMULPlaceCancel" status="run" time="15.156743" timestamp="2020-02-06T04:58:52.723886"/>
+   <testcase name="MarketPlaceCancel" status="run" time="10.656573" timestamp="2020-02-06T04:58:52.786381"/>
+   <testcase name="MultilevelPlaceModifyCancel" status="run" time="6.04803" timestamp="2020-02-06T04:58:52.880131"/>
+   <testcase name="PlaceCancelAGGRBothLegs" status="run" time="15.062971" timestamp="2020-02-06T04:58:52.958259"/>
+   <testcase name="PlaceCancelMultilevelMKT" status="run" time="8.984657" timestamp="2020-02-06T04:58:53.067622"/>
+   <testcase name="PlaceCancelMultilevelSniper" status="run" time="8.953064" timestamp="2020-02-06T04:58:53.177345"/>
+   <testcase name="PlaceCancelMultilevelSTP" status="run" time="13.906668" timestamp="2020-02-06T04:58:53.255139"/>
+   <testcase name="PlaceModifyCancelAGGR" status="run" time="21.422669" timestamp="2020-02-06T04:58:53.348894"/>
+   <testcase name="PlaceModifyCancelAGGRMultilevel" status="run" time="11.905344" timestamp="2020-02-06T04:58:53.475382"/>
+   <testcase name="PlaceModifyCancelMULMultilevel" status="run" time="7.428772" timestamp="2020-02-06T04:58:53.583308"/>
+   <testcase name="PlaceModifyCancelSniperMUL" status="run" time="26.422502" timestamp="2020-02-06T04:58:53.708474"/>
+   <testcase name="PlaceModifyCancelSymmerticMUL" status="run" time="14.422315" timestamp="2020-02-06T04:58:53.817657"/>
+   <testcase name="SniperPlaceModifyCancel" status="run" time="17.750668" timestamp="2020-02-06T04:58:53.958275"/>
+   <testcase name="StopMULPlaceCancel" status="run" time="21.391308" timestamp="2020-02-06T04:58:54.098905"/>
+   <testcase name="StopPlaceCancel" status="run" time="20.250654" timestamp="2020-02-06T04:58:54.177033"/>
+   <testcase name="SymmerticPlaceModifyCancel" status="run" time="12.681683" timestamp="2020-02-06T04:58:54.292742"/>
+   <testcase name="ThreeLegsPlaceModifyCancel" status="run" time="7.362332" timestamp="2020-02-06T04:58:54.380163"/>
+   <testcase name="TwoWorkingLegsPlaceModifyCancel" status="run" time="19.828823" timestamp="2020-02-06T04:58:54.473917"/>
+  </testsuite>
+  <testsuite failures="0" name="Race" skipped="0" tests="5" testsuite_failed="False" time="12.031608" timestamp="2020-02-06T04:59:20.334142">
+   <testcase name="PrimaryFilledBeforeCancelSymmetricLimitSpread" status="run" time="8.594258" timestamp="2020-02-06T04:59:20.552883"/>
+   <testcase name="SecondaryCancelAcceptedSymmetricLimitSpread" status="run" time="11.26612" timestamp="2020-02-06T04:59:20.631034"/>
+   <testcase name="SecondaryCancelFailSymmetricLimitSpread" status="run" time="11.359718" timestamp="2020-02-06T04:59:20.724756"/>
+   <testcase name="SecondaryModAcceptedSymmetricLimitSpread" status="run" time="10.766159" timestamp="2020-02-06T04:59:20.927870"/>
+   <testcase name="SecondaryModFailSymmetricLimitSpread" status="run" time="11.344173" timestamp="2020-02-06T04:59:20.818494"/>
+  </testsuite>
+  <testsuite failures="0" name="RelativeDailyFutures" skipped="0" tests="1" testsuite_failed="False" time="16.953647" timestamp="2020-02-06T04:59:32.443876">
+   <testcase name="FillLMEStyleContracts" status="run" time="16.500882" timestamp="2020-02-06T04:59:32.725129"/>
+  </testsuite>
+  <testsuite failures="0" name="ReleaseOwnership" skipped="0" tests="8" testsuite_failed="False" time="62.220661" timestamp="2020-02-06T04:59:49.491328">
+   <testcase name="AllLegsWorkingSSLegReleasedAfterCancellation" status="run" time="33.829175" timestamp="2020-02-06T04:59:49.741300"/>
+   <testcase name="FillReleasedNestedStrategyLeg" status="run" time="9.875296" timestamp="2020-02-06T04:59:49.819419"/>
+   <testcase name="ModifyNestedWithFakeFills" status="run" time="57.547895" timestamp="2020-02-06T04:59:49.898333"/>
+   <testcase name="SniperSSLegReleasedAfterModification" status="run" time="27.829071" timestamp="2020-02-06T04:59:49.991301"/>
+   <testcase name="SymmetricSSLegReleasedAfterCancellation" status="run" time="27.328834" timestamp="2020-02-06T04:59:50.225835"/>
+   <testcase name="SymmetricSSLegReleasedAfterModification" status="run" time="29.704069" timestamp="2020-02-06T04:59:50.319439"/>
+   <testcase name="SymmetricSSLegReleasedAfterPlacement" status="run" time="45.282684" timestamp="2020-02-06T04:59:50.413185"/>
+   <testsuite failures="0" name="CancelAll" skipped="0" tests="1" testsuite_failed="False" time="4.015706" timestamp="2020-02-06T05:00:47.524399">
+    <testcase name="ForReleasedLeg" status="run" time="2.718848" timestamp="2020-02-06T05:00:48.665025"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="StrategyDefinition" skipped="0" tests="8" testsuite_failed="False" time="2.143346" timestamp="2020-02-06T05:00:51.805754">
+   <testcase name="AggrLimitations" status="run" time="0.328143" timestamp="2020-02-06T05:00:52.118264"/>
+   <testcase name="BadStrategyDefinitions" status="run" time="1.187532" timestamp="2020-02-06T05:00:52.227622"/>
+   <testcase name="LegIsNotTradable" status="run" time="0.156233" timestamp="2020-02-06T05:00:53.055786"/>
+   <testcase name="MultilevelDefinitionQuery" status="run" time="0.546942" timestamp="2020-02-06T05:00:52.368261"/>
+   <testcase name="MultilevelLimitations" status="run" time="0.46898" timestamp="2020-02-06T05:00:52.477669"/>
+   <testcase name="MultiplicativeLimitations" status="run" time="0.292397" timestamp="2020-02-06T05:00:52.743299"/>
+   <testcase name="SpreadLimitations" status="run" time="0.374992" timestamp="2020-02-06T05:00:52.852651"/>
+   <testcase name="StrategyDuplicateDefinition_DE717247707" status="run" time="0.26561" timestamp="2020-02-06T05:00:52.962033"/>
+  </testsuite>
+  <testsuite failures="0" name="Throttling" skipped="0" tests="15" testsuite_failed="False" time="70.595981" timestamp="2020-02-06T05:00:54.055816">
+   <testsuite failures="0" name="Throttle" skipped="0" tests="15" testsuite_failed="False" time="70.174093" timestamp="2020-02-06T05:00:54.305835">
+    <testcase name="PlaceRejectSecondaryLegFail_MTLO_InterExchange" status="run" time="12.328496" timestamp="2020-02-06T05:00:54.587112"/>
+    <testcase name="PlaceRejectSecondaryLegFail_IntraExchange" status="run" time="13.266191" timestamp="2020-02-06T05:00:54.696442"/>
+    <testcase name="PlaceRejectSecondaryLegSuccess_MTLO_IntraExchange" status="run" time="14.638236" timestamp="2020-02-06T05:00:54.777447"/>
+    <testcase name="PlaceRejectSecondaryLegSuccess_InterExchange" status="run" time="13.156644" timestamp="2020-02-06T05:00:54.930871"/>
+    <testcase name="PlaceRejectPrimaryLeg_IgnoreThrottle_InterExchange" status="run" time="14.813028" timestamp="2020-02-06T05:00:55.024596"/>
+    <testcase name="PlaceRejectPrimaryLeg_IgnoreThrottle_Fail1_IntraExchange" status="run" time="14.094108" timestamp="2020-02-06T05:00:55.134084"/>
+    <testcase name="PlaceRejectPrimaryLeg_IgnoreThrottle_Fail2_InterExchange" status="run" time="66.642775" timestamp="2020-02-06T05:00:55.227733"/>
+    <testcase name="PlaceRejectPrimaryLeg_IntraExchange" status="run" time="3.532671" timestamp="2020-02-06T05:00:55.352721"/>
+    <testcase name="ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_IntraExchange" status="run" time="16.953675" timestamp="2020-02-06T05:00:55.462092"/>
+    <testcase name="ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_Fail1_InterExchange" status="run" time="15.703461" timestamp="2020-02-06T05:00:55.556034"/>
+    <testcase name="ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_Fail2_InterExchange" status="run" time="68.470906" timestamp="2020-02-06T05:00:55.805876"/>
+    <testcase name="ModifyRejectPrimaryLeg_MMLO_InterExchange" status="run" time="4.847374" timestamp="2020-02-06T05:00:55.899795"/>
+    <testcase name="CancelRejectPrimaryLegSuccess_IntraExchange" status="run" time="17.406782" timestamp="2020-02-06T05:00:55.977782"/>
+    <testcase name="CancelRejectPrimaryLegFail1_InterExchange" status="run" time="17.25074" timestamp="2020-02-06T05:00:56.071490"/>
+    <testcase name="CancelRejectPrimaryLegFail2_IntraExchange" status="run" time="63.658263" timestamp="2020-02-06T05:00:56.165243"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

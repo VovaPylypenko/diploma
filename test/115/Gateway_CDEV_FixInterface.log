@@ -1,0 +1,726 @@
+18:16:07.26  Test starded without threads
+16:16:07.814 Python Module Path 'Scripts/Gateway/PythonModules' added.
+16:16:07.814 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules' added.
+16:16:07.814 Python Module Path 'ScriptKit' added.
+16:16:08.986 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites' filtered execution.
+16:16:09.049 Suite '.'. [0 test cases, 33 sub-suites]
+16:16:13.143 Suite 'AccountAuthorization'. [0 test cases, 1 sub-suites]
+16:16:13.361 Suite 'AccountAuthorization\Functional'. [1 test cases, 0 sub-suites]
+16:16:18.596 Case 'AddAuthorization' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File "C:\Python36\Lib\queue.py", line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\AccountAuthorization\Functional\AddAuthorization.tc.py", line 33, in <module>
+    authorizedAccountsName)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\AccountDataUtils.py", line 74, in GetAccountDataReportMsgDictByAccountName
+    returnedMessages = GetAccDataReportMsgListByAccNameList(fixClient, fixObject, listAccountNames)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\AccountDataUtils.py", line 61, in GetAccDataReportMsgListByAccNameList
+    report = fixClient.WaitNAppMessages()[0]
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 136, in __waitMessages
+    raise Exception("TIMEOUT/Message number: {0}/{1} - {2}".format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 9/1 - Application message don't come
+
+16:17:29.473 Case 'AddAuthorization' failed.
+16:17:31.114 Suite 'AccountDataRequest'. [0 test cases, 1 sub-suites]
+16:17:31.286 Suite 'AccountDataRequest\Functional'. [5 test cases, 0 sub-suites]
+16:17:32.677 Case 'Account1Snapshot' execution.
+16:17:32.708 Case 'Account1Snapshot' succeeded.
+16:17:32.880 Case 'Account1SnapshotSubscribe' execution.
+16:17:32.927 Case 'Account1SnapshotSubscribe' succeeded.
+16:17:33.099 Case 'Account1SnapshotUnsubscribe' execution.
+16:17:33.130 Case 'Account1SnapshotUnsubscribe' succeeded.
+16:17:33.349 Case 'Account2Snapshot' execution.
+16:17:33.380 Case 'Account2Snapshot' succeeded.
+16:17:33.552 Case 'NoAccountTag' execution.
+16:17:33.599 Case 'NoAccountTag' succeeded.
+16:17:35.786 Suite 'AccountRiskParametersRequest'. [3 test cases, 0 sub-suites]
+16:17:41.255 Case 'SendARPRforAllAccounts' execution.
+16:17:58.521 Case 'SendARPRforAllAccounts' succeeded.
+16:17:58.693 Case 'SendARPRwithSettingsTurnedOFF' execution.
+16:18:16.006 Case 'SendARPRwithSettingsTurnedOFF' succeeded.
+16:18:16.162 Case 'SendARPRwithSettingsTurnedON' execution.
+16:18:33.476 Case 'SendARPRwithSettingsTurnedON' succeeded.
+16:18:33.913 Suite 'AccountTagValueAcceptance'. [0 test cases, 3 sub-suites]
+16:18:36.304 Suite 'AccountTagValueAcceptance\AccId'. [8 test cases, 0 sub-suites]
+16:18:37.476 Case 'SendAccountDataRequest' execution.
+16:18:37.538 Case 'SendAccountDataRequest' succeeded.
+16:18:37.694 Case 'SendAccountRiskParametersRequest' execution.
+16:18:37.726 Case 'SendAccountRiskParametersRequest' succeeded.
+16:18:37.882 Case 'SendCollateralInquiry' execution.
+16:18:37.913 Case 'SendCollateralInquiry' succeeded.
+16:18:38.085 Case 'SendMassStatusRequest' execution.
+16:18:38.132 Case 'SendMassStatusRequest' succeeded.
+16:18:38.304 Case 'SendNewOrderList' execution.
+16:18:38.366 Case 'SendNewOrderList' succeeded.
+16:18:38.538 Case 'SendNewOrderSingle' execution.
+16:18:38.585 Case 'SendNewOrderSingle' succeeded.
+16:18:38.757 Case 'SendOrderCancelRequest' execution.
+16:18:38.835 Case 'SendOrderCancelRequest' succeeded.
+16:18:38.991 Case 'SendRequestForPosition' execution.
+16:18:43.101 Case 'SendRequestForPosition' succeeded.
+16:18:44.679 Suite 'AccountTagValueAcceptance\AccName'. [8 test cases, 0 sub-suites]
+16:18:45.992 Case 'SendAccountDataRequest' execution.
+16:18:46.007 Case 'SendAccountDataRequest' succeeded.
+16:18:46.195 Case 'SendAccountRiskParametersRequest' execution.
+16:18:46.226 Case 'SendAccountRiskParametersRequest' succeeded.
+16:18:46.414 Case 'SendCollateralInquiry' execution.
+16:18:46.429 Case 'SendCollateralInquiry' succeeded.
+16:18:46.632 Case 'SendMassStatusRequest' execution.
+16:18:46.789 Case 'SendMassStatusRequest' succeeded.
+16:18:47.023 Case 'SendNewOrderList' execution.
+16:18:47.101 Case 'SendNewOrderList' succeeded.
+16:18:47.273 Case 'SendNewOrderSingle' execution.
+16:18:47.367 Case 'SendNewOrderSingle' succeeded.
+16:18:47.554 Case 'SendOrderCancelRequest' execution.
+16:18:48.945 Case 'SendOrderCancelRequest' succeeded.
+16:18:49.210 Case 'SendRequestForPosition' execution.
+16:18:51.398 Case 'SendRequestForPosition' succeeded.
+16:18:53.148 Suite 'AccountTagValueAcceptance\FCMAccNumber'. [8 test cases, 0 sub-suites]
+16:18:54.429 Case 'SendAccountDataRequest' execution.
+16:18:54.461 Case 'SendAccountDataRequest' succeeded.
+16:18:54.648 Case 'SendAccountRiskParametersRequest' execution.
+16:18:54.679 Case 'SendAccountRiskParametersRequest' succeeded.
+16:18:54.851 Case 'SendCollateralInquiry' execution.
+16:18:54.883 Case 'SendCollateralInquiry' succeeded.
+16:18:55.086 Case 'SendMassStatusRequest' execution.
+16:18:55.226 Case 'SendMassStatusRequest' succeeded.
+16:18:55.414 Case 'SendNewOrderList' execution.
+16:18:55.492 Case 'SendNewOrderList' succeeded.
+16:18:55.648 Case 'SendNewOrderSingle' execution.
+16:18:55.711 Case 'SendNewOrderSingle' succeeded.
+16:18:55.976 Case 'SendOrderCancelRequest' execution.
+16:18:56.070 Case 'SendOrderCancelRequest' succeeded.
+16:18:56.273 Case 'SendRequestForPosition' execution.
+16:18:58.430 Case 'SendRequestForPosition' succeeded.
+16:19:00.805 Suite 'AllowedFeatureRequest'. [0 test cases, 1 sub-suites]
+16:19:00.992 Suite 'AllowedFeatureRequest\Functional'. [2 test cases, 0 sub-suites]
+16:19:01.180 Case 'DJNewsFeatures' execution.
+16:19:04.384 Case 'DJNewsFeatures' succeeded.
+16:19:04.555 Case 'NoFeatures' execution.
+16:19:06.711 Case 'NoFeatures' succeeded.
+16:19:07.336 Suite 'AllowedMarketDataRequest'. [0 test cases, 1 sub-suites]
+16:19:07.524 Suite 'AllowedMarketDataRequest\Functional'. [5 test cases, 0 sub-suites]
+16:19:07.727 Case 'FutureRevisionTag' execution.
+16:19:09.883 Case 'FutureRevisionTag' succeeded.
+16:19:10.055 Case 'ManyAllowedInstruments' execution.
+16:19:13.258 Case 'ManyAllowedInstruments' succeeded.
+16:19:13.430 Case 'NoAllowedInstruments' execution.
+16:19:15.680 Case 'NoAllowedInstruments' succeeded.
+16:19:15.821 Case 'OldRevisionTag' execution.
+16:19:19.040 Case 'OldRevisionTag' succeeded.
+16:19:19.227 Case 'SequentialRequests' execution.
+16:19:22.399 Case 'SequentialRequests' succeeded.
+16:19:23.055 Suite 'AuthorizedAccountsRequest'. [0 test cases, 1 sub-suites]
+16:19:23.274 Suite 'AuthorizedAccountsRequest\Functional'. [3 test cases, 0 sub-suites]
+16:19:23.462 Case 'NoSubscriptionRequestTypeTag' execution.
+16:19:25.587 Case 'NoSubscriptionRequestTypeTag' succeeded.
+16:19:25.743 Case 'OneAccount' execution.
+16:19:27.884 Case 'OneAccount' succeeded.
+16:19:28.056 Case 'TwoAccounts' execution.
+16:19:30.196 Case 'TwoAccounts' succeeded.
+16:19:30.759 Suite 'CollateralInquiry'. [0 test cases, 2 sub-suites]
+16:19:31.009 Suite 'CollateralInquiry\functional'. [4 test cases, 0 sub-suites]
+16:19:36.509 Case 'CancelWorkingOrderAndSendCI' execution.
+16:19:38.650 Case 'CancelWorkingOrderAndSendCI' succeeded.
+16:19:38.822 Case 'ReplaceWorkingOrderAndSendCI' execution.
+16:19:43.962 Case 'ReplaceWorkingOrderAndSendCI' succeeded.
+16:19:44.134 Case 'SendCIforAccount1' execution.
+16:19:49.275 Case 'SendCIforAccount1' succeeded.
+16:19:49.447 Case 'SendCIforAllAccounts' execution.
+16:19:54.603 Case 'SendCIforAllAccounts' succeeded.
+16:19:54.932 Suite 'CollateralInquiry\RateLimitAndEnablement'. [1 test cases, 0 sub-suites]
+16:19:57.291 Case 'RateLimit' execution.
+16:19:59.416 Case 'RateLimit' succeeded.
+16:19:59.947 Suite 'CompoundOrders'. [0 test cases, 4 sub-suites]
+16:20:00.119 Suite 'CompoundOrders\Brackets'. [7 test cases, 0 sub-suites]
+16:20:01.479 Case '10LegsBracket' execution.
+16:20:01.885 Case '10LegsBracket' succeeded.
+16:20:02.041 Case 'CancelBothOCOLegs' execution.
+16:20:02.119 Case 'CancelBothOCOLegs' succeeded.
+16:20:02.291 Case 'CancelFirstOCOLeg' execution.
+16:20:02.385 Case 'CancelFirstOCOLeg' succeeded.
+16:20:02.557 Case 'CancelOPOLeg' execution.
+16:20:02.650 Case 'CancelOPOLeg' succeeded.
+16:20:02.838 Case 'CancelSecondOCOLeg' execution.
+16:20:02.916 Case 'CancelSecondOCOLeg' succeeded.
+16:20:03.182 Case 'FillBracketsLegs' execution.
+16:20:03.400 Case 'FillBracketsLegs' succeeded.
+16:20:03.588 Case 'NestedLegsOnly' execution.
+16:20:03.619 Case 'NestedLegsOnly' succeeded.
+16:20:05.447 Suite 'CompoundOrders\OCOSingleLevel'. [16 test cases, 0 sub-suites]
+16:20:06.697 Case '10OCOLegs' execution.
+16:20:07.057 Case '10OCOLegs' succeeded.
+16:20:07.229 Case '11OCOLegs' execution.
+16:20:07.354 Case '11OCOLegs' succeeded.
+16:20:07.541 Case 'AckAndFillOnlyOneLeg' execution.
+16:20:07.635 Case 'AckAndFillOnlyOneLeg' succeeded.
+16:20:07.807 Case 'BothLegOptions' execution.
+16:20:08.010 Case 'BothLegOptions' succeeded.
+16:20:08.182 Case 'LegsFromTwoAccounts' execution.
+16:20:08.229 Case 'LegsFromTwoAccounts' succeeded.
+16:20:08.526 Case 'LimitDay_StopDay' execution.
+16:20:08.666 Case 'LimitDay_StopDay' succeeded.
+16:20:08.901 Case 'LimitFAK_LimitDAY' execution.
+16:20:08.948 Case 'LimitFAK_LimitDAY' succeeded.
+16:20:09.104 Case 'LimitGTC_LimitGTC' execution.
+16:20:09.247 Case 'LimitGTC_LimitGTC' succeeded.
+16:20:09.416 Case 'LimitParked_LimitParked' execution.
+16:20:09.448 Case 'LimitParked_LimitParked' succeeded.
+16:20:09.620 Case 'RejectOneLegOnExchange' execution.
+16:20:09.698 Case 'RejectOneLegOnExchange' succeeded.
+16:20:09.855 Case 'RejectOneLegOnRS' execution.
+16:20:09.901 Case 'RejectOneLegOnRS' succeeded.
+16:20:10.119 Case 'StopDAY_StopFOK' execution.
+16:20:10.152 Case 'StopDAY_StopFOK' succeeded.
+16:20:10.323 Case 'StopGTD_LimitDay' execution.
+16:20:10.479 Case 'StopGTD_LimitDay' succeeded.
+16:20:10.776 Case 'StopLimitAON_Market' execution.
+16:20:10.808 Case 'StopLimitAON_Market' succeeded.
+16:20:11.041 Case 'StopLimitGTD_StopLimitDay' execution.
+16:20:11.229 Case 'StopLimitGTD_StopLimitDay' succeeded.
+16:20:11.448 Case 'TrailingStop_StopLimitGTD' execution.
+16:20:11.463 Case 'TrailingStop_StopLimitGTD' succeeded.
+16:20:13.791 Suite 'CompoundOrders\OPOSingleLevel'. [13 test cases, 0 sub-suites]
+16:20:14.995 Case '10OPOLegs' execution.
+16:20:15.260 Case '10OPOLegs' succeeded.
+16:20:15.463 Case '11OPOLegs' execution.
+16:20:15.526 Case '11OPOLegs' succeeded.
+16:20:15.713 Case 'BothLegOptions' execution.
+16:20:15.901 Case 'BothLegOptions' succeeded.
+16:20:16.166 Case 'LegsFromTwoAccounts' execution.
+16:20:16.198 Case 'LegsFromTwoAccounts' succeeded.
+16:20:16.385 Case 'LimitDay_StopDay' execution.
+16:20:16.558 Case 'LimitDay_StopDay' succeeded.
+16:20:16.791 Case 'LimitFAK_LimitDAY' execution.
+16:20:16.854 Case 'LimitFAK_LimitDAY' succeeded.
+16:20:17.041 Case 'LimitGTC_LimitGTC' execution.
+16:20:17.182 Case 'LimitGTC_LimitGTC' succeeded.
+16:20:17.432 Case 'LimitParked_LimitParked' execution.
+16:20:17.448 Case 'LimitParked_LimitParked' succeeded.
+16:20:17.635 Case 'StopDAY_StopFOK' execution.
+16:20:17.682 Case 'StopDAY_StopFOK' succeeded.
+16:20:17.838 Case 'StopGTD_LimitDay' execution.
+16:20:17.979 Case 'StopGTD_LimitDay' succeeded.
+16:20:18.167 Case 'StopLimitAON_Market' execution.
+16:20:18.198 Case 'StopLimitAON_Market' succeeded.
+16:20:18.464 Case 'StopLimitGTD_StopLimitDay' execution.
+16:20:18.620 Case 'StopLimitGTD_StopLimitDay' succeeded.
+16:20:18.854 Case 'TrailingStop_StopLimitGTD' execution.
+16:20:18.873 Case 'TrailingStop_StopLimitGTD' succeeded.
+16:20:21.213 Suite 'CompoundOrders\ProportionalExecution'. [5 test cases, 0 sub-suites]
+16:20:22.464 Case 'FillOPOModifyOCOLegs' execution.
+16:20:22.682 Case 'FillOPOModifyOCOLegs' succeeded.
+16:20:22.885 Case 'OCOFirstOCOLeg' execution.
+16:20:22.932 Case 'OCOFirstOCOLeg' succeeded.
+16:20:23.104 Case 'OCOFirstOPOLeg' execution.
+16:20:23.151 Case 'OCOFirstOPOLeg' succeeded.
+16:20:23.326 Case 'OPOFirstOCOLeg' execution.
+16:20:23.370 Case 'OPOFirstOCOLeg' succeeded.
+16:20:23.542 Case 'OPOFirstOPOLeg' execution.
+16:20:23.573 Case 'OPOFirstOPOLeg' succeeded.
+16:20:25.698 Suite 'Configuration'. [0 test cases, 5 sub-suites]
+16:20:29.090 Suite 'Configuration\AccountNameAdj'. [8 test cases, 0 sub-suites]
+16:20:29.323 Case 'SendAccountDataRequest' execution.
+16:20:29.386 Case 'SendAccountDataRequest' succeeded.
+16:20:29.607 Case 'SendAccountRiskParametersRequest' execution.
+16:20:29.636 Case 'SendAccountRiskParametersRequest' succeeded.
+16:20:29.839 Case 'SendCollateralInquiry' execution.
+16:20:29.870 Case 'SendCollateralInquiry' succeeded.
+16:20:30.057 Case 'SendMassStatusRequest' execution.
+16:20:30.104 Case 'SendMassStatusRequest' succeeded.
+16:20:30.417 Case 'SendNewOrderList' execution.
+16:20:30.464 Case 'SendNewOrderList' succeeded.
+16:20:30.667 Case 'SendNewOrderSingle' execution.
+16:20:30.714 Case 'SendNewOrderSingle' succeeded.
+16:20:30.948 Case 'SendOrderCancelRequest' execution.
+16:20:31.026 Case 'SendOrderCancelRequest' succeeded.
+16:20:31.261 Case 'SendRequestForPosition' execution.
+16:20:33.448 Case 'SendRequestForPosition' succeeded.
+16:20:33.824 Suite 'Configuration\FCMAccountNumberAdj'. [8 test cases, 0 sub-suites]
+16:20:34.027 Case 'SendAccountDataRequest' execution.
+16:20:34.044 Case 'SendAccountDataRequest' succeeded.
+16:20:34.247 Case 'SendAccountRiskParametersRequest' execution.
+16:20:34.261 Case 'SendAccountRiskParametersRequest' succeeded.
+16:20:34.558 Case 'SendCollateralInquiry' execution.
+16:20:34.870 Case 'SendCollateralInquiry' succeeded.
+16:20:35.073 Case 'SendMassStatusRequest' execution.
+16:20:35.136 Case 'SendMassStatusRequest' succeeded.
+16:20:35.339 Case 'SendNewOrderList' execution.
+16:20:35.401 Case 'SendNewOrderList' succeeded.
+16:20:35.636 Case 'SendNewOrderSingle' execution.
+16:20:35.667 Case 'SendNewOrderSingle' succeeded.
+16:20:35.886 Case 'SendOrderCancelRequest' execution.
+16:20:35.964 Case 'SendOrderCancelRequest' succeeded.
+16:20:36.214 Case 'SendRequestForPosition' execution.
+16:20:38.339 Case 'SendRequestForPosition' succeeded.
+16:20:38.714 Suite 'Configuration\InstrumentTagAdj'. [8 test cases, 0 sub-suites]
+16:20:38.980 Case 'SendFutureToAdj' execution.
+16:20:39.027 Case 'SendFutureToAdj' succeeded.
+16:20:39.261 Case 'SendFutureToEmptyPipeline' execution.
+16:20:39.308 Case 'SendFutureToEmptyPipeline' succeeded.
+16:20:39.495 Case 'SendOptionToAdj' execution.
+16:20:39.527 Case 'SendOptionToAdj' succeeded.
+16:20:39.745 Case 'SendOptionToEmptyPipeline' execution.
+16:20:39.776 Case 'SendOptionToEmptyPipeline' succeeded.
+16:20:39.995 Case 'SendRDFToAdj' execution.
+16:20:40.058 Case 'SendRDFToAdj' succeeded.
+16:20:40.292 Case 'SendRDFToEmptyPipeline' execution.
+16:20:40.323 Case 'SendRDFToEmptyPipeline' succeeded.
+16:20:40.542 Case 'SendStrategyToAdj' execution.
+16:20:40.589 Case 'SendStrategyToAdj' succeeded.
+16:20:40.902 Case 'SendStrategyToEmptyPipeline' execution.
+16:20:40.964 Case 'SendStrategyToEmptyPipeline' succeeded.
+16:20:41.387 Suite 'Configuration\Parameters'. [1 test cases, 0 sub-suites]
+16:20:45.698 Case 'SendLastModifierUsername' execution.
+16:20:45.824 Case 'SendLastModifierUsername' succeeded.
+16:20:48.917 Suite 'Configuration\SalesSeriesAdj'. [8 test cases, 0 sub-suites]
+16:20:49.089 Case 'SendAccountDataRequest' execution.
+16:20:49.120 Case 'SendAccountDataRequest' succeeded.
+16:20:49.324 Case 'SendAccountRiskParametersRequest' execution.
+16:20:49.339 Case 'SendAccountRiskParametersRequest' succeeded.
+16:20:49.589 Case 'SendCollateralInquiry' execution.
+16:20:49.605 Case 'SendCollateralInquiry' succeeded.
+16:20:49.808 Case 'SendMassStatusRequest' execution.
+16:20:49.824 Case 'SendMassStatusRequest' succeeded.
+16:20:50.030 Case 'SendNewOrderList' execution.
+16:20:50.058 Case 'SendNewOrderList' succeeded.
+16:20:50.292 Case 'SendNewOrderSingle' execution.
+16:20:50.339 Case 'SendNewOrderSingle' succeeded.
+16:20:50.574 Case 'SendOrderCancelRequest' execution.
+16:20:50.636 Case 'SendOrderCancelRequest' succeeded.
+16:20:50.871 Case 'SendRequestForPosition' execution.
+16:20:52.980 Case 'SendRequestForPosition' succeeded.
+16:20:55.464 Suite 'Dialects'. [1 test cases, 0 sub-suites]
+16:21:00.996 Case 'SendLogonPlaceOrderAndLogout' execution.
+16:21:01.090 Case 'SendLogonPlaceOrderAndLogout' succeeded.
+16:21:04.183 Suite 'FCMCurrencyRateRequest'. [0 test cases, 1 sub-suites]
+16:21:04.434 Suite 'FCMCurrencyRateRequest\Functional'. [1 test cases, 0 sub-suites]
+16:21:04.621 Case 'GetCurrencyRates' execution.
+16:21:07.746 Case 'GetCurrencyRates' succeeded.
+16:21:08.434 Suite 'FIDForMiFIDII'. [1 test cases, 0 sub-suites]
+16:21:08.637 Case 'PlaceModifyCancel_FID' execution.
+16:21:11.777 Case 'PlaceModifyCancel_FID' succeeded.
+16:21:12.246 Suite 'FillCareOrders'. [0 test cases, 2 sub-suites]
+16:21:12.449 Suite 'FillCareOrders\FillCareOrdersRequestPlacement'. [6 test cases, 0 sub-suites]
+16:21:14.809 Case 'CheckMassStatusRequest' execution.
+16:21:18.949 Case 'CheckMassStatusRequest' succeeded.
+16:21:19.137 Case 'PlaceHandlInstOrdersAndSendFillCareOrder' execution.
+16:21:23.293 Case 'PlaceHandlInstOrdersAndSendFillCareOrder' succeeded.
+16:21:23.575 Case 'SendFillCareOrdersOnNotExistingOrder' execution.
+16:21:25.715 Case 'SendFillCareOrdersOnNotExistingOrder' succeeded.
+16:21:25.903 Case 'SendFillCareOrdersWithCorrectStrategyLegs' execution.
+16:21:28.028 Case 'SendFillCareOrdersWithCorrectStrategyLegs' succeeded.
+16:21:28.247 Case 'SendFillCareOrdersWithIncorrectAccountID' execution.
+16:21:30.372 Case 'SendFillCareOrdersWithIncorrectAccountID' succeeded.
+16:21:30.559 Case 'SendFillCareOrdersWithOnlyOneLeg' execution.
+16:21:32.731 Case 'SendFillCareOrdersWithOnlyOneLeg' succeeded.
+16:21:33.137 Suite 'FillCareOrders\TagsAndTagValueVerification'. [12 test cases, 0 sub-suites]
+16:21:35.450 Case 'SendFillCareOrdersWithIncorrectNoOrdersDescription' execution.
+16:21:37.575 Case 'SendFillCareOrdersWithIncorrectNoOrdersDescription' succeeded.
+16:21:37.872 Case 'SendFillCareOrdersWithInvalidStrategyLegs' execution.
+16:21:39.997 Case 'SendFillCareOrdersWithInvalidStrategyLegs' succeeded.
+16:21:40.184 Case 'SendFillCareOrdersWithMissingAccount' execution.
+16:21:42.309 Case 'SendFillCareOrdersWithMissingAccount' succeeded.
+16:21:42.528 Case 'SendFillCareOrdersWithMissingFillCareOrderRequestID' execution.
+16:21:44.669 Case 'SendFillCareOrdersWithMissingFillCareOrderRequestID' succeeded.
+16:21:44.856 Case 'SendFillCareOrdersWithMissingLegPrice' execution.
+16:21:46.997 Case 'SendFillCareOrdersWithMissingLegPrice' succeeded.
+16:21:47.216 Case 'SendFillCareOrdersWithMissingLegQty' execution.
+16:21:49.388 Case 'SendFillCareOrdersWithMissingLegQty' succeeded.
+16:21:49.560 Case 'SendFillCareOrdersWithMissingLegTradeID' execution.
+16:21:51.669 Case 'SendFillCareOrdersWithMissingLegTradeID' succeeded.
+16:21:51.935 Case 'SendFillCareOrdersWithMissingNoOrdersDescription' execution.
+16:21:54.075 Case 'SendFillCareOrdersWithMissingNoOrdersDescription' succeeded.
+16:21:54.310 Case 'SendFillCareOrdersWithMissingPrice' execution.
+16:21:56.419 Case 'SendFillCareOrdersWithMissingPrice' succeeded.
+16:21:56.825 Case 'SendFillCareOrdersWithMissingShares' execution.
+16:21:58.935 Case 'SendFillCareOrdersWithMissingShares' succeeded.
+16:21:59.185 Case 'SendFillCareOrdersWithMissingSymbol' execution.
+16:22:01.326 Case 'SendFillCareOrdersWithMissingSymbol' succeeded.
+16:22:01.544 Case 'SendFillCareOrdersWithMissingTradeID' execution.
+16:22:03.685 Case 'SendFillCareOrdersWithMissingTradeID' succeeded.
+16:22:04.341 Suite 'FixedIncomeTrading'. [0 test cases, 3 sub-suites]
+16:22:09.826 Suite 'FixedIncomeTrading\CompoundOrders'. [2 test cases, 0 sub-suites]
+16:22:10.154 Case 'FixedIncomeOCO' execution.
+16:22:10.294 Case 'FixedIncomeOCO' succeeded.
+16:22:10.545 Case 'FixedIncomeOPO' execution.
+16:22:10.701 Case 'FixedIncomeOPO' succeeded.
+16:22:11.263 Suite 'FixedIncomeTrading\InstrumentTagAdj'. [2 test cases, 0 sub-suites]
+16:22:11.513 Case 'SendFixedIncomeToAdj' execution.
+16:22:11.545 Case 'SendFixedIncomeToAdj' succeeded.
+16:22:11.763 Case 'SendFixedIncomeToEmptyPipeline' execution.
+16:22:11.810 Case 'SendFixedIncomeToEmptyPipeline' succeeded.
+16:22:12.295 Suite 'FixedIncomeTrading\SymbolMappingAdj'. [0 test cases, 3 sub-suites]
+16:22:12.623 Suite 'FixedIncomeTrading\SymbolMappingAdj\TelventDTN'. [2 test cases, 0 sub-suites]
+16:22:16.045 Case 'SendFItoEmptyPipeline' execution.
+16:22:16.095 Case 'SendFItoEmptyPipeline' succeeded.
+16:22:16.295 Case 'SendFItoInstrTagAdj' execution.
+16:22:16.326 Case 'SendFItoInstrTagAdj' succeeded.
+16:22:18.107 Suite 'FixedIncomeTrading\SymbolMappingAdj\TrueNorthPaladyne'. [1 test cases, 0 sub-suites]
+16:22:18.357 Case 'SendOrderMassStatusRequest' execution.
+16:22:20.529 Case 'SendOrderMassStatusRequest' succeeded.
+16:22:21.107 Suite 'FixedIncomeTrading\SymbolMappingAdj\ULLink'. [2 test cases, 0 sub-suites]
+16:22:21.404 Case 'SendFItoEmptyPipeline' execution.
+16:22:21.451 Case 'SendFItoEmptyPipeline' succeeded.
+16:22:21.670 Case 'SendFItoInstrTagAdj' execution.
+16:22:21.701 Case 'SendFItoInstrTagAdj' succeeded.
+16:22:23.951 Suite 'GWLongAndShort'. [2 test cases, 0 sub-suites]
+16:22:24.217 Case 'PlaceOrderWithOpenCloseIndicator' execution.
+16:22:29.498 Case 'PlaceOrderWithOpenCloseIndicator' succeeded.
+16:22:29.670 Case 'PlaceOrderWithoutOpenCloseIndicator' execution.
+16:22:33.889 Case 'PlaceOrderWithoutOpenCloseIndicator' succeeded.
+16:22:34.311 Suite 'Logon'. [7 test cases, 0 sub-suites]
+16:22:34.514 Case 'SendLogonMessage' execution.
+16:22:36.639 Case 'SendLogonMessage' succeeded.
+16:22:36.858 Case 'SendLogonWithEncryptMethodTagMissed' execution.
+16:22:37.998 Case 'SendLogonWithEncryptMethodTagMissed' succeeded.
+16:22:38.202 Case 'SendLogonWithIncorrectEncryptMethod' execution.
+16:22:38.358 Case 'SendLogonWithIncorrectEncryptMethod' succeeded.
+16:22:38.639 Case 'SendLogonWithIncorrectHeartBtInt' execution.
+16:22:39.780 Case 'SendLogonWithIncorrectHeartBtInt' succeeded.
+16:22:40.014 Case 'SendLogonWithIncorrectRawData' execution.
+16:22:41.030 Case 'SendLogonWithIncorrectRawData' succeeded.
+16:22:41.342 Case 'SendLogonWithRawDataTagEmpty' execution.
+16:22:41.561 Case 'SendLogonWithRawDataTagEmpty' succeeded.
+16:22:41.795 Case 'SendLogonWithRawDataTagMissed' execution.
+16:22:42.920 Case 'SendLogonWithRawDataTagMissed' succeeded.
+16:22:43.389 Suite 'Logout'. [2 test cases, 0 sub-suites]
+16:22:45.764 Case 'SendLogonAndLogout' execution.
+16:22:47.921 Case 'SendLogonAndLogout' succeeded.
+16:22:48.249 Case 'SendLogonPlaceOrderAndLogout' execution.
+16:22:50.389 Case 'SendLogonPlaceOrderAndLogout' succeeded.
+16:22:50.889 Suite 'NewOrderSingle'. [0 test cases, 2 sub-suites]
+16:22:51.171 Suite 'NewOrderSingle\OrderPlacement'. [12 test cases, 0 sub-suites]
+16:22:52.452 Case 'CallOption' execution.
+16:22:52.952 Case 'CallOption' succeeded.
+16:22:53.202 Case 'Limit' execution.
+16:22:53.686 Case 'Limit' succeeded.
+16:22:53.889 Case 'LimitDAY' execution.
+16:22:54.374 Case 'LimitDAY' succeeded.
+16:22:54.702 Case 'LimitDAYIceberg' execution.
+16:22:55.171 Case 'LimitDAYIceberg' succeeded.
+16:22:55.405 Case 'LimitFillAndKill' execution.
+16:22:55.874 Case 'LimitFillAndKill' succeeded.
+16:22:56.139 Case 'PutOption' execution.
+16:22:56.639 Case 'PutOption' succeeded.
+16:22:56.890 Case 'RelativeDailyFutures' execution.
+16:22:57.390 Case 'RelativeDailyFutures' succeeded.
+16:22:57.593 Case 'Spread' execution.
+16:22:58.125 Case 'Spread' succeeded.
+16:22:58.343 Case 'Stop' execution.
+16:22:58.858 Case 'Stop' succeeded.
+16:22:59.077 Case 'StopFillOrKill' execution.
+16:22:59.562 Case 'StopFillOrKill' succeeded.
+16:22:59.843 Case 'StopGoodTillDate' execution.
+16:23:00.452 Case 'StopGoodTillDate' succeeded.
+16:23:00.749 Case 'StopLimit' execution.
+16:23:01.312 Case 'StopLimit' succeeded.
+16:23:03.593 Suite 'NewOrderSingle\TagsAndTagValuesVerification'. [33 test cases, 0 sub-suites]
+16:23:05.952 Case 'SendNOSDAYWithExpireDate' execution.
+16:23:08.093 Case 'SendNOSDAYWithExpireDate' succeeded.
+16:23:08.296 Case 'SendNOSForTRAILLMT' execution.
+16:23:10.421 Case 'SendNOSForTRAILLMT' succeeded.
+16:23:10.656 Case 'SendNOSForTRAILLMTWithMissingPeggedStopPx' execution.
+16:23:12.827 Case 'SendNOSForTRAILLMTWithMissingPeggedStopPx' succeeded.
+16:23:13.140 Case 'SendNOSForTRAILMKT' execution.
+16:23:15.265 Case 'SendNOSForTRAILMKT' succeeded.
+16:23:15.499 Case 'SendNOSGTDWithMissignExpireDate' execution.
+16:23:17.640 Case 'SendNOSGTDWithMissignExpireDate' succeeded.
+16:23:17.906 Case 'SendNOSICBRGWithIncorrectMaxShow' execution.
+16:23:20.062 Case 'SendNOSICBRGWithIncorrectMaxShow' succeeded.
+16:23:20.265 Case 'SendNOSICBRGWithMissingMaxShow' execution.
+16:23:24.437 Case 'SendNOSICBRGWithMissingMaxShow' succeeded.
+16:23:24.703 Case 'SendNOSICBRGWithZeroMaxShow' execution.
+16:23:26.812 Case 'SendNOSICBRGWithZeroMaxShow' succeeded.
+16:23:27.047 Case 'SendNOSLMTWithMissignPrice' execution.
+16:23:29.187 Case 'SendNOSLMTWithMissignPrice' succeeded.
+16:23:29.390 Case 'SendNOSLMTWithZeroPrice' execution.
+16:23:31.531 Case 'SendNOSLMTWithZeroPrice' succeeded.
+16:23:31.875 Case 'SendNOSLMTWithZeroStopPx' execution.
+16:23:34.000 Case 'SendNOSLMTWithZeroStopPx' succeeded.
+16:23:34.219 Case 'SendNOSMKTWithPrice' execution.
+16:23:36.328 Case 'SendNOSMKTWithPrice' succeeded.
+16:23:36.516 Case 'SendNOSMKTWithZeroStopPx' execution.
+16:23:38.625 Case 'SendNOSMKTWithZeroStopPx' succeeded.
+16:23:38.828 Case 'SendNOSNonICBRGWithMaxShow' execution.
+16:23:40.969 Case 'SendNOSNonICBRGWithMaxShow' succeeded.
+16:23:41.240 Case 'SendNOSNonQTSWithTriggerQty' execution.
+16:23:44.360 Case 'SendNOSNonQTSWithTriggerQty' succeeded.
+16:23:44.610 Case 'SendNOSQTSWithIncorrectTriggerQty' execution.
+16:23:46.735 Case 'SendNOSQTSWithIncorrectTriggerQty' succeeded.
+16:23:46.953 Case 'SendNOSQTSWithMissingTriggerQty' execution.
+16:23:51.141 Case 'SendNOSQTSWithMissingTriggerQty' succeeded.
+16:23:51.438 Case 'SendNOSSTLWithMissingStopPx' execution.
+16:23:53.547 Case 'SendNOSSTLWithMissingStopPx' succeeded.
+16:23:53.782 Case 'SendNOSSTPWithIncorrectStopPx' execution.
+16:23:55.891 Case 'SendNOSSTPWithIncorrectStopPx' succeeded.
+16:23:56.141 Case 'SendNOSSTPWithMissingStopPx' execution.
+16:23:58.297 Case 'SendNOSSTPWithMissingStopPx' succeeded.
+16:23:58.547 Case 'SendNOSSTPWithPrice' execution.
+16:24:00.688 Case 'SendNOSSTPWithPrice' succeeded.
+16:24:00.954 Case 'SendNOSWithExecBroker' execution.
+16:24:03.079 Case 'SendNOSWithExecBroker' succeeded.
+16:24:03.298 Case 'SendNOSWithExtraTagListID' execution.
+16:24:05.423 Case 'SendNOSWithExtraTagListID' succeeded.
+16:24:05.751 Case 'SendNOSWithIncorrectAccount' execution.
+16:24:08.860 Case 'SendNOSWithIncorrectAccount' succeeded.
+16:24:09.048 Case 'SendNOSWithIncorrectExecInst' execution.
+16:24:11.142 Case 'SendNOSWithIncorrectExecInst' succeeded.
+16:24:11.407 Case 'SendNOSWithIncorrectSymbol' execution.
+16:24:13.532 Case 'SendNOSWithIncorrectSymbol' succeeded.
+16:24:13.735 Case 'SendNOSWithIncorrectTimeInForce' execution.
+16:24:15.845 Case 'SendNOSWithIncorrectTimeInForce' succeeded.
+16:24:16.098 Case 'SendNOSWithMissingAccountTag' execution.
+16:24:18.251 Case 'SendNOSWithMissingAccountTag' succeeded.
+16:24:18.454 Case 'SendNOSWithMissingClOrdIDTag' execution.
+16:24:20.579 Case 'SendNOSWithMissingClOrdIDTag' succeeded.
+16:24:20.829 Case 'SendNOSWithMissingSide' execution.
+16:24:24.001 Case 'SendNOSWithMissingSide' succeeded.
+16:24:24.314 Case 'SendNOSWithMissingSymbol' execution.
+16:24:26.423 Case 'SendNOSWithMissingSymbol' succeeded.
+16:24:26.658 Case 'SendNOSWithZeroOrderQty' execution.
+16:24:28.814 Case 'SendNOSWithZeroOrderQty' succeeded.
+16:24:29.048 Case 'SendNOSWithZeroSide' execution.
+16:24:31.158 Case 'SendNOSWithZeroSide' succeeded.
+16:24:31.876 Suite 'OnBehalfOf'. [3 test cases, 0 sub-suites]
+16:24:32.158 Case 'ActivateParked' execution.
+16:24:35.330 Case 'ActivateParked' succeeded.
+16:24:35.643 Case 'ClOrdIDDuplicate' execution.
+16:24:38.752 Case 'ClOrdIDDuplicate' succeeded.
+16:24:39.002 Case 'PlaceModifyCancel' execution.
+16:24:42.111 Case 'PlaceModifyCancel' succeeded.
+16:24:42.627 Suite 'OrderCancelRequest'. [4 test cases, 0 sub-suites]
+16:24:45.002 Case 'ModifyOrderToGTDandReplaceWithNewExpireDateValue' execution.
+16:24:48.127 Case 'ModifyOrderToGTDandReplaceWithNewExpireDateValue' succeeded.
+16:24:48.381 Case 'SendOrderCancelRequestWithMissingAccount' execution.
+16:24:50.486 Case 'SendOrderCancelRequestWithMissingAccount' succeeded.
+16:24:50.830 Case 'SendOrderCancelRequestWithMissingClOrdID' execution.
+16:24:52.986 Case 'SendOrderCancelRequestWithMissingClOrdID' succeeded.
+16:24:53.205 Case 'SendOrderCancelRequestWithMissingOrderID' execution.
+16:24:55.330 Case 'SendOrderCancelRequestWithMissingOrderID' succeeded.
+16:24:55.737 Suite 'OrderMassStatusRequest'. [5 test cases, 0 sub-suites]
+16:25:06.300 Case 'SendOMSRForAccount1' execution.
+16:25:23.628 Case 'SendOMSRForAccount1' succeeded.
+16:25:23.862 Case 'SendOMSRForAccount1With1SideAndEPSymbol' execution.
+16:25:49.175 Case 'SendOMSRForAccount1With1SideAndEPSymbol' succeeded.
+16:25:49.394 Case 'SendOMSRForAccount1WithBuySide' execution.
+16:26:09.660 Case 'SendOMSRForAccount1WithBuySide' succeeded.
+16:26:09.957 Case 'SendOMSRForAccount1WithEPSymbol' execution.
+16:26:29.255 Case 'SendOMSRForAccount1WithEPSymbol' succeeded.
+16:26:29.505 Case 'SendOMSRWithNoAccountSpecified' execution.
+16:26:48.802 Case 'SendOMSRWithNoAccountSpecified' succeeded.
+16:26:49.255 Suite 'ParkedOrders'. [2 test cases, 0 sub-suites]
+16:26:52.646 Case 'DropCopySessionOfNativeClient' execution.
+16:26:53.725 Case 'DropCopySessionOfNativeClient' succeeded.
+16:26:53.960 Case 'SendParkedOrderAndUnpark' execution.
+16:26:54.021 Case 'SendParkedOrderAndUnpark' succeeded.
+16:26:55.756 Suite 'PreTradeOrderAllocation'. [6 test cases, 0 sub-suites]
+16:26:57.037 Case 'AllocationTags' execution.
+16:26:57.193 Case 'AllocationTags' succeeded.
+16:26:57.428 Case 'MultiLegOrderAllocationTagValues' execution.
+16:26:57.506 Case 'MultiLegOrderAllocationTagValues' succeeded.
+16:26:57.709 Case 'NoAllocsNewOrderMultileg' execution.
+16:26:57.740 Case 'NoAllocsNewOrderMultileg' succeeded.
+16:26:57.943 Case 'NoAllocsNewOrderSingle' execution.
+16:26:57.975 Case 'NoAllocsNewOrderSingle' succeeded.
+16:26:58.256 Case 'NoAllocsOrderCancelReplaceRequest' execution.
+16:26:58.303 Case 'NoAllocsOrderCancelReplaceRequest' succeeded.
+16:26:58.539 Case 'SingleLegOrderAllocationTagValues' execution.
+16:26:58.678 Case 'SingleLegOrderAllocationTagValues' succeeded.
+16:27:01.224 Suite 'RDFContracts'. [2 test cases, 0 sub-suites]
+16:27:05.662 Case 'SendMarketOrderWithRDFContract' execution.
+16:27:05.741 Case 'SendMarketOrderWithRDFContract' succeeded.
+16:27:06.006 Case 'SendTradesRequestForPositions' execution.
+16:27:07.162 Case 'SendTradesRequestForPositions' succeeded.
+16:27:08.709 Suite 'RegulatoryAlgorithmID'. [0 test cases, 3 sub-suites]
+16:27:12.272 Suite 'RegulatoryAlgorithmID\ClientSideRegulatoryAlgorithmID'. [2 test cases, 0 sub-suites]
+16:27:12.553 Case 'AlgoIDProvided' execution.
+16:27:12.866 Case 'AlgoIDProvided' succeeded.
+16:27:13.100 Case 'NoAlgoIDProvided' execution.
+16:27:13.209 Case 'NoAlgoIDProvided' succeeded.
+16:27:13.662 Suite 'RegulatoryAlgorithmID\CombinedAlgorithmID'. [2 test cases, 0 sub-suites]
+16:27:13.975 Case 'ClientAlgoAndGWAlgoOCO' execution.
+16:27:14.116 Case 'ClientAlgoAndGWAlgoOCO' succeeded.
+16:27:14.381 Case 'ClientAlgoAndGWAlgoTrailing' execution.
+16:27:22.397 Case 'ClientAlgoAndGWAlgoTrailing' succeeded.
+16:27:22.850 Suite 'RegulatoryAlgorithmID\GWsideAlgorithmID'. [2 test cases, 0 sub-suites]
+16:27:23.070 Case 'GWAlgo2LegOCOOrders' execution.
+16:27:23.194 Case 'GWAlgo2LegOCOOrders' succeeded.
+16:27:23.397 Case 'GWAlgoTrailingOrders' execution.
+16:27:30.398 Case 'GWAlgoTrailingOrders' succeeded.
+16:27:32.444 Suite 'Reject'. [12 test cases, 0 sub-suites]
+16:27:35.913 Case 'SendLogonNewOrderSingleDuplicateClOrderID' execution.
+16:27:38.116 Case 'SendLogonNewOrderSingleDuplicateClOrderID' succeeded.
+16:27:38.351 Case 'SendLogonNewOrderSingleFillRejectModify' execution.
+16:27:40.492 Case 'SendLogonNewOrderSingleFillRejectModify' succeeded.
+16:27:40.726 Case 'SendLogonNewOrderSingleModifyDuplicateClOrderID' execution.
+16:27:43.867 Case 'SendLogonNewOrderSingleModifyDuplicateClOrderID' succeeded.
+16:27:44.210 Case 'SendLogonNewOrderSingleModifyInvalidOrigClOrderID' execution.
+16:27:46.335 Case 'SendLogonNewOrderSingleModifyInvalidOrigClOrderID' succeeded.
+16:27:46.554 Case 'SendLogonNewOrderSingleRejectModifies' execution.
+16:27:50.711 Case 'SendLogonNewOrderSingleRejectModifies' succeeded.
+16:27:51.008 Case 'SendLogonNewOrderSingleWithIncorrectSide' execution.
+16:27:54.195 Case 'SendLogonNewOrderSingleWithIncorrectSide' succeeded.
+16:27:54.492 Case 'SendLogonNewOrderSingleWithIncorrectTransactTime' execution.
+16:27:56.648 Case 'SendLogonNewOrderSingleWithIncorrectTransactTime' succeeded.
+16:27:56.867 Case 'SendLogonNewOrderSingleWithNotExistTag' execution.
+16:27:59.023 Case 'SendLogonNewOrderSingleWithNotExistTag' succeeded.
+16:27:59.273 Case 'SendLogonNewOrderSingleWithoutSideValue' execution.
+16:28:01.414 Case 'SendLogonNewOrderSingleWithoutSideValue' succeeded.
+16:28:01.664 Case 'SendLogonWithIncorrectHardBtInt' execution.
+16:28:16.977 Case 'SendLogonWithIncorrectHardBtInt' succeeded.
+16:28:17.321 Case 'SendLogonWithIncorrectRawData' execution.
+16:28:17.493 Case 'SendLogonWithIncorrectRawData' succeeded.
+16:28:17.743 Case 'SendLogonWithNotExistTag' execution.
+16:28:18.868 Case 'SendLogonWithNotExistTag' succeeded.
+16:28:19.321 Suite 'RequestForPosition'. [15 test cases, 0 sub-suites]
+16:28:24.806 Case 'SendRFPforAcc1withPosReqType0andSubscriptionReqType0' execution.
+16:28:37.056 Case 'SendRFPforAcc1withPosReqType0andSubscriptionReqType0' succeeded.
+16:28:37.322 Case 'SendRFPforAcc1withPosReqType0andSubscriptionReqType1' execution.
+16:28:49.541 Case 'SendRFPforAcc1withPosReqType0andSubscriptionReqType1' succeeded.
+16:28:49.838 Case 'SendRFPforAcc1withPosReqType0andSubscriptionReqType2' execution.
+16:29:02.073 Case 'SendRFPforAcc1withPosReqType0andSubscriptionReqType2' succeeded.
+16:29:02.338 Case 'SendRFPforAcc1withPosReqType1andSubscriptionReqType0' execution.
+16:29:14.620 Case 'SendRFPforAcc1withPosReqType1andSubscriptionReqType0' succeeded.
+16:29:14.855 Case 'SendRFPforAcc1withPosReqType1andSubscriptionReqType1' execution.
+16:29:27.042 Case 'SendRFPforAcc1withPosReqType1andSubscriptionReqType1' succeeded.
+16:29:27.277 Case 'SendRFPforAcc1withPosReqType1andSubscriptionReqType2' execution.
+16:29:39.496 Case 'SendRFPforAcc1withPosReqType1andSubscriptionReqType2' succeeded.
+16:29:39.699 Case 'SendRFPforAcc2withPosReqType0andSubscriptionReqType0' execution.
+16:29:51.949 Case 'SendRFPforAcc2withPosReqType0andSubscriptionReqType0' succeeded.
+16:29:52.262 Case 'SendRFPforAcc2withPosReqType0andSubscriptionReqType1' execution.
+16:30:04.544 Case 'SendRFPforAcc2withPosReqType0andSubscriptionReqType1' succeeded.
+16:30:04.845 Case 'SendRFPforAcc2withPosReqType0andSubscriptionReqType2' execution.
+16:30:17.028 Case 'SendRFPforAcc2withPosReqType0andSubscriptionReqType2' succeeded.
+16:30:17.310 Case 'SendRFPforAcc2withPosReqType1andSubscriptionReqType0' execution.
+16:30:29.529 Case 'SendRFPforAcc2withPosReqType1andSubscriptionReqType0' succeeded.
+16:30:29.764 Case 'SendRFPforAcc2withPosReqType1andSubscriptionReqType1' execution.
+16:30:41.951 Case 'SendRFPforAcc2withPosReqType1andSubscriptionReqType1' succeeded.
+16:30:42.201 Case 'SendRFPforAcc2withPosReqType1andSubscriptionReqType2' execution.
+16:30:54.420 Case 'SendRFPforAcc2withPosReqType1andSubscriptionReqType2' succeeded.
+16:30:54.655 Case 'SendRFPforAccWithALotOfPositions' execution.
+16:31:02.858 Case 'SendRFPforAccWithALotOfPositions' succeeded.
+16:31:03.094 Case 'SendRFPforStrategies' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File "C:\Python36\Lib\queue.py", line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\RequestForPosition\SendRFPforStrategies.tc.py", line 83, in <module>
+    SendUANrequestAndCheckUAPresponce(clStrgy, requestUAN, [simpleOrder, strategy, strategyLeg1, strategyLeg2])
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\RequestForPositionScenarios.py", line 90, in SendUANrequestAndCheckUAPresponce
+    responseMsgList = client.ReceiveMessages(len(responseContext))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py", line 82, in ReceiveMessages
+    return self.__fixCl.WaitNAppMessages(numMsg, timeout)
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 136, in __waitMessages
+    raise Exception("TIMEOUT/Message number: {0}/{1} - {2}".format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 10/1 - Application message don't come
+
+16:31:19.390 Case 'SendRFPforStrategies' failed.
+16:31:19.719 Case 'SendRFPforTwoAccounts' execution.
+16:31:21.843 Case 'SendRFPforTwoAccounts' succeeded.
+16:31:22.343 Suite 'RFQ'. [5 test cases, 0 sub-suites]
+16:31:26.657 Case 'RFQ01' execution.
+16:31:28.422 Case 'RFQ01' succeeded.
+16:31:28.687 Case 'RFQ02' execution.
+16:31:34.625 Case 'RFQ02' succeeded.
+16:31:34.875 Case 'RFQ03' execution.
+16:31:36.172 Case 'RFQ03' succeeded.
+16:31:36.500 Case 'RFQ04' execution.
+16:31:36.547 Case 'RFQ04' succeeded.
+16:31:36.828 Case 'RFQ05' execution.
+16:31:36.859 Case 'RFQ05' succeeded.
+16:31:40.970 Suite 'SaveRestoreTags'. [6 test cases, 0 sub-suites]
+16:31:43.485 Case 'CancelReplaceWithIncorrectSymbol' execution.
+16:31:45.625 Case 'CancelReplaceWithIncorrectSymbol' succeeded.
+16:31:45.891 Case 'CancelReplaceWithoutModificationFields' execution.
+16:31:48.016 Case 'CancelReplaceWithoutModificationFields' succeeded.
+16:31:48.313 Case 'CancelReplaceWithoutRequiredField' execution.
+16:31:50.438 Case 'CancelReplaceWithoutRequiredField' succeeded.
+16:31:50.688 Case 'CompoundOrder' execution.
+16:31:52.829 Case 'CompoundOrder' succeeded.
+16:31:53.063 Case 'NewOrderSingleWithIncorrectSymbol' execution.
+16:31:55.204 Case 'NewOrderSingleWithIncorrectSymbol' succeeded.
+16:31:55.438 Case 'NewOrderSingleWithoutRequiredField' execution.
+16:31:57.548 Case 'NewOrderSingleWithoutRequiredField' succeeded.
+16:31:58.001 Suite 'SecurityDefinitionRequest'. [0 test cases, 1 sub-suites]
+16:31:58.329 Suite 'SecurityDefinitionRequest\Functional'. [2 test cases, 0 sub-suites]
+16:31:59.610 Case 'DefineFuturesStrategy' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File "C:\Python36\Lib\queue.py", line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\SecurityDefinitionRequest\Functional\DefineFuturesStrategy.tc.py", line 60, in <module>
+    Tag.TotalNumSecurities : '1'
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py", line 337, in WaitSetOfMessages
+    msg = fixSink.WaitNAppMessages(1, timeout - (time.clock() - beginPoint))[0]
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 136, in __waitMessages
+    raise Exception("TIMEOUT/Message number: {0}/{1} - {2}".format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 9.996309399999973/1 - Application message don't come
+
+16:33:10.519 Case 'DefineFuturesStrategy' failed.
+16:33:10.753 Case 'DefineOptionsStrategy' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 132, in __waitMessages
+    mes = queue.get(timeout=timeout)
+  File "C:\Python36\Lib\queue.py", line 172, in get
+    raise Empty
+queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites\SecurityDefinitionRequest\Functional\DefineOptionsStrategy.tc.py", line 60, in <module>
+    Tag.TotalNumSecurities : '1'
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\TradingInterfaces\FixInterface\Suites\PythonModules\Utils.py", line 337, in WaitSetOfMessages
+    msg = fixSink.WaitNAppMessages(1, timeout - (time.clock() - beginPoint))[0]
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 156, in WaitNAppMessages
+    return self.__waitMessages(self.__iAppMsgList, numMsg, exceptionMessage, timeOut)
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\FixClientSink.py", line 136, in __waitMessages
+    raise Exception("TIMEOUT/Message number: {0}/{1} - {2}".format(timeout, len(result) + 1, assertMsg))
+Exception: TIMEOUT/Message number: 9.996584200000143/1 - Application message don't come
+
+16:34:20.818 Case 'DefineOptionsStrategy' failed.
+16:34:23.115 Suite 'SequenceReset'. [1 test cases, 0 sub-suites]
+16:34:26.693 Case 'SendSRwithMsgSeqNum1' execution.
+16:34:41.756 Case 'SendSRwithMsgSeqNum1' succeeded.
+16:34:43.741 Suite 'UserRequest'. [0 test cases, 1 sub-suites]
+16:34:43.975 Suite 'UserRequest\Functional'. [2 test cases, 0 sub-suites]
+16:34:44.194 Case 'BadNewPassword' execution.
+16:34:46.334 Case 'BadNewPassword' succeeded.
+16:34:46.647 Case 'ChangePwdLogonLogout' execution.
+16:35:07.194 Case 'ChangePwdLogonLogout' succeeded.
+16:35:08.413 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites' execution finished. It took 0:18:59.317477.
+16:35:08.413 Test cases results: 279 total, 275 succeeded, 4 failed, 0 skipped.

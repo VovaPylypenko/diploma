@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="93" testsuite_failed="False" time="473.421394" timestamp="2020-02-19T19:32:44.663343">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions/AvgPriceAndPL/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions/Regression/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="8"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NetPositions"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="NetPositions" skipped="0" tests="93" testsuite_failed="False" time="473.421394" timestamp="2020-02-19T19:32:44.663343">
+  <testsuite failures="0" name="AvgPriceAndPL" skipped="0" tests="10" testsuite_failed="False" time="62.423858" timestamp="2020-02-19T19:32:59.101517">
+   <testcase name="AddingToPosition" status="run" time="0.234266" timestamp="2020-02-19T19:33:00.210896"/>
+   <testcase name="CastAddingToPosition" status="run" time="1.343783" timestamp="2020-02-19T19:33:00.273295"/>
+   <testcase name="CastAddPosition" status="run" time="61.096588" timestamp="2020-02-19T19:33:00.335808"/>
+   <testcase name="CastClosingPosition" status="run" time="1.234417" timestamp="2020-02-19T19:33:00.398285"/>
+   <testcase name="CastPartiallyOffsettingPosition" status="run" time="1.500478" timestamp="2020-02-19T19:33:00.476412"/>
+   <testcase name="CastReversingPosition" status="run" time="1.343682" timestamp="2020-02-19T19:33:00.601577"/>
+   <testcase name="CastSettlementNew" status="run" time="60.518113" timestamp="2020-02-19T19:33:00.648290"/>
+   <testcase name="ClosingPosition" status="run" time="0.203272" timestamp="2020-02-19T19:33:00.695172"/>
+   <testcase name="PartiallyOffsettingPosition" status="run" time="0.171882" timestamp="2020-02-19T19:33:00.773296"/>
+   <testcase name="ReversingPosition" status="run" time="0.500022" timestamp="2020-02-19T19:33:01.023304"/>
+  </testsuite>
+  <testsuite failures="0" name="DeltaPL" skipped="0" tests="12" testsuite_failed="False" time="61.814496" timestamp="2020-02-19T19:34:01.572291">
+   <testcase name="ClosePositionCastOrder" status="run" time="3.000085" timestamp="2020-02-19T19:34:02.650413"/>
+   <testcase name="ClosePosition" status="run" time="0.468646" timestamp="2020-02-19T19:34:02.681764"/>
+   <testcase name="IncreaseInitPositionCastPosition" status="run" time="60.423952" timestamp="2020-02-19T19:34:02.728535"/>
+   <testcase name="IncreaseMaintPositionCastPosition" status="run" time="60.53314" timestamp="2020-02-19T19:34:02.791148"/>
+   <testcase name="IncreasePositionCastOrder" status="run" time="1.078165" timestamp="2020-02-19T19:34:02.837899"/>
+   <testcase name="IncreasePosition" status="run" time="0.203088" timestamp="2020-02-19T19:34:02.884820"/>
+   <testcase name="OffsetNewPositionCastOrder" status="run" time="3.187641" timestamp="2020-02-19T19:34:02.931709"/>
+   <testcase name="OffsetNewPosition" status="run" time="0.81259" timestamp="2020-02-19T19:34:02.978529"/>
+   <testcase name="OffsetOldPositionCastOrder" status="run" time="3.093868" timestamp="2020-02-19T19:34:03.197285"/>
+   <testcase name="OffsetOldPosition" status="run" time="0.796907" timestamp="2020-02-19T19:34:03.306662"/>
+   <testcase name="ReversePositionCastOrder" status="run" time="3.062699" timestamp="2020-02-19T19:34:03.900441"/>
+   <testcase name="ReversePosition" status="run" time="0.70315" timestamp="2020-02-19T19:34:03.994190"/>
+  </testsuite>
+  <testsuite failures="0" name="NewPosition" skipped="0" tests="9" testsuite_failed="False" time="62.251882" timestamp="2020-02-19T19:35:03.433758">
+   <testcase name="NewAvgPriceCastInitPosition" status="run" time="60.580061" timestamp="2020-02-19T19:35:04.511815"/>
+   <testcase name="NewAvgPriceCastOrder" status="run" time="1.375026" timestamp="2020-02-19T19:35:04.543073"/>
+   <testcase name="NewAvgPrice" status="run" time="0.203124" timestamp="2020-02-19T19:35:04.574318"/>
+   <testcase name="NewPositionCastInitPosition" status="run" time="60.957748" timestamp="2020-02-19T19:35:04.621186"/>
+   <testcase name="NewPositionCastMaintPosition" status="run" time="60.783149" timestamp="2020-02-19T19:35:04.683743"/>
+   <testcase name="NewPositionCastOrder" status="run" time="1.218814" timestamp="2020-02-19T19:35:04.761820"/>
+   <testcase name="NewPosition" status="run" time="0.670818" timestamp="2020-02-19T19:35:04.794141"/>
+   <testcase name="SettlementCastMaintPosition" status="run" time="60.563916" timestamp="2020-02-19T19:35:04.840474"/>
+   <testcase name="YestQtyCastMaintPosition" status="run" time="60.501935" timestamp="2020-02-19T19:35:05.011822"/>
+  </testsuite>
+  <testsuite failures="0" name="NewQuantity" skipped="0" tests="12" testsuite_failed="False" time="62.158184" timestamp="2020-02-19T19:36:05.716893">
+   <testcase name="ClosePositionCastOrder" status="run" time="1.623986" timestamp="2020-02-19T19:36:06.749222"/>
+   <testcase name="ClosePosition" status="run" time="0.281257" timestamp="2020-02-19T19:36:06.779431"/>
+   <testcase name="IncreasePositionCastInitPosition" status="run" time="60.548798" timestamp="2020-02-19T19:36:06.826292"/>
+   <testcase name="IncreasePositionCastMaintPosition" status="run" time="60.877323" timestamp="2020-02-19T19:36:06.873164"/>
+   <testcase name="IncreasePositionCastOrder" status="run" time="1.57765" timestamp="2020-02-19T19:36:06.967439"/>
+   <testcase name="IncreasePosition" status="run" time="0.312508" timestamp="2020-02-19T19:36:07.029417"/>
+   <testcase name="OffsetInitPositionCastOrder" status="run" time="1.453168" timestamp="2020-02-19T19:36:07.091921"/>
+   <testcase name="OffsetInitPosition" status="run" time="0.390637" timestamp="2020-02-19T19:36:07.170046"/>
+   <testcase name="OffsetMaintPositionCastOrder" status="run" time="1.281226" timestamp="2020-02-19T19:36:07.263863"/>
+   <testcase name="OffsetMaintPosition" status="run" time="0.908218" timestamp="2020-02-19T19:36:07.591934"/>
+   <testcase name="ReversePositionCastOrder" status="run" time="1.250145" timestamp="2020-02-19T19:36:07.795065"/>
+   <testcase name="ReversePosition" status="run" time="0.21877" timestamp="2020-02-19T19:36:08.451337"/>
+  </testsuite>
+  <testsuite failures="0" name="OptionsPremium" skipped="0" tests="17" testsuite_failed="False" time="63.830108" timestamp="2020-02-19T19:37:07.921946">
+   <testcase name="CallOption_FutStyleCastOrder" status="run" time="1.4531290000000001" timestamp="2020-02-19T19:37:08.984504"/>
+   <testcase name="CallOption_FutStyleCastPosition_Init" status="run" time="60.73627" timestamp="2020-02-19T19:37:09.078213"/>
+   <testcase name="CallOption_FutStyle" status="run" time="0.328159" timestamp="2020-02-19T19:37:09.125093"/>
+   <testcase name="CallOption_PremStyleCastOrder" status="run" time="1.312557" timestamp="2020-02-19T19:37:09.171967"/>
+   <testcase name="CallOption_PremStyleCastPosition_Init" status="run" time="60.53253" timestamp="2020-02-19T19:37:09.235072"/>
+   <testcase name="CallOption_PremStyleCastPosition_Maint" status="run" time="60.879189" timestamp="2020-02-19T19:37:09.296975"/>
+   <testcase name="CallOption_PremStyle" status="run" time="0.219012" timestamp="2020-02-19T19:37:09.343847"/>
+   <testcase name="FuturesCastOrder" status="run" time="1.125074" timestamp="2020-02-19T19:37:09.406352"/>
+   <testcase name="FuturesCastPosition" status="run" time="60.861499" timestamp="2020-02-19T19:37:09.578231"/>
+   <testcase name="Futures" status="run" time="0.142197" timestamp="2020-02-19T19:37:09.734484"/>
+   <testcase name="PutOption_FutStyleCastOrder" status="run" time="1.046917" timestamp="2020-02-19T19:37:10.000121"/>
+   <testcase name="PutOption_FutStyleCastPosition_Init" status="run" time="60.720654" timestamp="2020-02-19T19:37:10.562639"/>
+   <testcase name="PutOption_FutStyle" status="run" time="0.203093" timestamp="2020-02-19T19:37:10.687680"/>
+   <testcase name="PutOption_PremStyleCasPosition_Init" status="run" time="60.501891" timestamp="2020-02-19T19:37:10.828273"/>
+   <testcase name="PutOption_PremStyleCastOrder" status="run" time="1.156281" timestamp="2020-02-19T19:37:11.000160"/>
+   <testcase name="PutOption_PremStyleCastPosition_Maint" status="run" time="60.486266" timestamp="2020-02-19T19:37:11.172034"/>
+   <testcase name="PutOption_PremStyle" status="run" time="0.09374" timestamp="2020-02-19T19:37:12.265839"/>
+  </testsuite>
+  <testsuite failures="0" name="PremiumStyleOptionsPL" skipped="0" tests="18" testsuite_failed="False" time="62.297952" timestamp="2020-02-19T19:38:11.815432">
+   <testcase name="IncreaseLongPositionCastOrder" status="run" time="1.938082" timestamp="2020-02-19T19:38:12.830212"/>
+   <testcase name="IncreaseLongPositionCastPosition" status="run" time="60.501908" timestamp="2020-02-19T19:38:12.892719"/>
+   <testcase name="IncreaseLongPosition" status="run" time="0.285352" timestamp="2020-02-19T19:38:12.955268"/>
+   <testcase name="IncreaseShortPositionCastOrder" status="run" time="1.374323" timestamp="2020-02-19T19:38:13.034047"/>
+   <testcase name="IncreaseShortPositionCastPosition" status="run" time="60.892525" timestamp="2020-02-19T19:38:13.111470"/>
+   <testcase name="IncreaseShortPosition" status="run" time="0.453343" timestamp="2020-02-19T19:38:13.173960"/>
+   <testcase name="OffsetNewLongPositionCastOrder" status="run" time="3.046982" timestamp="2020-02-19T19:38:13.267711"/>
+   <testcase name="OffsetNewLongPosition" status="run" time="0.515638" timestamp="2020-02-19T19:38:13.345838"/>
+   <testcase name="OffsetNewShortPositionCastOrder" status="run" time="2.687586" timestamp="2020-02-19T19:38:13.455213"/>
+   <testcase name="OffsetNewShortPosition" status="run" time="1.047101" timestamp="2020-02-19T19:38:13.814603"/>
+   <testcase name="OffsetOldLongPositionCastOrder" status="run" time="2.593826" timestamp="2020-02-19T19:38:13.986487"/>
+   <testcase name="OffsetOldLongPosition" status="run" time="0.609397" timestamp="2020-02-19T19:38:14.564626"/>
+   <testcase name="OffsetOldShortPositionCastOrder" status="run" time="2.453189" timestamp="2020-02-19T19:38:14.877141"/>
+   <testcase name="OffsetOldShortPosition" status="run" time="0.609907" timestamp="2020-02-19T19:38:14.986517"/>
+   <testcase name="ReverseLongPositionCastOrder" status="run" time="2.390761" timestamp="2020-02-19T19:38:15.361528"/>
+   <testcase name="ReverseLongPosition" status="run" time="0.906276" timestamp="2020-02-19T19:38:15.767787"/>
+   <testcase name="ReverseShortPositionCastOrder" status="run" time="1.937561" timestamp="2020-02-19T19:38:16.267802"/>
+   <testcase name="ReverseShortPosition" status="run" time="0.390517" timestamp="2020-02-19T19:38:16.455468"/>
+  </testsuite>
+  <testsuite failures="0" name="Regression" skipped="0" tests="15" testsuite_failed="False" time="71.267834" timestamp="2020-02-19T19:39:14.175880">
+   <testcase name="AddFill" status="run" time="1.109387" timestamp="2020-02-19T19:39:16.191567"/>
+   <testcase name="BustFill" status="run" time="5.109509" timestamp="2020-02-19T19:39:16.238445"/>
+   <testcase name="CancelFill" status="run" time="5.109525" timestamp="2020-02-19T19:39:16.300931"/>
+   <testcase name="CastAddOrderAndFill" status="run" time="7.015679" timestamp="2020-02-19T19:39:16.347967"/>
+   <testcase name="CastBustFill" status="run" time="7.203372" timestamp="2020-02-19T19:39:16.441561"/>
+   <testcase name="CastCancelFill" status="run" time="7.047092" timestamp="2020-02-19T19:39:16.535313"/>
+   <testcase name="CastCorrectFill" status="run" time="8.062749" timestamp="2020-02-19T19:39:16.629065"/>
+   <testcase name="CastDeleteAllPositions" status="run" time="60.814392" timestamp="2020-02-19T19:39:16.707194"/>
+   <testcase name="CastDeletePositions" status="run" time="60.501898" timestamp="2020-02-19T19:39:17.504082"/>
+   <testcase name="OmnibusAddFill" status="run" time="2.4688280000000002" timestamp="2020-02-19T19:39:21.426086"/>
+   <testcase name="OmnibusBustFill" status="run" time="3.375105" timestamp="2020-02-19T19:39:21.769843"/>
+   <testcase name="OmnibusCancelFill" status="run" time="2.109431" timestamp="2020-02-19T19:39:23.519906"/>
+   <testcase name="OmnibusCastAddOrderAndFill" status="run" time="9.625296" timestamp="2020-02-19T19:39:23.738662"/>
+   <testcase name="OmnibusCastDeleteAllPositions" status="run" time="61.408186" timestamp="2020-02-19T19:39:23.910539"/>
+   <testcase name="OmnibusCastDeletePositions" status="run" time="61.190648" timestamp="2020-02-19T19:39:24.051167"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

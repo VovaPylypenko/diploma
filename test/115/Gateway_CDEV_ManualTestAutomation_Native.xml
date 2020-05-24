@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="9" testsuite_failed="False" time="25.422733" timestamp="2020-02-19T20:10:28.689636">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="ManualTestAutomation" skipped="0" tests="9" testsuite_failed="False" time="25.422733" timestamp="2020-02-19T20:10:28.689636">
+  <testsuite failures="0" name="Native" skipped="0" tests="9" testsuite_failed="False" time="13.734823" timestamp="2020-02-19T20:10:39.518108">
+   <testcase name="01_Liquidation" status="run" time="4.437641" timestamp="2020-02-19T20:10:40.549372"/>
+   <testcase name="02_TradeMarginLimit" status="run" time="4.014994" timestamp="2020-02-19T20:10:40.581395"/>
+   <testcase name="03_CommodityPositionLimit_OpenPositions" status="run" time="2.718789" timestamp="2020-02-19T20:10:40.627545"/>
+   <testcase name="04_InstrumentPositionLimit" status="run" time="1.5470030000000001" timestamp="2020-02-19T20:10:40.674381"/>
+   <testcase name="05_ContractPositionLimit" status="run" time="1.390665" timestamp="2020-02-19T20:10:40.721253"/>
+   <testcase name="06_ContractPositionLimit_OpenPositions" status="run" time="0.89061" timestamp="2020-02-19T20:10:40.768170"/>
+   <testcase name="07_PositionLimits_CalSpreadAndOCO" status="run" time="2.140708" timestamp="2020-02-19T20:10:40.799379"/>
+   <testcase name="08_AllowableMarginCredit" status="run" time="3.000096" timestamp="2020-02-19T20:10:40.846253"/>
+   <testcase name="09_CommoditySpecificMargin_AMCandMM" status="run" time="2.937588" timestamp="2020-02-19T20:10:40.893136"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

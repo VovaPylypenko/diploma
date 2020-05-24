@@ -1,0 +1,92 @@
+10:33:49.40  Test starded without threads
+08:33:49.971 Python Module Path 'ScriptKit/TroubleMaker' added.
+08:33:49.986 Python Module Path 'ScriptKit' added.
+08:33:49.986 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:33:49.986 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects/AccountSubscription/PythonModules' added.
+08:33:49.986 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:33:50.533 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects' filtered execution.
+08:33:50.580 Suite '.'. [0 test cases, 7 sub-suites]
+08:33:50.658 Suite 'AccountSubscription'. [3 test cases, 0 sub-suites]
+08:34:04.877 Case 'PlaceCancelOrderForDifferentAccounts' execution.
+08:34:04.908 Case 'PlaceOrderBeforeReceivedSubscibeAck' execution.
+08:34:04.939 Case 'TradersFromDifferentSMLocations' execution.
+08:34:05.086 Case 'TradersFromDifferentSMLocations' succeeded.
+08:34:12.205 Case 'PlaceOrderBeforeReceivedSubscibeAck' succeeded.
+08:34:15.598 Case 'PlaceCancelOrderForDifferentAccounts' succeeded.
+08:34:16.705 Suite 'DiscretionaryOrderPlacement'. [0 test cases, 3 sub-suites]
+08:34:21.096 Suite 'DiscretionaryOrderPlacement\Basic'. [3 test cases, 0 sub-suites]
+08:34:21.221 Case '01_ModifyCancel' execution.
+08:34:21.253 Case '02_ModifyFill' execution.
+08:34:21.284 Case '05_OrderUpdate' execution.
+08:34:21.409 Case '01_ModifyCancel' succeeded.
+08:34:21.425 Case '02_ModifyFill' succeeded.
+08:34:23.394 Case '05_OrderUpdate' succeeded.
+08:34:23.535 Suite 'DiscretionaryOrderPlacement\Complex'. [5 test cases, 0 sub-suites]
+08:34:23.597 Case '03_Trails' execution.
+08:34:23.644 Case '04_Iceberg' execution.
+08:34:23.674 Case '05_NativeSpread' execution.
+08:34:23.737 Case '06_OPO' execution.
+08:34:23.768 Case '07_Parked' execution.
+08:34:23.878 Case '04_Iceberg' succeeded.
+08:34:23.895 Case '05_NativeSpread' succeeded.
+08:34:24.018 Case '06_OPO' succeeded.
+08:34:24.034 Case '07_Parked' succeeded.
+08:34:27.925 Case '03_Trails' succeeded.
+08:34:28.081 Suite 'DiscretionaryOrderPlacement\Rejections'. [3 test cases, 0 sub-suites]
+08:34:28.159 Case '02_ExtraDiscrOffset_Place' execution.
+08:34:28.206 Case '02_ExtraDiscrOffset_Place' succeeded.
+08:34:28.221 Case '03_ExtraDiscrOffset_Modify' execution.
+08:34:28.270 Case '04_MissingDiscrOffset' execution.
+08:34:28.300 Case '04_MissingDiscrOffset' succeeded.
+08:34:28.320 Case '03_ExtraDiscrOffset_Modify' succeeded.
+08:34:32.066 Suite 'ErisDigital'. [0 test cases, 1 sub-suites]
+08:34:43.800 Suite 'ErisDigital\Basic'. [2 test cases, 0 sub-suites]
+08:34:43.878 Case '01_ModifyCancel' execution.
+08:34:43.909 Case '02_ModifyFill' execution.
+08:34:44.066 Case '01_ModifyCancel' succeeded.
+08:34:46.628 Case '02_ModifyFill' succeeded.
+08:34:49.660 Suite 'ExcludeFromRiskCalculation'. [3 test cases, 0 sub-suites]
+08:35:03.020 Case 'ExcludeExpiredFill' execution.
+08:35:03.051 Case 'ExcludeExpiredFillOmnibus' execution.
+08:35:03.113 Case 'ExcludeWorkingOrder' execution.
+08:35:03.160 Case 'ExcludeExpiredFill' succeeded.
+08:35:03.379 Case 'ExcludeWorkingOrder' succeeded.
+08:35:03.379 Case 'ExcludeExpiredFillOmnibus' succeeded.
+08:35:03.738 Suite 'ManualOrderIdentifier'. [7 test cases, 0 sub-suites]
+08:35:07.146 Case 'AL_UserEnd' execution.
+08:35:07.192 Case 'ATR_UserEnd' execution.
+08:35:07.238 Case 'AT_UserEnd' execution.
+08:35:07.270 Case 'Automatic' execution.
+08:35:07.365 Case 'CO_UserEnd' execution.
+08:35:07.410 Case 'EXL_UserEnd' execution.
+08:35:07.458 Case 'Manual_EXL_UserEnd' execution.
+08:35:07.535 Case 'AL_UserEnd' succeeded.
+08:35:07.660 Case 'AT_UserEnd' succeeded.
+08:35:07.692 Case 'ATR_UserEnd' succeeded.
+08:35:07.848 Case 'Automatic' succeeded.
+08:35:07.879 Case 'CO_UserEnd' succeeded.
+08:35:07.942 Case 'EXL_UserEnd' succeeded.
+08:35:08.084 Case 'Manual_EXL_UserEnd' succeeded.
+08:35:10.942 Suite 'MassOrderActions'. [2 test cases, 1 sub-suites]
+08:35:24.333 Case 'GlobalActivateReject' execution.
+08:35:24.364 Case 'GlobalCancel' execution.
+08:35:24.755 Case 'GlobalCancel' succeeded.
+08:35:24.786 Case 'GlobalActivateReject' succeeded.
+08:35:24.880 Suite 'MassOrderActions\CancelAll'. [6 test cases, 0 sub-suites]
+08:35:31.161 Case 'ActiveAtOrders' execution.
+08:35:31.208 Case 'ByComment' execution.
+08:35:31.255 Case 'ByOrderSide' execution.
+08:35:31.302 Case 'ByOrderState' execution.
+08:35:31.364 Case 'BySymbol' execution.
+08:35:31.411 Case 'ActiveAtOrders' succeeded.
+08:35:31.442 Case 'MultiTraderAccount' execution.
+08:35:32.161 Case 'ByComment' succeeded.
+08:35:32.255 Case 'ByOrderSide' succeeded.
+08:35:32.286 Case 'ByOrderState' succeeded.
+08:35:32.302 Case 'BySymbol' succeeded.
+08:35:32.536 Case 'MultiTraderAccount' succeeded.
+08:35:36.943 Suite 'OrderSpecifications'. [1 test cases, 0 sub-suites]
+08:35:48.912 Case 'OrderSpec' execution.
+08:35:58.381 Case 'OrderSpec' succeeded.
+08:36:05.881 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects' execution finished. It took 0:02:15.316964.
+08:36:05.881 Test cases results: 35 total, 35 succeeded, 0 failed, 0 skipped.

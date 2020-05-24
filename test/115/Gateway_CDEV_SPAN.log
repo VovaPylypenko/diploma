@@ -1,0 +1,81 @@
+18:58:06.86  Test starded without threads
+16:58:07.316 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+16:58:07.316 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SPAN/PythonModules' added.
+16:58:07.316 Python Module Path 'Scripts/Gateway/PythonModules' added.
+16:58:07.316 Python Module Path 'ScriptKit' added.
+16:58:07.707 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SPAN' full execution.
+16:58:07.738 Suite '.'. [0 test cases, 6 sub-suites]
+16:58:25.223 Suite 'CommoditySpecificMargins'. [3 test cases, 0 sub-suites]
+17:01:25.995 Case 'Disabled_on_Account' execution.
+17:01:26.152 Case 'Disabled_on_Account' succeeded.
+17:01:26.214 Case 'Disabled_on_FCM' execution.
+17:01:26.339 Case 'Disabled_on_FCM' succeeded.
+17:01:26.417 Case 'Enabled' execution.
+17:01:26.480 Case 'Enabled' succeeded.
+17:01:26.777 Suite 'Currencies'. [2 test cases, 0 sub-suites]
+17:01:26.839 Case 'Balance' execution.
+17:01:27.074 Case 'Balance' succeeded.
+17:01:27.120 Case 'Commodity' execution.
+17:01:27.355 Case 'Commodity' succeeded.
+17:01:27.636 Suite 'DeliveryMonthCharge'. [9 test cases, 0 sub-suites]
+17:04:28.284 Case 'Method_10_CC' execution.
+17:04:28.502 Case 'Method_10_CC' succeeded.
+17:04:28.564 Case 'Method_10_CD_PQ' execution.
+17:04:28.768 Case 'Method_10_CD_PQ' succeeded.
+17:04:28.830 Case 'Method_10_CD' execution.
+17:04:29.064 Case 'Method_10_CD' succeeded.
+17:04:29.127 Case 'Method_10_FC' execution.
+17:04:29.361 Case 'Method_10_FC' succeeded.
+17:04:29.424 Case 'Method_10_OP_CD' execution.
+17:04:29.643 Case 'Method_10_OP_CD' succeeded.
+17:04:29.674 Case 'Method_10_OP_R2' execution.
+17:04:29.861 Case 'Method_10_OP_R2' succeeded.
+17:04:29.924 Case 'Method_10_OP' execution.
+17:04:30.143 Case 'Method_10_OP' succeeded.
+17:04:30.205 Case 'Method_10_R2' execution.
+17:04:30.424 Case 'Method_10_R2' succeeded.
+17:04:30.564 Case 'Method_1' execution.
+17:04:30.784 Case 'Method_1' succeeded.
+17:04:31.752 Suite 'InterCommoditySpreadCredit'. [7 test cases, 0 sub-suites]
+17:07:32.430 Case 'InterExchange_Combined' execution.
+17:07:32.618 Case 'InterExchange_Combined' succeeded.
+17:07:32.711 Case 'InterExchange_Fungible' execution.
+17:07:32.915 Case 'InterExchange_Fungible' succeeded.
+17:07:32.993 Case 'InterExchange' execution.
+17:07:33.180 Case 'InterExchange' succeeded.
+17:07:33.258 Case 'IntraExchange_Combined' execution.
+17:07:33.430 Case 'IntraExchange_Combined' succeeded.
+17:07:33.508 Case 'IntraExchange_Fungible' execution.
+17:07:33.665 Case 'IntraExchange_Fungible' succeeded.
+17:07:33.743 Case 'IntraExchange' execution.
+17:07:33.977 Case 'IntraExchange' succeeded.
+17:07:34.024 Case 'Priority' execution.
+17:07:34.274 Case 'Priority' succeeded.
+17:07:34.852 Suite 'InterMonthSpreadCharge'. [8 test cases, 0 sub-suites]
+17:10:35.530 Case 'Method_10_CC' execution.
+17:10:35.812 Case 'Method_10_CC' succeeded.
+17:10:35.890 Case 'Method_10_CD_PQ' execution.
+17:10:36.077 Case 'Method_10_CD_PQ' succeeded.
+17:10:36.141 Case 'Method_10_CD' execution.
+17:10:36.327 Case 'Method_10_CD' succeeded.
+17:10:36.405 Case 'Method_10_FC' execution.
+17:10:36.593 Case 'Method_10_FC' succeeded.
+17:10:36.655 Case 'Method_10_OP_CC' execution.
+17:10:36.827 Case 'Method_10_OP_CC' succeeded.
+17:10:36.891 Case 'Method_10_OP_CD_Liq' execution.
+17:10:36.921 Case 'Method_10_OP_CD_Liq' succeeded.
+17:10:36.984 Case 'Method_10_OP_CD' execution.
+17:10:37.094 Case 'Method_10_OP_CD' succeeded.
+17:10:37.187 Case 'Method_1' execution.
+17:10:37.359 Case 'Method_1' succeeded.
+17:10:37.921 Suite 'ShortOptionMinimumCharge'. [4 test cases, 0 sub-suites]
+17:13:38.662 Case 'Method_1_OP' execution.
+17:13:38.913 Case 'Method_1_OP' succeeded.
+17:13:38.990 Case 'Method_1' execution.
+17:13:39.240 Case 'Method_1' succeeded.
+17:13:39.302 Case 'Method_2_OP' execution.
+17:13:39.474 Case 'Method_2_OP' succeeded.
+17:13:39.568 Case 'Method_2' execution.
+17:13:39.849 Case 'Method_2' succeeded.
+17:13:41.652 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SPAN' execution finished. It took 0:15:33.892108.
+17:13:41.652 Test cases results: 33 total, 33 succeeded, 0 failed, 0 skipped.

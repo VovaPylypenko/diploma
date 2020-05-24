@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="37" skipped="0" tests="37" testsuite_failed="True" time="18.328697" timestamp="2020-02-18T23:43:12.357558">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS/DefaultTPLforContractsWithDataFeed/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="37" name="RealTimePricesInRS" skipped="0" tests="37" testsuite_failed="True" time="18.328697" timestamp="2020-02-18T23:43:12.357558">
+  <testsuite failures="6" name="AggressiveTPLforContractsWithNoDataFeed" skipped="0" tests="6" testsuite_failed="True" time="0.4843" timestamp="2020-02-18T23:43:26.420593">
+   <testcase name="NoBidAskPriceCommodityLevelLimit" status="run" time="0.0" timestamp="2020-02-18T23:43:26.498605">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\NoBidAskPriceCommodityLevelLimit_tc.py&quot;, line 27, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;C.SF.SFEP.Z50.99&quot;, OrderSide.Buy, 1, OrderType.Limit)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\NoBidAskPriceCommodityLevelLimit_tc.py&quot;, line 27, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;C.SF.SFEP.Z50.99&quot;, OrderSide.Buy, 1, OrderType.Limit)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="NoBidAskPriceExchangeLevelLimit" status="run" time="0.01564" timestamp="2020-02-18T23:43:26.561108">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\NoBidAskPriceExchangeLevelLimit_tc.py&quot;, line 27, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;C.SF.SFEP.Z50.99&quot;, OrderSide.Buy, 1, OrderType.Limit)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\NoBidAskPriceExchangeLevelLimit_tc.py&quot;, line 27, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;C.SF.SFEP.Z50.99&quot;, OrderSide.Buy, 1, OrderType.Limit)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="NoBidAskTradePriceContractLevelLimit" status="run" time="0.01475" timestamp="2020-02-18T23:43:26.624498">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\NoBidAskTradePriceContractLevelLimit_tc.py&quot;, line 27, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;P.SF.SFEP.Z50.99&quot;, OrderSide.Buy, 1, OrderType.Limit)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\NoBidAskTradePriceContractLevelLimit_tc.py&quot;, line 27, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;P.SF.SFEP.Z50.99&quot;, OrderSide.Buy, 1, OrderType.Limit)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TraderSpecifiedPriceInSTL" status="run" time="0.0" timestamp="2020-02-18T23:43:26.686483">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\TraderSpecifiedPriceInSTL_tc.py&quot;, line 28, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;F.SF.SFEP.Z50&quot;, OrderSide.Buy, 1, OrderType.StopLimit)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\TraderSpecifiedPriceInSTL_tc.py&quot;, line 28, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;F.SF.SFEP.Z50&quot;, OrderSide.Buy, 1, OrderType.StopLimit)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TraderSpecifiedPriceLMT" status="run" time="0.0" timestamp="2020-02-18T23:43:26.764370">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\TraderSpecifiedPriceLMT_tc.py&quot;, line 28, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;F.SF.SFEP.Z50&quot;, OrderSide.Buy, 1, OrderType.Limit)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\TraderSpecifiedPriceLMT_tc.py&quot;, line 28, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;F.SF.SFEP.Z50&quot;, OrderSide.Buy, 1, OrderType.Limit)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TraderSpecifiedPriceSTP" status="run" time="0.0" timestamp="2020-02-18T23:43:26.828362">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\TraderSpecifiedPriceSTP_tc.py&quot;, line 28, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;F.SF.SFEP.Z50&quot;, OrderSide.Buy, 1, OrderType.Stop)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\AggressiveTPLforContractsWithNoDataFeed\TraderSpecifiedPriceSTP_tc.py&quot;, line 28, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(&quot;F.SF.SFEP.Z50&quot;, OrderSide.Buy, 1, OrderType.Stop)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="29" name="DefaultTPLforContractsWithDataFeed" skipped="0" tests="29" testsuite_failed="True" time="3.030009" timestamp="2020-02-18T23:43:26.937717">
+   <testcase name="AccountLevelLimit" status="run" time="0.046865" timestamp="2020-02-18T23:43:27.061134">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\AccountLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct3, acct4, acct25, acct26, &quot;F.SF.SFEP.H99&quot;, 500, 502, 0.25, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\AccountLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct3, acct4, acct25, acct26, &quot;F.SF.SFEP.H99&quot;, 500, 502, 0.25, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CallOptionsContractLevelLimit" status="run" time="0.01494" timestamp="2020-02-18T23:43:27.171220">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\CallOptionsContractLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct9, acct10, acct31, acct32, &quot;C.SF.SFEP.M97.99&quot;, 500, 501, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\CallOptionsContractLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct9, acct10, acct31, acct32, &quot;C.SF.SFEP.M97.99&quot;, 500, 501, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CommodityLevelLimit" status="run" time="0.015428" timestamp="2020-02-18T23:43:27.233218">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\CommodityLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct7, acct8, acct29, acct30, &quot;F.SF.SFEP.H98&quot;, 495, 505, 0.25, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\CommodityLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct7, acct8, acct29, acct30, &quot;F.SF.SFEP.H98&quot;, 495, 505, 0.25, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="DelayedPricesUsageDisallowedForFCM" status="run" time="0.012515" timestamp="2020-02-18T23:43:27.314249">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\DelayedPricesUsageDisallowedForFCM_tc.py&quot;, line 46, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 2, OrderType.Limit, limitPrice = 949.75)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\DelayedPricesUsageDisallowedForFCM_tc.py&quot;, line 46, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 2, OrderType.Limit, limitPrice = 949.75)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ExchangeLevelLimit" status="run" time="0.0" timestamp="2020-02-18T23:43:27.376964">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\ExchangeLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct5, acct6, acct27, acct28, &quot;F.SF.SFEP.M98&quot;, 498, 500, 0.25, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\ExchangeLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct5, acct6, acct27, acct28, &quot;F.SF.SFEP.M98&quot;, 498, 500, 0.25, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="FuturesContractLevelLimit" status="run" time="0.0" timestamp="2020-02-18T23:43:27.451773">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\FuturesContractLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct9, acct10, acct31, acct32, &quot;F.SF.SFEP.M97&quot;, 400, 405, 0.25, 150)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\FuturesContractLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct9, acct10, acct31, acct32, &quot;F.SF.SFEP.M97&quot;, 400, 405, 0.25, 150)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="NewContractWithNoPricesAvailable" status="run" time="0.01563" timestamp="2020-02-18T23:43:27.561144">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\NewContractWithNoPricesAvailable_tc.py&quot;, line 28, in &lt;module&gt;
+    PrepareSubscriptionWithTPL(datafeed, trader1, acct37, contract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\NewContractWithNoPricesAvailable_tc.py&quot;, line 28, in &lt;module&gt;
+    PrepareSubscriptionWithTPL(datafeed, trader1, acct37, contract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ParkedOrderActivation" status="run" time="0.015622" timestamp="2020-02-18T23:43:27.654932">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\ParkedOrderActivation_tc.py&quot;, line 34, in &lt;module&gt;
+    PrepareSubscriptionWithTPL(datafeed, trader1, acct19, contract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\ParkedOrderActivation_tc.py&quot;, line 34, in &lt;module&gt;
+    PrepareSubscriptionWithTPL(datafeed, trader1, acct19, contract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="PutOptionsContractLevelLimit" status="run" time="0.0" timestamp="2020-02-18T23:43:27.795537">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PutOptionsContractLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct9, acct10, acct31, acct32, &quot;P.SF.SFEP.M97.99&quot;, 550, 560, 0.05, 50)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PutOptionsContractLevelLimit_tc.py&quot;, line 43, in &lt;module&gt;
+    DefaultTPLActions.TPL_check(datafeed, exchangeFactory, trader1, acct9, acct10, acct31, acct32, &quot;P.SF.SFEP.M97.99&quot;, 550, 560, 0.05, 50)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="RealTimePricesReSubscription" status="run" time="0.0" timestamp="2020-02-18T23:43:27.873689">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\RealTimePricesReSubscription_tc.py&quot;, line 35, in &lt;module&gt;
+    PrepareSubscriptionWithTPL(datafeed, trader1, acct20, contract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\RealTimePricesReSubscription_tc.py&quot;, line 35, in &lt;module&gt;
+    PrepareSubscriptionWithTPL(datafeed, trader1, acct20, contract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLcheckOnCoMarginGroupAccount" status="run" time="0.015633" timestamp="2020-02-18T23:43:27.967407">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLcheckOnCoMarginGroupAccount_tc.py&quot;, line 37, in &lt;module&gt;
+    &quot;F.SF.SFEP.H97&quot;, 550, 560, 0.25, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLcheckOnCoMarginGroupAccount_tc.py&quot;, line 37, in &lt;module&gt;
+    &quot;F.SF.SFEP.H97&quot;, 550, 560, 0.25, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLcheckOnJoinPPGroupAccount" status="run" time="0.0" timestamp="2020-02-18T23:43:28.108362">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLcheckOnJoinPPGroupAccount_tc.py&quot;, line 37, in &lt;module&gt;
+    &quot;F.SF.SFEP.M96&quot;, 460, 465, 0.25, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLcheckOnJoinPPGroupAccount_tc.py&quot;, line 37, in &lt;module&gt;
+    &quot;F.SF.SFEP.M96&quot;, 460, 465, 0.25, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLcheckOnOmnibusLevel" status="run" time="0.030583" timestamp="2020-02-18T23:43:28.218098">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLcheckOnOmnibusLevel_tc.py&quot;, line 85, in &lt;module&gt;
+    PrepareSubscriptionWithTPL(datafeed, trader1, acct15, contract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLcheckOnOmnibusLevel_tc.py&quot;, line 85, in &lt;module&gt;
+    PrepareSubscriptionWithTPL(datafeed, trader1, acct15, contract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforAskSettlement" status="run" time="0.031225" timestamp="2020-02-18T23:43:28.358082">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforAskSettlement_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.116&quot;, 505, None, 500, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidTPLActions.py&quot;, line 402, in TPL_check_noBid
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforAskSettlement_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.116&quot;, 505, None, 500, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidTPLActions.py&quot;, line 402, in TPL_check_noBid
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforAskTrade" status="run" time="0.0" timestamp="2020-02-18T23:43:28.483045">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforAskTrade_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.115&quot;, 505, 500, 200, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidTPLActions.py&quot;, line 402, in TPL_check_noBid
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforAskTrade_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.115&quot;, 505, 500, 200, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidTPLActions.py&quot;, line 402, in TPL_check_noBid
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforBidAskSettlement" status="run" time="0.0" timestamp="2020-02-18T23:43:28.565282">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidAskSettlement_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.112&quot;, 500, 502, 0.05, 100, i_settl = 504)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidAskSettlement_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.112&quot;, 500, 502, 0.05, 100, i_settl = 504)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforBidAskTrade" status="run" time="0.0" timestamp="2020-02-18T23:43:28.654938">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidAskTrade_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.111&quot;, 500, 502, 0.05, 100, i_trade = 504, i_settl = 200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidAskTrade_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.111&quot;, 500, 502, 0.05, 100, i_trade = 504, i_settl = 200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforBidSettlementAsk" status="run" time="0.014866" timestamp="2020-02-18T23:43:28.749545">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidSettlementAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.113&quot;, 500, 504, 0.05, 100, i_settl = 502)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidSettlementAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.113&quot;, 500, 504, 0.05, 100, i_settl = 502)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforBidSettlement" status="run" time="0.028778" timestamp="2020-02-18T23:43:28.845143">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidSettlement_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.118&quot;, 505, None, 500, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoAskTPLActions.py&quot;, line 395, in TPL_check_noAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidSettlement_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.118&quot;, 505, None, 500, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoAskTPLActions.py&quot;, line 395, in TPL_check_noAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforBidTradeAsk" status="run" time="0.0" timestamp="2020-02-18T23:43:28.951810">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidTradeAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.111&quot;, 500, 504, 0.05, 100, i_trade = 502, i_settl = 800)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidTradeAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.111&quot;, 500, 504, 0.05, 100, i_trade = 502, i_settl = 800)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforBidTrade" status="run" time="0.0" timestamp="2020-02-18T23:43:29.061184">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidTrade_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.117&quot;, 505, 500, 800, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoAskTPLActions.py&quot;, line 395, in TPL_check_noAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforBidTrade_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.117&quot;, 505, 500, 800, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoAskTPLActions.py&quot;, line 395, in TPL_check_noAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforSettlementAsk" status="run" time="0.0" timestamp="2020-02-18T23:43:29.170586">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforSettlementAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.116&quot;, 500, None, 505, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidTPLActions.py&quot;, line 402, in TPL_check_noBid
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforSettlementAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.116&quot;, 500, None, 505, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidTPLActions.py&quot;, line 402, in TPL_check_noBid
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforSettlementBidAsk" status="run" time="0.01319" timestamp="2020-02-18T23:43:29.251139">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforSettlementBidAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.113&quot;, 502, 504, 0.05, 100, i_settl = 500)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforSettlementBidAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.113&quot;, 502, 504, 0.05, 100, i_settl = 500)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforSettlementBid" status="run" time="0.0" timestamp="2020-02-18T23:43:29.342473">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforSettlementBid_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.118&quot;, 500, None, 505, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoAskTPLActions.py&quot;, line 395, in TPL_check_noAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforSettlementBid_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.118&quot;, 500, None, 505, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoAskTPLActions.py&quot;, line 395, in TPL_check_noAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforSettlement" status="run" time="0.031256" timestamp="2020-02-18T23:43:29.436197">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforSettlement_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.114&quot;, None, 505, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidAskTPLActions.py&quot;, line 336, in TPL_check_noBidAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforSettlement_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.114&quot;, None, 505, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidAskTPLActions.py&quot;, line 336, in TPL_check_noBidAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforTradeAsk" status="run" time="0.015525" timestamp="2020-02-18T23:43:29.561335">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforTradeAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.115&quot;, 500, 505, 200, 0.05, 100,)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidTPLActions.py&quot;, line 402, in TPL_check_noBid
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforTradeAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.115&quot;, 500, 505, 200, 0.05, 100,)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidTPLActions.py&quot;, line 402, in TPL_check_noBid
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforTradeBidAsk" status="run" time="0.010032" timestamp="2020-02-18T23:43:29.676188">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforTradeBidAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.112&quot;, 502, 504, 0.05, 100, i_trade = 500, i_settl = 200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforTradeBidAsk_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.112&quot;, 502, 504, 0.05, 100, i_trade = 500, i_settl = 200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\DefaultTPLActions.py&quot;, line 521, in TPL_check
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforTradeBid" status="run" time="0.0" timestamp="2020-02-18T23:43:29.768558">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforTradeBid_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.117&quot;, 500, 505, 200, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoAskTPLActions.py&quot;, line 395, in TPL_check_noAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforTradeBid_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;C.SF.SFEP.M99.117&quot;, 500, 505, 200, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoAskTPLActions.py&quot;, line 395, in TPL_check_noAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLforTrade" status="run" time="0.0" timestamp="2020-02-18T23:43:29.858091">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforTrade_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.114&quot;, 505, 800, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidAskTPLActions.py&quot;, line 336, in TPL_check_noBidAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\TPLforTrade_tc.py&quot;, line 33, in &lt;module&gt;
+    &quot;P.SF.SFEP.M99.114&quot;, 505, 800, 0.05, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\DefaultTPLforContractsWithDataFeed\PythonModules\NoBidAskTPLActions.py&quot;, line 336, in TPL_check_noBidAsk
+    PrepareSubscriptionWithTPL(datafeed, trader, acct_na, sym)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="2" name="WithNoTPLcheck" skipped="0" tests="2" testsuite_failed="True" time="0.406264" timestamp="2020-02-18T23:43:30.014347">
+   <testcase name="NoTtraderSpecifiedPrice_MKT_order" status="run" time="0.015603" timestamp="2020-02-18T23:43:30.186248">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\WithNoTPLcheck\NoTtraderSpecifiedPrice_MKT_order_tc.py&quot;, line 38, in &lt;module&gt;
+    PrepareSubscriptionWithTPL(datafeed, trader1, acct1, futureContract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\WithNoTPLcheck\NoTtraderSpecifiedPrice_MKT_order_tc.py&quot;, line 38, in &lt;module&gt;
+    PrepareSubscriptionWithTPL(datafeed, trader1, acct1, futureContract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 33, in PrepareSubscriptionWithTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TPLnotEnforcedOnAccount" status="run" time="0.015674" timestamp="2020-02-18T23:43:30.279993">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\WithNoTPLcheck\TPLnotEnforcedOnAccount_tc.py&quot;, line 26, in &lt;module&gt;
+    PrepareSubscriptionNoTPL(exchangeFactory, datafeed, trader1, acct2, contract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 39, in PrepareSubscriptionNoTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RealTimePricesInRS\WithNoTPLcheck\TPLnotEnforcedOnAccount_tc.py&quot;, line 26, in &lt;module&gt;
+    PrepareSubscriptionNoTPL(exchangeFactory, datafeed, trader1, acct2, contract)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\RealTimePricesInRS\PythonModules\SuiteHelper.py&quot;, line 39, in PrepareSubscriptionNoTPL
+    order = CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+ </testsuite>
+</testsuites>

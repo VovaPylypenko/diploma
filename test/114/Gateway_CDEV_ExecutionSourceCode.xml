@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="8" tests="8" testsuite_failed="True" time="20.594357" timestamp="2020-02-19T00:31:46.970389">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ExecutionSourceCode/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_FixInterface"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ExecutionSourceCode"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="ExecutionSourceCode" skipped="8" tests="8" testsuite_failed="True" time="20.594357" timestamp="2020-02-19T00:31:46.970389">
+  <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 33, in invoke_script
+    exec(code, globals())
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ExecutionSourceCode\test_suite_td.py&quot;, line 14, in &lt;module&gt;
+    mockDataFeed.Disconnect()
+NameError: name 'mockDataFeed' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 33, in invoke_script
+    exec(code, globals())
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ExecutionSourceCode\test_suite_td.py&quot;, line 14, in &lt;module&gt;
+    mockDataFeed.Disconnect()
+NameError: name 'mockDataFeed' is not defined
+</failure>
+  <testcase name="CAST_change_ESC" status="notrun"/>
+  <testcase name="CodeMissingModifications" status="notrun"/>
+  <testcase name="CodeMissing" status="notrun"/>
+  <testcase name="DTDversions" status="notrun"/>
+  <testcase name="OCO_Compound" status="notrun"/>
+  <testcase name="OPO_Compound" status="notrun"/>
+  <testcase name="SimpleOrder" status="notrun"/>
+  <testcase name="SyntheticOrder" status="notrun"/>
+ </testsuite>
+</testsuites>

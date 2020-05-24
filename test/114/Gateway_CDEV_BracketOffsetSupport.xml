@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="24" skipped="29" tests="53" testsuite_failed="True" time="24.313271" timestamp="2020-02-18T23:46:39.410893">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="12"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="24" name="BracketOffsetSupport" skipped="29" tests="53" testsuite_failed="True" time="24.313271" timestamp="2020-02-18T23:46:39.410893">
+  <testsuite failures="0" name="BracketLegCancellation" skipped="4" tests="4" testsuite_failed="False" time="0.062486" timestamp="2020-02-18T23:46:56.442683">
+   <testcase name="2Leg_Master" status="notrun"/>
+   <testcase name="2Leg_Secondary" status="notrun"/>
+   <testcase name="3Leg_Master" status="notrun"/>
+   <testcase name="3Leg_Secondary" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="BracketStructureModification" skipped="3" tests="3" testsuite_failed="False" time="0.078668" timestamp="2020-02-18T23:46:56.536421">
+   <testcase name="OCO_To_2Leg" status="notrun"/>
+   <testcase name="Order_To_2Leg" status="notrun"/>
+   <testcase name="Order_To_3Leg" status="notrun"/>
+  </testsuite>
+  <testsuite failures="3" name="CashReserve" skipped="0" tests="3" testsuite_failed="True" time="0.343782" timestamp="2020-02-18T23:46:56.645811">
+   <testcase name="2Leg_Loss" status="run" time="0.0" timestamp="2020-02-18T23:46:56.723941">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\CashReserve\2Leg_Loss_tc.py&quot;, line 11, in &lt;module&gt;
+    master = Utils.CreateOrder(contract, OrderSide.Sell, 5, OrderType.Limit, limitPrice=19)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\CashReserve\2Leg_Loss_tc.py&quot;, line 11, in &lt;module&gt;
+    master = Utils.CreateOrder(contract, OrderSide.Sell, 5, OrderType.Limit, limitPrice=19)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="2Leg_Profit" status="run" time="0.031242" timestamp="2020-02-18T23:46:56.786453">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\CashReserve\2Leg_Profit_tc.py&quot;, line 11, in &lt;module&gt;
+    master = Utils.CreateOrder(contract, OrderSide.Sell, 5, OrderType.Limit, limitPrice=21)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\CashReserve\2Leg_Profit_tc.py&quot;, line 11, in &lt;module&gt;
+    master = Utils.CreateOrder(contract, OrderSide.Sell, 5, OrderType.Limit, limitPrice=21)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="3Leg" status="run" time="0.078107" timestamp="2020-02-18T23:46:56.833329">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\CashReserve\3Leg_tc.py&quot;, line 15, in &lt;module&gt;
+    master = Utils.CreateOrder(contract, OrderSide.Sell, 5, OrderType.Limit, limitPrice=20)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\CashReserve\3Leg_tc.py&quot;, line 15, in &lt;module&gt;
+    master = Utils.CreateOrder(contract, OrderSide.Sell, 5, OrderType.Limit, limitPrice=20)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="0" name="CheckAlgorithms" skipped="7" tests="7" testsuite_failed="False" time="0.078127" timestamp="2020-02-18T23:46:57.020826">
+   <testcase name="2LB_OrderOffset" status="notrun"/>
+   <testcase name="2LB_OrderSide" status="notrun"/>
+   <testcase name="2LB_OrderType" status="notrun"/>
+   <testcase name="3LB_OrderOffset" status="notrun"/>
+   <testcase name="3LB_OrderSide" status="notrun"/>
+   <testcase name="3LB_OrderType" status="notrun"/>
+   <testcase name="BracketStructure" status="notrun"/>
+  </testsuite>
+  <testsuite failures="11" name="MarketMasterOrder" skipped="0" tests="11" testsuite_failed="True" time="1.046679" timestamp="2020-02-18T23:46:57.146056">
+   <testcase name="LmtOrder_BidAsk" status="run" time="0.031266" timestamp="2020-02-18T23:46:57.239567">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\LmtOrder_BidAsk_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr3)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\LmtOrder_BidAsk_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr3)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="LmtOrder_NoPrice" status="run" time="0.015604" timestamp="2020-02-18T23:46:57.286484">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\LmtOrder_NoPrice_tc.py&quot;, line 10, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr5)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\LmtOrder_NoPrice_tc.py&quot;, line 10, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr5)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="LmtOrder_Settle" status="run" time="0.031482" timestamp="2020-02-18T23:46:57.317698">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\LmtOrder_Settle_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr4)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\LmtOrder_Settle_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr4)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="LmtOrder_Trade" status="run" time="0.015638" timestamp="2020-02-18T23:46:57.364572">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\LmtOrder_Trade_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr2)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\LmtOrder_Trade_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr2)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="StlOrder_BidAsk" status="run" time="0.031236" timestamp="2020-02-18T23:46:57.395841">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StlOrder_BidAsk_tc.py&quot;, line 16, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr3)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StlOrder_BidAsk_tc.py&quot;, line 16, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr3)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="StlOrder_Settle" status="run" time="0.032012" timestamp="2020-02-18T23:46:57.427077">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StlOrder_Settle_tc.py&quot;, line 16, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr4)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StlOrder_Settle_tc.py&quot;, line 16, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr4)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="StlOrder_Trade" status="run" time="0.01488" timestamp="2020-02-18T23:46:57.459089">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StlOrder_Trade_tc.py&quot;, line 16, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr2)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StlOrder_Trade_tc.py&quot;, line 16, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr2)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="StpOrder_BidAsk" status="run" time="0.015629" timestamp="2020-02-18T23:46:57.536454">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StpOrder_BidAsk_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr3)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StpOrder_BidAsk_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr3)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="StpOrder_NoPrice" status="run" time="0.015608" timestamp="2020-02-18T23:46:57.598973">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StpOrder_NoPrice_tc.py&quot;, line 10, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr5)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StpOrder_NoPrice_tc.py&quot;, line 10, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr5)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="StpOrder_Settle" status="run" time="0.031363" timestamp="2020-02-18T23:46:57.630313">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StpOrder_Settle_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr4)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StpOrder_Settle_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr4)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="StpOrder_Trade" status="run" time="0.015611" timestamp="2020-02-18T23:46:57.708359">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StpOrder_Trade_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr2)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\StpOrder_Trade_tc.py&quot;, line 12, in &lt;module&gt;
+    masterOrderBuy = masterBuy(cntr2)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\MarketMasterOrder\test_suite_su.py&quot;, line 13, in &lt;lambda&gt;
+    masterBuy = lambda cntr: Utils.CreateOrder(cntr, OrderSide.Buy, 5, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="0" name="MasterMultipleFills" skipped="4" tests="4" testsuite_failed="False" time="0.109347" timestamp="2020-02-18T23:46:58.239635">
+   <testcase name="2Leg_PartFillDisabled" status="notrun"/>
+   <testcase name="2Leg_PartFillEnabled" status="notrun"/>
+   <testcase name="3Leg_PartFillDisabled" status="notrun"/>
+   <testcase name="3Leg_PartFillEnabled" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="ModifyBracketLeg" skipped="3" tests="3" testsuite_failed="False" time="0.077453" timestamp="2020-02-18T23:46:58.380950">
+   <testcase name="2Leg" status="notrun"/>
+   <testcase name="3Leg" status="notrun"/>
+   <testcase name="MasterModificationReject" status="notrun"/>
+  </testsuite>
+  <testsuite failures="10" name="PriceLimitCheck" skipped="0" tests="10" testsuite_failed="True" time="1.078181" timestamp="2020-02-18T23:46:58.505232">
+   <testcase name="2Leg_StopLimitOffset" status="run" time="0.031243" timestamp="2020-02-18T23:46:58.630247">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\2Leg_StopLimitOffset_tc.py&quot;, line 33, in &lt;module&gt;
+    master = Utils.CreateOrder(cntr6, OrderSide.Buy, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\2Leg_StopLimitOffset_tc.py&quot;, line 33, in &lt;module&gt;
+    master = Utils.CreateOrder(cntr6, OrderSide.Buy, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="3Leg_StopLimitOffset" status="run" time="0.015631" timestamp="2020-02-18T23:46:58.677122">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\3Leg_StopLimitOffset_tc.py&quot;, line 41, in &lt;module&gt;
+    master = Utils.CreateOrder(cntr6, OrderSide.Buy, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\3Leg_StopLimitOffset_tc.py&quot;, line 41, in &lt;module&gt;
+    master = Utils.CreateOrder(cntr6, OrderSide.Buy, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TS1_2Leg_Lmt" status="run" time="0.031262" timestamp="2020-02-18T23:46:58.708365">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_2Leg_Lmt_tc.py&quot;, line 48, in &lt;module&gt;
+    Test(45, OrderSide.Buy, secondary1, secondary2, 16, None, 46)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_2Leg_Lmt_tc.py&quot;, line 22, in Test
+    master = Utils.CreateOrder(cntr6, masterSide, 3, OrderType.Limit, limitPrice=masterPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_2Leg_Lmt_tc.py&quot;, line 48, in &lt;module&gt;
+    Test(45, OrderSide.Buy, secondary1, secondary2, 16, None, 46)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_2Leg_Lmt_tc.py&quot;, line 22, in Test
+    master = Utils.CreateOrder(cntr6, masterSide, 3, OrderType.Limit, limitPrice=masterPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TS1_2Leg_Mkt" status="run" time="0.029151" timestamp="2020-02-18T23:46:58.757344">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_2Leg_Mkt_tc.py&quot;, line 37, in &lt;module&gt;
+    Test(secondary1, secondary2, 11, None)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_2Leg_Mkt_tc.py&quot;, line 17, in Test
+    master = Utils.CreateOrder(cntr6, side, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_2Leg_Mkt_tc.py&quot;, line 37, in &lt;module&gt;
+    Test(secondary1, secondary2, 11, None)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_2Leg_Mkt_tc.py&quot;, line 17, in Test
+    master = Utils.CreateOrder(cntr6, side, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TS1_3Leg_Lmt" status="run" time="0.031245" timestamp="2020-02-18T23:46:58.802139">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_3Leg_Lmt_tc.py&quot;, line 51, in &lt;module&gt;
+    Test(SecondaryParams(OrderType.Limit, leg2limit=50, leg3type=OrderType.Stop, leg3stop=50))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_3Leg_Lmt_tc.py&quot;, line 28, in Test
+    master = Utils.CreateOrder(cntr6, side, 3, OrderType.Limit, limitPrice=masterPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_3Leg_Lmt_tc.py&quot;, line 51, in &lt;module&gt;
+    Test(SecondaryParams(OrderType.Limit, leg2limit=50, leg3type=OrderType.Stop, leg3stop=50))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_3Leg_Lmt_tc.py&quot;, line 28, in Test
+    master = Utils.CreateOrder(cntr6, side, 3, OrderType.Limit, limitPrice=masterPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TS1_3Leg_Mkt" status="run" time="0.03127" timestamp="2020-02-18T23:46:58.848997">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_3Leg_Mkt_tc.py&quot;, line 39, in &lt;module&gt;
+    Test(SecondaryParams(OrderType.Limit, leg2limit=50, leg3type=OrderType.Stop, leg3stop=50))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_3Leg_Mkt_tc.py&quot;, line 24, in Test
+    master = Utils.CreateOrder(cntr6, side, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_3Leg_Mkt_tc.py&quot;, line 39, in &lt;module&gt;
+    Test(SecondaryParams(OrderType.Limit, leg2limit=50, leg3type=OrderType.Stop, leg3stop=50))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS1_3Leg_Mkt_tc.py&quot;, line 24, in Test
+    master = Utils.CreateOrder(cntr6, side, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TS2_2Leg_Lmt" status="run" time="0.015613" timestamp="2020-02-18T23:46:58.911511">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_2Leg_Lmt_tc.py&quot;, line 48, in &lt;module&gt;
+    Test(96, OrderSide.Buy, secondary1, secondary2, 13, None, 98)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_2Leg_Lmt_tc.py&quot;, line 22, in Test
+    master = Utils.CreateOrder(cntr7, masterSide, 3, OrderType.Limit, limitPrice=masterPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_2Leg_Lmt_tc.py&quot;, line 48, in &lt;module&gt;
+    Test(96, OrderSide.Buy, secondary1, secondary2, 13, None, 98)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_2Leg_Lmt_tc.py&quot;, line 22, in Test
+    master = Utils.CreateOrder(cntr7, masterSide, 3, OrderType.Limit, limitPrice=masterPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TS2_2Leg_Mkt" status="run" time="0.031252" timestamp="2020-02-18T23:46:59.005253">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_2Leg_Mkt_tc.py&quot;, line 37, in &lt;module&gt;
+    Test(secondary1, secondary2, 11, None)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_2Leg_Mkt_tc.py&quot;, line 17, in Test
+    master = Utils.CreateOrder(cntr7, side, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_2Leg_Mkt_tc.py&quot;, line 37, in &lt;module&gt;
+    Test(secondary1, secondary2, 11, None)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_2Leg_Mkt_tc.py&quot;, line 17, in Test
+    master = Utils.CreateOrder(cntr7, side, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TS2_3Leg_Lmt" status="run" time="0.046858" timestamp="2020-02-18T23:46:59.052151">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_3Leg_Lmt_tc.py&quot;, line 51, in &lt;module&gt;
+    Test(SecondaryParams(OrderType.Limit, leg2limit=100, leg3type=OrderType.Stop, leg3stop=100))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_3Leg_Lmt_tc.py&quot;, line 28, in Test
+    master = Utils.CreateOrder(cntr7, side, 3, OrderType.Limit, limitPrice=masterPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_3Leg_Lmt_tc.py&quot;, line 51, in &lt;module&gt;
+    Test(SecondaryParams(OrderType.Limit, leg2limit=100, leg3type=OrderType.Stop, leg3stop=100))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_3Leg_Lmt_tc.py&quot;, line 28, in Test
+    master = Utils.CreateOrder(cntr7, side, 3, OrderType.Limit, limitPrice=masterPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="TS2_3Leg_Mkt" status="run" time="0.031262" timestamp="2020-02-18T23:46:59.114628">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_3Leg_Mkt_tc.py&quot;, line 39, in &lt;module&gt;
+    Test(SecondaryParams(OrderType.Limit, leg2limit=100, leg3type=OrderType.Stop, leg3stop=100))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_3Leg_Mkt_tc.py&quot;, line 24, in Test
+    master = Utils.CreateOrder(cntr7, side, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_3Leg_Mkt_tc.py&quot;, line 39, in &lt;module&gt;
+    Test(SecondaryParams(OrderType.Limit, leg2limit=100, leg3type=OrderType.Stop, leg3stop=100))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/BracketOffsetSupport\PriceLimitCheck\TS2_3Leg_Mkt_tc.py&quot;, line 24, in Test
+    master = Utils.CreateOrder(cntr7, side, 3, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="0" name="StopLimitOffset" skipped="2" tests="2" testsuite_failed="False" time="0.093729" timestamp="2020-02-18T23:46:59.630294">
+   <testcase name="2Leg" status="notrun"/>
+   <testcase name="3Leg" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="SyntheticBracketLeg" skipped="6" tests="6" testsuite_failed="False" time="0.09431" timestamp="2020-02-18T23:46:59.770899">
+   <testcase name="QTSTL" status="notrun"/>
+   <testcase name="QTSTP" status="notrun"/>
+   <testcase name="TLMT_Master" status="notrun"/>
+   <testcase name="TLMT" status="notrun"/>
+   <testcase name="TSTL" status="notrun"/>
+   <testcase name="TSTP" status="notrun"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

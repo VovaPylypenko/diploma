@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="1" testsuite_failed="False" time="41.157563" timestamp="2020-02-06T08:56:06.421548">
+ <properties>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="OTCFailover" skipped="0" tests="1" testsuite_failed="False" time="41.157563" timestamp="2020-02-06T08:56:06.421548">
+  <testsuite failures="0" name="IMF" skipped="0" tests="1" testsuite_failed="False" time="18.391165" timestamp="2020-02-06T08:56:28.062926">
+   <testcase name="RecoverOrdersGWConnectionLost" status="run" time="17.266199" timestamp="2020-02-06T08:56:29.094183"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

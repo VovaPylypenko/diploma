@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="2" skipped="0" tests="49" testsuite_failed="True" time="51.90786" timestamp="2020-02-18T23:43:32.326959">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_FixInterface"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="2" name="PTOA" skipped="0" tests="49" testsuite_failed="True" time="51.90786" timestamp="2020-02-18T23:43:32.326959">
+  <testsuite failures="0" name="AllocationRequest" skipped="0" tests="13" testsuite_failed="False" time="3.3282249999999998" timestamp="2020-02-18T23:43:51.233767">
+   <testcase name="AllocatedAccountCheck" status="run" time="0.171919" timestamp="2020-02-18T23:43:51.343145"/>
+   <testcase name="AllocatedOrderDuration" status="run" time="0.265819" timestamp="2020-02-18T23:43:51.577526"/>
+   <testcase name="AllocatedOrderMultifill" status="run" time="0.109382" timestamp="2020-02-18T23:43:51.905662"/>
+   <testcase name="AllocatedSizeCheck" status="run" time="0.125013" timestamp="2020-02-18T23:43:52.109020"/>
+   <testcase name="AllocationFillsChangeCheck" status="run" time="0.167435" timestamp="2020-02-18T23:43:52.316394"/>
+   <testcase name="AllocationFillsCheck" status="run" time="0.20314" timestamp="2020-02-18T23:43:52.561924"/>
+   <testcase name="AllocationOrdersCheck" status="run" time="0.187221" timestamp="2020-02-18T23:43:52.828263"/>
+   <testcase name="AllocationSizeCheck" status="run" time="0.234383" timestamp="2020-02-18T23:43:53.077565"/>
+   <testcase name="ClientAllocIdUsedBefore" status="run" time="0.140636" timestamp="2020-02-18T23:43:53.358844"/>
+   <testcase name="MultipleFillsCheck" status="run" time="0.171905" timestamp="2020-02-18T23:43:53.640081"/>
+   <testcase name="NativeStrategyLegFillAllocation" status="run" time="0.12499" timestamp="2020-02-18T23:43:53.921358"/>
+   <testcase name="UnauthorizedAccount" status="run" time="0.09376" timestamp="2020-02-18T23:43:54.140099"/>
+   <testcase name="UsedAllocationCheck" status="run" time="0.218591" timestamp="2020-02-18T23:43:54.280994"/>
+  </testsuite>
+  <testsuite failures="0" name="AllocationRequestXml" skipped="0" tests="1" testsuite_failed="False" time="1.265654" timestamp="2020-02-18T23:43:54.593271">
+   <testcase name="AllocatedOrderXml" status="run" time="1.093855" timestamp="2020-02-18T23:43:54.702619"/>
+  </testsuite>
+  <testsuite failures="0" name="AllocOrderBasicRiskChecks" skipped="0" tests="16" testsuite_failed="False" time="3.29697" timestamp="2020-02-18T23:43:55.890162">
+   <testcase name="AccountsOnDifferentRS" status="run" time="0.078123" timestamp="2020-02-18T23:43:56.030792"/>
+   <testcase name="ActivaAtState" status="run" time="0.031234" timestamp="2020-02-18T23:43:56.187067"/>
+   <testcase name="AllocationAccountOmnibusRisks" status="run" time="0.093728" timestamp="2020-02-18T23:43:56.280814"/>
+   <testcase name="AllocationAccountRisks" status="run" time="0.203113" timestamp="2020-02-18T23:43:56.452687"/>
+   <testcase name="BFMGroupAllocatedAccounts" status="run" time="0.156078" timestamp="2020-02-18T23:43:56.718484"/>
+   <testcase name="CMGroupAllocatedAccounts" status="run" time="0.109355" timestamp="2020-02-18T23:43:56.952714"/>
+   <testcase name="DisabledMarket" status="run" time="0.156224" timestamp="2020-02-18T23:43:57.124602"/>
+   <testcase name="JPPGroupAllocatedAccounts" status="run" time="0.156225" timestamp="2020-02-18T23:43:57.358986"/>
+   <testcase name="ModificationRejectAfterPartFill" status="run" time="0.171913" timestamp="2020-02-18T23:43:57.577738"/>
+   <testcase name="ModificationReject" status="run" time="0.093731" timestamp="2020-02-18T23:43:57.812124"/>
+   <testcase name="ModificationSize" status="run" time="0.140761" timestamp="2020-02-18T23:43:57.983981"/>
+   <testcase name="OmnibusAllocatedAccount" status="run" time="0.078122" timestamp="2020-02-18T23:43:58.187101"/>
+   <testcase name="PlacementSize" status="run" time="0.062496" timestamp="2020-02-18T23:43:58.327764"/>
+   <testcase name="SizeAutomodification" status="run" time="0.203587" timestamp="2020-02-18T23:43:58.437112"/>
+   <testcase name="TradePriceLimit" status="run" time="0.187477" timestamp="2020-02-18T23:43:58.702779"/>
+   <testcase name="UnauthorizedAccount" status="run" time="0.156249" timestamp="2020-02-18T23:43:58.968382"/>
+  </testsuite>
+  <testsuite failures="2" name="Misc" skipped="0" tests="7" testsuite_failed="True" time="10.906552" timestamp="2020-02-18T23:43:59.202805">
+   <testcase name="AllocationOrderFillCancelCheck" status="run" time="0.171912" timestamp="2020-02-18T23:43:59.374640"/>
+   <testcase name="AllocationOrderFillCorrectionCheck" status="run" time="3.359486" timestamp="2020-02-18T23:43:59.609025"/>
+   <testcase name="AllocationOrderRequestOnExchange" status="run" time="0.234377" timestamp="2020-02-18T23:44:03.046632"/>
+   <testcase name="CancelAllActionCheck" status="run" time="0.936101" timestamp="2020-02-18T23:44:03.360566">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA\Misc\CancelAllActionCheck_tc.py&quot;, line 35, in &lt;module&gt;
+    order = CreateOrder(contract, OrderSide.Buy, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA\Misc\CancelAllActionCheck_tc.py&quot;, line 35, in &lt;module&gt;
+    order = CreateOrder(contract, OrderSide.Buy, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="DailyFutureContractCheck" status="run" time="0.125009" timestamp="2020-02-18T23:44:04.359181"/>
+   <testcase name="ParkAllActionCheck" status="run" time="0.937763" timestamp="2020-02-18T23:44:04.546677">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA\Misc\ParkAllActionCheck_tc.py&quot;, line 32, in &lt;module&gt;
+    order = CreateOrder(contract, OrderSide.Buy, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PTOA\Misc\ParkAllActionCheck_tc.py&quot;, line 32, in &lt;module&gt;
+    order = CreateOrder(contract, OrderSide.Buy, 6, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="SyntheticStpAllocOrder" status="run" time="4.359499" timestamp="2020-02-18T23:44:05.562344"/>
+  </testsuite>
+  <testsuite failures="0" name="PartialQty" skipped="0" tests="2" testsuite_failed="False" time="4.047008" timestamp="2020-02-18T23:44:10.156241">
+   <testcase name="AllocationRequest" status="run" time="0.843775" timestamp="2020-02-18T23:44:13.046965"/>
+   <testcase name="AllocationSizeCheck" status="run" time="0.109351" timestamp="2020-02-18T23:44:13.953247"/>
+  </testsuite>
+  <testsuite failures="0" name="PortfolioRiskCalculation" skipped="0" tests="10" testsuite_failed="False" time="3.781352" timestamp="2020-02-18T23:44:14.234510">
+   <testcase name="CanceledAllocatedFill" status="run" time="0.203094" timestamp="2020-02-18T23:44:14.359528"/>
+   <testcase name="FullFillOnAllocationOmnibus" status="run" time="0.313915" timestamp="2020-02-18T23:44:14.625126"/>
+   <testcase name="FullFillOnAllocationOrder" status="run" time="0.198809" timestamp="2020-02-18T23:44:15.020078"/>
+   <testcase name="ModifiedAllocatedFillPrice" status="run" time="0.297191" timestamp="2020-02-18T23:44:15.297025"/>
+   <testcase name="ModifiedAllocatedFillSize" status="run" time="0.283095" timestamp="2020-02-18T23:44:15.687684"/>
+   <testcase name="MultiFillsAndAllocationsWithCancel" status="run" time="0.249982" timestamp="2020-02-18T23:44:16.078317"/>
+   <testcase name="MultiFillsAndAllocations" status="run" time="0.37521" timestamp="2020-02-18T23:44:16.406431"/>
+   <testcase name="PartFillOnAllocationOmnibus" status="run" time="0.421882" timestamp="2020-02-18T23:44:16.875201"/>
+   <testcase name="PartFillOnAllocationOrder" status="run" time="0.234498" timestamp="2020-02-18T23:44:17.359589"/>
+   <testcase name="SeveralFillsOnAllocationOrder" status="run" time="0.234384" timestamp="2020-02-18T23:44:17.672098"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

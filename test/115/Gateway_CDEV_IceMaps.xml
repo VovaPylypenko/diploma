@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="24" testsuite_failed="False" time="919.980909" timestamp="2020-02-19T16:35:09.960534">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/IceMaps/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="20"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/IceMaps"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="IceMaps" skipped="0" tests="24" testsuite_failed="False" time="919.980909" timestamp="2020-02-19T16:35:09.960534">
+  <testsuite failures="0" name="BaseConfiguration" skipped="0" tests="20" testsuite_failed="False" time="182.59915" timestamp="2020-02-19T16:35:23.179691">
+   <testcase name="Portfolio10" status="run" time="0.171839" timestamp="2020-02-19T16:38:23.935062"/>
+   <testcase name="Portfolio11" status="run" time="0.265569" timestamp="2020-02-19T16:38:23.966337"/>
+   <testcase name="Portfolio12" status="run" time="0.311778" timestamp="2020-02-19T16:38:23.998252"/>
+   <testcase name="Portfolio16" status="run" time="0.343748" timestamp="2020-02-19T16:38:24.044410"/>
+   <testcase name="Portfolio17" status="run" time="0.671896" timestamp="2020-02-19T16:38:24.075649"/>
+   <testcase name="Portfolio18" status="run" time="1.231901" timestamp="2020-02-19T16:38:24.125487"/>
+   <testcase name="Portfolio19" status="run" time="1.328163" timestamp="2020-02-19T16:38:24.169404"/>
+   <testcase name="Portfolio1" status="run" time="0.234382" timestamp="2020-02-19T16:38:24.216280"/>
+   <testcase name="Portfolio20" status="run" time="1.296726" timestamp="2020-02-19T16:38:24.278965"/>
+   <testcase name="Portfolio21" status="run" time="0.249987" timestamp="2020-02-19T16:38:24.341304"/>
+   <testcase name="Portfolio22" status="run" time="0.216402" timestamp="2020-02-19T16:38:24.406138"/>
+   <testcase name="Portfolio23" status="run" time="0.281297" timestamp="2020-02-19T16:38:24.435035"/>
+   <testcase name="Portfolio2" status="run" time="0.26564" timestamp="2020-02-19T16:38:24.497536"/>
+   <testcase name="Portfolio3" status="run" time="0.250067" timestamp="2020-02-19T16:38:24.638165"/>
+   <testcase name="Portfolio4" status="run" time="0.234345" timestamp="2020-02-19T16:38:24.716332"/>
+   <testcase name="Portfolio5" status="run" time="0.29676" timestamp="2020-02-19T16:38:24.778919"/>
+   <testcase name="Portfolio6" status="run" time="0.250007" timestamp="2020-02-19T16:38:24.825672"/>
+   <testcase name="Portfolio7" status="run" time="0.218698" timestamp="2020-02-19T16:38:24.888232"/>
+   <testcase name="Portfolio8" status="run" time="0.187506" timestamp="2020-02-19T16:38:24.981925"/>
+   <testcase name="Portfolio9" status="run" time="0.187507" timestamp="2020-02-19T16:38:25.106930"/>
+  </testsuite>
+  <testsuite failures="0" name="MarginMethodConfiguration" skipped="0" tests="1" testsuite_failed="False" time="361.432745" timestamp="2020-02-19T16:38:25.810094">
+   <testcase name="Portfolio24" status="run" time="361.276454" timestamp="2020-02-19T16:38:25.903859"/>
+  </testsuite>
+  <testsuite failures="0" name="SumPercConfiguration" skipped="0" tests="1" testsuite_failed="False" time="0.437543" timestamp="2020-02-19T16:44:27.258431">
+   <testcase name="Portfolio14" status="run" time="0.249968" timestamp="2020-02-19T16:44:27.367841"/>
+  </testsuite>
+  <testsuite failures="0" name="TopNumConfiguration" skipped="0" tests="1" testsuite_failed="False" time="180.942036" timestamp="2020-02-19T16:44:27.728186">
+   <testcase name="Portfolio13" status="run" time="0.250006" timestamp="2020-02-19T16:47:28.373366"/>
+  </testsuite>
+  <testsuite failures="0" name="TopPercConfiguration" skipped="0" tests="1" testsuite_failed="False" time="180.990349" timestamp="2020-02-19T16:47:28.701502">
+   <testcase name="Portfolio15" status="run" time="0.265658" timestamp="2020-02-19T16:50:29.378899"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

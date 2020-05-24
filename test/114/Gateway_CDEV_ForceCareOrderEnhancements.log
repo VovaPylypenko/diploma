@@ -1,0 +1,368 @@
+ 2:24:00.53  Test starded without threads
+00:24:01.097 Python Module Path 'ScriptKit/TroubleMaker' added.
+00:24:01.097 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+00:24:01.097 Python Module Path 'ScriptKit' added.
+00:24:01.097 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:24:01.597 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements' full execution.
+00:24:01.613 Suite '.'. [0 test cases, 4 sub-suites]
+00:24:33.489 Suite 'AutomatedCare'. [9 test cases, 0 sub-suites]
+00:24:33.536 Case '01_AutoAck' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedCare\01_AutoAck_tc.py", line 6, in <module>
+    order11 = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 11, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:33.551 Case '01_AutoAck' failed.
+00:24:33.598 Case '02_TwoAccountsOneOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedCare\02_TwoAccountsOneOrder_tc.py", line 10, in <module>
+    order20S = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 20, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:33.614 Case '02_TwoAccountsOneOrder' failed.
+00:24:33.661 Case '03_TwoAccountsOneOrderAuto' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedCare\03_TwoAccountsOneOrderAuto_tc.py", line 8, in <module>
+    order20B = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 20, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:33.661 Case '03_TwoAccountsOneOrderAuto' failed.
+00:24:33.724 Case '04_TwoAccountsTwoOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedCare\04_TwoAccountsTwoOrders_tc.py", line 6, in <module>
+    order20B = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 20, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:33.724 Case '04_TwoAccountsTwoOrders' failed.
+00:24:33.786 Case '05_TwoAccountsTwoOrdersRej' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedCare\05_TwoAccountsTwoOrdersRej_tc.py", line 24, in <module>
+    order20B = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 20, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:33.786 Case '05_TwoAccountsTwoOrdersRej' failed.
+00:24:33.848 Case '06_TwoAccountsDiffRS' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedCare\06_TwoAccountsDiffRS_tc.py", line 6, in <module>
+    order20B = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 20, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:33.848 Case '06_TwoAccountsDiffRS' failed.
+00:24:33.911 Case '07_EnvChange' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedCare\07_EnvChange_tc.py", line 48, in <module>
+    test(maxOrderSize = 9)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedCare\07_EnvChange_tc.py", line 21, in test
+    order1 = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, maxOrderSize + 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:53.771 Case '07_EnvChange' failed.
+00:24:53.821 Case '08_ParkPartFilledOrder' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedCare\08_ParkPartFilledOrder_tc.py", line 6, in <module>
+    order20S = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 20, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:53.833 Case '08_ParkPartFilledOrder' failed.
+00:24:53.880 Case '09_ParkPartFilledOrderOmni' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedCare\09_ParkPartFilledOrderOmni_tc.py", line 8, in <module>
+    order20S = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 20, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:53.895 Case '09_ParkPartFilledOrderOmni' failed.
+00:24:53.989 Suite 'AutomatedPark'. [2 test cases, 0 sub-suites]
+00:24:54.067 Case '01_General' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedPark\01_General_tc.py", line 6, in <module>
+    order20S = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 20, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:54.067 Case '01_General' failed.
+00:24:54.146 Case '02_SpecialModifications' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedPark\02_SpecialModifications_tc.py", line 6, in <module>
+    order20S = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 20, OrderType.Limit, limitPrice=100, instructions = Common.iceberg, visibleSize = 10)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:54.146 Case '02_SpecialModifications' failed.
+00:24:54.271 Suite 'AutomatedParkRisk'. [11 test cases, 0 sub-suites]
+00:24:54.349 Case '01_CPLandTML' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\01_CPLandTML_tc.py", line 7, in <module>
+    orderS = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:54.364 Case '01_CPLandTML' failed.
+00:24:54.442 Case '02_TPL' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\02_TPL_tc.py", line 6, in <module>
+    order1 = OrderActionUtils.CreateOrder(contract4, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:54.442 Case '02_TPL' failed.
+00:24:54.505 Case '03_OrderHandler_Liq' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\03_OrderHandler_Liq_tc.py", line 6, in <module>
+    orderB = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:54.505 Case '03_OrderHandler_Liq' failed.
+00:24:54.583 Case '04_OrderHandler_CommPL' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\04_OrderHandler_CommPL_tc.py", line 6, in <module>
+    order3B = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 3, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:54.583 Case '04_OrderHandler_CommPL' failed.
+00:24:54.646 Case '05_OrderHandler_ContrPL' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\05_OrderHandler_ContrPL_tc.py", line 6, in <module>
+    order6B = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 6, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:54.646 Case '05_OrderHandler_ContrPL' failed.
+00:24:54.709 Case '06_CPLandTML_NoForceCare' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\06_CPLandTML_NoForceCare_tc.py", line 6, in <module>
+    orderS = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 1, OrderType.Limit, limitPrice=100, careOrder = True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:54.724 Case '06_CPLandTML_NoForceCare' failed.
+00:24:54.802 Case '07_TPL_NoForceCare' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\07_TPL_NoForceCare_tc.py", line 6, in <module>
+    orderS = OrderActionUtils.CreateOrder(contract4, OrderSide.Sell, 1, OrderType.Limit, limitPrice=100, careOrder = True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:54.802 Case '07_TPL_NoForceCare' failed.
+00:24:54.942 Case '12_CPLandTML_ActAll' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\12_CPLandTML_ActAll_tc.py", line 6, in <module>
+    orderS = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:54.942 Case '12_CPLandTML_ActAll' failed.
+00:24:55.067 Case '13_TPL_ActAll' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\13_TPL_ActAll_tc.py", line 6, in <module>
+    orderS = OrderActionUtils.CreateOrder(contract4, OrderSide.Sell, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:55.067 Case '13_TPL_ActAll' failed.
+00:24:55.146 Case '15_CPLandTML_Omni' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\15_CPLandTML_Omni_tc.py", line 6, in <module>
+    orderS = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:55.146 Case '15_CPLandTML_Omni' failed.
+00:24:55.239 Case '16_ParkedModification' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\AutomatedParkRisk\16_ParkedModification_tc.py", line 6, in <module>
+    orderS = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:55.239 Case '16_ParkedModification' failed.
+00:24:55.427 Suite 'CareOrderTraderSubstitution'. [9 test cases, 0 sub-suites]
+00:24:58.177 Case '01_CareCancelAccepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\01_CareCancelAccepted_tc.py", line 42, in <module>
+    CareCancelAcceptedTestScenario(deskTrader, acctInfo1)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\01_CareCancelAccepted_tc.py", line 24, in CareCancelAcceptedTestScenario
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:58.177 Case '01_CareCancelAccepted' failed.
+00:24:58.255 Case '02_CareCancelNotEnabled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\02_CareCancelNotEnabled_tc.py", line 20, in <module>
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:58.255 Case '02_CareCancelNotEnabled' failed.
+00:24:58.333 Case '03_CareCancelDeskTraderLogoff' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\03_CareCancelDeskTraderLogoff_tc.py", line 49, in <module>
+    CareCancelDeskTraderLogoffTestScenario(deskTrader, acctInfo1)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\03_CareCancelDeskTraderLogoff_tc.py", line 28, in CareCancelDeskTraderLogoffTestScenario
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:59.239 Case '03_CareCancelDeskTraderLogoff' failed.
+00:24:59.349 Case '04_CareModifyAccepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\04_CareModifyAccepted_tc.py", line 53, in <module>
+    CareModifyAcceptedTestScenario(deskTrader, acctInfo1)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\04_CareModifyAccepted_tc.py", line 28, in CareModifyAcceptedTestScenario
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:59.349 Case '04_CareModifyAccepted' failed.
+00:24:59.443 Case '05_CareModifyNotEnabled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\05_CareModifyNotEnabled_tc.py", line 20, in <module>
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:24:59.443 Case '05_CareModifyNotEnabled' failed.
+00:24:59.536 Case '06_CareModifyDeskTraderLogoff' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\06_CareModifyDeskTraderLogoff_tc.py", line 49, in <module>
+    CareCancelDeskTraderLogoffTestScenario(deskTrader, acctInfo1)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\06_CareModifyDeskTraderLogoff_tc.py", line 28, in CareCancelDeskTraderLogoffTestScenario
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:25:00.427 Case '06_CareModifyDeskTraderLogoff' failed.
+00:25:00.540 Case '07_CareParkAccepted' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\07_CareParkAccepted_tc.py", line 51, in <module>
+    CareParkAcceptedTestScenario(deskTrader, acctInfo1)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\07_CareParkAccepted_tc.py", line 28, in CareParkAcceptedTestScenario
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:25:00.553 Case '07_CareParkAccepted' failed.
+00:25:00.661 Case '08_CareParkNotEnabled' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\08_CareParkNotEnabled_tc.py", line 20, in <module>
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:25:00.661 Case '08_CareParkNotEnabled' failed.
+00:25:00.739 Case '09_CareParkDeskTraderLogoff' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\09_CareParkDeskTraderLogoff_tc.py", line 49, in <module>
+    CareCancelDeskTraderLogoffTestScenario(deskTrader, acctInfo1)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements\CareOrderTraderSubstitution\09_CareParkDeskTraderLogoff_tc.py", line 28, in CareCancelDeskTraderLogoffTestScenario
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Limit, limitPrice=100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:25:01.864 Case '09_CareParkDeskTraderLogoff' failed.
+00:25:12.349 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements' execution finished. It took 0:01:10.705344.
+00:25:12.349 Test cases results: 31 total, 0 succeeded, 31 failed, 0 skipped.

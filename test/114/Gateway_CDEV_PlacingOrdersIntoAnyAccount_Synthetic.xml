@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="3" tests="3" testsuite_failed="False" time="9.609647" timestamp="2020-02-19T00:26:27.148648">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/PlacingOrdersIntoAnyAccount"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="PlacingOrdersIntoAnyAccount" skipped="3" tests="3" testsuite_failed="False" time="9.609647" timestamp="2020-02-19T00:26:27.148648">
+  <testsuite failures="0" name="Synthetic" skipped="3" tests="3" testsuite_failed="False" time="0.187496" timestamp="2020-02-19T00:26:36.180154">
+   <testsuite failures="0" name="Complex" skipped="2" tests="2" testsuite_failed="False">
+    <testcase name="05_SomActivation" status="notrun"/>
+    <testcase name="06_SomTrail" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="Rejections" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="03_SSP" status="notrun"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

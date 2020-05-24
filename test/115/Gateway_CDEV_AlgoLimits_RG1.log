@@ -1,0 +1,51 @@
+22:11:00.89  Test starded without threads
+20:11:01.362 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+20:11:01.362 Python Module Path 'ScriptKit' added.
+20:11:01.362 Python Module Path 'ScriptKit/TroubleMaker' added.
+20:11:01.378 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:11:01.737 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits' filtered execution.
+20:11:01.768 Suite '.'. [0 test cases, 1 sub-suites]
+20:11:12.456 Suite 'Native'. [0 test cases, 3 sub-suites]
+20:11:12.534 Suite 'Native\Basic'. [6 test cases, 0 sub-suites]
+20:11:12.597 Case '01_Place' execution.
+20:11:12.644 Case '02_Modify' execution.
+20:11:12.675 Case '03_Cancel' execution.
+20:11:12.738 Case '05_Reject' execution.
+20:11:12.816 Case '_04_Fill' execution.
+20:11:12.862 Case '_04_Fill' succeeded.
+20:11:12.878 Case '06_Park' execution.
+20:12:13.224 Case '02_Modify' succeeded.
+20:12:13.318 Case '05_Reject' succeeded.
+20:12:13.349 Case '03_Cancel' succeeded.
+20:12:13.380 Case '06_Park' succeeded.
+20:12:13.398 Case '01_Place' succeeded.
+20:12:13.536 Suite 'Native\Complex'. [10 test cases, 0 sub-suites]
+20:12:13.583 Case '01_CareOrder' execution.
+20:12:13.614 Case '04_OCO' execution.
+20:12:13.693 Case '05_OPO' execution.
+20:12:13.724 Case '07_OmniSameFCMs' execution.
+20:12:13.802 Case '08_OmniDiffFCMs' execution.
+20:12:13.865 Case '09_ResetOneAlgo' execution.
+20:12:13.943 Case '10_ResetAllAlgos' execution.
+20:12:13.958 Case '12_MultipleTraders' execution.
+20:12:14.021 Case '15_OrderHandler' execution.
+20:12:14.083 Case '16_ExternalAlgo' execution.
+20:13:13.929 Case '01_CareOrder' succeeded.
+20:13:14.507 Case '07_OmniSameFCMs' succeeded.
+20:13:14.726 Case '08_OmniDiffFCMs' succeeded.
+20:13:14.726 Case '15_OrderHandler' succeeded.
+20:13:14.851 Case '12_MultipleTraders' succeeded.
+20:13:15.179 Case '04_OCO' succeeded.
+20:13:15.227 Case '16_ExternalAlgo' succeeded.
+20:13:15.351 Case '05_OPO' succeeded.
+20:14:17.776 Case '09_ResetOneAlgo' succeeded.
+20:14:17.790 Case '10_ResetAllAlgos' succeeded.
+20:14:17.915 Suite 'Native\DoNotCount'. [3 test cases, 0 sub-suites]
+20:14:17.978 Case '01_Unconfirmed' execution.
+20:14:18.025 Case '02_ActiveAt' execution.
+20:14:18.057 Case '05_Different' execution.
+20:15:18.183 Case '01_Unconfirmed' succeeded.
+20:15:18.262 Case '02_ActiveAt' succeeded.
+20:15:18.668 Case '05_Different' succeeded.
+20:15:26.496 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits' execution finished. It took 0:04:24.743175.
+20:15:26.496 Test cases results: 19 total, 19 succeeded, 0 failed, 0 skipped.

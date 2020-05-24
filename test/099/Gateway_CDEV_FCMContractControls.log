@@ -1,0 +1,525 @@
+10:36:26.47  Test starded without threads
+08:36:26.991 Python Module Path 'ScriptKit' added.
+08:36:26.991 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:36:26.991 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:36:27.460 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls' full execution.
+08:36:27.491 Suite '.'. [0 test cases, 2 sub-suites]
+08:36:36.819 Suite 'AllowedToTrade'. [38 test cases, 0 sub-suites]
+08:37:01.008 Case 'TC101_AllCommoditiesDisabled' execution.
+08:37:01.086 Case 'TC102_USCommoditiesDisabled' execution.
+08:37:01.134 Case 'TC103_NonUSCommoditiesDisabled' execution.
+08:37:01.164 Case 'TC104_ExchangeDisabled' execution.
+08:37:01.320 Case 'TC105_CommodityDisabled' execution.
+08:37:01.430 Case 'TC106_InstrumentDisabled' execution.
+08:37:01.492 Case 'TC107_ContractDisabled' execution.
+08:37:01.570 Case 'TC211_InstrumentContract' execution.
+08:37:01.664 Case 'TC213_CommodityInstrument' execution.
+08:37:01.727 Case 'TC214_ExchangeContract' execution.
+08:37:01.820 Case 'TC215_ExchangeInstrument' execution.
+08:37:01.914 Case 'TC221_NonUSCommoditiesContract' execution.
+08:37:01.961 Case 'TC222_NonUSCommoditiesInstrument' execution.
+08:37:02.055 Case 'TC223_NonUSCommoditiesCommodity' execution.
+08:37:02.133 Case 'TC224_USCommoditiesContract' execution.
+08:37:02.211 Case 'TC225_USCommoditiesInstrument' execution.
+08:37:02.242 Case 'TC227_USCommoditiesExchange' execution.
+08:37:02.477 Case 'TC231_AllCommoditiesContract' execution.
+08:37:02.602 Case 'TC232_AllCommoditiesInstrument' execution.
+08:37:02.758 Case 'TC233_AllCommoditiesCommodity' execution.
+08:37:02.836 Case 'TC234_AllCommoditiesExchange' execution.
+08:37:03.028 Case 'TC235_AllCommoditiesNonUSCommodities' execution.
+08:37:03.148 Case 'TC236_AllCommoditiesUSCommodities' execution.
+08:37:03.258 Case 'TC302_AccountAllCommoditiesDisabled' execution.
+08:37:03.305 Case 'TC216_ExchangeCommodity' execution.
+08:37:03.398 Case 'TC303_AllCommoditiesInstrument' execution.
+08:37:03.477 Case 'TC304_InstrumentAllCommodities' execution.
+08:37:03.570 Case 'TC305_DefaultAllCommodities' execution.
+08:37:03.602 Case 'TC306_InstrumentContract' execution.
+08:37:03.633 Case 'TC307_DefaultAllCommodities' execution.
+08:37:03.680 Case 'TC308_ExchangeUSCommodities' execution.
+08:37:03.836 Case 'TC212_CommodityContract' execution.
+08:37:04.523 Case 'TC301_AccountAllCommoditiesEnabled' execution.
+08:37:04.555 Case 'TC309_DefaultUSCommoditiesExchange' execution.
+08:37:04.649 Case 'TC310_USCommoditiesAllCommoditiesCommodity' execution.
+08:37:04.680 Case 'TC313_AllCommoditiesInstrument' execution.
+08:37:04.745 Case 'TC314_InstrumentAllCommodities' execution.
+08:37:04.930 Case 'TC226_USCommoditiesCommodity' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC303_AllCommoditiesInstrument_tc.py", line 8, in <module>
+    Restriction(accounts[33], traders[33], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Instrument, contract = SFEPZ99, allowedToTrade = '1')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:08.664 Case 'TC303_AllCommoditiesInstrument' failed.
+08:37:16.071 Case 'TC214_ExchangeContract' succeeded.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC305_DefaultAllCommodities_tc.py", line 6, in <module>
+    setupAllowedToTrade(Restriction(accounts[35], traders[35], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.All, allowedToTrade = '0'))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:16.227 Case 'TC305_DefaultAllCommodities' failed.
+08:37:16.383 Case 'TC221_NonUSCommoditiesContract' succeeded.
+08:37:16.415 Case 'TC213_CommodityInstrument' succeeded.
+08:37:16.540 Case 'TC215_ExchangeInstrument' succeeded.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC101_AllCommoditiesDisabled_tc.py", line 9, in <module>
+    Restriction(accounts[131], traders[131], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.All, allowedToTrade = '0')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:18.056 Case 'TC101_AllCommoditiesDisabled' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC313_AllCommoditiesInstrument_tc.py", line 9, in <module>
+    limitLevel = LimitLevel.Instrument, contract = SFEPZ99, allowedToTrade = '1', enforce = True)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:18.368 Case 'TC313_AllCommoditiesInstrument' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC309_DefaultUSCommoditiesExchange_tc.py", line 8, in <module>
+    Restriction(accounts[39], traders[39], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Exchange, contract = SFEPZ99, allowedToTrade = '0')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:18.540 Case 'TC309_DefaultUSCommoditiesExchange' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC308_ExchangeUSCommodities_tc.py", line 8, in <module>
+    Restriction(accounts[38], traders[38], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.US, allowedToTrade = '1')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:18.618 Case 'TC308_ExchangeUSCommodities' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC102_USCommoditiesDisabled_tc.py", line 9, in <module>
+    Restriction(accounts[132], traders[132], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.US, allowedToTrade = '0')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:18.727 Case 'TC102_USCommoditiesDisabled' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC103_NonUSCommoditiesDisabled_tc.py", line 9, in <module>
+    Restriction(accounts[133], traders[133], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.NonUS, allowedToTrade = '0')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:18.821 Case 'TC103_NonUSCommoditiesDisabled' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC310_USCommoditiesAllCommoditiesCommodity_tc.py", line 9, in <module>
+    Restriction(accounts[310], traders[310], limitEntity = LimitEntity.FCM, limitLevel = LimitLevel.Commodity, contract = SFEPZ99, allowedToTrade = '1')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:18.931 Case 'TC310_USCommoditiesAllCommoditiesCommodity' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC302_AccountAllCommoditiesDisabled_tc.py", line 8, in <module>
+    Restriction(accounts[32], traders[32], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.All, allowedToTrade = '0')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:19.040 Case 'TC302_AccountAllCommoditiesDisabled' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC106_InstrumentDisabled_tc.py", line 9, in <module>
+    Restriction(accounts[136], traders[136], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.Instrument, contract = CSFFLKZ99, allowedToTrade = '0')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:19.133 Case 'TC106_InstrumentDisabled' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC301_AccountAllCommoditiesEnabled_tc.py", line 8, in <module>
+    Restriction(accounts[31], traders[31], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.All, allowedToTrade = '1')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:19.248 Case 'TC301_AccountAllCommoditiesEnabled' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC107_ContractDisabled_tc.py", line 9, in <module>
+    Restriction(accounts[137], traders[137], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.Contract, contract = SFEPZ99, allowedToTrade = '0')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:19.337 Case 'TC107_ContractDisabled' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC104_ExchangeDisabled_tc.py", line 9, in <module>
+    Restriction(accounts[134], traders[134], limitEntity = LimitEntity.Trader, limitLevel = LimitLevel.Exchange, contract = SFEPZ99, allowedToTrade = '0')
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:19.433 Case 'TC104_ExchangeDisabled' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\TC223_NonUSCommoditiesCommodity_tc.py", line 8, in <module>
+    Restriction(accounts[223], traders[1], limitEntity = LimitEntity.Account, limitLevel = LimitLevel.Commodity, contract = SFKLFZ99, allowedToTrade = '1'),
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls\AllowedToTrade\test_suite_su.py", line 89, in setupAllowedToTrade
+    {'account_market_limits_result': {}})
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 145, in AssertAccountScopeRequestSuccessful
+    AssertSuccessResult(serverMsg, result)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\CastApi\CommonHelper.py", line 56, in AssertSuccessResult
+    AssertEqualMessage(operationResult.operation_status, SUCCESS, "operation_status")
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\TestCheck.py", line 81, in AssertEqualMessage
+    raise Failure(msg + "'" + GetStr(a) + "'" + " is not equal to " + "'" + GetStr(b) + "'")
+TestCheck.Failure: operation_status: '2' is not equal to '1'
+
+trade_routing_result {
+  request_id: 1
+  operation_status: 2
+  error_message {
+    key: "gwa2006"
+    text: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+    format: "An unexpected error occurred while processing the request. Contact CQG customer support for assistance."
+  }
+}
+
+08:37:19.540 Case 'TC223_NonUSCommoditiesCommodity' failed.
+08:37:21.477 Case 'TC224_USCommoditiesContract' succeeded.
+08:37:21.852 Case 'TC232_AllCommoditiesInstrument' succeeded.
+08:37:21.977 Case 'TC211_InstrumentContract' succeeded.
+08:37:22.087 Case 'TC227_USCommoditiesExchange' succeeded.
+08:37:22.087 Case 'TC231_AllCommoditiesContract' succeeded.
+08:37:22.180 Case 'TC233_AllCommoditiesCommodity' succeeded.
+08:37:22.290 Case 'TC225_USCommoditiesInstrument' succeeded.
+08:37:22.305 Case 'TC235_AllCommoditiesNonUSCommodities' succeeded.
+08:37:22.415 Case 'TC307_DefaultAllCommodities' succeeded.
+08:37:22.430 Case 'TC216_ExchangeCommodity' succeeded.
+08:37:22.509 Case 'TC236_AllCommoditiesUSCommodities' succeeded.
+08:37:22.509 Case 'TC234_AllCommoditiesExchange' succeeded.
+08:37:22.540 Case 'TC212_CommodityContract' succeeded.
+08:37:33.243 Case 'TC314_InstrumentAllCommodities' succeeded.
+08:37:33.431 Case 'TC226_USCommoditiesCommodity' succeeded.
+08:37:33.665 Case 'TC222_NonUSCommoditiesInstrument' succeeded.
+08:37:33.790 Case 'TC304_InstrumentAllCommodities' succeeded.
+08:37:34.149 Case 'TC105_CommodityDisabled' succeeded.
+08:37:39.306 Case 'TC306_InstrumentContract' succeeded.
+08:37:44.244 Suite 'Tenors'. [32 test cases, 0 sub-suites]
+08:38:07.604 Case 'TC101_AllCommoditiesLimited' execution.
+08:38:07.713 Case 'TC102_USCommoditiesLimited' execution.
+08:38:07.791 Case 'TC103_NonUSCommoditiesLimited' execution.
+08:38:07.869 Case 'TC104_ExchangeLimited' execution.
+08:38:07.932 Case 'TC105_CommodityLimited' execution.
+08:38:08.057 Case 'TC106_InstrumentLimited' execution.
+08:38:08.182 Case 'TC211_CommodityInstrument' execution.
+08:38:08.229 Case 'TC212_ExchangeInstrument' execution.
+08:38:08.385 Case 'TC213_ExchangeCommodity' execution.
+08:38:08.447 Case 'TC214_NonUSCommoditiesInstrument' execution.
+08:38:08.619 Case 'TC221_NonUSCommoditiesCommodity' execution.
+08:38:08.744 Case 'TC222_USCommoditiesInstrument' execution.
+08:38:08.807 Case 'TC223_USCommoditiesCommodity' execution.
+08:38:09.057 Case 'TC225_AllCommoditiesInstrument' execution.
+08:38:09.244 Case 'TC231_AllCommoditiesCommodity' execution.
+08:38:09.449 Case 'TC232_AllCommoditiesExchange' execution.
+08:38:09.651 Case 'TC233_AllCommoditiesNonUSCommodities' execution.
+08:38:09.713 Case 'TC234_AllCommoditiesUSCommodities' execution.
+08:38:09.838 Case 'TC301_AccountAllCommoditiesDefault' execution.
+08:38:10.088 Case 'TC302_AccountDefaultAllCommodities' execution.
+08:38:10.260 Case 'TC303_AllCommoditiesInstrument' execution.
+08:38:10.401 Case 'TC304_InstrumentAllCommodities' execution.
+08:38:10.619 Case 'TC305_DefaultAllCommodities' execution.
+08:38:10.791 Case 'TC306_ExchangeInstrument' execution.
+08:38:10.901 Case 'TC307_DefaultAllCommodities' execution.
+08:38:11.042 Case 'TC308_CommodityUSCommodities' execution.
+08:38:11.119 Case 'TC224_USCommoditiesExchange' execution.
+08:38:11.338 Case 'TC309_DefaultUSCommoditiesExchange' execution.
+08:38:11.432 Case 'TC310_NonUSCommoditiesAllCommoditiesCommodity' execution.
+08:38:11.588 Case 'TC312_DailyFutures' execution.
+08:38:11.670 Case 'TC313_AllCommoditiesInstrument' execution.
+08:38:11.823 Case 'TC314_InstrumentAllCommodities' execution.
+08:38:23.557 Case 'TC305_DefaultAllCommodities' succeeded.
+08:38:23.964 Case 'TC309_DefaultUSCommoditiesExchange' succeeded.
+08:38:24.010 Case 'TC307_DefaultAllCommodities' succeeded.
+08:38:24.276 Case 'TC301_AccountAllCommoditiesDefault' succeeded.
+08:38:24.307 Case 'TC304_InstrumentAllCommodities' succeeded.
+08:38:24.542 Case 'TC303_AllCommoditiesInstrument' succeeded.
+08:38:24.651 Case 'TC224_USCommoditiesExchange' succeeded.
+08:38:24.823 Case 'TC233_AllCommoditiesNonUSCommodities' succeeded.
+08:38:25.057 Case 'TC214_NonUSCommoditiesInstrument' succeeded.
+08:38:25.120 Case 'TC222_USCommoditiesInstrument' succeeded.
+08:38:25.292 Case 'TC306_ExchangeInstrument' succeeded.
+08:38:25.339 Case 'TC308_CommodityUSCommodities' succeeded.
+08:38:25.370 Case 'TC302_AccountDefaultAllCommodities' succeeded.
+08:38:25.387 Case 'TC221_NonUSCommoditiesCommodity' succeeded.
+08:38:25.448 Case 'TC231_AllCommoditiesCommodity' succeeded.
+08:38:25.448 Case 'TC232_AllCommoditiesExchange' succeeded.
+08:38:25.526 Case 'TC212_ExchangeInstrument' succeeded.
+08:38:25.526 Case 'TC234_AllCommoditiesUSCommodities' succeeded.
+08:38:25.557 Case 'TC223_USCommoditiesCommodity' succeeded.
+08:38:25.698 Case 'TC314_InstrumentAllCommodities' succeeded.
+08:38:25.714 Case 'TC211_CommodityInstrument' succeeded.
+08:38:25.886 Case 'TC310_NonUSCommoditiesAllCommoditiesCommodity' succeeded.
+08:38:25.968 Case 'TC225_AllCommoditiesInstrument' succeeded.
+08:38:26.073 Case 'TC213_ExchangeCommodity' succeeded.
+08:38:27.807 Case 'TC103_NonUSCommoditiesLimited' succeeded.
+08:38:28.229 Case 'TC102_USCommoditiesLimited' succeeded.
+08:38:28.292 Case 'TC106_InstrumentLimited' succeeded.
+08:38:28.417 Case 'TC105_CommodityLimited' succeeded.
+08:38:28.526 Case 'TC101_AllCommoditiesLimited' succeeded.
+08:38:28.667 Case 'TC104_ExchangeLimited' succeeded.
+08:38:28.839 Case 'TC313_AllCommoditiesInstrument' succeeded.
+08:38:29.042 Case 'TC312_DailyFutures' succeeded.
+08:38:43.839 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/FCMContractControls' execution finished. It took 0:02:16.347951.
+08:38:43.839 Test cases results: 70 total, 55 succeeded, 15 failed, 0 skipped.

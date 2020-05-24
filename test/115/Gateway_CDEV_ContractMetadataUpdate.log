@@ -1,0 +1,11 @@
+22:44:14.42  Test starded without threads
+20:44:14.953 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:44:14.953 Python Module Path 'Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate/PythonModules' added.
+20:44:14.953 Python Module Path 'ScriptKit' added.
+20:44:14.953 Python Module Path 'ScriptKit/TroubleMaker' added.
+20:44:15.547 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate' full execution.
+20:44:15.563 Suite '.'. [1 test cases, 0 sub-suites]
+20:44:31.438 Case 'AddingNewContracts' execution.
+20:51:53.800 Case 'AddingNewContracts' succeeded.
+20:51:56.988 Root suite 'Scripts/Gateway/SystemAreas/InternalInfrastructure/ContractMetadataUpdate' execution finished. It took 0:07:41.424902.
+20:51:56.988 Test cases results: 1 total, 1 succeeded, 0 failed, 0 skipped.

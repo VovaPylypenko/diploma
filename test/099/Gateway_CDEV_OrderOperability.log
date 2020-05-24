@@ -1,0 +1,29 @@
+ 8:14:40.54  Test starded without threads
+06:14:41.048 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:14:41.048 Python Module Path 'ScriptKit/TroubleMaker' added.
+06:14:41.048 Python Module Path 'ScriptKit' added.
+06:14:41.048 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderOperabilityUponRelease/PythonModules' added.
+06:14:41.392 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderOperabilityUponRelease' full execution.
+06:14:41.427 Suite '.'. [10 test cases, 0 sub-suites]
+06:14:47.642 Case 'ActivateActiveAtOrder' execution.
+06:14:50.798 Case 'ActivateActiveAtOrder' succeeded.
+06:14:50.861 Case 'ActivateParkedOrder' execution.
+06:14:51.299 Case 'ActivateParkedOrder' succeeded.
+06:14:51.361 Case 'CancelParkedOrder' execution.
+06:14:51.424 Case 'CancelParkedOrder' succeeded.
+06:14:51.470 Case 'CancelWorkingOrder' execution.
+06:14:51.548 Case 'CancelWorkingOrder' succeeded.
+06:14:51.611 Case 'FullFillWorkingOrder' execution.
+06:14:51.736 Case 'FullFillWorkingOrder' succeeded.
+06:14:51.784 Case 'ModifyParkActiveAtOrder' execution.
+06:15:01.877 Case 'ModifyParkActiveAtOrder' succeeded.
+06:15:01.939 Case 'ModifyParkedOrder' execution.
+06:15:02.049 Case 'ModifyParkedOrder' succeeded.
+06:15:02.127 Case 'ModifyPartFillWorkingOrder' execution.
+06:15:02.236 Case 'ModifyPartFillWorkingOrder' succeeded.
+06:15:02.283 Case 'ModifyWorkingOrder' execution.
+06:15:02.455 Case 'ModifyWorkingOrder' succeeded.
+06:15:02.534 Case 'ParkWorkingOrder' execution.
+06:15:02.814 Case 'ParkWorkingOrder' succeeded.
+06:15:03.768 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderOperabilityUponRelease' execution finished. It took 0:00:22.344451.
+06:15:03.768 Test cases results: 10 total, 10 succeeded, 0 failed, 0 skipped.

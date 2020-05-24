@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="12" testsuite_failed="False" time="10.15665" timestamp="2020-02-19T19:04:01.882512">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_FixInterface"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ClientSpecifiedOmnibusAccountSupport"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="ClientSpecifiedOmnibusAccountSupport" skipped="0" tests="12" testsuite_failed="False" time="10.15665" timestamp="2020-02-19T19:04:01.882512">
+  <testcase name="ActivateParkedOrder" status="run" time="0.343769" timestamp="2020-02-19T19:04:07.945246"/>
+  <testcase name="ClientOmnibusIsDefault" status="run" time="0.047175" timestamp="2020-02-19T19:04:08.335892"/>
+  <testcase name="ClientOmnibusIsNotAllowed" status="run" time="0.031215" timestamp="2020-02-19T19:04:08.429669"/>
+  <testcase name="ClientOmnibusIsNotListed" status="run" time="0.03123" timestamp="2020-02-19T19:04:08.507772"/>
+  <testcase name="ClientOmnibusOnAnotherFcm" status="run" time="0.046892" timestamp="2020-02-19T19:04:08.585907"/>
+  <testcase name="NoDefaultOmnibus" status="run" time="0.031279" timestamp="2020-02-19T19:04:08.679647"/>
+  <testcase name="OmnibusesAreProhibited" status="run" time="0.046904" timestamp="2020-02-19T19:04:08.757765"/>
+  <testcase name="PassengersOnOmnibus" status="run" time="0.062503" timestamp="2020-02-19T19:04:08.835904"/>
+  <testcase name="PlaceBracket" status="run" time="0.109354" timestamp="2020-02-19T19:04:08.945295"/>
+  <testcase name="PlaceNativeStrategyOrder" status="run" time="0.062489" timestamp="2020-02-19T19:04:09.117244"/>
+  <testcase name="PlaceOpoOrder" status="run" time="0.078108" timestamp="2020-02-19T19:04:09.242188"/>
+  <testcase name="PlaceOrder" status="run" time="0.108066" timestamp="2020-02-19T19:04:09.384104"/>
+ </testsuite>
+</testsuites>

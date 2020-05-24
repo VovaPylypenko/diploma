@@ -1,0 +1,249 @@
+ 1:31:59.22  Test starded without threads
+23:31:59.723 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:31:59.723 Python Module Path 'Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/Orders/QMOrdersQuery/PythonModules' added.
+23:31:59.723 Python Module Path 'Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/Orders/OrderQueryMatrix/PythonModules' added.
+23:31:59.723 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+23:31:59.723 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules' added.
+23:31:59.723 Python Module Path 'Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/Orders/PythonModules' added.
+23:31:59.723 Python Module Path 'Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/GenericQueries/PythonModules' added.
+23:31:59.723 Python Module Path 'Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries/GenericQueries/QMAllowedInstruments' added.
+23:31:59.723 Python Module Path 'ScriptKit' added.
+23:32:02.004 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries' full execution.
+23:32:02.051 Suite '.'. [0 test cases, 2 sub-suites]
+23:32:16.598 Suite 'GenericQueries'. [7 test cases, 4 sub-suites]
+23:32:16.739 Case 'GetAccountMappings' execution.
+23:32:16.817 Case 'GetAlgostrategies' execution.
+23:32:16.895 Case 'GetContractRootSettings' execution.
+23:32:16.942 Case 'GetAlgostrategies' succeeded.
+23:32:16.958 Case 'GetCurrentDayFills' execution.
+23:32:17.020 Case 'GetAccountMappings' succeeded.
+23:32:17.020 Case 'GetCurrentDayFillsWithExtras' execution.
+23:32:17.083 Case 'GetCurrentNetPosition' execution.
+23:32:17.161 Case 'GetPreviousBalances' execution.
+23:32:17.505 Case 'GetPreviousBalances' succeeded.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\GenericQueries\GetCurrentDayFillsWithExtras.tc.py", line 34, in <module>
+    OrderActionUtils.CreateOrder(contractName1, OrderSide.Buy, 2, OrderType.Limit, limitPrice=100),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:32:18.365 Case 'GetCurrentDayFillsWithExtras' failed.
+23:32:18.442 Case 'GetCurrentNetPosition' succeeded.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\GenericQueries\GetCurrentDayFills.tc.py", line 31, in <module>
+    OrderActionUtils.CreateOrder(contractName1, OrderSide.Buy, 2, OrderType.Limit, limitPrice=100),
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:32:18.614 Case 'GetCurrentDayFills' failed.
+23:32:22.333 Case 'GetContractRootSettings' succeeded.
+23:32:22.489 Suite 'GenericQueries\FullLocalQM'. [0 test cases, 7 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\GenericQueries\FullLocalQM\test_suite_su.py", line 95, in <module>
+    o1 = OrderActionUtils.CreateOrder('F.SF.SFEP.Z99', OrderSide.Buy, 1, OrderType.Limit, limitPrice=1)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:33:04.460 Suite 'GenericQueries\FullLocalQM' setup failed, child test cases and sub-suites will be skipped.
+23:33:04.616 Suite 'GenericQueries\PartialQty'. [0 test cases, 1 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\GenericQueries\PartialQty\test_suite.su.py", line 22, in <module>
+    o1 = OrderActionUtils.CreateOrder('F.SF.SFPQ.Z99', OrderSide.Buy, 1.543, OrderType.Limit, limitPrice=1)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:33:05.491 Suite 'GenericQueries\PartialQty' setup failed, child test cases and sub-suites will be skipped.
+23:33:05.678 Suite 'GenericQueries\PrivateLabelDataRestriction'. [5 test cases, 0 sub-suites]
+23:33:05.819 Case 'AllDataAllowed' execution.
+23:33:05.882 Case 'AXIWMD' execution.
+23:33:05.930 Case 'B2C2WMD' execution.
+23:33:06.007 Case 'NoDataAllowed' execution.
+23:33:06.053 Case 'Plotinus' execution.
+23:33:07.116 Case 'NoDataAllowed' succeeded.
+23:33:07.179 Case 'Plotinus' succeeded.
+23:33:07.179 Case 'AXIWMD' succeeded.
+23:33:07.210 Case 'AllDataAllowed' succeeded.
+23:33:07.352 Case 'B2C2WMD' succeeded.
+23:33:07.694 Suite 'GenericQueries\QMAllowedInstruments'. [0 test cases, 1 sub-suites]
+23:33:15.336 Suite 'GenericQueries\QMAllowedInstruments\QMAllowedInstruments_ts.py'. [18 test cases, 0 sub-suites]
+23:33:15.444 Case 'allowedinstruments_50_acct_chunked_DTD47' execution.
+23:33:15.538 Case 'allowedinstruments_50_acct_chunked_DTD48' execution.
+23:33:15.616 Case 'allowedinstruments_50_acct_chunked_DTD49' execution.
+23:33:15.710 Case 'allowedinstruments_50_acct_chunked_DTD50' execution.
+23:33:15.772 Case 'allowedinstruments_50_acct_chunked_DTD51' execution.
+23:33:15.835 Case 'allowedinstruments_50_acct_chunked_DTD52' execution.
+23:33:15.929 Case 'allowedinstruments_500_acct_unchunked_DTD47' execution.
+23:33:16.007 Case 'allowedinstruments_500_acct_unchunked_DTD48' execution.
+23:33:16.102 Case 'allowedinstruments_500_acct_unchunked_DTD49' execution.
+23:33:16.179 Case 'allowedinstruments_500_acct_unchunked_DTD50' execution.
+23:33:16.241 Case 'allowedinstruments_500_acct_unchunked_DTD51' execution.
+23:33:16.304 Case 'allowedinstruments_500_acct_unchunked_DTD52' execution.
+23:33:16.382 Case 'allowedinstruments_501_acct_unchunked_DTD47' execution.
+23:33:16.476 Case 'allowedinstruments_501_acct_unchunked_DTD47' succeeded.
+23:33:16.476 Case 'allowedinstruments_501_acct_unchunked_DTD48' execution.
+23:33:16.554 Case 'allowedinstruments_501_acct_unchunked_DTD48' succeeded.
+23:33:16.572 Case 'allowedinstruments_501_acct_unchunked_DTD49' execution.
+23:33:16.663 Case 'allowedinstruments_501_acct_unchunked_DTD50' execution.
+23:33:16.726 Case 'allowedinstruments_501_acct_unchunked_DTD49' succeeded.
+23:33:16.757 Case 'allowedinstruments_501_acct_unchunked_DTD52' execution.
+23:33:16.820 Case 'allowedinstruments_501_acct_unchunked_DTD52' succeeded.
+23:33:16.820 Case 'allowedinstruments_501_acct_unchunked_DTD50' succeeded.
+23:33:16.898 Case 'allowedinstruments_501_acct_unchunked_DTD51' execution.
+23:33:17.054 Case 'allowedinstruments_501_acct_unchunked_DTD51' succeeded.
+23:33:21.507 Case 'allowedinstruments_500_acct_unchunked_DTD47' succeeded.
+23:33:22.445 Case 'allowedinstruments_500_acct_unchunked_DTD49' succeeded.
+23:33:22.523 Case 'allowedinstruments_500_acct_unchunked_DTD51' succeeded.
+23:33:22.835 Case 'allowedinstruments_50_acct_chunked_DTD49' succeeded.
+23:33:22.898 Case 'allowedinstruments_50_acct_chunked_DTD50' succeeded.
+23:33:23.367 Case 'allowedinstruments_50_acct_chunked_DTD47' succeeded.
+23:33:24.070 Case 'allowedinstruments_50_acct_chunked_DTD52' succeeded.
+23:33:24.757 Case 'allowedinstruments_50_acct_chunked_DTD51' succeeded.
+23:33:25.023 Case 'allowedinstruments_500_acct_unchunked_DTD52' succeeded.
+23:33:26.273 Case 'allowedinstruments_500_acct_unchunked_DTD50' succeeded.
+23:33:26.367 Case 'allowedinstruments_500_acct_unchunked_DTD48' succeeded.
+23:33:26.445 Case 'allowedinstruments_50_acct_chunked_DTD48' succeeded.
+23:33:26.945 Suite 'Orders'. [11 test cases, 4 sub-suites]
+23:33:27.117 Case 'GetByAccountID' execution.
+23:33:27.195 Case 'GetByCQGID' execution.
+23:33:27.257 Case 'GetByGUID' execution.
+23:33:27.320 Case 'GetByOStat' execution.
+23:33:27.398 Case 'GetByOType' execution.
+23:33:27.445 Case 'GetBySide' execution.
+23:33:27.507 Case 'GetByTraderID' execution.
+23:33:27.633 Case 'GetByUEName' execution.
+23:33:27.680 Case 'GetOrderTrans' execution.
+23:33:27.773 Case 'SeparateOSPerTS' execution.
+23:33:27.867 Case 'SortByDuration' execution.
+23:33:44.916 Case 'GetOrderTrans' succeeded.
+23:33:47.164 Case 'SortByDuration' succeeded.
+23:33:48.649 Case 'SeparateOSPerTS' succeeded.
+23:34:06.931 Case 'GetByGUID' succeeded.
+23:34:10.025 Case 'GetByAccountID' succeeded.
+23:34:15.353 Case 'GetByUEName' succeeded.
+23:34:16.322 Case 'GetByCQGID' succeeded.
+23:34:26.556 Case 'GetBySide' succeeded.
+23:34:32.760 Case 'GetByTraderID' succeeded.
+23:34:51.526 Case 'GetByOStat' succeeded.
+23:35:26.371 Case 'GetByOType' succeeded.
+23:35:26.512 Suite 'Orders\OrderQueryMatrix'. [16 test cases, 0 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\OrderQueryMatrix\test_suite.su.py", line 196, in <module>
+    eventMatrix = OrderQueryMatrixPlaceOrders.PlaceOrderMatrix(exchangeFactory, traderOrderMatrix_DTD52, accountInfos, orderMatrix)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\OrderQueryMatrix\PythonModules\OrderQueryMatrixPlaceOrders.py", line 177, in PlaceOrderMatrix
+    eventDic[1] = Place_O1(exchangeFactory, trader, accotInfo) if orderNumberList[0] is not None else None
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\OrderQueryMatrix\PythonModules\OrderQueryMatrixPlaceOrders.py", line 27, in Place_O1
+    order = OrderActionUtils.CreateOrder(__CONTR2, OrderSide.Buy, 3, OrderType.Limit, limitPrice = 100)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:35:32.028 Suite 'Orders\OrderQueryMatrix' setup failed, child test cases and sub-suites will be skipped.
+23:35:32.293 Suite 'Orders\PartialQty'. [1 test cases, 0 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\PartialQty\test_suite.su.py", line 26, in <module>
+    'F.SF.SFPQ.{}99'.format(months[i]), sides[i], qtys[i], OrderType.Market) for i in range(9)]
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\PartialQty\test_suite.su.py", line 26, in <listcomp>
+    'F.SF.SFPQ.{}99'.format(months[i]), sides[i], qtys[i], OrderType.Market) for i in range(9)]
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:35:33.168 Suite 'Orders\PartialQty' setup failed, child test cases and sub-suites will be skipped.
+23:35:33.418 Suite 'Orders\PTOA'. [1 test cases, 1 sub-suites]
+23:35:36.809 Case 'AllocAccountElement' execution.
+23:35:48.184 Case 'AllocAccountElement' succeeded.
+23:35:48.356 Suite 'Orders\PTOA\Automodification'. [1 test cases, 0 sub-suites]
+23:35:48.497 Case 'AutomodificationMessage' execution.
+23:35:51.560 Case 'AutomodificationMessage' succeeded.
+23:35:53.966 Suite 'Orders\QMOrdersQuery'. [5 test cases, 0 sub-suites]
+23:35:59.497 Case 'CancelledOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\CancelledOrders.tc.py", line 21, in <module>
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT4, CONTR1, CONTR2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py", line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py", line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:35:59.560 Case 'CancelledOrders' failed.
+23:35:59.591 Case 'FilledOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\FilledOrders.tc.py", line 21, in <module>
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT3, CONTR1, CONTR2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py", line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py", line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:35:59.638 Case 'FilledOrders' failed.
+23:35:59.701 Case 'ParkedOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\ParkedOrders.tc.py", line 21, in <module>
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT5, CONTR1, CONTR2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py", line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py", line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:35:59.747 Case 'ParkedOrders' failed.
+23:35:59.763 Case 'RejectedOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\RejectedOrders.tc.py", line 21, in <module>
+    O1, O2, O3, O4, O5, O6, O7, O8 = QMOrdersQueryScenarios.create_orders(CONTR1, CONTR2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py", line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:35:59.810 Case 'RejectedOrders' failed.
+23:35:59.826 Case 'WorkingOrders' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries\Orders\QMOrdersQuery\WorkingOrders.tc.py", line 22, in <module>
+    eventList = QMOrdersQueryScenarios.place_orders(exchangeFactory, traderOrdersQuery_DTD47, ACCT2, CONTR1, CONTR2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py", line 55, in place_orders
+    O1, O2, O3, O4, O5, O6, O7, O8 = create_orders(CONTR1, CONTR2)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\DataQueries\AccountDataQueries\Orders\QMOrdersQuery\PythonModules\QMOrdersQueryScenarios.py", line 17, in create_orders
+    CONTR2, OrderSide.Buy, 4, OrderType.Limit, limitPrice = 1008, duration = OrderDuration.FillOrKill)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:35:59.857 Case 'WorkingOrders' failed.
+23:36:02.044 Root suite 'Scripts/Gateway/SystemAreas/DataQueries/AccountDataQueries' execution finished. It took 0:03:59.946448.
+23:36:02.044 Test cases results: 202 total, 41 succeeded, 7 failed, 154 skipped.

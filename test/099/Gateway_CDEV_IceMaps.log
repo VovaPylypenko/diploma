@@ -1,0 +1,62 @@
+ 5:40:03.73  Test starded without threads
+03:40:04.263 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+03:40:04.263 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/IceMaps/PythonModules' added.
+03:40:04.263 Python Module Path 'ScriptKit' added.
+03:40:04.263 Python Module Path 'Scripts/Gateway/PythonModules' added.
+03:40:04.747 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/IceMaps' full execution.
+03:40:04.778 Suite '.'. [0 test cases, 5 sub-suites]
+03:40:18.029 Suite 'BaseConfiguration'. [20 test cases, 0 sub-suites]
+03:43:18.847 Case 'Portfolio10' execution.
+03:43:18.879 Case 'Portfolio11' execution.
+03:43:18.910 Case 'Portfolio12' execution.
+03:43:18.941 Case 'Portfolio16' execution.
+03:43:19.019 Case 'Portfolio17' execution.
+03:43:19.035 Case 'Portfolio10' succeeded.
+03:43:19.051 Case 'Portfolio18' execution.
+03:43:19.113 Case 'Portfolio19' execution.
+03:43:19.160 Case 'Portfolio12' succeeded.
+03:43:19.176 Case 'Portfolio11' succeeded.
+03:43:19.176 Case 'Portfolio1' execution.
+03:43:19.208 Case 'Portfolio16' succeeded.
+03:43:19.208 Case 'Portfolio20' execution.
+03:43:19.254 Case 'Portfolio21' execution.
+03:43:19.285 Case 'Portfolio22' execution.
+03:43:19.316 Case 'Portfolio23' execution.
+03:43:19.379 Case 'Portfolio2' execution.
+03:43:19.410 Case 'Portfolio1' succeeded.
+03:43:19.441 Case 'Portfolio3' execution.
+03:43:19.488 Case 'Portfolio21' succeeded.
+03:43:19.535 Case 'Portfolio22' succeeded.
+03:43:19.582 Case 'Portfolio4' execution.
+03:43:19.660 Case 'Portfolio23' succeeded.
+03:43:19.660 Case 'Portfolio2' succeeded.
+03:43:19.691 Case 'Portfolio5' execution.
+03:43:19.707 Case 'Portfolio3' succeeded.
+03:43:19.769 Case 'Portfolio17' succeeded.
+03:43:19.785 Case 'Portfolio6' execution.
+03:43:19.847 Case 'Portfolio4' succeeded.
+03:43:19.926 Case 'Portfolio5' succeeded.
+03:43:19.941 Case 'Portfolio7' execution.
+03:43:20.004 Case 'Portfolio6' succeeded.
+03:43:20.019 Case 'Portfolio8' execution.
+03:43:20.113 Case 'Portfolio7' succeeded.
+03:43:20.129 Case 'Portfolio9' execution.
+03:43:20.254 Case 'Portfolio8' succeeded.
+03:43:20.316 Case 'Portfolio9' succeeded.
+03:43:20.365 Case 'Portfolio18' succeeded.
+03:43:20.504 Case 'Portfolio19' succeeded.
+03:43:20.582 Case 'Portfolio20' succeeded.
+03:43:20.832 Suite 'MarginMethodConfiguration'. [1 test cases, 0 sub-suites]
+03:43:20.910 Case 'Portfolio24' execution.
+03:49:22.250 Case 'Portfolio24' succeeded.
+03:49:22.375 Suite 'SumPercConfiguration'. [1 test cases, 0 sub-suites]
+03:49:22.484 Case 'Portfolio14' execution.
+03:49:22.781 Case 'Portfolio14' succeeded.
+03:49:22.922 Suite 'TopNumConfiguration'. [1 test cases, 0 sub-suites]
+03:52:23.616 Case 'Portfolio13' execution.
+03:52:24.006 Case 'Portfolio13' succeeded.
+03:52:24.131 Suite 'TopPercConfiguration'. [1 test cases, 0 sub-suites]
+03:55:24.793 Case 'Portfolio15' execution.
+03:55:25.153 Case 'Portfolio15' succeeded.
+03:55:25.996 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/IceMaps' execution finished. It took 0:15:21.233240.
+03:55:25.996 Test cases results: 24 total, 24 succeeded, 0 failed, 0 skipped.

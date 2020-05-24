@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="31" testsuite_failed="False" time="455.000562" timestamp="2020-02-19T16:50:31.472717">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="16"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CollateralSubscription"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="CollateralSubscription" skipped="0" tests="31" testsuite_failed="False" time="455.000562" timestamp="2020-02-19T16:50:31.472717">
+  <testsuite failures="0" name="CollateralReportValues" skipped="0" tests="4" testsuite_failed="False" time="73.440015" timestamp="2020-02-19T16:50:45.332540">
+   <testcase name="AllowableMarginCredit" status="run" time="33.610426" timestamp="2020-02-19T16:50:49.082637"/>
+   <testcase name="Loss" status="run" time="15.094153" timestamp="2020-02-19T16:50:49.113968"/>
+   <testcase name="Profit" status="run" time="25.188284" timestamp="2020-02-19T16:50:49.129523"/>
+   <testsuite failures="0" name="TotalMargin" skipped="0" tests="1" testsuite_failed="False" time="35.954241" timestamp="2020-02-19T16:51:22.724301">
+    <testcase name="TotalMargin" status="run" time="35.766751" timestamp="2020-02-19T16:51:22.818068"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="CollateralUpdates" skipped="0" tests="8" testsuite_failed="False" time="224.414487" timestamp="2020-02-19T16:51:58.787923">
+   <testcase name="AccountAuthorizationRemoval" status="run" time="21.188113" timestamp="2020-02-19T16:52:12.741528"/>
+   <testcase name="CastOrderActions" status="run" time="44.15763" timestamp="2020-02-19T16:52:12.757146"/>
+   <testcase name="GroupAccountOrderActions" status="run" time="10.281566" timestamp="2020-02-19T16:52:12.803983"/>
+   <testcase name="OminbusAccountOrderActions" status="run" time="10.140938" timestamp="2020-02-19T16:52:12.866484"/>
+   <testcase name="OrderTransactions" status="run" time="20.215602" timestamp="2020-02-19T16:52:12.901630"/>
+   <testsuite failures="0" name="CastAccountSettings" skipped="0" tests="1" testsuite_failed="False" time="98.269691" timestamp="2020-02-19T16:52:56.946013">
+    <testcase name="CastAccountSettings" status="run" time="98.097766" timestamp="2020-02-19T16:52:57.055407"/>
+   </testsuite>
+   <testsuite failures="0" name="CastPositionActions" skipped="0" tests="1" testsuite_failed="False" time="55.626942" timestamp="2020-02-19T16:54:35.231294">
+    <testcase name="CastPositionActions" status="run" time="55.470641" timestamp="2020-02-19T16:54:35.325085"/>
+   </testsuite>
+   <testsuite failures="0" name="CastTraderSettings" skipped="0" tests="1" testsuite_failed="False" time="12.156606" timestamp="2020-02-19T16:55:30.905167">
+    <testcase name="CastTraderSettings" status="run" time="12.01595" timestamp="2020-02-19T16:55:30.998984"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="PartialQty" skipped="0" tests="3" testsuite_failed="False" time="47.657965" timestamp="2020-02-19T16:55:43.296161">
+   <testcase name="CASTPositionMargin" status="run" time="44.751568" timestamp="2020-02-19T16:55:46.046309"/>
+   <testcase name="OrderMargin" status="run" time="30.329224" timestamp="2020-02-19T16:55:46.077517"/>
+   <testcase name="OrderPositionMargin" status="run" time="40.361036" timestamp="2020-02-19T16:55:46.108756"/>
+  </testsuite>
+  <testsuite failures="0" name="Subscription" skipped="0" tests="16" testsuite_failed="False" time="94.597144" timestamp="2020-02-19T16:56:30.985384">
+   <testcase name="Multi_Snapshot_NoInqId" status="run" time="7.7524999999999995" timestamp="2020-02-19T16:56:31.094828"/>
+   <testcase name="Multi_Snapshot" status="run" time="44.016816" timestamp="2020-02-19T16:56:31.110759"/>
+   <testcase name="Multi_Subscribe_NoInqId" status="run" time="83.862375" timestamp="2020-02-19T16:56:31.141629"/>
+   <testcase name="Multi_UnsubscribeOnSessionClose" status="run" time="75.752708" timestamp="2020-02-19T16:56:31.188520"/>
+   <testcase name="Multi_Unsubscribe_NoInqId" status="run" time="83.971773" timestamp="2020-02-19T16:56:31.563522"/>
+   <testcase name="Multi_Unsubscribe" status="run" time="83.784115" timestamp="2020-02-19T16:56:31.204280"/>
+   <testcase name="SubsTypes_InvalidSubscribe" status="run" time="3.500146" timestamp="2020-02-19T16:56:31.250991"/>
+   <testcase name="SubsTypes_InvalidUnsubscribe" status="run" time="63.720776" timestamp="2020-02-19T16:56:31.282508"/>
+   <testcase name="SubsTypes_Resubscribe" status="run" time="94.206488" timestamp="2020-02-19T16:56:31.313509"/>
+   <testcase name="SubsTypes_Snapshot_NoInqId" status="run" time="43.782833" timestamp="2020-02-19T16:56:31.360374"/>
+   <testcase name="SubsTypes_Snapshot" status="run" time="43.658023" timestamp="2020-02-19T16:56:31.391639"/>
+   <testcase name="SubsTypes_Subscribe_NoInqId" status="run" time="53.845329" timestamp="2020-02-19T16:56:31.423237"/>
+   <testcase name="SubsTypes_UnsubscribeByAccountid" status="run" time="53.986886" timestamp="2020-02-19T16:56:31.454133"/>
+   <testcase name="SubsTypes_UnsubscribeByACCTID" status="run" time="53.923804" timestamp="2020-02-19T16:56:31.501009"/>
+   <testcase name="SubsTypes_UnsubscribeOnSessionClose" status="run" time="55.830257" timestamp="2020-02-19T16:56:31.516629"/>
+   <testcase name="SubsTypes_Unsubscribe_NoInqId" status="run" time="53.986362" timestamp="2020-02-19T16:56:31.610406"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

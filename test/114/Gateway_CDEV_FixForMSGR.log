@@ -1,0 +1,134 @@
+ 1:49:42.80  Test starded without threads
+23:49:43.338 Python Module Path 'ScriptKit' added.
+23:49:43.338 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:49:43.338 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixForMessengers/Suites/PythonModules' added.
+23:49:43.869 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixForMessengers/Suites' filtered execution.
+23:49:43.901 Suite '.'. [0 test cases, 12 sub-suites]
+23:49:58.026 Suite 'AuthorizedTrading'. [2 test cases, 0 sub-suites]
+23:49:58.074 Case 'AuthorizedAccounts' execution.
+23:50:12.042 Case 'AuthorizedAccounts' succeeded.
+23:50:12.110 Case 'AuthorizedContracts' execution.
+23:51:47.561 Case 'AuthorizedContracts' succeeded.
+23:51:47.701 Suite 'CASTOperations'. [7 test cases, 0 sub-suites]
+23:51:48.498 Case 'Changing enabled markets in CAST' execution.
+Re-enable test after DE 508373701 is fixed
+23:51:50.623 Case 'Changing enabled markets in CAST' succeeded.
+23:51:50.704 Case 'Changing traders active state' execution.
+23:52:21.952 Case 'Changing traders active state' succeeded.
+23:52:21.999 Case 'Changing trading authorization to view only disables order placement' execution.
+Re-enable test after DE 508373701 is fixed
+23:52:24.109 Case 'Changing trading authorization to view only disables order placement' succeeded.
+23:52:24.187 Case 'Forced logoff' execution.
+23:52:37.828 Case 'Forced logoff' succeeded.
+23:52:37.890 Case 'RBRC_Contract' execution.
+23:53:00.188 Case 'RBRC_Contract' succeeded.
+23:53:00.266 Case 'RBRC_Instrument' execution.
+23:53:22.548 Case 'RBRC_Instrument' succeeded.
+23:53:22.611 Case 'Route-Based Risk Control' execution.
+23:53:44.939 Case 'Route-Based Risk Control' succeeded.
+23:53:45.049 Suite 'ExternalExecutionAccount'. [1 test cases, 0 sub-suites]
+23:53:45.127 Case 'External execution account' execution.
+23:54:13.409 Case 'External execution account' succeeded.
+23:54:13.518 Suite 'Fills'. [2 test cases, 0 sub-suites]
+23:54:13.581 Case 'Fill report' execution.
+23:54:15.722 Case 'Fill report' succeeded.
+23:54:15.800 Case 'Strategy fill report' execution.
+23:54:17.925 Case 'Strategy fill report' succeeded.
+23:54:18.034 Suite 'Logon'. [6 test cases, 0 sub-suites]
+23:54:18.097 Case 'LogonWithReset' execution.
+23:54:20.222 Case 'LogonWithReset' succeeded.
+23:54:20.300 Case 'SendLogonMessage' execution.
+23:54:24.613 Case 'SendLogonMessage' succeeded.
+23:54:24.675 Case 'SendLogonToNative' execution.
+23:54:26.425 Case 'SendLogonToNative' succeeded.
+23:54:26.488 Case 'SendLogonWithInvalidPassword' execution.
+23:54:27.581 Case 'SendLogonWithInvalidPassword' succeeded.
+23:54:27.644 Case 'SendLogonWithInvalidTraderClass' execution.
+23:54:28.753 Case 'SendLogonWithInvalidTraderClass' succeeded.
+23:54:28.817 Case 'SendLogonWithInvalidUsername' execution.
+23:54:29.910 Case 'SendLogonWithInvalidUsername' succeeded.
+23:54:30.066 Suite 'MixedFIXandNativeClient'. [2 test cases, 0 sub-suites]
+23:54:30.128 Case 'Compound' execution.
+23:54:34.269 Case 'Compound' succeeded.
+23:54:34.332 Case 'MixedNativeAndFIXClientRequests' execution.
+23:54:37.441 Case 'MixedNativeAndFIXClientRequests' succeeded.
+23:54:37.613 Suite 'ModifyCancelRejected'. [2 test cases, 0 sub-suites]
+23:54:37.676 Case 'OrderFromOtherAccount' execution.
+23:54:39.816 Case 'OrderFromOtherAccount' succeeded.
+23:54:39.864 Case 'OrderInPendingState' execution.
+23:54:42.988 Case 'OrderInPendingState' succeeded.
+23:54:43.160 Suite 'OmnibusAccounts'. [2 test cases, 0 sub-suites]
+23:54:43.238 Case 'ExecAcctIDCalculationForInternalOmnibus' execution.
+23:54:46.551 Case 'ExecAcctIDCalculationForInternalOmnibus' succeeded.
+23:54:46.613 Case 'ExecAcctIDCalculationForRegularOmnibus' execution.
+23:54:50.363 Case 'ExecAcctIDCalculationForRegularOmnibus' succeeded.
+23:54:50.520 Suite 'OrderEventsDispatching'. [1 test cases, 0 sub-suites]
+23:54:50.613 Case 'OrderEventsDispatching' execution.
+23:55:02.754 Case 'OrderEventsDispatching' succeeded.
+23:55:02.926 Suite 'OrderMassCancelRequest'. [5 test cases, 0 sub-suites]
+23:55:03.020 Case 'Mass cancel for order failed to modify' execution.
+23:55:05.098 Case 'Mass cancel for order failed to modify' succeeded.
+23:55:05.176 Case 'Mass cancel for order failed to place' execution.
+23:55:08.317 Case 'Mass cancel for order failed to place' succeeded.
+23:55:08.411 Case 'Mass cancel of orders in various states' execution.
+23:55:11.567 Case 'Mass cancel of orders in various states' succeeded.
+23:55:11.661 Case 'Mass cancel request for not authorized account' execution.
+23:55:13.786 Case 'Mass cancel request for not authorized account' succeeded.
+23:55:13.848 Case 'Mass cancel request type' execution.
+23:55:16.958 Case 'Mass cancel request type' succeeded.
+23:55:17.100 Suite 'OrderStatus'. [3 test cases, 0 sub-suites]
+23:55:17.147 Case 'Order Mass Status Request reports all working or filled orders' execution.
+23:55:20.271 Case 'Order Mass Status Request reports all working or filled orders' succeeded.
+23:55:20.349 Case 'Order Status Request' execution.
+23:55:23.474 Case 'Order Status Request' succeeded.
+23:55:23.552 Case 'Orders are restored after messenger restart' execution.
+
+SERVICE_NAME: CQGCmeILink2F4MTest1 
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 3  STOP_PENDING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CQGCmeILink2F4MTest1 
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 2  START_PENDING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+        PID                : 5044
+        FLAGS              : 
+
+SERVICE_NAME: CQGCmeILink2F4MTest1 
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 3  STOP_PENDING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CQGCmeILink2F4MTest1 
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 2  START_PENDING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x7d0
+        PID                : 10272
+        FLAGS              : 
+23:55:49.975 Case 'Orders are restored after messenger restart' succeeded.
+23:55:50.116 Suite 'PlaceModifyCancel'. [3 test cases, 0 sub-suites]
+23:55:50.193 Case 'CheckOrderRequestFields' execution.
+23:55:53.350 Case 'CheckOrderRequestFields' succeeded.
+23:55:53.428 Case 'PlaceModifyCancel' execution.
+23:56:12.569 Case 'PlaceModifyCancel' succeeded.
+23:56:12.632 Case 'SyntheticOrders' execution.
+23:56:14.772 Case 'SyntheticOrders' succeeded.
+23:56:15.726 Root suite 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixForMessengers/Suites' execution finished. It took 0:06:31.809330.
+23:56:15.726 Test cases results: 36 total, 36 succeeded, 0 failed, 0 skipped.

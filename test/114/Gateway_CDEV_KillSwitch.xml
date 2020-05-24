@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="49" tests="49" testsuite_failed="False" time="41.563704" timestamp="2020-02-19T00:25:26.881288">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_KS"/>
+  <property name="scripts-cfg-instance" value="SF_KS"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/KillSwitch"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="KillSwitch" skipped="49" tests="49" testsuite_failed="False" time="41.563704" timestamp="2020-02-19T00:25:26.881288">
+  <testcase name="CancelRejects" status="notrun"/>
+  <testsuite failures="0" name="CastUserScope" skipped="3" tests="3" testsuite_failed="False">
+   <testcase name="FcmScopeAuthorized" status="notrun"/>
+   <testcase name="SalesRepScopeAuthorized" status="notrun"/>
+   <testcase name="FcmScopeUnauthorized" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="IrrelevantRequest" skipped="14" tests="14" testsuite_failed="False">
+   <testcase name="IrrelevantAccountFcm" status="notrun"/>
+   <testcase name="IrrelevantAccountCustomer" status="notrun"/>
+   <testcase name="IrrelevantAccountSs" status="notrun"/>
+   <testcase name="IrrelevantAccountTrader" status="notrun"/>
+   <testcase name="IrrelevantAccountRoute" status="notrun"/>
+   <testcase name="IrrelevantTraderFcm" status="notrun"/>
+   <testcase name="IrrelevantTraderCustomer" status="notrun"/>
+   <testcase name="IrrelevantTraderSs" status="notrun"/>
+   <testcase name="IrrelevantTraderRoute" status="notrun"/>
+   <testcase name="IrrelevantSsFcm" status="notrun"/>
+   <testcase name="IrrelevantSsCustomer" status="notrun"/>
+   <testcase name="IrrelevantSsRoute" status="notrun"/>
+   <testcase name="IrrelevantCustomerFcm" status="notrun"/>
+   <testcase name="IrrelevantCustomerRoute" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="MultipleFilterOptions" skipped="26" tests="26" testsuite_failed="False">
+   <testcase name="CurrentDayOnly_N" status="notrun"/>
+   <testcase name="CurrentDayOnly_Y" status="notrun"/>
+   <testcase name="ParkedOnly_Y" status="notrun"/>
+   <testcase name="Side_Both" status="notrun"/>
+   <testcase name="Side_Sell" status="notrun"/>
+   <testcase name="Contract_All" status="notrun"/>
+   <testcase name="Contract_B" status="notrun"/>
+   <testcase name="Contract_A_B" status="notrun"/>
+   <testcase name="RouteGroup_All" status="notrun"/>
+   <testcase name="RouteGroup_2" status="notrun"/>
+   <testcase name="RouteGroup_1_2" status="notrun"/>
+   <testcase name="Trader_All" status="notrun"/>
+   <testcase name="Trader_B" status="notrun"/>
+   <testcase name="Trader_A_B" status="notrun"/>
+   <testcase name="Account_All" status="notrun"/>
+   <testcase name="Account_17" status="notrun"/>
+   <testcase name="Account_18_181" status="notrun"/>
+   <testcase name="SS_All" status="notrun"/>
+   <testcase name="SS_A2" status="notrun"/>
+   <testcase name="SS_A_A2" status="notrun"/>
+   <testcase name="Customer_All" status="notrun"/>
+   <testcase name="Customer_B" status="notrun"/>
+   <testcase name="Customer_A_B" status="notrun"/>
+   <testcase name="FCM_All" status="notrun"/>
+   <testcase name="FCM_B" status="notrun"/>
+   <testcase name="FCM_A_B" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="RequestToMultipleRS" skipped="2" tests="2" testsuite_failed="False">
+   <testcase name="1_TwoRsAvailable" status="notrun"/>
+   <testcase name="2_OneRsUnavailable" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="SingleFilterOptions" skipped="3" tests="3" testsuite_failed="False">
+   <testcase name="Fcm" status="notrun"/>
+   <testcase name="Ss" status="notrun"/>
+   <testcase name="Customer" status="notrun"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

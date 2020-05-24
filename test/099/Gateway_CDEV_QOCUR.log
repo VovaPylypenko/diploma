@@ -1,0 +1,71 @@
+ 7:48:17.68  Test starded without threads
+05:48:18.166 Python Module Path 'Scripts/Gateway/SystemAreas/DataQueries/QOCUR/PythonModules' added.
+05:48:18.166 Python Module Path 'ScriptKit' added.
+05:48:18.166 Python Module Path 'ScriptKit/TroubleMaker' added.
+05:48:18.166 Python Module Path 'Scripts/Gateway/PythonModules' added.
+05:48:18.525 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/DataQueries/QOCUR' full execution.
+05:48:18.557 Suite '.'. [0 test cases, 2 sub-suites]
+05:48:50.276 Suite 'LocalQM_Available'. [15 test cases, 0 sub-suites]
+05:48:50.355 Case 'Trader10' execution.
+05:48:50.402 Case 'Trader11' execution.
+05:48:50.495 Case 'Trader12' execution.
+05:48:50.526 Case 'Trader13' execution.
+05:48:50.558 Case 'Trader14' execution.
+05:48:50.605 Case 'Trader15' execution.
+05:48:50.651 Case 'Trader1' execution.
+05:48:50.667 Case 'Trader2' execution.
+05:48:50.717 Case 'Trader3' execution.
+05:48:50.745 Case 'Trader4' execution.
+05:48:50.792 Case 'Trader5' execution.
+05:48:50.855 Case 'Trader6' execution.
+05:48:50.917 Case 'Trader7' execution.
+05:48:50.995 Case 'Trader8' execution.
+05:48:51.058 Case 'Trader9' execution.
+05:48:52.136 Case 'Trader14' succeeded.
+05:48:54.621 Case 'Trader15' succeeded.
+05:48:56.730 Case 'Trader11' succeeded.
+05:49:14.965 Case 'Trader13' succeeded.
+05:49:21.918 Case 'Trader12' succeeded.
+05:49:26.059 Case 'Trader9' succeeded.
+05:49:26.090 Case 'Trader10' succeeded.
+05:49:27.840 Case 'Trader5' succeeded.
+05:49:34.356 Case 'Trader4' succeeded.
+05:49:34.497 Case 'Trader8' succeeded.
+05:49:34.669 Case 'Trader7' succeeded.
+05:49:42.796 Case 'Trader3' succeeded.
+05:49:44.216 Case 'Trader6' succeeded.
+05:49:45.122 Case 'Trader2' succeeded.
+05:49:45.450 Case 'Trader1' succeeded.
+05:49:45.575 Suite 'LocalQM_Unavailable'. [15 test cases, 0 sub-suites]
+05:49:48.294 Case 'Trader10' execution.
+05:49:48.325 Case 'Trader11' execution.
+05:49:48.372 Case 'Trader12' execution.
+05:49:48.419 Case 'Trader13' execution.
+05:49:48.466 Case 'Trader14' execution.
+05:49:48.529 Case 'Trader15' execution.
+05:49:48.560 Case 'Trader1' execution.
+05:49:48.622 Case 'Trader2' execution.
+05:49:48.669 Case 'Trader3' execution.
+05:49:48.732 Case 'Trader4' execution.
+05:49:48.794 Case 'Trader5' execution.
+05:49:48.857 Case 'Trader6' execution.
+05:49:48.935 Case 'Trader7' execution.
+05:49:48.997 Case 'Trader8' execution.
+05:49:49.062 Case 'Trader9' execution.
+05:49:50.253 Case 'Trader14' succeeded.
+05:49:50.513 Case 'Trader15' succeeded.
+05:49:51.747 Case 'Trader11' succeeded.
+05:50:16.139 Case 'Trader13' succeeded.
+05:50:17.123 Case 'Trader12' succeeded.
+05:50:29.530 Case 'Trader10' succeeded.
+05:50:32.468 Case 'Trader9' succeeded.
+05:50:33.030 Case 'Trader5' succeeded.
+05:50:33.126 Case 'Trader8' succeeded.
+05:50:34.499 Case 'Trader7' succeeded.
+05:50:34.796 Case 'Trader4' succeeded.
+05:50:44.593 Case 'Trader2' succeeded.
+05:50:44.812 Case 'Trader1' succeeded.
+05:50:45.187 Case 'Trader3' succeeded.
+05:50:45.515 Case 'Trader6' succeeded.
+05:50:45.952 Root suite 'Scripts/Gateway/SystemAreas/DataQueries/QOCUR' execution finished. It took 0:02:27.396055.
+05:50:45.952 Test cases results: 30 total, 30 succeeded, 0 failed, 0 skipped.

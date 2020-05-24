@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="21" testsuite_failed="False" time="798.012254" timestamp="2020-02-06T04:36:04.615832">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites/FlexibleAuthentication/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="../cqgcommon/Proto/CMS/classes/python"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SMMT"/>
+  <property name="scripts-cfg-instance" value="SF_SMMT"/>
+  <property name="threads-count" value="8"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Suites" skipped="0" tests="21" testsuite_failed="False" time="798.012254" timestamp="2020-02-06T04:36:04.615832">
+  <testsuite failures="0" name="Lockout" skipped="0" tests="21" testsuite_failed="False" time="796.059058" timestamp="2020-02-06T04:36:06.506520">
+   <testcase name="01_ICForceLogoffOnASNotify" status="run" time="71.877596" timestamp="2020-02-06T04:36:08.506599"/>
+   <testcase name="InvalidCASTAuthKey" status="run" time="69.627542" timestamp="2020-02-06T04:36:08.537850"/>
+   <testcase name="LimitSessionCntPerLocation" status="run" time="67.377446" timestamp="2020-02-06T04:36:08.553475"/>
+   <testsuite failures="0" name="02_SelectingASInstance" skipped="0" tests="1" testsuite_failed="False" time="330.324391" timestamp="2020-02-06T04:37:20.415423">
+    <testcase name="SelectingASInstance" status="run" time="330.199388" timestamp="2020-02-06T04:37:20.493582"/>
+   </testsuite>
+   <testsuite failures="0" name="03_LogonToGWKicksIC" skipped="0" tests="8" testsuite_failed="False" time="40.298294" timestamp="2020-02-06T04:42:50.786712">
+    <testcase name="Params1" status="run" time="35.938285" timestamp="2020-02-06T04:42:54.912358"/>
+    <testcase name="Params2" status="run" time="33.657498" timestamp="2020-02-06T04:42:54.943089"/>
+    <testcase name="Params3" status="run" time="33.876198" timestamp="2020-02-06T04:42:54.974349"/>
+    <testcase name="Params4" status="run" time="33.907533" timestamp="2020-02-06T04:42:55.005615"/>
+    <testcase name="Params5" status="run" time="33.016777" timestamp="2020-02-06T04:42:55.036864"/>
+    <testcase name="Params6" status="run" time="33.000946" timestamp="2020-02-06T04:42:55.068345"/>
+    <testcase name="Params7" status="run" time="33.07926" timestamp="2020-02-06T04:42:55.099372"/>
+    <testcase name="Params8" status="run" time="33.048055" timestamp="2020-02-06T04:42:55.130577"/>
+   </testsuite>
+   <testsuite failures="0" name="ASNotificationOnMobileLogin" skipped="0" tests="1" testsuite_failed="False" time="5.859544" timestamp="2020-02-06T04:43:31.116293">
+    <testcase name="ASNotificationOnMofileLogin" status="run" time="5.656448" timestamp="2020-02-06T04:43:31.241289"/>
+   </testsuite>
+   <testsuite failures="0" name="ICLogonKicksGWSessions" skipped="0" tests="5" testsuite_failed="False" time="154.286704" timestamp="2020-02-06T04:43:37.007090">
+    <testcase name="Params1" status="run" time="149.349156" timestamp="2020-02-06T04:43:37.085220"/>
+    <testcase name="Params2" status="run" time="153.974154" timestamp="2020-02-06T04:43:37.116486"/>
+    <testcase name="Params3" status="run" time="149.364656" timestamp="2020-02-06T04:43:37.163333"/>
+    <testcase name="Params4" status="run" time="149.25528" timestamp="2020-02-06T04:43:37.194587"/>
+    <testcase name="Params5" status="run" time="149.427157" timestamp="2020-02-06T04:43:37.225828"/>
+   </testsuite>
+   <testsuite failures="0" name="NumSessionsPerIP_Parameter" skipped="0" tests="3" testsuite_failed="False" time="191.146791" timestamp="2020-02-06T04:46:11.340662">
+    <testcase name="Steps_1_to_2" status="run" time="67.596034" timestamp="2020-02-06T04:46:11.434412"/>
+    <testcase name="Steps_3_to_6" status="run" time="189.740495" timestamp="2020-02-06T04:46:11.481303"/>
+    <testcase name="Steps_7_to_10" status="run" time="190.756202" timestamp="2020-02-06T04:46:11.512535"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

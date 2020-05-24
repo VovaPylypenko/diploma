@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="34" skipped="18" tests="53" testsuite_failed="True" time="116.612723" timestamp="2020-02-19T00:26:38.539588">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects/AccountSubscription/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="34" name="SmallProjects" skipped="18" tests="53" testsuite_failed="True" time="116.612723" timestamp="2020-02-19T00:26:38.539588">
+  <testsuite failures="2" name="AccountSubscription" skipped="18" tests="21" testsuite_failed="True" time="29.719601" timestamp="2020-02-19T00:26:38.633334">
+   <testcase name="PlaceCancelOrderForDifferentAccounts" status="run" time="0.047004" timestamp="2020-02-19T00:26:59.633932">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\AccountSubscription\PlaceCancelOrderForDifferentAccounts.tc.py&quot;, line 36, in &lt;module&gt;
+    PlaceCancelOrderForDifferentAccounts(testTraderList, acountList, orderContext)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\SmallProjects\AccountSubscription\PythonModules\AccountSubscriptionScenarios.py&quot;, line 31, in PlaceCancelOrderForDifferentAccounts
+    PlaceCancelOrder([trader1, trader2, trader3], orderContext, account1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\SmallProjects\AccountSubscription\PythonModules\AccountSubscriptionActions.py&quot;, line 59, in PlaceCancelOrder
+    plOrder = PlaceOrder(orderContext, traderList[0], acctInfo).order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\SmallProjects\AccountSubscription\PythonModules\AccountSubscriptionActions.py&quot;, line 19, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\AccountSubscription\PlaceCancelOrderForDifferentAccounts.tc.py&quot;, line 36, in &lt;module&gt;
+    PlaceCancelOrderForDifferentAccounts(testTraderList, acountList, orderContext)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\SmallProjects\AccountSubscription\PythonModules\AccountSubscriptionScenarios.py&quot;, line 31, in PlaceCancelOrderForDifferentAccounts
+    PlaceCancelOrder([trader1, trader2, trader3], orderContext, account1)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\SmallProjects\AccountSubscription\PythonModules\AccountSubscriptionActions.py&quot;, line 59, in PlaceCancelOrder
+    plOrder = PlaceOrder(orderContext, traderList[0], acctInfo).order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\SmallProjects\AccountSubscription\PythonModules\AccountSubscriptionActions.py&quot;, line 19, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="PlaceOrderBeforeReceivedSubscibeAck" status="run" time="7.359456" timestamp="2020-02-19T00:26:59.680936"/>
+   <testcase name="TradersFromDifferentSMLocations" status="run" time="0.04632" timestamp="2020-02-19T00:26:59.728239">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\AccountSubscription\TradersFromDifferentSMLocations.tc.py&quot;, line 21, in &lt;module&gt;
+    plOrder = PlaceOrder(context, trader6, acctInfo).order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\SmallProjects\AccountSubscription\PythonModules\AccountSubscriptionActions.py&quot;, line 19, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\AccountSubscription\TradersFromDifferentSMLocations.tc.py&quot;, line 21, in &lt;module&gt;
+    plOrder = PlaceOrder(context, trader6, acctInfo).order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\SmallProjects\AccountSubscription\PythonModules\AccountSubscriptionActions.py&quot;, line 19, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testsuite failures="0" name="PartialQty" skipped="18" tests="18" testsuite_failed="False" time="0.938626" timestamp="2020-02-19T00:27:07.071719">
+    <testsuite failures="0" name="PartialQtyEnabledAccounts" skipped="18" tests="18" testsuite_failed="False">
+     <testcase name="TrueIC47" status="notrun"/>
+     <testcase name="TrueIC48" status="notrun"/>
+     <testcase name="TrueIC49" status="notrun"/>
+     <testcase name="TrueIC50" status="notrun"/>
+     <testcase name="TrueIC51" status="notrun"/>
+     <testcase name="TrueIC52" status="notrun"/>
+     <testcase name="TrueWA47" status="notrun"/>
+     <testcase name="TrueWA48" status="notrun"/>
+     <testcase name="TrueWA49" status="notrun"/>
+     <testcase name="TrueWA50" status="notrun"/>
+     <testcase name="TrueWA51" status="notrun"/>
+     <testcase name="TrueWA52" status="notrun"/>
+     <testcase name="TrueFC51" status="notrun"/>
+     <testcase name="TrueFC52" status="notrun"/>
+     <testcase name="FalseIC51" status="notrun"/>
+     <testcase name="FalseIC52" status="notrun"/>
+     <testcase name="FalseIWA51" status="notrun"/>
+     <testcase name="FalseIWA52" status="notrun"/>
+    </testsuite>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="11" name="DiscretionaryOrderPlacement" skipped="0" tests="11" testsuite_failed="True" time="11.563463" timestamp="2020-02-19T00:27:08.415428">
+   <testsuite failures="3" name="Basic" skipped="0" tests="3" testsuite_failed="True" time="0.312091" timestamp="2020-02-19T00:27:12.478468">
+    <testcase name="01_ModifyCancel" status="run" time="0.014896" timestamp="2020-02-19T00:27:12.572544">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Basic\01_ModifyCancel_tc.py&quot;, line 8, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 3, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 7)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Basic\01_ModifyCancel_tc.py&quot;, line 8, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 3, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 7)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="02_ModifyFill" status="run" time="0.030771" timestamp="2020-02-19T00:27:12.603544">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Basic\02_ModifyFill_tc.py&quot;, line 8, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 3, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 7)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Basic\02_ModifyFill_tc.py&quot;, line 8, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 3, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 7)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="05_OrderUpdate" status="run" time="0.015249" timestamp="2020-02-19T00:27:12.681577">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Basic\05_OrderUpdate_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 3, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 7)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Basic\05_OrderUpdate_tc.py&quot;, line 13, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 3, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 7)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+   <testsuite failures="5" name="Complex" skipped="0" tests="5" testsuite_failed="True" time="2.390675" timestamp="2020-02-19T00:27:12.821826">
+    <testcase name="03_Trails" status="run" time="2.171947" timestamp="2020-02-19T00:27:12.962448">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\03_Trails_tc.py&quot;, line 20, in &lt;module&gt;
+    , instructions=[OrderExecInstruction.Trail, OrderExecInstruction.Discretion], trailOffset=trailOffset, trailPeg=OrderTrailPeg.LastTrade, discretionOffset = 9)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\03_Trails_tc.py&quot;, line 20, in &lt;module&gt;
+    , instructions=[OrderExecInstruction.Trail, OrderExecInstruction.Discretion], trailOffset=trailOffset, trailPeg=OrderTrailPeg.LastTrade, discretionOffset = 9)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="04_Iceberg" status="run" time="0.015629" timestamp="2020-02-19T00:27:13.009313">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\04_Iceberg_tc.py&quot;, line 9, in &lt;module&gt;
+    , instructions=[OrderExecInstruction.Iceberg, OrderExecInstruction.Discretion], visibleSize=2, discretionOffset = 9)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\04_Iceberg_tc.py&quot;, line 9, in &lt;module&gt;
+    , instructions=[OrderExecInstruction.Iceberg, OrderExecInstruction.Discretion], visibleSize=2, discretionOffset = 9)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="05_NativeSpread" status="run" time="0.031249" timestamp="2020-02-19T00:27:13.040571">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\05_NativeSpread_tc.py&quot;, line 14, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epw1u99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 4)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\05_NativeSpread_tc.py&quot;, line 14, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epw1u99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 4)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="06_OPO" status="run" time="0.031243" timestamp="2020-02-19T00:27:13.087459">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\06_OPO_tc.py&quot;, line 35, in &lt;module&gt;
+    order = placeOPO()
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\06_OPO_tc.py&quot;, line 10, in placeOPO
+    o1Leg1 = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 3)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\06_OPO_tc.py&quot;, line 35, in &lt;module&gt;
+    order = placeOPO()
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\06_OPO_tc.py&quot;, line 10, in placeOPO
+    o1Leg1 = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 3)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="07_Parked" status="run" time="0.04727" timestamp="2020-02-19T00:27:13.134320">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\07_Parked_tc.py&quot;, line 7, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 5)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Complex\07_Parked_tc.py&quot;, line 7, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ], discretionOffset = 5)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+   <testsuite failures="3" name="Rejections" skipped="0" tests="3" testsuite_failed="True" time="0.39062" timestamp="2020-02-19T00:27:15.243768">
+    <testcase name="02_ExtraDiscrOffset_Place" status="run" time="0.015646" timestamp="2020-02-19T00:27:15.384382">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Rejections\02_ExtraDiscrOffset_Place_tc.py&quot;, line 8, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 4, OrderType.Limit, limitPrice=123, discretionOffset = 9)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Rejections\02_ExtraDiscrOffset_Place_tc.py&quot;, line 8, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 4, OrderType.Limit, limitPrice=123, discretionOffset = 9)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="03_ExtraDiscrOffset_Modify" status="run" time="0.031282" timestamp="2020-02-19T00:27:15.415648">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Rejections\03_ExtraDiscrOffset_Modify_tc.py&quot;, line 8, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=123)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Rejections\03_ExtraDiscrOffset_Modify_tc.py&quot;, line 8, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 1, OrderType.Limit, limitPrice=123)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="04_MissingDiscrOffset" status="run" time="0.015821" timestamp="2020-02-19T00:27:15.462510">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Rejections\04_MissingDiscrOffset_tc.py&quot;, line 8, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 4, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\DiscretionaryOrderPlacement\Rejections\04_MissingDiscrOffset_tc.py&quot;, line 8, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(epz99, OrderSide.Buy, 4, OrderType.Limit, limitPrice=123, instructions=[OrderExecInstruction.Discretion, ])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="2" name="ErisDigital" skipped="0" tests="2" testsuite_failed="True" time="14.43804" timestamp="2020-02-19T00:27:20.040770">
+   <testsuite failures="2" name="Basic" skipped="0" tests="2" testsuite_failed="True" time="0.294301" timestamp="2020-02-19T00:27:31.121827">
+    <testcase name="01_ModifyCancel" status="run" time="0.015569" timestamp="2020-02-19T00:27:31.228637">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ErisDigital\Basic\01_ModifyCancel_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 2, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ErisDigital\Basic\01_ModifyCancel_tc.py&quot;, line 6, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 2, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="02_ModifyFill" status="run" time="0.031248" timestamp="2020-02-19T00:27:31.259846">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ErisDigital\Basic\02_ModifyFill_tc.py&quot;, line 9, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 2, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ErisDigital\Basic\02_ModifyFill_tc.py&quot;, line 9, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 2, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="3" name="ExcludeFromRiskCalculation" skipped="0" tests="3" testsuite_failed="True" time="14.281673" timestamp="2020-02-19T00:27:34.541184">
+   <testcase name="ExcludeExpiredFill" status="run" time="0.046874" timestamp="2020-02-19T00:27:47.697810">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ExcludeFromRiskCalculation\ExcludeExpiredFill.tc.py&quot;, line 12, in &lt;module&gt;
+    order_1_1 = OrderActionUtils.CreateOrder(futureContract, OrderSide.Sell, 1, OrderType.Market, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ExcludeFromRiskCalculation\ExcludeExpiredFill.tc.py&quot;, line 12, in &lt;module&gt;
+    order_1_1 = OrderActionUtils.CreateOrder(futureContract, OrderSide.Sell, 1, OrderType.Market, limitPrice = 110)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ExcludeExpiredFillOmnibus" status="run" time="0.03125" timestamp="2020-02-19T00:27:47.822813">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ExcludeFromRiskCalculation\ExcludeExpiredFillOmnibus.tc.py&quot;, line 10, in &lt;module&gt;
+    orderToPlace = OrderActionUtils.CreateOrder(futureContract, OrderSide.Buy, 1, OrderType.Limit, limitPrice = 111)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ExcludeFromRiskCalculation\ExcludeExpiredFillOmnibus.tc.py&quot;, line 10, in &lt;module&gt;
+    orderToPlace = OrderActionUtils.CreateOrder(futureContract, OrderSide.Buy, 1, OrderType.Limit, limitPrice = 111)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ExcludeWorkingOrder" status="run" time="0.031236" timestamp="2020-02-19T00:27:47.760325">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ExcludeFromRiskCalculation\ExcludeWorkingOrder.tc.py&quot;, line 10, in &lt;module&gt;
+    largeOrder = OrderActionUtils.CreateOrder(futureContract, OrderSide.Buy, NewOrderQuantity, OrderType.Limit, limitPrice = 111)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ExcludeFromRiskCalculation\ExcludeWorkingOrder.tc.py&quot;, line 10, in &lt;module&gt;
+    largeOrder = OrderActionUtils.CreateOrder(futureContract, OrderSide.Buy, NewOrderQuantity, OrderType.Limit, limitPrice = 111)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="7" name="ManualOrderIdentifier" skipped="0" tests="7" testsuite_failed="True" time="7.297089" timestamp="2020-02-19T00:27:48.885363">
+   <testcase name="AL_UserEnd" status="run" time="0.047445" timestamp="2020-02-19T00:27:52.198129">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\AL_UserEnd_tc.py&quot;, line 10, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 2, OrderType.Market, ueName=ueName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\AL_UserEnd_tc.py&quot;, line 10, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 2, OrderType.Market, ueName=ueName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ATR_UserEnd" status="run" time="0.030499" timestamp="2020-02-19T00:27:52.245574">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\ATR_UserEnd_tc.py&quot;, line 10, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 8, OrderType.Limit, limitPrice=110, ueName=ueName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\ATR_UserEnd_tc.py&quot;, line 10, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 8, OrderType.Limit, limitPrice=110, ueName=ueName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="AT_UserEnd" status="run" time="0.031232" timestamp="2020-02-19T00:27:52.291711">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\AT_UserEnd_tc.py&quot;, line 10, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 11, OrderType.Stop, stopPrice=110, ueName=ueName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\AT_UserEnd_tc.py&quot;, line 10, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Sell, 11, OrderType.Stop, stopPrice=110, ueName=ueName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="Automatic" status="run" time="0.031236" timestamp="2020-02-19T00:27:52.338583">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\Automatic_tc.py&quot;, line 9, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100, manualOrder=False)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\Automatic_tc.py&quot;, line 9, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 5, OrderType.Limit, limitPrice=100, manualOrder=False)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CO_UserEnd" status="run" time="0.031226" timestamp="2020-02-19T00:27:52.385482">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\CO_UserEnd_tc.py&quot;, line 10, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Market, ueName=ueName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\CO_UserEnd_tc.py&quot;, line 10, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 1, OrderType.Market, ueName=ueName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="EXL_UserEnd" status="run" time="0.046989" timestamp="2020-02-19T00:27:52.432323">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\EXL_UserEnd_tc.py&quot;, line 10, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 15, OrderType.Stop, stopPrice=100, ueName=ueName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\EXL_UserEnd_tc.py&quot;, line 10, in &lt;module&gt;
+    order = OrderActionUtils.CreateOrder(contract, OrderSide.Buy, 15, OrderType.Stop, stopPrice=100, ueName=ueName)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="Manual_EXL_UserEnd" status="run" time="0.031225" timestamp="2020-02-19T00:27:52.541726">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\Manual_EXL_UserEnd_tc.py&quot;, line 16, in &lt;module&gt;
+    ueName='EXLuepart-12361720', manualOrder=True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\ManualOrderIdentifier\Manual_EXL_UserEnd_tc.py&quot;, line 16, in &lt;module&gt;
+    ueName='EXLuepart-12361720', manualOrder=True)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+  <testsuite failures="8" name="MassOrderActions" skipped="0" tests="8" testsuite_failed="True" time="23.453835" timestamp="2020-02-19T00:27:56.244932">
+   <testcase name="GlobalActivateReject" status="run" time="0.094193" timestamp="2020-02-19T00:28:09.167203">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\GlobalActivateReject.tc.py&quot;, line 37, in &lt;module&gt;
+    orderPairList.append((OrderActionUtils.CreateOrder(sym['Z99'],    OrderSide.Buy,  2,   OrderType.Limit, 10 ),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\GlobalActivateReject.tc.py&quot;, line 37, in &lt;module&gt;
+    orderPairList.append((OrderActionUtils.CreateOrder(sym['Z99'],    OrderSide.Buy,  2,   OrderType.Limit, 10 ),
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="GlobalCancel" status="run" time="0.077892" timestamp="2020-02-19T00:28:09.229929">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\GlobalCancel.tc.py&quot;, line 24, in &lt;module&gt;
+    orders.append((0, OrderActionUtils.CreateOrder(sym['Z99'],    OrderSide.Buy,  2, OrderType.Limit, 10 )))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\GlobalCancel.tc.py&quot;, line 24, in &lt;module&gt;
+    orders.append((0, OrderActionUtils.CreateOrder(sym['Z99'],    OrderSide.Buy,  2, OrderType.Limit, 10 )))
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testsuite failures="6" name="CancelAll" skipped="0" tests="6" testsuite_failed="True" time="6.969779" timestamp="2020-02-19T00:28:09.385932">
+    <testcase name="ActiveAtOrders" status="run" time="0.031545" timestamp="2020-02-19T00:28:15.698641">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\ActiveAtOrders_tc.py&quot;, line 9, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(activeAtContract, OrderSide.Buy, 5, OrderType.Limit, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\ActiveAtOrders_tc.py&quot;, line 9, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(activeAtContract, OrderSide.Buy, 5, OrderType.Limit, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="ByComment" status="run" time="0.031253" timestamp="2020-02-19T00:28:15.761115">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\ByComment_tc.py&quot;, line 12, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(sym['Z99'], OrderSide.Sell, 5, OrderType.Limit, limitPrice=200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\ByComment_tc.py&quot;, line 12, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(sym['Z99'], OrderSide.Sell, 5, OrderType.Limit, limitPrice=200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="ByOrderSide" status="run" time="0.062535" timestamp="2020-02-19T00:28:15.808007">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\ByOrderSide_tc.py&quot;, line 12, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(sym['Z99'], OrderSide.Sell, 5, OrderType.Limit, 200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\ByOrderSide_tc.py&quot;, line 12, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(sym['Z99'], OrderSide.Sell, 5, OrderType.Limit, 200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="ByOrderState" status="run" time="0.032016" timestamp="2020-02-19T00:28:15.854868">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\ByOrderState_tc.py&quot;, line 14, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(sym['Z99'], OrderSide.Sell, 5, OrderType.Limit, 200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\ByOrderState_tc.py&quot;, line 14, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(sym['Z99'], OrderSide.Sell, 5, OrderType.Limit, 200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="BySymbol" status="run" time="0.047031" timestamp="2020-02-19T00:28:15.901856">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\BySymbol_tc.py&quot;, line 11, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(sym['Z99'], OrderSide.Sell, 5, OrderType.Limit, 200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\BySymbol_tc.py&quot;, line 11, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(sym['Z99'], OrderSide.Sell, 5, OrderType.Limit, 200)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="MultiTraderAccount" status="run" time="0.046495" timestamp="2020-02-19T00:28:15.980256">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\MultiTraderAccount_tc.py&quot;, line 13, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(sym['Z99'], OrderSide.Buy, 5, OrderType.Limit, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\MassOrderActions\CancelAll\MultiTraderAccount_tc.py&quot;, line 13, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(sym['Z99'], OrderSide.Buy, 5, OrderType.Limit, 100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="1" name="OrderSpecifications" skipped="0" tests="1" testsuite_failed="True" time="15.250389" timestamp="2020-02-19T00:28:19.761284">
+   <testcase name="OrderSpec" status="run" time="0.04697" timestamp="2020-02-19T00:28:32.714753">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\OrderSpecifications\OrderSpec.tc.py&quot;, line 59, in &lt;module&gt;
+    testOrderSpec(orderSide, orderType, duration, execInst, successExpected)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\OrderSpecifications\OrderSpec.tc.py&quot;, line 38, in testOrderSpec
+    stopPrice = stopPrice, instructions = execInstVector, visibleSize = visibleSize, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\OrderSpecifications\OrderSpec.tc.py&quot;, line 59, in &lt;module&gt;
+    testOrderSpec(orderSide, orderType, duration, execInst, successExpected)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/SmallProjects\OrderSpecifications\OrderSpec.tc.py&quot;, line 38, in testOrderSpec
+    stopPrice = stopPrice, instructions = execInstVector, visibleSize = visibleSize, goodThru = goodThru)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="25" tests="69" testsuite_failed="False" time="387.529797" timestamp="2020-02-19T20:35:55.107311">
+ <properties>
+  <property name="module" value="GatewayFixClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit/CMS"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC/EIME/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/WebApi"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="OTC" skipped="25" tests="69" testsuite_failed="False" time="387.529797" timestamp="2020-02-19T20:35:55.107311">
+  <testsuite failures="0" name="EIME" skipped="25" tests="25" testsuite_failed="False" time="49.642046" timestamp="2020-02-19T20:36:04.217247">
+   <testsuite failures="0" name="BasicOrderRequests" skipped="3" tests="3" testsuite_failed="False">
+    <testcase name="CancelOrder" status="notrun"/>
+    <testcase name="ModifyOrder" status="notrun"/>
+    <testcase name="PlaceOrder" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="ContractsNotifications" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="NewContract" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="Exceptions" skipped="6" tests="6" testsuite_failed="False">
+    <testcase name="ClosedMarket" status="notrun"/>
+    <testcase name="WrongGttTime" status="notrun"/>
+    <testcase name="WrongOrderDuration" status="notrun"/>
+    <testcase name="WrongOrderSize" status="notrun"/>
+    <testcase name="WrongOrderType" status="notrun"/>
+    <testcase name="WrongQuoteSize" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="MarketEvents" skipped="2" tests="2" testsuite_failed="False">
+    <testcase name="MarketStatusUpdates" status="notrun"/>
+    <testcase name="SettlementPriceNotifications" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="MatchOrders" skipped="4" tests="4" testsuite_failed="False">
+    <testcase name="CrossDom" status="notrun"/>
+    <testcase name="MatchOrders" status="notrun"/>
+    <testcase name="MultipleMatchOnModify" status="notrun"/>
+    <testcase name="MultipleMatchOnPlace" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="QuoteRequests" skipped="3" tests="3" testsuite_failed="False">
+    <testcase name="WithExpiration" status="notrun"/>
+    <testcase name="WithoutExpiration" status="notrun"/>
+    <testcase name="WithoutSide" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="Spreads" skipped="6" tests="6" testsuite_failed="False">
+    <testsuite failures="0" name="ContractsNotifications" skipped="1" tests="1" testsuite_failed="False">
+     <testcase name="NewContract" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="Exceptions" skipped="2" tests="2" testsuite_failed="False">
+     <testcase name="BothTradeReportsRejected" status="notrun"/>
+     <testcase name="OneTradeReportRejected" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="SpreadFillPrices" skipped="3" tests="3" testsuite_failed="False">
+     <testcase name="BasedOnLegBid" status="notrun"/>
+     <testcase name="BasedOnLegSettlement" status="notrun"/>
+     <testcase name="BasedOnLegTrade" status="notrun"/>
+    </testsuite>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="FillAndHedge" skipped="0" tests="2" testsuite_failed="False" time="35.141822" timestamp="2020-02-19T20:36:53.906167">
+   <testcase name="Fill" status="run" time="15.391619" timestamp="2020-02-19T20:37:08.234806"/>
+   <testcase name="PlaceModifyCancel" status="run" time="5.218963" timestamp="2020-02-19T20:37:23.704231"/>
+  </testsuite>
+  <testsuite failures="0" name="HedgeAndFill" skipped="0" tests="21" testsuite_failed="False" time="30.235366" timestamp="2020-02-19T20:37:29.094910">
+   <testsuite failures="0" name="Basic" skipped="0" tests="6" testsuite_failed="False" time="2.796961" timestamp="2020-02-19T20:37:35.938857">
+    <testcase name="CancelRejected" status="run" time="0.468789" timestamp="2020-02-19T20:37:36.063856"/>
+    <testcase name="Fill" status="run" time="0.218868" timestamp="2020-02-19T20:37:36.626407"/>
+    <testcase name="FillMkt" status="run" time="0.265433" timestamp="2020-02-19T20:37:36.923462"/>
+    <testcase name="ModifyRejected" status="run" time="0.468793" timestamp="2020-02-19T20:37:37.251392"/>
+    <testcase name="PlaceModifyCancel" status="run" time="0.593794" timestamp="2020-02-19T20:37:37.798297"/>
+    <testcase name="PlaceRejected" status="run" time="0.125012" timestamp="2020-02-19T20:37:38.470200"/>
+   </testsuite>
+   <testsuite failures="0" name="ContractMetadata" skipped="0" tests="3" testsuite_failed="False" time="16.563074" timestamp="2020-02-19T20:37:38.782693">
+    <testcase name="DifferentContractsContributors" status="run" time="0.281239" timestamp="2020-02-19T20:37:38.907709"/>
+    <testcase name="EnableDisable" status="run" time="10.454293" timestamp="2020-02-19T20:37:39.282792"/>
+    <testcase name="OffsetChanges" status="run" time="5.437654" timestamp="2020-02-19T20:37:49.798727"/>
+   </testsuite>
+   <testsuite failures="0" name="ExternalHedgeRequests" skipped="0" tests="7" testsuite_failed="False" time="2.093826" timestamp="2020-02-19T20:37:55.392641">
+    <testcase name="CancelAccepted" status="run" time="0.140553" timestamp="2020-02-19T20:37:55.517706"/>
+    <testcase name="CancelRejected" status="run" time="0.203313" timestamp="2020-02-19T20:37:55.736396"/>
+    <testcase name="ModifiedPriceFill" status="run" time="0.156254" timestamp="2020-02-19T20:37:56.017655"/>
+    <testcase name="ModifiedSizeCancel" status="run" time="0.179875" timestamp="2020-02-19T20:37:56.244041"/>
+    <testcase name="ModifiedSizeOverfill" status="run" time="0.187494" timestamp="2020-02-19T20:37:56.517680"/>
+    <testcase name="ModifyAccepted" status="run" time="0.296857" timestamp="2020-02-19T20:37:56.783339"/>
+    <testcase name="ModifyRejected" status="run" time="0.23462" timestamp="2020-02-19T20:37:57.158325"/>
+   </testsuite>
+   <testsuite failures="0" name="InFlightFill" skipped="0" tests="2" testsuite_failed="False" time="0.718762" timestamp="2020-02-19T20:37:57.533344">
+    <testcase name="PendingCancel" status="run" time="0.171906" timestamp="2020-02-19T20:37:57.673967"/>
+    <testcase name="PendingModify" status="run" time="0.218748" timestamp="2020-02-19T20:37:57.939601"/>
+   </testsuite>
+   <testsuite failures="0" name="UnsolicitedCancel" skipped="0" tests="3" testsuite_failed="False" time="0.906306" timestamp="2020-02-19T20:37:58.298988">
+    <testcase name="PendingCancel" status="run" time="0.203122" timestamp="2020-02-19T20:37:58.408374"/>
+    <testcase name="PendingModify" status="run" time="0.203374" timestamp="2020-02-19T20:37:58.720873"/>
+    <testcase name="PendingPlace" status="run" time="0.125034" timestamp="2020-02-19T20:37:59.002127"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="IMF" skipped="0" tests="21" testsuite_failed="False" time="263.025568" timestamp="2020-02-19T20:37:59.361531">
+   <testsuite failures="0" name="BasicRequestsAndEvents" skipped="0" tests="8" testsuite_failed="False" time="3.875165" timestamp="2020-02-19T20:40:06.459905">
+    <testcase name="ExchangeChildOrderRejected" status="run" time="0.187509" timestamp="2020-02-19T20:40:06.600558"/>
+    <testcase name="ExternalModificationOfChildOrder" status="run" time="0.515614" timestamp="2020-02-19T20:40:06.850578"/>
+    <testcase name="ModifyPartiallyFilledOrder" status="run" time="0.624999" timestamp="2020-02-19T20:40:07.475618"/>
+    <testcase name="PlaceCancelAll" status="run" time="0.140657" timestamp="2020-02-19T20:40:08.194350"/>
+    <testcase name="PlaceModifyCancelLimit" status="run" time="0.437512" timestamp="2020-02-19T20:40:08.444367"/>
+    <testcase name="PlaceModifyCancelMarket" status="run" time="0.484376" timestamp="2020-02-19T20:40:08.960009"/>
+    <testcase name="PlaceParkAllActivateAll" status="run" time="0.265647" timestamp="2020-02-19T20:40:09.538138"/>
+    <testcase name="UnsolicitedCancelOfExchangeChildOrder" status="run" time="0.312542" timestamp="2020-02-19T20:40:09.897540"/>
+   </testsuite>
+   <testsuite failures="0" name="FailuresProcessing" skipped="0" tests="3" testsuite_failed="False" time="124.301699" timestamp="2020-02-19T20:40:10.397595">
+    <testcase name="ChildOrderCancelRejected" status="run" time="60.658629" timestamp="2020-02-19T20:40:10.538190"/>
+    <testcase name="ChildOrderCancelTimeout" status="run" time="62.56492" timestamp="2020-02-19T20:41:11.290571"/>
+    <testcase name="ChildOrderPlaceRejected" status="run" time="0.625066" timestamp="2020-02-19T20:42:13.964883"/>
+   </testsuite>
+   <testsuite failures="0" name="FillCancelCorrectionBust" skipped="0" tests="2" testsuite_failed="False" time="1.421948" timestamp="2020-02-19T20:42:14.761781">
+    <testcase name="FillBust" status="run" time="0.453164" timestamp="2020-02-19T20:42:14.933661"/>
+    <testcase name="FillCancel" status="run" time="0.609399" timestamp="2020-02-19T20:42:15.480557"/>
+   </testsuite>
+   <testsuite failures="0" name="InFlightRaceConditions" skipped="0" tests="3" testsuite_failed="False" time="2.140723" timestamp="2020-02-19T20:42:16.246238">
+    <testcase name="OrderFilledDuringMatching" status="run" time="0.734394" timestamp="2020-02-19T20:42:16.386866"/>
+    <testcase name="PendingCancelOrderFilled" status="run" time="0.515645" timestamp="2020-02-19T20:42:17.246270"/>
+    <testcase name="PendingModifyOrderCanceled" status="run" time="0.421938" timestamp="2020-02-19T20:42:17.871301"/>
+   </testsuite>
+   <testsuite failures="0" name="MatchingAlgorithm" skipped="0" tests="5" testsuite_failed="False" time="3.828262" timestamp="2020-02-19T20:42:18.433840">
+    <testcase name="MachingAfterModification" status="run" time="0.578387" timestamp="2020-02-19T20:42:18.590078"/>
+    <testcase name="MarketMovedAway" status="run" time="0.54687" timestamp="2020-02-19T20:42:19.277621"/>
+    <testcase name="OppositeFullyMatched" status="run" time="0.562469" timestamp="2020-02-19T20:42:19.918285"/>
+    <testcase name="OppositePartiallyMatched" status="run" time="0.469346" timestamp="2020-02-19T20:42:20.590156"/>
+    <testcase name="SeveralOrdersMatched" status="run" time="0.984427" timestamp="2020-02-19T20:42:21.168289"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

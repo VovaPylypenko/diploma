@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="30" tests="30" testsuite_failed="True" time="1.593798" timestamp="2020-02-18T23:36:28.639549">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/QOCUR/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="16"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/DataQueries/QOCUR"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="QOCUR" skipped="30" tests="30" testsuite_failed="True" time="1.593798" timestamp="2020-02-18T23:36:28.639549">
+  <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 33, in invoke_script
+    exec(code, globals())
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/QOCUR\test_suite_td.py&quot;, line 5, in &lt;module&gt;
+    exchange.Stop()
+NameError: name 'exchange' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 33, in invoke_script
+    exec(code, globals())
+  File &quot;Scripts/Gateway/SystemAreas/DataQueries/QOCUR\test_suite_td.py&quot;, line 5, in &lt;module&gt;
+    exchange.Stop()
+NameError: name 'exchange' is not defined
+</failure>
+  <testsuite failures="0" name="LocalQM_Available" skipped="15" tests="15" testsuite_failed="False">
+   <testcase name="Trader10" status="notrun"/>
+   <testcase name="Trader11" status="notrun"/>
+   <testcase name="Trader12" status="notrun"/>
+   <testcase name="Trader13" status="notrun"/>
+   <testcase name="Trader14" status="notrun"/>
+   <testcase name="Trader15" status="notrun"/>
+   <testcase name="Trader1" status="notrun"/>
+   <testcase name="Trader2" status="notrun"/>
+   <testcase name="Trader3" status="notrun"/>
+   <testcase name="Trader4" status="notrun"/>
+   <testcase name="Trader5" status="notrun"/>
+   <testcase name="Trader6" status="notrun"/>
+   <testcase name="Trader7" status="notrun"/>
+   <testcase name="Trader8" status="notrun"/>
+   <testcase name="Trader9" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="LocalQM_Unavailable" skipped="15" tests="15" testsuite_failed="False">
+   <testcase name="Trader10" status="notrun"/>
+   <testcase name="Trader11" status="notrun"/>
+   <testcase name="Trader12" status="notrun"/>
+   <testcase name="Trader13" status="notrun"/>
+   <testcase name="Trader14" status="notrun"/>
+   <testcase name="Trader15" status="notrun"/>
+   <testcase name="Trader1" status="notrun"/>
+   <testcase name="Trader2" status="notrun"/>
+   <testcase name="Trader3" status="notrun"/>
+   <testcase name="Trader4" status="notrun"/>
+   <testcase name="Trader5" status="notrun"/>
+   <testcase name="Trader6" status="notrun"/>
+   <testcase name="Trader7" status="notrun"/>
+   <testcase name="Trader8" status="notrun"/>
+   <testcase name="Trader9" status="notrun"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

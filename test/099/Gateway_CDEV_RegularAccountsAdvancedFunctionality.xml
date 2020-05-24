@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="23" testsuite_failed="False" time="64.002523" timestamp="2020-02-06T08:20:05.645945">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RegularAccountsAdvancedFunctionality"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="RegularAccountsAdvancedFunctionality" skipped="0" tests="23" testsuite_failed="False" time="64.002523" timestamp="2020-02-06T08:20:05.645945">
+  <testcase name="DLL01_IgnoreUPL" status="run" time="1.174747" timestamp="2020-02-06T08:20:15.161960"/>
+  <testcase name="DLL02_YesterdayPosition" status="run" time="0.906292" timestamp="2020-02-06T08:20:16.396384"/>
+  <testcase name="DLL04_OTE" status="run" time="1.640309" timestamp="2020-02-06T08:20:17.365535"/>
+  <testcase name="DLL05_AMC" status="run" time="0.609391" timestamp="2020-02-06T08:20:19.052724"/>
+  <testcase name="DLL06_CT" status="run" time="0.593812" timestamp="2020-02-06T08:20:19.724623"/>
+  <testcase name="TC01_TradePriceLimitEnforcementOptions" status="run" time="6.859662" timestamp="2020-02-06T08:20:20.380904"/>
+  <testcase name="TC02_RejectRiskyMarketOrders" status="run" time="22.032095" timestamp="2020-02-06T08:20:27.303065"/>
+  <testcase name="TC03_CheckForNegativeBalance" status="run" time="0.594622" timestamp="2020-02-06T08:20:49.382067"/>
+  <testcase name="TC04_MarketLimitsMarginMultiplier" status="run" time="1.203083" timestamp="2020-02-06T08:20:50.038447"/>
+  <testcase name="TC06_CRagainstCB" status="run" time="1.656332" timestamp="2020-02-06T08:20:51.319627"/>
+  <testcase name="TC07_CRagainstCBwithOP" status="run" time="0.968886" timestamp="2020-02-06T08:20:53.038432"/>
+  <testcase name="TC08_CRagainstCBwithPL" status="run" time="1.448323" timestamp="2020-02-06T08:20:54.074592"/>
+  <testcase name="TC09_CRagainstCBwithAMC" status="run" time="0.60922" timestamp="2020-02-06T08:20:55.569986"/>
+  <testcase name="TC10_PPwithOP" status="run" time="1.408552" timestamp="2020-02-06T08:20:56.242489"/>
+  <testcase name="TC11_PPwithPL" status="run" time="1.765698" timestamp="2020-02-06T08:20:57.710479"/>
+  <testcase name="TC12_InitToMaintenanceMarginRatio" status="run" time="1.375056" timestamp="2020-02-06T08:20:59.554302"/>
+  <testcase name="TC13_OPExceptPremiumStyleOptions" status="run" time="0.419382" timestamp="2020-02-06T08:21:01.025637"/>
+  <testcase name="TC14_OTEForPremiumStyleOptions" status="run" time="0.328128" timestamp="2020-02-06T08:21:01.507516"/>
+  <testcase name="TC15_NOVExceptPremiumStyleOptions" status="run" time="0.515621" timestamp="2020-02-06T08:21:01.898170"/>
+  <testcase name="TC16_CheckForNegativeBalanceAdv" status="run" time="1.563666" timestamp="2020-02-06T08:21:02.477250"/>
+  <testcase name="TC17_TradeEnablementBuySellOptions " status="run" time="1.17194" timestamp="2020-02-06T08:21:04.101359"/>
+  <testcase name="TC18_PPwithCT" status="run" time="1.124398" timestamp="2020-02-06T08:21:05.352053"/>
+  <testcase name="TC19_CRExceptPremiumStyleLongOptions" status="run" time="2.421969" timestamp="2020-02-06T08:21:06.538981"/>
+ </testsuite>
+</testsuites>

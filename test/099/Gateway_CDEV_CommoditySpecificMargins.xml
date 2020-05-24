@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="8" testsuite_failed="False" time="18.063981" timestamp="2020-02-06T05:51:28.563795">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/CommoditySpecificMargins"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="CommoditySpecificMargins" skipped="0" tests="8" testsuite_failed="False" time="18.063981" timestamp="2020-02-06T05:51:28.563795">
+  <testcase name="Basic" status="run" time="0.218858" timestamp="2020-02-06T05:51:39.626623"/>
+  <testcase name="SpecificMarginDisabledOnAccountLevel" status="run" time="0.203136" timestamp="2020-02-06T05:51:39.892236"/>
+  <testcase name="SpecificMarginDisabledOnFcmLevel" status="run" time="0.26567" timestamp="2020-02-06T05:51:40.142323"/>
+  <testcase name="SpecificMarginValueEqualToDefault" status="run" time="0.265615" timestamp="2020-02-06T05:51:40.470394"/>
+  <testcase name="SpecificMarginValueGreatDefault" status="run" time="0.218758" timestamp="2020-02-06T05:51:40.782895"/>
+  <testcase name="SpecificMarginValueIsNotSet" status="run" time="0.108804" timestamp="2020-02-06T05:51:41.064728"/>
+  <testcase name="SpecificMarginValueLessDefault" status="run" time="0.187476" timestamp="2020-02-06T05:51:41.220437"/>
+  <testcase name="TradeMarginLimitCheck" status="run" time="0.294335" timestamp="2020-02-06T05:51:41.441729"/>
+ </testsuite>
+</testsuites>

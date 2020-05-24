@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="10" testsuite_failed="False" time="22.344451" timestamp="2020-02-06T06:14:41.392417">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderOperabilityUponRelease/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OrderOperabilityUponRelease"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="OrderOperabilityUponRelease" skipped="0" tests="10" testsuite_failed="False" time="22.344451" timestamp="2020-02-06T06:14:41.392417">
+  <testcase name="ActivateActiveAtOrder" status="run" time="3.156352" timestamp="2020-02-06T06:14:47.642541"/>
+  <testcase name="ActivateParkedOrder" status="run" time="0.437975" timestamp="2020-02-06T06:14:50.861389"/>
+  <testcase name="CancelParkedOrder" status="run" time="0.062624" timestamp="2020-02-06T06:14:51.361406"/>
+  <testcase name="CancelWorkingOrder" status="run" time="0.077946" timestamp="2020-02-06T06:14:51.470977"/>
+  <testcase name="FullFillWorkingOrder" status="run" time="0.125024" timestamp="2020-02-06T06:14:51.611420"/>
+  <testcase name="ModifyParkActiveAtOrder" status="run" time="10.093181" timestamp="2020-02-06T06:14:51.784194"/>
+  <testcase name="ModifyParkedOrder" status="run" time="0.109372" timestamp="2020-02-06T06:15:01.939872"/>
+  <testcase name="ModifyPartFillWorkingOrder" status="run" time="0.124245" timestamp="2020-02-06T06:15:02.112504"/>
+  <testcase name="ModifyWorkingOrder" status="run" time="0.187516" timestamp="2020-02-06T06:15:02.283621"/>
+  <testcase name="ParkWorkingOrder" status="run" time="0.28073" timestamp="2020-02-06T06:15:02.534155"/>
+ </testsuite>
+</testsuites>

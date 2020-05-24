@@ -1,0 +1,14 @@
+22:43:31.40  Test starded without threads
+20:43:31.983 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:43:31.983 Python Module Path 'ScriptKit/TroubleMaker' added.
+20:43:31.983 Python Module Path 'ScriptKit' added.
+20:43:31.983 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC/PythonModules' added.
+20:43:32.608 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover' full execution.
+20:43:32.624 Suite '.'. [0 test cases, 1 sub-suites]
+20:43:57.718 Suite 'IMF'. [1 test cases, 0 sub-suites]
+20:43:58.734 Case 'RecoverOrdersGWConnectionLost' execution.
+20:43:59.531 Ensure CQGFixServiceBase service is stoped within 30 seconds
+20:44:05.609 Ensure CQGFixServiceBase service is started and running within 30 seconds
+20:44:12.828 Case 'RecoverOrdersGWConnectionLost' succeeded.
+20:44:14.063 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover' execution finished. It took 0:00:41.439688.
+20:44:14.063 Test cases results: 1 total, 1 succeeded, 0 failed, 0 skipped.

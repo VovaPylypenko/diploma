@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="19" testsuite_failed="False" time="140.77001" timestamp="2020-02-06T06:15:05.205611">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel/Modules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RiskManagementOnTradingLevel"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="RiskManagementOnTradingLevel" skipped="0" tests="19" testsuite_failed="False" time="140.77001" timestamp="2020-02-06T06:15:05.205611">
+  <testcase name="10_TestContractPositionLimit" status="run" time="5.375071" timestamp="2020-02-06T06:15:19.112375"/>
+  <testcase name="14_TestDailyLostLimit" status="run" time="3.937637" timestamp="2020-02-06T06:15:24.534305"/>
+  <testcase name="15_TestDeltaDailyLostLimit" status="run" time="4.015746" timestamp="2020-02-06T06:15:28.518807"/>
+  <testcase name="16_TestMarginMultiplier" status="run" time="6.031459" timestamp="2020-02-06T06:15:32.597055"/>
+  <testcase name="17_TestIncludeOTEinPP" status="run" time="5.749742" timestamp="2020-02-06T06:15:38.676065"/>
+  <testcase name="18_TestIncludeNOVinPP" status="run" time="5.609483" timestamp="2020-02-06T06:15:44.472499"/>
+  <testcase name="19_TestCheckForNegativeBalance" status="run" time="3.937158" timestamp="2020-02-06T06:15:50.129455"/>
+  <testcase name="20_TestDisableBidAskPriceInOTE" status="run" time="3.8436820000000003" timestamp="2020-02-06T06:15:54.113629"/>
+  <testcase name="21_TestDisableBidAskPriceInNOV" status="run" time="3.720395" timestamp="2020-02-06T06:15:58.004091"/>
+  <testcase name="4_TestFuturesPermission" status="run" time="6.841482" timestamp="2020-02-06T06:16:01.787966"/>
+  <testcase name="5_TestBuySellOption" status="run" time="19.07747" timestamp="2020-02-06T06:16:08.693189"/>
+  <testcase name="6_TestTradeSizeLimit" status="run" time="6.921939" timestamp="2020-02-06T06:16:27.833314"/>
+  <testcase name="7_TestTradeMarginLimit" status="run" time="7.493296" timestamp="2020-02-06T06:16:34.824675"/>
+  <testcase name="8_TestRejectRiskyOrders" status="run" time="5.875179" timestamp="2020-02-06T06:16:42.380470"/>
+  <testcase name="9_TestCommodityPositionLimit" status="run" time="4.796545" timestamp="2020-02-06T06:16:48.303029"/>
+  <testcase name="TestCommodityEnablements" status="run" time="7.734599" timestamp="2020-02-06T06:16:53.162120"/>
+  <testcase name="TestLiquidationOnly" status="run" time="5.67206" timestamp="2020-02-06T06:17:00.943557"/>
+  <testcase name="TestTraderAuthorization" status="run" time="7.812769" timestamp="2020-02-06T06:17:06.678095"/>
+  <testsuite failures="0" name="AuthorizedOmnibusSettingsOverride" skipped="0" tests="1" testsuite_failed="False" time="6.562721" timestamp="2020-02-06T06:17:14.522090">
+   <testcase name="OrderHandlerVsOmnibusSettings" status="run" time="6.406437" timestamp="2020-02-06T06:17:14.615871"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

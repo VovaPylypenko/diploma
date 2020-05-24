@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="3" testsuite_failed="False" time="23.250772" timestamp="2020-02-18T21:05:18.262757">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="IMSSimulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/Diagnostics/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/Diagnostics"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Diagnostics" skipped="0" tests="3" testsuite_failed="False" time="23.250772" timestamp="2020-02-18T21:05:18.262757">
+  <testcase name="CAST" status="run" time="14.85989" timestamp="2020-02-18T21:05:18.309623"/>
+  <testcase name="CollateralInquiry" status="run" time="1.2500499999999999" timestamp="2020-02-18T21:05:33.200762"/>
+  <testcase name="XML" status="run" time="6.983751" timestamp="2020-02-18T21:05:34.482914"/>
+ </testsuite>
+</testsuites>

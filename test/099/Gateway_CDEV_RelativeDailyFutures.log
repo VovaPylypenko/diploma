@@ -1,0 +1,24 @@
+ 9:27:57.84  Test starded without threads
+07:27:58.450 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures/PythonModules' added.
+07:27:58.450 Python Module Path 'Scripts/Gateway/PythonModules' added.
+07:27:58.450 Python Module Path 'ScriptKit' added.
+07:27:58.952 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures' full execution.
+07:27:58.966 Suite '.'. [8 test cases, 0 sub-suites]
+07:28:09.248 Case 'AddFillDaily' execution.
+07:28:09.279 Case 'AddFillNativeSpread' execution.
+07:28:09.294 Case 'AddFillRelative' execution.
+07:28:09.326 Case 'CastAddFillDaily' execution.
+07:28:09.373 Case 'CastAddFillRelative' execution.
+07:28:09.404 Case 'CastAddOrderAndFillDaily' execution.
+07:28:09.466 Case 'CastAddOrderAndFillRelative' execution.
+07:28:09.498 Case 'LMEStylePriceAdjustment' execution.
+07:28:12.248 Case 'AddFillRelative' succeeded.
+07:28:13.388 Case 'CastAddOrderAndFillRelative' succeeded.
+07:28:13.514 Case 'CastAddOrderAndFillDaily' succeeded.
+07:28:13.623 Case 'AddFillDaily' succeeded.
+07:28:13.670 Case 'AddFillNativeSpread' succeeded.
+07:28:13.685 Case 'CastAddFillDaily' succeeded.
+07:28:14.529 Case 'CastAddFillRelative' succeeded.
+07:28:34.717 Case 'LMEStylePriceAdjustment' succeeded.
+07:28:36.967 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/RelativeDailyFutures' execution finished. It took 0:00:37.999335.
+07:28:36.967 Test cases results: 8 total, 8 succeeded, 0 failed, 0 skipped.

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="5" testsuite_failed="False" time="20.375686" timestamp="2020-02-06T08:22:27.682759">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NoMarginForPremiumStyleOptions"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="NoMarginForPremiumStyleOptions" skipped="0" tests="5" testsuite_failed="False" time="20.375686" timestamp="2020-02-06T08:22:27.682759">
+  <testcase name="Test_01_RejectOptionByMargin" status="run" time="0.656288" timestamp="2020-02-06T08:22:41.276959"/>
+  <testcase name="Test_02_AcceptOptionNoMargin" status="run" time="2.423069" timestamp="2020-02-06T08:22:41.980111"/>
+  <testcase name="Test_03_RejectOptionByCashReserve" status="run" time="0.094021" timestamp="2020-02-06T08:22:44.448933"/>
+  <testcase name="Test_04_RejectOptionFutureStyle" status="run" time="0.154378" timestamp="2020-02-06T08:22:44.591441"/>
+  <testcase name="Test_05_RejectOptionBuySell" status="run" time="0.086636" timestamp="2020-02-06T08:22:44.784208"/>
+ </testsuite>
+</testsuites>

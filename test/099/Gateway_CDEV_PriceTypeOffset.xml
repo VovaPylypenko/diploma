@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="10" testsuite_failed="False" time="13.141088" timestamp="2020-02-06T06:03:38.761262">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/PriceTypeOffset"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="PriceTypeOffset" skipped="0" tests="10" testsuite_failed="False" time="13.141088" timestamp="2020-02-06T06:03:38.761262">
+  <testcase name="PriceTypeOffsetOTE_01" status="run" time="0.06252" timestamp="2020-02-06T06:03:50.402267"/>
+  <testcase name="PriceTypeOffsetOTE_02" status="run" time="0.062374" timestamp="2020-02-06T06:03:50.543020"/>
+  <testcase name="PriceTypeOffsetOTE_03" status="run" time="0.078124" timestamp="2020-02-06T06:03:50.652280"/>
+  <testcase name="PriceTypeOffsetOTE_04" status="run" time="0.046827" timestamp="2020-02-06T06:03:50.777341"/>
+  <testcase name="PriceTypeOffsetOTE_05" status="run" time="0.046879" timestamp="2020-02-06T06:03:50.886671"/>
+  <testcase name="PriceTypeOffsetOTE_06" status="run" time="0.031253" timestamp="2020-02-06T06:03:50.980422"/>
+  <testcase name="PriceTypeOffsetOTE_07" status="run" time="0.046876" timestamp="2020-02-06T06:03:51.074162"/>
+  <testcase name="PriceTypeOffsetOTE_08" status="run" time="0.046889" timestamp="2020-02-06T06:03:51.183526"/>
+  <testcase name="PriceTypeOffsetOTE_09" status="run" time="0.046793" timestamp="2020-02-06T06:03:51.293009"/>
+  <testcase name="PriceTypeOffsetOTE_10" status="run" time="0.07814" timestamp="2020-02-06T06:03:51.402289"/>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="105" testsuite_failed="False" time="443.296859" timestamp="2020-02-19T18:28:40.422380">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits/GroupAccounts/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="20"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="MarketLimits" skipped="0" tests="105" testsuite_failed="False" time="443.296859" timestamp="2020-02-19T18:28:40.422380">
+  <testsuite failures="0" name="AllowableMarkets" skipped="0" tests="3" testsuite_failed="False" time="4.81268" timestamp="2020-02-19T18:28:48.735152">
+   <testcase name="AllowableMarkets" status="run" time="1.843801" timestamp="2020-02-19T18:28:48.875862"/>
+   <testcase name="AllowableMarketsCheckType" status="run" time="4.424342" timestamp="2020-02-19T18:28:48.922661"/>
+   <testcase name="TraderAllowableMarkets" status="run" time="4.453282" timestamp="2020-02-19T18:28:48.953906"/>
+  </testsuite>
+  <testsuite failures="0" name="GroupAccounts" skipped="0" tests="3" testsuite_failed="False" time="2.015702" timestamp="2020-02-19T18:28:53.594694">
+   <testcase name="BorrowFromMasterGroupAccountLimits" status="run" time="0.656264" timestamp="2020-02-19T18:28:54.704109"/>
+   <testcase name="CoMarginGroupAccountLimits" status="run" time="0.671197" timestamp="2020-02-19T18:28:54.767325"/>
+   <testcase name="JoinPurchasingPowerGroupAccountLimits" status="run" time="0.687598" timestamp="2020-02-19T18:28:54.829098"/>
+  </testsuite>
+  <testsuite failures="0" name="PositionLimits" skipped="0" tests="14" testsuite_failed="False" time="4.765677" timestamp="2020-02-19T18:28:55.657383">
+   <testcase name="CommodityPositionLimits" status="run" time="1.437514" timestamp="2020-02-19T18:28:55.782299"/>
+   <testcase name="ContractPositionLimits" status="run" time="1.578198" timestamp="2020-02-19T18:28:55.829138"/>
+   <testcase name="InstrumentPositionLimits" status="run" time="1.515679" timestamp="2020-02-19T18:28:55.876016"/>
+   <testsuite failures="0" name="SubSuite" skipped="0" tests="11" testsuite_failed="False" time="2.812556" timestamp="2020-02-19T18:28:57.501115">
+    <testcase name="CommodityAndInstrumentLimit" status="run" time="0.21875" timestamp="2020-02-19T18:28:58.594869"/>
+    <testcase name="CommodityLimitAccountLevel" status="run" time="0.156255" timestamp="2020-02-19T18:28:58.641755"/>
+    <testcase name="CommodityLimitOverridesInstrumentLimit" status="run" time="0.109378" timestamp="2020-02-19T18:28:58.704241"/>
+    <testcase name="CommodityLimitUnlimited" status="run" time="0.109388" timestamp="2020-02-19T18:28:58.751118"/>
+    <testcase name="ContractLimitAccountLevel" status="run" time="0.187514" timestamp="2020-02-19T18:28:58.829248"/>
+    <testcase name="ContractLimitCommodityLevelEB" status="run" time="0.219349" timestamp="2020-02-19T18:28:58.876123"/>
+    <testcase name="ContractLimitCommodityLevelRegular" status="run" time="0.172466" timestamp="2020-02-19T18:28:58.923006"/>
+    <testcase name="ContractLimitInstrumentLevelEB" status="run" time="0.156352" timestamp="2020-02-19T18:28:58.985500"/>
+    <testcase name="ContractLimitInstrumentLevelOverridesCommodityLevel" status="run" time="0.265636" timestamp="2020-02-19T18:28:59.032379"/>
+    <testcase name="ContractLimitInstrumentLevelRegular" status="run" time="0.187031" timestamp="2020-02-19T18:28:59.095472"/>
+    <testcase name="ContractLimitInstrumentOverridesCommodityLevelEB" status="run" time="0.156217" timestamp="2020-02-19T18:28:59.173044"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="TradePriceLimitEnhancement" skipped="0" tests="59" testsuite_failed="False" time="275.103472" timestamp="2020-02-19T18:29:00.485569">
+   <testcase name="CASTtoRSnotifications" status="run" time="86.95621" timestamp="2020-02-19T18:29:22.064460"/>
+   <testcase name="MarketStateChangePercent" status="run" time="11.56288" timestamp="2020-02-19T18:29:22.126986"/>
+   <testcase name="MarketStateChangeTicks" status="run" time="11.281656" timestamp="2020-02-19T18:29:22.189452"/>
+   <testcase name="NoPrice" status="run" time="5.812708" timestamp="2020-02-19T18:29:22.345700"/>
+   <testcase name="NoTPLSettings" status="run" time="5.969034" timestamp="2020-02-19T18:29:22.439452"/>
+   <testcase name="PriceChange" status="run" time="41.235818" timestamp="2020-02-19T18:29:22.580110"/>
+   <testsuite failures="0" name="AllCommoditiesLevel" skipped="0" tests="6" testsuite_failed="False" time="23.594808" timestamp="2020-02-19T18:30:49.067563">
+    <testcase name="PercentOfBidAsk" status="run" time="13.031677" timestamp="2020-02-19T18:30:49.317566"/>
+    <testcase name="PercentOfLastTrade" status="run" time="12.125338" timestamp="2020-02-19T18:30:49.380127"/>
+    <testcase name="PercentOfOpen" status="run" time="22.985182000000002" timestamp="2020-02-19T18:30:49.442543"/>
+    <testcase name="PercentOfPrevClose" status="run" time="23.063321" timestamp="2020-02-19T18:30:49.489412"/>
+    <testcase name="PercentOfBidAsk_AllLimitsInherited" status="run" time="13.656699" timestamp="2020-02-19T18:30:49.567621"/>
+    <testcase name="PercentOfBidAsk_DBPrices" status="run" time="2.187563" timestamp="2020-02-19T18:30:49.630084"/>
+   </testsuite>
+   <testsuite failures="0" name="AllUSCommoditiesLevel" skipped="0" tests="8" testsuite_failed="False" time="25.969688" timestamp="2020-02-19T18:31:12.708995">
+    <testcase name="PercentOfBidAsk" status="run" time="14.313006" timestamp="2020-02-19T18:31:12.912123"/>
+    <testcase name="PercentOfLastTrade" status="run" time="13.297115" timestamp="2020-02-19T18:31:12.974845"/>
+    <testcase name="PercentOfOpen" status="run" time="24.970237" timestamp="2020-02-19T18:31:13.037122"/>
+    <testcase name="PercentOfPrevClose" status="run" time="25.172771" timestamp="2020-02-19T18:31:13.115255"/>
+    <testcase name="TicksOfBidAsk" status="run" time="14.328623" timestamp="2020-02-19T18:31:13.162143"/>
+    <testcase name="TicksOfLastTrade" status="run" time="13.391088" timestamp="2020-02-19T18:31:13.209012"/>
+    <testcase name="TicksOfOpen" status="run" time="25.31349" timestamp="2020-02-19T18:31:13.271529"/>
+    <testcase name="TicksOfPrevClose" status="run" time="25.188383" timestamp="2020-02-19T18:31:13.334012"/>
+   </testsuite>
+   <testsuite failures="0" name="CommodityLevel" skipped="0" tests="8" testsuite_failed="False" time="24.547707" timestamp="2020-02-19T18:31:38.725563">
+    <testcase name="PercentOfBidAsk" status="run" time="14.531756" timestamp="2020-02-19T18:31:38.866164"/>
+    <testcase name="PercentOfLastTrade" status="run" time="13.388959" timestamp="2020-02-19T18:31:38.930795"/>
+    <testcase name="PercentOfOpen" status="run" time="24.032482" timestamp="2020-02-19T18:31:38.991164"/>
+    <testcase name="PercentOfPrevClose" status="run" time="24.125856" timestamp="2020-02-19T18:31:39.053674"/>
+    <testcase name="TicksOfBidAsk" status="run" time="14.406811" timestamp="2020-02-19T18:31:39.116179"/>
+    <testcase name="TicksOfLastTrade" status="run" time="13.65671" timestamp="2020-02-19T18:31:39.225562"/>
+    <testcase name="TicksOfOpen" status="run" time="23.797715" timestamp="2020-02-19T18:31:39.288049"/>
+    <testcase name="TicksOfPrevClose" status="run" time="23.625569" timestamp="2020-02-19T18:31:39.350842"/>
+   </testsuite>
+   <testsuite failures="0" name="ExchangeLevel" skipped="0" tests="8" testsuite_failed="False" time="26.391561" timestamp="2020-02-19T18:32:03.304524">
+    <testcase name="PercentOfBidAsk" status="run" time="14.516111" timestamp="2020-02-19T18:32:03.476436"/>
+    <testcase name="PercentOfLastTrade" status="run" time="13.422325" timestamp="2020-02-19T18:32:03.538927"/>
+    <testcase name="PercentOfOpen" status="run" time="25.57908" timestamp="2020-02-19T18:32:03.601409"/>
+    <testcase name="PercentOfPrevClose" status="run" time="25.704895" timestamp="2020-02-19T18:32:03.664051"/>
+    <testcase name="TicksOfBidAsk" status="run" time="14.422361" timestamp="2020-02-19T18:32:03.726430"/>
+    <testcase name="TicksOfLastTrade" status="run" time="13.516003" timestamp="2020-02-19T18:32:03.898390"/>
+    <testcase name="TicksOfOpen" status="run" time="25.735286" timestamp="2020-02-19T18:32:03.788942"/>
+    <testcase name="TicksOfPrevClose" status="run" time="25.719687" timestamp="2020-02-19T18:32:03.851427"/>
+   </testsuite>
+   <testsuite failures="0" name="InstrumentLevel" skipped="0" tests="8" testsuite_failed="False" time="25.969644" timestamp="2020-02-19T18:32:29.727363">
+    <testcase name="PercentOfBidAsk" status="run" time="14.391132" timestamp="2020-02-19T18:32:29.883583"/>
+    <testcase name="PercentOfLastTrade" status="run" time="13.437951" timestamp="2020-02-19T18:32:29.946109"/>
+    <testcase name="PercentOfOpen" status="run" time="25.20399" timestamp="2020-02-19T18:32:30.008613"/>
+    <testcase name="PercentOfPrevClose" status="run" time="25.328877" timestamp="2020-02-19T18:32:30.086856"/>
+    <testcase name="TicksOfBidAsk" status="run" time="14.391123" timestamp="2020-02-19T18:32:30.164861"/>
+    <testcase name="TicksOfLastTrade" status="run" time="13.531722" timestamp="2020-02-19T18:32:30.227352"/>
+    <testcase name="TicksOfOpen" status="run" time="25.235252" timestamp="2020-02-19T18:32:30.321115"/>
+    <testcase name="TicksOfPrevClose" status="run" time="25.188068" timestamp="2020-02-19T18:32:30.399555"/>
+   </testsuite>
+   <testsuite failures="0" name="MixedLimits" skipped="0" tests="7" testsuite_failed="False" time="15.09428" timestamp="2020-02-19T18:32:55.759515">
+    <testcase name="PercentOfBidAsk" status="run" time="6.859606" timestamp="2020-02-19T18:32:55.884519"/>
+    <testcase name="PercentOfLastTrade" status="run" time="14.578208" timestamp="2020-02-19T18:32:55.931808"/>
+    <testcase name="PercentOfOpen" status="run" time="14.625499" timestamp="2020-02-19T18:32:55.993896"/>
+    <testcase name="PercentOfPrevClose" status="run" time="14.688301" timestamp="2020-02-19T18:32:56.040762"/>
+    <testcase name="TicksOfBidAsk" status="run" time="6.172071" timestamp="2020-02-19T18:32:56.087655"/>
+    <testcase name="TicksOfOpen" status="run" time="12.578563" timestamp="2020-02-19T18:32:56.150145"/>
+    <testcase name="TicksOfPrevClose" status="run" time="12.578557" timestamp="2020-02-19T18:32:56.197036"/>
+   </testsuite>
+   <testsuite failures="0" name="PriceLevel" skipped="0" tests="8" testsuite_failed="False" time="24.516486" timestamp="2020-02-19T18:33:10.916291">
+    <testcase name="PercentOfBidAsk" status="run" time="13.563465" timestamp="2020-02-19T18:33:11.025669"/>
+    <testcase name="PercentOfLastTrade" status="run" time="12.391241" timestamp="2020-02-19T18:33:11.088177"/>
+    <testcase name="PercentOfOpen" status="run" time="23.673267" timestamp="2020-02-19T18:33:11.181932"/>
+    <testcase name="PercentOfPrevClose" status="run" time="23.813344" timestamp="2020-02-19T18:33:11.244417"/>
+    <testcase name="TicksOfBidAsk" status="run" time="13.562969" timestamp="2020-02-19T18:33:11.306935"/>
+    <testcase name="TicksOfLastTrade" status="run" time="12.406674" timestamp="2020-02-19T18:33:11.369435"/>
+    <testcase name="TicksOfOpen" status="run" time="23.719542" timestamp="2020-02-19T18:33:11.447607"/>
+    <testcase name="TicksOfPrevClose" status="run" time="23.797727" timestamp="2020-02-19T18:33:11.510052"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="TradePriceLimits" skipped="0" tests="17" testsuite_failed="False" time="54.548912" timestamp="2020-02-19T18:33:35.651544">
+   <testcase name="TradePriceLimits" status="run" time="2.062559" timestamp="2020-02-19T18:33:35.839052"/>
+   <testsuite failures="0" name="SubSuite" skipped="0" tests="16" testsuite_failed="False" time="52.128406" timestamp="2020-02-19T18:33:37.964130">
+    <testcase name="CASTtoRSnotifications" status="run" time="48.001669" timestamp="2020-02-19T18:33:39.104817"/>
+    <testsuite failures="0" name="TraderModifiesOrder" skipped="0" tests="1" testsuite_failed="False" time="0.42275" timestamp="2020-02-19T18:34:27.168981">
+     <testcase name="OrderPriceWithinLimit" status="run" time="0.172593" timestamp="2020-02-19T18:34:27.325239"/>
+    </testsuite>
+    <testsuite failures="0" name="TraderPlacesOrder" skipped="0" tests="14" testsuite_failed="False" time="2.312475" timestamp="2020-02-19T18:34:27.653474">
+     <testcase name="AccountLevelLimit" status="run" time="0.328123" timestamp="2020-02-19T18:34:27.825260"/>
+     <testcase name="NoAskPriceCommodityLevelLimit" status="run" time="0.359387" timestamp="2020-02-19T18:34:27.903367"/>
+     <testcase name="NoBidAskPrice" status="run" time="0.263843" timestamp="2020-02-19T18:34:28.014575"/>
+     <testcase name="NoBidAskTradePrice" status="run" time="0.171827" timestamp="2020-02-19T18:34:28.106591"/>
+     <testcase name="NoBidPriceExchangeLevelLimit" status="run" time="0.297687" timestamp="2020-02-19T18:34:28.184624"/>
+     <testcase name="NoPrice" status="run" time="0.140629" timestamp="2020-02-19T18:34:28.294012"/>
+     <testcase name="NoTraderSpecifiedPrice_MKT" status="run" time="0.171868" timestamp="2020-02-19T18:34:28.356522"/>
+     <testcase name="TPLnotEnforcedOnAccount" status="run" time="0.234373" timestamp="2020-02-19T18:34:28.465902"/>
+     <testcase name="TraderSpecifiedLMTpriceInSTL" status="run" time="0.218756" timestamp="2020-02-19T18:34:28.544017"/>
+     <testcase name="TraderSpecifiedPrice_LMT" status="run" time="0.235033" timestamp="2020-02-19T18:34:28.622148"/>
+     <testcase name="TraderSpecifiedPrice_STP" status="run" time="0.218806" timestamp="2020-02-19T18:34:28.700275"/>
+     <testcase name="TradingOnCoMarginGroupAccount" status="run" time="0.250275" timestamp="2020-02-19T18:34:28.762773"/>
+     <testcase name="TradingOnJoinPPGroupAccount" status="run" time="0.265271" timestamp="2020-02-19T18:34:28.857181"/>
+     <testcase name="TradingViaOmnibus" status="run" time="0.250015" timestamp="2020-02-19T18:34:28.934660"/>
+    </testsuite>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="TradeSizeLimits" skipped="0" tests="9" testsuite_failed="False" time="6.812753" timestamp="2020-02-19T18:34:30.262830">
+   <testcase name="TraderTradeSizeLimits" status="run" time="1.250037" timestamp="2020-02-19T18:34:30.575358"/>
+   <testcase name="TradeSizeLimits" status="run" time="1.484273" timestamp="2020-02-19T18:34:30.669259"/>
+   <testsuite failures="0" name="AccountPartialQty" skipped="0" tests="5" testsuite_failed="False" time="2.17198" timestamp="2020-02-19T18:34:32.216036">
+    <testcase name="AccountLevel" status="run" time="0.894786" timestamp="2020-02-19T18:34:33.356700"/>
+    <testcase name="AllUSCommodLevel" status="run" time="0.468753" timestamp="2020-02-19T18:34:33.450452"/>
+    <testcase name="CommodityLevel" status="run" time="0.453127" timestamp="2020-02-19T18:34:33.528605"/>
+    <testcase name="ExchangeLevel" status="run" time="0.500035" timestamp="2020-02-19T18:34:33.591067"/>
+    <testcase name="InstrumentLevel" status="run" time="0.487381" timestamp="2020-02-19T18:34:33.684820"/>
+   </testsuite>
+   <testsuite failures="0" name="TraderPartialQty" skipped="0" tests="2" testsuite_failed="False" time="2.468829" timestamp="2020-02-19T18:34:34.466122">
+    <testcase name="AccountLimits" status="run" time="0.28173" timestamp="2020-02-19T18:34:36.434926"/>
+    <testcase name="AllUSCommodLimits" status="run" time="0.281388" timestamp="2020-02-19T18:34:36.513068"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

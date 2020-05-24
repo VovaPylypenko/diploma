@@ -1,0 +1,77 @@
+ 6:02:03.43  Test starded without threads
+04:02:03.949 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SPAN/PythonModules' added.
+04:02:03.949 Python Module Path 'Scripts/Gateway/PythonModules' added.
+04:02:03.949 Python Module Path 'ScriptKit' added.
+04:02:03.949 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+04:02:04.386 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SPAN' full execution.
+04:02:04.402 Suite '.'. [0 test cases, 6 sub-suites]
+04:02:22.199 Suite 'CommoditySpecificMargins'. [3 test cases, 0 sub-suites]
+04:05:22.971 Case 'Disabled_on_Account' execution.
+04:05:23.127 Case 'Disabled_on_Account' succeeded.
+04:05:23.174 Case 'Disabled_on_FCM' execution.
+04:05:23.346 Case 'Disabled_on_FCM' succeeded.
+04:05:23.408 Case 'Enabled' execution.
+04:05:23.502 Case 'Enabled' succeeded.
+04:05:23.846 Suite 'Currencies'. [2 test cases, 0 sub-suites]
+04:05:23.940 Case 'Balance' execution.
+04:05:24.158 Case 'Balance' succeeded.
+04:05:24.221 Case 'Commodity' execution.
+04:05:24.393 Case 'Commodity' succeeded.
+04:05:24.690 Suite 'DeliveryMonthCharge'. [8 test cases, 0 sub-suites]
+04:08:25.414 Case 'Method_10_CC' execution.
+04:08:25.773 Case 'Method_10_CC' succeeded.
+04:08:25.836 Case 'Method_10_CD' execution.
+04:08:26.055 Case 'Method_10_CD' succeeded.
+04:08:26.117 Case 'Method_10_FC' execution.
+04:08:26.352 Case 'Method_10_FC' succeeded.
+04:08:26.414 Case 'Method_10_OP_CD' execution.
+04:08:26.680 Case 'Method_10_OP_CD' succeeded.
+04:08:26.742 Case 'Method_10_OP_R2' execution.
+04:08:26.992 Case 'Method_10_OP_R2' succeeded.
+04:08:27.055 Case 'Method_10_OP' execution.
+04:08:27.367 Case 'Method_10_OP' succeeded.
+04:08:27.445 Case 'Method_10_R2' execution.
+04:08:27.695 Case 'Method_10_R2' succeeded.
+04:08:27.774 Case 'Method_1' execution.
+04:08:28.070 Case 'Method_1' succeeded.
+04:08:29.196 Suite 'InterCommoditySpreadCredit'. [7 test cases, 0 sub-suites]
+04:11:29.889 Case 'InterExchange_Combined' execution.
+04:11:30.123 Case 'InterExchange_Combined' succeeded.
+04:11:30.186 Case 'InterExchange_Fungible' execution.
+04:11:30.357 Case 'InterExchange_Fungible' succeeded.
+04:11:30.436 Case 'InterExchange' execution.
+04:11:30.670 Case 'InterExchange' succeeded.
+04:11:30.764 Case 'IntraExchange_Combined' execution.
+04:11:30.951 Case 'IntraExchange_Combined' succeeded.
+04:11:31.029 Case 'IntraExchange_Fungible' execution.
+04:11:31.201 Case 'IntraExchange_Fungible' succeeded.
+04:11:31.311 Case 'IntraExchange' execution.
+04:11:31.482 Case 'IntraExchange' succeeded.
+04:11:31.561 Case 'Priority' execution.
+04:11:31.998 Case 'Priority' succeeded.
+04:11:32.686 Suite 'InterMonthSpreadCharge'. [7 test cases, 0 sub-suites]
+04:14:33.458 Case 'Method_10_CC' execution.
+04:14:33.661 Case 'Method_10_CC' succeeded.
+04:14:33.723 Case 'Method_10_CD' execution.
+04:14:33.973 Case 'Method_10_CD' succeeded.
+04:14:34.051 Case 'Method_10_FC' execution.
+04:14:34.208 Case 'Method_10_FC' succeeded.
+04:14:34.270 Case 'Method_10_OP_CC' execution.
+04:14:34.551 Case 'Method_10_OP_CC' succeeded.
+04:14:34.614 Case 'Method_10_OP_CD_Liq' execution.
+04:14:34.677 Case 'Method_10_OP_CD_Liq' succeeded.
+04:14:34.786 Case 'Method_10_OP_CD' execution.
+04:14:34.973 Case 'Method_10_OP_CD' succeeded.
+04:14:35.052 Case 'Method_1' execution.
+04:14:35.302 Case 'Method_1' succeeded.
+04:14:35.770 Suite 'ShortOptionMinimumCharge'. [4 test cases, 0 sub-suites]
+04:17:36.465 Case 'Method_1_OP' execution.
+04:17:36.637 Case 'Method_1_OP' succeeded.
+04:17:36.715 Case 'Method_1' execution.
+04:17:37.012 Case 'Method_1' succeeded.
+04:17:37.074 Case 'Method_2_OP' execution.
+04:17:37.277 Case 'Method_2_OP' succeeded.
+04:17:37.355 Case 'Method_2' execution.
+04:17:37.591 Case 'Method_2' succeeded.
+04:17:38.746 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/SPAN' execution finished. It took 0:15:34.328587.
+04:17:38.746 Test cases results: 31 total, 31 succeeded, 0 failed, 0 skipped.

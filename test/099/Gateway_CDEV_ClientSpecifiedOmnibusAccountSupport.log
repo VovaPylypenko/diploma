@@ -1,0 +1,32 @@
+ 8:32:31.73  Test starded without threads
+06:32:32.238 Python Module Path 'Scripts/Gateway/SystemAreas/TradingInterfaces/FixInterface/Suites/PythonModules' added.
+06:32:32.238 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:32:32.238 Python Module Path 'ScriptKit' added.
+06:32:32.691 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ClientSpecifiedOmnibusAccountSupport' full execution.
+06:32:32.723 Suite '.'. [12 test cases, 0 sub-suites]
+06:32:40.160 Case 'ActivateParkedOrder' execution.
+06:32:40.583 Case 'ActivateParkedOrder' succeeded.
+06:32:40.629 Case 'ClientOmnibusIsDefault' execution.
+06:32:40.707 Case 'ClientOmnibusIsDefault' succeeded.
+06:32:40.770 Case 'ClientOmnibusIsNotAllowed' execution.
+06:32:40.926 Case 'ClientOmnibusIsNotAllowed' succeeded.
+06:32:40.973 Case 'ClientOmnibusIsNotListed' execution.
+06:32:41.348 Case 'ClientOmnibusIsNotListed' succeeded.
+06:32:41.379 Case 'ClientOmnibusOnAnotherFcm' execution.
+06:32:41.707 Case 'ClientOmnibusOnAnotherFcm' succeeded.
+06:32:41.754 Case 'NoDefaultOmnibus' execution.
+06:32:42.129 Case 'NoDefaultOmnibus' succeeded.
+06:32:42.176 Case 'OmnibusesAreProhibited' execution.
+06:32:42.457 Case 'OmnibusesAreProhibited' succeeded.
+06:32:42.504 Case 'PassengersOnOmnibus' execution.
+06:32:42.739 Case 'PassengersOnOmnibus' succeeded.
+06:32:42.801 Case 'PlaceBracket' execution.
+06:32:43.223 Case 'PlaceBracket' succeeded.
+06:32:43.254 Case 'PlaceNativeStrategyOrder' execution.
+06:32:43.879 Case 'PlaceNativeStrategyOrder' succeeded.
+06:32:43.942 Case 'PlaceOpoOrder' execution.
+06:32:44.067 Case 'PlaceOpoOrder' succeeded.
+06:32:44.114 Case 'PlaceOrder' execution.
+06:32:44.207 Case 'PlaceOrder' succeeded.
+06:32:46.224 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ClientSpecifiedOmnibusAccountSupport' execution finished. It took 0:00:13.516125.
+06:32:46.224 Test cases results: 12 total, 12 succeeded, 0 failed, 0 skipped.

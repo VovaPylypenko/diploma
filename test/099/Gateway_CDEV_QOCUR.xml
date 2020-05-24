@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="30" testsuite_failed="False" time="147.396055" timestamp="2020-02-06T05:48:18.525894">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/DataQueries/QOCUR/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value="SF_ESR1"/>
+  <property name="threads-count" value="16"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/DataQueries/QOCUR"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="QOCUR" skipped="0" tests="30" testsuite_failed="False" time="147.396055" timestamp="2020-02-06T05:48:18.525894">
+  <testsuite failures="0" name="LocalQM_Available" skipped="0" tests="15" testsuite_failed="False" time="55.251914" timestamp="2020-02-06T05:48:50.245741">
+   <testcase name="Trader10" status="run" time="35.735598" timestamp="2020-02-06T05:48:50.355124"/>
+   <testcase name="Trader11" status="run" time="6.328877" timestamp="2020-02-06T05:48:50.402072"/>
+   <testcase name="Trader12" status="run" time="31.422969" timestamp="2020-02-06T05:48:50.495732"/>
+   <testcase name="Trader13" status="run" time="24.453977" timestamp="2020-02-06T05:48:50.526987"/>
+   <testcase name="Trader14" status="run" time="1.578184" timestamp="2020-02-06T05:48:50.558242"/>
+   <testcase name="Trader15" status="run" time="4.015824" timestamp="2020-02-06T05:48:50.605183"/>
+   <testcase name="Trader1" status="run" time="54.798801" timestamp="2020-02-06T05:48:50.651991"/>
+   <testcase name="Trader2" status="run" time="54.454969" timestamp="2020-02-06T05:48:50.667691"/>
+   <testcase name="Trader3" status="run" time="52.092441" timestamp="2020-02-06T05:48:50.717625"/>
+   <testcase name="Trader4" status="run" time="43.610931" timestamp="2020-02-06T05:48:50.745759"/>
+   <testcase name="Trader5" status="run" time="37.04814" timestamp="2020-02-06T05:48:50.792638"/>
+   <testcase name="Trader6" status="run" time="53.361156" timestamp="2020-02-06T05:48:50.855198"/>
+   <testcase name="Trader7" status="run" time="43.767158" timestamp="2020-02-06T05:48:50.917623"/>
+   <testcase name="Trader8" status="run" time="43.501419" timestamp="2020-02-06T05:48:50.995846"/>
+   <testcase name="Trader9" status="run" time="35.004456" timestamp="2020-02-06T05:48:51.058548"/>
+  </testsuite>
+  <testsuite failures="0" name="LocalQM_Unavailable" skipped="0" tests="15" testsuite_failed="False" time="60.033951" timestamp="2020-02-06T05:49:45.544540">
+   <testcase name="Trader10" status="run" time="41.251409" timestamp="2020-02-06T05:49:48.294642"/>
+   <testcase name="Trader11" status="run" time="3.421947" timestamp="2020-02-06T05:49:48.325915"/>
+   <testcase name="Trader12" status="run" time="28.750992" timestamp="2020-02-06T05:49:48.372754"/>
+   <testcase name="Trader13" status="run" time="27.719696" timestamp="2020-02-06T05:49:48.419642"/>
+   <testcase name="Trader14" status="run" time="1.7874349999999999" timestamp="2020-02-06T05:49:48.466554"/>
+   <testcase name="Trader15" status="run" time="1.984354" timestamp="2020-02-06T05:49:48.529102"/>
+   <testcase name="Trader1" status="run" time="56.251975" timestamp="2020-02-06T05:49:48.560249"/>
+   <testcase name="Trader2" status="run" time="55.986323" timestamp="2020-02-06T05:49:48.622792"/>
+   <testcase name="Trader3" status="run" time="56.517587" timestamp="2020-02-06T05:49:48.669648"/>
+   <testcase name="Trader4" status="run" time="46.063833" timestamp="2020-02-06T05:49:48.732400"/>
+   <testcase name="Trader5" status="run" time="44.235791" timestamp="2020-02-06T05:49:48.794750"/>
+   <testcase name="Trader6" status="run" time="56.658235" timestamp="2020-02-06T05:49:48.857137"/>
+   <testcase name="Trader7" status="run" time="45.579738" timestamp="2020-02-06T05:49:48.935259"/>
+   <testcase name="Trader8" status="run" time="44.128346" timestamp="2020-02-06T05:49:48.997781"/>
+   <testcase name="Trader9" status="run" time="43.405458" timestamp="2020-02-06T05:49:49.062592"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

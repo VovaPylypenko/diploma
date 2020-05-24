@@ -1,0 +1,25 @@
+ 2:40:21.59  Test starded without threads
+00:40:22.092 Python Module Path 'ScriptKit' added.
+00:40:22.092 Python Module Path 'ScriptKit/TroubleMaker' added.
+00:40:22.092 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC/PythonModules' added.
+00:40:22.092 Python Module Path 'Scripts/Gateway/PythonModules' added.
+00:40:22.514 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover' full execution.
+00:40:22.576 Suite '.'. [0 test cases, 1 sub-suites]
+00:40:47.405 Suite 'IMF'. [1 test cases, 0 sub-suites]
+00:40:48.390 Case 'RecoverOrdersGWConnectionLost' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover\IMF\RecoverOrdersGWConnectionLost_tc.py", line 131, in <module>
+    test(GWComponent('localhost', "CQGFixServiceBase"))
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover\IMF\RecoverOrdersGWConnectionLost_tc.py", line 53, in test
+    childOrderType=OrderType.Limit, childLimitPrice=98, timeout=eventWaitTimeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OTCOrderUtils.py", line 255, in AssertDPOrderPlacedWithExternalChild
+    expectedParentOrder = CreateOrder(symbol, side, size, parentOrderType, parentLimitPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+00:40:48.437 Case 'RecoverOrdersGWConnectionLost' failed.
+00:40:49.968 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTCFailover' execution finished. It took 0:00:27.422597.
+00:40:49.968 Test cases results: 1 total, 0 succeeded, 1 failed, 0 skipped.

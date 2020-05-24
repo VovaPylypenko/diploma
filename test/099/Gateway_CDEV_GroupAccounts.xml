@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="140" testsuite_failed="False" time="502.12608" timestamp="2020-02-06T07:52:09.015423">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/GroupAccounts"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="GroupAccounts" skipped="0" tests="140" testsuite_failed="False" time="502.12608" timestamp="2020-02-06T07:52:09.015423">
+  <testsuite failures="0" name="AdvancedFunctionality" skipped="0" tests="14" testsuite_failed="False" time="22.735151" timestamp="2020-02-06T07:52:09.109197">
+   <testsuite failures="0" name="BlockAccounts" skipped="0" tests="1" testsuite_failed="False" time="0.484442" timestamp="2020-02-06T07:52:21.390865">
+    <testcase name="TC01_BlockAccounts" status="run" time="0.203112" timestamp="2020-02-06T07:52:21.531485"/>
+   </testsuite>
+   <testsuite failures="0" name="BorrowFromMaster" skipped="0" tests="4" testsuite_failed="False" time="2.781334" timestamp="2020-02-06T07:52:21.922126">
+    <testcase name="TC01_CheckNegativeBalance" status="run" time="0.313348" timestamp="2020-02-06T07:52:22.078551"/>
+    <testcase name="TC02_CommoditySpecificMargin" status="run" time="1.186593" timestamp="2020-02-06T07:52:22.485579"/>
+    <testcase name="TC03_AllowableMarkets" status="run" time="0.437492" timestamp="2020-02-06T07:52:23.781562"/>
+    <testcase name="TC05_LMEStylePriceCalculation" status="run" time="0.234377" timestamp="2020-02-06T07:52:24.344079"/>
+   </testsuite>
+   <testsuite failures="0" name="CoMargining" skipped="0" tests="5" testsuite_failed="False" time="3.593874" timestamp="2020-02-06T07:52:24.750333">
+    <testcase name="TC01_CheckNegativeBalance" status="run" time="0.296847" timestamp="2020-02-06T07:52:24.906615"/>
+    <testcase name="TC02_CommoditySpecificMargin" status="run" time="1.156278" timestamp="2020-02-06T07:52:25.328482"/>
+    <testcase name="TC03_AllowableMarkets" status="run" time="0.409184" timestamp="2020-02-06T07:52:26.594159"/>
+    <testcase name="TC04_MarginSubsystem" status="run" time="0.765365" timestamp="2020-02-06T07:52:27.110062"/>
+    <testcase name="TC05_LMEStylePriceCalculation" status="run" time="0.250157" timestamp="2020-02-06T07:52:27.984844"/>
+   </testsuite>
+   <testsuite failures="0" name="JoinPurchasingPower" skipped="0" tests="4" testsuite_failed="False" time="3.187606" timestamp="2020-02-06T07:52:28.406695">
+    <testcase name="TC01_CheckNegativeBalance" status="run" time="0.421897" timestamp="2020-02-06T07:52:28.562962"/>
+    <testcase name="TC02_CommoditySpecificMargin" status="run" time="1.375027" timestamp="2020-02-06T07:52:29.094260"/>
+    <testcase name="TC03_AllowableMarkets" status="run" time="0.390097" timestamp="2020-02-06T07:52:30.594865"/>
+    <testcase name="TC05_LMEStylePriceCalculation" status="run" time="0.344077" timestamp="2020-02-06T07:52:31.109928"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="BasicChecks" skipped="0" tests="63" testsuite_failed="False" time="357.152459" timestamp="2020-02-06T07:52:31.906868">
+   <testcase name="AcctPositionLimits_1" status="run" time="0.937525" timestamp="2020-02-06T07:52:45.954175"/>
+   <testcase name="AcctPositionLimits_2" status="run" time="1.04689" timestamp="2020-02-06T07:52:47.016716"/>
+   <testcase name="AcctPositionLimits_3" status="run" time="0.986049" timestamp="2020-02-06T07:52:48.188621"/>
+   <testcase name="AcctPositionLimits_4" status="run" time="0.531275" timestamp="2020-02-06T07:52:49.266775"/>
+   <testcase name="AcctPositionLimits_5" status="run" time="0.578795" timestamp="2020-02-06T07:52:49.907450"/>
+   <testcase name="DailyLossLimit_1" status="run" time="1.093777" timestamp="2020-02-06T07:52:50.610568"/>
+   <testcase name="DailyLossLimit_2" status="run" time="1.172054" timestamp="2020-02-06T07:52:51.813782"/>
+   <testcase name="DailyLossLimit_3" status="run" time="0.937615" timestamp="2020-02-06T07:52:53.095047"/>
+   <testcase name="Liquidation_1" status="run" time="0.328116" timestamp="2020-02-06T07:52:54.173196"/>
+   <testcase name="Liquidation_2" status="run" time="0.531248" timestamp="2020-02-06T07:52:54.610710"/>
+   <testcase name="Liquidation_3" status="run" time="0.285552" timestamp="2020-02-06T07:52:55.266975"/>
+   <testcase name="Liquidation_4" status="run" time="0.390639" timestamp="2020-02-06T07:52:55.657617"/>
+   <testcase name="Liquidation_5" status="run" time="0.859414" timestamp="2020-02-06T07:52:56.173258"/>
+   <testcase name="Liquidation_6" status="run" time="0.468739" timestamp="2020-02-06T07:52:57.173318"/>
+   <testcase name="ML_AllowedToTrade_1" status="run" time="2.609487" timestamp="2020-02-06T07:52:57.735796"/>
+   <testcase name="ML_AllowedToTrade_2" status="run" time="1.955444" timestamp="2020-02-06T07:53:00.517150"/>
+   <testcase name="ML_AllowedToTrade_3" status="run" time="1.906558" timestamp="2020-02-06T07:53:02.626583"/>
+   <testcase name="ML_AllowedToTrade_4" status="run" time="2.203277" timestamp="2020-02-06T07:53:04.673572"/>
+   <testcase name="ML_AllowedToTrade_5" status="run" time="2.546941" timestamp="2020-02-06T07:53:07.001743"/>
+   <testcase name="ML_AllowedToTrade_6" status="run" time="2.190897" timestamp="2020-02-06T07:53:09.689318"/>
+   <testcase name="ML_MarginMultiplier_1" status="run" time="2.342587" timestamp="2020-02-06T07:53:12.034399"/>
+   <testcase name="ML_MarginMultiplier_2" status="run" time="2.359454" timestamp="2020-02-06T07:53:14.517626"/>
+   <testcase name="ML_MarginMultiplier_3" status="run" time="2.093789" timestamp="2020-02-06T07:53:17.002102"/>
+   <testcase name="ML_MarginMultiplier_4" status="run" time="2.078209" timestamp="2020-02-06T07:53:19.220908"/>
+   <testcase name="ML_PositionLimits_1" status="run" time="14.938175" timestamp="2020-02-06T07:53:21.424112"/>
+   <testcase name="ML_PositionLimits_2" status="run" time="14.406719" timestamp="2020-02-06T07:53:36.487091"/>
+   <testcase name="ML_PositionLimits_3" status="run" time="14.156715" timestamp="2020-02-06T07:53:51.018844"/>
+   <testcase name="ML_PositionLimits_4" status="run" time="15.359926" timestamp="2020-02-06T07:54:05.300565"/>
+   <testcase name="ML_PositionLimits_5" status="run" time="13.54749" timestamp="2020-02-06T07:54:20.785449"/>
+   <testcase name="ML_PositionLimits_6" status="run" time="11.891036" timestamp="2020-02-06T07:54:34.442158"/>
+   <testcase name="ML_TradePriceLimit_1" status="run" time="8.562783" timestamp="2020-02-06T07:54:46.458165"/>
+   <testcase name="ML_TradePriceLimit_2" status="run" time="8.719038" timestamp="2020-02-06T07:54:55.145956"/>
+   <testcase name="ML_TradePriceLimit_3" status="run" time="13.844818" timestamp="2020-02-06T07:55:04.005630"/>
+   <testcase name="ML_TradePriceLimit_4" status="run" time="10.547268" timestamp="2020-02-06T07:55:18.021727"/>
+   <testcase name="ML_TradePriceLimit_5" status="run" time="16.563048" timestamp="2020-02-06T07:55:28.709589"/>
+   <testcase name="ML_TradeSizeLimit_1" status="run" time="7.447117" timestamp="2020-02-06T07:55:45.405609"/>
+   <testcase name="ML_TradeSizeLimit_2" status="run" time="7.640898" timestamp="2020-02-06T07:55:52.975993"/>
+   <testcase name="ML_TradeSizeLimit_3" status="run" time="7.375262" timestamp="2020-02-06T07:56:00.726267"/>
+   <testcase name="ML_TradeSizeLimit_4" status="run" time="7.547511" timestamp="2020-02-06T07:56:08.242136"/>
+   <testcase name="ML_TradeSizeLimit_5" status="run" time="8.344085" timestamp="2020-02-06T07:56:15.898644"/>
+   <testcase name="ML_TradeSizeLimit_6" status="run" time="7.422115" timestamp="2020-02-06T07:56:24.367683"/>
+   <testcase name="ML_TradeSizeLimit_7" status="run" time="6.81348" timestamp="2020-02-06T07:56:31.930424"/>
+   <testcase name="RejectRiskyMarkets_1" status="run" time="12.766044" timestamp="2020-02-06T07:56:38.883783"/>
+   <testcase name="RejectRiskyMarkets_2" status="run" time="19.156883" timestamp="2020-02-06T07:56:51.790468"/>
+   <testcase name="RejectRiskyMarkets_3" status="run" time="7.359593" timestamp="2020-02-06T07:57:11.072393"/>
+   <testcase name="TradeEnablements_1" status="run" time="0.484362" timestamp="2020-02-06T07:57:18.541366"/>
+   <testcase name="TradeEnablements_2" status="run" time="0.406601" timestamp="2020-02-06T07:57:19.135120"/>
+   <testcase name="TradeEnablements_3" status="run" time="0.515663" timestamp="2020-02-06T07:57:19.650773"/>
+   <testcase name="TradeEnablements_4" status="run" time="0.812518" timestamp="2020-02-06T07:57:20.275800"/>
+   <testcase name="TradeMarginLimit_1" status="run" time="2.203957" timestamp="2020-02-06T07:57:21.213330"/>
+   <testcase name="TradeMarginLimit_2" status="run" time="1.938225" timestamp="2020-02-06T07:57:23.525912"/>
+   <testcase name="TradeMarginLimit_3" status="run" time="0.750013" timestamp="2020-02-06T07:57:25.604096"/>
+   <testcase name="TradeMarginLimit_4" status="run" time="0.484406" timestamp="2020-02-06T07:57:26.494754"/>
+   <testcase name="TradeMarginLimit_5" status="run" time="0.90666" timestamp="2020-02-06T07:57:27.088576"/>
+   <testcase name="TradePriceLimit_1" status="run" time="8.32851" timestamp="2020-02-06T07:57:28.104178"/>
+   <testcase name="TradePriceLimit_2" status="run" time="12.437948" timestamp="2020-02-06T07:57:36.729450"/>
+   <testcase name="TradePriceLimit_3" status="run" time="10.500415" timestamp="2020-02-06T07:57:49.292382"/>
+   <testcase name="TradePriceLimit_4" status="run" time="8.437781" timestamp="2020-02-06T07:57:59.902095"/>
+   <testcase name="TradePriceLimit_5" status="run" time="14.641106" timestamp="2020-02-06T07:58:08.496131"/>
+   <testcase name="TradeSizeLimit_1" status="run" time="1.703114" timestamp="2020-02-06T07:58:23.262327"/>
+   <testcase name="TradeSizeLimit_2" status="run" time="1.593811" timestamp="2020-02-06T07:58:25.074820"/>
+   <testcase name="TradeSizeLimit_3" status="run" time="0.890646" timestamp="2020-02-06T07:58:26.809251"/>
+   <testcase name="TradeSizeLimit_4" status="run" time="0.687521" timestamp="2020-02-06T07:58:27.840537"/>
+  </testsuite>
+  <testsuite failures="0" name="BasicFunctionality" skipped="0" tests="63" testsuite_failed="False" time="121.832226" timestamp="2020-02-06T07:58:29.121839">
+   <testsuite failures="0" name="BorrowFromMaster" skipped="0" tests="21" testsuite_failed="False" time="40.938835" timestamp="2020-02-06T07:58:29.246839">
+    <testcase name="TC01_MarginSubsystem" status="run" time="1.265547" timestamp="2020-02-06T07:58:42.778647"/>
+    <testcase name="TC02_PPwithAMC" status="run" time="1.578149" timestamp="2020-02-06T07:58:44.184846"/>
+    <testcase name="TC03_MMLower" status="run" time="0.500024" timestamp="2020-02-06T07:58:45.919267"/>
+    <testcase name="TC04_MMGreater" status="run" time="0.453128" timestamp="2020-02-06T07:58:46.544287"/>
+    <testcase name="TC05_PPWithOP" status="run" time="1.6562890000000001" timestamp="2020-02-06T07:58:47.153687"/>
+    <testcase name="TC06_PPWithPL" status="run" time="2.03051" timestamp="2020-02-06T07:58:48.967086"/>
+    <testcase name="TC07_NegOTEonMaster" status="run" time="1.656292" timestamp="2020-02-06T07:58:51.138194"/>
+    <testcase name="TC08_NegOTEonSub" status="run" time="1.515654" timestamp="2020-02-06T07:58:52.919522"/>
+    <testcase name="TC09_PosOTEonMaster" status="run" time="1.406276" timestamp="2020-02-06T07:58:54.560177"/>
+    <testcase name="TC10_PosOTEonSub" status="run" time="1.406329" timestamp="2020-02-06T07:58:56.122752"/>
+    <testcase name="TC11_NegNOVonMaster" status="run" time="1.531288" timestamp="2020-02-06T07:58:57.669663"/>
+    <testcase name="TC12_NegNOVonSub" status="run" time="1.5312860000000001" timestamp="2020-02-06T07:58:59.357218"/>
+    <testcase name="TC13_PosNOVonMaster" status="run" time="1.234401" timestamp="2020-02-06T07:59:00.997891"/>
+    <testcase name="TC14_PosNOVonSub" status="run" time="1.5312890000000001" timestamp="2020-02-06T07:59:02.357312"/>
+    <testcase name="TC15_CR" status="run" time="0.953148" timestamp="2020-02-06T07:59:04.029250"/>
+    <testcase name="TC16_CRagainstCBwithOP" status="run" time="0.689113" timestamp="2020-02-06T07:59:05.091776"/>
+    <testcase name="TC17_CRagainstCBwithPL" status="run" time="1.077938" timestamp="2020-02-06T07:59:05.904849"/>
+    <testcase name="TC18_CRagainstCBwithAMC" status="run" time="0.500014" timestamp="2020-02-06T07:59:07.169975"/>
+    <testcase name="TC19_NegPPonMaster" status="run" time="0.062689" timestamp="2020-02-06T07:59:07.794995"/>
+    <testcase name="TC21_ILMM_Master" status="run" time="0.53126" timestamp="2020-02-06T07:59:08.013754"/>
+    <testcase name="TC22_ILMM_Sub" status="run" time="0.546124" timestamp="2020-02-06T07:59:08.670779"/>
+   </testsuite>
+   <testsuite failures="0" name="CoMargining" skipped="0" tests="21" testsuite_failed="False" time="39.798214" timestamp="2020-02-06T07:59:10.263824">
+    <testcase name="TC01_MarginSubsystem" status="run" time="0.968769" timestamp="2020-02-06T07:59:23.545522"/>
+    <testcase name="TC02_PPwithAMC" status="run" time="1.3594680000000001" timestamp="2020-02-06T07:59:24.686203"/>
+    <testcase name="TC03_MMLowerThanOne" status="run" time="0.468788" timestamp="2020-02-06T07:59:26.154997"/>
+    <testcase name="TC04_MMGreaterThanOne" status="run" time="0.40625" timestamp="2020-02-06T07:59:26.748757"/>
+    <testcase name="TC05_PPwithOP" status="run" time="1.39066" timestamp="2020-02-06T07:59:27.326897"/>
+    <testcase name="TC06_PPwithPL" status="run" time="1.890666" timestamp="2020-02-06T07:59:28.873831"/>
+    <testcase name="TC07_NegOTEOnMaster" status="run" time="1.688178" timestamp="2020-02-06T07:59:30.920763"/>
+    <testcase name="TC08_NegOTEOnSub" status="run" time="1.531294" timestamp="2020-02-06T07:59:32.748939"/>
+    <testcase name="TC09_PosOTEOnMaster" status="run" time="1.3045900000000001" timestamp="2020-02-06T07:59:34.413199"/>
+    <testcase name="TC10_PosOTEOnSub" status="run" time="1.609422" timestamp="2020-02-06T07:59:35.858431"/>
+    <testcase name="TC11_NegNOVOnMaster" status="run" time="1.234405" timestamp="2020-02-06T07:59:37.608477"/>
+    <testcase name="TC12_NegNOVOnSub" status="run" time="1.406298" timestamp="2020-02-06T07:59:38.999149"/>
+    <testcase name="TC13_PosNOVOnMaster" status="run" time="1.5315379999999998" timestamp="2020-02-06T07:59:40.546070"/>
+    <testcase name="TC14_PosNOVOnSub" status="run" time="1.265641" timestamp="2020-02-06T07:59:42.233647"/>
+    <testcase name="TC15_CR" status="run" time="1.1875149999999999" timestamp="2020-02-06T07:59:43.686814"/>
+    <testcase name="TC16_CRagainstCBwithOP" status="run" time="0.671962" timestamp="2020-02-06T07:59:44.983708"/>
+    <testcase name="TC17_CRagainstCBwithPL" status="run" time="0.703132" timestamp="2020-02-06T07:59:45.796255"/>
+    <testcase name="TC18_CRagainstCBwithAMC" status="run" time="0.500014" timestamp="2020-02-06T07:59:46.640029"/>
+    <testcase name="TC19_MarginIndependently" status="run" time="0.283615" timestamp="2020-02-06T07:59:47.265043"/>
+    <testcase name="TC25_ILMM_Master" status="run" time="0.484683" timestamp="2020-02-06T07:59:47.686924"/>
+    <testcase name="TC26_ILMM_Sub" status="run" time="0.667953" timestamp="2020-02-06T07:59:48.347151"/>
+   </testsuite>
+   <testsuite failures="0" name="JoinPurchasingPower" skipped="0" tests="21" testsuite_failed="False" time="40.579664" timestamp="2020-02-06T07:59:50.171403">
+    <testcase name="TC01_MarginSubsystem" status="run" time="1.5156779999999999" timestamp="2020-02-06T08:00:03.421837"/>
+    <testcase name="TC02_PPwithAMC" status="run" time="1.250044" timestamp="2020-02-06T08:00:05.109389"/>
+    <testcase name="TC03_MMLowerThanOne" status="run" time="0.500034" timestamp="2020-02-06T08:00:06.500053"/>
+    <testcase name="TC04_MMGreaterThanOne" status="run" time="0.390628" timestamp="2020-02-06T08:00:07.140705"/>
+    <testcase name="TC05_PPwithOP" status="run" time="1.781334" timestamp="2020-02-06T08:00:07.671978"/>
+    <testcase name="TC06_PPwithPL" status="run" time="1.953188" timestamp="2020-02-06T08:00:09.578294"/>
+    <testcase name="TC07_NegOTEOnMaster" status="run" time="1.261918" timestamp="2020-02-06T08:00:11.785238"/>
+    <testcase name="TC08_NegOTEOnSub" status="run" time="1.468778" timestamp="2020-02-06T08:00:13.172173"/>
+    <testcase name="TC09_PosOTEOnMaster" status="run" time="1.578169" timestamp="2020-02-06T08:00:14.797211"/>
+    <testcase name="TC10_PosOTEOnSub" status="run" time="1.515666" timestamp="2020-02-06T08:00:16.516041"/>
+    <testcase name="TC11_NegNOVOnMaster" status="run" time="1.629188" timestamp="2020-02-06T08:00:18.187977"/>
+    <testcase name="TC12_NegNOVOnSub" status="run" time="1.81262" timestamp="2020-02-06T08:00:19.953656"/>
+    <testcase name="TC13_PosNOVOnMaster" status="run" time="1.265576" timestamp="2020-02-06T08:00:21.922535"/>
+    <testcase name="TC14_PosNOVOnSub" status="run" time="1.454227" timestamp="2020-02-06T08:00:23.375661"/>
+    <testcase name="TC15_CR" status="run" time="0.797007" timestamp="2020-02-06T08:00:24.953812"/>
+    <testcase name="TC16_CRagainstCBwithOP" status="run" time="0.500027" timestamp="2020-02-06T08:00:25.906959"/>
+    <testcase name="TC17_CRagainstCBwithPL" status="run" time="0.609689" timestamp="2020-02-06T08:00:26.547620"/>
+    <testcase name="TC18_CRagainstCBwithAMC" status="run" time="0.531271" timestamp="2020-02-06T08:00:27.282010"/>
+    <testcase name="TC19_MarginIndependently" status="run" time="0.344711" timestamp="2020-02-06T08:00:28.000792"/>
+    <testcase name="TC23_ILMM_Master" status="run" time="0.531821" timestamp="2020-02-06T08:00:28.532054"/>
+    <testcase name="TC24_ILMM_Sub" status="run" time="0.734407" timestamp="2020-02-06T08:00:29.297695"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

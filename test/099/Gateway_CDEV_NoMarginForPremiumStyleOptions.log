@@ -1,0 +1,17 @@
+10:22:26.72  Test starded without threads
+08:22:27.229 Python Module Path 'ScriptKit' added.
+08:22:27.229 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:22:27.682 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NoMarginForPremiumStyleOptions' full execution.
+08:22:27.699 Suite '.'. [5 test cases, 0 sub-suites]
+08:22:41.276 Case 'Test_01_RejectOptionByMargin' execution.
+08:22:41.933 Case 'Test_01_RejectOptionByMargin' succeeded.
+08:22:41.980 Case 'Test_02_AcceptOptionNoMargin' execution.
+08:22:44.403 Case 'Test_02_AcceptOptionNoMargin' succeeded.
+08:22:44.448 Case 'Test_03_RejectOptionByCashReserve' execution.
+08:22:44.542 Case 'Test_03_RejectOptionByCashReserve' succeeded.
+08:22:44.591 Case 'Test_04_RejectOptionFutureStyle' execution.
+08:22:44.745 Case 'Test_04_RejectOptionFutureStyle' succeeded.
+08:22:44.784 Case 'Test_05_RejectOptionBuySell' execution.
+08:22:44.870 Case 'Test_05_RejectOptionBuySell' succeeded.
+08:22:48.074 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/NoMarginForPremiumStyleOptions' execution finished. It took 0:00:20.375686.
+08:22:48.074 Test cases results: 5 total, 5 succeeded, 0 failed, 0 skipped.

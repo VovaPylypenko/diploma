@@ -1,0 +1,126 @@
+22:35:54.15  Test starded without threads
+20:35:54.654 Python Module Path 'ScriptKit/CMS' added.
+20:35:54.654 Python Module Path 'ScriptKit/TroubleMaker' added.
+20:35:54.654 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC/EIME/PythonModules' added.
+20:35:54.654 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC/PythonModules' added.
+20:35:54.654 Python Module Path 'Scripts/Gateway/PythonModules' added.
+20:35:54.654 Python Module Path 'ScriptKit/WebApi' added.
+20:35:54.654 Python Module Path 'ScriptKit' added.
+20:35:55.107 2020-02-19 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC' full execution.
+20:35:55.138 Suite '.'. [0 test cases, 4 sub-suites]
+20:36:04.295 Suite 'EIME'. [0 test cases, 7 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC\EIME\test_suite_su.py", line 104, in <module>
+    tradeReporterServer.WaitForSessionLogon(traderReporterSessionID, Timeouts.messengerConnectTimeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OTC\EIME\PythonModules\TradeReportServer.py", line 131, in WaitForSessionLogon
+    self._application.WaitForSessionLogon(sessionID, timeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OTC\EIME\PythonModules\TradeReportServer.py", line 101, in WaitForSessionLogon
+    raise Exception(f"WaitForSessionLogon timeout: {timeout} seconds. Session: {sessionID.toString()}")
+Exception: WaitForSessionLogon timeout: 20 seconds. Session: FIXT.1.1:NFX_TEST->NFCQG
+
+20:36:53.796 Suite 'EIME' setup failed, child test cases and sub-suites will be skipped.
+20:36:53.937 Suite 'FillAndHedge'. [2 test cases, 0 sub-suites]
+20:37:08.234 Case 'Fill' execution.
+20:37:23.626 Case 'Fill' succeeded.
+20:37:23.704 Case 'PlaceModifyCancel' execution.
+20:37:28.923 Case 'PlaceModifyCancel' succeeded.
+20:37:29.141 Suite 'HedgeAndFill'. [0 test cases, 5 sub-suites]
+20:37:35.985 Suite 'HedgeAndFill\Basic'. [6 test cases, 0 sub-suites]
+20:37:36.063 Case 'CancelRejected' execution.
+20:37:36.532 Case 'CancelRejected' succeeded.
+20:37:36.626 Case 'Fill' execution.
+20:37:36.845 Case 'Fill' succeeded.
+20:37:36.923 Case 'FillMkt' execution.
+20:37:37.188 Case 'FillMkt' succeeded.
+20:37:37.251 Case 'ModifyRejected' execution.
+20:37:37.720 Case 'ModifyRejected' succeeded.
+20:37:37.798 Case 'PlaceModifyCancel' execution.
+20:37:38.392 Case 'PlaceModifyCancel' succeeded.
+20:37:38.470 Case 'PlaceRejected' execution.
+20:37:38.595 Case 'PlaceRejected' succeeded.
+20:37:38.829 Suite 'HedgeAndFill\ContractMetadata'. [3 test cases, 0 sub-suites]
+20:37:38.907 Case 'DifferentContractsContributors' execution.
+20:37:39.188 Case 'DifferentContractsContributors' succeeded.
+20:37:39.282 Case 'EnableDisable' execution.
+20:37:49.737 Case 'EnableDisable' succeeded.
+20:37:49.798 Case 'OffsetChanges' execution.
+20:37:55.236 Case 'OffsetChanges' succeeded.
+20:37:55.439 Suite 'HedgeAndFill\ExternalHedgeRequests'. [7 test cases, 0 sub-suites]
+20:37:55.517 Case 'CancelAccepted' execution.
+20:37:55.658 Case 'CancelAccepted' succeeded.
+20:37:55.736 Case 'CancelRejected' execution.
+20:37:55.939 Case 'CancelRejected' succeeded.
+20:37:56.017 Case 'ModifiedPriceFill' execution.
+20:37:56.173 Case 'ModifiedPriceFill' succeeded.
+20:37:56.244 Case 'ModifiedSizeCancel' execution.
+20:37:56.423 Case 'ModifiedSizeCancel' succeeded.
+20:37:56.517 Case 'ModifiedSizeOverfill' execution.
+20:37:56.705 Case 'ModifiedSizeOverfill' succeeded.
+20:37:56.783 Case 'ModifyAccepted' execution.
+20:37:57.080 Case 'ModifyAccepted' succeeded.
+20:37:57.158 Case 'ModifyRejected' execution.
+20:37:57.392 Case 'ModifyRejected' succeeded.
+20:37:57.580 Suite 'HedgeAndFill\InFlightFill'. [2 test cases, 0 sub-suites]
+20:37:57.673 Case 'PendingCancel' execution.
+20:37:57.845 Case 'PendingCancel' succeeded.
+20:37:57.939 Case 'PendingModify' execution.
+20:37:58.158 Case 'PendingModify' succeeded.
+20:37:58.330 Suite 'HedgeAndFill\UnsolicitedCancel'. [3 test cases, 0 sub-suites]
+20:37:58.408 Case 'PendingCancel' execution.
+20:37:58.611 Case 'PendingCancel' succeeded.
+20:37:58.720 Case 'PendingModify' execution.
+20:37:58.924 Case 'PendingModify' succeeded.
+20:37:59.002 Case 'PendingPlace' execution.
+20:37:59.127 Case 'PendingPlace' succeeded.
+20:37:59.392 Suite 'IMF'. [0 test cases, 5 sub-suites]
+20:40:06.506 Suite 'IMF\BasicRequestsAndEvents'. [8 test cases, 0 sub-suites]
+20:40:06.600 Case 'ExchangeChildOrderRejected' execution.
+20:40:06.788 Case 'ExchangeChildOrderRejected' succeeded.
+20:40:06.850 Case 'ExternalModificationOfChildOrder' execution.
+20:40:07.366 Case 'ExternalModificationOfChildOrder' succeeded.
+20:40:07.475 Case 'ModifyPartiallyFilledOrder' execution.
+20:40:08.100 Case 'ModifyPartiallyFilledOrder' succeeded.
+20:40:08.194 Case 'PlaceCancelAll' execution.
+20:40:08.335 Case 'PlaceCancelAll' succeeded.
+20:40:08.444 Case 'PlaceModifyCancelLimit' execution.
+20:40:08.881 Case 'PlaceModifyCancelLimit' succeeded.
+20:40:08.960 Case 'PlaceModifyCancelMarket' execution.
+20:40:09.444 Case 'PlaceModifyCancelMarket' succeeded.
+20:40:09.538 Case 'PlaceParkAllActivateAll' execution.
+20:40:09.803 Case 'PlaceParkAllActivateAll' succeeded.
+20:40:09.897 Case 'UnsolicitedCancelOfExchangeChildOrder' execution.
+20:40:10.210 Case 'UnsolicitedCancelOfExchangeChildOrder' succeeded.
+20:40:10.460 Suite 'IMF\FailuresProcessing'. [3 test cases, 0 sub-suites]
+20:40:10.538 Case 'ChildOrderCancelRejected' execution.
+20:41:11.196 Case 'ChildOrderCancelRejected' succeeded.
+20:41:11.290 Case 'ChildOrderCancelTimeout' execution.
+20:42:13.855 Case 'ChildOrderCancelTimeout' succeeded.
+20:42:13.964 Case 'ChildOrderPlaceRejected' execution.
+20:42:14.589 Case 'ChildOrderPlaceRejected' succeeded.
+20:42:14.808 Suite 'IMF\FillCancelCorrectionBust'. [2 test cases, 0 sub-suites]
+20:42:14.933 Case 'FillBust' execution.
+20:42:15.386 Case 'FillBust' succeeded.
+20:42:15.480 Case 'FillCancel' execution.
+20:42:16.089 Case 'FillCancel' succeeded.
+20:42:16.277 Suite 'IMF\InFlightRaceConditions'. [3 test cases, 0 sub-suites]
+20:42:16.386 Case 'OrderFilledDuringMatching' execution.
+20:42:17.121 Case 'OrderFilledDuringMatching' succeeded.
+20:42:17.246 Case 'PendingCancelOrderFilled' execution.
+20:42:17.761 Case 'PendingCancelOrderFilled' succeeded.
+20:42:17.871 Case 'PendingModifyOrderCanceled' execution.
+20:42:18.293 Case 'PendingModifyOrderCanceled' succeeded.
+20:42:18.480 Suite 'IMF\MatchingAlgorithm'. [5 test cases, 0 sub-suites]
+20:42:18.590 Case 'MachingAfterModification' execution.
+20:42:19.168 Case 'MachingAfterModification' succeeded.
+20:42:19.277 Case 'MarketMovedAway' execution.
+20:42:19.824 Case 'MarketMovedAway' succeeded.
+20:42:19.918 Case 'OppositeFullyMatched' execution.
+20:42:20.480 Case 'OppositeFullyMatched' succeeded.
+20:42:20.590 Case 'OppositePartiallyMatched' execution.
+20:42:21.059 Case 'OppositePartiallyMatched' succeeded.
+20:42:21.168 Case 'SeveralOrdersMatched' execution.
+20:42:22.152 Case 'SeveralOrdersMatched' succeeded.
+20:42:22.683 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OTC' execution finished. It took 0:06:27.529797.
+20:42:22.683 Test cases results: 69 total, 44 succeeded, 0 failed, 25 skipped.

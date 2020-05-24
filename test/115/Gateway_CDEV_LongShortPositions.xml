@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="215" tests="215" testsuite_failed="False" time="6.687758" timestamp="2020-02-19T19:31:44.301796">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LongShortPositions/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="18"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LongShortPositions"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="LongShortPositions" skipped="215" tests="215" testsuite_failed="False" time="6.687758" timestamp="2020-02-19T19:31:44.301796">
+  <testsuite failures="0" name="DailyLossLimit" skipped="26" tests="26" testsuite_failed="False">
+   <testsuite failures="0" name="ExplicitTracking" skipped="18" tests="18" testsuite_failed="False">
+    <testcase name="LongPosDec" status="notrun"/>
+    <testcase name="LongPosInc" status="notrun"/>
+    <testcase name="LongPosLiq_PrevLongPosDec" status="notrun"/>
+    <testcase name="LongPosLiq" status="notrun"/>
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="PrevLongPosDec" status="notrun"/>
+    <testcase name="PrevLongPosLiq_LongPosDec" status="notrun"/>
+    <testcase name="PrevLongPosLiq" status="notrun"/>
+    <testcase name="PrevLongPosRev" status="notrun"/>
+    <testcase name="PrevShortPosDec" status="notrun"/>
+    <testcase name="PrevShortPosLiq_ShortPosDec" status="notrun"/>
+    <testcase name="PrevShortPosLiq" status="notrun"/>
+    <testcase name="PrevShortPosRev" status="notrun"/>
+    <testcase name="ShortPosDec" status="notrun"/>
+    <testcase name="ShortPosInc" status="notrun"/>
+    <testcase name="ShortPosLiq_PrevShortPosDec" status="notrun"/>
+    <testcase name="ShortPosLiq" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTracking" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="LongPosDec" status="notrun"/>
+    <testcase name="LongPosInc" status="notrun"/>
+    <testcase name="LongPosLiq" status="notrun"/>
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="ShortPosDec" status="notrun"/>
+    <testcase name="ShortPosInc" status="notrun"/>
+    <testcase name="ShortPosLiq" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="DeltaDailyLossLimit" skipped="52" tests="52" testsuite_failed="False">
+   <testsuite failures="0" name="ExplicitTrackingFut" skipped="18" tests="18" testsuite_failed="False">
+    <testcase name="LongPosDec" status="notrun"/>
+    <testcase name="LongPosInc" status="notrun"/>
+    <testcase name="LongPosLiq_PrevLongPosDec" status="notrun"/>
+    <testcase name="LongPosLiq" status="notrun"/>
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="PrevLongPosDec" status="notrun"/>
+    <testcase name="PrevLongPosLiq_LongPosDec" status="notrun"/>
+    <testcase name="PrevLongPosLiq" status="notrun"/>
+    <testcase name="PrevLongPosRev" status="notrun"/>
+    <testcase name="PrevShortPosDec" status="notrun"/>
+    <testcase name="PrevShortPosLiq_ShortPosDec" status="notrun"/>
+    <testcase name="PrevShortPosLiq" status="notrun"/>
+    <testcase name="PrevShortPosRev" status="notrun"/>
+    <testcase name="ShortPosDec" status="notrun"/>
+    <testcase name="ShortPosInc" status="notrun"/>
+    <testcase name="ShortPosLiq_PrevShortPosDec" status="notrun"/>
+    <testcase name="ShortPosLiq" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="ExplicitTrackingOpt" skipped="18" tests="18" testsuite_failed="False">
+    <testcase name="LongPosDec" status="notrun"/>
+    <testcase name="LongPosInc" status="notrun"/>
+    <testcase name="LongPosLiq_PrevLongPosDec" status="notrun"/>
+    <testcase name="LongPosLiq" status="notrun"/>
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="PrevLongPosDec" status="notrun"/>
+    <testcase name="PrevLongPosLiq_LongPosDec" status="notrun"/>
+    <testcase name="PrevLongPosLiq" status="notrun"/>
+    <testcase name="PrevLongPosRev" status="notrun"/>
+    <testcase name="PrevShortPosDec" status="notrun"/>
+    <testcase name="PrevShortPosLiq_ShortPosDec" status="notrun"/>
+    <testcase name="PrevShortPosLiq" status="notrun"/>
+    <testcase name="PrevShortPosRev" status="notrun"/>
+    <testcase name="ShortPosDec" status="notrun"/>
+    <testcase name="ShortPosInc" status="notrun"/>
+    <testcase name="ShortPosLiq_PrevShortPosDec" status="notrun"/>
+    <testcase name="ShortPosLiq" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTrackingFut" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="LongPosDec" status="notrun"/>
+    <testcase name="LongPosInc" status="notrun"/>
+    <testcase name="LongPosLiq" status="notrun"/>
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="ShortPosDec" status="notrun"/>
+    <testcase name="ShortPosInc" status="notrun"/>
+    <testcase name="ShortPosLiq" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTrackingOpt" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="LongPosDec" status="notrun"/>
+    <testcase name="LongPosInc" status="notrun"/>
+    <testcase name="LongPosLiq" status="notrun"/>
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="ShortPosDec" status="notrun"/>
+    <testcase name="ShortPosInc" status="notrun"/>
+    <testcase name="ShortPosLiq" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="GroupAccounts" skipped="6" tests="6" testsuite_failed="False">
+   <testsuite failures="0" name="AccountMargin" skipped="3" tests="3" testsuite_failed="False">
+    <testcase name="BorrowFromMaster" status="notrun"/>
+    <testcase name="CoMargining" status="notrun"/>
+    <testcase name="JoinPurchasingPower" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="ContractPositionLimit" skipped="3" tests="3" testsuite_failed="False">
+    <testcase name="BorrowFromMaster" status="notrun"/>
+    <testcase name="CoMargining" status="notrun"/>
+    <testcase name="JoinPurchasingPower" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="LiqAll" skipped="25" tests="25" testsuite_failed="False">
+   <testsuite failures="0" name="Basic" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="TC11_Symbol" status="notrun"/>
+    <testcase name="TC12_SideB" status="notrun"/>
+    <testcase name="TC13_SideS" status="notrun"/>
+    <testcase name="TC14_CurrentdayY" status="notrun"/>
+    <testcase name="TC15_CurrentdayN" status="notrun"/>
+    <testcase name="TC16_NoFilters" status="notrun"/>
+    <testcase name="TC17_GoFlat" status="notrun"/>
+    <testcase name="TC18_NoPositions" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="Complex" skipped="16" tests="16" testsuite_failed="False">
+    <testcase name="TC311_LiquidationOrderDurations" status="notrun"/>
+    <testcase name="TC312_RDF_Relative" status="notrun"/>
+    <testcase name="TC313_RDF_Specific" status="notrun"/>
+    <testcase name="TC314_TASandTAM" status="notrun"/>
+    <testcase name="TC315_TAMDifferentTradeDates" status="notrun"/>
+    <testcase name="TC316_PreferredContract" status="notrun"/>
+    <testcase name="TC317_Concurrent" status="notrun"/>
+    <testcase name="TC318_Concurrent" status="notrun"/>
+    <testcase name="TC31_ActiveAt" status="notrun"/>
+    <testcase name="TC32_ActionsInParallel" status="notrun"/>
+    <testcase name="TC33_SOM" status="notrun"/>
+    <testcase name="TC35_RouteUnavailable" status="notrun"/>
+    <testcase name="TC36_RouteUnsupported" status="notrun"/>
+    <testcase name="TC37_Omnibus_Reject" status="notrun"/>
+    <testcase name="TC38_Omnibus_CancelAll" status="notrun"/>
+    <testcase name="TC39_Omnibus_LiquidateAll" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="Spreads" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="TC21_Symbol" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Margin" skipped="26" tests="26" testsuite_failed="False">
+   <testsuite failures="0" name="ExplicitTracking" skipped="18" tests="18" testsuite_failed="False">
+    <testcase name="LongPosDec" status="notrun"/>
+    <testcase name="LongPosInc" status="notrun"/>
+    <testcase name="LongPosLiq_PrevLongPosDec" status="notrun"/>
+    <testcase name="LongPosLiq" status="notrun"/>
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="PrevLongPosDec" status="notrun"/>
+    <testcase name="PrevLongPosLiq_LongPosDec" status="notrun"/>
+    <testcase name="PrevLongPosLiq" status="notrun"/>
+    <testcase name="PrevLongPosRev" status="notrun"/>
+    <testcase name="PrevShortPosDec" status="notrun"/>
+    <testcase name="PrevShortPosLiq_ShortPosDec" status="notrun"/>
+    <testcase name="PrevShortPosLiq" status="notrun"/>
+    <testcase name="PrevShortPosRev" status="notrun"/>
+    <testcase name="ShortPosDec" status="notrun"/>
+    <testcase name="ShortPosInc" status="notrun"/>
+    <testcase name="ShortPosLiq_PrevShortPosDec" status="notrun"/>
+    <testcase name="ShortPosLiq" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTracking" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="LongPosDec" status="notrun"/>
+    <testcase name="LongPosInc" status="notrun"/>
+    <testcase name="LongPosLiq" status="notrun"/>
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="ShortPosDec" status="notrun"/>
+    <testcase name="ShortPosInc" status="notrun"/>
+    <testcase name="ShortPosLiq" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OpenClose_FillEffect" skipped="17" tests="17" testsuite_failed="False">
+   <testsuite failures="0" name="NativeStrategyOrder" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="AcceptableOpenClose_Explicit" status="notrun"/>
+    <testcase name="AcceptableOpenClose_Implied" status="notrun"/>
+    <testcase name="EmptyFillEffect" status="notrun"/>
+    <testcase name="FillEffect_Explicit" status="notrun"/>
+    <testcase name="FillEffect_Implied" status="notrun"/>
+    <testcase name="LegMargin" status="notrun"/>
+    <testcase name="UnacceptableOpenClose_Explicit" status="notrun"/>
+    <testcase name="UnacceptableOpenClose_Implied" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="RegularOrder" skipped="9" tests="9" testsuite_failed="False">
+    <testcase name="AcceptableOpenClose" status="notrun"/>
+    <testcase name="EmptyFillEffect" status="notrun"/>
+    <testcase name="FillEffect_C_Explicit" status="notrun"/>
+    <testcase name="FillEffect_C_Implied" status="notrun"/>
+    <testcase name="FillEffect_O_Explicit" status="notrun"/>
+    <testcase name="FillEffect_O_Implied" status="notrun"/>
+    <testcase name="FillEffect_P_Explicit" status="notrun"/>
+    <testcase name="OpenClose_Net" status="notrun"/>
+    <testcase name="UnacceptableOpenClose" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="OP_And_NOV" skipped="18" tests="18" testsuite_failed="False">
+   <testsuite failures="0" name="ExplicitTracking" skipped="13" tests="13" testsuite_failed="False">
+    <testcase name="LongPosLiq_PrevLongPosDec" status="notrun"/>
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="PosDec" status="notrun"/>
+    <testcase name="PosInc" status="notrun"/>
+    <testcase name="PosLiq" status="notrun"/>
+    <testcase name="PrevLongPosLiq_LongPosDec" status="notrun"/>
+    <testcase name="PrevLongPosRev" status="notrun"/>
+    <testcase name="PrevPosDec" status="notrun"/>
+    <testcase name="PrevPosLiq" status="notrun"/>
+    <testcase name="PrevShortPosLiq_ShortPosDec" status="notrun"/>
+    <testcase name="PrevShortPosRev" status="notrun"/>
+    <testcase name="ShortPosLiq_PrevShortPosDec" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTracking" skipped="5" tests="5" testsuite_failed="False">
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="PosDec" status="notrun"/>
+    <testcase name="PosInc" status="notrun"/>
+    <testcase name="PosLiq" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="PL_And_OTE" skipped="14" tests="14" testsuite_failed="False">
+   <testsuite failures="0" name="ExplicitTracking" skipped="9" tests="9" testsuite_failed="False">
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="PosDec" status="notrun"/>
+    <testcase name="PosInc" status="notrun"/>
+    <testcase name="PosLiq" status="notrun"/>
+    <testcase name="PrevLongPosRev" status="notrun"/>
+    <testcase name="PrevPosDec" status="notrun"/>
+    <testcase name="PrevPosLiq" status="notrun"/>
+    <testcase name="PrevShortPosRev" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="ImpliedTracking" skipped="5" tests="5" testsuite_failed="False">
+    <testcase name="LongPosRev" status="notrun"/>
+    <testcase name="PosDec" status="notrun"/>
+    <testcase name="PosInc" status="notrun"/>
+    <testcase name="PosLiq" status="notrun"/>
+    <testcase name="ShortPosRev" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="PositionLimit" skipped="24" tests="24" testsuite_failed="False">
+   <testsuite failures="0" name="Commodity" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="ClosePos_CloseOrder" status="notrun"/>
+    <testcase name="ClosePos_OpenOrder" status="notrun"/>
+    <testcase name="ClosePrevPos_OpenOrder" status="notrun"/>
+    <testcase name="OpenPos_CloseOrder" status="notrun"/>
+    <testcase name="OpenPos_ClosePrevOrder" status="notrun"/>
+    <testcase name="OpenPos_OpenOrder_Explicit" status="notrun"/>
+    <testcase name="OpenPos_OpenOrder_Implied" status="notrun"/>
+    <testcase name="WorkingOrderOnly" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="Contract" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="ClosePos_CloseOrder" status="notrun"/>
+    <testcase name="ClosePos_OpenOrder" status="notrun"/>
+    <testcase name="ClosePrevPos_OpenOrder" status="notrun"/>
+    <testcase name="OpenPos_CloseOrder" status="notrun"/>
+    <testcase name="OpenPos_ClosePrevOrder" status="notrun"/>
+    <testcase name="OpenPos_OpenOrder_Explicit" status="notrun"/>
+    <testcase name="OpenPos_OpenOrder_Implied" status="notrun"/>
+    <testcase name="WorkingOrderOnly" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="Instrument" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="ClosePos_CloseOrder" status="notrun"/>
+    <testcase name="ClosePos_OpenOrder" status="notrun"/>
+    <testcase name="ClosePrevPos_OpenOrder" status="notrun"/>
+    <testcase name="OpenPos_CloseOrder" status="notrun"/>
+    <testcase name="OpenPos_ClosePrevOrder" status="notrun"/>
+    <testcase name="OpenPos_OpenOrder_Explicit" status="notrun"/>
+    <testcase name="OpenPos_OpenOrder_Implied" status="notrun"/>
+    <testcase name="WorkingOrderOnly" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="SpecType" skipped="7" tests="7" testsuite_failed="False">
+   <testsuite failures="0" name="DefaultSpeculationType" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="HappyPath" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="Native" skipped="6" tests="6" testsuite_failed="False">
+    <testcase name="TC11_OpenCloseSpecType" status="notrun"/>
+    <testcase name="TC12_Regular" status="notrun"/>
+    <testcase name="TC13_SpecTypeMissing" status="notrun"/>
+    <testcase name="TC14_SpecTypeExtra" status="notrun"/>
+    <testcase name="TC15_SpecTypeNotSentByExchange" status="notrun"/>
+    <testcase name="TC21_NativeSpread" status="notrun"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

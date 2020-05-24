@@ -1,0 +1,671 @@
+ 1:39:33.47  Test starded without threads
+23:39:34.068 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits/GroupAccounts/PythonModules' added.
+23:39:34.068 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+23:39:34.068 Python Module Path 'ScriptKit' added.
+23:39:34.068 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits/PythonModules' added.
+23:39:34.068 Python Module Path 'Scripts/Gateway/PythonModules' added.
+23:39:34.927 2020-02-18 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits' filtered execution.
+23:39:34.974 Suite '.'. [0 test cases, 6 sub-suites]
+23:39:43.662 Suite 'AllowableMarkets'. [3 test cases, 0 sub-suites]
+23:39:43.771 Case 'AllowableMarkets' execution.
+23:39:43.818 Case 'AllowableMarketsCheckType' execution.
+23:39:43.869 Case 'TraderAllowableMarkets' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\AllowableMarkets\AllowableMarkets.tc.py", line 21, in <module>
+    acct_mkt1.PlaceOrder_Accepted(SFEP, OrderSide.Buy, 5, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:44.756 Case 'AllowableMarkets' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\AllowableMarkets\AllowableMarketsCheckType_tc.py", line 33, in <module>
+    rejectReason=GWRejectReason.Reject_NoContractAuth(CONTRACT))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:47.178 Case 'AllowableMarketsCheckType' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\AllowableMarkets\TraderAllowableMarkets.tc.py", line 30, in <module>
+    trader_oh1_acct_trd1.PlaceOrder_Accepted(SFEP, OrderSide.Buy, 5, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:47.209 Case 'TraderAllowableMarkets' failed.
+23:39:47.428 Suite 'GroupAccounts'. [3 test cases, 0 sub-suites]
+23:39:48.412 Case 'BorrowFromMasterGroupAccountLimits' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\GroupAccounts\BorrowFromMasterGroupAccountLimits.tc.py", line 14, in <module>
+    GroupAccountsScenarios(acct_bor_sub)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\MarketLimits\GroupAccounts\PythonModules\GroupAccountsScenarios.py", line 20, in GroupAccountsScenarios
+    rejectReason=Rejects.AccountNotAllowedToTrade(SFFLK))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:48.459 Case 'BorrowFromMasterGroupAccountLimits' failed.
+23:39:48.459 Case 'CoMarginGroupAccountLimits' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\GroupAccounts\CoMarginGroupAccountLimits.tc.py", line 14, in <module>
+    GroupAccountsScenarios(acct_co_sub)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\MarketLimits\GroupAccounts\PythonModules\GroupAccountsScenarios.py", line 20, in GroupAccountsScenarios
+    rejectReason=Rejects.AccountNotAllowedToTrade(SFFLK))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:48.506 Case 'CoMarginGroupAccountLimits' failed.
+23:39:48.537 Case 'JoinPurchasingPowerGroupAccountLimits' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\GroupAccounts\JoinPurchasingPowerGroupAccountLimits.tc.py", line 14, in <module>
+    GroupAccountsScenarios(acct_jpp_sub)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\MarketLimits\GroupAccounts\PythonModules\GroupAccountsScenarios.py", line 20, in GroupAccountsScenarios
+    rejectReason=Rejects.AccountNotAllowedToTrade(SFFLK))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:48.553 Case 'JoinPurchasingPowerGroupAccountLimits' failed.
+23:39:48.881 Suite 'PositionLimits'. [3 test cases, 1 sub-suites]
+23:39:48.975 Case 'CommodityPositionLimits' execution.
+23:39:49.022 Case 'ContractPositionLimits' execution.
+23:39:49.084 Case 'InstrumentPositionLimits' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\CommodityPositionLimits.tc.py", line 24, in <module>
+    rejectReason=Rejects.CommodityPositionLimit('SF.SFEP'))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:50.068 Case 'CommodityPositionLimits' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\InstrumentPositionLimits.tc.py", line 25, in <module>
+    rejectReason=Rejects.InstrumentPositionLimit('F.SF.SFEP'))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:50.131 Case 'InstrumentPositionLimits' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\ContractPositionLimits.tc.py", line 25, in <module>
+    rejectReason=Rejects.ContractPositionLimit('F.SF.SFEP.Z99'))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:50.211 Case 'ContractPositionLimits' failed.
+23:39:50.352 Suite 'PositionLimits\SubSuite'. [11 test cases, 0 sub-suites]
+23:39:51.412 Case 'CommodityAndInstrumentLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\CommodityAndInstrumentLimit.tc.py", line 29, in <module>
+    account.PlaceOrder_Rejected('F.SF.SFFLK.J42', OrderSide.Buy, 31, OrderType.Limit, rejectReason = rejectReason_PositionLimitViolationInstrument)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:51.431 Case 'CommodityAndInstrumentLimit' failed.
+23:39:51.475 Case 'CommodityLimitAccountLevel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\CommodityLimitAccountLevel.tc.py", line 29, in <module>
+    account.PlaceOrder_Rejected('F.SF.SFEP.J42', OrderSide.Buy, 51, OrderType.Limit, rejectReason = rejectReason_PositionLimitViolationCommodity)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:51.490 Case 'CommodityLimitAccountLevel' failed.
+23:39:51.522 Case 'CommodityLimitOverridesInstrumentLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\CommodityLimitOverridesInstrumentLimit.tc.py", line 29, in <module>
+    account.PlaceOrder_Rejected('F.SF.SFFLK.J42', OrderSide.Buy, 6, OrderType.Limit, rejectReason = rejectReason_PositionLimitViolationCommodity)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:51.584 Case 'CommodityLimitOverridesInstrumentLimit' failed.
+23:39:51.600 Case 'CommodityLimitUnlimited' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\CommodityLimitUnlimited.tc.py", line 29, in <module>
+    account.PlaceOrder_Accepted('F.SF.SFSP.J42', OrderSide.Buy, 70, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:51.631 Case 'CommodityLimitUnlimited' failed.
+23:39:51.662 Case 'ContractLimitAccountLevel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\ContractLimitAccountLevel.tc.py", line 29, in <module>
+    account.PlaceOrder_Rejected('F.SF.SFEP.J42', OrderSide.Buy, 61, OrderType.Limit, rejectReason = rejectReason_PositionLimitViolationContract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:51.693 Case 'ContractLimitAccountLevel' failed.
+23:39:51.709 Case 'ContractLimitCommodityLevelEB' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\ContractLimitCommodityLevelEB.tc.py", line 34, in <module>
+    account.PlaceOrder_Rejected('F.SF.SFFLK.' + M, OrderSide.Sell, N + 3, OrderType.Limit, rejectReason = rejectReason_PositionLimitViolationContract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:51.756 Case 'ContractLimitCommodityLevelEB' failed.
+23:39:51.788 Case 'ContractLimitCommodityLevelRegular' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\ContractLimitCommodityLevelRegular.tc.py", line 31, in <module>
+    account.PlaceOrder_Rejected('F.SF.SFFLK.' + M3, OrderSide.Buy, 55, OrderType.Limit, rejectReason = rejectReason_PositionLimitViolationContract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:51.834 Case 'ContractLimitCommodityLevelRegular' failed.
+23:39:51.834 Case 'ContractLimitInstrumentLevelEB' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\ContractLimitInstrumentLevelEB.tc.py", line 32, in <module>
+    account.PlaceOrder_Rejected('P.SF.SFFLK.' + M + '.3500', OrderSide.Sell, N + 1, OrderType.Limit, rejectReason = rejectReason_PositionLimitViolationContract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:51.897 Case 'ContractLimitInstrumentLevelEB' failed.
+23:39:51.913 Case 'ContractLimitInstrumentLevelOverridesCommodityLevel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\ContractLimitInstrumentLevelOverridesCommodityLevel.tc.py", line 28, in <module>
+    account.PlaceOrder_Rejected('F.SF.SFFLK.J42', OrderSide.Buy, 21, OrderType.Limit, rejectReason = rejectReason_PositionLimitViolationContract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:51.928 Case 'ContractLimitInstrumentLevelOverridesCommodityLevel' failed.
+23:39:51.943 Case 'ContractLimitInstrumentLevelRegular' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\ContractLimitInstrumentLevelRegular.tc.py", line 31, in <module>
+    account.PlaceOrder_Rejected('P.SF.SFFLK.' + M3 + '.3500', OrderSide.Buy, 53, OrderType.Limit, rejectReason = rejectReason_PositionLimitViolationContract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:51.990 Case 'ContractLimitInstrumentLevelRegular' failed.
+23:39:52.006 Case 'ContractLimitInstrumentOverridesCommodityLevelEB' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\PositionLimits\SubSuite\ContractLimitInstrumentOverridesCommodityLevelEB.tc.py", line 30, in <module>
+    account.PlaceOrder_Rejected('F.SF.SFFLK.' + M, OrderSide.Sell, 16, OrderType.Limit, rejectReason = rejectReason_PositionLimitViolationContract)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:39:52.037 Case 'ContractLimitInstrumentOverridesCommodityLevelEB' failed.
+23:39:52.912 Suite 'TradePriceLimitEnhancement'. [6 test cases, 7 sub-suites]
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 33, in invoke_script
+    exec(code, globals())
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimitEnhancement\test_suite_su.py", line 42, in <module>
+    PrepareContractSubscription(emulator, trader, exchange, acctInfo, contractMap, snapshotQuoteMap)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\RiskEvaluation\Suites\MarketLimits\PythonModules\TradePriceLimitEnhancementHelper.py", line 142, in PrepareContractSubscription
+    order = OrderActionUtils.CreateOrder(contractName, OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:02.741 Suite 'TradePriceLimitEnhancement' setup failed, child test cases and sub-suites will be skipped.
+23:40:02.933 Suite 'TradePriceLimits'. [1 test cases, 1 sub-suites]
+23:40:03.053 Case 'TradePriceLimits' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\TradePriceLimits.tc.py", line 22, in <module>
+    rejectReason=Rejects.TradePriceLimit('C.SF.SFEP.Z99.210'))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:03.959 Case 'TradePriceLimits' failed.
+23:40:04.100 Suite 'TradePriceLimits\SubSuite'. [1 test cases, 2 sub-suites]
+23:40:05.131 Case 'CASTtoRSnotifications' execution.
+23:40:51.977 Case 'CASTtoRSnotifications' succeeded.
+23:40:52.118 Suite 'TradePriceLimits\SubSuite\TraderModifiesOrder'. [1 test cases, 0 sub-suites]
+23:40:52.227 Case 'OrderPriceWithinLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderModifiesOrder\OrderPriceWithinLimit.tc.py", line 22, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['F3'], OrderSide.Sell, 1, OrderType.Limit, limitPrice=950)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:52.227 Case 'OrderPriceWithinLimit' failed.
+23:40:52.508 Suite 'TradePriceLimits\SubSuite\TraderPlacesOrder'. [14 test cases, 0 sub-suites]
+23:40:52.633 Case 'AccountLevelLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\AccountLevelLimit.tc.py", line 19, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['P1'], OrderSide.Buy, 1, OrderType.Limit, limitPrice = 689.8)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:52.664 Case 'AccountLevelLimit' failed.
+23:40:52.696 Case 'NoAskPriceCommodityLevelLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\NoAskPriceCommodityLevelLimit.tc.py", line 21, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['F4'], OrderSide.Buy, 1, OrderType.Limit, limitPrice = 1024)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:52.805 Case 'NoAskPriceCommodityLevelLimit' failed.
+23:40:52.837 Case 'NoBidAskPrice' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\NoBidAskPrice.tc.py", line 22, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['C1'], OrderSide.Buy, 1, OrderType.Limit, limitPrice = 895.4)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:52.883 Case 'NoBidAskPrice' failed.
+23:40:52.899 Case 'NoBidAskTradePrice' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\NoBidAskTradePrice.tc.py", line 22, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['P1'], OrderSide.Buy, 1, OrderType.Limit, limitPrice = 695.8)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:52.930 Case 'NoBidAskTradePrice' failed.
+23:40:52.946 Case 'NoPrice' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\NoPrice.tc.py", line 19, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['F5'], OrderSide.Buy, 1, OrderType.Limit, limitPrice=10000)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:52.993 Case 'NoPrice' failed.
+23:40:53.024 Case 'NoTraderSpecifiedPrice_MKT' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\NoTraderSpecifiedPrice_MKT.tc.py", line 21, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['C2'], OrderSide.Sell, 1, OrderType.Market)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:53.087 Case 'NoTraderSpecifiedPrice_MKT' failed.
+23:40:53.102 Case 'TPLnotEnforcedOnAccount' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\TPLnotEnforcedOnAccount.tc.py", line 18, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['C2'], OrderSide.Sell, 1, OrderType.Limit, limitPrice = 951)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:53.133 Case 'TPLnotEnforcedOnAccount' failed.
+23:40:53.149 Case 'TraderSpecifiedLMTpriceInSTL' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\TraderSpecifiedLMTpriceInSTL.tc.py", line 23, in <module>
+    contractDict['F1'], OrderSide.Buy, 1, OrderType.StopLimit, stopPrice=1077, limitPrice=1078)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:53.196 Case 'TraderSpecifiedLMTpriceInSTL' failed.
+23:40:53.211 Case 'TraderSpecifiedPrice_LMT' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\TraderSpecifiedPrice_LMT.tc.py", line 22, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['F1'], OrderSide.Sell, 1, OrderType.Limit, limitPrice=978)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:53.258 Case 'TraderSpecifiedPrice_LMT' failed.
+23:40:53.289 Case 'TraderSpecifiedPrice_STP' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\TraderSpecifiedPrice_STP.tc.py", line 22, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['F1'], OrderSide.Buy, 1, OrderType.Stop, stopPrice=1078)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:53.336 Case 'TraderSpecifiedPrice_STP' failed.
+23:40:53.368 Case 'TradingOnCoMarginGroupAccount' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\TradingOnCoMarginGroupAccount.tc.py", line 20, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['F1'], OrderSide.Buy, 1, OrderType.Limit, limitPrice=1076)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:53.399 Case 'TradingOnCoMarginGroupAccount' failed.
+23:40:53.414 Case 'TradingOnJoinPPGroupAccount' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\TradingOnJoinPPGroupAccount.tc.py", line 20, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['F1'], OrderSide.Buy, 1, OrderType.Limit, limitPrice=1076)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:53.446 Case 'TradingOnJoinPPGroupAccount' failed.
+23:40:53.477 Case 'TradingViaOmnibus' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\TradingViaOmnibus.tc.py", line 20, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['F1'], OrderSide.Buy, 1, OrderType.Limit, limitPrice=1076)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:53.508 Case 'TradingViaOmnibus' failed.
+23:40:53.539 Case 'NoBidPriceExchangeLevelLimit' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradePriceLimits\SubSuite\TraderPlacesOrder\NoBidPriceExchangeLevelLimit.tc.py", line 20, in <module>
+    order = OrderActionUtils.CreateOrder(contractDict['F3'], OrderSide.Sell, 1, OrderType.Limit, limitPrice = 837)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:53.571 Case 'NoBidPriceExchangeLevelLimit' failed.
+23:40:55.024 Suite 'TradeSizeLimits'. [2 test cases, 2 sub-suites]
+23:40:55.165 Case 'TraderTradeSizeLimits' execution.
+23:40:55.243 Case 'TradeSizeLimits' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\TraderTradeSizeLimits.tc.py", line 20, in <module>
+    rejectReason=Rejects.TradeSizeLimitCommodity('SF.SFEP'))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:55.961 Case 'TraderTradeSizeLimits' failed.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\TradeSizeLimits.tc.py", line 25, in <module>
+    rejectReason=Rejects.TradeSizeLimitCommodity('SF.SFEP'))
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 57, in PlaceOrder_Rejected
+    stopPrice = stopPrice, rejected = True, rejectReason = rejectReason).order
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:56.118 Case 'TradeSizeLimits' failed.
+23:40:56.245 Suite 'TradeSizeLimits\AccountPartialQty'. [5 test cases, 0 sub-suites]
+23:40:57.211 Case 'AccountLevel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\AccountPartialQty\AccountLevel_tc.py", line 15, in <module>
+    Scenario("Acct41", contractPQ)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\AccountPartialQty\test_suite_su.py", line 25, in Scenario
+    place = acct.PlaceOrder_Accepted(contractName, side, orderSize2, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:57.258 Case 'AccountLevel' failed.
+23:40:57.274 Case 'AllUSCommodLevel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\AccountPartialQty\AllUSCommodLevel_tc.py", line 12, in <module>
+    Scenario("Acct42", contractPQ)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\AccountPartialQty\test_suite_su.py", line 25, in Scenario
+    place = acct.PlaceOrder_Accepted(contractName, side, orderSize2, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:57.321 Case 'AllUSCommodLevel' failed.
+23:40:57.336 Case 'CommodityLevel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\AccountPartialQty\CommodityLevel_tc.py", line 12, in <module>
+    Scenario("Acct44", contractPQ)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\AccountPartialQty\test_suite_su.py", line 25, in Scenario
+    place = acct.PlaceOrder_Accepted(contractName, side, orderSize2, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:57.383 Case 'CommodityLevel' failed.
+23:40:57.415 Case 'ExchangeLevel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\AccountPartialQty\ExchangeLevel_tc.py", line 12, in <module>
+    Scenario("Acct43", contractPQ)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\AccountPartialQty\test_suite_su.py", line 25, in Scenario
+    place = acct.PlaceOrder_Accepted(contractName, side, orderSize2, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:57.446 Case 'ExchangeLevel' failed.
+23:40:57.465 Case 'InstrumentLevel' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\AccountPartialQty\InstrumentLevel_tc.py", line 12, in <module>
+    Scenario("Acct45", contractPQ, instrLevel=True)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\AccountPartialQty\test_suite_su.py", line 25, in Scenario
+    place = acct.PlaceOrder_Accepted(contractName, side, orderSize2, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:57.508 Case 'InstrumentLevel' failed.
+23:40:58.024 Suite 'TradeSizeLimits\TraderPartialQty'. [2 test cases, 0 sub-suites]
+23:40:59.915 Case 'AccountLimits' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\TraderPartialQty\AccountLimits_tc.py", line 12, in <module>
+    Scenario(trader1, 'Acct5', 5.555, 5.556)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\TraderPartialQty\test_suite_su.py", line 22, in Scenario
+    place = acct.PlaceOrder_Accepted(contractPQ, side, sizeLimit, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:40:59.977 Case 'AccountLimits' failed.
+23:40:59.993 Case 'AllUSCommodLimits' execution.
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\TraderPartialQty\AllUSCommodLimits_tc.py", line 12, in <module>
+    Scenario(trader2, 'Acct6', 3.333, 3.334)
+  File "Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits\TradeSizeLimits\TraderPartialQty\test_suite_su.py", line 22, in Scenario
+    place = acct.PlaceOrder_Accepted(contractPQ, side, sizeLimit, OrderType.Limit)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 49, in PlaceOrder_Accepted
+    event = self.__doPlaceOrder(symbol, side, size, type, duration, goodThru, execInstructions, limitPrice = limitPrice, stopPrice = stopPrice)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\PythonModules\AccountOrderActions.py", line 158, in __doPlaceOrder
+    instructions = execInstructions, visibleSize = visibleSize, duration = duration, goodThru = goodThru)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py", line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+
+23:41:00.040 Case 'AllUSCommodLimits' failed.
+23:41:07.837 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarketLimits' execution finished. It took 0:01:32.831292.
+23:41:07.837 Test cases results: 105 total, 1 succeeded, 45 failed, 59 skipped.

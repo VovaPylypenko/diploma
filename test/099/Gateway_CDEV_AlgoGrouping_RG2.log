@@ -1,0 +1,36 @@
+10:08:20.78  Test starded without threads
+08:08:21.327 Python Module Path 'Scripts/Gateway/PythonModules' added.
+08:08:21.327 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules' added.
+08:08:21.327 Python Module Path 'ScriptKit/TroubleMaker' added.
+08:08:21.327 Python Module Path 'ScriptKit' added.
+08:08:21.735 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping' filtered execution.
+08:08:21.748 Suite '.'. [0 test cases, 1 sub-suites]
+08:08:37.046 Suite 'GWAutoTest2'. [0 test cases, 4 sub-suites]
+08:08:45.296 Suite 'GWAutoTest2\Complex'. [2 test cases, 0 sub-suites]
+08:08:45.343 Case '02_SSPAndOmni' execution.
+08:08:48.156 Case '02_SSPAndOmni' succeeded.
+08:08:48.218 Case '03_SSPAndMapped' execution.
+08:08:49.640 Case '03_SSPAndMapped' succeeded.
+08:08:49.765 Suite 'GWAutoTest2\FCMRoute'. [5 test cases, 0 sub-suites]
+08:08:49.812 Case '01_ShortCodeNotConfigured_AlgoFlagSet' execution.
+08:08:49.843 Case '01_ShortCodeNotConfigured_AlgoFlagSet' succeeded.
+08:08:49.906 Case '02_ShortCodeNotConfigured_AlgoFlagNotSet' execution.
+08:08:49.952 Case '02_ShortCodeNotConfigured_AlgoFlagNotSet' succeeded.
+08:08:50.015 Case '03_ShortCodeConfigured_AlgoFlagSet' execution.
+08:08:50.077 Case '03_ShortCodeConfigured_AlgoFlagSet' succeeded.
+08:08:50.140 Case '04_DiffInstrOrRouteGroup_AlgoFlagSet' execution.
+08:08:50.187 Case '04_DiffInstrOrRouteGroup_AlgoFlagSet' succeeded.
+08:08:50.249 Case '05_DiffInstrOrRouteGroup_AlgoFlagNotSet' execution.
+08:08:50.312 Case '05_DiffInstrOrRouteGroup_AlgoFlagNotSet' succeeded.
+08:08:50.452 Suite 'GWAutoTest2\InstrumentRouteGroup'. [2 test cases, 0 sub-suites]
+08:08:50.499 Case '04_DiffInstrOrRouteGroup_AlgoFlagSet' execution.
+08:08:50.593 Case '04_DiffInstrOrRouteGroup_AlgoFlagSet' succeeded.
+08:08:50.656 Case '05_DiffInstrOrRouteGroup_AlgoFlagNotSet' execution.
+08:08:50.718 Case '05_DiffInstrOrRouteGroup_AlgoFlagNotSet' succeeded.
+08:08:50.827 Suite 'GWAutoTest2\OrderRequests'. [2 test cases, 0 sub-suites]
+08:08:50.890 Case '05_SOM' execution.
+08:08:59.718 Case '05_SOM' succeeded.
+08:08:59.781 Case '06_SSP' execution.
+08:09:02.015 Case '06_SSP' succeeded.
+08:09:02.375 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoGrouping' execution finished. It took 0:00:40.623827.
+08:09:02.375 Test cases results: 11 total, 11 succeeded, 0 failed, 0 skipped.

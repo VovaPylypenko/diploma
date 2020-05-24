@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="44" skipped="0" tests="44" testsuite_failed="True" time="81.440449" timestamp="2020-02-18T23:47:41.600356">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_RBRC"/>
+  <property name="scripts-cfg-instance" value="SF_RBRC"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="44" name="RBRC" skipped="0" tests="44" testsuite_failed="True" time="81.440449" timestamp="2020-02-18T23:47:41.600356">
+  <testcase name="CheckCPLRoute" status="run" time="0.013283" timestamp="2020-02-18T23:47:46.149696">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckCPLRoute.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckCPLRoute.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckEEFCPLInst" status="run" time="0.015253" timestamp="2020-02-18T23:47:46.225858">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFCPLInst.tc.py&quot;, line 26, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFCPLInst.tc.py&quot;, line 26, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckEEFCPLRoute" status="run" time="0.015612" timestamp="2020-02-18T23:47:46.303642">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFCPLRoute.tc.py&quot;, line 23, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFCPLRoute.tc.py&quot;, line 23, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckEEFIPLInst" status="run" time="0.0" timestamp="2020-02-18T23:47:46.397362">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFIPLInst.tc.py&quot;, line 30, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFIPLInst.tc.py&quot;, line 30, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckEEFIPLRoute" status="run" time="0.0" timestamp="2020-02-18T23:47:46.459857">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFIPLRoute.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFIPLRoute.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckEEFPCPLInst" status="run" time="0.0" timestamp="2020-02-18T23:47:46.537995">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFPCPLInst.tc.py&quot;, line 26, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFPCPLInst.tc.py&quot;, line 26, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckEEFPCPLRoute" status="run" time="0.0" timestamp="2020-02-18T23:47:46.601102">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFPCPLRoute.tc.py&quot;, line 23, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFPCPLRoute.tc.py&quot;, line 23, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckEEFPIPLInst" status="run" time="0.015639" timestamp="2020-02-18T23:47:46.678618">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFPIPLInst.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFPIPLInst.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckEEFPIPLRoute" status="run" time="0.0" timestamp="2020-02-18T23:47:46.761737">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFPIPLRoute.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFPIPLRoute.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckEEFTSLInst" status="run" time="0.0" timestamp="2020-02-18T23:47:46.881745">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFTSLInst.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFTSLInst.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckEEFTSLRoute" status="run" time="0.0" timestamp="2020-02-18T23:47:46.960181">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFTSLRoute.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckEEFTSLRoute.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPLRoute" status="run" time="0.0" timestamp="2020-02-18T23:47:47.037998">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPLRoute.tc.py&quot;, line 26, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPLRoute.tc.py&quot;, line 26, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPPTDCPLInstOff" status="run" time="0.012344" timestamp="2020-02-18T23:47:47.103790">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDCPLInstOff.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDCPLInstOff.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPPTDCPLInstOn" status="run" time="0.015637" timestamp="2020-02-18T23:47:47.209878">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDCPLInstOn.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, orderSide, 16, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDCPLInstOn.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, orderSide, 16, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPPTDCPLRouteOff" status="run" time="0.015626" timestamp="2020-02-18T23:47:47.319259">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDCPLRouteOff.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDCPLRouteOff.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPPTDCPLRouteOn" status="run" time="0.0" timestamp="2020-02-18T23:47:47.475509">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDCPLRouteOn.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 16, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDCPLRouteOn.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 16, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPPTDIPLInstOff" status="run" time="0.015619" timestamp="2020-02-18T23:47:47.600524">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDIPLInstOff.tc.py&quot;, line 29, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1[0], orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDIPLInstOff.tc.py&quot;, line 29, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1[0], orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPPTDIPLInstOn" status="run" time="0.015316" timestamp="2020-02-18T23:47:47.757081">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDIPLInstOn.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], orderSide, 16, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDIPLInstOn.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], orderSide, 16, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPPTDIPLRouteOff" status="run" time="0.0" timestamp="2020-02-18T23:47:47.866159">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDIPLRouteOff.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDIPLRouteOff.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPPTDIPLRouteOn" status="run" time="0.0" timestamp="2020-02-18T23:47:47.976603">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDIPLRouteOn.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], orderSide, 16, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDIPLRouteOn.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], orderSide, 16, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPPTDTSLInstOn" status="run" time="0.015629" timestamp="2020-02-18T23:47:48.131792">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDTSLInstOn.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDTSLInstOn.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckIPPTDTSLRouteOn" status="run" time="0.0" timestamp="2020-02-18T23:47:48.272669">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDTSLRouteOn.tc.py&quot;, line 21, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckIPPTDTSLRouteOn.tc.py&quot;, line 21, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckSubIndepEEF" status="run" time="0.015637" timestamp="2020-02-18T23:47:48.366173">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckSubIndepEEF.tc.py&quot;, line 23, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckSubIndepEEF.tc.py&quot;, line 23, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckSubIndepIPPTD" status="run" time="0.0" timestamp="2020-02-18T23:47:48.459923">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckSubIndepIPPTD.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, OrderSide.Buy, 4, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckSubIndepIPPTD.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, OrderSide.Buy, 4, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckWOCPLInst" status="run" time="0.0" timestamp="2020-02-18T23:47:48.569673">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOCPLInst.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOCPLInst.tc.py&quot;, line 25, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckWOCPLRoute" status="run" time="0.0" timestamp="2020-02-18T23:47:48.663815">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOCPLRoute.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOCPLRoute.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckWOIPLInst" status="run" time="0.017624" timestamp="2020-02-18T23:47:48.741215">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOIPLInst.tc.py&quot;, line 29, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1[0], orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOIPLInst.tc.py&quot;, line 29, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1[0], orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckWOIPLRoute" status="run" time="0.015626" timestamp="2020-02-18T23:47:48.834941">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOIPLRoute.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOIPLRoute.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckWOPCPLInst" status="run" time="0.0" timestamp="2020-02-18T23:47:48.913793">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOPCPLInst.tc.py&quot;, line 23, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOPCPLInst.tc.py&quot;, line 23, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckWOPCPLRoute" status="run" time="0.016514" timestamp="2020-02-18T23:47:48.991233">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOPCPLRoute.tc.py&quot;, line 20, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOPCPLRoute.tc.py&quot;, line 20, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckWOPIPLInst" status="run" time="0.013702" timestamp="2020-02-18T23:47:49.102528">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOPIPLInst.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOPIPLInst.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckWOPIPLRoute" status="run" time="0.015216" timestamp="2020-02-18T23:47:49.194732">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOPIPLRoute.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOPIPLRoute.tc.py&quot;, line 22, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol[0], OrderSide.Buy, 5, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckWOTSLInst" status="run" time="0.0" timestamp="2020-02-18T23:47:49.303719">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOTSLInst.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOTSLInst.tc.py&quot;, line 24, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol1, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CheckWOTSLRoute" status="run" time="0.0" timestamp="2020-02-18T23:47:49.397650">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOTSLRoute.tc.py&quot;, line 21, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CheckWOTSLRoute.tc.py&quot;, line 21, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, 11, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CommonCheckEEF" status="run" time="0.0" timestamp="2020-02-18T23:47:49.522466">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CommonCheckEEF.tc.py&quot;, line 28, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, orderSize, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CommonCheckEEF.tc.py&quot;, line 28, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, orderSize, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CommonCheckEUP" status="run" time="0.0" timestamp="2020-02-18T23:47:49.631849">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CommonCheckEUP.tc.py&quot;, line 28, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, orderSize, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CommonCheckEUP.tc.py&quot;, line 28, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, orderSize, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CommonCheckIPPTD" status="run" time="0.0" timestamp="2020-02-18T23:47:49.741217">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CommonCheckIPPTD.tc.py&quot;, line 28, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, orderSize, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CommonCheckIPPTD.tc.py&quot;, line 28, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, orderSize, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testcase name="CommonCheckRBRC" status="run" time="0.0" timestamp="2020-02-18T23:47:49.819348">
+   <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CommonCheckRBRC.tc.py&quot;, line 28, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, orderSize, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CommonCheckRBRC.tc.py&quot;, line 28, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol, orderSide, orderSize, orderType))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+  </testcase>
+  <testsuite failures="6" name="CASTDependent" skipped="0" tests="6" testsuite_failed="True" time="70.766618" timestamp="2020-02-18T23:47:49.867449">
+   <testcase name="CheckEUPCPLInst" status="run" time="12.093977" timestamp="2020-02-18T23:47:51.366438">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPCPLInst.tc.py&quot;, line 30, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPCPLInst.tc.py&quot;, line 30, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CheckEUPCPLRoute" status="run" time="11.140977" timestamp="2020-02-18T23:48:03.585417">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPCPLRoute.tc.py&quot;, line 27, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPCPLRoute.tc.py&quot;, line 27, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CheckEUPIPLInst" status="run" time="11.625388000000001" timestamp="2020-02-18T23:48:14.804491">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPIPLInst.tc.py&quot;, line 34, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPIPLInst.tc.py&quot;, line 34, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CheckEUPIPLRoute" status="run" time="11.000362" timestamp="2020-02-18T23:48:26.539259">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPIPLRoute.tc.py&quot;, line 29, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPIPLRoute.tc.py&quot;, line 29, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CheckEUPTSLInst" status="run" time="11.031619" timestamp="2020-02-18T23:48:37.617727">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPTSLInst.tc.py&quot;, line 29, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPTSLInst.tc.py&quot;, line 29, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="CheckEUPTSLRoute" status="run" time="11.765993" timestamp="2020-02-18T23:48:48.758696">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPTSLRoute.tc.py&quot;, line 26, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\CASTDependent\CheckEUPTSLRoute.tc.py&quot;, line 26, in &lt;module&gt;
+    CreateRBRCorder(orderSymbol3, OrderSide.Buy, 2, OrderType.Market))
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/RBRC\test_suite.su.py&quot;, line 20, in CreateRBRCorder
+    symbol, side, quantity, orderType, limitPrice = limitPrice, stopPrice = stopPrice)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,33 @@
+ 7:55:48.05  Test starded without threads
+05:55:48.572 Python Module Path 'ScriptKit' added.
+05:55:48.572 Python Module Path 'Scripts/Gateway/PythonModules' added.
+05:55:48.994 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LMERiskManagement' full execution.
+05:55:49.010 Suite '.'. [13 test cases, 0 sub-suites]
+05:56:00.933 Case '001_RejectNoLMEExchange' execution.
+05:56:00.979 Case '001_RejectNoLMEExchange' succeeded.
+05:56:01.041 Case '002_RejectNoLMEAccount' execution.
+05:56:01.088 Case '002_RejectNoLMEAccount' succeeded.
+05:56:01.135 Case '003_HappyPath' execution.
+05:56:01.213 Case '003_HappyPath' succeeded.
+05:56:01.260 Case '004_Reject' execution.
+05:56:01.291 Case '004_Reject' succeeded.
+05:56:01.338 Case '005_RejectExcluded' execution.
+05:56:01.370 Case '005_RejectExcluded' succeeded.
+05:56:01.416 Case '007_NoStalePrice' execution.
+05:56:01.541 Case '007_NoStalePrice' succeeded.
+05:56:01.588 Case '008_Reference' execution.
+05:56:01.776 Case '008_Reference' succeeded.
+05:56:01.823 Case '009_ReferenceHasNoTradePrice' execution.
+05:56:01.916 Case '009_ReferenceHasNoTradePrice' succeeded.
+05:56:01.979 Case '010_ReferenceHasNoSettlement' execution.
+05:56:02.058 Case '010_ReferenceHasNoSettlement' succeeded.
+05:56:02.135 Case '011_NoReference' execution.
+05:56:02.229 Case '011_NoReference' succeeded.
+05:56:02.291 Case '012_NegativeOTE' execution.
+05:56:02.479 Case '012_NegativeOTE' succeeded.
+05:56:02.526 Case '014_NoOTE' execution.
+05:56:02.698 Case '014_NoOTE' succeeded.
+05:56:02.745 Case '022_RejectRiskyMarket' execution.
+05:56:02.776 Case '022_RejectRiskyMarket' succeeded.
+05:56:07.323 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/LMERiskManagement' execution finished. It took 0:00:18.313029.
+05:56:07.323 Test cases results: 13 total, 13 succeeded, 0 failed, 0 skipped.

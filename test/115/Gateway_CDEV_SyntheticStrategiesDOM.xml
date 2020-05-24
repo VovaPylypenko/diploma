@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="13" tests="13" testsuite_failed="False" time="11.203486" timestamp="2020-02-19T20:21:08.179690">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyDOM/Suites/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_D4S"/>
+  <property name="scripts-cfg-instance" value="SF_D4S"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyDOM/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Suites" skipped="13" tests="13" testsuite_failed="False" time="11.203486" timestamp="2020-02-19T20:21:08.179690">
+  <testsuite failures="0" name="DOMUsageMultilevels" skipped="10" tests="10" testsuite_failed="False">
+   <testcase name="MultilevelAggr_Spread_MultilevelsMode" status="notrun"/>
+   <testcase name="Spread_FullSizeAvgPrice" status="notrun"/>
+   <testcase name="Spread_FullSizeWorstPrice" status="notrun"/>
+   <testcase name="Spread_IHEPcrash" status="notrun"/>
+   <testcase name="Spread_IncrementalDOMupdate" status="notrun"/>
+   <testcase name="Spread_MultilevelsMode" status="notrun"/>
+   <testcase name="Spread_MultilevelsMode_interXchange" status="notrun"/>
+   <testcase name="Spread_MultilevelsMode_PartQty" status="notrun"/>
+   <testcase name="Spread_PrimaryOrders_SeveralLevels" status="notrun"/>
+   <testcase name="Spread_Sniper_MultilevelsMode" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="IHESubscription" skipped="1" tests="1" testsuite_failed="False">
+   <testcase name="IHESubscriptionNoMarketStatus" status="notrun"/>
+  </testsuite>
+  <testsuite failures="0" name="Yield" skipped="2" tests="2" testsuite_failed="False">
+   <testcase name="Spread_YieldLeg" status="notrun"/>
+   <testcase name="Spread_YieldLeg_InterXchange" status="notrun"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

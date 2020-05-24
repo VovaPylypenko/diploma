@@ -1,0 +1,153 @@
+ 8:03:52.29  Test starded without threads
+06:03:52.777 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts/RiskAndRouting/MassOrderActions/PythonModules' added.
+06:03:52.792 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts/PythonModules' added.
+06:03:52.792 Python Module Path 'Scripts/Gateway/PythonModules' added.
+06:03:52.792 Python Module Path 'ScriptKit' added.
+06:03:53.339 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts' full execution.
+06:03:53.371 Suite '.'. [0 test cases, 1 sub-suites]
+06:04:08.762 Suite 'RiskAndRouting'. [7 test cases, 6 sub-suites]
+06:04:08.840 Case 'CircularDependenciesPrevention' execution.
+06:04:08.888 Case 'DirectOrderOnOmnibus' execution.
+06:04:08.934 Case 'ExecutionAccountIDInternalOmnibus' execution.
+06:04:08.965 Case 'ExecutionAccountIDOmnibus' execution.
+06:04:09.012 Case 'OmnibusChainLimit' execution.
+06:04:09.074 Case 'OrderPlacementRisksOnOmnibusChain' execution.
+06:04:09.137 Case 'RoutingThroughOmnibusChain' execution.
+06:04:09.262 Case 'ExecutionAccountIDInternalOmnibus' succeeded.
+06:04:09.340 Case 'RoutingThroughOmnibusChain' succeeded.
+06:04:09.371 Case 'ExecutionAccountIDOmnibus' succeeded.
+06:04:13.903 Case 'CircularDependenciesPrevention' succeeded.
+06:04:13.949 Case 'DirectOrderOnOmnibus' succeeded.
+06:04:14.106 Case 'OmnibusChainLimit' succeeded.
+06:04:34.356 Case 'OrderPlacementRisksOnOmnibusChain' succeeded.
+06:04:34.434 Suite 'RiskAndRouting\CancelAll'. [1 test cases, 0 sub-suites]
+06:04:36.310 Case 'FromOmnibus' execution.
+06:04:36.950 Case 'FromOmnibus' succeeded.
+06:04:37.122 Suite 'RiskAndRouting\MassOrderActions'. [0 test cases, 4 sub-suites]
+06:04:37.341 Suite 'RiskAndRouting\MassOrderActions\ActivateAll'. [14 test cases, 0 sub-suites]
+06:04:37.419 Case 'ActivateAllForAccountScenario1' execution.
+06:04:37.466 Case 'ActivateAllForAccountScenario2' execution.
+06:04:37.513 Case 'ActivateAllForAccountScenario3' execution.
+06:04:37.545 Case 'ActivateAllForAccountScenario4' execution.
+06:04:37.591 Case 'ActivateAllForAccountScenario5' execution.
+06:04:37.622 Case 'ActivateAllForAccountScenario6' execution.
+06:04:37.653 Case 'ActivateAllForAccountScenario7' execution.
+06:04:37.700 Case 'ActivateAllForTraderScenario1' execution.
+06:04:37.747 Case 'ActivateAllForTraderScenario2' execution.
+06:04:37.797 Case 'ActivateAllForTraderScenario3' execution.
+06:04:37.857 Case 'ActivateAllForTraderScenario4' execution.
+06:04:37.903 Case 'ActivateAllForTraderScenario5' execution.
+06:04:37.950 Case 'ActivateAllForTraderScenario6' execution.
+06:04:37.987 Case 'ActivateAllForTraderScenario7' execution.
+06:05:02.498 Case 'ActivateAllForAccountScenario1' succeeded.
+06:05:03.701 Case 'ActivateAllForAccountScenario2' succeeded.
+06:05:04.435 Case 'ActivateAllForAccountScenario3' succeeded.
+06:05:04.779 Case 'ActivateAllForTraderScenario2' succeeded.
+06:05:05.076 Case 'ActivateAllForTraderScenario1' succeeded.
+06:05:05.623 Case 'ActivateAllForTraderScenario3' succeeded.
+06:05:08.170 Case 'ActivateAllForAccountScenario4' succeeded.
+06:05:08.186 Case 'ActivateAllForAccountScenario7' succeeded.
+06:05:08.514 Case 'ActivateAllForAccountScenario5' succeeded.
+06:05:08.857 Case 'ActivateAllForAccountScenario6' succeeded.
+06:05:09.529 Case 'ActivateAllForTraderScenario5' succeeded.
+06:05:09.529 Case 'ActivateAllForTraderScenario7' succeeded.
+06:05:10.779 Case 'ActivateAllForTraderScenario6' succeeded.
+06:05:10.873 Case 'ActivateAllForTraderScenario4' succeeded.
+06:05:11.045 Suite 'RiskAndRouting\MassOrderActions\CancelAll'. [14 test cases, 1 sub-suites]
+06:05:11.139 Case 'CancelAllForAccountScenario1' execution.
+06:05:11.186 Case 'CancelAllForAccountScenario2' execution.
+06:05:11.264 Case 'CancelAllForAccountScenario3' execution.
+06:05:11.311 Case 'CancelAllForAccountScenario4' execution.
+06:05:11.344 Case 'CancelAllForAccountScenario5' execution.
+06:05:11.404 Case 'CancelAllForAccountScenario6' execution.
+06:05:11.452 Case 'CancelAllForAccountScenario7' execution.
+06:05:11.498 Case 'CancelAllForTraderScenario1' execution.
+06:05:11.561 Case 'CancelAllForTraderScenario2' execution.
+06:05:11.623 Case 'CancelAllForTraderScenario3' execution.
+06:05:11.671 Case 'CancelAllForTraderScenario4' execution.
+06:05:11.733 Case 'CancelAllForTraderScenario5' execution.
+06:05:11.764 Case 'CancelAllForTraderScenario6' execution.
+06:05:11.826 Case 'CancelAllForTraderScenario7' execution.
+06:05:33.608 Case 'CancelAllForAccountScenario5' succeeded.
+06:05:33.859 Case 'CancelAllForAccountScenario7' succeeded.
+06:05:33.905 Case 'CancelAllForAccountScenario6' succeeded.
+06:05:38.733 Case 'CancelAllForAccountScenario4' succeeded.
+06:05:41.812 Case 'CancelAllForAccountScenario3' succeeded.
+06:05:42.296 Case 'CancelAllForTraderScenario2' succeeded.
+06:05:42.313 Case 'CancelAllForTraderScenario1' succeeded.
+06:05:43.015 Case 'CancelAllForAccountScenario2' succeeded.
+06:05:43.796 Case 'CancelAllForAccountScenario1' succeeded.
+06:05:43.921 Case 'CancelAllForTraderScenario5' succeeded.
+06:05:44.171 Case 'CancelAllForTraderScenario3' succeeded.
+06:05:47.781 Case 'CancelAllForTraderScenario7' succeeded.
+06:05:48.796 Case 'CancelAllForTraderScenario4' succeeded.
+06:05:48.999 Case 'CancelAllForTraderScenario6' succeeded.
+06:05:49.078 Suite 'RiskAndRouting\MassOrderActions\CancelAll\viaOmnibus'. [1 test cases, 0 sub-suites]
+06:05:51.015 Case 'OmnibusTraderCancelsOrders' execution.
+06:05:51.469 Case 'OmnibusTraderCancelsOrders' succeeded.
+06:05:51.781 Suite 'RiskAndRouting\MassOrderActions\MassActions'. [5 test cases, 0 sub-suites]
+06:05:51.906 Case 'MassActivateAllOrders' execution.
+06:05:51.955 Case 'MassActivateAtOrders' execution.
+06:05:52.015 Case 'MassCancelOrders' execution.
+06:05:52.078 Case 'MassParialFillOrders' execution.
+06:05:52.156 Case 'MassCancelAllOrders' execution.
+06:06:19.829 Case 'MassCancelOrders' succeeded.
+06:06:21.235 Case 'MassCancelAllOrders' succeeded.
+06:06:22.110 Case 'MassParialFillOrders' succeeded.
+06:06:22.626 Case 'MassActivateAllOrders' succeeded.
+06:08:44.490 Case 'MassActivateAtOrders' succeeded.
+06:08:44.662 Suite 'RiskAndRouting\MassOrderActions\ParkAllActivateAll'. [4 test cases, 0 sub-suites]
+06:08:44.755 Case 'OmnibusLevel1' execution.
+06:08:44.802 Case 'OmnibusLevel2' execution.
+06:08:44.849 Case 'OmnibusLevel3' execution.
+06:08:44.896 Case 'RegualAccount' execution.
+06:09:10.615 Case 'OmnibusLevel1' succeeded.
+06:09:11.366 Case 'OmnibusLevel2' succeeded.
+06:09:11.694 Case 'OmnibusLevel3' succeeded.
+06:09:21.975 Case 'RegualAccount' succeeded.
+06:09:27.319 Suite 'RiskAndRouting\OmnibusChainOnOmnibusRequiredFCM'. [1 test cases, 0 sub-suites]
+06:09:28.319 Case 'RegularAccountConfig' execution.
+06:09:28.397 Case 'RegularAccountConfig' succeeded.
+06:09:28.600 Suite 'RiskAndRouting\OrderModificationReject'. [5 test cases, 0 sub-suites]
+06:09:28.679 Case 'On1stOmnibus' execution.
+06:09:28.710 Case 'On2ndOmnibus' execution.
+06:09:28.772 Case 'On3rdOmnibus' execution.
+06:09:28.850 Case 'OnLastOmnibus' execution.
+06:09:28.913 Case 'OnRegularAccount' execution.
+06:09:29.179 Case 'OnLastOmnibus' succeeded.
+06:09:49.132 Case 'On3rdOmnibus' succeeded.
+06:09:54.039 Case 'On1stOmnibus' succeeded.
+06:09:54.133 Case 'On2ndOmnibus' succeeded.
+06:09:54.226 Case 'OnRegularAccount' succeeded.
+06:09:54.414 Suite 'RiskAndRouting\Suspend'. [0 test cases, 2 sub-suites]
+06:09:59.977 Suite 'RiskAndRouting\Suspend\ParkActivateOrders'. [4 test cases, 0 sub-suites]
+06:10:00.086 Case 'Level1' execution.
+06:10:00.181 Case 'Level2' execution.
+06:10:00.275 Case 'Level3' execution.
+06:10:00.383 Case 'RegularAccount' execution.
+06:10:00.961 Case 'Level1' succeeded.
+06:10:01.164 Case 'RegularAccount' succeeded.
+06:10:01.273 Case 'Level2' succeeded.
+06:10:01.368 Case 'Level3' succeeded.
+06:10:01.602 Suite 'RiskAndRouting\Suspend\ParkActivateWithInternalOmni'. [4 test cases, 0 sub-suites]
+06:10:01.727 Case 'InternalOmni' execution.
+06:10:01.791 Case 'OmnibusL1' execution.
+06:10:01.836 Case 'OmnibusL2' execution.
+06:10:01.933 Case 'RegularAccount' execution.
+06:10:02.055 Case 'OmnibusL1' succeeded.
+06:10:02.055 Case 'InternalOmni' succeeded.
+06:10:02.195 Case 'OmnibusL2' succeeded.
+06:10:02.242 Case 'RegularAccount' succeeded.
+06:10:02.602 Suite 'RiskAndRouting\UserInfoInOrderEvents'. [5 test cases, 0 sub-suites]
+06:10:02.695 Case '1stOmnibus' execution.
+06:10:02.773 Case '3rdOmnibus' execution.
+06:10:02.837 Case 'lastOmnibus' execution.
+06:10:02.914 Case 'RegularAccount' execution.
+06:10:03.055 Case '2ndOmnibus' execution.
+06:10:03.117 Case '1stOmnibus' succeeded.
+06:10:03.289 Case '3rdOmnibus' succeeded.
+06:10:03.398 Case 'lastOmnibus' succeeded.
+06:10:03.445 Case 'RegularAccount' succeeded.
+06:10:03.445 Case '2ndOmnibus' succeeded.
+06:12:55.576 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts' execution finished. It took 0:09:02.189884.
+06:12:55.592 Test cases results: 65 total, 65 succeeded, 0 failed, 0 skipped.

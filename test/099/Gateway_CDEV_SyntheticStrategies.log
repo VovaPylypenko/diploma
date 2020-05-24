@@ -1,0 +1,369 @@
+ 6:49:23.20  Test starded without threads
+04:49:23.768 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategy/Suites/InFlightFills/PythonModules' added.
+04:49:23.768 Python Module Path 'ScriptKit' added.
+04:49:23.768 Python Module Path 'Scripts/Gateway/PythonModules' added.
+04:49:23.768 Python Module Path 'ScriptKit/TroubleMaker' added.
+04:49:23.768 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategy/Suites/IncludeInReplication/PythonModules' added.
+04:49:24.503 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategy/Suites' filtered execution.
+04:49:24.581 Suite '.'. [0 test cases, 25 sub-suites]
+04:49:45.081 Suite 'AccountMapping'. [5 test cases, 1 sub-suites]
+04:49:45.222 Case 'PlaceModifyCancelSniperOneAccMapped' execution.
+04:49:45.285 Case 'PlaceModifyFillMultilevelTwoAccMapped' execution.
+04:49:45.365 Case 'PlaceModifyFillSimmOneAccMapped' execution.
+04:49:45.410 Case 'PlacePartFillCancelSymmTwoAccMapped' execution.
+04:49:45.503 Case 'PlacePartFillRejectMultilevelTwoAccMapped' execution.
+04:49:51.769 Case 'PlacePartFillRejectMultilevelTwoAccMapped' succeeded.
+04:49:56.019 Case 'PlaceModifyFillMultilevelTwoAccMapped' succeeded.
+04:49:58.801 Case 'PlacePartFillCancelSymmTwoAccMapped' succeeded.
+04:50:00.785 Case 'PlaceModifyFillSimmOneAccMapped' succeeded.
+04:50:07.785 Case 'PlaceModifyCancelSniperOneAccMapped' succeeded.
+04:50:07.895 Suite 'AccountMapping\CancelAll'. [2 test cases, 0 sub-suites]
+04:50:09.848 Case 'ByPrimaryLeg' execution.
+04:50:09.942 Case 'BySecondaryLeg' execution.
+04:50:15.692 Case 'ByPrimaryLeg' succeeded.
+04:50:17.723 Case 'BySecondaryLeg' succeeded.
+04:50:18.082 Suite 'AlgorithmicOrderSupport'. [1 test cases, 0 sub-suites]
+04:50:18.223 Case 'SyntheticStrategyOrder' execution.
+04:50:18.614 Case 'SyntheticStrategyOrder' succeeded.
+04:50:18.832 Suite 'BaseFunctionality'. [4 test cases, 0 sub-suites]
+04:50:18.957 Case 'MultipleMsgrs' execution.
+04:50:19.004 Case 'PlaceMKTFullFill' execution.
+04:50:19.051 Case 'PlacePartialFillFullFill' execution.
+04:50:19.192 Case 'MultipleMsgrs' succeeded.
+04:50:19.192 Case 'PlaceWithoutMarketModifyFillCancel' execution.
+04:50:29.864 Case 'PlacePartialFillFullFill' succeeded.
+04:50:30.098 Case 'PlaceMKTFullFill' succeeded.
+04:50:32.489 Case 'PlaceWithoutMarketModifyFillCancel' succeeded.
+04:50:32.723 Suite 'CancelAll'. [2 test cases, 0 sub-suites]
+04:50:34.645 Case 'ByOrderState' execution.
+04:50:34.708 Case 'ByRootSymbol' execution.
+04:50:35.958 Case 'ByRootSymbol' succeeded.
+04:50:37.599 Case 'ByOrderState' succeeded.
+04:50:37.880 Suite 'CancelSSByPrimary'. [5 test cases, 0 sub-suites]
+04:50:37.989 Case 'AggregativeLimitSpread' execution.
+04:50:38.067 Case 'MultilevelLimitSpread' execution.
+04:50:38.114 Case 'OnePrimary3LegsSymmetricLimitSpread' execution.
+04:50:38.208 Case 'OnePrimarySymmetricLimitSpread' execution.
+04:50:38.255 Case 'TwoPrimarySymmetricLimitSpread' execution.
+04:50:48.411 Case 'TwoPrimarySymmetricLimitSpread' succeeded.
+04:50:49.787 Case 'OnePrimarySymmetricLimitSpread' succeeded.
+04:50:51.490 Case 'AggregativeLimitSpread' succeeded.
+04:50:53.646 Case 'MultilevelLimitSpread' succeeded.
+04:50:53.818 Case 'OnePrimary3LegsSymmetricLimitSpread' succeeded.
+04:50:54.068 Suite 'ExchangeDisconnections'. [1 test cases, 0 sub-suites]
+04:50:54.271 Case 'PrimaryLegCancellationOnNonDisconnectedRoute' execution.
+04:50:58.818 Case 'PrimaryLegCancellationOnNonDisconnectedRoute' succeeded.
+04:50:59.037 Suite 'ExecSourceCode'. [1 test cases, 0 sub-suites]
+04:51:00.084 Case 'SyntheticStrategy' execution.
+04:51:13.037 Case 'SyntheticStrategy' succeeded.
+04:51:13.319 Suite 'Failure'. [9 test cases, 0 sub-suites]
+04:51:13.490 Case 'AggrLimitations' execution.
+04:51:13.553 Case 'CancelAll3LegsSymmetricLimitSpread' execution.
+04:51:13.615 Case 'MultilevelLimitations' execution.
+04:51:13.693 Case 'MultiplicativeLimitations' execution.
+04:51:13.787 Case 'PrimaryRejectSymmetricLimitSpread' execution.
+04:51:13.850 Case 'SecondaryRejectSymmetricLimitSpread' execution.
+04:51:13.944 Case 'SpreadLimitations' execution.
+04:51:14.024 Case 'TimeoutSymmetricMktSpread' execution.
+04:51:14.084 Case 'UnsolicitedCancelAggregativeLimitSpread' execution.
+04:51:16.444 Case 'PrimaryRejectSymmetricLimitSpread' succeeded.
+04:51:17.709 Case 'AggrLimitations' succeeded.
+04:51:17.756 Case 'MultiplicativeLimitations' succeeded.
+04:51:17.772 Case 'MultilevelLimitations' succeeded.
+04:51:18.616 Case 'SpreadLimitations' succeeded.
+04:51:22.850 Case 'SecondaryRejectSymmetricLimitSpread' succeeded.
+04:51:23.569 Case 'CancelAll3LegsSymmetricLimitSpread' succeeded.
+04:51:25.022 Case 'UnsolicitedCancelAggregativeLimitSpread' succeeded.
+04:51:55.273 Case 'TimeoutSymmetricMktSpread' succeeded.
+04:51:55.507 Suite 'FillOverfill'. [13 test cases, 0 sub-suites]
+04:51:55.648 Case 'AcceptOverfillsMultilevelSpread' execution.
+04:51:55.789 Case 'AutomaticHedgingSymmetricSpread' execution.
+04:51:55.882 Case 'AvoidOverfillsAggregation' execution.
+04:51:55.960 Case 'AvoidOverfillsSymmetricSpread' execution.
+04:51:56.023 Case 'FilledNestedSSOrderBecomesWorking' execution.
+04:51:56.101 Case 'FullFillLimitAggregation' execution.
+04:51:56.179 Case 'FullFillLimitSniperSpread' execution.
+04:51:56.242 Case 'FullFillLimitSymmetricSpread' execution.
+04:51:56.320 Case 'FullFillMarketSpread' execution.
+04:51:56.414 Case 'ManualOverfillSymmetricSpread' execution.
+04:51:56.476 Case 'PartFillLimitMultilevelSpread' execution.
+04:51:56.554 Case 'PreserveQueuePositionAggregation' execution.
+04:51:56.618 Case 'FullFillLimitSymmetricTwoWorkLegsSpread' execution.
+04:52:01.711 Case 'FilledNestedSSOrderBecomesWorking' succeeded.
+04:52:03.742 Case 'FullFillLimitSymmetricSpread' succeeded.
+04:52:04.773 Case 'FullFillLimitAggregation' succeeded.
+04:52:04.976 Case 'FullFillLimitSniperSpread' succeeded.
+04:52:06.554 Case 'FullFillMarketSpread' succeeded.
+04:52:08.117 Case 'FullFillLimitSymmetricTwoWorkLegsSpread' succeeded.
+04:52:10.133 Case 'PartFillLimitMultilevelSpread' succeeded.
+04:52:11.898 Case 'AutomaticHedgingSymmetricSpread' succeeded.
+04:52:15.461 Case 'AcceptOverfillsMultilevelSpread' succeeded.
+04:52:23.196 Case 'AvoidOverfillsSymmetricSpread' succeeded.
+04:52:30.071 Case 'AvoidOverfillsAggregation' succeeded.
+04:52:30.336 Case 'ManualOverfillSymmetricSpread' succeeded.
+04:52:40.056 Case 'PreserveQueuePositionAggregation' succeeded.
+04:52:40.399 Suite 'ForceCareOrders'. [2 test cases, 0 sub-suites]
+04:52:42.524 Case 'CareFillReject' execution.
+04:52:42.587 Case 'ForceCare_Actions' execution.
+04:52:43.884 Case 'CareFillReject' succeeded.
+04:52:43.962 Case 'ForceCare_Actions' succeeded.
+04:52:44.243 Suite 'FractionalSizes'. [10 test cases, 0 sub-suites]
+04:52:44.384 Case 'LegRatioNotMultipleSizeIncrementRejected' execution.
+04:52:44.431 Case 'NestedSpreadFractionalSizeRejected' execution.
+04:52:44.524 Case 'NonProportionalExecutionRejected' execution.
+04:52:44.603 Case 'ProportionalExecution' execution.
+04:52:44.712 Case 'RoundingModeDown' execution.
+04:52:44.837 Case 'RoundingModeMath' execution.
+04:52:44.962 Case 'RoundingModeUp' execution.
+04:52:45.056 Case 'ZeroLegSizeRejected' execution.
+04:52:45.165 Case 'ZeroPrimaryLegSizeRejected' execution.
+04:52:45.274 Case 'SizeModificationRejected' execution.
+04:52:49.868 Case 'ZeroLegSizeRejected' succeeded.
+04:52:49.994 Case 'NonProportionalExecutionRejected' succeeded.
+04:52:50.120 Case 'ZeroPrimaryLegSizeRejected' succeeded.
+04:52:50.120 Case 'LegRatioNotMultipleSizeIncrementRejected' succeeded.
+04:52:50.228 Case 'NestedSpreadFractionalSizeRejected' succeeded.
+04:52:50.243 Case 'SizeModificationRejected' succeeded.
+04:52:51.525 Case 'RoundingModeUp' succeeded.
+04:52:51.775 Case 'RoundingModeMath' succeeded.
+04:52:51.884 Case 'RoundingModeDown' succeeded.
+04:52:58.400 Case 'ProportionalExecution' succeeded.
+04:52:58.697 Suite 'Hang'. [10 test cases, 0 sub-suites]
+04:52:58.822 Case 'FractionalSymmetricLimitSpread' execution.
+04:52:58.884 Case 'GoMarketSymmetricLimitSpread' execution.
+04:52:58.952 Case 'HangFailMultilevelLimitSpread' execution.
+04:52:59.027 Case 'HangLiquidateMultilevelLimitSpread' execution.
+04:52:59.087 Case 'HangResolutionMultilevelLimitSpread' execution.
+04:52:59.166 Case 'HangSniperSpread' execution.
+04:52:59.244 Case 'LiquidateSymmetricLimitSpread' execution.
+04:52:59.369 Case 'MultipleHangsSymmetricLimitSpread' execution.
+04:52:59.431 Case 'ScratchSymmetricLimitSpread' execution.
+04:52:59.509 Case 'TrailSymmetricLimitSpread' execution.
+04:53:12.228 Case 'HangSniperSpread' succeeded.
+04:53:20.026 Case 'HangResolutionMultilevelLimitSpread' succeeded.
+04:53:21.026 Case 'TrailSymmetricLimitSpread' succeeded.
+04:53:21.104 Case 'HangFailMultilevelLimitSpread' succeeded.
+04:53:21.572 Case 'ScratchSymmetricLimitSpread' succeeded.
+04:53:23.916 Case 'HangLiquidateMultilevelLimitSpread' succeeded.
+04:53:28.168 Case 'MultipleHangsSymmetricLimitSpread' succeeded.
+04:53:40.448 Case 'GoMarketSymmetricLimitSpread' succeeded.
+04:53:41.214 Case 'LiquidateSymmetricLimitSpread' succeeded.
+04:54:02.106 Case 'FractionalSymmetricLimitSpread' succeeded.
+04:54:02.402 Suite 'Iceberg'. [6 test cases, 0 sub-suites]
+04:54:02.542 Case 'IcbrgLegsSymmetricSSSizeModification' execution.
+04:54:02.605 Case 'IcbrgMultilevelSSPrimaryLegSizeModificationAfterPartialFill' execution.
+04:54:02.699 Case 'IcbrgNativeLegsAggregationSSPartialFill' execution.
+04:54:02.886 Case 'IcbrgSymmetricSSRejections' execution.
+04:54:02.949 Case 'IcbrgSymmetricSSSizeModification' execution.
+04:54:03.042 Case 'IcbrgSymmetricSSVisibleSizeModification' execution.
+04:54:03.527 Case 'IcbrgSymmetricSSRejections' succeeded.
+04:54:16.402 Case 'IcbrgSymmetricSSVisibleSizeModification' succeeded.
+04:54:19.809 Case 'IcbrgMultilevelSSPrimaryLegSizeModificationAfterPartialFill' succeeded.
+04:54:31.903 Case 'IcbrgNativeLegsAggregationSSPartialFill' succeeded.
+04:55:16.092 Case 'IcbrgLegsSymmetricSSSizeModification' succeeded.
+04:55:16.201 Case 'IcbrgSymmetricSSSizeModification' succeeded.
+04:55:16.483 Suite 'IncludeInReplication'. [4 test cases, 0 sub-suites]
+04:55:16.607 Case 'ExcludeFromReplicationCancelled' execution.
+04:55:16.685 Case 'IncludeInReplicationFilledLegs' execution.
+04:55:16.766 Case 'IncludeInReplicationLateFills' execution.
+04:55:16.842 Case 'IncludeInReplicationReleasedLegs' execution.
+04:55:31.748 Case 'IncludeInReplicationFilledLegs' succeeded.
+04:55:32.061 Case 'ExcludeFromReplicationCancelled' succeeded.
+04:55:40.030 Case 'IncludeInReplicationReleasedLegs' succeeded.
+04:55:40.311 Case 'IncludeInReplicationLateFills' succeeded.
+04:55:40.639 Suite 'InFlightFills'. [18 test cases, 0 sub-suites]
+04:55:40.796 Case 'CancelNonZero_Accepted' execution.
+04:55:40.921 Case 'CancelNonZero_Rejected' execution.
+04:55:40.983 Case 'CancelZero_Rejected' execution.
+04:55:41.064 Case 'ModifyToNonZero_Accepted' execution.
+04:55:41.155 Case 'ModifyToNonZero_AcceptFirst' execution.
+04:55:41.249 Case 'ModifyToNonZero_Rejected' execution.
+04:55:41.342 Case 'ModifyToZero_Accepted' execution.
+04:55:41.467 Case 'ModifyToZero_AcceptFirst' execution.
+04:55:41.561 Case 'ModifyToZero_Rejected' execution.
+04:55:41.655 Case 'ModifyToZero_RejectFirst' execution.
+04:55:41.764 Case 'ModifyZeroToNonZero_Accepted' execution.
+04:55:41.936 Case 'ModifyZeroToNonZero_AcceptFirst' execution.
+04:55:42.077 Case 'ModifyZeroToNonZero_Rejected' execution.
+04:55:42.217 Case 'ModifyZeroToNonZero_RejectFirst' execution.
+04:55:42.312 Case 'ModifyZeroToZero_Accepted' execution.
+04:55:42.405 Case 'ModifyZeroToZero_AcceptFirst' execution.
+04:55:42.452 Case 'ModifyZeroToZero_Rejected' execution.
+04:55:42.530 Case 'ModifyZeroToZero_RejectFirst' execution.
+04:55:45.780 Case 'CancelZero_Rejected' succeeded.
+04:55:45.843 Case 'CancelNonZero_Accepted' succeeded.
+04:55:45.968 Case 'ModifyToZero_RejectFirst' succeeded.
+04:55:45.968 Case 'CancelNonZero_Rejected' succeeded.
+04:55:48.264 Case 'ModifyToZero_Accepted' succeeded.
+04:55:48.828 Case 'ModifyToZero_AcceptFirst' succeeded.
+04:55:48.843 Case 'ModifyToNonZero_Rejected' succeeded.
+04:55:49.015 Case 'ModifyToZero_Rejected' succeeded.
+04:55:49.327 Case 'ModifyZeroToNonZero_RejectFirst' succeeded.
+04:55:49.468 Case 'ModifyZeroToZero_RejectFirst' succeeded.
+04:55:49.843 Case 'ModifyToNonZero_Accepted' succeeded.
+04:55:50.155 Case 'ModifyToNonZero_AcceptFirst' succeeded.
+04:55:50.718 Case 'ModifyZeroToNonZero_Rejected' succeeded.
+04:55:50.765 Case 'ModifyZeroToZero_Rejected' succeeded.
+04:55:51.686 Case 'ModifyZeroToZero_Accepted' succeeded.
+04:55:51.983 Case 'ModifyZeroToZero_AcceptFirst' succeeded.
+04:55:53.077 Case 'ModifyZeroToNonZero_AcceptFirst' succeeded.
+04:55:53.280 Case 'ModifyZeroToNonZero_Accepted' succeeded.
+04:55:53.687 Suite 'LegOrderConversion'. [1 test cases, 0 sub-suites]
+04:55:54.718 Case 'ConvertedLegRelease' execution.
+04:55:59.702 Case 'ConvertedLegRelease' succeeded.
+04:55:59.984 Suite 'MixOmnibusAccMapping'. [5 test cases, 1 sub-suites]
+04:56:00.484 Case 'PlaceFillRejectSymmetric' execution.
+04:56:00.577 Case 'PlaceModifyCancelSniper' execution.
+04:56:00.671 Case 'PlaceModifyFillMultilevel' execution.
+04:56:00.765 Case 'PlaceModifyFillSimmetric' execution.
+04:56:00.827 Case 'PlacePartFillCancelSymmetric' execution.
+04:56:37.938 Case 'PlaceModifyFillMultilevel' succeeded.
+04:57:06.579 Case 'PlaceModifyFillSimmetric' succeeded.
+04:57:18.142 Case 'PlaceModifyCancelSniper' succeeded.
+04:57:35.393 Case 'PlaceFillRejectSymmetric' succeeded.
+04:57:43.831 Case 'PlacePartFillCancelSymmetric' succeeded.
+04:57:44.018 Suite 'MixOmnibusAccMapping\CancelAll'. [1 test cases, 0 sub-suites]
+04:57:46.096 Case 'FromOmnibus' execution.
+04:57:47.956 Case 'FromOmnibus' succeeded.
+04:57:48.393 Suite 'OmnibusInternalOmnibus'. [5 test cases, 0 sub-suites]
+04:57:48.628 Case 'FillMultilevel' execution.
+04:57:48.706 Case 'FillSymmetricSpread' execution.
+04:57:48.815 Case 'PlaceModifyCancelMultilevel' execution.
+04:57:48.909 Case 'PlaceModifyCancelSymmetricSpread' execution.
+04:57:49.003 Case 'PlaceRejectMultilevel' execution.
+04:58:13.300 Case 'PlaceRejectMultilevel' succeeded.
+04:58:16.253 Case 'FillSymmetricSpread' succeeded.
+04:58:18.613 Case 'PlaceModifyCancelSymmetricSpread' succeeded.
+04:58:40.145 Case 'FillMultilevel' succeeded.
+04:58:42.145 Case 'PlaceModifyCancelMultilevel' succeeded.
+04:58:42.395 Suite 'Parked'. [5 test cases, 0 sub-suites]
+04:58:42.536 Case 'ParkingActivationFill' execution.
+04:58:42.614 Case 'ParkingCancelByContractCriteria' execution.
+04:58:42.707 Case 'ParkingCancelByParkedCriteria' execution.
+04:58:42.770 Case 'ParkingMultilevel' execution.
+04:58:42.864 Case 'PlaceParkActivateCancel' execution.
+04:58:44.911 Case 'ParkingCancelByContractCriteria' succeeded.
+04:58:45.020 Case 'ParkingCancelByParkedCriteria' succeeded.
+04:58:48.301 Case 'ParkingActivationFill' succeeded.
+04:58:48.395 Case 'ParkingMultilevel' succeeded.
+04:58:52.239 Case 'PlaceParkActivateCancel' succeeded.
+04:58:52.551 Suite 'PlaceModifyCancel'. [18 test cases, 0 sub-suites]
+04:58:52.723 Case 'MarketMULPlaceCancel' execution.
+04:58:52.786 Case 'MarketPlaceCancel' execution.
+04:58:52.880 Case 'MultilevelPlaceModifyCancel' execution.
+04:58:52.958 Case 'PlaceCancelAGGRBothLegs' execution.
+04:58:53.067 Case 'PlaceCancelMultilevelMKT' execution.
+04:58:53.177 Case 'PlaceCancelMultilevelSniper' execution.
+04:58:53.255 Case 'PlaceCancelMultilevelSTP' execution.
+04:58:53.348 Case 'PlaceModifyCancelAGGR' execution.
+04:58:53.475 Case 'PlaceModifyCancelAGGRMultilevel' execution.
+04:58:53.583 Case 'PlaceModifyCancelMULMultilevel' execution.
+04:58:53.708 Case 'PlaceModifyCancelSniperMUL' execution.
+04:58:53.817 Case 'PlaceModifyCancelSymmerticMUL' execution.
+04:58:53.973 Case 'SniperPlaceModifyCancel' execution.
+04:58:54.098 Case 'StopMULPlaceCancel' execution.
+04:58:54.177 Case 'StopPlaceCancel' execution.
+04:58:54.292 Case 'SymmerticPlaceModifyCancel' execution.
+04:58:54.380 Case 'ThreeLegsPlaceModifyCancel' execution.
+04:58:54.473 Case 'TwoWorkingLegsPlaceModifyCancel' execution.
+04:58:58.928 Case 'MultilevelPlaceModifyCancel' succeeded.
+04:59:01.012 Case 'PlaceModifyCancelMULMultilevel' succeeded.
+04:59:01.742 Case 'ThreeLegsPlaceModifyCancel' succeeded.
+04:59:02.052 Case 'PlaceCancelMultilevelMKT' succeeded.
+04:59:02.130 Case 'PlaceCancelMultilevelSniper' succeeded.
+04:59:03.442 Case 'MarketPlaceCancel' succeeded.
+04:59:05.380 Case 'PlaceModifyCancelAGGRMultilevel' succeeded.
+04:59:06.974 Case 'SymmerticPlaceModifyCancel' succeeded.
+04:59:07.161 Case 'PlaceCancelMultilevelSTP' succeeded.
+04:59:07.880 Case 'MarketMULPlaceCancel' succeeded.
+04:59:08.021 Case 'PlaceCancelAGGRBothLegs' succeeded.
+04:59:08.239 Case 'PlaceModifyCancelSymmerticMUL' succeeded.
+04:59:11.708 Case 'SniperPlaceModifyCancel' succeeded.
+04:59:14.302 Case 'TwoWorkingLegsPlaceModifyCancel' succeeded.
+04:59:14.427 Case 'StopPlaceCancel' succeeded.
+04:59:14.771 Case 'PlaceModifyCancelAGGR' succeeded.
+04:59:15.490 Case 'StopMULPlaceCancel' succeeded.
+04:59:20.130 Case 'PlaceModifyCancelSniperMUL' succeeded.
+04:59:20.396 Suite 'Race'. [5 test cases, 0 sub-suites]
+04:59:20.552 Case 'PrimaryFilledBeforeCancelSymmetricLimitSpread' execution.
+04:59:20.631 Case 'SecondaryCancelAcceptedSymmetricLimitSpread' execution.
+04:59:20.724 Case 'SecondaryCancelFailSymmetricLimitSpread' execution.
+04:59:20.818 Case 'SecondaryModFailSymmetricLimitSpread' execution.
+04:59:20.927 Case 'SecondaryModAcceptedSymmetricLimitSpread' execution.
+04:59:29.131 Case 'PrimaryFilledBeforeCancelSymmetricLimitSpread' succeeded.
+04:59:31.694 Case 'SecondaryModAcceptedSymmetricLimitSpread' succeeded.
+04:59:31.897 Case 'SecondaryCancelAcceptedSymmetricLimitSpread' succeeded.
+04:59:32.084 Case 'SecondaryCancelFailSymmetricLimitSpread' succeeded.
+04:59:32.162 Case 'SecondaryModFailSymmetricLimitSpread' succeeded.
+04:59:32.522 Suite 'RelativeDailyFutures'. [1 test cases, 0 sub-suites]
+04:59:32.725 Case 'FillLMEStyleContracts' execution.
+04:59:49.226 Case 'FillLMEStyleContracts' succeeded.
+04:59:49.569 Suite 'ReleaseOwnership'. [7 test cases, 1 sub-suites]
+04:59:49.741 Case 'AllLegsWorkingSSLegReleasedAfterCancellation' execution.
+04:59:49.819 Case 'FillReleasedNestedStrategyLeg' execution.
+04:59:49.898 Case 'ModifyNestedWithFakeFills' execution.
+04:59:49.991 Case 'SniperSSLegReleasedAfterModification' execution.
+04:59:50.225 Case 'SymmetricSSLegReleasedAfterCancellation' execution.
+04:59:50.319 Case 'SymmetricSSLegReleasedAfterModification' execution.
+04:59:50.413 Case 'SymmetricSSLegReleasedAfterPlacement' execution.
+04:59:59.694 Case 'FillReleasedNestedStrategyLeg' succeeded.
+05:00:17.554 Case 'SymmetricSSLegReleasedAfterCancellation' succeeded.
+05:00:17.820 Case 'SniperSSLegReleasedAfterModification' succeeded.
+05:00:20.023 Case 'SymmetricSSLegReleasedAfterModification' succeeded.
+05:00:23.570 Case 'AllLegsWorkingSSLegReleasedAfterCancellation' succeeded.
+05:00:35.695 Case 'SymmetricSSLegReleasedAfterPlacement' succeeded.
+05:00:47.446 Case 'ModifyNestedWithFakeFills' succeeded.
+05:00:47.602 Suite 'ReleaseOwnership\CancelAll'. [1 test cases, 0 sub-suites]
+05:00:48.665 Case 'ForReleasedLeg' execution.
+05:00:51.383 Case 'ForReleasedLeg' succeeded.
+05:00:51.899 Suite 'StrategyDefinition'. [8 test cases, 0 sub-suites]
+05:00:52.118 Case 'AggrLimitations' execution.
+05:00:52.227 Case 'BadStrategyDefinitions' execution.
+05:00:52.368 Case 'MultilevelDefinitionQuery' execution.
+05:00:52.431 Case 'AggrLimitations' succeeded.
+05:00:52.477 Case 'MultilevelLimitations' execution.
+05:00:52.743 Case 'MultiplicativeLimitations' execution.
+05:00:52.852 Case 'SpreadLimitations' execution.
+05:00:52.852 Case 'MultilevelDefinitionQuery' succeeded.
+05:00:52.946 Case 'MultilevelLimitations' succeeded.
+05:00:52.962 Case 'StrategyDuplicateDefinition_DE717247707' execution.
+05:00:53.009 Case 'MultiplicativeLimitations' succeeded.
+05:00:53.055 Case 'LegIsNotTradable' execution.
+05:00:53.212 Case 'LegIsNotTradable' succeeded.
+05:00:53.212 Case 'StrategyDuplicateDefinition_DE717247707' succeeded.
+05:00:53.227 Case 'SpreadLimitations' succeeded.
+05:00:53.415 Case 'BadStrategyDefinitions' succeeded.
+05:00:54.165 Suite 'Throttling'. [0 test cases, 1 sub-suites]
+05:00:54.399 Suite 'Throttling\Throttle_ts.py'. [15 test cases, 0 sub-suites]
+05:00:54.587 Case 'PlaceRejectSecondaryLegFail_MTLO_InterExchange' execution.
+05:00:54.696 Case 'PlaceRejectSecondaryLegFail_IntraExchange' execution.
+05:00:54.777 Case 'PlaceRejectSecondaryLegSuccess_MTLO_IntraExchange' execution.
+05:00:54.930 Case 'PlaceRejectSecondaryLegSuccess_InterExchange' execution.
+05:00:55.024 Case 'PlaceRejectPrimaryLeg_IgnoreThrottle_InterExchange' execution.
+05:00:55.134 Case 'PlaceRejectPrimaryLeg_IgnoreThrottle_Fail1_IntraExchange' execution.
+05:00:55.227 Case 'PlaceRejectPrimaryLeg_IgnoreThrottle_Fail2_InterExchange' execution.
+05:00:55.352 Case 'PlaceRejectPrimaryLeg_IntraExchange' execution.
+05:00:55.462 Case 'ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_IntraExchange' execution.
+05:00:55.556 Case 'ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_Fail1_InterExchange' execution.
+05:00:55.805 Case 'ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_Fail2_InterExchange' execution.
+05:00:55.899 Case 'ModifyRejectPrimaryLeg_MMLO_InterExchange' execution.
+05:00:55.977 Case 'CancelRejectPrimaryLegSuccess_IntraExchange' execution.
+05:00:56.071 Case 'CancelRejectPrimaryLegFail1_InterExchange' execution.
+05:00:56.165 Case 'CancelRejectPrimaryLegFail2_IntraExchange' execution.
+05:00:58.885 Case 'PlaceRejectPrimaryLeg_IntraExchange' succeeded.
+05:01:00.747 Case 'ModifyRejectPrimaryLeg_MMLO_InterExchange' succeeded.
+05:01:06.915 Case 'PlaceRejectSecondaryLegFail_MTLO_InterExchange' succeeded.
+05:01:07.962 Case 'PlaceRejectSecondaryLegFail_IntraExchange' succeeded.
+05:01:08.087 Case 'PlaceRejectSecondaryLegSuccess_InterExchange' succeeded.
+05:01:09.212 Case 'PlaceRejectPrimaryLeg_IgnoreThrottle_Fail1_IntraExchange' succeeded.
+05:01:09.400 Case 'PlaceRejectSecondaryLegSuccess_MTLO_IntraExchange' succeeded.
+05:01:09.837 Case 'PlaceRejectPrimaryLeg_IgnoreThrottle_InterExchange' succeeded.
+05:01:11.259 Case 'ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_Fail1_InterExchange' succeeded.
+05:01:12.415 Case 'ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_IntraExchange' succeeded.
+05:01:13.322 Case 'CancelRejectPrimaryLegFail1_InterExchange' succeeded.
+05:01:13.368 Case 'CancelRejectPrimaryLegSuccess_IntraExchange' succeeded.
+05:01:59.823 Case 'CancelRejectPrimaryLegFail2_IntraExchange' succeeded.
+05:02:01.870 Case 'PlaceRejectPrimaryLeg_IgnoreThrottle_Fail2_InterExchange' succeeded.
+05:02:04.276 Case 'ModifyRejectPrimaryLeg_MMLO_IgnoreThrottle_Fail2_InterExchange' succeeded.
+05:02:05.496 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategy/Suites' execution finished. It took 0:12:40.914305.
+05:02:05.496 Test cases results: 165 total, 165 succeeded, 0 failed, 0 skipped.

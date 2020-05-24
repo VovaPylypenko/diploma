@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="7" testsuite_failed="False" time="351.870981" timestamp="2020-02-06T08:14:12.431172">
+ <properties>
+  <property name="module" value="MockDatafeed"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_SSAT"/>
+  <property name="scripts-cfg-instance" value="SF_SSAT"/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/AlgoExecLimits"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="AlgoExecLimits" skipped="0" tests="7" testsuite_failed="False" time="351.870981" timestamp="2020-02-06T08:14:12.431172">
+  <testsuite failures="0" name="Synthetic" skipped="0" tests="7" testsuite_failed="False" time="338.714337" timestamp="2020-02-06T08:14:25.134676">
+   <testsuite failures="0" name="Complex" skipped="0" tests="5" testsuite_failed="False" time="199.80442" timestamp="2020-02-06T08:14:33.369289">
+    <testcase name="02_SSPWithLegs" status="run" time="4.296983" timestamp="2020-02-06T08:14:33.447425"/>
+    <testcase name="03_ActivatedSOM" status="run" time="170.20817" timestamp="2020-02-06T08:14:37.791314"/>
+    <testcase name="06_SSPWithMappedLeg" status="run" time="4.234481" timestamp="2020-02-06T08:17:28.062027"/>
+    <testcase name="13_Trails" status="run" time="14.23471" timestamp="2020-02-06T08:17:32.359183"/>
+    <testcase name="14_SSPLegModifications" status="run" time="6.468988" timestamp="2020-02-06T08:17:46.640664"/>
+   </testsuite>
+   <testsuite failures="0" name="DoNotCount" skipped="0" tests="2" testsuite_failed="False" time="130.583083" timestamp="2020-02-06T08:17:53.203425">
+    <testcase name="03_SSPWithoutLegs" status="run" time="65.783767" timestamp="2020-02-06T08:17:53.281498"/>
+    <testcase name="04_NonActivatedSOM" status="run" time="64.627634" timestamp="2020-02-06T08:18:59.112091"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

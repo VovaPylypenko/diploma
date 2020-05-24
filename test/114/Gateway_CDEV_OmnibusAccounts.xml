@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="27" skipped="38" tests="65" testsuite_failed="True" time="36.188867" timestamp="2020-02-18T23:41:16.837655">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts/RiskAndRouting/MassOrderActions/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts/PythonModules"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="20"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="27" name="OmnibusAccounts" skipped="38" tests="65" testsuite_failed="True" time="36.188867" timestamp="2020-02-18T23:41:16.837655">
+  <testsuite failures="27" name="RiskAndRouting" skipped="38" tests="65" testsuite_failed="True" time="17.40686" timestamp="2020-02-18T23:41:32.025760">
+   <testcase name="CircularDependenciesPrevention" status="run" time="0.031237" timestamp="2020-02-18T23:41:32.150740">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\CircularDependenciesPrevention.tc.py&quot;, line 18, in &lt;module&gt;
+    context, [traders[0]], [acct6], tradersNotReceivedEvents = [traders[7], traders[8], traders[9]])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 223, in PlaceOrderRejected
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\CircularDependenciesPrevention.tc.py&quot;, line 18, in &lt;module&gt;
+    context, [traders[0]], [acct6], tradersNotReceivedEvents = [traders[7], traders[8], traders[9]])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 223, in PlaceOrderRejected
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="DirectOrderOnOmnibus" status="run" time="0.031297" timestamp="2020-02-18T23:41:32.197607">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\DirectOrderOnOmnibus.tc.py&quot;, line 18, in &lt;module&gt;
+    context, [traders[8]], [omni1], tradersNotReceivedEvents = [traders[9], traders[10], traders[11]])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 223, in PlaceOrderRejected
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\DirectOrderOnOmnibus.tc.py&quot;, line 18, in &lt;module&gt;
+    context, [traders[8]], [omni1], tradersNotReceivedEvents = [traders[9], traders[10], traders[11]])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 223, in PlaceOrderRejected
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ExecutionAccountIDInternalOmnibus" status="run" time="0.015615" timestamp="2020-02-18T23:41:32.244498">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\ExecutionAccountIDInternalOmnibus.tc.py&quot;, line 29, in &lt;module&gt;
+    context, [trader, trader, trader, trader], [acct, omni1, omni2, omni3])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\ExecutionAccountIDInternalOmnibus.tc.py&quot;, line 29, in &lt;module&gt;
+    context, [trader, trader, trader, trader], [acct, omni1, omni2, omni3])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="ExecutionAccountIDOmnibus" status="run" time="0.015625" timestamp="2020-02-18T23:41:32.275721">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\ExecutionAccountIDOmnibus.tc.py&quot;, line 29, in &lt;module&gt;
+    context, [trader, trader, trader, trader], [acct, omni1, omni2, omni3])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\ExecutionAccountIDOmnibus.tc.py&quot;, line 29, in &lt;module&gt;
+    context, [trader, trader, trader, trader], [acct, omni1, omni2, omni3])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OmnibusChainLimit" status="run" time="0.015631" timestamp="2020-02-18T23:41:32.306973">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OmnibusChainLimit.tc.py&quot;, line 18, in &lt;module&gt;
+    context, [traders[0]], [acct0], tradersNotReceivedEvents = [traders[7], traders[8], traders[9], traders[10], traders[11]])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 223, in PlaceOrderRejected
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OmnibusChainLimit.tc.py&quot;, line 18, in &lt;module&gt;
+    context, [traders[0]], [acct0], tradersNotReceivedEvents = [traders[7], traders[8], traders[9], traders[10], traders[11]])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 223, in PlaceOrderRejected
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="OrderPlacementRisksOnOmnibusChain" status="run" time="0.062309" timestamp="2020-02-18T23:41:32.338444">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderPlacementRisksOnOmnibusChain.tc.py&quot;, line 36, in &lt;module&gt;
+    context, [traders[1]], [acct1], tradersNotReceivedEvents = [traders[8], traders[9], traders[10], traders[11]])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 223, in PlaceOrderRejected
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderPlacementRisksOnOmnibusChain.tc.py&quot;, line 36, in &lt;module&gt;
+    context, [traders[1]], [acct1], tradersNotReceivedEvents = [traders[8], traders[9], traders[10], traders[11]])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 223, in PlaceOrderRejected
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="RoutingThroughOmnibusChain" status="run" time="0.0" timestamp="2020-02-18T23:41:32.416366">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\RoutingThroughOmnibusChain.tc.py&quot;, line 27, in &lt;module&gt;
+    [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\RoutingThroughOmnibusChain.tc.py&quot;, line 27, in &lt;module&gt;
+    [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testsuite failures="1" name="CancelAll" skipped="0" tests="1" testsuite_failed="True" time="2.031335" timestamp="2020-02-18T23:41:32.728870">
+    <testcase name="FromOmnibus" status="run" time="0.0" timestamp="2020-02-18T23:41:34.650823">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\CancelAll\FromOmnibus_tc.py&quot;, line 20, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(epz99, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\CancelAll\FromOmnibus_tc.py&quot;, line 20, in &lt;module&gt;
+    o1 = OrderActionUtils.CreateOrder(epz99, OrderSide.Sell, 5, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+   <testsuite failures="0" name="MassOrderActions" skipped="38" tests="38" testsuite_failed="False" time="5.234338" timestamp="2020-02-18T23:41:34.807309">
+    <testsuite failures="0" name="ActivateAll" skipped="14" tests="14" testsuite_failed="False">
+     <testcase name="ActivateAllForAccountScenario1" status="notrun"/>
+     <testcase name="ActivateAllForAccountScenario2" status="notrun"/>
+     <testcase name="ActivateAllForAccountScenario3" status="notrun"/>
+     <testcase name="ActivateAllForAccountScenario4" status="notrun"/>
+     <testcase name="ActivateAllForAccountScenario5" status="notrun"/>
+     <testcase name="ActivateAllForAccountScenario6" status="notrun"/>
+     <testcase name="ActivateAllForAccountScenario7" status="notrun"/>
+     <testcase name="ActivateAllForTraderScenario1" status="notrun"/>
+     <testcase name="ActivateAllForTraderScenario2" status="notrun"/>
+     <testcase name="ActivateAllForTraderScenario3" status="notrun"/>
+     <testcase name="ActivateAllForTraderScenario4" status="notrun"/>
+     <testcase name="ActivateAllForTraderScenario5" status="notrun"/>
+     <testcase name="ActivateAllForTraderScenario6" status="notrun"/>
+     <testcase name="ActivateAllForTraderScenario7" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="CancelAll" skipped="15" tests="15" testsuite_failed="False">
+     <testcase name="CancelAllForAccountScenario1" status="notrun"/>
+     <testcase name="CancelAllForAccountScenario2" status="notrun"/>
+     <testcase name="CancelAllForAccountScenario3" status="notrun"/>
+     <testcase name="CancelAllForAccountScenario4" status="notrun"/>
+     <testcase name="CancelAllForAccountScenario5" status="notrun"/>
+     <testcase name="CancelAllForAccountScenario6" status="notrun"/>
+     <testcase name="CancelAllForAccountScenario7" status="notrun"/>
+     <testcase name="CancelAllForTraderScenario1" status="notrun"/>
+     <testcase name="CancelAllForTraderScenario2" status="notrun"/>
+     <testcase name="CancelAllForTraderScenario3" status="notrun"/>
+     <testcase name="CancelAllForTraderScenario4" status="notrun"/>
+     <testcase name="CancelAllForTraderScenario5" status="notrun"/>
+     <testcase name="CancelAllForTraderScenario6" status="notrun"/>
+     <testcase name="CancelAllForTraderScenario7" status="notrun"/>
+     <testsuite failures="0" name="viaOmnibus" skipped="1" tests="1" testsuite_failed="False">
+      <testcase name="OmnibusTraderCancelsOrders" status="notrun"/>
+     </testsuite>
+    </testsuite>
+    <testsuite failures="0" name="MassActions" skipped="5" tests="5" testsuite_failed="False">
+     <testcase name="MassActivateAllOrders" status="notrun"/>
+     <testcase name="MassActivateAtOrders" status="notrun"/>
+     <testcase name="MassCancelAllOrders" status="notrun"/>
+     <testcase name="MassCancelOrders" status="notrun"/>
+     <testcase name="MassParialFillOrders" status="notrun"/>
+    </testsuite>
+    <testsuite failures="0" name="ParkAllActivateAll" skipped="4" tests="4" testsuite_failed="False">
+     <testcase name="OmnibusLevel1" status="notrun"/>
+     <testcase name="OmnibusLevel2" status="notrun"/>
+     <testcase name="OmnibusLevel3" status="notrun"/>
+     <testcase name="RegualAccount" status="notrun"/>
+    </testsuite>
+   </testsuite>
+   <testsuite failures="1" name="OmnibusChainOnOmnibusRequiredFCM" skipped="0" tests="1" testsuite_failed="True" time="1.234471" timestamp="2020-02-18T23:41:40.072880">
+    <testcase name="RegularAccountConfig" status="run" time="0.0" timestamp="2020-02-18T23:41:41.213565">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OmnibusChainOnOmnibusRequiredFCM\RegularAccountConfig.tc.py&quot;, line 14, in &lt;module&gt;
+    contractDict['F.SF.EP'], OrderSide.Buy, 3, OrderType.Limit, 10)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OmnibusChainOnOmnibusRequiredFCM\RegularAccountConfig.tc.py&quot;, line 14, in &lt;module&gt;
+    contractDict['F.SF.EP'], OrderSide.Buy, 3, OrderType.Limit, 10)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+   <testsuite failures="5" name="OrderModificationReject" skipped="0" tests="5" testsuite_failed="True" time="0.609456" timestamp="2020-02-18T23:41:41.338572">
+    <testcase name="On1stOmnibus" status="run" time="0.032214" timestamp="2020-02-18T23:41:41.479200">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderModificationReject\On1stOmnibus.tc.py&quot;, line 40, in &lt;module&gt;
+    [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderModificationReject\On1stOmnibus.tc.py&quot;, line 40, in &lt;module&gt;
+    [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="On2ndOmnibus" status="run" time="0.046833" timestamp="2020-02-18T23:41:41.526105">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderModificationReject\On2ndOmnibus.tc.py&quot;, line 39, in &lt;module&gt;
+    [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderModificationReject\On2ndOmnibus.tc.py&quot;, line 39, in &lt;module&gt;
+    [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="On3rdOmnibus" status="run" time="0.031264" timestamp="2020-02-18T23:41:41.572938">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderModificationReject\On3rdOmnibus.tc.py&quot;, line 37, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderModificationReject\On3rdOmnibus.tc.py&quot;, line 37, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="OnLastOmnibus" status="run" time="0.03127" timestamp="2020-02-18T23:41:41.619858">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderModificationReject\OnLastOmnibus.tc.py&quot;, line 36, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderModificationReject\OnLastOmnibus.tc.py&quot;, line 36, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="OnRegularAccount" status="run" time="0.03126" timestamp="2020-02-18T23:41:41.666706">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderModificationReject\OnRegularAccount.tc.py&quot;, line 35, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\OrderModificationReject\OnRegularAccount.tc.py&quot;, line 35, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+   <testsuite failures="8" name="Suspend" skipped="0" tests="8" testsuite_failed="True" time="6.547119" timestamp="2020-02-18T23:41:41.994841">
+    <testsuite failures="4" name="ParkActivateOrders" skipped="0" tests="4" testsuite_failed="True" time="0.484441" timestamp="2020-02-18T23:41:47.354409">
+     <testcase name="Level1" status="run" time="0.031282" timestamp="2020-02-18T23:41:47.479401">
+      <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateOrders\Level1.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct8, omni12, omni13, omni14, omni15])[0][0].order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateOrders\Level1.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct8, omni12, omni13, omni14, omni15])[0][0].order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+     </testcase>
+     <testcase name="Level2" status="run" time="0.031246" timestamp="2020-02-18T23:41:47.526301">
+      <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateOrders\Level2.tc.py&quot;, line 19, in &lt;module&gt;
+    [acct8, omni12, omni13, omni14, omni15])[0][0].order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateOrders\Level2.tc.py&quot;, line 19, in &lt;module&gt;
+    [acct8, omni12, omni13, omni14, omni15])[0][0].order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+     </testcase>
+     <testcase name="Level3" status="run" time="0.01539" timestamp="2020-02-18T23:41:47.573413">
+      <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateOrders\Level3.tc.py&quot;, line 20, in &lt;module&gt;
+    [acct8, omni12, omni13, omni14, omni15])[0][0].order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateOrders\Level3.tc.py&quot;, line 20, in &lt;module&gt;
+    [acct8, omni12, omni13, omni14, omni15])[0][0].order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+     </testcase>
+     <testcase name="RegularAccount" status="run" time="0.031259" timestamp="2020-02-18T23:41:47.604418">
+      <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateOrders\RegularAccount.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct8, omni12, omni13, omni14, omni15])[0][0].order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateOrders\RegularAccount.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct8, omni12, omni13, omni14, omni15])[0][0].order
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+     </testcase>
+    </testsuite>
+    <testsuite failures="4" name="ParkActivateWithInternalOmni" skipped="0" tests="4" testsuite_failed="True" time="0.546898" timestamp="2020-02-18T23:41:47.901305">
+     <testcase name="InternalOmni" status="run" time="0.046875" timestamp="2020-02-18T23:41:48.026318">
+      <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateWithInternalOmni\InternalOmni.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct13, omni19, omni20, omni21])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateWithInternalOmni\InternalOmni.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct13, omni19, omni20, omni21])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+     </testcase>
+     <testcase name="OmnibusL1" status="run" time="0.03125" timestamp="2020-02-18T23:41:48.104440">
+      <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateWithInternalOmni\OmnibusL1.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct13, omni19, omni20, omni21])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateWithInternalOmni\OmnibusL1.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct13, omni19, omni20, omni21])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+     </testcase>
+     <testcase name="OmnibusL2" status="run" time="0.032035" timestamp="2020-02-18T23:41:48.166999">
+      <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateWithInternalOmni\OmnibusL2.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct13, omni19, omni20, omni21])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateWithInternalOmni\OmnibusL2.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct13, omni19, omni20, omni21])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+     </testcase>
+     <testcase name="RegularAccount" status="run" time="0.0" timestamp="2020-02-18T23:41:48.213817">
+      <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateWithInternalOmni\RegularAccount.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct13, omni19, omni20, omni21])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\Suspend\ParkActivateWithInternalOmni\RegularAccount.tc.py&quot;, line 18, in &lt;module&gt;
+    [acct13, omni19, omni20, omni21])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+     </testcase>
+    </testsuite>
+   </testsuite>
+   <testsuite failures="5" name="UserInfoInOrderEvents" skipped="0" tests="5" testsuite_failed="True" time="0.750032" timestamp="2020-02-18T23:41:48.573206">
+    <testcase name="1stOmnibus" status="run" time="0.047072" timestamp="2020-02-18T23:41:48.729473">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\UserInfoInOrderEvents\1stOmnibus.tc.py&quot;, line 39, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\UserInfoInOrderEvents\1stOmnibus.tc.py&quot;, line 39, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="2ndOmnibus" status="run" time="0.031244" timestamp="2020-02-18T23:41:48.791973">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\UserInfoInOrderEvents\2ndOmnibus.tc.py&quot;, line 39, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\UserInfoInOrderEvents\2ndOmnibus.tc.py&quot;, line 39, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="3rdOmnibus" status="run" time="0.031229" timestamp="2020-02-18T23:41:48.854498">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\UserInfoInOrderEvents\3rdOmnibus.tc.py&quot;, line 39, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\UserInfoInOrderEvents\3rdOmnibus.tc.py&quot;, line 39, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="lastOmnibus" status="run" time="0.031249" timestamp="2020-02-18T23:41:48.901350">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\UserInfoInOrderEvents\lastOmnibus.tc.py&quot;, line 39, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\UserInfoInOrderEvents\lastOmnibus.tc.py&quot;, line 39, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+    <testcase name="RegularAccount" status="run" time="0.030394" timestamp="2020-02-18T23:41:48.949091">
+     <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\UserInfoInOrderEvents\RegularAccount.tc.py&quot;, line 39, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/OmnibusAccounts\RiskAndRouting\UserInfoInOrderEvents\RegularAccount.tc.py&quot;, line 39, in &lt;module&gt;
+    context, [traders[1], traders[8], traders[9], traders[10], traders[11]], [acct1, omni1, omni2, omni3, omni4])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\SystemAreas\OrderProcessing\OrderRouting\Suites\OmnibusAccounts\PythonModules\Actions.py&quot;, line 199, in PlaceOrder
+    limitPrice = orderContext['limitPrice'], duration = orderContext['duration'])
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+    </testcase>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>

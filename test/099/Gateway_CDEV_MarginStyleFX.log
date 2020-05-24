@@ -1,0 +1,63 @@
+ 9:36:39.18  Test starded without threads
+07:36:39.640 Python Module Path 'Scripts/Gateway/PythonModules' added.
+07:36:39.640 Python Module Path 'ScriptKit' added.
+07:36:39.640 Python Module Path 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX/PythonModules' added.
+07:36:40.078 2020-02-06 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX' full execution.
+07:36:40.109 Suite '.'. [6 test cases, 3 sub-suites]
+07:38:12.581 Case 'DailyLossLimit' execution.
+07:38:12.612 Case 'PositionAndTradeSizeLimit' execution.
+07:38:12.659 Case 'RiskyMarket' execution.
+07:38:12.706 Case 'SSOrder' execution.
+07:38:12.753 Case 'TradeMarginLimit' execution.
+07:38:12.800 Case 'TradePriceLimit' execution.
+07:38:12.925 Case 'SSOrder' succeeded.
+07:38:13.206 Case 'PositionAndTradeSizeLimit' succeeded.
+07:38:13.378 Case 'TradePriceLimit' succeeded.
+07:38:13.378 Case 'TradeMarginLimit' succeeded.
+07:38:18.175 Case 'DailyLossLimit' succeeded.
+07:38:33.097 Case 'RiskyMarket' succeeded.
+07:38:33.160 Suite 'NonRegularAccountOrderMargin'. [4 test cases, 0 sub-suites]
+07:38:33.222 Case 'BorrowFromMasterGroup' execution.
+07:38:33.269 Case 'CoMarginGroup' execution.
+07:38:33.301 Case 'JoinPPGroup' execution.
+07:38:33.347 Case 'OmnibusChain' execution.
+07:38:33.912 Case 'OmnibusChain' succeeded.
+07:38:33.941 Case 'BorrowFromMasterGroup' succeeded.
+07:38:34.066 Case 'CoMarginGroup' succeeded.
+07:38:34.081 Case 'JoinPPGroup' succeeded.
+07:38:34.269 Suite 'PortfolioMargin'. [3 test cases, 0 sub-suites]
+07:38:34.332 Case 'NetPositionMargin' execution.
+07:38:34.378 Case 'NetPositionOTE' execution.
+07:38:34.410 Case 'NetPositionProfitLoss' execution.
+07:38:34.988 Case 'NetPositionOTE' succeeded.
+07:38:35.003 Case 'NetPositionMargin' succeeded.
+07:38:35.036 Case 'NetPositionProfitLoss' succeeded.
+07:38:35.222 Suite 'RegularAccountOrderMargin'. [13 test cases, 0 sub-suites]
+07:38:35.300 Case 'AccountLevelMultiplier' execution.
+07:38:35.347 Case 'DefaultMarginRate' execution.
+07:38:35.394 Case 'EquityPrices' execution.
+07:38:35.410 Case 'ExchangeLevelMultiplierOHTrader' execution.
+07:38:35.457 Case 'ExchangeLevelMultiplier' execution.
+07:38:35.503 Case 'ExchangeMarginDisabled' execution.
+07:38:35.550 Case 'FCMUsesDefaultMargin' execution.
+07:38:35.614 Case 'ForexPrices' execution.
+07:38:35.648 Case 'OrderHandlerTrader' execution.
+07:38:35.707 Case 'DelayedPrices' execution.
+07:38:36.582 Case 'ExchangeLevelMultiplierOHTrader' succeeded.
+07:38:36.613 Case 'DefaultMarginRate' succeeded.
+07:38:36.613 Case 'ExchangeLevelMultiplier' succeeded.
+07:38:36.613 Case 'AccountLevelMultiplier' succeeded.
+07:38:36.660 Case 'OrderHandlerTrader' succeeded.
+07:38:36.660 Case 'ExchangeMarginDisabled' succeeded.
+07:38:36.675 Case 'FCMUsesDefaultMargin' succeeded.
+07:38:36.707 Case 'DelayedPrices' succeeded.
+07:38:36.722 Case 'OrderPriceModification' execution.
+07:38:36.753 Case 'OrderSizeModification' execution.
+07:38:36.832 Case 'PriceChange' execution.
+07:38:47.441 Case 'PriceChange' succeeded.
+07:38:56.739 Case 'EquityPrices' succeeded.
+07:38:56.973 Case 'ForexPrices' succeeded.
+07:38:57.629 Case 'OrderPriceModification' succeeded.
+07:38:57.645 Case 'OrderSizeModification' succeeded.
+07:39:06.536 Root suite 'Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/MarginStyleFX' execution finished. It took 0:02:26.411222.
+07:39:06.536 Test cases results: 26 total, 26 succeeded, 0 failed, 0 skipped.

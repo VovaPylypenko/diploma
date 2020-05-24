@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="0" tests="31" testsuite_failed="False" time="184.740489" timestamp="2020-02-06T08:22:49.308461">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="1"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/OrderRouting/Suites/ForceCareOrderEnhancements"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="ForceCareOrderEnhancements" skipped="0" tests="31" testsuite_failed="False" time="184.740489" timestamp="2020-02-06T08:22:49.308461">
+  <testsuite failures="0" name="AutomatedCare" skipped="0" tests="9" testsuite_failed="False" time="39.454219" timestamp="2020-02-06T08:23:21.841089">
+   <testcase name="01_AutoAck" status="run" time="0.296905" timestamp="2020-02-06T08:23:21.903272"/>
+   <testcase name="02_TwoAccountsOneOrder" status="run" time="0.421896" timestamp="2020-02-06T08:23:22.262662"/>
+   <testcase name="03_TwoAccountsOneOrderAuto" status="run" time="0.327659" timestamp="2020-02-06T08:23:22.731931"/>
+   <testcase name="04_TwoAccountsTwoOrders" status="run" time="1.078074" timestamp="2020-02-06T08:23:23.106639"/>
+   <testcase name="05_TwoAccountsTwoOrdersRej" status="run" time="0.265641" timestamp="2020-02-06T08:23:24.262747"/>
+   <testcase name="06_TwoAccountsDiffRS" status="run" time="0.077988" timestamp="2020-02-06T08:23:24.622289"/>
+   <testcase name="07_EnvChange" status="run" time="35.406925" timestamp="2020-02-06T08:23:24.747704"/>
+   <testcase name="08_ParkPartFilledOrder" status="run" time="0.406272" timestamp="2020-02-06T08:24:00.232648"/>
+   <testcase name="09_ParkPartFilledOrderOmni" status="run" time="0.469218" timestamp="2020-02-06T08:24:00.748318"/>
+  </testsuite>
+  <testsuite failures="0" name="AutomatedPark" skipped="0" tests="2" testsuite_failed="False" time="4.891603" timestamp="2020-02-06T08:24:01.342106">
+   <testcase name="01_General" status="run" time="3.546647" timestamp="2020-02-06T08:24:01.436202"/>
+   <testcase name="02_SpecialModifications" status="run" time="1.140883" timestamp="2020-02-06T08:24:05.045309"/>
+  </testsuite>
+  <testsuite failures="0" name="AutomatedParkRisk" skipped="0" tests="11" testsuite_failed="False" time="2.609429" timestamp="2020-02-06T08:24:06.279752">
+   <testcase name="01_CPLandTML" status="run" time="0.375025" timestamp="2020-02-06T08:24:06.373478"/>
+   <testcase name="02_TPL" status="run" time="0.061271" timestamp="2020-02-06T08:24:06.812227"/>
+   <testcase name="03_OrderHandler_Liq" status="run" time="0.109502" timestamp="2020-02-06T08:24:06.920404"/>
+   <testcase name="04_OrderHandler_CommPL" status="run" time="0.07636" timestamp="2020-02-06T08:24:07.094027"/>
+   <testcase name="05_OrderHandler_ContrPL" status="run" time="0.156137" timestamp="2020-02-06T08:24:07.248692"/>
+   <testcase name="06_CPLandTML_NoForceCare" status="run" time="0.156242" timestamp="2020-02-06T08:24:07.482909"/>
+   <testcase name="07_TPL_NoForceCare" status="run" time="0.187558" timestamp="2020-02-06T08:24:07.701690"/>
+   <testcase name="12_CPLandTML_ActAll" status="run" time="0.12497" timestamp="2020-02-06T08:24:07.967307"/>
+   <testcase name="13_TPL_ActAll" status="run" time="0.078148" timestamp="2020-02-06T08:24:08.170426"/>
+   <testcase name="15_CPLandTML_Omni" status="run" time="0.390627" timestamp="2020-02-06T08:24:08.311057"/>
+   <testcase name="16_ParkedModification" status="run" time="0.04712" timestamp="2020-02-06T08:24:08.779825"/>
+  </testsuite>
+  <testsuite failures="0" name="CareOrderTraderSubstitution" skipped="0" tests="9" testsuite_failed="False" time="91.70612" timestamp="2020-02-06T08:24:08.904826">
+   <testcase name="01_CareCancelAccepted" status="run" time="7.234612" timestamp="2020-02-06T08:24:11.654916"/>
+   <testcase name="02_CareCancelNotEnabled" status="run" time="0.078213" timestamp="2020-02-06T08:24:18.952024"/>
+   <testcase name="03_CareCancelDeskTraderLogoff" status="run" time="21.985057" timestamp="2020-02-06T08:24:19.092686"/>
+   <testcase name="04_CareModifyAccepted" status="run" time="7.281569" timestamp="2020-02-06T08:24:41.155868"/>
+   <testcase name="05_CareModifyNotEnabled" status="run" time="0.093807" timestamp="2020-02-06T08:24:48.499874"/>
+   <testcase name="06_CareModifyDeskTraderLogoff" status="run" time="22.21949" timestamp="2020-02-06T08:24:48.656110"/>
+   <testcase name="07_CareParkAccepted" status="run" time="7.31238" timestamp="2020-02-06T08:25:10.969709"/>
+   <testcase name="08_CareParkNotEnabled" status="run" time="0.093742" timestamp="2020-02-06T08:25:18.360225"/>
+   <testcase name="09_CareParkDeskTraderLogoff" status="run" time="22.000552" timestamp="2020-02-06T08:25:18.532300"/>
+  </testsuite>
+ </testsuite>
+</testsuites>

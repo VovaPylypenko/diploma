@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="9" skipped="0" tests="9" testsuite_failed="True" time="14.531774" timestamp="2020-02-19T00:21:44.514461">
+ <properties>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="python-module-path" value="Scripts/Gateway/SystemAreas/OrderProcessing/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit/TroubleMaker"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_ESR1"/>
+  <property name="scripts-cfg-instance" value=""/>
+  <property name="threads-count" value="10"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="9" name="ManualTestAutomation" skipped="0" tests="9" testsuite_failed="True" time="14.531774" timestamp="2020-02-19T00:21:44.514461">
+  <testsuite failures="9" name="Native" skipped="0" tests="9" testsuite_failed="True" time="4.135269" timestamp="2020-02-19T00:21:54.082822">
+   <testcase name="01_Liquidation" status="run" time="0.015623" timestamp="2020-02-19T00:21:55.077327">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\01_Liquidation_tc.py&quot;, line 70, in &lt;module&gt;
+    test(acctInfos[&quot;Acct11&quot;])
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\01_Liquidation_tc.py&quot;, line 26, in test
+    order = getOrder(contract, side, 1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 17, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.StopLimit, limitPrice=100, stopPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\01_Liquidation_tc.py&quot;, line 70, in &lt;module&gt;
+    test(acctInfos[&quot;Acct11&quot;])
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\01_Liquidation_tc.py&quot;, line 26, in test
+    order = getOrder(contract, side, 1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 17, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.StopLimit, limitPrice=100, stopPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="02_TradeMarginLimit" status="run" time="0.015623" timestamp="2020-02-19T00:21:55.092950">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\02_TradeMarginLimit_tc.py&quot;, line 16, in &lt;module&gt;
+    order = getOrder(contract, side, size + 1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 11, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\02_TradeMarginLimit_tc.py&quot;, line 16, in &lt;module&gt;
+    order = getOrder(contract, side, size + 1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 11, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="03_CommodityPositionLimit_OpenPositions" status="run" time="0.016136" timestamp="2020-02-19T00:21:55.124204">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\03_CommodityPositionLimit_OpenPositions_tc.py&quot;, line 16, in &lt;module&gt;
+    orderMkt = OrderActionUtils.CreateOrder(contract, side, size + 1, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\03_CommodityPositionLimit_OpenPositions_tc.py&quot;, line 16, in &lt;module&gt;
+    orderMkt = OrderActionUtils.CreateOrder(contract, side, size + 1, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="04_InstrumentPositionLimit" status="run" time="0.015608" timestamp="2020-02-19T00:21:55.155458">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\04_InstrumentPositionLimit_tc.py&quot;, line 16, in &lt;module&gt;
+    order1 = getOrder(contract1, side, posLimit)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 17, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.StopLimit, limitPrice=100, stopPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\04_InstrumentPositionLimit_tc.py&quot;, line 16, in &lt;module&gt;
+    order1 = getOrder(contract1, side, posLimit)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 17, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.StopLimit, limitPrice=100, stopPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="05_ContractPositionLimit" status="run" time="0.0" timestamp="2020-02-19T00:21:55.187036">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\05_ContractPositionLimit_tc.py&quot;, line 19, in &lt;module&gt;
+    order1 = getOrder(contract1, side, posLimit)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 11, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\05_ContractPositionLimit_tc.py&quot;, line 19, in &lt;module&gt;
+    order1 = getOrder(contract1, side, posLimit)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 11, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="06_ContractPositionLimit_OpenPositions" status="run" time="0.015724" timestamp="2020-02-19T00:21:55.202316">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\06_ContractPositionLimit_OpenPositions_tc.py&quot;, line 18, in &lt;module&gt;
+    order = getOrder(contract, side, size + 1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 11, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\06_ContractPositionLimit_OpenPositions_tc.py&quot;, line 18, in &lt;module&gt;
+    order = getOrder(contract, side, size + 1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 11, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="07_PositionLimits_CalSpreadAndOCO" status="run" time="0.031271" timestamp="2020-02-19T00:21:55.249234">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\07_PositionLimits_CalSpreadAndOCO_tc.py&quot;, line 39, in &lt;module&gt;
+    order = getOrder(epz99, side, 2)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 11, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\07_PositionLimits_CalSpreadAndOCO_tc.py&quot;, line 39, in &lt;module&gt;
+    order = getOrder(epz99, side, 2)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 11, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Market)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="08_AllowableMarginCredit" status="run" time="0.016013" timestamp="2020-02-19T00:21:55.296090">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\08_AllowableMarginCredit_tc.py&quot;, line 42, in &lt;module&gt;
+    order = getOrder(contract, side, size + 1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 13, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\08_AllowableMarginCredit_tc.py&quot;, line 42, in &lt;module&gt;
+    order = getOrder(contract, side, size + 1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 13, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Limit, limitPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+   <testcase name="09_CommoditySpecificMargin_AMCandMM" status="run" time="0.015615" timestamp="2020-02-19T00:21:55.327357">
+    <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\09_CommoditySpecificMargin_AMCandMM_tc.py&quot;, line 37, in &lt;module&gt;
+    order = getOrder(contract, side, size + 1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 15, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Stop, stopPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 29, in invoke_script
+    exec(code, isolated_dict)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\09_CommoditySpecificMargin_AMCandMM_tc.py&quot;, line 37, in &lt;module&gt;
+    order = getOrder(contract, side, size + 1)
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/RiskEvaluation/Suites/ManualTestAutomation\Native\test_suite_su.py&quot;, line 15, in getOrder
+    return OrderActionUtils.CreateOrder(contract, side, size, OrderType.Stop, stopPrice=100)
+  File &quot;C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderActionUtils.py&quot;, line 620, in CreateOrder
+    if minVisibleSize is not None:
+NameError: name 'minVisibleSize' is not defined
+</failure>
+   </testcase>
+  </testsuite>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="0" skipped="207" tests="207" testsuite_failed="True" time="1.484454" timestamp="2020-02-18T23:56:42.711174">
+ <properties>
+  <property name="module" value="FixExchangeEmulator"/>
+  <property name="module" value="IHEGenerator"/>
+  <property name="module" value="GatewayNativeClient"/>
+  <property name="python-module-path" value="Scripts/Gateway/PythonModules"/>
+  <property name="python-module-path" value="ScriptKit"/>
+  <property name="environment-config-repository" value="XML:Scripts/Gateway/EnvConfigs/GatewayTestingEnvironmentConfigRepository.xml"/>
+  <property name="modules-cfg-instance" value="SF_IQRMS"/>
+  <property name="scripts-cfg-instance" value="SF_IQRMS"/>
+  <property name="threads-count" value="30"/>
+  <property name="path" value="Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyMarketStatus/Suites"/>
+  <property name="host" value="k12sgwcendev31"/>
+ </properties>
+ <testsuite failures="0" name="Suites" skipped="207" tests="207" testsuite_failed="True" time="1.484454" timestamp="2020-02-18T23:56:42.711174">
+  <failure message="Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 33, in invoke_script
+    exec(code, globals())
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyMarketStatus/Suites\test_suite.td.py&quot;, line 6, in &lt;module&gt;
+    exchangeFactory.Stop()
+NameError: name 'exchangeFactory' is not defined
+">Traceback (most recent call last):
+  File &quot;C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py&quot;, line 33, in invoke_script
+    exec(code, globals())
+  File &quot;Scripts/Gateway/SystemAreas/OrderProcessing/SyntheticStrategyMarketStatus/Suites\test_suite.td.py&quot;, line 6, in &lt;module&gt;
+    exchangeFactory.Stop()
+NameError: name 'exchangeFactory' is not defined
+</failure>
+  <testsuite failures="0" name="AggregationOrder" skipped="35" tests="35" testsuite_failed="False">
+   <testsuite failures="0" name="IgnoringMMLOCancellationRejects" skipped="5" tests="5" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="InitialMMLOAllocation" skipped="12" tests="12" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+    <testcase name="6" status="notrun"/>
+    <testcase name="7" status="notrun"/>
+    <testcase name="8" status="notrun"/>
+    <testcase name="9" status="notrun"/>
+    <testcase name="10" status="notrun"/>
+    <testcase name="11" status="notrun"/>
+    <testcase name="12" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="MMLOReallocationOnStatusChange" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+    <testcase name="6" status="notrun"/>
+    <testcase name="7" status="notrun"/>
+    <testcase name="8" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="PlacingMTLO" skipped="10" tests="10" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+    <testcase name="6" status="notrun"/>
+    <testcase name="7" status="notrun"/>
+    <testcase name="8" status="notrun"/>
+    <testcase name="9" status="notrun"/>
+    <testcase name="10" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="MarketOrder" skipped="26" tests="26" testsuite_failed="False">
+   <testsuite failures="0" name="MarketGoesToNoTradingState" skipped="4" tests="4" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="MarketOpening" skipped="2" tests="2" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="NoTradingMarkets" skipped="20" tests="20" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+    <testcase name="6" status="notrun"/>
+    <testcase name="7" status="notrun"/>
+    <testcase name="8" status="notrun"/>
+    <testcase name="9" status="notrun"/>
+    <testcase name="10" status="notrun"/>
+    <testcase name="11" status="notrun"/>
+    <testcase name="12" status="notrun"/>
+    <testcase name="13" status="notrun"/>
+    <testcase name="14" status="notrun"/>
+    <testcase name="15" status="notrun"/>
+    <testcase name="16" status="notrun"/>
+    <testcase name="17" status="notrun"/>
+    <testcase name="18" status="notrun"/>
+    <testcase name="19" status="notrun"/>
+    <testcase name="20" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="Misc" skipped="5" tests="5" testsuite_failed="False">
+   <testsuite failures="0" name="GroupMarketStatusUpdate" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="IgnoreRules" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="ProcessingStatusResponses" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="RequestingStatusOnFirstSubscription" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="RestoringStatusOnSequenceGap" skipped="1" tests="1" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="SniperOrder" skipped="26" tests="26" testsuite_failed="False">
+   <testsuite failures="0" name="MarketGoesToNoTradingState" skipped="4" tests="4" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="MarketOpening" skipped="2" tests="2" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="NoTradingMarkets" skipped="20" tests="20" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+    <testcase name="6" status="notrun"/>
+    <testcase name="7" status="notrun"/>
+    <testcase name="8" status="notrun"/>
+    <testcase name="9" status="notrun"/>
+    <testcase name="10" status="notrun"/>
+    <testcase name="11" status="notrun"/>
+    <testcase name="12" status="notrun"/>
+    <testcase name="13" status="notrun"/>
+    <testcase name="14" status="notrun"/>
+    <testcase name="15" status="notrun"/>
+    <testcase name="16" status="notrun"/>
+    <testcase name="17" status="notrun"/>
+    <testcase name="18" status="notrun"/>
+    <testcase name="19" status="notrun"/>
+    <testcase name="20" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="StopOrder" skipped="5" tests="5" testsuite_failed="False">
+   <testsuite failures="0" name="SpreadStop" skipped="5" tests="5" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+   </testsuite>
+  </testsuite>
+  <testsuite failures="0" name="SymmetricOrder" skipped="110" tests="110" testsuite_failed="False">
+   <testsuite failures="0" name="IgnoringCancellationRejects" skipped="8" tests="8" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+    <testcase name="6" status="notrun"/>
+    <testcase name="7" status="notrun"/>
+    <testcase name="8" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="NoTradingMarkets" skipped="20" tests="20" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+    <testcase name="6" status="notrun"/>
+    <testcase name="7" status="notrun"/>
+    <testcase name="8" status="notrun"/>
+    <testcase name="9" status="notrun"/>
+    <testcase name="10" status="notrun"/>
+    <testcase name="11" status="notrun"/>
+    <testcase name="12" status="notrun"/>
+    <testcase name="13" status="notrun"/>
+    <testcase name="14" status="notrun"/>
+    <testcase name="15" status="notrun"/>
+    <testcase name="16" status="notrun"/>
+    <testcase name="17" status="notrun"/>
+    <testcase name="18" status="notrun"/>
+    <testcase name="19" status="notrun"/>
+    <testcase name="20" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="PreOpeningPrimaryMarket" skipped="4" tests="4" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="PrimaryTradingToPreOpening" skipped="4" tests="4" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="QuoteTimeoutOnMarketOpening" skipped="20" tests="20" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+    <testcase name="6" status="notrun"/>
+    <testcase name="7" status="notrun"/>
+    <testcase name="8" status="notrun"/>
+    <testcase name="9" status="notrun"/>
+    <testcase name="10" status="notrun"/>
+    <testcase name="11" status="notrun"/>
+    <testcase name="12" status="notrun"/>
+    <testcase name="13" status="notrun"/>
+    <testcase name="14" status="notrun"/>
+    <testcase name="15" status="notrun"/>
+    <testcase name="16" status="notrun"/>
+    <testcase name="17" status="notrun"/>
+    <testcase name="18" status="notrun"/>
+    <testcase name="19" status="notrun"/>
+    <testcase name="20" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="QuoteUpdateOnMarketOpening" skipped="20" tests="20" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+    <testcase name="6" status="notrun"/>
+    <testcase name="7" status="notrun"/>
+    <testcase name="8" status="notrun"/>
+    <testcase name="9" status="notrun"/>
+    <testcase name="10" status="notrun"/>
+    <testcase name="11" status="notrun"/>
+    <testcase name="12" status="notrun"/>
+    <testcase name="13" status="notrun"/>
+    <testcase name="14" status="notrun"/>
+    <testcase name="15" status="notrun"/>
+    <testcase name="16" status="notrun"/>
+    <testcase name="17" status="notrun"/>
+    <testcase name="18" status="notrun"/>
+    <testcase name="19" status="notrun"/>
+    <testcase name="20" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="SecondaryTradingToPreOpening" skipped="4" tests="4" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+   </testsuite>
+   <testsuite failures="0" name="SuspendingResuming" skipped="30" tests="30" testsuite_failed="False">
+    <testcase name="1" status="notrun"/>
+    <testcase name="2" status="notrun"/>
+    <testcase name="3" status="notrun"/>
+    <testcase name="4" status="notrun"/>
+    <testcase name="5" status="notrun"/>
+    <testcase name="6" status="notrun"/>
+    <testcase name="7" status="notrun"/>
+    <testcase name="8" status="notrun"/>
+    <testcase name="9" status="notrun"/>
+    <testcase name="10" status="notrun"/>
+    <testcase name="11" status="notrun"/>
+    <testcase name="12" status="notrun"/>
+    <testcase name="13" status="notrun"/>
+    <testcase name="14" status="notrun"/>
+    <testcase name="15" status="notrun"/>
+    <testcase name="16" status="notrun"/>
+    <testcase name="17" status="notrun"/>
+    <testcase name="18" status="notrun"/>
+    <testcase name="19" status="notrun"/>
+    <testcase name="20" status="notrun"/>
+    <testcase name="21" status="notrun"/>
+    <testcase name="22" status="notrun"/>
+    <testcase name="23" status="notrun"/>
+    <testcase name="24" status="notrun"/>
+    <testcase name="25" status="notrun"/>
+    <testcase name="26" status="notrun"/>
+    <testcase name="27" status="notrun"/>
+    <testcase name="28" status="notrun"/>
+    <testcase name="29" status="notrun"/>
+    <testcase name="30" status="notrun"/>
+   </testsuite>
+  </testsuite>
+ </testsuite>
+</testsuites>
