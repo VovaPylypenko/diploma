@@ -8,10 +8,10 @@ class DBManager:
         client = pymongo.MongoClient(
             "mongodb+srv://admin:admin@cluster0-d70d1.mongodb.net/test?retryWrites=true&w=majority")
         self.db = client['diploma']
-        self.versions_col = self.db['versions-col4']
+        self.versions_col = self.db['versions-col6']
 
     def get_old_analyze(self, version=None):
-        self.versions_col.find_one(None if version is None else {'version': version})
+        return self.versions_col.find_one(None if version is None else {'version': version})
 
     def save_analyze(self, version, failures):
 
@@ -24,5 +24,4 @@ class DBManager:
             self.versions_col.insert_one({'version': version, 'failures': failures_arr})
         else:
             print('ERROR: version already exist.')
-            print(find_it)
             print(find_it)

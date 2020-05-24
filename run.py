@@ -40,38 +40,22 @@ def get_fail_message(message):
     return message
 
 
-def _get_errors_from_XML(root):
+def _get_errors_from_DB(data):
     errors = {}
-    errors_XML = root.find('.//errors')
-    for error in errors_XML.findall('.//error'):
-        temp_count = int(error.get('count'))
-        temp_first_version = error.get('first_version')
-        temp_error = Error(error.get('msg'))
-        temp_tests = set()
-        for test in error.findall('.//test'):
-            temp_tests.add(Test(test.get('file'), test.get('test_suite'), test.get('test_case')))
-        temp_versions = []
-        for version in error.findall('.//version'):
-            temp_versions.append(version.get('version'))
 
-        errors[temp_error] = Failure(temp_tests, temp_first_version, temp_count, temp_versions)
+    if data is not None:
+        for failure in data['failures']:
+            errors[Error(failure['error'])] = Failure(data=failure['failure'])
 
     return errors
 
 
-def get_old_fail(data_save_path):
+def get_old_fail(version4analyze):
     global gERRORS
 
-    path = data_save_path + '/fails.xml'
-    # TBD: copy old fails.xml with timestamp to have version history? Or add timestamp to xml file as version?
-    if not os.path.exists(path):
-        with open(path, 'w'): pass
-    if os.stat(path).st_size == 0:
-        return
-    tree = ET.parse(path)
-    root = tree.getroot()
-
-    gERRORS = _get_errors_from_XML(root)
+    db_manager = DBManager()
+    gERRORS = _get_errors_from_DB(db_manager.get_old_analyze(version=
+                                                             version4analyze if version4analyze is not None else None))
 
 
 def _add_failure_preliminary(file, test_suite_name, test_case_name, failure, failed_version):
@@ -137,47 +121,27 @@ def check_logs(path, version):
                                                      test_case_name, get_fail_message(failure.text), version)
 
     print('Length of known error database = {}'.format(len(gERRORS)))
-    #_process_preliminary_failures(version)
+    # _process_preliminary_failures(version)
     print('Potential error count = {}'.format(len(gNEW_ERRORS)))
     print('Update error database = {}'.format(len(gERRORS)))
 
 
-def write_fails_2_file(data_save_path, version=None):
+def save_errors(version=None):
     global gERRORS
 
-    root = ET.Element("root")
-
     db_manager = DBManager()
-
-    # processing gERRORS
-    xml = ET.SubElement(root, 'errors')
-    for error_msg, failure in gERRORS.items():
-        error = ET.SubElement(xml, 'error', msg=str(error_msg),
-                              count=str(failure.count), first_version=str(failure.first_version))
-        tests = ET.SubElement(error, 'tests')
-        for test in failure.tests:
-            ET.SubElement(tests, "test", file=str(test.file), test_suite=str(test.test_suite),
-                          test_case=str(test.test_case))
-        versions = ET.SubElement(error, 'versions')
-        for version in reversed(failure.last_versions[-5:]):
-            ET.SubElement(versions, "version", version=str(version))
-
-        #print(str(error_msg))
     db_manager.save_analyze(version, gERRORS.items())
 
-    tree = ET.ElementTree(root)
-    tree.write(f'{data_save_path}/fails.xml')
 
-
-def do_check(path, version, data_save_path, generate_report=False):
+def do_check(path, version, data_save_path, version4analyze, generate_report=False):
     _clean_common_variables()
 
     if not os.path.isdir(path):
         print(f"Folder {path} does not exists!")
         return
-    get_old_fail(data_save_path=data_save_path)
+    get_old_fail(None if (version4analyze is None or version4analyze == 'last') else version4analyze)
     check_logs(path=path, version=version)
-    write_fails_2_file(data_save_path=data_save_path, version=version)
+    save_errors(version=version)
     if generate_report:
         ReportGenerator.write_fails_2_HTML(gERRORS=gERRORS, data_save_path=data_save_path, version=version)
 
@@ -186,8 +150,8 @@ def run():
     print('Starting SF Manager Result...')
     argsManager = ArgumentManager()
 
-    do_check(argsManager.get_path_logs(), argsManager.get_version(),
-             argsManager.get_path2save(), argsManager.get_need_save())
+    do_check(argsManager.get_path_logs(), argsManager.get_version(), argsManager.get_path2save(),
+             argsManager.get_version4analyze(), argsManager.get_need_save())
 
     print('Done!')
 

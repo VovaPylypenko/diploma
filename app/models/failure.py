@@ -1,10 +1,15 @@
+from app.models.test import Test
+
+
 class Failure:
     def __init__(self, tests=None, first_version=None, count=None, last_versions=None, data=None):
         if data is not None:
-            self.tests = data.tests
-            self.count = data.count
-            self.first_version = data.first_version
-            self.last_versions = data.last_versions
+            self.tests = set()
+            for test_it in data['tests']:
+                self.tests.add(Test(test_it['file'], test_it['test_suite'], test_it['test_case']))
+            self.count = data['count']
+            self.first_version = data['first_version']
+            self.last_versions = data['last_versions']
         else:
             self.tests = tests
             self.count = count
@@ -41,10 +46,3 @@ class Failure:
             'first_version': self.first_version,
             'last_versions': self.last_versions,
         }
-
-    def do_deserialize(self, data):
-
-        self.tests = data.tests
-        self.count = data.count
-        self.first_version = data.first_version
-        self.last_versions = data.last_versions

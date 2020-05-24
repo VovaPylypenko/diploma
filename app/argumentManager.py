@@ -7,8 +7,8 @@ class ArgumentManager:
         ap = argparse.ArgumentParser()
         ap.add_argument('version', type=str, help='Name of run version')
         ap.add_argument('path_logs', type=str, help='Path to logs')
-        ap.add_argument('-version4analyze', type=str, default='/', help='Path to save result.(default)')
-        ap.add_argument('-path2save', type=str, default='/', help='Path to save result.(default)')
+        ap.add_argument('-version4analyze', type=str, default='last', help='.(default last)')
+        ap.add_argument('-path2save', type=str, default='/', help='Path to save result.(default /)')
         ap.add_argument('-need_save', type=bool, default=True,
                         help="Set True if this analyze need save.(default False)")
 
