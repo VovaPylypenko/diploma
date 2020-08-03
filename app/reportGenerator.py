@@ -1,8 +1,8 @@
 class ReportGenerator:
 
     @staticmethod
-    def add_td(text, type=""):
-        return f'<td {type}> {text} </td>'
+    def add_td(text, style=""):
+        return f'<td {style}> XMLToString({text}) </td>'
 
     @staticmethod
     def create_table(error_blocks, status, style):
@@ -11,7 +11,10 @@ class ReportGenerator:
         for error_block in error_blocks:
             error_table += f'<tr>'
             # all failures in single block have the same errorID and failed version list
-            error_table += ReportGenerator.add_td(error_block[0], style)
+            error_table += ReportGenerator.add_td(error_block[0].msg, style)
+            print('--\n' + error_block[0].msg)
+            print('++\n')
+            print(error_block[0].msg)
 
             tests_str = ''
             if not error_block[1].tests or len(error_block[1].tests) != 0:
@@ -172,6 +175,10 @@ class ReportGenerator:
 
         for error, failure in gERRORS.items():
             if failure.first_version == version and failure.count == 1:
+                print('-1-')
+                print(error.msg)
+                print('-2-')
+                print(error.msg_transformed)
                 new_errors.append([error, failure])
             else:
                 if version in failure.last_versions:
@@ -204,6 +211,16 @@ class ReportGenerator:
                 {ReportGenerator.create_old_table(old_errors)}
             </table>
         </body>
+        <script type="text/javascript" language="javascript">
+            function XMLToString(oXML){{
+                if (window.ActiveXObject){{
+                    var oString = oXML.xml;
+                    return oString;
+                }}else{{
+                    return (new XMLSerializer()).serializeToString(oXML);
+                }}
+            }}
+        </script>
         </html>'''
 
         f.write(message)

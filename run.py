@@ -5,7 +5,7 @@ from app.models.test import Test
 from app.models.failure import Failure
 from app.reportGenerator import ReportGenerator
 from app.argumentManager import ArgumentManager
-from app.DBManager import DBManager
+from app.DataManager import DataManager
 import sys
 
 #   CONFIGURATION
@@ -40,22 +40,11 @@ def get_fail_message(message):
     return message
 
 
-def _get_errors_from_DB(data):
-    errors = {}
-
-    if data is not None:
-        for failure in data['failures']:
-            errors[Error(failure['error'])] = Failure(data=failure['failure'])
-
-    return errors
-
-
-def get_old_fail(version4analyze):
+def get_old_fail(data_save_path):
     global gERRORS
 
-    db_manager = DBManager()
-    gERRORS = _get_errors_from_DB(db_manager.get_old_analyze(version=
-                                                             version4analyze if version4analyze is not None else None))
+    data_manager = DataManager()
+    gERRORS = data_manager.get_old_analyze(data_save_path)
 
 
 def _add_failure_preliminary(file, test_suite_name, test_case_name, failure, failed_version):
@@ -108,6 +97,7 @@ def check_logs(path, version):
     for file in os.listdir(path):
         if file.endswith(".xml"):
             root = ET.parse(path + '/' + file).getroot()
+            print(file)
 
             for test_suite in root.findall('.//testsuite'):
                 test_suite_name = str(test_suite.get('name'))
@@ -120,30 +110,31 @@ def check_logs(path, version):
                             _add_failure_preliminary(file, test_suite_name,
                                                      test_case_name, get_fail_message(failure.text), version)
 
-    print('Length of known error database = {}'.format(len(gERRORS)))
+    #print('Length of known error database = {}'.format(len(gERRORS)))
     # _process_preliminary_failures(version)
-    print('Potential error count = {}'.format(len(gNEW_ERRORS)))
-    print('Update error database = {}'.format(len(gERRORS)))
+    #print('Potential error count = {}'.format(len(gNEW_ERRORS)))
+    #print('Update error database = {}'.format(len(gERRORS)))
 
 
-def save_errors(version=None):
+def save_errors(data_save_path):
     global gERRORS
 
-    db_manager = DBManager()
-    db_manager.save_analyze(version, gERRORS.items())
+    data_manager = DataManager()
+    data_manager.save_analyze(data_save_path, gERRORS.items())
 
 
-def do_check(path, version, data_save_path, version4analyze, generate_report=False):
+def do_check(path, version, data_save_path, need_save=False):
     _clean_common_variables()
 
     if not os.path.isdir(path):
         print(f"Folder {path} does not exists!")
         return
-    get_old_fail(None if (version4analyze is None or version4analyze == 'last') else version4analyze)
+
+    get_old_fail(data_save_path)
     check_logs(path=path, version=version)
-    save_errors(version=version)
-    if generate_report:
-        ReportGenerator.write_fails_2_HTML(gERRORS=gERRORS, data_save_path=data_save_path, version=version)
+    if need_save:
+        save_errors(data_save_path)
+    ReportGenerator.write_fails_2_HTML(gERRORS=gERRORS, data_save_path=data_save_path, version=version)
 
 
 def run():
@@ -151,7 +142,7 @@ def run():
     argsManager = ArgumentManager()
 
     do_check(argsManager.get_path_logs(), argsManager.get_version(), argsManager.get_path2save(),
-             argsManager.get_version4analyze(), argsManager.get_need_save())
+             argsManager.get_need_save())
 
     print('Done!')
 
