@@ -1,0 +1,162 @@
+<html>
+        <head>
+            <style>
+                table
+                {
+                    border-collapse: collapse;
+                    border: 1px solid black;
+                    width:1900px;
+                }
+
+                tr
+                {
+                    border:0;
+                    color:#DD0000;
+                }
+
+                th
+                {
+                    height:20px;
+                    color:#727092;
+                    font-size:12px;
+                    font-weight:bold;
+                    font-family:Verdana;
+                    border: 1px solid #F0F0F0;
+                }
+
+                td
+                {
+                    margin:0;
+                    height:20px;
+                    color:#9A95B0;
+                    font-size:10px;
+                    font-weight:bold;
+                    font-family:Verdana;
+                    border: 1px solid #F0F0F0;
+                }
+
+                noborder
+                {
+                    width: 100%;
+                    border: 0px;
+                }
+
+                p.header
+                {
+                    color:#727092;
+                    font-size:14px;
+                    font-weight:bold;
+                    font-family:Verdana;
+                }
+
+                td.name
+                {
+                    padding-left:0px;
+                    text-align:left;
+                }
+
+                td.data
+                {
+                    padding-left:0px;
+                    text-align:center;
+                }
+
+                td.failed
+                {
+                    color:#FF0000;
+                }
+
+                td.skipped
+                {
+                    color:#E18B6B;
+                }
+                td.passed
+                {
+                    color:#347235;
+                }
+
+                td.replay
+                {
+                    color:#505250;
+                }
+
+                td.inInspection
+                {
+                    color:#4A0AD0;
+                }
+
+                .description
+                {
+                    overflow:hidden;
+                    white-space:nowrap;
+                    width: 50%;
+                }
+
+                th.failed
+                {
+                    height:12px;
+                    color:#FF0000;
+                    background:#FF0000;
+                }
+                th.skipped
+                {
+                    height:12px;
+                    color:#E18B6B;
+                    background:#E18B6B;
+                }
+                th.passed
+                {
+                    height:12px;
+                    color:#347235;
+                    background:#347235;
+                }
+            </style>
+        </head>
+        <body> 
+            <table class = "defect">
+                <tr align ="center" width="99%">
+                    <th width="40%"> Name </th>
+                    <th width="44%"> Test </th>
+                    <th width="3%"> Status </th>
+                    <th width="3%"> Count </th>
+                    <th width="5%"> First failed version </th>
+                    <th width="5%"> Last 5 failed versions </th>
+                </tr>
+                <tr><td class="failed data"> TIMEOUT/Message number: 9/1 - Application message don't come
+ </td><td > <details><summary>ALL TESTS</summary>Gateway_CDEV_FixInterface.xml/AccountAuthorization.AddAuthorization<br>Gateway_CDEV_FixInterface.xml/Functional.AddAuthorization<br>Gateway_CDEV_FixInterface.xml/Functional.DefineFuturesStrategy<br>Gateway_CDEV_FixInterface.xml/Functional.DefineOptionsStrategy<br>Gateway_CDEV_FixInterface.xml/SecurityDefinitionRequest.DefineFuturesStrategy<br>Gateway_CDEV_FixInterface.xml/SecurityDefinitionRequest.DefineOptionsStrategy<br>Gateway_CDEV_FixInterface.xml/Suites.AddAuthorization<br>Gateway_CDEV_FixInterface.xml/Suites.DefineFuturesStrategy<br>Gateway_CDEV_FixInterface.xml/Suites.DefineOptionsStrategy<br></details> </td><td class="failed data"> New </td><td class="data" align="left"> 1 </td><td > test1 </td><td > test1<br> </td></tr><tr><td class="failed data"> TIMEOUT: 10 seconds
+GW account ID: 335732
+Client order ID: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+   Wait for order/transaction statuses: Parked/Park
+   Order/transaction statuses: InModify/InModify
+ </td><td > <details><summary>ALL TESTS</summary>Gateway_CDEV_ForceCareOrders.xml/ForceCareOptionChange.ForceCare_OptionChange<br>Gateway_CDEV_ForceCareOrders.xml/ForceCareOrders.ForceCare_OptionChange<br></details> </td><td class="failed data"> New </td><td class="data" align="left"> 1 </td><td > test1 </td><td > test1<br> </td></tr><tr><td class="failed data"> Trader 'SF_SM_Trader1' is not authorized to the account 'SF_SM_Account3'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\xpit.com\applications\ScriptFramework\ScriptKit\Core\Invoker.py", line 29, in invoke_script
+    exec(code, isolated_dict)
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py", line 104, in <module>
+    test()
+  File "Scripts/Gateway/SystemAreas/TradingInterfaces/SessionManager/Suites\AccountChanges\AccountEnvironmentChange.tc.py", line 84, in test
+    VerifyEnvironmentChangeAcctAuthorization(c2, acctInfo3, True)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py", line 37, in VerifyEnvironmentChangeAcctAuthorization
+    envChange = __waitOneEnvironmentChange(gwConnection, "account_authorization", timeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\EnvironmentChangeUtils.py", line 15, in __waitOneEnvironmentChange
+    envChangeList = gwConnection.orderBook.WaitEnvironmentChange(ectype=ectype, timeout=timeout)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 629, in WaitEnvironmentChange
+    envChanges = self.__wait(timeout, self.__environmentChangeMessages, msg, ectype)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 553, in __wait
+    return WaitMsg(container, errMsg, self.__condition, timeout, idx=idx)
+  File "C:\xpit.com\applications\ScriptFramework\Scripts\Gateway\PythonModules\OrderBook.py", line 58, in WaitMsg
+    raise Exception(errMsg)
+Exception: TIMEOUT: 60 seconds for TIMEOUT: 60 seconds for EnvironmentChange
+EnvironmentChange ectype: account_authorization
+ </td><td > <details><summary>ALL TESTS</summary>Gateway_CDEV_SessionManager.xml/AccountChanges.AccountEnvironmentChange<br>Gateway_CDEV_SessionManager.xml/Suites.AccountEnvironmentChange<br></details> </td><td class="failed data"> New </td><td class="data" align="left"> 1 </td><td > test1 </td><td > test1<br> </td></tr><tr><td class="failed data"> There is no fill event expected
+ </td><td > <details><summary>ALL TESTS</summary>Gateway_CDEV_SessionManager.xml/AccountChanges.AutoEventSubscrNewAccounts<br>Gateway_CDEV_SessionManager.xml/Suites.AutoEventSubscrNewAccounts<br></details> </td><td class="failed data"> New </td><td class="data" align="left"> 1 </td><td > test1 </td><td > test1<br> </td></tr><tr><td class="failed data"> operation_status: '2' is not equal to '1'
+ </td><td > <details><summary>ALL TESTS</summary>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC101_AllCommoditiesDisabled<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC102_USCommoditiesDisabled<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC103_NonUSCommoditiesDisabled<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC104_ExchangeDisabled<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC106_InstrumentDisabled<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC107_ContractDisabled<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC223_NonUSCommoditiesCommodity<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC301_AccountAllCommoditiesEnabled<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC302_AccountAllCommoditiesDisabled<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC303_AllCommoditiesInstrument<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC305_DefaultAllCommodities<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC308_ExchangeUSCommodities<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC309_DefaultUSCommoditiesExchange<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC310_USCommoditiesAllCommoditiesCommodity<br>Gateway_CDEV_FCMContractControls.xml/AllowedToTrade.TC313_AllCommoditiesInstrument<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC101_AllCommoditiesDisabled<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC102_USCommoditiesDisabled<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC103_NonUSCommoditiesDisabled<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC104_ExchangeDisabled<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC106_InstrumentDisabled<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC107_ContractDisabled<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC223_NonUSCommoditiesCommodity<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC301_AccountAllCommoditiesEnabled<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC302_AccountAllCommoditiesDisabled<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC303_AllCommoditiesInstrument<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC305_DefaultAllCommodities<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC308_ExchangeUSCommodities<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC309_DefaultUSCommoditiesExchange<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC310_USCommoditiesAllCommoditiesCommodity<br>Gateway_CDEV_FCMContractControls.xml/FCMContractControls.TC313_AllCommoditiesInstrument<br></details> </td><td class="failed data"> New </td><td class="data" align="left"> 1 </td><td > test1 </td><td > test1<br> </td></tr><tr><td class="failed data"> Logout (5) waiting timeout: 60 sec
+ </td><td > <details><summary>ALL TESTS</summary>Gateway_CDEV_FixInterfaceNew.xml/SessionPersistence.TestSessionPersistenceON<br>Gateway_CDEV_FixInterfaceNew.xml/Suites.TestSessionPersistenceON<br></details> </td><td class="failed data"> New </td><td class="data" align="left"> 1 </td><td > test1 </td><td > test1<br> </td></tr>
+
+
+            </table>
+        </body>
+        </html>

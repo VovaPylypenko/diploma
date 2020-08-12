@@ -15,10 +15,10 @@ class ReportGenerator:
 
             tests_str = ''
             if not error_block[1].tests or len(error_block[1].tests) != 0:
-                tests_str = '<details><summary>ALL TESTS</summary>'
+                tests_str = f'\n<details><summary>{status} TESTS</summary>'
                 for test in sorted(error_block[1].tests):
                     tests_str += f'{test}<br>'
-                tests_str += '</details>'
+                tests_str += '</details>\n'
 
             error_table += ReportGenerator.add_td(tests_str)
             error_table += ReportGenerator.add_td(status, style)
@@ -193,7 +193,7 @@ class ReportGenerator:
             <table class = "defect">
                 <tr align ="center" width="99%">
                     <th width="40%"> Name </th>
-                    <th width="44%"> Test </th>
+                    <th width="44%"> Test(s) </th>
                     <th width="3%"> Status </th>
                     <th width="3%"> Count </th>
                     <th width="5%"> First failed version </th>

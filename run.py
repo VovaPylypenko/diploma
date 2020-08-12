@@ -5,6 +5,7 @@ from app.models.test import Test
 from app.models.failure import Failure
 from app.reportGenerator import ReportGenerator
 from app.argumentManager import ArgumentManager
+from app.parserLogs import ParserLogManager
 from app.DBManager import DBManager
 import sys
 
@@ -25,19 +26,9 @@ numberOfLastFailedVersions = 5
 
 def _clean_common_variables():
     # globals are created upon first execution
-    global gERRORS, gNEW_ERRORS
+    global gERRORS
 
     gERRORS = {}  # map: Error <-> list<Failure>
-    gNEW_ERRORS = {}  # map: Error <-> list<Failure>
-
-
-def get_fail_message(message):
-    error_markers = ["TestCheck.Failure: ", "Exception: ", "NameError: ", "RuntimeError: ", "IndexError: ",
-                     "AssertionError: ", "TypeError: ", "AttributeError: ", "ValueError: "]
-    for error_marker in error_markers:
-        if error_marker in message:
-            return message.split(error_marker, 1)[1]
-    return message
 
 
 def _get_errors_from_DB(data):
@@ -58,79 +49,17 @@ def get_old_fail(version4analyze):
                                                              version4analyze if version4analyze is not None else None))
 
 
-def _add_failure_preliminary(file, test_suite_name, test_case_name, failure, failed_version):
-    global gERRORS
-    error = Error(failure)
-    if gERRORS.get(error) is None:
-        for er in gERRORS.keys():
-            if er == error:
-                gERRORS[er].add_test(Test(file, test_suite_name, test_case_name))
-                gERRORS[er].count_up(failed_version)
-                return
-        gERRORS[error] = Failure({Test(file, test_suite_name, test_case_name)}, failed_version, 1, [failed_version])
-    else:
-        gERRORS[error].add_test(Test(file, test_suite_name, test_case_name))
-        gERRORS[error].count_up(failed_version)
-
-
-def _process_preliminary_failures(version):
-    global gERRORS, gNEW_ERRORS
-
-    for error, failure in gNEW_ERRORS.items():
-        if gERRORS.get(error) is None:
-            gERRORS[error] = failure
-            continue
-        else:
-            it = True
-            for err in gERRORS.keys():
-                if err == error:
-                    for test in failure.tests:
-                        gERRORS[err].add_test(test)
-                    gERRORS[err].count_up(version)
-                    it = False
-                    break
-            if it:
-                for test in failure.tests:
-                    gERRORS[error].tests.add(test)
-                gERRORS[error].count_up(version)
-
-
-def _check_for_suite_failure(file, test_suite, test_suite_name, failed_version):
-    if test_suite.get('testsuite_failed') == 'True':
-        test_case_name = 'setup'
-        for failure in test_suite.findall('.//failure'):
-            _add_failure_preliminary(file, test_suite_name, test_case_name,
-                                     get_fail_message(failure.text), failed_version)
-
-
-def check_logs(path, version):
-    global gNEW_ERRORS, gERRORS
-    for file in os.listdir(path):
-        if file.endswith(".xml"):
-            root = ET.parse(path + '/' + file).getroot()
-
-            for test_suite in root.findall('.//testsuite'):
-                test_suite_name = str(test_suite.get('name'))
-                if test_suite.get('skipped') != '0':
-                    _check_for_suite_failure(file, test_suite, test_suite_name, version)
-                else:
-                    for test_case in test_suite.findall('.//testcase'):
-                        for failure in test_case.findall('.//failure'):
-                            test_case_name = str(test_case.get('name'))
-                            _add_failure_preliminary(file, test_suite_name,
-                                                     test_case_name, get_fail_message(failure.text), version)
-
-    print('Length of known error database = {}'.format(len(gERRORS)))
-    # _process_preliminary_failures(version)
-    print('Potential error count = {}'.format(len(gNEW_ERRORS)))
-    print('Update error database = {}'.format(len(gERRORS)))
-
-
 def save_errors(version=None):
     global gERRORS
 
     db_manager = DBManager()
     db_manager.save_analyze(version, gERRORS.items())
+
+
+def pars_and_check(path, version):
+    global gERRORS
+
+    ParserLogManager.check_logs(path, version, gERRORS)
 
 
 def do_check(path, version, data_save_path, version4analyze, generate_report=False):
@@ -140,7 +69,7 @@ def do_check(path, version, data_save_path, version4analyze, generate_report=Fal
         print(f"Folder {path} does not exists!")
         return
     get_old_fail(None if (version4analyze is None or version4analyze == 'last') else version4analyze)
-    check_logs(path=path, version=version)
+    pars_and_check(path=path, version=version)
     save_errors(version=version)
     if generate_report:
         ReportGenerator.write_fails_2_HTML(gERRORS=gERRORS, data_save_path=data_save_path, version=version)
@@ -154,6 +83,7 @@ def run():
              argsManager.get_version4analyze(), argsManager.get_need_save())
 
     print('Done!')
+    print('file:///Users/vova/Duplom/ManagerResultTool/result/reportSFManager.html')
 
 
 if __name__ == '__main__':

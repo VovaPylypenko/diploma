@@ -1,4 +1,3 @@
-import xml.etree.ElementTree as ET
 import pymongo
 
 
@@ -8,7 +7,10 @@ class DBManager:
         client = pymongo.MongoClient(
             "mongodb+srv://admin:admin@cluster0-d70d1.mongodb.net/test?retryWrites=true&w=majority")
         self.db = client['diploma']
-        self.versions_col = self.db['versions-col6']
+        self.versions_col = self.db['versions-col78901']
+
+    def connection(self, hast_name, port):
+        pass
 
     def get_old_analyze(self, version=None):
         return self.versions_col.find_one(None if version is None else {'version': version})
@@ -24,4 +26,4 @@ class DBManager:
             self.versions_col.insert_one({'version': version, 'failures': failures_arr})
         else:
             print('ERROR: version already exist.')
-            print(find_it)
+            #print(find_it)

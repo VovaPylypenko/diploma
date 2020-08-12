@@ -1,0 +1,3 @@
+/Users/vova/Duplom/ManagerResultTool/venv/bin/python /Users/vova/Duplom/ManagerResultTool/run.py v_099 test/099 -path2save result
+/Users/vova/Duplom/ManagerResultTool/venv/bin/python /Users/vova/Duplom/ManagerResultTool/run.py v_114 test/114 -path2save result
+/Users/vova/Duplom/ManagerResultTool/venv/bin/python /Users/vova/Duplom/ManagerResultTool/run.py v_099_2 test/099 -path2save result -need_save False
